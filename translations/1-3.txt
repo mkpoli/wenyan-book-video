@@ -1,0 +1,17 @@
+“Yes,” “or,” “not” —
+these are words of utmost abstraction,
+yet even people do not easily wield them.
+
+Therefore, a balanced way was taken:
+to imitate human speech,
+choosing from it what is concise and essential;
+to refine the script,
+and to fix its meanings with rigor.
+
+Thus, it stands high enough to be read and used by people,
+yet low enough to be translated and understood by machines.
+This is what is called a programming language.
+
+In ancient times there were the Classics of Calculation;
+in the Book of Changes there were the Appended Remarks —
+though their purposes differed, the principle was the same.

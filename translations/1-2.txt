@@ -1,0 +1,14 @@
+Its applications are by no means limited in number.
+
+One asks:
+“The machine is but a thing — of bronze and iron.
+How can it do, and how can it understand the speech of men,
+to serve at their command?”
+
+It is answered:
+“This is precisely why programming languages exist.
+Human speech, at times, flows with eloquence,
+and at times, follows lofty and intricate diction —
+such the machine cannot comprehend.
+Yet what the machine can understand
+is but a few sparse and simple expressions.”

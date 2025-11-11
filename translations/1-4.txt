@@ -1,0 +1,15 @@
+Language corresponds to its kind.
+Someone asked:
+“What is most valued in a program?”
+It was answered:
+“Two things are prized — ingenuity and craftsmanship.
+When one sets out to accomplish a task,
+there is never only a single plan.
+Yet some ways double the effort and halve the result;
+some paths are circuitous and miss the goal —
+none of these are good strategies.
+Therefore, those who program must study their methods deeply.
+When a method is excellent,
+its calculations are precise,
+its execution swift —
+this is called ingenuity.”

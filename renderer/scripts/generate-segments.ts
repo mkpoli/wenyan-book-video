@@ -19,6 +19,7 @@ const RENDERER_DIR =
   process.env.RENDERER_DIR ?? join(__dirname, "..");
 const SEGMENTS_DIR = join(PROJECT_ROOT, "segments");
 const AUDIOS_DIR = join(PROJECT_ROOT, "audios");
+const TRANSLATIONS_DIR = join(PROJECT_ROOT, "translations");
 const GENERATED_DIR = join(RENDERER_DIR, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const PUBLIC_AUDIO_DIR = join(RENDERER_DIR, "public", "audios");
@@ -86,6 +87,11 @@ const generateSegments = async () => {
 
           const segmentPath = join(SEGMENTS_DIR, file);
           const text = readFileSync(segmentPath, "utf-8").trim();
+          const translationPath = join(TRANSLATIONS_DIR, `${id}.txt`);
+          const translation =
+            existsSync(translationPath)
+              ? readFileSync(translationPath, "utf-8").trim()
+              : null;
 
           mkdirSync(PUBLIC_AUDIO_DIR, { recursive: true });
           copyFileSync(
@@ -107,6 +113,7 @@ const generateSegments = async () => {
             id,
             text,
             audioPath: `audios/${publicAudioFile}`,
+            translation,
             durationInFrames,
           };
         }),

@@ -1,0 +1,15 @@
+Furthermore, a program is like a piece of writing.
+If one merely jots down words at random,
+its meaning will surely be incoherent,
+and its errors many.
+
+So too with programs: they follow the same principle.
+When their structure flows smoothly
+and their logic is clear throughout,
+a reader may grasp their intent with ease,
+and a machine may execute them without the slightest fault.
+This is called craftsmanship.
+
+Someone then asked:
+“You speak of programming as a beautiful art indeed —
+but I do not make my living by it.”
