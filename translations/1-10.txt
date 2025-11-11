@@ -1,0 +1,16 @@
+So too does its usage depend on the task.
+
+“Error reporting” means this:
+whether by human mistake or material limitation,
+the machine cannot fulfill what the user intends —
+thus it gives a message to inform the person of the cause.
+
+In the world today, there are not fewer than a hundred programming languages,
+each contending to show its excellence for a time.
+Most, however, are creations of Westerners
+and thus follow the patterns of Western speech.
+
+Now there is Master Huang of Shanghai,
+who has studied many texts in depth
+and, imitating the elegant diction of the ancients,
+has composed anew in refined classical style.

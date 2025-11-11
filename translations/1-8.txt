@@ -1,0 +1,17 @@
+“…was first devised by the people of the West.
+Thus, its terms must be rendered into our tongue through translation.
+Many of its expressions are ancient to them, yet unheard by us;
+some characters may be the same, but their meanings differ.
+
+Therefore, before speaking of programming itself,
+one must first explain the words it employs.
+
+In former times, when Xu Guangqi translated The Elements of Geometry,
+he first clarified the terminology of geometry —
+such is the proper way.
+
+One must not, like the alchemists who speak of ‘river chariots’ and ‘vermillion birds,’
+confuse the learner with arcane words,
+so that the reader knows not what is being said.
+
+Let us, then, begin to unfold our explanation.”

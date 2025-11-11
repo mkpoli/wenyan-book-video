@@ -1,0 +1,15 @@
+Then repeat this “A” three times.
+I have a phrase: “Ask Heaven and Earth if They Are Well.”
+Write it out — and so on.
+When it is run, the result is:
+
+Ask Heaven and Earth if They Are Well.
+Ask Heaven and Earth if They Are Well.
+Ask Heaven and Earth if They Are Well.
+
+Someone asked:
+“Why say Ask Heaven and Earth if They Are Well?”
+
+He replied:
+“Because before programming, the machine dwells in chaos and obscurity,
+knowing not where Heaven and Earth themselves are.”
