@@ -1,13 +1,15 @@
 import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
-import { SegmentText } from "./HelloWorld/SegmentText";
+import { SegmentText } from "./WenyanNarration/SegmentText";
 import { z } from "zod";
 
-export const myCompSchema = z.object({});
+export const wenyanNarrationSchema = z.object({});
 
 const segments = loadSegments();
 
-export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = () => {
+export const WenyanNarration: React.FC<
+  z.infer<typeof wenyanNarrationSchema>
+> = () => {
   let currentFrame = 0;
 
   return (
