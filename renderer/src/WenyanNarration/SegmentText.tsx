@@ -72,8 +72,6 @@ const originalTextStyle: React.CSSProperties = {
 };
 
 const translationTextStyle: React.CSSProperties = {
-  fontFamily: TRANSLATION_FONT_FAMILY,
-  fontSize: 28,
   lineHeight: 1.6,
   color: "inherit",
   margin: 0,
@@ -138,8 +136,11 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
       </div>
       {englishLine ? (
         <div style={translationLineContainer}>
-          <p style={translationTextStyle} className="font-serif">
-            {englishLine}
+          <p
+            style={translationTextStyle}
+            className="font-serif text-5xl font-bold"
+          >
+            {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
           </p>
         </div>
       ) : null}
