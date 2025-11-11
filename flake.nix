@@ -39,6 +39,24 @@
           '';
         };
 
+        synthesize-cmd = pkgs.writeShellApplication {
+          name = "synthesize";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run marimo edit synthesize.py --watch
+          '';
+        };
+
+        transcribe-cmd = pkgs.writeShellApplication {
+          name = "transcribe";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run marimo edit transcribe.py --watch
+          '';
+        };
+
         main-cmd = pkgs.writeShellApplication {
           name = "main";
           runtimeInputs = runtimePackages;
@@ -49,12 +67,20 @@
         };
 
         # Collect all command packages
-        commandPackages = [ segment-text-cmd audio-femalize-cmd main-cmd ];
+        commandPackages = [
+          segment-text-cmd
+          audio-femalize-cmd
+          synthesize-cmd
+          transcribe-cmd
+          main-cmd
+        ];
       in {
         # Expose commands as packages
         packages = {
           segment-text = segment-text-cmd;
           audio-femalize = audio-femalize-cmd;
+          synthesize = synthesize-cmd;
+          transcribe = transcribe-cmd;
           main = main-cmd;
         };
 
@@ -151,6 +177,8 @@
             echo ""
             echo "Available commands:"
             echo "  segment-text    - Edit segment-text.py with marimo"
+            echo "  transcribe      - Edit transcribe.py with marimo"
+            echo "  synthesize      - Edit synthesize.py with marimo"
             echo "  audio-femalize  - Edit audio-femalize.py with marimo"
             echo "  main            - Run main.py"
             echo ""

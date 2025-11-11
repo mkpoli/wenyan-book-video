@@ -9,4 +9,5 @@ dependencies = [
     "elevenlabs>=2.22.0",
     "marimo>=0.17.7",
     "regex>=2025.11.3",
+    "requests>=2.31.0",
 ]

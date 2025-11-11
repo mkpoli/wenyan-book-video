@@ -555,6 +555,7 @@ dependencies = [
     { name = "elevenlabs" },
     { name = "marimo" },
     { name = "regex" },
+    { name = "requests" },
 ]
 
 [package.metadata]
@@ -563,6 +564,7 @@ requires-dist = [
     { name = "elevenlabs", specifier = ">=2.22.0" },
     { name = "marimo", specifier = ">=0.17.7" },
     { name = "regex", specifier = ">=2025.11.3" },
+    { name = "requests", specifier = ">=2.31.0" },
 ]
 
 [[package]]
