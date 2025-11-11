@@ -12,3 +12,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "IM Fell DW Pica English SC";
+  src: url("../public/fonts/IMFellDWPicaSC-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "IM Fell DW Pica";
+  src: url("../public/fonts/IMFellDWPica-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IM Fell DW Pica";
+  src: url("../public/fonts/IMFellDWPica-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-serif: "IM Fell DW Pica English SC", serif;
+}
