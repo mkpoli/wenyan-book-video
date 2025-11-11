@@ -134,7 +134,14 @@ def _(
     transcripts_dir,
 ):
     # Find all segment files
-    segment_files = sorted(segments_dir.glob("*.txt"))
+    # Sort naturally by extracting chapter and segment numbers
+    def sort_key(path):
+        # Extract numbers from filename like "1-2.txt" -> (1, 2)
+        name = path.stem  # "1-2"
+        parts = name.split("-")  # ["1", "2"]
+        return (int(parts[0]), int(parts[1]))  # (chapter, segment)
+
+    segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
 
     print(f"Found {len(segment_files)} segment files")
 
