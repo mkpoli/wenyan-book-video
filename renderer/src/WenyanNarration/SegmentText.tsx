@@ -5,6 +5,7 @@ import { FONT_FAMILY } from "./constants";
 type SentenceEntry = {
   chinese: string;
   english: string | null;
+  transcription: string | null;
   durationInFrames: number;
 };
 
@@ -73,10 +74,8 @@ const originalTextStyle: React.CSSProperties = {
 
 const translationTextStyle: React.CSSProperties = {
   lineHeight: 1.6,
-  color: "inherit",
   margin: 0,
   whiteSpace: "pre-line",
-  textAlign: "left" as const,
 };
 
 const translationLineContainer: React.CSSProperties = {
@@ -85,7 +84,6 @@ const translationLineContainer: React.CSSProperties = {
   left: "50%",
   transform: "translateX(-50%)",
   width: "75%",
-  maxWidth: "1200px",
   textAlign: "center",
   color: "#0f172a",
 };
@@ -118,6 +116,8 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
 
   const currentSentence =
     currentSentenceIndex >= 0 ? sentences[currentSentenceIndex] : null;
+  const transcriptionLine =
+    currentSentence?.transcription?.replace(/\s+/g, " ").trim() ?? null;
   const englishLine =
     currentSentence?.english?.replace(/\s+/g, " ").trim() ?? null;
 
@@ -134,14 +134,24 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             ))
           : text}
       </div>
-      {englishLine ? (
+      {transcriptionLine || englishLine ? (
         <div style={translationLineContainer}>
-          <p
-            style={translationTextStyle}
-            className="font-serif text-5xl font-bold"
-          >
-            {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
-          </p>
+          {transcriptionLine ? (
+            <p
+              style={translationTextStyle}
+              className="font-ipa text-5xl font-normal mb-2 text-center w-full"
+            >
+              {transcriptionLine}
+            </p>
+          ) : null}
+          {englishLine ? (
+            <p
+              style={translationTextStyle}
+              className="font-serif text-6xl font-bold"
+            >
+              {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
+            </p>
+          ) : null}
         </div>
       ) : null}
     </AbsoluteFill>

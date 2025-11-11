@@ -11,6 +11,18 @@
   src: url("../public/fonts/CinzelDecorative-Regular.ttf") format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("../public/fonts/CinzelDecorative-Bold.ttf") format("truetype");
+  weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tinos";
+  src: url("../public/fonts/Tinos-Regular.ttf") format("truetype");
+  font-display: swap;
+}
 
 @font-face {
   font-family: "IM Fell DW Pica English SC";
@@ -32,4 +44,5 @@
 
 @theme {
   --font-serif: "IM Fell DW Pica English SC", serif;
+  --font-ipa: "Tinos", serif;
 }

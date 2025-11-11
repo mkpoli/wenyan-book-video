@@ -14,6 +14,7 @@ const projectRoot = process.env.PROJECT_ROOT ?? join(rendererDir, "..");
 const SEGMENTS_DIR = join(projectRoot, "segments");
 const AUDIOS_DIR = join(projectRoot, "audios");
 const TRANSLATIONS_DIR = join(projectRoot, "translations");
+const TRANSCRIPTS_DIR = join(projectRoot, "transcripts");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const PUBLIC_AUDIO_DIR = join(rendererDir, "public", "audios");
@@ -90,6 +91,22 @@ const splitEnglishSentences = (translation: string | null): string[] => {
   return sentences;
 };
 
+const splitIPATranscriptions = (transcript: string | null): string[] => {
+  if (!transcript) {
+    return [];
+  }
+
+  // Split IPA transcript by periods (sentence boundaries)
+  // Periods are followed by spaces in the transcript format
+  const normalized = transcript.trim().replace(/\s+/g, " ");
+  const sentences = normalized
+    .split(/\s*\.\s*/)
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+
+  return sentences;
+};
+
 const generateSegments = async () => {
   let entries: Array<{
     id: string;
@@ -99,6 +116,7 @@ const generateSegments = async () => {
     sentences: Array<{
       chinese: string;
       english: string | null;
+      transcription: string | null;
       durationInFrames: number;
     }>;
     durationInFrames: number;
@@ -134,9 +152,14 @@ const generateSegments = async () => {
           const translation = existsSync(translationPath)
             ? readFileSync(translationPath, "utf-8").trim()
             : null;
+          const transcriptPath = join(TRANSCRIPTS_DIR, `audio-${id}.txt`);
+          const transcript = existsSync(transcriptPath)
+            ? readFileSync(transcriptPath, "utf-8").trim()
+            : null;
 
           const chineseSentences = splitChineseSentences(text);
           const englishSentences = splitEnglishSentences(translation);
+          const ipaSentences = splitIPATranscriptions(transcript);
 
           mkdirSync(PUBLIC_AUDIO_DIR, { recursive: true });
           copyFileSync(
@@ -181,10 +204,12 @@ const generateSegments = async () => {
             }
 
             const englishSentence = englishSentences[index] ?? null;
+            const ipaSentence = ipaSentences[index] ?? null;
 
             return {
               chinese: chSentence,
               english: englishSentence,
+              transcription: ipaSentence,
               durationInFrames: sentenceDuration,
             };
           });
