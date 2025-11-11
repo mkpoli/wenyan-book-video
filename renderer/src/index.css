@@ -2,6 +2,6 @@
 
 @font-face {
   font-family: "QijiCombo";
-  src: url("../../fonts/qiji-combo.ttf") format("truetype");
+  src: url("../public/fonts/qiji-combo.ttf") format("truetype");
   font-display: swap;
 }
