@@ -1,0 +1,51 @@
+# Nix
+result
+result-*
+.direnv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+dist/
+build/
+wheels/
+*.egg-info
+
+# Marimo
+__marimo__/
+.marimo/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Book-specific
+book/site/
+book/tmp/
+
+# Processor-specific (already covered by Python section above)
+
