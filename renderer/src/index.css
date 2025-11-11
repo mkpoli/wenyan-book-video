@@ -5,3 +5,10 @@
   src: url("../public/fonts/qiji-combo.ttf") format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "CinzelDecorative";
+  src: url("../public/fonts/CinzelDecorative-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+

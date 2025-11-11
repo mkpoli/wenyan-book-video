@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { FONT_FAMILY, TRANSLATION_FONT_FAMILY } from "./constants";
+import { FONT_FAMILY } from "./constants";
 
 type SentenceEntry = {
   chinese: string;
@@ -138,7 +138,9 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
       </div>
       {englishLine ? (
         <div style={translationLineContainer}>
-          <p style={translationTextStyle}>{englishLine}</p>
+          <p style={translationTextStyle} className="font-serif">
+            {englishLine}
+          </p>
         </div>
       ) : null}
     </AbsoluteFill>
