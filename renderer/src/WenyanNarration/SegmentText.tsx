@@ -13,18 +13,26 @@ interface SegmentTextProps {
 
 const originalTextStyle: React.CSSProperties = {
   fontFamily: FONT_FAMILY,
-  fontSize: 48,
-  lineHeight: 1.8,
-  textAlign: "center",
+  // fontSize: 48,
+  fontSize: 72,
+  // lineHeight: 1.8,
+  lineHeight: 1.2,
+  textAlign: "start",
   position: "absolute",
   top: "45%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
+  // width: "80%",
+  width: "max-content",
   maxWidth: "1400px",
+  height: "65%",
   color: "#000000",
   padding: "40px",
   whiteSpace: "pre-line",
+  writingMode: "vertical-rl" as const,
+  textOrientation: "upright" as const,
+  // letterSpacing: "0.15em",
+  verticalAlign: "middle",
 };
 
 const translationTextStyle: React.CSSProperties = {
@@ -91,9 +99,10 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                       index === currentSentenceIndex ? "#111827" : "#6b7280",
                     transition: "color 200ms ease",
                   }}
+                  className="after:content-['。'] after:text-red-400 after:transform-[translateX(+50%)_translateY(+50%)] after:bottom-0 after:right-0 after:absolute relative"
                 >
-                  {sentence.chinese}
-                </span>{" "}
+                  {sentence.chinese.replace(/。/g, "")}
+                </span>
               </React.Fragment>
             ))
           : text}
