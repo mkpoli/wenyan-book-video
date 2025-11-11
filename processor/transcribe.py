@@ -92,8 +92,17 @@ def _(re):
         normalized = re.sub(r"\.+$", ".", normalized)
         return normalized
 
-    def transcribe_to_ipa(text, dictionary):
-        """Transcribe Chinese text to IPA string."""
+    def transcribe_to_ipa(text, dictionary, choice_cache=None):
+        """Transcribe Chinese text to IPA string.
+
+        Args:
+            text: Chinese text to transcribe
+            dictionary: Dictionary mapping characters to list of (transcription, frequency) tuples
+            choice_cache: Optional dict to cache user choices for characters with multiple readings
+        """
+        if choice_cache is None:
+            choice_cache = {}
+
         normalized = normalize_text(text)
 
         # Convert each character to IPA
@@ -106,8 +115,47 @@ def _(re):
                 # Look up character in dictionary
                 readings = dictionary.get(ch)
                 if readings and len(readings) > 0:
-                    # Use the top (highest frequency) transcription
-                    transcription = readings[0][0]
+                    # Check if we have multiple options
+                    if len(readings) > 1:
+                        # Check cache first
+                        cache_key = ch
+                        if cache_key in choice_cache:
+                            # Use cached choice
+                            transcription = choice_cache[cache_key]
+                        else:
+                            # Prompt user to choose
+                            print(
+                                f"\nCharacter '{ch}' has {len(readings)} transcription options:"
+                            )
+                            for idx, (trans, freq) in enumerate(readings, 1):
+                                print(f"  {idx}. {trans} (frequency: {freq})")
+
+                            while True:
+                                try:
+                                    choice = input(
+                                        f"Choose option (1-{len(readings)}, or 'q' to use default #1): "
+                                    ).strip()
+                                    if choice.lower() == "q":
+                                        choice_idx = 0
+                                        break
+                                    choice_idx = int(choice) - 1
+                                    if 0 <= choice_idx < len(readings):
+                                        break
+                                    else:
+                                        print(
+                                            f"Please enter a number between 1 and {len(readings)}"
+                                        )
+                                except ValueError:
+                                    print("Please enter a valid number or 'q'")
+
+                            transcription = readings[choice_idx][0]
+                            # Cache the choice
+                            choice_cache[cache_key] = transcription
+                            print(f"Selected: {transcription}")
+                    else:
+                        # Only one option, use it directly
+                        transcription = readings[0][0]
+
                     # Remove any periods from transcription (keep periods separate)
                     transcription = transcription.replace(".", "").strip()
                     if transcription:
@@ -145,6 +193,9 @@ def _(
 
     print(f"Found {len(segment_files)} segment files")
 
+    # Shared choice cache across all segments
+    choice_cache = {}
+
     # Process each segment
     for segment_file in segment_files:
         # Check if transcript already exists
@@ -164,8 +215,8 @@ def _(
 
         print(f"Transcribing {segment_file.name}...")
 
-        # Transcribe to IPA
-        ipa_text = transcribe_to_ipa(text, dictionary)
+        # Transcribe to IPA (pass choice_cache to remember user choices)
+        ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
 
         # Save transcript
         with open(transcript_path, "w", encoding="utf-8") as f:
