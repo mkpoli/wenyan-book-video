@@ -100,7 +100,7 @@ const splitIPATranscriptions = (transcript: string | null): string[] => {
   // Periods are followed by spaces in the transcript format
   const normalized = transcript.trim().replace(/\s+/g, " ");
   const sentences = normalized
-    .split(/\s*\.\s*/)
+    .split(/\s*[\.,]\s*/)
     .map((sentence) => sentence.trim())
     .filter(Boolean);
 
