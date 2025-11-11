@@ -7,22 +7,16 @@ import {
   writeFileSync,
 } from "fs";
 import { parseFile } from "music-metadata";
-import path, { join } from "path";
-import { fileURLToPath } from "url";
+import { join } from "path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const PROJECT_ROOT =
-  process.env.PROJECT_ROOT ?? join(__dirname, "..", "..");
-const RENDERER_DIR =
-  process.env.RENDERER_DIR ?? join(__dirname, "..");
-const SEGMENTS_DIR = join(PROJECT_ROOT, "segments");
-const AUDIOS_DIR = join(PROJECT_ROOT, "audios");
-const TRANSLATIONS_DIR = join(PROJECT_ROOT, "translations");
-const GENERATED_DIR = join(RENDERER_DIR, "src", "generated");
+const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
+const projectRoot = process.env.PROJECT_ROOT ?? join(rendererDir, "..");
+const SEGMENTS_DIR = join(projectRoot, "segments");
+const AUDIOS_DIR = join(projectRoot, "audios");
+const TRANSLATIONS_DIR = join(projectRoot, "translations");
+const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
-const PUBLIC_AUDIO_DIR = join(RENDERER_DIR, "public", "audios");
+const PUBLIC_AUDIO_DIR = join(rendererDir, "public", "audios");
 const FPS = 30;
 const AUDIO_TAIL_FRAMES = 12;
 const DEFAULT_AUDIO_DURATION_SECONDS = 3;
@@ -55,11 +49,58 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
   return DEFAULT_AUDIO_DURATION_SECONDS;
 };
 
+const splitChineseSentences = (text: string): string[] => {
+  const matches = text.match(/[^。！？]*[。！？]?/g) ?? [];
+  return matches.map((sentence) => sentence.trim()).filter(Boolean);
+};
+
+const splitEnglishSentences = (translation: string | null): string[] => {
+  if (!translation) {
+    return [];
+  }
+
+  const blocks = translation
+    .replace(/\r\n/g, "\n")
+    .split(/\n+/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  const sentences: string[] = [];
+
+  for (const block of blocks) {
+    const normalized = block.replace(/\s+/g, " ");
+    const matches = normalized.match(/[^.!?]+[.!?]+(?:\u201d|\u2019|"|')?/g);
+    if (matches) {
+      matches.forEach((sentence) => {
+        const trimmed = sentence.trim();
+        if (trimmed.length > 0) {
+          sentences.push(trimmed);
+        }
+      });
+
+      const remainder = normalized.replace(matches.join(""), "").trim();
+      if (remainder.length > 0) {
+        sentences.push(remainder);
+      }
+    } else if (normalized.length > 0) {
+      sentences.push(normalized);
+    }
+  }
+
+  return sentences;
+};
+
 const generateSegments = async () => {
   let entries: Array<{
     id: string;
     text: string;
     audioPath: string;
+    translation: string | null;
+    sentences: Array<{
+      chinese: string;
+      english: string | null;
+      durationInFrames: number;
+    }>;
     durationInFrames: number;
   }> = [];
 
@@ -77,7 +118,9 @@ const generateSegments = async () => {
           const maleAudioPath = join(AUDIOS_DIR, audioFile);
           const femaleAudioPath = join(AUDIOS_DIR, "female", femaleAudioFile);
           const hasFemaleAudio = existsSync(femaleAudioPath);
-          const sourceAudioPath = hasFemaleAudio ? femaleAudioPath : maleAudioPath;
+          const sourceAudioPath = hasFemaleAudio
+            ? femaleAudioPath
+            : maleAudioPath;
           const publicAudioFile = hasFemaleAudio ? femaleAudioFile : audioFile;
 
           if (!existsSync(sourceAudioPath)) {
@@ -88,10 +131,12 @@ const generateSegments = async () => {
           const segmentPath = join(SEGMENTS_DIR, file);
           const text = readFileSync(segmentPath, "utf-8").trim();
           const translationPath = join(TRANSLATIONS_DIR, `${id}.txt`);
-          const translation =
-            existsSync(translationPath)
-              ? readFileSync(translationPath, "utf-8").trim()
-              : null;
+          const translation = existsSync(translationPath)
+            ? readFileSync(translationPath, "utf-8").trim()
+            : null;
+
+          const chineseSentences = splitChineseSentences(text);
+          const englishSentences = splitEnglishSentences(translation);
 
           mkdirSync(PUBLIC_AUDIO_DIR, { recursive: true });
           copyFileSync(
@@ -103,17 +148,53 @@ const generateSegments = async () => {
             debugLog(`Using female voice for segment ${id}.`);
           }
 
-          const durationInSeconds = await getAudioDurationInSeconds(
-            sourceAudioPath,
-          );
+          const durationInSeconds =
+            await getAudioDurationInSeconds(sourceAudioPath);
           const durationInFrames =
             Math.ceil(durationInSeconds * FPS) + AUDIO_TAIL_FRAMES;
+
+          let assignedFrames = 0;
+          const totalChars = chineseSentences
+            .map((sentence) => sentence.length)
+            .reduce((sum, count) => sum + count, 0);
+
+          const sentences = chineseSentences.map((chSentence, index) => {
+            const charCount = chSentence.length;
+            const isLast = index === chineseSentences.length - 1;
+            const proportion =
+              totalChars > 0
+                ? charCount / totalChars
+                : 1 / Math.max(chineseSentences.length, 1);
+
+            let sentenceDuration = isLast
+              ? durationInFrames - assignedFrames
+              : Math.max(Math.round(durationInFrames * proportion), 1);
+
+            if (!isLast) {
+              assignedFrames += sentenceDuration;
+            } else {
+              const remaining = durationInFrames - assignedFrames;
+              if (remaining > 0) {
+                sentenceDuration = remaining;
+                assignedFrames += remaining;
+              }
+            }
+
+            const englishSentence = englishSentences[index] ?? null;
+
+            return {
+              chinese: chSentence,
+              english: englishSentence,
+              durationInFrames: sentenceDuration,
+            };
+          });
 
           return {
             id,
             text,
             audioPath: `audios/${publicAudioFile}`,
             translation,
+            sentences,
             durationInFrames,
           };
         }),
@@ -154,4 +235,3 @@ generateSegments()
     console.error("[segments] Segment metadata generation failed:", error);
     process.exitCode = 1;
   });
-

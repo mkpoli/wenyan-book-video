@@ -28,7 +28,7 @@ export const WenyanNarration: React.FC<
             <Html5Audio src={staticFile(segment.audioPath)} />
             <SegmentText
               text={segment.text}
-              translation={segment.translation}
+              sentences={segment.sentences ?? []}
             />
           </Sequence>
         );

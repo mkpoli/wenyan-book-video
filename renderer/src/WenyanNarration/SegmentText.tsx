@@ -1,10 +1,14 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { FONT_FAMILY, TRANSLATION_FONT_FAMILY } from "./constants";
 
 interface SegmentTextProps {
   readonly text: string;
-  readonly translation: string | null;
+  readonly sentences: ReadonlyArray<{
+    chinese: string;
+    english: string | null;
+    durationInFrames: number;
+  }>;
 }
 
 const originalTextStyle: React.CSSProperties = {
@@ -13,7 +17,7 @@ const originalTextStyle: React.CSSProperties = {
   lineHeight: 1.8,
   textAlign: "center",
   position: "absolute",
-  top: "50%",
+  top: "45%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "80%",
@@ -23,42 +27,82 @@ const originalTextStyle: React.CSSProperties = {
   whiteSpace: "pre-line",
 };
 
-const translationContainer: React.CSSProperties = {
-  position: "absolute",
-  bottom: 120,
-  left: "50%",
-  transform: "translateX(-50%)",
-  width: "80%",
-  maxWidth: "1400px",
-  backgroundColor: "rgba(255, 255, 255, 0.75)",
-  borderRadius: 16,
-  padding: "24px 32px",
-  boxShadow: "0 12px 40px rgba(0, 0, 0, 0.12)",
-};
-
 const translationTextStyle: React.CSSProperties = {
   fontFamily: TRANSLATION_FONT_FAMILY,
   fontSize: 28,
   lineHeight: 1.6,
-  color: "#1b1b1b",
+  color: "inherit",
   margin: 0,
   whiteSpace: "pre-line",
   textAlign: "left" as const,
 };
 
+const translationLineContainer: React.CSSProperties = {
+  position: "absolute",
+  bottom: 120,
+  left: "50%",
+  transform: "translateX(-50%)",
+  width: "75%",
+  maxWidth: "1200px",
+  textAlign: "center",
+  color: "#0f172a",
+};
+
 export const SegmentText: React.FC<SegmentTextProps> = ({
   text,
-  translation,
+  sentences,
 }) => {
+  const frame = useCurrentFrame();
+  const hasSentenceData = sentences.length > 0;
+
+  let cumulative = 0;
+  let currentSentenceIndex = -1;
+
+  if (hasSentenceData) {
+    for (let i = 0; i < sentences.length; i += 1) {
+      const sentence = sentences[i];
+      const start = cumulative;
+      const end = cumulative + sentence.durationInFrames;
+      if (frame >= start && frame < end) {
+        currentSentenceIndex = i;
+        break;
+      }
+      cumulative += sentence.durationInFrames;
+    }
+    if (currentSentenceIndex === -1 && sentences.length > 0) {
+      currentSentenceIndex = sentences.length - 1;
+    }
+  }
+
+  const currentSentence =
+    currentSentenceIndex >= 0 ? sentences[currentSentenceIndex] : null;
+  const englishLine =
+    currentSentence?.english?.replace(/\s+/g, " ").trim() ?? null;
+
   return (
     <AbsoluteFill>
-      <div style={originalTextStyle}>{text}</div>
-      {translation ? (
-        <div style={translationContainer}>
-          <p style={translationTextStyle}>{translation}</p>
+      <div style={originalTextStyle}>
+        {hasSentenceData
+          ? sentences.map((sentence, index) => (
+              <React.Fragment key={`${index}-${sentence.chinese}`}>
+                <span
+                  style={{
+                    color:
+                      index === currentSentenceIndex ? "#111827" : "#6b7280",
+                    transition: "color 200ms ease",
+                  }}
+                >
+                  {sentence.chinese}
+                </span>{" "}
+              </React.Fragment>
+            ))
+          : text}
+      </div>
+      {englishLine ? (
+        <div style={translationLineContainer}>
+          <p style={translationTextStyle}>{englishLine}</p>
         </div>
       ) : null}
     </AbsoluteFill>
   );
 };
-
