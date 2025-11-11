@@ -2,13 +2,49 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { FONT_FAMILY, TRANSLATION_FONT_FAMILY } from "./constants";
 
+type SentenceEntry = {
+  chinese: string;
+  english: string | null;
+  durationInFrames: number;
+};
+
 interface SegmentTextProps {
   readonly text: string;
-  readonly sentences: ReadonlyArray<{
-    chinese: string;
-    english: string | null;
-    durationInFrames: number;
-  }>;
+  readonly sentences: ReadonlyArray<SentenceEntry>;
+}
+
+function SentenceWithTrailingMarker({
+  text,
+  highlight,
+}: {
+  text: string;
+  highlight: boolean;
+}) {
+  if (text.length === 0) {
+    return null;
+  }
+
+  // Split text into all characters except the last one, and the last character
+  const allButLast = text.slice(0, -1);
+  const lastChar = text[text.length - 1];
+
+  return (
+    <span
+      className="relative inline align-middle"
+      style={{
+        color: highlight ? "#111827" : "#6b7280",
+        fontWeight: highlight ? "bold" : "normal",
+        transition: "color 200ms ease",
+      }}
+    >
+      {allButLast}
+      <span
+        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-1/2 after:translate-y-1/2 after:text-red-400 after:pointer-events-none after:select-none after:transition-opacity after:duration-200 after:ease-in-out after:font-normal`}
+      >
+        {lastChar}
+      </span>
+    </span>
+  );
 }
 
 const originalTextStyle: React.CSSProperties = {
@@ -92,18 +128,11 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
       <div style={originalTextStyle}>
         {hasSentenceData
           ? sentences.map((sentence, index) => (
-              <React.Fragment key={`${index}-${sentence.chinese}`}>
-                <span
-                  style={{
-                    color:
-                      index === currentSentenceIndex ? "#111827" : "#6b7280",
-                    transition: "color 200ms ease",
-                  }}
-                  className="after:content-['。'] after:text-red-400 after:transform-[translateX(+50%)_translateY(+50%)] after:bottom-0 after:right-0 after:absolute relative"
-                >
-                  {sentence.chinese.replace(/。/g, "")}
-                </span>
-              </React.Fragment>
+              <SentenceWithTrailingMarker
+                key={`${index}-${sentence.chinese}`}
+                text={sentence.chinese.replace(/。/g, "")}
+                highlight={index === currentSentenceIndex}
+              />
             ))
           : text}
       </div>
