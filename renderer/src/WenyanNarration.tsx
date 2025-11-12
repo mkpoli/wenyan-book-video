@@ -4,6 +4,9 @@ import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
 import { ChapterTitle } from "./WenyanNarration/ChapterTitle";
 import { BookTitle } from "./WenyanNarration/BookTitle";
+import { WenyanLanguageIntroduction } from "./WenyanNarration/WenyanLanguageIntroduction";
+import { BookIntroduction } from "./WenyanNarration/BookIntroduction";
+import { CreatorIntroduction } from "./WenyanNarration/CreatorIntroduction";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -11,7 +14,10 @@ export const wenyanNarrationSchema = z.object({
 });
 
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
-const BOOK_TITLE_DURATION_FRAMES = 180; // 6 seconds at 30fps
+const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
+const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 
@@ -28,10 +34,14 @@ export const WenyanNarration: React.FC<
         )
       : allSegments;
 
-  // Always show book title and chapter title at the start when filtering by chapter
+  // Always show book title, introductions, and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
   let currentFrame = shouldShowTitle
-    ? BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES
+    ? BOOK_TITLE_DURATION_FRAMES +
+      WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+      BOOK_INTRODUCTION_DURATION_FRAMES +
+      CREATOR_INTRODUCTION_DURATION_FRAMES +
+      CHAPTER_TITLE_DURATION_FRAMES
     : 0;
 
   return (
@@ -42,9 +52,48 @@ export const WenyanNarration: React.FC<
           <Sequence from={0} durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
             <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
           </Sequence>
-          {/* Chapter Title - appears after book title */}
+          {/* Wenyan Language Introduction - appears after book title */}
           <Sequence
             from={BOOK_TITLE_DURATION_FRAMES}
+            durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
+          >
+            <WenyanLanguageIntroduction
+              durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
+            />
+          </Sequence>
+          {/* Book Introduction - appears after language introduction */}
+          <Sequence
+            from={
+              BOOK_TITLE_DURATION_FRAMES +
+              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
+            }
+            durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
+          >
+            <BookIntroduction
+              durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
+            />
+          </Sequence>
+          {/* Creator Introduction - appears after book introduction */}
+          <Sequence
+            from={
+              BOOK_TITLE_DURATION_FRAMES +
+              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+              BOOK_INTRODUCTION_DURATION_FRAMES
+            }
+            durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
+          >
+            <CreatorIntroduction
+              durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
+            />
+          </Sequence>
+          {/* Chapter Title - appears after introductions */}
+          <Sequence
+            from={
+              BOOK_TITLE_DURATION_FRAMES +
+              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+              BOOK_INTRODUCTION_DURATION_FRAMES +
+              CREATOR_INTRODUCTION_DURATION_FRAMES
+            }
             durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
           >
             <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />

@@ -10,7 +10,10 @@ const segments = loadSegments();
 const DEFAULT_DURATION_FRAMES = 150;
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
-const BOOK_TITLE_DURATION_FRAMES = 180; // 6 seconds at 30fps
+const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
+const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 
 // Get unique chapter numbers
 const uniqueChapters = new Set(
@@ -25,7 +28,14 @@ const calculateChapterDuration = (chapterNumber: number): number => {
   );
 
   if (chapterSegments.length === 0) {
-    return DEFAULT_DURATION_FRAMES + BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES;
+    return (
+      DEFAULT_DURATION_FRAMES +
+      BOOK_TITLE_DURATION_FRAMES +
+      WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+      BOOK_INTRODUCTION_DURATION_FRAMES +
+      CREATOR_INTRODUCTION_DURATION_FRAMES +
+      CHAPTER_TITLE_DURATION_FRAMES
+    );
   }
 
   const segmentDuration = chapterSegments.reduce(
@@ -36,7 +46,12 @@ const calculateChapterDuration = (chapterNumber: number): number => {
     chapterSegments.length > 0
       ? (chapterSegments.length - 1) * DELAY_BETWEEN_SEGMENTS_FRAMES
       : 0;
-  const titleDuration = BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES;
+  const titleDuration =
+    BOOK_TITLE_DURATION_FRAMES +
+    WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+    BOOK_INTRODUCTION_DURATION_FRAMES +
+    CREATOR_INTRODUCTION_DURATION_FRAMES +
+    CHAPTER_TITLE_DURATION_FRAMES;
 
   return segmentDuration + delaysDuration + titleDuration;
 };
