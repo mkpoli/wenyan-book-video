@@ -9,9 +9,9 @@ to serve at their command?”
 
 It is answered:
 “This is precisely why programming languages exist.
-Human speech, commonly at times,
-flows with eloquence,
-and at times, follows lofty and intricate diction —
+Human speech, in its common use —
+its words at times splendidly adorned,
+its allusions at times profound and graceful.
 such the machine cannot comprehend.
 Yet what the machine can understand
 is but a few sparse and simple expressions.”

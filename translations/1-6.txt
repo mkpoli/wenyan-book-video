@@ -8,13 +8,12 @@ making one’s thought careful and far-reaching,
 one’s judgment precise and clear.
 That is one benefit.
 
-Another lies in the joy of creation itself.”
+Another lies in the joy of creation itself.
+This is the second benefit.”
 
 Then he asked again:
 “What joy can there be in programming?
 All day one toils restlessly,
 facing endless lines of symbols,
 rushing to correct each mistake in haste —
-how can that compare
-to the pleasures of cockfighting, dog racing,
-dice games, or passing cups of wine?”
+how can that compare to the pleasures of cockfighting, dog racing,\n dice games, or passing cups of wine?”

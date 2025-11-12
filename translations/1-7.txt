@@ -1,8 +1,9 @@
 He answered:
-“The joy of programming lies in creation itself.
+“The joy of programming
+lies in creation itself.
 The Lady Nüwa first knew this joy;
-Master Gongshu (Luban) knew it again;
-Master Ouye (Ou Yezi) knew it a third time.
+Master Gongshu (Lu Ban) knew it again;
+Master Ou Yeh-Tzu (Ou Yezi) knew it a third time.
 Now this art exists as a pastime —
 any common person may partake in it,
 yet its delight remains the same.
@@ -13,6 +14,7 @@ The questioner said:
 yet I have no way to learn it.”
 
 He replied with a laugh:
-“Ha! Simply read this book — that will do.
+“Ha!
+Simply read this book — that will do.
 
-For the programming of the present age…”
+For the programming of the present age
