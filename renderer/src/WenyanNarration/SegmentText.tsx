@@ -56,34 +56,24 @@ const originalTextStyle: React.CSSProperties = {
   // lineHeight: 1.8,
   lineHeight: 1.2,
   textAlign: "start",
-  position: "absolute",
-  top: "45%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  // width: "80%",
   width: "max-content",
   maxWidth: "1400px",
-  height: "65%",
   color: "#000000",
-  padding: "40px",
   whiteSpace: "pre-line",
   writingMode: "vertical-rl" as const,
   textOrientation: "upright" as const,
   // letterSpacing: "0.15em",
   verticalAlign: "middle",
+  flex: 1,
 };
 
 const translationTextStyle: React.CSSProperties = {
-  lineHeight: 1.6,
+  lineHeight: 1.8,
   margin: 0,
   whiteSpace: "pre-line",
 };
 
 const translationLineContainer: React.CSSProperties = {
-  position: "absolute",
-  bottom: 120,
-  left: "50%",
-  transform: "translateX(-50%)",
   width: "75%",
   textAlign: "center",
   color: "#0f172a",
@@ -124,45 +114,47 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
 
   return (
     <AbsoluteFill>
-      <div style={originalTextStyle}>
-        {hasSentenceData
-          ? sentences.map((sentence, index) => (
-              <SentenceWithTrailingMarker
-                key={`${index}-${sentence.chinese}`}
-                text={sentence.chinese.replace(/。/g, "")}
-                highlight={index === currentSentenceIndex}
-              />
-            ))
-          : text}
-      </div>
-      {transcriptionLine || englishLine ? (
-        <div style={translationLineContainer}>
-          {transcriptionLine ? (
-            <p
-              style={translationTextStyle}
-              className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500"
-            >
-              [{transcriptionLine}]
-            </p>
-          ) : null}
-          {transcriptionLine ? (
-            <p
-              style={translationTextStyle}
-              className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-gray-700"
-            >
-              {convertIPAToTranscription(transcriptionLine)}
-            </p>
-          ) : null}
-          {englishLine ? (
-            <p
-              style={{ ...translationTextStyle, whiteSpace: "nowrap" }}
-              className="font-serif text-6xl font-bold"
-            >
-              {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
-            </p>
-          ) : null}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 w-full h-full px-[40px] py-25 items-center justify-between">
+        <div style={originalTextStyle}>
+          {hasSentenceData
+            ? sentences.map((sentence, index) => (
+                <SentenceWithTrailingMarker
+                  key={`${index}-${sentence.chinese}`}
+                  text={sentence.chinese.replace(/。/g, "")}
+                  highlight={index === currentSentenceIndex}
+                />
+              ))
+            : text}
         </div>
-      ) : null}
+        {transcriptionLine || englishLine ? (
+          <div style={translationLineContainer}>
+            {transcriptionLine ? (
+              <p
+                style={translationTextStyle}
+                className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500"
+              >
+                [{transcriptionLine}]
+              </p>
+            ) : null}
+            {transcriptionLine ? (
+              <p
+                style={translationTextStyle}
+                className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-gray-700"
+              >
+                {convertIPAToTranscription(transcriptionLine)}
+              </p>
+            ) : null}
+            {englishLine ? (
+              <p
+                style={{ ...translationTextStyle, whiteSpace: "nowrap" }}
+                className="font-serif text-6xl font-bold"
+              >
+                {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
+              </p>
+            ) : null}
+          </div>
+        ) : null}
+      </div>
     </AbsoluteFill>
   );
 };
