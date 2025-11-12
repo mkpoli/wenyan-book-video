@@ -39,7 +39,7 @@ export const CreatorIntroduction: React.FC<CreatorIntroductionProps> = ({
       >
         <div className="flex flex-col gap-6 w-full items-center">
           <p className="font-[QijiCombo,serif] text-5xl leading-relaxed text-gray-900 text-center max-w-5xl">
-            兩者皆爲黃令東所製，得吉尼斯世界紀錄。
+            兩者皆爲　黃令東所製，得吉尼斯世界紀錄。
             <br />
             今由開源之士共治之，貢獻者有
             <span className="text-blue-500 text-3xl font-transcription mx-4">
