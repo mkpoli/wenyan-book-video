@@ -1,6 +1,5 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { FONT_FAMILY } from "./constants";
 import { convertIPAToTranscription } from "../convert";
 
 type SentenceEntry = {
@@ -32,12 +31,9 @@ function SentenceWithTrailingMarker({
 
   return (
     <span
-      className="relative inline align-middle"
-      style={{
-        color: highlight ? "#111827" : "#6b7280",
-        fontWeight: highlight ? "bold" : "normal",
-        // transition: "color 200ms ease",
-      }}
+      className={`relative inline align-middle ${
+        highlight ? "text-gray-900 font-bold" : "text-gray-500 font-normal"
+      }`}
     >
       {allButLast}
       <span
@@ -48,36 +44,6 @@ function SentenceWithTrailingMarker({
     </span>
   );
 }
-
-const originalTextStyle: React.CSSProperties = {
-  fontFamily: FONT_FAMILY,
-  // fontSize: 48,
-  fontSize: 72,
-  // lineHeight: 1.8,
-  lineHeight: 1.2,
-  textAlign: "start",
-  width: "max-content",
-  maxWidth: "1400px",
-  color: "#000000",
-  whiteSpace: "pre-line",
-  writingMode: "vertical-rl" as const,
-  textOrientation: "upright" as const,
-  // letterSpacing: "0.15em",
-  verticalAlign: "middle",
-  flex: 1,
-};
-
-const translationTextStyle: React.CSSProperties = {
-  lineHeight: 1.8,
-  margin: 0,
-  whiteSpace: "pre-line",
-};
-
-const translationLineContainer: React.CSSProperties = {
-  width: "75%",
-  textAlign: "center",
-  color: "#0f172a",
-};
 
 export const SegmentText: React.FC<SegmentTextProps> = ({
   text,
@@ -115,7 +81,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
   return (
     <AbsoluteFill>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 w-full h-full px-[40px] py-25 items-center justify-between">
-        <div style={originalTextStyle}>
+        <div className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1">
           {hasSentenceData
             ? sentences.map((sentence, index) => (
                 <SentenceWithTrailingMarker
@@ -127,28 +93,19 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             : text}
         </div>
         {transcriptionLine || englishLine ? (
-          <div style={translationLineContainer}>
+          <div className="w-3/4 text-center text-slate-900">
             {transcriptionLine ? (
-              <p
-                style={translationTextStyle}
-                className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500"
-              >
+              <p className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
                 [{transcriptionLine}]
               </p>
             ) : null}
             {transcriptionLine ? (
-              <p
-                style={translationTextStyle}
-                className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-600"
-              >
+              <p className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-600 leading-[1.8] m-0 whitespace-pre-line">
                 {convertIPAToTranscription(transcriptionLine)}
               </p>
             ) : null}
             {englishLine ? (
-              <p
-                style={{ ...translationTextStyle, whiteSpace: "nowrap" }}
-                className="font-serif text-6xl font-bold"
-              >
+              <p className="font-serif text-6xl font-bold leading-[1.8] m-0 whitespace-nowrap">
                 {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
               </p>
             ) : null}
