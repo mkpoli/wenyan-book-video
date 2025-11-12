@@ -80,7 +80,12 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
 
   return (
     <AbsoluteFill>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 w-full h-full px-[40px] py-25 items-center justify-between">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
+        {transcriptionLine ? (
+          <p className="font-ipa text-4xl tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
+            [{transcriptionLine}]
+          </p>
+        ) : null}
         <div className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1">
           {hasSentenceData
             ? sentences.map((sentence, index) => (
@@ -93,19 +98,18 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             : text}
         </div>
         {transcriptionLine || englishLine ? (
-          <div className="w-3/4 text-center text-slate-900">
+          <div className="w-3/4 text-center text-slate-900 mt-4">
             {transcriptionLine ? (
-              <p className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
-                [{transcriptionLine}]
-              </p>
-            ) : null}
-            {transcriptionLine ? (
-              <p className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-600 leading-[1.8] m-0 whitespace-pre-line">
+              <p className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
                 {convertIPAToTranscription(transcriptionLine)}
               </p>
             ) : null}
             {englishLine ? (
-              <p className="font-serif text-6xl font-bold leading-[1.8] m-0 whitespace-nowrap">
+              <p
+                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap ${
+                  englishLine.length > 70 ? "text-4xl" : "text-6xl"
+                }`}
+              >
                 {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
               </p>
             ) : null}
