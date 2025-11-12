@@ -10,8 +10,7 @@ def _():
     import time
     import json
     from pathlib import Path
-
-    return Path, json, requests, time
+    return Path, requests, time
 
 
 @app.cell
@@ -26,7 +25,6 @@ def _(Path):
     SYNTHESIZE_URL = "https://qieyun-tts.com/synthesize"
     MODEL_NAME = "廌言v1.1.1494"
     API_DELAY_SECONDS = 60  # Wait 1 minute between API calls
-
     return (
         API_DELAY_SECONDS,
         MODEL_NAME,
@@ -42,10 +40,9 @@ def _(
     MODEL_NAME,
     SYNTHESIZE_URL,
     audios_dir,
-    transcripts_dir,
-    time,
     requests,
-    json,
+    time,
+    transcripts_dir,
 ):
     # Find all transcript files
     # Sort naturally by extracting chapter and segment numbers
@@ -55,7 +52,7 @@ def _(
         parts = name.split("-")  # ["audio", "1", "2"]
         return (int(parts[1]), int(parts[2]))  # (chapter, segment)
 
-    transcript_files = sorted(transcripts_dir.glob("audio-*.txt"), key=sort_key)
+    transcript_files = sorted(transcripts_dir.glob("audio-*-*.txt"), key=sort_key)
 
     print(f"Found {len(transcript_files)} transcript files")
 

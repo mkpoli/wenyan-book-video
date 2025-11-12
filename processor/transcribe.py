@@ -9,7 +9,6 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
-
     return Path, re, requests
 
 
@@ -92,6 +91,13 @@ def _(re, requests):
         "能": 0,  # 【泥|開|登|平】工善也又獸名熊屬足似鹿亦賢能也奴登切又奴代奴來二切一,
         "達": 0,  # 【定|開|末|入】通達亦姓出何氏姓苑又虜複姓三氏後魏獻帝弟爲達奚氏又達勃氏後改爲襃氏周文帝達步妃生齊煬王憲唐割切二 vs 【透|開|末|入】挑達往來皃又唐割切
         "西": 0,  # 【心|開|齊|平】秋方說文曰鳥在巢上也日在西方而鳥西故因以爲東西之西篆文作㢴象形亦州名本漢車師國之地至貞觀討平以其地爲西州亦姓又漢複姓十一氏左傳秦帥西乞術宋大夫西鉏吾西鄉錯出世本又黃帝娶西陵氏爲妃名纍祖史記魏文侯鄴令西門豹周末分爲東西二周武公庶子西周爲氏晉有北海西郭陽何承天以爲西朝名士慕容廆以北平西方虔爲股肱何氏姓苑有西野氏西宮氏王符潛夫論姓氏志曰如有東門西郭南宮北郭皆是因居也先稽切十六 vs 【心|開|先|平】#《集韻》金方也
+        "列": 0,
+        "如": 0,
+        "左": 0,
+        "吾": 0,
+        "後": 0,
+        "引": 0,
+        "眾": 0,
     }
 
     def lookup_meaning(
@@ -327,18 +333,11 @@ def _(re, requests):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
-
     return replace_chars, transcribe_to_ipa
 
 
 @app.cell
-def _(
-    dictionary,
-    replace_chars,
-    segments_dir,
-    transcribe_to_ipa,
-    transcripts_dir,
-):
+def _(segments_dir):
     # Find all segment files
     # Sort naturally by extracting chapter and segment numbers
     def sort_key(path):
@@ -350,6 +349,17 @@ def _(
     segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
 
     print(f"Found {len(segment_files)} segment files")
+    return (segment_files,)
+
+
+@app.cell
+def _(
+    dictionary,
+    replace_chars,
+    segment_files,
+    transcribe_to_ipa,
+    transcripts_dir,
+):
 
     # Shared choice cache across all segments
     choice_cache = {}
