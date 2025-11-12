@@ -17,7 +17,7 @@ def _():
 @app.cell
 def _(Path):
     transcripts_dir = Path("../transcripts")
-    audios_dir = Path("../audios")
+    audios_dir = Path("../renderer/public/audios")
 
     # Ensure audios directory exists
     audios_dir.mkdir(exist_ok=True)

@@ -1,5 +1,4 @@
 import {
-  copyFileSync,
   existsSync,
   mkdirSync,
   readdirSync,
@@ -12,12 +11,11 @@ import { join } from "path";
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
 const projectRoot = process.env.PROJECT_ROOT ?? join(rendererDir, "..");
 const SEGMENTS_DIR = join(projectRoot, "segments");
-const AUDIOS_DIR = join(projectRoot, "audios");
+const AUDIOS_DIR = join(rendererDir, "public", "audios");
 const TRANSLATIONS_DIR = join(projectRoot, "translations");
 const TRANSCRIPTS_DIR = join(projectRoot, "transcripts");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
-const PUBLIC_AUDIO_DIR = join(rendererDir, "public", "audios");
 const FPS = 30;
 const AUDIO_TAIL_FRAMES = 12;
 const DEFAULT_AUDIO_DURATION_SECONDS = 3;
@@ -160,12 +158,6 @@ const generateSegments = async () => {
           const chineseSentences = splitChineseSentences(text);
           const englishSentences = splitEnglishSentences(translation);
           const ipaSentences = splitIPATranscriptions(transcript);
-
-          mkdirSync(PUBLIC_AUDIO_DIR, { recursive: true });
-          copyFileSync(
-            sourceAudioPath,
-            join(PUBLIC_AUDIO_DIR, publicAudioFile),
-          );
 
           if (hasFemaleAudio) {
             debugLog(`Using female voice for segment ${id}.`);

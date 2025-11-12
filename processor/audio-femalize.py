@@ -22,7 +22,7 @@ def _():
     # Initialize ElevenLabs client
     client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
 
-    AUDIO_DIR = Path("../audios/")
+    AUDIO_DIR = Path("../renderer/public/audios/")
     return AUDIO_DIR, client
 
 
