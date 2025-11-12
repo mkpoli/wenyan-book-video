@@ -7,9 +7,17 @@ import { loadSegments } from "./loadSegments";
 
 const segments = loadSegments();
 const DEFAULT_DURATION_FRAMES = 150;
+const DELAY_BETWEEN_SEGMENTS_FRAMES = 30; // 1 second at 30fps
+const segmentDuration = segments.reduce(
+  (sum, segment) => sum + segment.durationInFrames,
+  0,
+);
+const delaysDuration =
+  segments.length > 0
+    ? (segments.length - 1) * DELAY_BETWEEN_SEGMENTS_FRAMES
+    : 0;
 const totalDuration =
-  segments.reduce((sum, segment) => sum + segment.durationInFrames, 0) ||
-  DEFAULT_DURATION_FRAMES;
+  segmentDuration + delaysDuration || DEFAULT_DURATION_FRAMES;
 
 export const RemotionRoot: React.FC = () => {
   return (
