@@ -66,6 +66,22 @@
           '';
         };
 
+        remotion-render-cmd = pkgs.writeShellApplication {
+          name = "remotion-render";
+          runtimeInputs = [ pkgs.bun ];
+          text = ''
+            cd renderer && bun run remotion render
+          '';
+        };
+
+        remotion-dev-cmd = pkgs.writeShellApplication {
+          name = "remotion-dev";
+          runtimeInputs = [ pkgs.bun ];
+          text = ''
+            cd renderer && bun run dev
+          '';
+        };
+
         # Collect all command packages
         commandPackages = [
           segment-text-cmd
@@ -73,6 +89,8 @@
           synthesize-cmd
           transcribe-cmd
           main-cmd
+          remotion-render-cmd
+          remotion-dev-cmd
         ];
       in {
         # Expose commands as packages
@@ -82,6 +100,8 @@
           synthesize = synthesize-cmd;
           transcribe = transcribe-cmd;
           main = main-cmd;
+          remotion-render = remotion-render-cmd;
+          remotion-dev = remotion-dev-cmd;
         };
 
         devShells.default = pkgs.mkShell {
@@ -95,6 +115,9 @@
             # Node.js for book scripts
             pkgs.nodejs_20
             pkgs.nodePackages.npm
+
+            # Bun for renderer
+            pkgs.bun
 
             # System utilities
             pkgs.git
@@ -181,6 +204,8 @@
             echo "  synthesize      - Edit synthesize.py with marimo"
             echo "  audio-femalize  - Edit audio-femalize.py with marimo"
             echo "  main            - Run main.py"
+            echo "  remotion-dev    - Start Remotion dev server"
+            echo "  remotion-render - Render video with Remotion"
             echo ""
             echo "To activate the Python virtual environment:"
             echo "  cd processor && source .venv/bin/activate"
