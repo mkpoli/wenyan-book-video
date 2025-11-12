@@ -29,18 +29,12 @@ export const BookTitle: React.FC<BookTitleProps> = ({ durationInFrames }) => {
     },
   );
 
-  const scale = interpolate(frame, [0, fadeInDuration], [0.9, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-
   return (
     <AbsoluteFill className="bg-white flex items-center justify-center flex-col">
       <div
         className="flex items-center justify-center flex-col"
         style={{
           opacity,
-          transform: `scale(${scale})`,
         }}
       >
         <svg
