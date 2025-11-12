@@ -49,8 +49,41 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
 };
 
 const splitChineseSentences = (text: string): string[] => {
-  const matches = text.match(/[^。！？]*[。！？]?/g) ?? [];
-  return matches.map((sentence) => sentence.trim()).filter(Boolean);
+  const sentences: string[] = [];
+  let currentSentence = "";
+  let insideQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+
+    if (char === "『") {
+      insideQuotes = true;
+      currentSentence += char;
+    } else if (char === "』") {
+      insideQuotes = false;
+      currentSentence += char;
+    } else if (
+      (char === "。" || char === "！" || char === "？") &&
+      !insideQuotes
+    ) {
+      currentSentence += char;
+      const trimmed = currentSentence.trim();
+      if (trimmed.length > 0) {
+        sentences.push(trimmed);
+      }
+      currentSentence = "";
+    } else {
+      currentSentence += char;
+    }
+  }
+
+  // Add any remaining text as the last sentence
+  const trimmed = currentSentence.trim();
+  if (trimmed.length > 0) {
+    sentences.push(trimmed);
+  }
+
+  return sentences;
 };
 
 const splitEnglishSentences = (translation: string | null): string[] => {
