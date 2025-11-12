@@ -27,14 +27,6 @@ def _():
 
 
 @app.cell
-def _(client):
-    available_voices = client.voices.search().voices
-    for voice in available_voices:
-        print(f"{voice.voice_id} {voice.name}")
-    return
-
-
-@app.cell
 def _(AUDIO_DIR):
     import json
     # Ensure female directory exists
