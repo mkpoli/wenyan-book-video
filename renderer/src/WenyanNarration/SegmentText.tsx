@@ -40,7 +40,7 @@ function SentenceWithTrailingMarker({
     >
       {allButLast}
       <span
-        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-1/2 after:translate-y-1/2 after:text-red-400 after:pointer-events-none after:select-none after:duration-200 after:ease-in-out after:font-normal`}
+        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-[42%] after:translate-y-[48%] after:text-red-400 after:pointer-events-none after:select-none after:duration-200 after:ease-in-out after:font-normal`}
       >
         {lastChar}
       </span>
