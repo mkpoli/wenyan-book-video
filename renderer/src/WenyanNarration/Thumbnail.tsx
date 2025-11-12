@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Img, staticFile } from "remotion";
 
 interface ThumbnailProps {
   readonly durationInFrames: number;
@@ -8,8 +8,7 @@ interface ThumbnailProps {
 export const Thumbnail: React.FC<ThumbnailProps> = () => {
   return (
     <AbsoluteFill className="bg-white flex items-center justify-center flex-col">
-      <div className="flex flex-col items-center justify-center gap-8">
-        {/* Logo from BookTitle */}
+      {/* <div className="flex flex-col items-center justify-center">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +16,7 @@ export const Thumbnail: React.FC<ThumbnailProps> = () => {
           width="800"
           height="800"
           viewBox="0, 0, 296.339, 296.339"
-          className="max-w-[80%] max-h-[80%]"
+          className="max-w-[80%] max-h-[80%] -mb-32 -mt-32"
         >
           <g id="Layer_1" transform="translate(-107.02, -433.4)">
             <g>
@@ -72,11 +71,21 @@ export const Thumbnail: React.FC<ThumbnailProps> = () => {
             </g>
           </g>
         </svg>
-        {/* Text "陰符" */}
-        <div className="font-[QijiCombo,serif] text-7xl font-bold text-gray-900 text-center">
-          陰符
+        <div className="flex items-center justify-center">
+          <Img
+            src={staticFile("images/10784-陰.svg")}
+            className="h-100 w-auto object-contain"
+          />
+          <Img
+            src={staticFile("images/3307-符.svg")}
+            className="h-100 w-auto object-contain"
+          />
         </div>
-      </div>
+      </div> */}
+      <Img
+        src={staticFile("images/thumbnail.svg")}
+        className="w-full h-full object-contain"
+      />
     </AbsoluteFill>
   );
 };
