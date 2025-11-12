@@ -84,7 +84,7 @@ export const WenyanNarration: React.FC<
           from={chapterTitleStartFrame}
           durationInFrames={readingDuration}
         >
-          <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.015} loop />
+          <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
       )}
       {shouldShowTitle && (
