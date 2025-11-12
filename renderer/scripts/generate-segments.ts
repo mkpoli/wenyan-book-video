@@ -11,6 +11,7 @@ import { join } from "path";
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
 const SEGMENTS_DIR = join(rendererDir, "public", "segments");
 const AUDIOS_DIR = join(rendererDir, "public", "audios");
+const AUDIOS_FEMALE_DIR = join(AUDIOS_DIR, "female");
 const TRANSLATIONS_DIR = join(rendererDir, "public", "translations");
 const TRANSCRIPTS_DIR = join(rendererDir, "public", "transcripts");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
@@ -131,12 +132,14 @@ const generateSegments = async () => {
           const audioFile = `audio-${id}.mp3`;
           const femaleAudioFile = `audio-${id}-f.mp3`;
           const maleAudioPath = join(AUDIOS_DIR, audioFile);
-          const femaleAudioPath = join(AUDIOS_DIR, "female", femaleAudioFile);
+          const femaleAudioPath = join(AUDIOS_FEMALE_DIR, femaleAudioFile);
           const hasFemaleAudio = existsSync(femaleAudioPath);
           const sourceAudioPath = hasFemaleAudio
             ? femaleAudioPath
             : maleAudioPath;
-          const publicAudioFile = hasFemaleAudio ? femaleAudioFile : audioFile;
+          const publicAudioFile = hasFemaleAudio
+            ? `female/${femaleAudioFile}`
+            : audioFile;
 
           if (!existsSync(sourceAudioPath)) {
             debugLog(`Skipping ${file} (no matching audio).`);
