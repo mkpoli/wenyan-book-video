@@ -1,7 +1,8 @@
 So too does its usage depend on the task.
 
 “Error reporting” means this:
-whether by human mistake or material limitation,
+whether by human mistake
+or material limitation,
 the machine cannot fulfill what the user intends —
 thus it gives a message to inform the person of the cause.
 
