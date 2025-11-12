@@ -98,6 +98,8 @@ def _(re, requests):
         "後": 0,
         "引": 0,
         "眾": 0,
+        "方": 0,
+        "猶": 0,
     }
 
     def lookup_meaning(
