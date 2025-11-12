@@ -76,6 +76,13 @@ def _(re):
         "」": "",  # Remove CJK corner quotes
     }
 
+    # Special cases: characters with preselected pronunciation choices
+    # Maps character to choice index (0-based, where 0 = 1st choice)
+    SPECIAL_CASES = {
+        "不": 0,  # Always use 1st choice (index 0)
+        "有": 0,  # Always use 1st choice (index 0)
+    }
+
     def replace_chars(text):
         """Replace characters according to replacement rules."""
         for old_char, new_char in CHAR_REPLACEMENTS.items():
@@ -99,6 +106,7 @@ def _(re):
             text: Chinese text to transcribe
             dictionary: Dictionary mapping characters to list of (transcription, frequency) tuples
             choice_cache: Optional dict to cache user choices for characters with multiple readings
+                          Characters in SPECIAL_CASES are automatically handled without prompting
         """
         if choice_cache is None:
             choice_cache = {}
@@ -117,9 +125,24 @@ def _(re):
                 if readings and len(readings) > 0:
                     # Check if we have multiple options
                     if len(readings) > 1:
-                        # Check cache first
+                        # Check for special cases first
                         cache_key = ch
-                        if cache_key in choice_cache:
+                        if ch in SPECIAL_CASES:
+                            # Special case: use specified choice index
+                            choice_idx = SPECIAL_CASES[ch]
+                            # Validate choice index is within bounds
+                            if 0 <= choice_idx < len(readings):
+                                transcription = readings[choice_idx][0]
+                            else:
+                                # Fallback to first choice if index is out of bounds
+                                print(
+                                    f"Warning: Special case choice index {choice_idx} for '{ch}' "
+                                    f"is out of bounds (max: {len(readings)-1}), using 1st choice"
+                                )
+                                transcription = readings[0][0]
+                            # Cache the choice for consistency
+                            choice_cache[cache_key] = transcription
+                        elif cache_key in choice_cache:
                             # Use cached choice
                             transcription = choice_cache[cache_key]
                         else:
