@@ -3,13 +3,13 @@ as once was Guangling in ancient days,
 or the desolate city sung of by Bao Zhao.
 
 Now, if we alter “A” to be four, it is thus:
-what was once “A” is now four.
+what was once “A” —
+is now four.
 
 To write it out means:
 that is the result obtained when the machine runs.
 The machine itself knows it,
 but man has no means to see it directly.
-Therefore, we use this command
-to make it display the outcome to us.
+Therefore, we can use this command to make it display the outcome to us.
 
 Someone then asked:

@@ -4,9 +4,12 @@ Then write it out.
 The phrases ‘I have a number’ and ‘I have a phrase’ —
 these both refer to kinds of variables.
 
-A number is that by which one performs calculations.
-A phrase is that by which one conveys words to people.
-Each thing has its own kind and should not be confused —
+A number —
+is that by which one performs calculations.
+A phrase —
+is that by which one conveys words to people.
+Each thing has its own kind
+and should not be confused —
 just as a horse is not a deer,
 and a human is not a spirit.
 
