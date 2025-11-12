@@ -1,6 +1,7 @@
 import "./index.css";
 import { Composition } from "remotion";
 import { WenyanNarration, wenyanNarrationSchema } from "./WenyanNarration";
+import { BookTitle } from "./WenyanNarration/BookTitle";
 import { loadSegments } from "./loadSegments";
 
 // Each <Composition> is an entry in the sidebar!
@@ -9,6 +10,7 @@ const segments = loadSegments();
 const DEFAULT_DURATION_FRAMES = 150;
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
+const BOOK_TITLE_DURATION_FRAMES = 180; // 6 seconds at 30fps
 
 // Get unique chapter numbers
 const uniqueChapters = new Set(
@@ -23,7 +25,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
   );
 
   if (chapterSegments.length === 0) {
-    return DEFAULT_DURATION_FRAMES;
+    return DEFAULT_DURATION_FRAMES + BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES;
   }
 
   const segmentDuration = chapterSegments.reduce(
@@ -34,7 +36,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
     chapterSegments.length > 0
       ? (chapterSegments.length - 1) * DELAY_BETWEEN_SEGMENTS_FRAMES
       : 0;
-  const titleDuration = CHAPTER_TITLE_DURATION_FRAMES;
+  const titleDuration = BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES;
 
   return segmentDuration + delaysDuration + titleDuration;
 };
@@ -42,6 +44,15 @@ const calculateChapterDuration = (chapterNumber: number): number => {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Book Title Page - appears before all chapters */}
+      <Composition
+        id="BookTitle"
+        component={BookTitle}
+        durationInFrames={BOOK_TITLE_DURATION_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       {chapterNumbers.map((chapterNumber) => {
         const duration = calculateChapterDuration(chapterNumber);
         return (

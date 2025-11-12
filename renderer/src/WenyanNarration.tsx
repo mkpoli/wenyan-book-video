@@ -3,6 +3,7 @@ import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
 import { ChapterTitle } from "./WenyanNarration/ChapterTitle";
+import { BookTitle } from "./WenyanNarration/BookTitle";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -10,6 +11,7 @@ export const wenyanNarrationSchema = z.object({
 });
 
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
+const BOOK_TITLE_DURATION_FRAMES = 180; // 6 seconds at 30fps
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 
@@ -26,20 +28,32 @@ export const WenyanNarration: React.FC<
         )
       : allSegments;
 
-  // Always show chapter title at the start when filtering by chapter
+  // Always show book title and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
-  let currentFrame = shouldShowTitle ? CHAPTER_TITLE_DURATION_FRAMES : 0;
+  let currentFrame = shouldShowTitle
+    ? BOOK_TITLE_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES
+    : 0;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
       {shouldShowTitle && (
-        <Sequence from={0} durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
-          <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
-          <ChapterTitle
-            chapterNumber={chapterNumber!}
+        <>
+          {/* Book Title Page - appears first */}
+          <Sequence from={0} durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
+            <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
+          </Sequence>
+          {/* Chapter Title - appears after book title */}
+          <Sequence
+            from={BOOK_TITLE_DURATION_FRAMES}
             durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-          />
-        </Sequence>
+          >
+            <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
+            <ChapterTitle
+              chapterNumber={chapterNumber!}
+              durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+            />
+          </Sequence>
+        </>
       )}
 
       {segments.map((segment, index) => {
