@@ -110,14 +110,20 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
             {transcriptionLine ? (
-              <p className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
+              <p
+                className={`font-transcription tracking-wide font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line ${transcriptionLine.length > 100 ? "text-2xl" : "text-5xl"}`}
+              >
                 {convertIPAToTranscription(transcriptionLine)}
               </p>
             ) : null}
             {englishLine ? (
               <p
                 className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap ${
-                  englishLine.length > 70 ? "text-4xl" : "text-6xl"
+                  englishLine.length > 70
+                    ? englishLine.length > 100
+                      ? "text-2xl"
+                      : "text-4xl"
+                    : "text-6xl"
                 }`}
               >
                 {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
