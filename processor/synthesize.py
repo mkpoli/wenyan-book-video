@@ -16,7 +16,7 @@ def _():
 
 @app.cell
 def _(Path):
-    transcripts_dir = Path("../transcripts")
+    transcripts_dir = Path("../renderer/public/transcripts")
     audios_dir = Path("../renderer/public/audios")
 
     # Ensure audios directory exists

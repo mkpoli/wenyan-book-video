@@ -9,11 +9,10 @@ import { parseFile } from "music-metadata";
 import { join } from "path";
 
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
-const projectRoot = process.env.PROJECT_ROOT ?? join(rendererDir, "..");
-const SEGMENTS_DIR = join(projectRoot, "segments");
+const SEGMENTS_DIR = join(rendererDir, "public", "segments");
 const AUDIOS_DIR = join(rendererDir, "public", "audios");
-const TRANSLATIONS_DIR = join(projectRoot, "translations");
-const TRANSCRIPTS_DIR = join(projectRoot, "transcripts");
+const TRANSLATIONS_DIR = join(rendererDir, "public", "translations");
+const TRANSCRIPTS_DIR = join(rendererDir, "public", "transcripts");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const FPS = 30;

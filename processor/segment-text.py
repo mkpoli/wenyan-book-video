@@ -144,7 +144,7 @@ def _(create_segments, remove_markdown, split_sentences):
 @app.cell
 def _(Path):
     book_dir = Path("../book")
-    output_dir = Path("../segments")
+    output_dir = Path("../renderer/public/segments")
 
     # Ensure output directory exists
     output_dir.mkdir(exist_ok=True)

@@ -58,8 +58,8 @@ def _(dictionary_text):
 
 @app.cell
 def _(Path):
-    segments_dir = Path("../segments")
-    transcripts_dir = Path("../transcripts")
+    segments_dir = Path("../renderer/public/segments")
+    transcripts_dir = Path("../renderer/public/transcripts")
 
     # Ensure transcripts directory exists
     transcripts_dir.mkdir(exist_ok=True)
