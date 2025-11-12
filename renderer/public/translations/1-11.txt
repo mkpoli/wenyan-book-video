@@ -1,12 +1,15 @@
 He devised a plan to make programming in the Chinese tongue,
 and named his language “Wenyan” — Literary Speech.
-Is it not fitting, then, that this book employs it?
+The fact that this book employs it,
+is that not fitting indeed?
 
-In ancient times, all primers began with what was easiest to learn —
+In ancient times, all primers
+began with what was easiest to learn —
 such was The Three-Character Classic.
 Let us likewise begin from what is simplest.
 
-The most basic example of programming is called “Ask Heaven and Earth if They Are Well.”
+The most basic example of programming
+is called “Ask Heaven and Earth if They Are Well.”
 Its code is written as follows:
 
 I have a number,

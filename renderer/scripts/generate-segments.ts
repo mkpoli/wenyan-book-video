@@ -48,6 +48,10 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
   return DEFAULT_AUDIO_DURATION_SECONDS;
 };
 
+const countCharsExcludingQuotes = (text: string): number => {
+  return text.replace(/[「」『』]/g, "").length;
+};
+
 const splitChineseSentences = (text: string): string[] => {
   const sentences: string[] = [];
   let currentSentence = "";
@@ -205,11 +209,11 @@ const generateSegments = async () => {
 
           let assignedFrames = 0;
           const totalChars = chineseSentences
-            .map((sentence) => sentence.length)
+            .map((sentence) => countCharsExcludingQuotes(sentence))
             .reduce((sum, count) => sum + count, 0);
 
           const sentences = chineseSentences.map((chSentence, index) => {
-            const charCount = chSentence.length;
+            const charCount = countCharsExcludingQuotes(chSentence);
             const isLast = index === chineseSentences.length - 1;
             const proportion =
               totalChars > 0
