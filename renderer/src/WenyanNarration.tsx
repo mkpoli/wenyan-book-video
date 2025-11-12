@@ -16,13 +16,14 @@ export const WenyanNarration: React.FC<
   z.infer<typeof wenyanNarrationSchema>
 > = ({ chapterNumber }) => {
   const allSegments = loadSegments();
-  
+
   // Filter segments by chapter if chapterNumber is provided
-  const segments = chapterNumber !== undefined
-    ? allSegments.filter(
-        (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber
-      )
-    : allSegments;
+  const segments =
+    chapterNumber !== undefined
+      ? allSegments.filter(
+          (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber,
+        )
+      : allSegments;
 
   // Always show chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
@@ -31,17 +32,15 @@ export const WenyanNarration: React.FC<
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
       {shouldShowTitle && (
-        <Sequence
-          from={0}
-          durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-        >
+        <Sequence from={0} durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
+          <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
           <ChapterTitle
             chapterNumber={chapterNumber!}
             durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
           />
         </Sequence>
       )}
-      
+
       {segments.map((segment, index) => {
         const segmentStartFrame = currentFrame;
         const audioDurationFrames = segment.durationInFrames;
