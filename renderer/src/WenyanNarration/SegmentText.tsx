@@ -139,7 +139,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             {transcriptionLine ? (
               <p
                 style={translationTextStyle}
-                className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-gray-700"
+                className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-slate-600"
               >
                 {convertIPAToTranscription(transcriptionLine)}
               </p>
