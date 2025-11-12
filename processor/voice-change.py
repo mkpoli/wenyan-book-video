@@ -58,8 +58,18 @@ def _(
     female_dir,
     voice_settings,
 ):
+    import re
     from io import BytesIO
+    
+    # Pattern to match title files: audio-{number}.mp3
+    title_pattern = re.compile(r'^audio-\d+\.mp3$')
+    
     for file in AUDIO_DIR.glob("*.mp3"):
+        # Skip title files (keep male voice for titles)
+        if title_pattern.match(file.name):
+            print(f"⏭ Skipping title file (keeping male voice): {file.name}")
+            continue
+            
         female_file = female_dir / f"{file.stem}-f.mp3"
         if female_file.exists():
             continue
