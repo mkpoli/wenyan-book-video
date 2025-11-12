@@ -2,6 +2,7 @@ import "./index.css";
 import { Composition } from "remotion";
 import { WenyanNarration, wenyanNarrationSchema } from "./WenyanNarration";
 import { BookTitle } from "./WenyanNarration/BookTitle";
+import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
 
 // Each <Composition> is an entry in the sidebar!
@@ -62,6 +63,15 @@ const calculateChapterDuration = (chapterNumber: number): number => {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Custom Thumbnail with Logo and 陰符 */}
+      <Composition
+        id="Thumbnail"
+        component={Thumbnail}
+        durationInFrames={90}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       {/* Book Title Page - appears before all chapters */}
       <Composition
         id="BookTitle"

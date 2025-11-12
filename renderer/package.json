@@ -58,7 +58,8 @@
     "render:chapter11": "remotion render WenyanNarration-Chapter11 out/chapter11.mp4",
     "render:chapter12": "remotion render WenyanNarration-Chapter12 out/chapter12.mp4",
     "render:chapter13": "remotion render WenyanNarration-Chapter13 out/chapter13.mp4",
-    "render:all": "npm run render:chapter1 && npm run render:chapter2 && npm run render:chapter3 && npm run render:chapter4 && npm run render:chapter5 && npm run render:chapter6 && npm run render:chapter7 && npm run render:chapter8 && npm run render:chapter9 && npm run render:chapter10 && npm run render:chapter11 && npm run render:chapter12 && npm run render:chapter13"
+    "render:all": "npm run render:chapter1 && npm run render:chapter2 && npm run render:chapter3 && npm run render:chapter4 && npm run render:chapter5 && npm run render:chapter6 && npm run render:chapter7 && npm run render:chapter8 && npm run render:chapter9 && npm run render:chapter10 && npm run render:chapter11 && npm run render:chapter12 && npm run render:chapter13",
+    "thumbnail": "remotion still src/index.ts Thumbnail --frame=60 out/thumbnails/thumbnail.png"
   },
   "sideEffects": [
     "*.css"
