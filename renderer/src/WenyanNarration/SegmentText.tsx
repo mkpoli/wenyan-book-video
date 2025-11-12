@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { convertIPAToTranscription } from "../convert";
 
 type SentenceEntry = {
@@ -12,6 +12,7 @@ type SentenceEntry = {
 interface SegmentTextProps {
   readonly text: string;
   readonly sentences: ReadonlyArray<SentenceEntry>;
+  readonly fadeInDuration?: number; // Duration in frames for fade-in, undefined means no fade-in
 }
 
 function SentenceWithTrailingMarker({
@@ -48,9 +49,23 @@ function SentenceWithTrailingMarker({
 export const SegmentText: React.FC<SegmentTextProps> = ({
   text,
   sentences,
+  fadeInDuration,
 }) => {
   const frame = useCurrentFrame();
   const hasSentenceData = sentences.length > 0;
+
+  // Calculate fade-in opacity if fadeInDuration is provided
+  const opacity = fadeInDuration
+    ? interpolate(
+        frame,
+        [0, fadeInDuration],
+        [0, 1],
+        {
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        }
+      )
+    : 1;
 
   let cumulative = 0;
   let currentSentenceIndex = -1;
@@ -79,7 +94,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
     currentSentence?.english?.replace(/\s+/g, " ").trim() ?? null;
 
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{ opacity }}>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
         {transcriptionLine ? (
           <p className="font-ipa text-4xl tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">

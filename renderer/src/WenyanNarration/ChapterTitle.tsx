@@ -1,5 +1,10 @@
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import {
+  AbsoluteFill,
+  interpolate,
+  useCurrentFrame,
+  useVideoConfig,
+} from "remotion";
 
 const CHAPTER_TITLES: Record<number, string> = {
   1: "明義第一",
@@ -30,34 +35,19 @@ export const ChapterTitle: React.FC<ChapterTitleProps> = ({
   const { fps } = useVideoConfig();
   const title = CHAPTER_TITLES[chapterNumber] || "";
 
-  // Fade in/out animation
-  const fadeInDuration = fps * 0.5; // 0.5 seconds
-  const fadeOutDuration = fps * 0.5; // 0.5 seconds
+  // Classical fade in/out with subtle slide
+  const fadeInDuration = fps * 0.8; // 0.8 seconds - slower, more elegant
+  const fadeOutDuration = fps * 0.8; // 0.8 seconds
   const visibleDuration = durationInFrames - fadeInDuration - fadeOutDuration;
 
   const opacity = interpolate(
     frame,
-    [
-      0,
-      fadeInDuration,
-      fadeInDuration + visibleDuration,
-      durationInFrames,
-    ],
+    [0, fadeInDuration, fadeInDuration + visibleDuration, durationInFrames],
     [0, 1, 1, 0],
     {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
-    }
-  );
-
-  const scale = interpolate(
-    frame,
-    [0, fadeInDuration],
-    [0.8, 1],
-    {
-      extrapolateLeft: "clamp",
-      extrapolateRight: "clamp",
-    }
+    },
   );
 
   return (
@@ -77,7 +67,6 @@ export const ChapterTitle: React.FC<ChapterTitleProps> = ({
           color: "#1a1a1a",
           textAlign: "center",
           opacity,
-          transform: `scale(${scale})`,
           writingMode: "vertical-rl",
           textOrientation: "upright",
           letterSpacing: "0.1em",
@@ -88,4 +77,3 @@ export const ChapterTitle: React.FC<ChapterTitleProps> = ({
     </AbsoluteFill>
   );
 };
-

@@ -11,6 +11,7 @@ export const wenyanNarrationSchema = z.object({
 
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
+const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 
 export const WenyanNarration: React.FC<
   z.infer<typeof wenyanNarrationSchema>
@@ -65,6 +66,11 @@ export const WenyanNarration: React.FC<
             <SegmentText
               text={segment.text}
               sentences={segment.sentences ?? []}
+              fadeInDuration={
+                shouldShowTitle && index === 0
+                  ? TRANSITION_FADE_IN_FRAMES
+                  : undefined
+              }
             />
           </Sequence>
         );
