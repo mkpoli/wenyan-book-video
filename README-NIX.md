@@ -70,8 +70,8 @@ After entering the shell, you can use these convenient commands:
 
 1. **Edit scripts with marimo** (opens in browser with live reload):
    ```bash
-   segment-text    # Edit segment-text.py
-   audio-femalize  # Edit audio-femalize.py
+   segment-text  # Edit segment-text.py
+   voice-change  # Edit voice-change.py
    ```
 
 2. **Run main script**:

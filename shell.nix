@@ -43,8 +43,8 @@ in pkgs.mkShell {
       cd processor && uv run marimo edit segment-text.py --watch
     }
 
-    audio-femalize() {
-      cd processor && uv run marimo edit audio-femalize.py --watch
+    voice-change() {
+      cd processor && uv run marimo edit voice-change.py --watch
     }
 
     main() {
@@ -52,12 +52,12 @@ in pkgs.mkShell {
     }
 
     # Export functions so they're available in the shell
-    export -f segment-text audio-femalize main
+    export -f segment-text voice-change main
 
     echo "Available commands:"
-    echo "  segment-text    - Edit segment-text.py with marimo"
-    echo "  audio-femalize  - Edit audio-femalize.py with marimo"
-    echo "  main            - Run main.py"
+    echo "  segment-text  - Edit segment-text.py with marimo"
+    echo "  voice-change  - Edit voice-change.py with marimo"
+    echo "  main          - Run main.py"
     echo ""
     echo "Then in processor directory:"
     echo "  uv sync  # or uv pip install -e ."

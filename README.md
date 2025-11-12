@@ -50,6 +50,6 @@ See [README-NIX.md](README-NIX.md) for Nix-based development environment setup.
 ## Commands
 
 - `segment-text` - Edit segment-text.py with marimo
-- `audio-femalize` - Edit audio-femalize.py with marimo
+- `voice-change` - Edit voice-change.py with marimo
 - `main` - Run main.py
 

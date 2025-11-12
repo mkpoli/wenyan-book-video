@@ -30,12 +30,12 @@
           '';
         };
 
-        audio-femalize-cmd = pkgs.writeShellApplication {
-          name = "audio-femalize";
+        voice-change-cmd = pkgs.writeShellApplication {
+          name = "voice-change";
           runtimeInputs = runtimePackages;
           text = ''
             export UV_PYTHON="${toString python313}/bin/python3"
-            cd processor && uv run marimo edit audio-femalize.py --watch
+            cd processor && uv run marimo edit voice-change.py --watch
           '';
         };
 
@@ -85,7 +85,7 @@
         # Collect all command packages
         commandPackages = [
           segment-text-cmd
-          audio-femalize-cmd
+          voice-change-cmd
           synthesize-cmd
           transcribe-cmd
           main-cmd
@@ -96,7 +96,7 @@
         # Expose commands as packages
         packages = {
           segment-text = segment-text-cmd;
-          audio-femalize = audio-femalize-cmd;
+          voice-change = voice-change-cmd;
           synthesize = synthesize-cmd;
           transcribe = transcribe-cmd;
           main = main-cmd;
@@ -199,11 +199,11 @@
             # Commands are available via packages in PATH
             echo ""
             echo "Available commands:"
-            echo "  segment-text    - Edit segment-text.py with marimo"
-            echo "  transcribe      - Edit transcribe.py with marimo"
-            echo "  synthesize      - Edit synthesize.py with marimo"
-            echo "  audio-femalize  - Edit audio-femalize.py with marimo"
-            echo "  main            - Run main.py"
+            echo "  segment-text   - Edit segment-text.py with marimo"
+            echo "  transcribe     - Edit transcribe.py with marimo"
+            echo "  synthesize     - Edit synthesize.py with marimo"
+            echo "  voice-change   - Edit voice-change.py with marimo"
+            echo "  main           - Run main.py"
             echo "  remotion-dev    - Start Remotion dev server"
             echo "  remotion-render - Render video with Remotion"
             echo ""
