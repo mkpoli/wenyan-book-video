@@ -7,6 +7,7 @@ import { BookTitle } from "./WenyanNarration/BookTitle";
 import { WenyanLanguageIntroduction } from "./WenyanNarration/WenyanLanguageIntroduction";
 import { BookIntroduction } from "./WenyanNarration/BookIntroduction";
 import { CreatorIntroduction } from "./WenyanNarration/CreatorIntroduction";
+import { VideoExplanation } from "./WenyanNarration/VideoExplanation";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -18,6 +19,7 @@ const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
 const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 
@@ -41,6 +43,7 @@ export const WenyanNarration: React.FC<
       WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
       BOOK_INTRODUCTION_DURATION_FRAMES +
       CREATOR_INTRODUCTION_DURATION_FRAMES +
+      VIDEO_EXPLANATION_DURATION_FRAMES +
       CHAPTER_TITLE_DURATION_FRAMES
     : 0;
 
@@ -86,13 +89,28 @@ export const WenyanNarration: React.FC<
               durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
             />
           </Sequence>
-          {/* Chapter Title - appears after introductions */}
+          {/* Video Explanation - appears after creator introduction */}
           <Sequence
             from={
               BOOK_TITLE_DURATION_FRAMES +
               WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
               BOOK_INTRODUCTION_DURATION_FRAMES +
               CREATOR_INTRODUCTION_DURATION_FRAMES
+            }
+            durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
+          >
+            <VideoExplanation
+              durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
+            />
+          </Sequence>
+          {/* Chapter Title - appears after introductions */}
+          <Sequence
+            from={
+              BOOK_TITLE_DURATION_FRAMES +
+              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+              BOOK_INTRODUCTION_DURATION_FRAMES +
+              CREATOR_INTRODUCTION_DURATION_FRAMES +
+              VIDEO_EXPLANATION_DURATION_FRAMES
             }
             durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
           >

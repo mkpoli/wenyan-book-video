@@ -6,11 +6,11 @@ import {
   useVideoConfig,
 } from "remotion";
 
-interface CreatorIntroductionProps {
+interface VideoExplanationProps {
   readonly durationInFrames: number;
 }
 
-export const CreatorIntroduction: React.FC<CreatorIntroductionProps> = ({
+export const VideoExplanation: React.FC<VideoExplanationProps> = ({
   durationInFrames,
 }) => {
   const frame = useCurrentFrame();
@@ -38,25 +38,27 @@ export const CreatorIntroduction: React.FC<CreatorIntroductionProps> = ({
         style={{ opacity }}
       >
         <div className="flex flex-col gap-6 w-full items-center">
-          <p className="font-[QijiCombo,serif] text-5xl leading-relaxed text-gray-900 text-center max-w-5xl">
-            兩者及此書體皆爲　黃令東所製，得吉尼斯世界紀錄。
-            <br />
-            今由開源之士共治之，貢獻者有
-            <span className="text-blue-500 text-3xl font-transcription mr-2 ml-10">
-              @antfu
-            </span>
-            及諸君子。
-          </p>
+          <h2 className="font-serif text-5xl font-bold text-gray-900 text-center">
+            About This Video
+          </h2>
+          <h2 className="font-[QijiCombo,serif] text-5xl font-bold text-gray-900 text-center">
+            誦《文言陰符》記
+          </h2>
           <p className="font-serif text-3xl leading-relaxed text-gray-700 text-center max-w-5xl">
-            Both were created by Lingdong Huang, who holds a Guinness World
-            Record.
+            This video is an attempt to render{" "}
+            <span className="italic">The Book</span> aloud through a TTS system
+            based on the <span className="italic">Tshet-uinh (Qieyun)</span>{" "}
+            Phonological System (Middle Chinese), developed by @cinix, together
+            with various other modern technologies.
+          </p>
+          <p className="font-[QijiCombo,serif] text-4xl leading-relaxed text-gray-900 text-center max-w-5xl">
+            是映像也，以　
+            <span className="font-transcription text-2xl mr-2 ml-10">
+              @cinix
+            </span>
+            氏所製中古漢語切韻音系語音合成之法，
             <br />
-            Today they are maintained by the open-source community, with
-            contributors including{" "}
-            <span className="text-blue-500 text-2xl font-transcription">
-              @antfu
-            </span>{" "}
-            and many others.
+            兼采今時羣工之妙，以誦《文言陰符》，遂成其作。
           </p>
         </div>
       </div>

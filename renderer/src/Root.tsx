@@ -14,6 +14,7 @@ const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
 const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 
 // Get unique chapter numbers
 const uniqueChapters = new Set(
@@ -24,7 +25,7 @@ const chapterNumbers = Array.from(uniqueChapters).sort((a, b) => a - b);
 // Calculate duration for a specific chapter
 const calculateChapterDuration = (chapterNumber: number): number => {
   const chapterSegments = segments.filter(
-    (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber
+    (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber,
   );
 
   if (chapterSegments.length === 0) {
@@ -34,6 +35,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
       WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
       BOOK_INTRODUCTION_DURATION_FRAMES +
       CREATOR_INTRODUCTION_DURATION_FRAMES +
+      VIDEO_EXPLANATION_DURATION_FRAMES +
       CHAPTER_TITLE_DURATION_FRAMES
     );
   }
@@ -51,6 +53,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
     WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
     BOOK_INTRODUCTION_DURATION_FRAMES +
     CREATOR_INTRODUCTION_DURATION_FRAMES +
+    VIDEO_EXPLANATION_DURATION_FRAMES +
     CHAPTER_TITLE_DURATION_FRAMES;
 
   return segmentDuration + delaysDuration + titleDuration;
