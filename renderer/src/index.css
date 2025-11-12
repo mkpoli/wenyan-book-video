@@ -45,4 +45,5 @@
 @theme {
   --font-serif: "IM Fell DW Pica English SC", serif;
   --font-ipa: "Tinos", serif;
+  --font-transcription: "IM Fell DW Pica", "Tinos", serif;
 }

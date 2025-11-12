@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { FONT_FAMILY } from "./constants";
+import { convertIPAToTranscription } from "../convert";
 
 type SentenceEntry = {
   chinese: string;
@@ -139,9 +140,17 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           {transcriptionLine ? (
             <p
               style={translationTextStyle}
-              className="font-ipa text-5xl font-normal mb-2 text-center w-full"
+              className="font-ipa text-4xl tracking-wide font-normal mb-2 text-center w-full text-slate-500"
             >
-              {transcriptionLine}
+              [{transcriptionLine}]
+            </p>
+          ) : null}
+          {transcriptionLine ? (
+            <p
+              style={translationTextStyle}
+              className="font-transcription tracking-wide text-5xl font-normal mb-2 text-center w-full text-gray-700"
+            >
+              {convertIPAToTranscription(transcriptionLine)}
             </p>
           ) : null}
           {englishLine ? (
