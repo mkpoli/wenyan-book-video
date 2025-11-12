@@ -14,8 +14,15 @@ def _():
 
 @app.cell
 def _(re):
+    def split_paragraphs(text):
+        """Split text into paragraphs (separated by blank lines)."""
+        # Split by double newlines (blank lines)
+        paragraphs = re.split(r"\n\s*\n", text)
+        # Filter out empty paragraphs
+        return [p.strip() for p in paragraphs if p.strip()]
+
     def remove_markdown(text):
-        """Remove markdown formatting from text."""
+        """Remove markdown formatting from text, preserving paragraph structure."""
         # Remove code block markers (```...```) but keep content as plain text
         text = re.sub(r"```[\s\S]*?```", lambda m: m.group(0)[3:-3], text)
 
@@ -28,8 +35,11 @@ def _(re):
         # Remove list markers (- ...) but keep the content
         text = re.sub(r"^-\s+", "", text, flags=re.MULTILINE)
 
-        # Convert all whitespace (including newlines) to single spaces
-        text = re.sub(r"\s+", " ", text)
+        # Convert multiple whitespace (but preserve single newlines within paragraph)
+        # Replace multiple spaces/tabs with single space
+        text = re.sub(r"[ \t]+", " ", text)
+        # Replace multiple newlines with single space (paragraph boundaries already split)
+        text = re.sub(r"\n+", " ", text)
 
         return text.strip()
 
@@ -54,7 +64,8 @@ def _(re):
         return [s for s in sentences if s and s.endswith("。")]
 
     def create_segments(sentences, min_chars=85, max_chars=95):
-        """Group sentences into segments of 85-95 characters."""
+        """Group sentences into segments of 85-95 characters.
+        This function processes sentences within a single paragraph only."""
         segments = []
         current_segment = []
         current_length = 0
@@ -109,11 +120,11 @@ def _(re):
 
         return segments
 
-    return create_segments, remove_markdown, split_sentences
+    return create_segments, remove_markdown, split_paragraphs, split_sentences
 
 
 @app.cell
-def _(create_segments, remove_markdown, split_sentences, Path):
+def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path):
     def segments_exist(chapter_num, output_dir):
         """Check if segments already exist for a chapter."""
         # Check if at least one segment file exists for this chapter
@@ -122,7 +133,7 @@ def _(create_segments, remove_markdown, split_sentences, Path):
         return len(existing_files) > 0
 
     def process_chapter(chapter_path, output_dir):
-        """Process a single chapter file."""
+        """Process a single chapter file, respecting paragraph boundaries."""
         # Get chapter number from filename (e.g., "01 明義第一.md" -> "1")
         chapter_num = chapter_path.stem.split()[0]
         chapter_num = str(int(chapter_num))  # Remove leading zeros
@@ -136,22 +147,34 @@ def _(create_segments, remove_markdown, split_sentences, Path):
         with open(chapter_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        # Remove markdown
-        text = remove_markdown(content)
+        # Split into paragraphs first (before removing markdown)
+        paragraphs = split_paragraphs(content)
 
-        # Split into sentences
-        sentences = split_sentences(text)
+        # Process each paragraph separately
+        all_segments = []
+        for paragraph in paragraphs:
+            # Remove markdown from this paragraph
+            text = remove_markdown(paragraph)
 
-        # Create segments
-        segments = create_segments(sentences)
+            # Skip empty paragraphs
+            if not text.strip():
+                continue
+
+            # Split into sentences within this paragraph
+            sentences = split_sentences(text)
+
+            # Create segments within this paragraph only
+            # (sentences from different paragraphs will never be combined)
+            paragraph_segments = create_segments(sentences)
+            all_segments.extend(paragraph_segments)
 
         # Write segments to files
-        for i, segment in enumerate(segments, start=1):
+        for i, segment in enumerate(all_segments, start=1):
             output_path = output_dir / f"{chapter_num}-{i}.txt"
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(segment)
 
-        print(f"Processed {chapter_path.name}: {len(segments)} segments")
+        print(f"Processed {chapter_path.name}: {len(all_segments)} segments")
 
     return process_chapter, segments_exist
 
