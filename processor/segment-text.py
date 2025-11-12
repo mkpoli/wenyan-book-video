@@ -130,18 +130,14 @@ def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path)
         # Check if at least one segment file exists for this chapter
         pattern = f"{chapter_num}-*.txt"
         existing_files = list(output_dir.glob(pattern))
-        return len(existing_files) > 0
+        exists = len(existing_files) > 0
+        return exists
 
     def process_chapter(chapter_path, output_dir):
         """Process a single chapter file, respecting paragraph boundaries."""
         # Get chapter number from filename (e.g., "01 明義第一.md" -> "1")
         chapter_num = chapter_path.stem.split()[0]
         chapter_num = str(int(chapter_num))  # Remove leading zeros
-
-        # Check if segments already exist
-        if segments_exist(chapter_num, output_dir):
-            print(f"Skipping {chapter_path.name}: segments already exist")
-            return
 
         # Read the chapter
         with open(chapter_path, "r", encoding="utf-8") as f:
@@ -181,8 +177,8 @@ def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path)
 
 @app.cell
 def _(Path):
-    book_dir = Path("../book")
-    output_dir = Path("../renderer/public/segments")
+    book_dir = Path("../book").resolve()
+    output_dir = Path("../renderer/public/segments").resolve()
 
     # Ensure output directory exists
     output_dir.mkdir(exist_ok=True)
@@ -196,9 +192,23 @@ def _(Path):
 
 
 @app.cell
-def _(chapter_files, output_dir, process_chapter):
+def _(chapter_files, output_dir, process_chapter, segments_exist):
     # Process each chapter
     for chapter_file in chapter_files:
+        # Get chapter number from filename (e.g., "01 明義第一.md" -> "1")
+        chapter_num = chapter_file.stem.split()[0]
+        chapter_num = str(int(chapter_num))  # Remove leading zeros
+
+        # Check if segments already exist
+        pattern = f"{chapter_num}-*.txt"
+        existing_files = list(output_dir.glob(pattern))
+        if existing_files:
+            print(
+                f"Skipping {chapter_file.name}: {len(existing_files)} segment files already exist"
+            )
+            continue
+
+        print(f"Processing {chapter_file.name} (chapter {chapter_num})...")
         process_chapter(chapter_file, output_dir)
     return
 
