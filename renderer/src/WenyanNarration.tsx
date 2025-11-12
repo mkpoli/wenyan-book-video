@@ -8,6 +8,7 @@ import { WenyanLanguageIntroduction } from "./WenyanNarration/WenyanLanguageIntr
 import { BookIntroduction } from "./WenyanNarration/BookIntroduction";
 import { CreatorIntroduction } from "./WenyanNarration/CreatorIntroduction";
 import { VideoExplanation } from "./WenyanNarration/VideoExplanation";
+import { IntroBackgroundMusic } from "./WenyanNarration/IntroBackgroundMusic";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -22,6 +23,7 @@ const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
+const INTRO_BG_FADE_OUT_FRAMES = 60; // 2 seconds at 30fps for fade-out
 
 export const WenyanNarration: React.FC<
   z.infer<typeof wenyanNarrationSchema>
@@ -38,17 +40,53 @@ export const WenyanNarration: React.FC<
 
   // Always show book title, introductions, and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
-  let currentFrame = shouldShowTitle
+  // Intro duration excludes chapter title (chapter title belongs to reading section)
+  const introDuration = shouldShowTitle
     ? BOOK_TITLE_DURATION_FRAMES +
       WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
       BOOK_INTRODUCTION_DURATION_FRAMES +
       CREATOR_INTRODUCTION_DURATION_FRAMES +
-      VIDEO_EXPLANATION_DURATION_FRAMES +
-      CHAPTER_TITLE_DURATION_FRAMES
+      VIDEO_EXPLANATION_DURATION_FRAMES
     : 0;
+
+  // Chapter title starts the reading section
+  const chapterTitleStartFrame = introDuration;
+  const readingStartFrame =
+    chapterTitleStartFrame + CHAPTER_TITLE_DURATION_FRAMES;
+
+  // Calculate reading segments duration (includes chapter title)
+  const readingDuration =
+    CHAPTER_TITLE_DURATION_FRAMES +
+    segments.reduce((sum, segment, index) => {
+      const audioDurationFrames = segment.durationInFrames;
+      const visualDurationFrames =
+        audioDurationFrames +
+        (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
+      return sum + visualDurationFrames;
+    }, 0);
+
+  let currentFrame = readingStartFrame;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
+      {/* Background music for intro - bg.mp3 with fade-out */}
+      {shouldShowTitle && introDuration > 0 && (
+        <Sequence from={0} durationInFrames={introDuration}>
+          <IntroBackgroundMusic
+            durationInFrames={introDuration}
+            fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES}
+          />
+        </Sequence>
+      )}
+      {/* Background music for reading segments - bg2.mp3 (includes chapter title) */}
+      {shouldShowTitle && readingDuration > 0 && (
+        <Sequence
+          from={chapterTitleStartFrame}
+          durationInFrames={readingDuration}
+        >
+          <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.015} loop />
+        </Sequence>
+      )}
       {shouldShowTitle && (
         <>
           {/* Book Title Page - appears first */}
