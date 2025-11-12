@@ -35,12 +35,12 @@ function SentenceWithTrailingMarker({
       style={{
         color: highlight ? "#111827" : "#6b7280",
         fontWeight: highlight ? "bold" : "normal",
-        transition: "color 200ms ease",
+        // transition: "color 200ms ease",
       }}
     >
       {allButLast}
       <span
-        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-1/2 after:translate-y-1/2 after:text-red-400 after:pointer-events-none after:select-none after:transition-opacity after:duration-200 after:ease-in-out after:font-normal`}
+        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-1/2 after:translate-y-1/2 after:text-red-400 after:pointer-events-none after:select-none after:duration-200 after:ease-in-out after:font-normal`}
       >
         {lastChar}
       </span>
@@ -146,7 +146,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           ) : null}
           {englishLine ? (
             <p
-              style={translationTextStyle}
+              style={{ ...translationTextStyle, whiteSpace: "nowrap" }}
               className="font-serif text-6xl font-bold"
             >
               {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
