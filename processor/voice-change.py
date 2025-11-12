@@ -15,7 +15,7 @@ def _():
     load_dotenv()
 
     # Load API key from environment
-    ELEVENLABS_API_KEY = os.getenv('ELEVENLABS_API_KEY')
+    ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
     if not ELEVENLABS_API_KEY:
         raise ValueError("ELEVENLABS_API_KEY environment variable not set")
 
@@ -29,8 +29,9 @@ def _():
 @app.cell
 def _(AUDIO_DIR):
     import json
+
     # Ensure female directory exists
-    female_dir = AUDIO_DIR / 'female'
+    female_dir = AUDIO_DIR / "female"
     female_dir.mkdir(exist_ok=True)
 
     # API settings
@@ -39,12 +40,11 @@ def _(AUDIO_DIR):
     STABILITY = 0.5  # 50%
     SIMILARITY_BOOST = 0.75  # 75%
 
-    VOICE_ID = "Xb7hH8MSUJpSbSDYk0k2" # Alice
+    VOICE_ID = "Xb7hH8MSUJpSbSDYk0k2"  # Alice
 
-    voice_settings = json.dumps({
-        "stability": STABILITY,
-        "similarity_boost": SIMILARITY_BOOST
-    })
+    voice_settings = json.dumps(
+        {"stability": STABILITY, "similarity_boost": SIMILARITY_BOOST}
+    )
     return MODEL_ID, OUTPUT_FORMAT, VOICE_ID, female_dir, voice_settings
 
 
@@ -60,23 +60,23 @@ def _(
 ):
     import re
     from io import BytesIO
-    
-    # Pattern to match title files: audio-{number}.mp3
-    title_pattern = re.compile(r'^audio-\d+\.mp3$')
-    
+
+    # Pattern to match files: audio-{number}-{number}.mp3
+    audio_pattern = re.compile(r"^audio-\d+-\d+\.mp3$")
+
     for file in AUDIO_DIR.glob("*.mp3"):
-        # Skip title files (keep male voice for titles)
-        if title_pattern.match(file.name):
-            print(f"⏭ Skipping title file (keeping male voice): {file.name}")
+        # Only process files matching audio-\d+-\d+ pattern
+        if not audio_pattern.match(file.name):
+            print(f"⏭ Skipping {file.name} (does not match audio-\\d+-\\d+ pattern)")
             continue
-            
+
         female_file = female_dir / f"{file.stem}-f.mp3"
         if female_file.exists():
             continue
         print(f"Generating {female_file} from {file}...")
 
         # Read input audio file and convert to BytesIO
-        with open(file, 'rb') as audio_file:
+        with open(file, "rb") as audio_file:
             audio_data = BytesIO(audio_file.read())
 
         # Perform speech-to-speech conversion
@@ -86,14 +86,14 @@ def _(
                 audio=audio_data,
                 model_id=MODEL_ID,
                 output_format=OUTPUT_FORMAT,
-                voice_settings=voice_settings
+                voice_settings=voice_settings,
             )
 
             # Convert generator to bytes
             audio_bytes = b"".join(audio_stream)
 
             # Save the converted audio
-            with open(female_file, 'wb') as output_file:
+            with open(female_file, "wb") as output_file:
                 output_file.write(audio_bytes)
             print(f"✓ Successfully generated {female_file}")
         except Exception as e:
