@@ -10,41 +10,58 @@ const DEFAULT_DURATION_FRAMES = 150;
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 
-const segmentDuration = segments.reduce(
-  (sum, segment) => sum + segment.durationInFrames,
-  0,
-);
-const delaysDuration =
-  segments.length > 0
-    ? (segments.length - 1) * DELAY_BETWEEN_SEGMENTS_FRAMES
-    : 0;
-
-// Count unique chapters for title duration
+// Get unique chapter numbers
 const uniqueChapters = new Set(
   segments.map((segment) => parseInt(segment.id.split("-")[0], 10)),
 );
-const titlesDuration = uniqueChapters.size * CHAPTER_TITLE_DURATION_FRAMES;
+const chapterNumbers = Array.from(uniqueChapters).sort((a, b) => a - b);
 
-const totalDuration =
-  segmentDuration + delaysDuration + titlesDuration || DEFAULT_DURATION_FRAMES;
+// Calculate duration for a specific chapter
+const calculateChapterDuration = (chapterNumber: number): number => {
+  const chapterSegments = segments.filter(
+    (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber
+  );
+
+  if (chapterSegments.length === 0) {
+    return DEFAULT_DURATION_FRAMES;
+  }
+
+  const segmentDuration = chapterSegments.reduce(
+    (sum, segment) => sum + segment.durationInFrames,
+    0,
+  );
+  const delaysDuration =
+    chapterSegments.length > 0
+      ? (chapterSegments.length - 1) * DELAY_BETWEEN_SEGMENTS_FRAMES
+      : 0;
+  const titleDuration = CHAPTER_TITLE_DURATION_FRAMES;
+
+  return segmentDuration + delaysDuration + titleDuration;
+};
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Composition
-        // You can take the "id" to render a video:
-        // npx remotion render WenyanNarration
-        id="WenyanNarration"
-        component={WenyanNarration}
-        durationInFrames={totalDuration || 150}
-        fps={30}
-        width={1920}
-        height={1080}
-        // You can override these props for each render:
-        // https://www.remotion.dev/docs/parametrized-rendering
-        schema={wenyanNarrationSchema}
-        defaultProps={{}}
-      />
+      {chapterNumbers.map((chapterNumber) => {
+        const duration = calculateChapterDuration(chapterNumber);
+        return (
+          <Composition
+            key={`chapter-${chapterNumber}`}
+            // You can take the "id" to render a video:
+            // npx remotion render WenyanNarration-Chapter1
+            id={`WenyanNarration-Chapter${chapterNumber}`}
+            component={WenyanNarration}
+            durationInFrames={duration}
+            fps={30}
+            width={1920}
+            height={1080}
+            // You can override these props for each render:
+            // https://www.remotion.dev/docs/parametrized-rendering
+            schema={wenyanNarrationSchema}
+            defaultProps={{ chapterNumber }}
+          />
+        );
+      })}
     </>
   );
 };
