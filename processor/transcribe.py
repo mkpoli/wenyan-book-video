@@ -67,7 +67,7 @@ def _(Path):
 
 
 @app.cell
-def _(re):
+def _(re, requests):
     # Character replacement rules for transcription
     CHAR_REPLACEMENTS = {
         "吿": "告",
@@ -80,8 +80,32 @@ def _(re):
     # Maps character to choice index (0-based, where 0 = 1st choice)
     SPECIAL_CASES = {
         "不": 0,  # Always use 1st choice (index 0)
-        "有": 0,  # Always use 1st choice (index 0)
+        "有": 0,  # Always use 1st choice (index 0),
+        "編": 0,
     }
+
+    def lookup_meaning(
+        chars: str, base_url: str = "https://qieyun-tts.com"
+    ) -> dict[str, list[dict]]:
+        """
+        Fetch transcription meanings from the /lookup_meaning endpoint.
+
+        Args:
+            chars: A string of unique Chinese characters to query.
+            base_url: Root of the backend (no trailing slash).
+
+        Returns:
+            Dict like { '字': [ { 'transcription': '...', 'meaning': '...' }, ... ], ... }
+        """
+        try:
+            response = requests.post(
+                f"{base_url}/lookup_meaning", json={"chars": chars}, timeout=20.0
+            )
+            response.raise_for_status()
+            return response.json()
+        except Exception as e:
+            print(f"Warning: Failed to lookup meanings: {e}")
+            return {}
 
     def replace_chars(text):
         """Replace characters according to replacement rules."""
@@ -99,7 +123,9 @@ def _(re):
         normalized = re.sub(r"\.+$", ".", normalized)
         return normalized
 
-    def transcribe_to_ipa(text, dictionary, choice_cache=None):
+    def transcribe_to_ipa(
+        text, dictionary, choice_cache=None, base_url="https://qieyun-tts.com"
+    ):
         """Transcribe Chinese text to IPA string.
 
         Args:
@@ -107,6 +133,7 @@ def _(re):
             dictionary: Dictionary mapping characters to list of (transcription, frequency) tuples
             choice_cache: Optional dict to cache user choices for characters with multiple readings
                           Characters in SPECIAL_CASES are automatically handled without prompting
+            base_url: Base URL for the lookup_meaning API endpoint
         """
         if choice_cache is None:
             choice_cache = {}
@@ -150,8 +177,24 @@ def _(re):
                             print(
                                 f"\nCharacter '{ch}' has {len(readings)} transcription options:"
                             )
+
+                            # Fetch meanings to help with decision
+                            meanings_data = lookup_meaning(ch, base_url)
+                            char_meanings = meanings_data.get(ch, [])
+
+                            # Create a mapping from transcription to meaning
+                            trans_to_meaning = {}
+                            for item in char_meanings:
+                                trans_to_meaning[item.get("transcription", "")] = (
+                                    item.get("meaning", "")
+                                )
+
                             for idx, (trans, freq) in enumerate(readings, 1):
-                                print(f"  {idx}. {trans} (frequency: {freq})")
+                                meaning = trans_to_meaning.get(trans, "")
+                                meaning_str = f" - {meaning}" if meaning else ""
+                                print(
+                                    f"  {idx}. {trans} (frequency: {freq}){meaning_str}"
+                                )
 
                             while True:
                                 try:
