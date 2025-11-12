@@ -56,15 +56,10 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
 
   // Calculate fade-in opacity if fadeInDuration is provided
   const opacity = fadeInDuration
-    ? interpolate(
-        frame,
-        [0, fadeInDuration],
-        [0, 1],
-        {
-          extrapolateLeft: "clamp",
-          extrapolateRight: "clamp",
-        }
-      )
+    ? interpolate(frame, [0, fadeInDuration], [0, 1], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      })
     : 1;
 
   let cumulative = 0;
