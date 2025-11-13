@@ -18,10 +18,10 @@ const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 
 // Get unique chapter numbers
-const uniqueChapters = new Set(
-  segments.map((segment) => parseInt(segment.id.split("-")[0], 10)),
-);
-const chapterNumbers = Array.from(uniqueChapters).sort((a, b) => a - b);
+// const uniqueChapters = new Set(
+//   segments.map((segment) => parseInt(segment.id.split("-")[0], 10)),
+// );
+// const chapterNumbers = Array.from(uniqueChapters).sort((a, b) => a - b);
 
 // Calculate duration for a specific chapter
 const calculateChapterDuration = (chapterNumber: number): number => {
@@ -61,6 +61,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
 };
 
 export const RemotionRoot: React.FC = () => {
+  const currentChapterNumber = 2;
   return (
     <>
       <Folder name="Elements">
@@ -84,10 +85,22 @@ export const RemotionRoot: React.FC = () => {
         />
       </Folder>
       <Folder name="Chapters">
-        {chapterNumbers.map((chapterNumber) => {
+        <Composition
+          id={`Chapter${currentChapterNumber}`}
+          component={Main}
+          durationInFrames={calculateChapterDuration(currentChapterNumber)}
+          fps={30}
+          width={1920}
+          height={1080}
+          schema={mainSchema}
+          defaultProps={{ chapterNumber: currentChapterNumber }}
+        />
+
+        {/* {chapterNumbers.map((chapterNumber) => {
           const duration = calculateChapterDuration(chapterNumber);
           return (
             <Composition
+              key={`chapter-${chapterNumber}`}
               // You can take the "id" to render a video:
               // npx remotion render WenyanNarration-Chapter1
               id={`WenyanNarration-Chapter${chapterNumber}`}
@@ -102,7 +115,7 @@ export const RemotionRoot: React.FC = () => {
               defaultProps={{ chapterNumber }}
             />
           );
-        })}
+        })} */}
       </Folder>
     </>
   );
