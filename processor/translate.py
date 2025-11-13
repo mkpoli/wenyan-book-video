@@ -101,11 +101,16 @@ Now translate the following Classical Chinese text:
 
 @app.cell
 def _(Path):
-    segments_dir = Path("../renderer/public/segments")
-    translations_dir = Path("../renderer/public/translations")
+    segments_dir = Path("../renderer/public/segments").resolve()
+    translations_dir = Path("../renderer/public/translations").resolve()
 
     # Ensure translations directory exists
     translations_dir.mkdir(exist_ok=True)
+
+    # Debug: print resolved paths
+    print(f"Segments directory: {segments_dir}")
+    print(f"Translations directory: {translations_dir}")
+    print(f"Translations directory exists: {translations_dir.exists()}")
 
     return segments_dir, translations_dir
 
@@ -178,6 +183,11 @@ def _(
         ):
             trans_filename = f"{seg_file.stem}.txt"
             trans_path = translations_dir / trans_filename
+
+            # Skip if translation already exists (safety check)
+            if trans_path.exists():
+                print(f"⏭ Skipping {seg_file.name}: translation already exists")
+                continue
 
             # Read segment text
             with open(seg_file, "r", encoding="utf-8") as f:
