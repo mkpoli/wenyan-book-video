@@ -190,12 +190,10 @@ def _(re, requests):
         Args:
             text: Chinese text to transcribe
             dictionary: Dictionary mapping characters to list of (transcription, frequency) tuples
-            choice_cache: Optional dict to cache user choices for characters with multiple readings
+            choice_cache: Deprecated parameter (kept for compatibility, not used)
                           Characters in SPECIAL_CASES are automatically handled without prompting
             base_url: Base URL for the lookup_meaning API endpoint
         """
-        if choice_cache is None:
-            choice_cache = {}
 
         normalized = normalize_text(text)
 
@@ -212,7 +210,6 @@ def _(re, requests):
                     # Check if we have multiple options
                     if len(readings) > 1:
                         # Check for special cases first
-                        cache_key = ch
                         if ch in SPECIAL_CASES:
                             # Special case: use specified choice index
                             choice_idx = SPECIAL_CASES[ch]
@@ -263,11 +260,6 @@ def _(re, requests):
                                     f"is out of bounds (max: {len(readings)-1}), using 1st choice"
                                 )
                                 transcription = readings[0][0]
-                            # Cache the choice for consistency
-                            choice_cache[cache_key] = transcription
-                        elif cache_key in choice_cache:
-                            # Use cached choice
-                            transcription = choice_cache[cache_key]
                         else:
                             # Prompt user to choose
                             print(
@@ -316,8 +308,6 @@ def _(re, requests):
                                     print("Please enter a valid number or 'q'")
 
                             transcription = readings[choice_idx][0]
-                            # Cache the choice
-                            choice_cache[cache_key] = transcription
                             print(f"Selected: {transcription}")
                     else:
                         # Only one option, use it directly
@@ -389,7 +379,7 @@ def _(
         # Apply character replacements
         text = replace_chars(text)
 
-        # Transcribe to IPA (pass choice_cache to remember user choices)
+        # Transcribe to IPA (each character will be prompted individually)
         ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
 
         # Save transcript
