@@ -66,6 +66,23 @@ const splitChineseSentences = (text: string): string[] => {
     } else if (char === "』") {
       insideQuotes = false;
       currentSentence += char;
+      // Check if previous character was sentence-ending punctuation
+      if (i > 0) {
+        const prevChar = text[i - 1];
+        if (prevChar === "。" || prevChar === "！" || prevChar === "？") {
+          // Only split at 。』 if NOT immediately followed by another sentence-ending punctuation
+          // (e.g., don't split "。』。" - keep it together)
+          const nextChar = i + 1 < text.length ? text[i + 1] : null;
+          if (nextChar !== "。" && nextChar !== "！" && nextChar !== "？") {
+            // Split at 。』 (period followed by closing quote)
+            const trimmed = currentSentence.trim();
+            if (trimmed.length > 0) {
+              sentences.push(trimmed);
+            }
+            currentSentence = "";
+          }
+        }
+      }
     } else if (
       (char === "。" || char === "！" || char === "？") &&
       !insideQuotes
