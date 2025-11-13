@@ -9,6 +9,7 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
+
     return Path, re, requests
 
 
@@ -153,7 +154,7 @@ def _():
         "句": 0,
         "創": 0,
         "祭": 0,
-        "向": 0
+        "向": 0,
     }
     return CHAR_REPLACEMENTS, SPECIAL_CASES
 
@@ -506,13 +507,14 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
                                 print(f"  {idx}. {display_value}")
 
                             went_back = False
+                            manual_transcription = None
                             while True:
                                 try:
                                     back_option = (
                                         ", or 'b' to go back" if choice_history else ""
                                     )
                                     choice = input(
-                                        f"Choose option (1-{len(readings)}, 'q' to use default #1{back_option}): "
+                                        f"Choose option (1-{len(readings)}, 'q' to use default #1, 'm' for manual input{back_option}): "
                                     ).strip()
                                     if choice.lower() == "q":
                                         choice_idx = 0
@@ -536,6 +538,17 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
                                                 "No previous selection to go back to."
                                             )
                                             continue
+                                    elif choice.lower() == "m":
+                                        manual_transcription = input(
+                                            "Enter manual transcription: "
+                                        ).strip()
+                                        if manual_transcription:
+                                            break
+                                        else:
+                                            print(
+                                                "Manual transcription cannot be empty."
+                                            )
+                                            continue
                                     choice_idx = int(choice) - 1
                                     if 0 <= choice_idx < len(readings):
                                         break
@@ -544,14 +557,20 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
                                             f"Please enter a number between 1 and {len(readings)}"
                                         )
                                 except ValueError:
-                                    print("Please enter a valid number, 'q', or 'b'")
+                                    print(
+                                        "Please enter a valid number, 'q', 'm', or 'b'"
+                                    )
 
                             # If we went back, continue the loop to re-process that character
                             if went_back:
                                 continue
 
-                            # Record this choice in history
-                            transcription = readings[choice_idx][0]
+                            # Use manual transcription if provided, otherwise use dictionary choice
+                            if manual_transcription is not None:
+                                transcription = manual_transcription
+                            else:
+                                transcription = readings[choice_idx][0]
+
                             # Remove any periods from transcription (keep periods separate)
                             transcription = transcription.replace(".", "").strip()
                             if transcription:
@@ -586,6 +605,7 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
+
     return replace_chars, transcribe_to_ipa
 
 
