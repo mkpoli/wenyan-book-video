@@ -9,7 +9,6 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
-
     return Path, re, requests
 
 
@@ -154,12 +153,13 @@ def _():
         "句": 0,
         "創": 0,
         "祭": 0,
+        "向": 0
     }
     return CHAR_REPLACEMENTS, SPECIAL_CASES
 
 
 @app.cell(hide_code=True)
-def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, json, re, subprocess):
+def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
     from functools import lru_cache
     import subprocess
     import json
@@ -227,15 +227,117 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, json, re, subprocess):
                 return []
             return data.get(char, [])
 
+    @lru_cache(maxsize=None)
+    def _lookup_meaning_remote(char: str) -> list[dict[str, str]]:
+        """
+        Fetch transcription meanings from the remote service as a fallback.
+        """
+
+        if not char:
+            return []
+
+        try:
+            response = requests.post(
+                "https://qieyun-tts.com/lookup_meaning",
+                json={"chars": char},
+                timeout=20.0,
+            )
+            response.raise_for_status()
+            data = response.json()
+            if isinstance(data, dict):
+                char_results = data.get(char)
+                if isinstance(char_results, list):
+                    return char_results
+        except Exception as exc:
+            print(f"Warning: Remote definition lookup failed for '{char}': {exc}")
+        return []
+
     def lookup_meaning(char: str, readings: list[str]) -> list[dict[str, str]]:
         """
         Return meanings for a single character keyed by its Cinix IPA readings.
+        Falls back to the remote API only if local data lacks definitions.
         """
 
         readings_key = tuple(
             reading if isinstance(reading, str) else "" for reading in readings
         )
-        return _lookup_meaning_cached(char, readings_key)
+        local_results = _lookup_meaning_cached(char, readings_key) or []
+
+        results_by_transcription: dict[str, dict[str, str | bool]] = {}
+        for item in local_results:
+            transcription = item.get("transcription")
+            if not isinstance(transcription, str):
+                continue
+            meaning = item.get("meaning", "")
+            has_definition = item.get("hasDefinition")
+            if not isinstance(has_definition, bool):
+                has_definition = (
+                    bool(meaning.strip()) if isinstance(meaning, str) else False
+                )
+            results_by_transcription[transcription] = {
+                "transcription": transcription,
+                "meaning": meaning if isinstance(meaning, str) else "",
+                "hasDefinition": has_definition,
+            }
+
+        missing_readings: list[str] = []
+        for reading in readings_key:
+            trimmed = reading if isinstance(reading, str) else ""
+            if not trimmed:
+                continue
+            entry = results_by_transcription.get(trimmed)
+            if entry is None or not entry.get("hasDefinition", False):
+                missing_readings.append(trimmed)
+
+        if missing_readings:
+            remote_entries = _lookup_meaning_remote(char)
+            remote_map: dict[str, str] = {}
+            for item in remote_entries:
+                transcription = item.get("transcription")
+                meaning = item.get("meaning")
+                if isinstance(transcription, str) and isinstance(meaning, str):
+                    remote_map[transcription] = meaning
+
+            for reading in missing_readings:
+                remote_meaning = remote_map.get(reading)
+                if not remote_meaning:
+                    continue
+                entry = results_by_transcription.get(reading)
+                if entry:
+                    base = entry.get("meaning", "")
+                    base_str = base.strip() if isinstance(base, str) else ""
+                    if base_str:
+                        entry["meaning"] = f"{base_str} {remote_meaning}".strip()
+                    else:
+                        entry["meaning"] = remote_meaning
+                    entry["hasDefinition"] = True
+                else:
+                    results_by_transcription[reading] = {
+                        "transcription": reading,
+                        "meaning": remote_meaning,
+                        "hasDefinition": True,
+                    }
+
+        ordered_results: list[dict[str, str]] = []
+        for reading in readings_key:
+            trimmed = reading if isinstance(reading, str) else ""
+            if not trimmed:
+                continue
+            entry = results_by_transcription.get(trimmed)
+            if entry:
+                meaning_value = entry.get("meaning")
+                ordered_results.append(
+                    {
+                        "transcription": trimmed,
+                        "meaning": (
+                            meaning_value if isinstance(meaning_value, str) else ""
+                        ),
+                    }
+                )
+            else:
+                ordered_results.append({"transcription": trimmed, "meaning": ""})
+
+        return ordered_results
 
     def replace_chars(text):
         """Replace characters according to replacement rules."""
@@ -484,7 +586,6 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, json, re, subprocess):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
-
     return replace_chars, transcribe_to_ipa
 
 

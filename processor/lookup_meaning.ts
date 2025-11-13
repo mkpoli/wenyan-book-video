@@ -13,6 +13,7 @@ interface LookupPayload {
 interface MeaningResult {
   transcription: string;
   meaning: string;
+  hasDefinition: boolean;
 }
 
 type MeaningMap = Record<string, MeaningResult[]>;
@@ -115,9 +116,12 @@ function mergeIntoResult(result: MeaningMap, char: string, readings: string[], d
       prefix = '';
     }
 
+    const hasDefinition = meaning.trim().length > 0;
+
     charResults.push({
       transcription: trimmed,
       meaning,
+      hasDefinition,
       prefix,
     });
   }
@@ -129,6 +133,7 @@ function mergeIntoResult(result: MeaningMap, char: string, readings: string[], d
     for (const item of charResults) {
       if (!item.meaning) {
         item.meaning = fallback;
+        item.hasDefinition = fallback.trim().length > 0;
       }
     }
   }
@@ -138,14 +143,16 @@ function mergeIntoResult(result: MeaningMap, char: string, readings: string[], d
       {
         transcription: '',
         meaning: fallbackCandidates.join(' ｜ ') || 'No local definition available for this character.',
+        hasDefinition: fallbackCandidates.length > 0,
       },
     ];
   } else {
-    result[char] = charResults.map(({ transcription, meaning, prefix }) => {
+    result[char] = charResults.map(({ transcription, meaning, hasDefinition, prefix }) => {
       const parts = [prefix, meaning].filter((part) => part && part.trim().length > 0);
       return {
         transcription,
         meaning: parts.join(' '),
+        hasDefinition: hasDefinition || parts.length > 1,
       };
     });
   }
