@@ -6,6 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
+    import json
     import marimo as mo
     import os
     import time
@@ -16,7 +17,7 @@ def _():
 
     # Load environment variables
     load_dotenv()
-    return OpenAI, Path, mo, os, time, traceback
+    return OpenAI, Path, json, mo, os, time, traceback
 
 
 @app.cell
@@ -187,6 +188,7 @@ def _(
     TRANSLATION_PROMPT,
     all_segment_files,
     client,
+    json,
     mo,
     segments_dir,
     time,
@@ -271,11 +273,13 @@ def _(
             print("No files to process. All segments already have translations.")
             return
 
-        for i, seg_file in enumerate(
+        batch_items = []
+
+        for idx, seg_file in enumerate(
             mo.status.progress_bar(
                 segment_files,
-                title="Translating segments",
-                subtitle=f"Processing {len(segment_files)} files",
+                title="Preparing segments",
+                subtitle=f"Gathering {len(segment_files)} file(s)",
                 show_rate=True,
                 show_eta=True,
             ),
@@ -284,12 +288,10 @@ def _(
             trans_filename = f"{seg_file.stem}.txt"
             trans_path = translations_dir / trans_filename
 
-            # Skip if translation already exists (safety check)
             if trans_path.exists():
                 print(f"⏭ Skipping {seg_file.name}: translation already exists")
                 continue
 
-            # Read segment text
             with open(seg_file, "r", encoding="utf-8") as f:
                 chinese_text = f.read().strip()
 
@@ -298,7 +300,7 @@ def _(
                 continue
 
             print(f"\n{'='*70}")
-            print(f"[{i}/{len(segment_files)}] Translating {seg_file.name}...")
+            print(f"[{idx}/{len(segment_files)}] Preparing {seg_file.name}...")
             print(f"{'='*70}")
             print(f"  📝 Chinese text ({len(chinese_text)} chars):")
             print(
@@ -307,12 +309,10 @@ def _(
                 else f"     {chinese_text}"
             )
 
-            # Get context from previous and next segments
             before_context, after_context = get_context(
                 seg_file, all_segment_files, segments_dir, translations_dir
             )
 
-            # Prepare prompt
             before_ctx_display = (
                 before_context if before_context else "(This is the first segment.)"
             )
@@ -320,76 +320,175 @@ def _(
                 after_context if after_context else "(This is the last segment.)"
             )
 
-            prompt = TRANSLATION_PROMPT.format(
-                text=chinese_text,
-                before_context=before_ctx_display,
-                after_context=after_ctx_display,
+            batch_items.append(
+                {
+                    "seg_file": seg_file,
+                    "trans_filename": trans_filename,
+                    "trans_path": trans_path,
+                    "chinese_text": chinese_text,
+                    "before_ctx_display": before_ctx_display,
+                    "after_ctx_display": after_ctx_display,
+                }
             )
 
-            print("  📊 Prompt statistics:")
-            print(f"     - Chinese text: {len(chinese_text)} chars")
-            print(f"     - Before context: {len(before_ctx_display)} chars")
-            print(f"     - After context: {len(after_ctx_display)} chars")
-            print(f"     - Total prompt: {len(prompt)} chars")
-            print(f"  🤖 Calling API ({MODEL_NAME})...")
+        if not batch_items:
+            print("No eligible segment files to process in this batch.")
+            return
 
-            try:
-                # Call OpenAI API
-                api_start_time = time.time()
-                response = client.chat.completions.create(
-                    model=MODEL_NAME,
-                    messages=[
-                        {
-                            "role": "system",
-                            "content": "You are an expert translator specializing in Classical Chinese to English translation, particularly for technical and literary works.",
-                        },
-                        {"role": "user", "content": prompt},
-                    ],
-                )
-                api_duration = time.time() - api_start_time
+        combined_chinese_chars = sum(len(item["chinese_text"]) for item in batch_items)
 
-                # Extract translation
-                translation = response.choices[0].message.content.strip()
+        intro_instructions = (
+            "You will now translate multiple Classical Chinese segments in a single response. "
+            "Apply all translation rules above to each segment independently. "
+            "Return ONLY valid JSON of the form "
+            '{"translations":[{"segment":"<segment-stem>","lines":["Line 1","Line 2",...]}, ...]}. '
+            "Each entry in `lines` must be one sentence per line in the correct order. "
+            "Do not include any commentary outside the JSON."
+        )
 
-                # Get token usage if available
-                usage_info = ""
-                if hasattr(response, "usage"):
-                    usage = response.usage
-                    usage_info = f" (tokens: {usage.total_tokens} total, {usage.prompt_tokens} prompt, {usage.completion_tokens} completion)"
+        segment_blocks = []
+        for position, item in enumerate(batch_items, 1):
+            segment_blocks.append(
+                f"""SEGMENT {position}: {item['seg_file'].stem}
+Chinese Text:
+{item['chinese_text']}
 
-                print(f"  ✅ API response received in {api_duration:.2f}s{usage_info}")
-                print(f"  📄 Translation ({len(translation)} chars):")
-                print(
-                    f"     {translation[:150]}..."
-                    if len(translation) > 150
-                    else f"     {translation}"
-                )
+Before Context:
+{item['before_ctx_display']}
 
-                # Save translation
-                with open(trans_path, "w", encoding="utf-8") as f:
-                    f.write(translation)
+After Context:
+{item['after_ctx_display']}"""
+            )
 
-                print(f"  💾 Saved translation to: {trans_filename}")
-                print(
-                    f"     File size: {len(translation)} chars, {len(translation.splitlines())} lines"
-                )
+        text_block = "\n\n".join([intro_instructions, *segment_blocks])
 
-                # Wait before next API call (except for the last one)
-                if i < len(segment_files):
-                    print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before next request...")
-                    time.sleep(API_DELAY_SECONDS)
-
-            except Exception as e:
-                print(f"  ❌ Error translating {seg_file.name}: {e}")
-                print("  📋 Error details:")
-                traceback.print_exc()
-                # Still wait to avoid rapid retries
-                if i < len(segment_files):
-                    print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before next request...")
-                    time.sleep(API_DELAY_SECONDS)
+        prompt = TRANSLATION_PROMPT.format(
+            text=text_block,
+            before_context="(Context provided for each segment below.)",
+            after_context="(Context provided for each segment below.)",
+        )
 
         print(f"\n{'='*70}")
-        print(f"✅ Completed processing {len(segment_files)} file(s)")
+        print(
+            "Translating batch: "
+            + ", ".join(item["seg_file"].name for item in batch_items)
+        )
+        print(f"{'='*70}")
+        print("  📊 Prompt statistics:")
+        print(f"     - Combined Chinese text: {combined_chinese_chars} chars")
+        print(f"     - Intro/context block: {len(intro_instructions)} chars")
+        print(f"     - Total prompt: {len(prompt)} chars")
+        print(f"  🤖 Calling API ({MODEL_NAME}) for batch of {len(batch_items)}...")
+
+        try:
+            api_start_time = time.time()
+            response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "You are an expert translator specializing in Classical Chinese "
+                            "to English translation, particularly for technical and literary works."
+                        ),
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+            )
+            api_duration = time.time() - api_start_time
+
+            raw_translation_payload = response.choices[0].message.content.strip()
+
+            usage_info = ""
+            if hasattr(response, "usage"):
+                usage = response.usage
+                usage_info = (
+                    f" (tokens: {usage.total_tokens} total, "
+                    f"{usage.prompt_tokens} prompt, {usage.completion_tokens} completion)"
+                )
+
+            print(f"  ✅ API response received in {api_duration:.2f}s{usage_info}")
+            print("  📦 Raw response preview:")
+            print(
+                f"     {raw_translation_payload[:200]}..."
+                if len(raw_translation_payload) > 200
+                else f"     {raw_translation_payload}"
+            )
+
+            try:
+                parsed_payload = json.loads(raw_translation_payload)
+            except json.JSONDecodeError as json_error:
+                print("  ❌ Failed to parse JSON from model response.")
+                print(f"     Error: {json_error}")
+                raise
+
+            translations_list = parsed_payload.get("translations")
+            if not isinstance(translations_list, list):
+                raise ValueError(
+                    "Model response JSON does not contain a 'translations' list."
+                )
+
+            translations_by_segment = {}
+            for entry in translations_list:
+                if not isinstance(entry, dict):
+                    continue
+                segment_id = entry.get("segment")
+                lines = entry.get("lines")
+                if isinstance(segment_id, str):
+                    translations_by_segment[segment_id] = lines
+
+            missing_segments = [
+                item["seg_file"].stem
+                for item in batch_items
+                if item["seg_file"].stem not in translations_by_segment
+            ]
+            if missing_segments:
+                raise ValueError(
+                    f"Missing translations for segment(s): {', '.join(missing_segments)}"
+                )
+
+            for item in batch_items:
+                segment_id = item["seg_file"].stem
+                lines = translations_by_segment[segment_id]
+
+                if isinstance(lines, list):
+                    normalized_lines = [
+                        str(line).strip() for line in lines if str(line).strip()
+                    ]
+                    translation_text = "\n".join(normalized_lines)
+                elif isinstance(lines, str):
+                    translation_text = lines.strip()
+                else:
+                    raise ValueError(
+                        f"Unexpected format for translation lines in segment {segment_id}"
+                    )
+
+                if not translation_text:
+                    raise ValueError(
+                        f"Empty translation received for segment {segment_id}"
+                    )
+
+                with open(item["trans_path"], "w", encoding="utf-8") as f:
+                    f.write(translation_text)
+
+                print(f"  💾 Saved translation to: {item['trans_filename']}")
+                print(
+                    f"     File size: {len(translation_text)} chars, "
+                    f"{len(translation_text.splitlines())} lines"
+                )
+
+            print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before finishing batch...")
+            time.sleep(API_DELAY_SECONDS)
+
+        except Exception as e:
+            print("  ❌ Error translating batch:")
+            print(f"     {e}")
+            print("  📋 Error details:")
+            traceback.print_exc()
+            return
+
+        print(f"\n{'='*70}")
+        print(f"✅ Completed processing {len(batch_items)} file(s) in batch")
         print(f"{'='*70}")
         print("💡 Tip: Run again to process more segments if any remain.")
 
