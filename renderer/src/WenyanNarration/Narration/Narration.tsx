@@ -13,12 +13,11 @@ interface NarrationProps {
 
 export const Narration: React.FC<NarrationProps> = ({
   segments,
-  startFrame,
   shouldShowTitle,
   delayBetweenSegmentsFrames,
   transitionFadeInFrames,
 }) => {
-  let currentFrame = startFrame;
+  let currentFrame = 0;
 
   // Calculate segments duration (excluding chapter title)
   const segmentsDuration = segments.reduce((sum, segment, index) => {
@@ -33,7 +32,7 @@ export const Narration: React.FC<NarrationProps> = ({
     <>
       {/* Background music for reading segments - bg2.mp3 (starts with first segment) */}
       {shouldShowTitle && segmentsDuration > 0 && (
-        <Sequence from={startFrame} durationInFrames={segmentsDuration}>
+        <Sequence from={0} durationInFrames={segmentsDuration}>
           <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
       )}

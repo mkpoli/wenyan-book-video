@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
+import { AbsoluteFill, Html5Audio, Series, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
 import {
@@ -32,40 +32,48 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
 
   // Always show book title, introductions, and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
-  // Intro duration excludes chapter title (chapter title belongs to reading section)
-  const introDuration = shouldShowTitle ? INTRO_DURATION_FRAMES : 0;
 
-  // Chapter title starts the reading section
-  const chapterTitleStartFrame = introDuration;
-  const readingStartFrame =
-    chapterTitleStartFrame + CHAPTER_TITLE_DURATION_FRAMES;
+  // Calculate narration start frame (0 if no intro/chapter title, otherwise after them)
+  const narrationStartFrame = shouldShowTitle
+    ? INTRO_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES
+    : 0;
+
+  // Calculate narration duration from segments
+  const narrationDuration = segments.reduce((sum, segment, index) => {
+    const audioDurationFrames = segment.durationInFrames;
+    const visualDurationFrames =
+      audioDurationFrames +
+      (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
+    return sum + visualDurationFrames;
+  }, 0);
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
-      {shouldShowTitle && (
-        <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
-      )}
-      {/* Chapter Title - appears after intro */}
-      {shouldShowTitle && (
-        <Sequence
-          from={chapterTitleStartFrame}
-          durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-        >
-          <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
-          <ChapterTitle
-            chapterNumber={chapterNumber!}
-            durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+      <Series>
+        {shouldShowTitle && (
+          <Series.Sequence durationInFrames={INTRO_DURATION_FRAMES}>
+            <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
+          </Series.Sequence>
+        )}
+        {shouldShowTitle && (
+          <Series.Sequence durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
+            <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
+            <ChapterTitle
+              chapterNumber={chapterNumber!}
+              durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+            />
+          </Series.Sequence>
+        )}
+        <Series.Sequence durationInFrames={narrationDuration}>
+          <Narration
+            segments={segments}
+            startFrame={0}
+            shouldShowTitle={shouldShowTitle}
+            delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
+            transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
           />
-        </Sequence>
-      )}
-
-      <Narration
-        segments={segments}
-        startFrame={readingStartFrame}
-        shouldShowTitle={shouldShowTitle}
-        delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
-        transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
-      />
+        </Series.Sequence>
+      </Series>
     </AbsoluteFill>
   );
 };
