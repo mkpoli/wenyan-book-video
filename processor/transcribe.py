@@ -227,10 +227,17 @@ def _(re, requests):
 
         # Convert each character to IPA
         ipa_parts = []
-        for pos, ch in enumerate(normalized):
+        # History of positions where user made choices (for characters with multiple readings)
+        # Each entry is (position, character, ipa_parts_count_at_that_point)
+        choice_history = []
+
+        pos = 0
+        while pos < len(normalized):
+            ch = normalized[pos]
             if ch == ".":
                 # Add period directly to IPA
                 ipa_parts.append(".")
+                pos += 1
             else:
                 # Look up character in dictionary
                 readings = dictionary.get(ch)
@@ -285,6 +292,12 @@ def _(re, requests):
                                     f"is out of bounds (max: {len(readings)-1}), using 1st choice"
                                 )
                                 transcription = readings[0][0]
+
+                            # Remove any periods from transcription (keep periods separate)
+                            transcription = transcription.replace(".", "").strip()
+                            if transcription:
+                                ipa_parts.append(transcription)
+                            pos += 1
                         else:
                             # Prompt user to choose
                             print()
@@ -310,14 +323,37 @@ def _(re, requests):
                                 meaning_str = f" - {meaning}" if meaning else ""
                                 print(f"  {idx}. {trans}{meaning_str}")
 
+                            went_back = False
                             while True:
                                 try:
+                                    back_option = (
+                                        ", or 'b' to go back" if choice_history else ""
+                                    )
                                     choice = input(
-                                        f"Choose option (1-{len(readings)}, or 'q' to use default #1): "
+                                        f"Choose option (1-{len(readings)}, 'q' to use default #1{back_option}): "
                                     ).strip()
                                     if choice.lower() == "q":
                                         choice_idx = 0
                                         break
+                                    elif choice.lower() == "b":
+                                        if choice_history:
+                                            # Go back to last selection
+                                            last_pos, last_ch, last_ipa_count = (
+                                                choice_history.pop()
+                                            )
+                                            # Remove all transcriptions added after that point
+                                            while len(ipa_parts) > last_ipa_count:
+                                                ipa_parts.pop()
+                                            # Set position back to that character
+                                            pos = last_pos
+                                            print(f"\n↶ Going back to: {last_ch}")
+                                            went_back = True
+                                            break
+                                        else:
+                                            print(
+                                                "No previous selection to go back to."
+                                            )
+                                            continue
                                     choice_idx = int(choice) - 1
                                     if 0 <= choice_idx < len(readings):
                                         break
@@ -326,20 +362,36 @@ def _(re, requests):
                                             f"Please enter a number between 1 and {len(readings)}"
                                         )
                                 except ValueError:
-                                    print("Please enter a valid number or 'q'")
+                                    print("Please enter a valid number, 'q', or 'b'")
 
+                            # If we went back, continue the loop to re-process that character
+                            if went_back:
+                                continue
+
+                            # Record this choice in history
                             transcription = readings[choice_idx][0]
+                            # Remove any periods from transcription (keep periods separate)
+                            transcription = transcription.replace(".", "").strip()
+                            if transcription:
+                                # Record the count of ipa_parts before adding this transcription
+                                ipa_count_before = len(ipa_parts)
+                                ipa_parts.append(transcription)
+                                # Add to history (only for user choices, not special cases)
+                                # Store the count before adding, so we can remove everything after it when going back
+                                choice_history.append((pos, ch, ipa_count_before))
+                            pos += 1
                     else:
                         # Only one option, use it directly
                         transcription = readings[0][0]
-
-                    # Remove any periods from transcription (keep periods separate)
-                    transcription = transcription.replace(".", "").strip()
-                    if transcription:
-                        ipa_parts.append(transcription)
+                        # Remove any periods from transcription (keep periods separate)
+                        transcription = transcription.replace(".", "").strip()
+                        if transcription:
+                            ipa_parts.append(transcription)
+                        pos += 1
                 else:
                     # Fallback: use character itself if not found
                     ipa_parts.append(ch)
+                    pos += 1
 
         # Join transcriptions with spaces
         # Format: " word1 word2 . word3 "
