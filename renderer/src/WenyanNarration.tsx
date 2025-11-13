@@ -1,12 +1,12 @@
 import React from "react";
 import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
-import { SegmentText } from "./WenyanNarration/SegmentText";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro";
 import {
   ChapterTitle,
   CHAPTER_TITLE_DURATION_FRAMES,
 } from "./WenyanNarration/ChapterTitle";
+import { Narration } from "./WenyanNarration/Narration";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -51,8 +51,6 @@ export const WenyanNarration: React.FC<
       return sum + visualDurationFrames;
     }, 0);
 
-  let currentFrame = readingStartFrame;
-
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
       {/* Background music for reading segments - bg2.mp3 (includes chapter title) */}
@@ -81,39 +79,13 @@ export const WenyanNarration: React.FC<
         </Sequence>
       )}
 
-      {segments.map((segment, index) => {
-        const segmentStartFrame = currentFrame;
-        const audioDurationFrames = segment.durationInFrames;
-        // Visuals stay visible longer: audio duration + delay (except for last segment)
-        const visualDurationFrames =
-          audioDurationFrames +
-          (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
-
-        currentFrame += visualDurationFrames;
-
-        return (
-          <Sequence
-            key={segment.id}
-            from={segmentStartFrame}
-            durationInFrames={visualDurationFrames}
-          >
-            {/* Audio plays only for its original duration */}
-            <Sequence from={0} durationInFrames={audioDurationFrames}>
-              <Html5Audio src={staticFile(segment.audioPath)} />
-            </Sequence>
-            {/* Visuals persist for the full duration including delay */}
-            <SegmentText
-              text={segment.text}
-              sentences={segment.sentences ?? []}
-              fadeInDuration={
-                shouldShowTitle && index === 0
-                  ? TRANSITION_FADE_IN_FRAMES
-                  : undefined
-              }
-            />
-          </Sequence>
-        );
-      })}
+      <Narration
+        segments={segments}
+        startFrame={readingStartFrame}
+        shouldShowTitle={shouldShowTitle}
+        delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
+        transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
+      />
     </AbsoluteFill>
   );
 };
