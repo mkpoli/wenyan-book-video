@@ -1,0 +1,4 @@
+In the first sentence, A becomes four.
+In the next sentence, B becomes A.
+Thus, B is four.
+Now it is obviously clear.

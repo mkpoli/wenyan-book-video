@@ -1,0 +1,7 @@
+I have a numeral.
+It is named zero.
+Named it “A”.
+I have a numeral.
+It is named “A”.
+There exists a numeral zero.
+Named it “A”.

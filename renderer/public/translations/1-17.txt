@@ -1,4 +1,5 @@
 “To say ‘three’ or ‘Ask Heaven and Earth if They Are Well’
+—
 is to assign a value to a thing.
 Thus, when later one asks, ‘What is the number?’
 it will know of itself that it is three.

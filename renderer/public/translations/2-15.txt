@@ -1,0 +1,7 @@
+I have three numbers.
+It is named “Three.”
+It is named “Nine.”
+It is named “Twenty-seven.”
+It is named “A.”
+It is named “B.”
+It is named “C.”
