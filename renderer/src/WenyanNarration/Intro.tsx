@@ -1,5 +1,5 @@
 import React from "react";
-import { Sequence } from "remotion";
+import { Series } from "remotion";
 import { BookTitle } from "./BookTitle";
 import { WenyanLanguageIntroduction } from "./WenyanLanguageIntroduction";
 import { BookIntroduction } from "./BookIntroduction";
@@ -38,54 +38,32 @@ export const INTRO_DURATIONS: IntroDurations = {
 
 export const Intro: React.FC = () => {
   return (
-    <>
-      <Sequence from={0} durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
+    <Series>
+      <Series.Sequence durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
         <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
-      </Sequence>
-      <Sequence
-        from={BOOK_TITLE_DURATION_FRAMES}
+      </Series.Sequence>
+      <Series.Sequence
         durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
       >
         <WenyanLanguageIntroduction
           durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
         />
-      </Sequence>
-      <Sequence
-        from={
-          BOOK_TITLE_DURATION_FRAMES +
-          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
-        }
-        durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
-      >
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}>
         <BookIntroduction
           durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
         />
-      </Sequence>
-      <Sequence
-        from={
-          BOOK_TITLE_DURATION_FRAMES +
-          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-          BOOK_INTRODUCTION_DURATION_FRAMES
-        }
-        durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
-      >
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}>
         <CreatorIntroduction
           durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
         />
-      </Sequence>
-      <Sequence
-        from={
-          BOOK_TITLE_DURATION_FRAMES +
-          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-          BOOK_INTRODUCTION_DURATION_FRAMES +
-          CREATOR_INTRODUCTION_DURATION_FRAMES
-        }
-        durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
-      >
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}>
         <VideoExplanation
           durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
         />
-      </Sequence>
-    </>
+      </Series.Sequence>
+    </Series>
   );
 };
