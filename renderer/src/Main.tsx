@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Html5Audio, Series, staticFile } from "remotion";
+import { AbsoluteFill, Series } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
 import {
@@ -33,11 +33,6 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
   // Always show book title, introductions, and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
 
-  // Calculate narration start frame (0 if no intro/chapter title, otherwise after them)
-  const narrationStartFrame = shouldShowTitle
-    ? INTRO_DURATION_FRAMES + CHAPTER_TITLE_DURATION_FRAMES
-    : 0;
-
   // Calculate narration duration from segments
   const narrationDuration = segments.reduce((sum, segment, index) => {
     const audioDurationFrames = segment.durationInFrames;
@@ -57,7 +52,6 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
         )}
         {shouldShowTitle && (
           <Series.Sequence durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
-            <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
             <ChapterTitle
               chapterNumber={chapterNumber!}
               durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}

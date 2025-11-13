@@ -1,7 +1,9 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Html5Audio,
   interpolate,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -61,6 +63,7 @@ export const ChapterTitle: React.FC<ChapterTitleProps> = ({
         justifyContent: "center",
       }}
     >
+      <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
       <div
         style={{
           fontFamily: "QijiCombo, serif",
