@@ -47,8 +47,7 @@ def _():
     ### Preserve Original Format
     - Each 。 (full stop) in the original Chinese marks a new line in the translation.
     - Keep the line structure exactly; DO NOT merge sentences into paragraphs.
-    - Retain all original quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
-    - Preserve punctuation rhythm and rhetorical pauses as line breaks.
+    - Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
 
     ### Maintain Classical Tone
     - Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
@@ -76,6 +75,12 @@ def _():
     - “列” -> “Lists (arrays)”.
     - “物” -> “Things (objects)”.
     - “術” -> “Means (methods)”.
+
+    ### Variable Names
+    - “甲” -> “A”.
+    - “乙” -> “B”.
+    - “丙” -> “C”.
+    - etc.
 
     ## Examples
 
@@ -150,7 +155,7 @@ def _(Path):
 @app.cell
 def _(segments_dir, translations_dir):
     # Maximum number of files to process per run (safety limit)
-    MAX_FILES_PER_RUN = 1
+    MAX_FILES_PER_RUN = 10
 
     # Find all segment files
     # Sort naturally by extracting chapter and segment numbers
@@ -350,14 +355,14 @@ def _(
         for position, item in enumerate(batch_items, 1):
             segment_blocks.append(
                 f"""SEGMENT {position}: {item['seg_file'].stem}
-Chinese Text:
-{item['chinese_text']}
+    Chinese Text:
+    {item['chinese_text']}
 
-Before Context:
-{item['before_ctx_display']}
+    Before Context:
+    {item['before_ctx_display']}
 
-After Context:
-{item['after_ctx_display']}"""
+    After Context:
+    {item['after_ctx_display']}"""
             )
 
         text_block = "\n\n".join([intro_instructions, *segment_blocks])
