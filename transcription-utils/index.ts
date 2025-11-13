@@ -7,3 +7,4 @@ export function convertCinixTo音韻地位(cinix: string): 音韻地位 {
   return convertTUPATo音韻地位(convertIPAToTranscription(cinix));
 }
 export { convertIPAToTranscription as convertCinixToTUPA };
+export { getDefinitionFromSinograph } from './definition';
