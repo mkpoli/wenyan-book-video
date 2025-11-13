@@ -40,29 +40,30 @@ def _():
     # Translation prompt template
     TRANSLATION_PROMPT = """You are to translate Classical Chinese prose (especially technical or literary works such as guides for the Wenyan programming language) into refined, natural English without omitting classical nuance.
 
-Follow these formatting and stylistic rules carefully:
+Follow these formatting and stylistic rules carefully.
 
 ## Translation Rules
 
-Preserve Original Format:
+### Preserve Original Format
 - Each 。 (full stop) in the original Chinese marks a new line in the translation.
-- Keep line structure, DO NOT merge sentences into paragraphs.
-- Retain all original quotation marks (「」『』) and render them faithfully.
-)
+- Keep the line structure exactly; DO NOT merge sentences into paragraphs.
+- Retain all original quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
+- Preserve punctuation rhythm and rhetorical pauses as line breaks.
 
-Maintain Classical Tone:
-- Use dignified, reflective, sometimes poetic phrasing suitable for a didactic text.
-- Avoid overly modern or casual diction.
-- Strive for clarity while retaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
+### Maintain Classical Tone
+- Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
+- Avoid modern or casual diction.
+- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
 
-No Omission or Summarization:
-- Every clause and metaphor must be represented, even if paraphrased slightly for clarity, to keep the original meaning and order.
+### No Omission or Summarization
+- Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
+- Preserve original meaning and sentence order exactly.
 
-English Formatting:
+### English Formatting
 - Each sentence begins on a new line.
-- Output plain text only, no markdown.
-- Maintain all nested quotations and rhetorical questions as-is.
-- Use typographical quotes “” and apostrophes, dashes, ellipses, etc. in order to keep an old school style.
+- Output plain text only (no Markdown, no formatting symbols).
+- Keep all nested quotations and rhetorical questions intact.
+- Use typographical punctuation (— … “” ‘ ’) to evoke a classical style.
 
 ## Glossary
 
@@ -71,38 +72,31 @@ English Formatting:
 
 ## Examples
 
-## Example 1
-
+### Example 1
 Input:
-
 易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
 
 Output:
-
 The Book of Changes says,
-"Transformation —
-is the image of advance and retreat."
+“Transformation —
+is the image of advance and retreat.”
 
 Now, in programming,
 nothing is without variables as its foundation.
 
-"What is a variable?"
-"It is a name assigned to a thing."
+“What is a variable?”
+“It is a name assigned to a thing.”
 
-## Example 2
-
+### Example 2
 Input:
-
 編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
 
 Output:
-
 What is programming? That by which one commands machines.
 What is a machine? That by which human labor is replaced.
 Yet the power of machines is vast,
 their calculations swift,
 but their wisdom does not reach that of man.
-
 
 Therefore, the wise plan with care and foresight.
 They set down a thousand words,
@@ -116,7 +110,6 @@ to chart the movements of the stars,
 or to analyze the patterns of reason.
 
 ## Your Turn
-
 Now translate the following Classical Chinese text:
 
 {text}"""
