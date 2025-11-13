@@ -6,10 +6,11 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
+    import json
     import re
     from pathlib import Path
 
-    return Path, re
+    return Path, json, re
 
 
 @app.cell
@@ -128,7 +129,7 @@ def _(re):
 
 
 @app.cell
-def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path):
+def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences, Path):
     def segments_exist(chapter_num, output_dir):
         """Check if segments already exist for a chapter."""
         # Check if at least one segment file exists for this chapter
@@ -152,7 +153,13 @@ def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path)
 
         # Process each paragraph separately
         all_segments = []
+        segment_metadata = {}
+        segment_counter = 1
+
         for paragraph in paragraphs:
+            # Check if this paragraph is a code block
+            is_code_block = paragraph.strip().startswith("```")
+
             # Remove markdown from this paragraph
             text = remove_markdown(paragraph)
 
@@ -166,6 +173,13 @@ def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path)
             # Create segments within this paragraph only
             # (sentences from different paragraphs will never be combined)
             paragraph_segments = create_segments(sentences)
+
+            # Track metadata for each segment from this paragraph
+            for segment in paragraph_segments:
+                segment_id = f"{chapter_num}-{segment_counter}"
+                segment_metadata[segment_id] = {"isCodeBlock": is_code_block}
+                segment_counter += 1
+
             all_segments.extend(paragraph_segments)
 
         # Write segments to files
@@ -173,6 +187,11 @@ def _(create_segments, remove_markdown, split_paragraphs, split_sentences, Path)
             output_path = output_dir / f"{chapter_num}-{i}.txt"
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(segment)
+
+        # Write metadata JSON file for this chapter
+        metadata_path = output_dir / f"{chapter_num}.json"
+        with open(metadata_path, "w", encoding="utf-8") as f:
+            json.dump(segment_metadata, f, ensure_ascii=False, indent=2)
 
         print(f"Processed {chapter_path.name}: {len(all_segments)} segments")
 

@@ -165,6 +165,7 @@ const generateSegments = async () => {
     text: string;
     audioPath: string;
     translation: string | null;
+    isCodeBlock: boolean;
     sentences: Array<{
       chinese: string;
       english: string | null;
@@ -173,6 +174,27 @@ const generateSegments = async () => {
     }>;
     durationInFrames: number;
   }> = [];
+
+  // Load chapter metadata files
+  const chapterMetadata: Record<
+    string,
+    Record<string, { isCodeBlock: boolean }>
+  > = {};
+  try {
+    const metadataFiles = readdirSync(SEGMENTS_DIR).filter((file) =>
+      file.endsWith(".json"),
+    );
+    for (const metadataFile of metadataFiles) {
+      const metadataPath = join(SEGMENTS_DIR, metadataFile);
+      const metadata = JSON.parse(
+        readFileSync(metadataPath, "utf-8"),
+      ) as Record<string, { isCodeBlock: boolean }>;
+      const chapterNum = metadataFile.replace(".json", "");
+      chapterMetadata[chapterNum] = metadata;
+    }
+  } catch (error) {
+    console.warn("[segments] Failed to load chapter metadata:", error);
+  }
 
   try {
     const files = readdirSync(SEGMENTS_DIR).filter((file) =>
@@ -214,6 +236,11 @@ const generateSegments = async () => {
           const chineseSentences = splitChineseSentences(text);
           const englishSentences = splitEnglishSentences(translation);
           const ipaSentences = splitIPATranscriptions(transcript);
+
+          // Get chapter number from segment ID (e.g., "3-1" -> "3")
+          const chapterNum = id.split("-")[0];
+          const metadata = chapterMetadata[chapterNum]?.[id];
+          const isCodeBlock = metadata?.isCodeBlock ?? false;
 
           if (hasFemaleAudio) {
             debugLog(`Using female voice for segment ${id}.`);
@@ -267,6 +294,7 @@ const generateSegments = async () => {
             text,
             audioPath: `audios/${publicAudioFile}`,
             translation,
+            isCodeBlock,
             sentences,
             durationInFrames,
           };
