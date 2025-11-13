@@ -9,14 +9,14 @@ def _():
     import marimo as mo
     import os
     import time
+    import traceback
     from pathlib import Path
     from openai import OpenAI
     from dotenv import load_dotenv
 
     # Load environment variables
     load_dotenv()
-
-    return OpenAI, Path, load_dotenv, mo, os, time
+    return OpenAI, Path, mo, os, time, traceback
 
 
 @app.cell
@@ -31,8 +31,7 @@ def _(OpenAI, os):
     client = OpenAI(api_key=api_key)
     MODEL_NAME = "gpt-5-mini"  # Using GPT-5 as requested
     API_DELAY_SECONDS = 1  # Small delay to avoid rate limits
-
-    return API_DELAY_SECONDS, MODEL_NAME, api_key, client
+    return API_DELAY_SECONDS, MODEL_NAME, client
 
 
 @app.cell
@@ -40,89 +39,88 @@ def _():
     # Translation prompt template
     TRANSLATION_PROMPT = """You are to translate Classical Chinese prose (especially technical or literary works such as guides for the Wenyan programming language) into refined, natural English without omitting classical nuance.
 
-Follow these formatting and stylistic rules carefully.
+    Follow these formatting and stylistic rules carefully.
 
-## Translation Rules
+    ## Translation Rules
 
-### Preserve Original Format
-- Each 。 (full stop) in the original Chinese marks a new line in the translation.
-- Keep the line structure exactly; DO NOT merge sentences into paragraphs.
-- Retain all original quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
-- Preserve punctuation rhythm and rhetorical pauses as line breaks.
+    ### Preserve Original Format
+    - Each 。 (full stop) in the original Chinese marks a new line in the translation.
+    - Keep the line structure exactly; DO NOT merge sentences into paragraphs.
+    - Retain all original quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
+    - Preserve punctuation rhythm and rhetorical pauses as line breaks.
 
-### Maintain Classical Tone
-- Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
-- Avoid modern or casual diction.
-- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
+    ### Maintain Classical Tone
+    - Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
+    - Avoid modern or casual diction.
+    - Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
 
-### No Omission or Summarization
-- Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
-- Preserve original meaning and sentence order exactly.
+    ### No Omission or Summarization
+    - Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
+    - Preserve original meaning and sentence order exactly.
 
-### English Formatting
-- Each sentence begins on a new line.
-- Output plain text only (no Markdown, no formatting symbols).
-- Keep all nested quotations and rhetorical questions intact.
-- Use typographical punctuation (— … “” ‘ ’) to evoke a classical style.
+    ### English Formatting
+    - Each sentence begins on a new line.
+    - Output plain text only (no Markdown, no formatting symbols).
+    - Keep all nested quotations and rhetorical questions intact.
+    - Use typographical punctuation (— … “” ‘ ’) to evoke a classical style.
 
-## Glossary
+    ## Glossary
 
-- “爻” should be translated as “Yáo (booleans)”.
-- “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
+    - “爻” should be translated as “Yáo (booleans)”.
+    - “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
 
-## Examples
+    ## Examples
 
-### Example 1
-Input:
-易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
+    ### Example 1
+    Input:
+    易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
 
-Output:
-The Book of Changes says,
-“Transformation —
-is the image of advance and retreat.”
+    Output:
+    The Book of Changes says,
+    “Transformation —
+    is the image of advance and retreat.”
 
-Now, in programming,
-nothing is without variables as its foundation.
+    Now, in programming,
+    nothing is without variables as its foundation.
 
-“What is a variable?”
-“It is a name assigned to a thing.”
+    “What is a variable?”
+    “It is a name assigned to a thing.”
 
-### Example 2
-Input:
-編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
+    ### Example 2
+    Input:
+    編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
 
-Output:
-What is programming? That by which one commands machines.
-What is a machine? That by which human labor is replaced.
-Yet the power of machines is vast,
-their calculations swift,
-but their wisdom does not reach that of man.
+    Output:
+    What is programming? That by which one commands machines.
+    What is a machine? That by which human labor is replaced.
+    Yet the power of machines is vast,
+    their calculations swift,
+    but their wisdom does not reach that of man.
 
-Therefore, the wise plan with care and foresight.
-They set down a thousand words,
-as if issuing military orders,
-as if prescribing medicine —
-this is called a program.
+    Therefore, the wise plan with care and foresight.
+    They set down a thousand words,
+    as if issuing military orders,
+    as if prescribing medicine —
+    this is called a program.
 
-Once the machine comprehends it,
-it can then be made to serve mankind —
-to chart the movements of the stars,
-or to analyze the patterns of reason.
+    Once the machine comprehends it,
+    it can then be made to serve mankind —
+    to chart the movements of the stars,
+    or to analyze the patterns of reason.
 
-## Your Turn
-Now translate the following Classical Chinese text:
+    ## Your Turn
+    Now translate the following Classical Chinese text:
 
-{text}
+    {text}
 
-With the following context:
+    With the following context:
 
-Before:
-{before_context}
+    Before:
+    {before_context}
 
-After:
-{after_context}
-"""
-
+    After:
+    {after_context}
+    """
     return (TRANSLATION_PROMPT,)
 
 
@@ -138,14 +136,13 @@ def _(Path):
     print(f"Segments directory: {segments_dir}")
     print(f"Translations directory: {translations_dir}")
     print(f"Translations directory exists: {translations_dir.exists()}")
-
     return segments_dir, translations_dir
 
 
 @app.cell
 def _(segments_dir, translations_dir):
     # Maximum number of files to process per run (safety limit)
-    MAX_FILES_PER_RUN = 10
+    MAX_FILES_PER_RUN = 1
 
     # Find all segment files
     # Sort naturally by extracting chapter and segment numbers
@@ -173,13 +170,7 @@ def _(segments_dir, translations_dir):
     print(f"Processing {len(segment_files)} files (limit: {MAX_FILES_PER_RUN} per run)")
     if segment_files:
         print(f"Files to process (in order): {[f.name for f in segment_files]}")
-    return (
-        MAX_FILES_PER_RUN,
-        all_segment_files,
-        segment_files,
-        segment_files_to_process,
-        sort_key,
-    )
+    return all_segment_files, segment_files
 
 
 @app.cell
@@ -192,6 +183,7 @@ def _(
     mo,
     segments_dir,
     time,
+    traceback,
     translations_dir,
 ):
     def get_context(seg_file, all_segment_files, segments_dir, translations_dir):
@@ -215,10 +207,26 @@ def _(
                 # Use translation if available
                 with open(prev_trans_path, "r", encoding="utf-8") as f:
                     before_context = f.read().strip()
+                print(f"  📖 Context (before): Using translation from {prev_file.name}")
+                print(
+                    f"     Preview: {before_context[:80]}..."
+                    if len(before_context) > 80
+                    else f"     Content: {before_context}"
+                )
             else:
                 # Fall back to Chinese text
                 with open(prev_file, "r", encoding="utf-8") as f:
                     before_context = f.read().strip()
+                print(
+                    f"  📖 Context (before): Using Chinese text from {prev_file.name}"
+                )
+                print(
+                    f"     Preview: {before_context[:80]}..."
+                    if len(before_context) > 80
+                    else f"     Content: {before_context}"
+                )
+        else:
+            print("  📖 Context (before): No previous segment (first segment)")
 
         # Get next segment context
         if current_idx is not None and current_idx < len(all_segment_files) - 1:
@@ -229,10 +237,24 @@ def _(
                 # Use translation if available
                 with open(next_trans_path, "r", encoding="utf-8") as f:
                     after_context = f.read().strip()
+                print(f"  📖 Context (after): Using translation from {next_file.name}")
+                print(
+                    f"     Preview: {after_context[:80]}..."
+                    if len(after_context) > 80
+                    else f"     Content: {after_context}"
+                )
             else:
                 # Fall back to Chinese text
                 with open(next_file, "r", encoding="utf-8") as f:
                     after_context = f.read().strip()
+                print(f"  📖 Context (after): Using Chinese text from {next_file.name}")
+                print(
+                    f"     Preview: {after_context[:80]}..."
+                    if len(after_context) > 80
+                    else f"     Content: {after_context}"
+                )
+        else:
+            print("  📖 Context (after): No next segment (last segment)")
 
         return before_context, after_context
 
@@ -268,8 +290,15 @@ def _(
                 print(f"⚠ Skipping {seg_file.name}: empty file")
                 continue
 
-            print(f"\n[{i}/{len(segment_files)}] Translating {seg_file.name}...")
-            print(f"  Chinese: {chinese_text[:100]}...")
+            print(f"\n{'='*70}")
+            print(f"[{i}/{len(segment_files)}] Translating {seg_file.name}...")
+            print(f"{'='*70}")
+            print(f"  📝 Chinese text ({len(chinese_text)} chars):")
+            print(
+                f"     {chinese_text[:100]}..."
+                if len(chinese_text) > 100
+                else f"     {chinese_text}"
+            )
 
             # Get context from previous and next segments
             before_context, after_context = get_context(
@@ -277,18 +306,29 @@ def _(
             )
 
             # Prepare prompt
+            before_ctx_display = (
+                before_context if before_context else "(This is the first segment.)"
+            )
+            after_ctx_display = (
+                after_context if after_context else "(This is the last segment.)"
+            )
+
             prompt = TRANSLATION_PROMPT.format(
                 text=chinese_text,
-                before_context=(
-                    before_context if before_context else "(This is the first segment.)"
-                ),
-                after_context=(
-                    after_context if after_context else "(This is the last segment.)"
-                ),
+                before_context=before_ctx_display,
+                after_context=after_ctx_display,
             )
+
+            print("  📊 Prompt statistics:")
+            print(f"     - Chinese text: {len(chinese_text)} chars")
+            print(f"     - Before context: {len(before_ctx_display)} chars")
+            print(f"     - After context: {len(after_ctx_display)} chars")
+            print(f"     - Total prompt: {len(prompt)} chars")
+            print(f"  🤖 Calling API ({MODEL_NAME})...")
 
             try:
                 # Call OpenAI API
+                api_start_time = time.time()
                 response = client.chat.completions.create(
                     model=MODEL_NAME,
                     messages=[
@@ -299,28 +339,52 @@ def _(
                         {"role": "user", "content": prompt},
                     ],
                 )
+                api_duration = time.time() - api_start_time
 
                 # Extract translation
                 translation = response.choices[0].message.content.strip()
+
+                # Get token usage if available
+                usage_info = ""
+                if hasattr(response, "usage"):
+                    usage = response.usage
+                    usage_info = f" (tokens: {usage.total_tokens} total, {usage.prompt_tokens} prompt, {usage.completion_tokens} completion)"
+
+                print(f"  ✅ API response received in {api_duration:.2f}s{usage_info}")
+                print(f"  📄 Translation ({len(translation)} chars):")
+                print(
+                    f"     {translation[:150]}..."
+                    if len(translation) > 150
+                    else f"     {translation}"
+                )
 
                 # Save translation
                 with open(trans_path, "w", encoding="utf-8") as f:
                     f.write(translation)
 
-                print(f"✓ Saved translation: {trans_filename}")
-                print(f"  Translation preview: {translation[:100]}...")
+                print(f"  💾 Saved translation to: {trans_filename}")
+                print(
+                    f"     File size: {len(translation)} chars, {len(translation.splitlines())} lines"
+                )
 
                 # Wait before next API call (except for the last one)
                 if i < len(segment_files):
+                    print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before next request...")
                     time.sleep(API_DELAY_SECONDS)
 
             except Exception as e:
-                print(f"✗ Error translating {seg_file.name}: {e}")
+                print(f"  ❌ Error translating {seg_file.name}: {e}")
+                print("  📋 Error details:")
+                traceback.print_exc()
                 # Still wait to avoid rapid retries
                 if i < len(segment_files):
+                    print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before next request...")
                     time.sleep(API_DELAY_SECONDS)
 
-        print(f"\n✓ Completed {len(segment_files)} files. Run again to process more.")
+        print(f"\n{'='*70}")
+        print(f"✅ Completed processing {len(segment_files)} file(s)")
+        print(f"{'='*70}")
+        print("💡 Tip: Run again to process more segments if any remain.")
 
     return (process_segments,)
 
