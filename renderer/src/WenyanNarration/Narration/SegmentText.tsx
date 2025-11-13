@@ -15,6 +15,37 @@ interface SegmentTextProps {
   readonly fadeInDuration?: number; // Duration in frames for fade-in, undefined means no fade-in
 }
 
+function renderTextWithColoredBrackets(text: string): React.ReactNode {
+  const parts: React.ReactNode[] = [];
+  let currentPart = "";
+  
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (char === "『" || char === "』" || char === "「" || char === "」") {
+      // Push current part if it exists
+      if (currentPart) {
+        parts.push(currentPart);
+        currentPart = "";
+      }
+      // Push colored bracket
+      parts.push(
+        <span key={`bracket-${i}`} style={{ color: "#d35835ee" }}>
+          {char}
+        </span>
+      );
+    } else {
+      currentPart += char;
+    }
+  }
+  
+  // Push remaining part
+  if (currentPart) {
+    parts.push(currentPart);
+  }
+  
+  return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
+}
+
 function SentenceWithTrailingMarker({
   text,
   highlight,
@@ -36,11 +67,11 @@ function SentenceWithTrailingMarker({
         highlight ? "text-gray-900 font-bold" : "text-gray-500 font-normal"
       }`}
     >
-      {allButLast}
+      {renderTextWithColoredBrackets(allButLast)}
       <span
         className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-[42%] after:translate-y-[48%] after:text-red-400 after:pointer-events-none after:select-none after:duration-200 after:ease-in-out after:font-normal`}
       >
-        {lastChar}
+        {renderTextWithColoredBrackets(lastChar)}
       </span>
     </span>
   );
@@ -105,7 +136,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                   highlight={index === currentSentenceIndex}
                 />
               ))
-            : text}
+            : renderTextWithColoredBrackets(text)}
         </div>
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
