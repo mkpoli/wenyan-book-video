@@ -256,7 +256,8 @@ function convertWord(word: string): string {
   if (
     (onset === "gh" && nucleus === "u") ||
     (onset === "gh" && nucleus === "y") ||
-    (onset === "gh" && medial === "u")
+    (onset === "gh" && medial === "u") ||
+    (onset === "gh" && medial === "y")
   ) {
     onset = "";
   }
