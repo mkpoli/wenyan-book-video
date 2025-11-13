@@ -68,11 +68,11 @@ Every clause and metaphor must be represented, even if paraphrased slightly for 
 
 Formatting:
 
-Each sentence begins on a new line.
+Glossary:
 
-Output plain text only, no markdown.
+爻 should be translated as "Yáo (booleans)".
 
-Maintain all nested quotations and rhetorical questions as-is.
+計開 means “Table of Contents”, is used as a marker to start a list of contents, can be translated as "Let's unfold our explanation."
 
 Example
 
