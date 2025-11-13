@@ -8,6 +8,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "elevenlabs>=2.22.0",
     "marimo>=0.17.7",
+    "openai>=1.0.0",
     "regex>=2025.11.3",
     "requests>=2.31.0",
 ]
