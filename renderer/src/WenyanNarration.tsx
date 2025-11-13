@@ -2,13 +2,8 @@ import React from "react";
 import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
-import { ChapterTitle } from "./WenyanNarration/ChapterTitle";
-import { BookTitle } from "./WenyanNarration/BookTitle";
-import { WenyanLanguageIntroduction } from "./WenyanNarration/WenyanLanguageIntroduction";
-import { BookIntroduction } from "./WenyanNarration/BookIntroduction";
-import { CreatorIntroduction } from "./WenyanNarration/CreatorIntroduction";
-import { VideoExplanation } from "./WenyanNarration/VideoExplanation";
 import { IntroBackgroundMusic } from "./WenyanNarration/IntroBackgroundMusic";
+import { Intro } from "./WenyanNarration/Intro";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -88,77 +83,19 @@ export const WenyanNarration: React.FC<
         </Sequence>
       )}
       {shouldShowTitle && (
-        <>
-          {/* Book Title Page - appears first */}
-          <Sequence from={0} durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
-            <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
-          </Sequence>
-          {/* Wenyan Language Introduction - appears after book title */}
-          <Sequence
-            from={BOOK_TITLE_DURATION_FRAMES}
-            durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
-          >
-            <WenyanLanguageIntroduction
-              durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
-            />
-          </Sequence>
-          {/* Book Introduction - appears after language introduction */}
-          <Sequence
-            from={
-              BOOK_TITLE_DURATION_FRAMES +
-              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
-            }
-            durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
-          >
-            <BookIntroduction
-              durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
-            />
-          </Sequence>
-          {/* Creator Introduction - appears after book introduction */}
-          <Sequence
-            from={
-              BOOK_TITLE_DURATION_FRAMES +
-              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-              BOOK_INTRODUCTION_DURATION_FRAMES
-            }
-            durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
-          >
-            <CreatorIntroduction
-              durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
-            />
-          </Sequence>
-          {/* Video Explanation - appears after creator introduction */}
-          <Sequence
-            from={
-              BOOK_TITLE_DURATION_FRAMES +
-              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-              BOOK_INTRODUCTION_DURATION_FRAMES +
-              CREATOR_INTRODUCTION_DURATION_FRAMES
-            }
-            durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
-          >
-            <VideoExplanation
-              durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
-            />
-          </Sequence>
-          {/* Chapter Title - appears after introductions */}
-          <Sequence
-            from={
-              BOOK_TITLE_DURATION_FRAMES +
-              WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-              BOOK_INTRODUCTION_DURATION_FRAMES +
-              CREATOR_INTRODUCTION_DURATION_FRAMES +
-              VIDEO_EXPLANATION_DURATION_FRAMES
-            }
-            durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-          >
-            <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
-            <ChapterTitle
-              chapterNumber={chapterNumber!}
-              durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-            />
-          </Sequence>
-        </>
+        <Intro
+          chapterNumber={chapterNumber!}
+          bookTitleDurationFrames={BOOK_TITLE_DURATION_FRAMES}
+          wenyanLanguageIntroductionDurationFrames={
+            WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
+          }
+          bookIntroductionDurationFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
+          creatorIntroductionDurationFrames={
+            CREATOR_INTRODUCTION_DURATION_FRAMES
+          }
+          videoExplanationDurationFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
+          chapterTitleDurationFrames={CHAPTER_TITLE_DURATION_FRAMES}
+        />
       )}
 
       {segments.map((segment, index) => {
