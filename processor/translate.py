@@ -42,39 +42,36 @@ def _():
 
 Follow these formatting and stylistic rules carefully:
 
-Translation Rules
+## Translation Rules
 
-Preserve Line Structure:
-
-Each 。 (full stop) in the original Chinese marks a new line in the translation.
-
-Do not merge sentences into paragraphs.
-
-Keep Quotation Marks:
-
-Retain all original quotation marks (「」「」 or "") and render them faithfully in English using standard double quotes " ".
+Preserve Original Format:
+- Each 。 (full stop) in the original Chinese marks a new line in the translation.
+- Keep line structure, DO NOT merge sentences into paragraphs.
+- Retain all original quotation marks (「」『』) and render them faithfully.
+)
 
 Maintain Classical Tone:
-
-Use dignified, reflective phrasing suitable for a didactic text.
-
-Avoid overly modern or casual diction.
-
-Strive for clarity while retaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
+- Use dignified, reflective, sometimes poetic phrasing suitable for a didactic text.
+- Avoid overly modern or casual diction.
+- Strive for clarity while retaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
 
 No Omission or Summarization:
+- Every clause and metaphor must be represented, even if paraphrased slightly for clarity, to keep the original meaning and order.
 
-Every clause and metaphor must be represented, even if paraphrased slightly for clarity.
+English Formatting:
+- Each sentence begins on a new line.
+- Output plain text only, no markdown.
+- Maintain all nested quotations and rhetorical questions as-is.
+- Use typographical quotes “” and apostrophes, dashes, ellipses, etc. in order to keep an old school style.
 
-Formatting:
+## Glossary
 
-Glossary:
+- “爻” should be translated as “Yáo (booleans)”.
+- “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.”
 
-爻 should be translated as "Yáo (booleans)".
+## Examples
 
-計開 means “Table of Contents”, is used as a marker to start a list of contents, can be translated as "Let's unfold our explanation."
-
-Example
+## Example 1
 
 Input:
 
@@ -91,6 +88,34 @@ nothing is without variables as its foundation.
 
 "What is a variable?"
 "It is a name assigned to a thing."
+
+## Example 2
+
+Input:
+
+編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
+
+Output:
+
+What is programming? That by which one commands machines.
+What is a machine? That by which human labor is replaced.
+Yet the power of machines is vast,
+their calculations swift,
+but their wisdom does not reach that of man.
+
+
+Therefore, the wise plan with care and foresight.
+They set down a thousand words,
+as if issuing military orders,
+as if prescribing medicine —
+this is called a program.
+
+Once the machine comprehends it,
+it can then be made to serve mankind —
+to chart the movements of the stars,
+or to analyze the patterns of reason.
+
+## Your Turn
 
 Now translate the following Classical Chinese text:
 
