@@ -1,0 +1,2 @@
+Now, having known the names, essences, and classes of variables.
+Thereupon one may create and declare them as follows.
