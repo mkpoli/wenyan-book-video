@@ -118,7 +118,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             ) : null}
             {englishLine ? (
               <p
-                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap ${
+                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-[6.75rem] flex items-center justify-center ${
                   englishLine.length > 70
                     ? englishLine.length > 100
                       ? "text-2xl"
