@@ -2,7 +2,6 @@ import React from "react";
 import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
-import { IntroBackgroundMusic } from "./WenyanNarration/IntroBackgroundMusic";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro";
 import {
   ChapterTitle,
@@ -56,15 +55,6 @@ export const WenyanNarration: React.FC<
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
-      {/* Background music for intro - bg.mp3 with fade-out */}
-      {shouldShowTitle && introDuration > 0 && (
-        <Sequence from={0} durationInFrames={introDuration}>
-          <IntroBackgroundMusic
-            durationInFrames={introDuration}
-            fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES}
-          />
-        </Sequence>
-      )}
       {/* Background music for reading segments - bg2.mp3 (includes chapter title) */}
       {shouldShowTitle && readingDuration > 0 && (
         <Sequence
@@ -74,7 +64,9 @@ export const WenyanNarration: React.FC<
           <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
       )}
-      {shouldShowTitle && <Intro />}
+      {shouldShowTitle && (
+        <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
+      )}
       {/* Chapter Title - appears after intro */}
       {shouldShowTitle && (
         <Sequence

@@ -1,5 +1,11 @@
 import React from "react";
-import { Series } from "remotion";
+import {
+  Html5Audio,
+  interpolate,
+  Series,
+  staticFile,
+  useCurrentFrame,
+} from "remotion";
 import { BookTitle } from "./Intro/BookTitle";
 import { WenyanLanguageIntroduction } from "./Intro/WenyanLanguageIntroduction";
 import { BookIntroduction } from "./Intro/BookIntroduction";
@@ -36,34 +42,56 @@ export const INTRO_DURATIONS: IntroDurations = {
   videoExplanation: VIDEO_EXPLANATION_DURATION_FRAMES,
 };
 
-export const Intro: React.FC = () => {
+interface IntroProps {
+  readonly fadeOutDurationFrames?: number;
+}
+
+export const Intro: React.FC<IntroProps> = ({ fadeOutDurationFrames = 60 }) => {
+  const frame = useCurrentFrame();
+
+  // Fade out volume at the end
+  const volume = interpolate(
+    frame,
+    [INTRO_DURATION_FRAMES - fadeOutDurationFrames, INTRO_DURATION_FRAMES],
+    [0.1, 0],
+    {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    },
+  );
+
   return (
-    <Series>
-      <Series.Sequence durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
-        <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
-      </Series.Sequence>
-      <Series.Sequence
-        durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
-      >
-        <WenyanLanguageIntroduction
+    <>
+      <Html5Audio src={staticFile("audios/bg.mp3")} volume={volume} loop />
+      <Series>
+        <Series.Sequence durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
+          <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
+        </Series.Sequence>
+        <Series.Sequence
           durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
-        />
-      </Series.Sequence>
-      <Series.Sequence durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}>
-        <BookIntroduction
-          durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
-        />
-      </Series.Sequence>
-      <Series.Sequence durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}>
-        <CreatorIntroduction
+        >
+          <WenyanLanguageIntroduction
+            durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
+          />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}>
+          <BookIntroduction
+            durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
+          />
+        </Series.Sequence>
+        <Series.Sequence
           durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
-        />
-      </Series.Sequence>
-      <Series.Sequence durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}>
-        <VideoExplanation
-          durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
-        />
-      </Series.Sequence>
-    </Series>
+        >
+          <CreatorIntroduction
+            durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
+          />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}>
+          <VideoExplanation
+            durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
+          />
+        </Series.Sequence>
+      </Series>
+    </>
   );
 };
