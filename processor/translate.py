@@ -65,9 +65,16 @@ def _():
     - Use typographical punctuation (— … “” ‘ ’) to evoke a classical style.
 
     ## Glossary
-
-    - “爻” should be translated as “Yáo (booleans)”.
     - “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
+
+    ### Classes
+
+    - “數” -> “Numbers (numerals)”.
+    - “言” -> “Words (strings)”.
+    - “爻” -> “Yáo (booleans)”.
+    - “列” -> “Lists (arrays)”.
+    - “物” -> “Things (objects)”.
+    - “術” -> “Means (methods)”.
 
     ## Examples
 
