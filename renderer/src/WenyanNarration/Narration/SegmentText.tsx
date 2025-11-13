@@ -112,7 +112,7 @@ function renderTextWithQuotes(
       >
         {prefixString ? (
           <span
-            className="absolute left-1/2 text-[#d35835ee] pointer-events-none select-none"
+            className="absolute left-1/2 text-punctuation pointer-events-none select-none"
             style={{
               top: 0,
               transform:
@@ -127,7 +127,7 @@ function renderTextWithQuotes(
         {entry.char}
         {suffixString ? (
           <span
-            className="absolute left-1/2 text-[#d35835ee] pointer-events-none select-none"
+            className="absolute left-1/2 text-punctuation pointer-events-none select-none"
             style={{
               bottom: 0,
               transform:
@@ -140,7 +140,7 @@ function renderTextWithQuotes(
           </span>
         ) : null}
         {showTrailingMarker && trailingMarker ? (
-          <span className="absolute bottom-0 right-0 text-red-400 pointer-events-none select-none font-normal transform translate-x-[42%] translate-y-[48%] duration-200 ease-in-out">
+          <span className="absolute bottom-0 right-0 text-punctuation pointer-events-none select-none font-normal transform translate-x-[38%] translate-y-[40%] duration-200 ease-in-out">
             {trailingMarker}
           </span>
         ) : null}

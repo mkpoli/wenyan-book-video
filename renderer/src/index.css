@@ -52,4 +52,6 @@
   --font-serif: "IM Fell DW Pica English SC", serif;
   --font-ipa: "Charis SIL", "Tinos", serif;
   --font-transcription: "IM Fell DW Pica", "Tinos", serif;
+
+  --color-punctuation: #cf4235ee;
 }
