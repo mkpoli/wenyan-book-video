@@ -74,9 +74,9 @@ export const RemotionRoot: React.FC = () => {
       />
       {/* Book Title Page - appears before all chapters */}
       <Composition
-        id="BookTitle"
-        component={BookTitle}
-        durationInFrames={BOOK_TITLE_DURATION_FRAMES}
+        id="Intro"
+        component={Intro}
+        durationInFrames={INTRO_DURATION_FRAMES}
         fps={30}
         width={1920}
         height={1080}
