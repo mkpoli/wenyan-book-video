@@ -1,28 +1,28 @@
-const ACCUTE_ACCENT = "\u{301}"; // Unicode: COMBINING ACUTE ACCENT (U+0301) "́"
-const GRAVE_ACCENT = "\u{300}"; // Unicode: COMBINING GRAVE ACCENT (U+0300) "◌̀"
+const ACCUTE_ACCENT = '\u{301}'; // Unicode: COMBINING ACUTE ACCENT (U+0301) "́"
+const GRAVE_ACCENT = '\u{300}'; // Unicode: COMBINING GRAVE ACCENT (U+0300) "◌̀"
 // const CIRCUMFLEX_ACCENT = "̂";
-const CARON = "\u{30C}"; // Unicode: COMBINING CARON (U+030C) "̌" (háček)
-const DOT_BELOW = "\u{323}"; // Unicode: COMBINING DOT BELOW (U+0323) "̣"
+const CARON = '\u{30C}'; // Unicode: COMBINING CARON (U+030C) "̌" (háček)
+const DOT_BELOW = '\u{323}'; // Unicode: COMBINING DOT BELOW (U+0323) "̣"
 
-const ACCENTS = [ACCUTE_ACCENT, GRAVE_ACCENT].join("");
+const ACCENTS = [ACCUTE_ACCENT, GRAVE_ACCENT].join('');
 
 function separateTone(rhyme: string): [string, string] {
   const ORIGINAL_TONES = [ACCUTE_ACCENT, GRAVE_ACCENT, CARON];
   for (const tone of ORIGINAL_TONES) {
     if (rhyme.includes(tone)) {
-      return [rhyme.replace(tone, ""), tone];
+      return [rhyme.replace(tone, ''), tone];
     }
   }
-  return [rhyme, ""];
+  return [rhyme, ''];
 }
 
 function convertWord(word: string): string {
-  let result = word.normalize("NFD");
+  let result = word.normalize('NFD');
 
   // Split into CGVC-T
 
-  let onset = "";
-  let rhyme = "";
+  let onset = '';
+  let rhyme = '';
 
   for (let i = 0; i < result.length; i++) {
     if (result[i].match(/[aeiouɑɨəʉyʷ]/)) {
@@ -34,52 +34,52 @@ function convertWord(word: string): string {
 
   const ONSET_TABLE = {
     // Bilabial
-    p: "p",
-    pʰ: "ph",
-    b: "b",
-    m: "m",
+    p: 'p',
+    pʰ: 'ph',
+    b: 'b',
+    m: 'm',
 
     // Alveolar
-    t: "t",
-    tʰ: "th",
-    d: "d",
-    n: "n",
-    s: "s",
-    z: "z",
-    ʦ: "ts",
-    ʣ: "dz",
-    ʦʰ: "tsh",
+    t: 't',
+    tʰ: 'th',
+    d: 'd',
+    n: 'n',
+    s: 's',
+    z: 'z',
+    ʦ: 'ts',
+    ʣ: 'dz',
+    ʦʰ: 'tsh',
 
     // Alveolo-palatal
-    ɕ: "sj",
-    ʑ: "zj",
-    ʨ: "tj",
-    ʨʰ: "tjh",
-    ʥ: "dj",
-    ɲ: "nj",
+    ɕ: 'sj',
+    ʑ: 'zj',
+    ʨ: 'tj',
+    ʨʰ: 'tjh',
+    ʥ: 'dj',
+    ɲ: 'nj',
 
     // Retroflex
-    ʂ: "sr",
-    ʈ: "tr",
-    ɖ: "dr",
-    ɳ: "nr",
-    ꭧ: "tsr",
-    ꭧʰ: "tshr",
-    ꭦ: "dzr",
-    l: "l",
+    ʂ: 'sr',
+    ʈ: 'tr',
+    ɖ: 'dr',
+    ɳ: 'nr',
+    ꭧ: 'tsr',
+    ꭧʰ: 'tshr',
+    ꭦ: 'dzr',
+    l: 'l',
 
     // Palatal
-    j: "j",
+    j: 'j',
 
     // Velar
-    k: "k",
-    kʰ: "kh",
-    g: "g",
-    ŋ: "ng",
+    k: 'k',
+    kʰ: 'kh',
+    g: 'g',
+    ŋ: 'ng',
 
-    h: "h",
-    ʔ: "q",
-    ɦ: "gh",
+    h: 'h',
+    ʔ: 'q',
+    ɦ: 'gh',
   };
 
   if (!Object.keys(ONSET_TABLE).includes(onset)) {
@@ -89,10 +89,10 @@ function convertWord(word: string): string {
   onset = ONSET_TABLE[onset as keyof typeof ONSET_TABLE] || onset;
 
   // Remove vowel lengthening
-  rhyme = rhyme.replace(/ː/, "");
+  rhyme = rhyme.replace(/ː/, '');
 
-  let medialNucleus = "";
-  let coda = "";
+  let medialNucleus = '';
+  let coda = '';
   for (let i = rhyme.length - 1; i >= 0; i--) {
     if (rhyme[i].match(/[^mnŋptkjw]/)) {
       coda = rhyme.slice(i + 1);
@@ -104,9 +104,9 @@ function convertWord(word: string): string {
   let [tonelessMedialNucleus, tone] = separateTone(medialNucleus);
 
   const TONE_TABLE = new Map<string, string>([
-    [ACCUTE_ACCENT, "q"],
-    [GRAVE_ACCENT, ""],
-    [CARON, "h"],
+    [ACCUTE_ACCENT, 'q'],
+    [GRAVE_ACCENT, ''],
+    [CARON, 'h'],
   ]);
   if (tone.length > 0 && !TONE_TABLE.has(tone)) {
     console.warn(`Unknown tone: ${tone}`);
@@ -119,10 +119,10 @@ function convertWord(word: string): string {
   // // Use grave instead of caron
   // rhyme = rhyme.replace(CARON, GRAVE_ACCENT);
 
-  let medial = "";
-  let nucleus = "";
+  let medial = '';
+  let nucleus = '';
 
-  tonelessMedialNucleus = tonelessMedialNucleus.normalize("NFC");
+  tonelessMedialNucleus = tonelessMedialNucleus.normalize('NFC');
 
   if (tonelessMedialNucleus.length == 1) {
     nucleus = tonelessMedialNucleus;
@@ -144,25 +144,25 @@ function convertWord(word: string): string {
   }
 
   const SPECIAL_PAIRS = new Map([
-    ["ɨə", "yo"],
-    ["ʉu", "u"],
+    ['ɨə', 'yo'],
+    ['ʉu', 'u'],
   ]);
 
   if (SPECIAL_PAIRS.has(`${medial}${nucleus}`)) {
     const converted = SPECIAL_PAIRS.get(`${medial}${nucleus}`);
     if (converted) {
-      medial = "";
+      medial = '';
       nucleus = converted;
     }
   } else {
     const MEDIAL_TABLE = {
-      y: "wi",
-      ʷ: "w",
-      ɨ: "y",
-      ị: "y",
-      ʉ: "u",
-      ỵ: "u",
-      i: "i",
+      y: 'wi',
+      ʷ: 'w',
+      ɨ: 'y',
+      ị: 'y',
+      ʉ: 'u',
+      ỵ: 'u',
+      i: 'i',
     };
     if (medial.length > 0 && !Object.keys(MEDIAL_TABLE).includes(medial)) {
       console.warn(`Unknown medial: ${medial}`);
@@ -170,19 +170,19 @@ function convertWord(word: string): string {
     medial = MEDIAL_TABLE[medial as keyof typeof MEDIAL_TABLE] || medial;
 
     const NUCLEUS_TABLE = {
-      a: "ae",
-      ạ: "ae",
-      e: "e",
-      ẹ: "ee",
-      ɑ: "a",
-      ə: "eo",
-      i: "i",
-      ɨ: "y",
-      ị: "yi",
-      u: "ou",
-      ʉ: "u",
-      o: "o",
-      ọ: "oeu",
+      a: 'ae',
+      ạ: 'ae',
+      e: 'e',
+      ẹ: 'ee',
+      ɑ: 'a',
+      ə: 'eo',
+      i: 'i',
+      ɨ: 'y',
+      ị: 'yi',
+      u: 'ou',
+      ʉ: 'u',
+      o: 'o',
+      ọ: 'oeu',
     };
     if (nucleus.length > 0 && !Object.keys(NUCLEUS_TABLE).includes(nucleus)) {
       console.warn(`Unknown nucleus: ${nucleus}`);
@@ -199,14 +199,14 @@ function convertWord(word: string): string {
   // }
 
   const CODA_TABLE = {
-    m: "m",
-    n: "n",
-    ŋ: "ng",
-    p: "p",
-    t: "t",
-    k: "k",
-    w: "w",
-    j: "j",
+    m: 'm',
+    n: 'n',
+    ŋ: 'ng',
+    p: 'p',
+    t: 't',
+    k: 'k',
+    w: 'w',
+    j: 'j',
   };
   if (coda.length > 0 && !Object.keys(CODA_TABLE).includes(coda)) {
     console.warn(`Unknown coda: ${coda}`);
@@ -254,15 +254,15 @@ function convertWord(word: string): string {
   // // Recompose
 
   if (
-    (onset === "gh" && nucleus === "u") ||
-    (onset === "gh" && nucleus === "y") ||
-    (onset === "gh" && medial === "u") ||
-    (onset === "gh" && medial === "y")
+    (onset === 'gh' && nucleus === 'u') ||
+    (onset === 'gh' && nucleus === 'y') ||
+    (onset === 'gh' && medial === 'u') ||
+    (onset === 'gh' && medial === 'y')
   ) {
-    onset = "";
+    onset = '';
   }
 
-  result = [onset, medial, nucleus, coda, tone].join("").normalize("NFC");
+  result = [onset, medial, nucleus, coda, tone].join('').normalize('NFC');
 
   return result;
 }
@@ -273,5 +273,5 @@ export function convertIPAToTranscription(ipa: string): string {
   //  pen driaeng tjiaeq gha . sryoq jyq jwiaek kyj khyih jiaeq . kyj khyih tjiaeq gha . sryoq jyq deojh njin lyk jiaeq njien kyj hkyih tjy lyk jiaeq kwangq . gy swanq jiaeq souk . jiw trieh pu dejh jaeq.
 
   // Decompose
-  return ipa.split(" ").map(convertWord).join(" ");
+  return ipa.split(' ').map(convertWord).join(' ');
 }

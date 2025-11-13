@@ -1,0 +1,15 @@
+{
+  "name": "transcription-utils",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "tshet-uinh": "^0.15.3",
+    "tupa-parser": "^0.3.1"
+  }
+}

@@ -15,6 +15,7 @@
     "react-dom": "19.2.0",
     "remotion": "4.0.374",
     "tailwindcss": "4.1.17",
+    "transcription-utils": "workspace:*",
     "zod": "4.1.12"
   },
   "devDependencies": {
@@ -25,7 +26,8 @@
     "copy-webpack-plugin": "^13.0.1",
     "eslint": "9.39.1",
     "prettier": "3.6.2",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "@types/bun": "latest"
   },
   "scripts": {
     "dev": "remotion studio src/index.ts",

@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { convertIPAToTranscription } from "../../convert";
+import { convertCinixToTUPA } from "transcription-utils";
 
 type SentenceEntry = {
   chinese: string;
@@ -248,7 +248,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
               <p
                 className={`font-transcription tracking-wide font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line ${transcriptionLine.length > 100 ? "text-2xl" : "text-5xl"}`}
               >
-                {convertIPAToTranscription(transcriptionLine)}
+                {convertCinixToTUPA(transcriptionLine)}
               </p>
             ) : null}
             {englishLine ? (

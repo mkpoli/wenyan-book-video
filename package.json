@@ -1,0 +1,8 @@
+{
+  "name": "wenyan-book-video",
+  "private": true,
+  "workspaces": [
+    "renderer",
+    "transcription-utils"
+  ]
+}
