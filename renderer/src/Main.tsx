@@ -1,12 +1,12 @@
 import React from "react";
 import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
-import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro";
+import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
 import {
   ChapterTitle,
   CHAPTER_TITLE_DURATION_FRAMES,
 } from "./WenyanNarration/ChapterTitle";
-import { Narration } from "./WenyanNarration/Narration";
+import { Narration } from "./WenyanNarration/Narration/Narration";
 import { z } from "zod";
 
 export const mainSchema = z.object({

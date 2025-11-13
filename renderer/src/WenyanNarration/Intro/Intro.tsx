@@ -6,11 +6,11 @@ import {
   staticFile,
   useCurrentFrame,
 } from "remotion";
-import { BookTitle } from "./Intro/BookTitle";
-import { WenyanLanguageIntroduction } from "./Intro/WenyanLanguageIntroduction";
-import { BookIntroduction } from "./Intro/BookIntroduction";
-import { CreatorIntroduction } from "./Intro/CreatorIntroduction";
-import { VideoExplanation } from "./Intro/VideoExplanation";
+import { BookTitle } from "./BookTitle";
+import { WenyanLanguageIntroduction } from "./WenyanLanguageIntroduction";
+import { BookIntroduction } from "./BookIntroduction";
+import { CreatorIntroduction } from "./CreatorIntroduction";
+import { VideoExplanation } from "./VideoExplanation";
 
 export const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
 export const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps

@@ -1,6 +1,6 @@
 import React from "react";
 import { Html5Audio, Sequence, staticFile } from "remotion";
-import { Segment } from "../generated/segments";
+import { Segment } from "../../generated/segments";
 import { SegmentText } from "./SegmentText";
 
 interface NarrationProps {

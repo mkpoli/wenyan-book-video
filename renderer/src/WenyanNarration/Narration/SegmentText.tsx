@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { convertIPAToTranscription } from "../convert";
+import { convertIPAToTranscription } from "../../convert";
 
 type SentenceEntry = {
   chinese: string;

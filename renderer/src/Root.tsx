@@ -3,7 +3,7 @@ import { Composition } from "remotion";
 import { Main, mainSchema } from "./Main";
 import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
-import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro";
+import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
 
 // Each <Composition> is an entry in the sidebar!
 
