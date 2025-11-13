@@ -7,83 +7,107 @@ import { CreatorIntroduction } from "./CreatorIntroduction";
 import { VideoExplanation } from "./VideoExplanation";
 import { ChapterTitle } from "./ChapterTitle";
 
-type IntroProps = {
-  chapterNumber: number;
-  bookTitleDurationFrames: number;
-  wenyanLanguageIntroductionDurationFrames: number;
-  bookIntroductionDurationFrames: number;
-  creatorIntroductionDurationFrames: number;
-  videoExplanationDurationFrames: number;
-  chapterTitleDurationFrames: number;
+export const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
+export const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+export const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+export const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+export const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
+export const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
+
+// Total intro duration (excludes chapter title, which belongs to reading section)
+export const INTRO_DURATION_FRAMES =
+  BOOK_TITLE_DURATION_FRAMES +
+  WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+  BOOK_INTRODUCTION_DURATION_FRAMES +
+  CREATOR_INTRODUCTION_DURATION_FRAMES +
+  VIDEO_EXPLANATION_DURATION_FRAMES;
+
+export type IntroDurations = {
+  bookTitle: number;
+  wenyanLanguageIntroduction: number;
+  bookIntroduction: number;
+  creatorIntroduction: number;
+  videoExplanation: number;
+  chapterTitle: number;
 };
 
-export const Intro: React.FC<IntroProps> = ({
-  chapterNumber,
-  bookTitleDurationFrames,
-  wenyanLanguageIntroductionDurationFrames,
-  bookIntroductionDurationFrames,
-  creatorIntroductionDurationFrames,
-  videoExplanationDurationFrames,
-  chapterTitleDurationFrames,
-}) => {
+export const INTRO_DURATIONS: IntroDurations = {
+  bookTitle: BOOK_TITLE_DURATION_FRAMES,
+  wenyanLanguageIntroduction: WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES,
+  bookIntroduction: BOOK_INTRODUCTION_DURATION_FRAMES,
+  creatorIntroduction: CREATOR_INTRODUCTION_DURATION_FRAMES,
+  videoExplanation: VIDEO_EXPLANATION_DURATION_FRAMES,
+  chapterTitle: CHAPTER_TITLE_DURATION_FRAMES,
+};
+
+type IntroProps = {
+  chapterNumber: number;
+};
+
+export const Intro: React.FC<IntroProps> = ({ chapterNumber }) => {
   return (
     <>
-      <Sequence from={0} durationInFrames={bookTitleDurationFrames}>
-        <BookTitle durationInFrames={bookTitleDurationFrames} />
+      <Sequence from={0} durationInFrames={BOOK_TITLE_DURATION_FRAMES}>
+        <BookTitle durationInFrames={BOOK_TITLE_DURATION_FRAMES} />
       </Sequence>
       <Sequence
-        from={bookTitleDurationFrames}
-        durationInFrames={wenyanLanguageIntroductionDurationFrames}
+        from={BOOK_TITLE_DURATION_FRAMES}
+        durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
       >
         <WenyanLanguageIntroduction
-          durationInFrames={wenyanLanguageIntroductionDurationFrames}
+          durationInFrames={WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES}
         />
       </Sequence>
       <Sequence
         from={
-          bookTitleDurationFrames + wenyanLanguageIntroductionDurationFrames
+          BOOK_TITLE_DURATION_FRAMES +
+          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
         }
-        durationInFrames={bookIntroductionDurationFrames}
+        durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
       >
-        <BookIntroduction durationInFrames={bookIntroductionDurationFrames} />
+        <BookIntroduction
+          durationInFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
+        />
       </Sequence>
       <Sequence
         from={
-          bookTitleDurationFrames +
-          wenyanLanguageIntroductionDurationFrames +
-          bookIntroductionDurationFrames
+          BOOK_TITLE_DURATION_FRAMES +
+          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+          BOOK_INTRODUCTION_DURATION_FRAMES
         }
-        durationInFrames={creatorIntroductionDurationFrames}
+        durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
       >
         <CreatorIntroduction
-          durationInFrames={creatorIntroductionDurationFrames}
+          durationInFrames={CREATOR_INTRODUCTION_DURATION_FRAMES}
         />
       </Sequence>
       <Sequence
         from={
-          bookTitleDurationFrames +
-          wenyanLanguageIntroductionDurationFrames +
-          bookIntroductionDurationFrames +
-          creatorIntroductionDurationFrames
+          BOOK_TITLE_DURATION_FRAMES +
+          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+          BOOK_INTRODUCTION_DURATION_FRAMES +
+          CREATOR_INTRODUCTION_DURATION_FRAMES
         }
-        durationInFrames={videoExplanationDurationFrames}
+        durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
       >
-        <VideoExplanation durationInFrames={videoExplanationDurationFrames} />
+        <VideoExplanation
+          durationInFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
+        />
       </Sequence>
       <Sequence
         from={
-          bookTitleDurationFrames +
-          wenyanLanguageIntroductionDurationFrames +
-          bookIntroductionDurationFrames +
-          creatorIntroductionDurationFrames +
-          videoExplanationDurationFrames
+          BOOK_TITLE_DURATION_FRAMES +
+          WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
+          BOOK_INTRODUCTION_DURATION_FRAMES +
+          CREATOR_INTRODUCTION_DURATION_FRAMES +
+          VIDEO_EXPLANATION_DURATION_FRAMES
         }
-        durationInFrames={chapterTitleDurationFrames}
+        durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
       >
         <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
         <ChapterTitle
           chapterNumber={chapterNumber}
-          durationInFrames={chapterTitleDurationFrames}
+          durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
         />
       </Sequence>
     </>

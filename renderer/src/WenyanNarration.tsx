@@ -3,7 +3,11 @@ import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
 import { IntroBackgroundMusic } from "./WenyanNarration/IntroBackgroundMusic";
-import { Intro } from "./WenyanNarration/Intro";
+import {
+  Intro,
+  INTRO_DURATION_FRAMES,
+  CHAPTER_TITLE_DURATION_FRAMES,
+} from "./WenyanNarration/Intro";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -11,12 +15,6 @@ export const wenyanNarrationSchema = z.object({
 });
 
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
-const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
-const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 const INTRO_BG_FADE_OUT_FRAMES = 60; // 2 seconds at 30fps for fade-out
 
@@ -36,13 +34,7 @@ export const WenyanNarration: React.FC<
   // Always show book title, introductions, and chapter title at the start when filtering by chapter
   const shouldShowTitle = chapterNumber !== undefined;
   // Intro duration excludes chapter title (chapter title belongs to reading section)
-  const introDuration = shouldShowTitle
-    ? BOOK_TITLE_DURATION_FRAMES +
-      WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES +
-      BOOK_INTRODUCTION_DURATION_FRAMES +
-      CREATOR_INTRODUCTION_DURATION_FRAMES +
-      VIDEO_EXPLANATION_DURATION_FRAMES
-    : 0;
+  const introDuration = shouldShowTitle ? INTRO_DURATION_FRAMES : 0;
 
   // Chapter title starts the reading section
   const chapterTitleStartFrame = introDuration;
@@ -82,21 +74,7 @@ export const WenyanNarration: React.FC<
           <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
       )}
-      {shouldShowTitle && (
-        <Intro
-          chapterNumber={chapterNumber!}
-          bookTitleDurationFrames={BOOK_TITLE_DURATION_FRAMES}
-          wenyanLanguageIntroductionDurationFrames={
-            WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES
-          }
-          bookIntroductionDurationFrames={BOOK_INTRODUCTION_DURATION_FRAMES}
-          creatorIntroductionDurationFrames={
-            CREATOR_INTRODUCTION_DURATION_FRAMES
-          }
-          videoExplanationDurationFrames={VIDEO_EXPLANATION_DURATION_FRAMES}
-          chapterTitleDurationFrames={CHAPTER_TITLE_DURATION_FRAMES}
-        />
-      )}
+      {shouldShowTitle && <Intro chapterNumber={chapterNumber!} />}
 
       {segments.map((segment, index) => {
         const segmentStartFrame = currentFrame;
