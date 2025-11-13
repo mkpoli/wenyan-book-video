@@ -20,8 +20,23 @@ export const Narration: React.FC<NarrationProps> = ({
 }) => {
   let currentFrame = startFrame;
 
+  // Calculate segments duration (excluding chapter title)
+  const segmentsDuration = segments.reduce((sum, segment, index) => {
+    const audioDurationFrames = segment.durationInFrames;
+    const visualDurationFrames =
+      audioDurationFrames +
+      (index < segments.length - 1 ? delayBetweenSegmentsFrames : 0);
+    return sum + visualDurationFrames;
+  }, 0);
+
   return (
     <>
+      {/* Background music for reading segments - bg2.mp3 (starts with first segment) */}
+      {shouldShowTitle && segmentsDuration > 0 && (
+        <Sequence from={startFrame} durationInFrames={segmentsDuration}>
+          <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
+        </Sequence>
+      )}
       {segments.map((segment, index) => {
         const segmentStartFrame = currentFrame;
         const audioDurationFrames = segment.durationInFrames;

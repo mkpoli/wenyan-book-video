@@ -40,28 +40,8 @@ export const WenyanNarration: React.FC<
   const readingStartFrame =
     chapterTitleStartFrame + CHAPTER_TITLE_DURATION_FRAMES;
 
-  // Calculate reading segments duration (includes chapter title)
-  const readingDuration =
-    CHAPTER_TITLE_DURATION_FRAMES +
-    segments.reduce((sum, segment, index) => {
-      const audioDurationFrames = segment.durationInFrames;
-      const visualDurationFrames =
-        audioDurationFrames +
-        (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
-      return sum + visualDurationFrames;
-    }, 0);
-
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
-      {/* Background music for reading segments - bg2.mp3 (includes chapter title) */}
-      {shouldShowTitle && readingDuration > 0 && (
-        <Sequence
-          from={chapterTitleStartFrame}
-          durationInFrames={readingDuration}
-        >
-          <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
-        </Sequence>
-      )}
       {shouldShowTitle && (
         <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
       )}
