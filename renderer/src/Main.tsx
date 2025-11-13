@@ -9,7 +9,7 @@ import {
 import { Narration } from "./WenyanNarration/Narration";
 import { z } from "zod";
 
-export const wenyanNarrationSchema = z.object({
+export const mainSchema = z.object({
   chapterNumber: z.number().optional(),
 });
 
@@ -17,9 +17,9 @@ const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 const INTRO_BG_FADE_OUT_FRAMES = 60; // 2 seconds at 30fps for fade-out
 
-export const WenyanNarration: React.FC<
-  z.infer<typeof wenyanNarrationSchema>
-> = ({ chapterNumber }) => {
+export const Main: React.FC<z.infer<typeof mainSchema>> = ({
+  chapterNumber,
+}) => {
   const allSegments = loadSegments();
 
   // Filter segments by chapter if chapterNumber is provided
