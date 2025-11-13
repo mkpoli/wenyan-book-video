@@ -130,8 +130,20 @@ def _(re, requests):
         "先": 0,
         "生": 0,
         "三": 0,
+        "若": 0,
+        "葉": 0,
+        "數": 0,
+        "減": 0,
+        "留": 0,
+        "句": 0,
+        "創": 0,
+        "祭": 0,
     }
+    return CHAR_REPLACEMENTS, SPECIAL_CASES
 
+
+@app.cell(hide_code=True)
+def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
     def lookup_meaning(
         chars: str, base_url: str = "https://qieyun-tts.com"
     ) -> dict[str, list[dict]]:
