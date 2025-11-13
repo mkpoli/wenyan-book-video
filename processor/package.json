@@ -1,0 +1,14 @@
+{
+  "name": "processor",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "transcription-utils": "workspace:*"
+  }
+}

@@ -6,11 +6,8 @@ interface Pronunciation {
 }
 
 export function getDefinitionFromSinograph(word: string): Pronunciation[] {
-  return TshetUinh.資料.query字頭(word).map((result) => {
-    result.釋義;
-    return {
-      pronunciation: result.音韻地位,
-      definition: result.釋義,
-    };
-  });
+  return TshetUinh.資料.query字頭(word).map((result) => ({
+    pronunciation: result.音韻地位,
+    definition: result.釋義,
+  }));
 }

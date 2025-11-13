@@ -3,6 +3,7 @@
   "private": true,
   "workspaces": [
     "renderer",
-    "transcription-utils"
+    "transcription-utils",
+    "processor"
   ]
 }

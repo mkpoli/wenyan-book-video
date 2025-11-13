@@ -145,7 +145,6 @@ def _():
         "氏": 0,
         "知": 0,
         "先": 0,
-        "生": 0,
         "三": 0,
         "若": 0,
         "葉": 0,
@@ -160,29 +159,83 @@ def _():
 
 
 @app.cell(hide_code=True)
-def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
-    def lookup_meaning(
-        chars: str, base_url: str = "https://qieyun-tts.com"
-    ) -> dict[str, list[dict]]:
-        """
-        Fetch transcription meanings from the /lookup_meaning endpoint.
+def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, json, re, subprocess):
+    from functools import lru_cache
+    import subprocess
+    import json
 
-        Args:
-            chars: A string of unique Chinese characters to query.
-            base_url: Root of the backend (no trailing slash).
+    lookup_script = Path(__file__).resolve().parent / "lookup_meaning.ts"
+    lookup_cwd = lookup_script.parent
+    bun_executable = Path("/home/mkpoli/.bun/bin/bun")
+    lookup_script_exists = lookup_script.exists()
+    bun_exists = bun_executable.exists()
 
-        Returns:
-            Dict like { '字': [ { 'transcription': '...', 'meaning': '...' }, ... ], ... }
+    @lru_cache(maxsize=None)
+    def _lookup_meaning_cached(
+        char: str, readings_key: tuple[str, ...]
+    ) -> list[dict[str, str]]:
         """
-        try:
-            response = requests.post(
-                f"{base_url}/lookup_meaning", json={"chars": chars}, timeout=20.0
+        Fetch transcription meanings using the local transcription helper.
+        """
+
+        if not char:
+            return []
+        if not lookup_script_exists:
+            print(
+                f"Warning: Local definition helper not found at {lookup_script}. "
+                "Definitions will be omitted."
             )
-            response.raise_for_status()
-            return response.json()
-        except Exception as e:
-            print(f"Warning: Failed to lookup meanings: {e}")
-            return {}
+            return []
+        if not bun_exists:
+            print(
+                f"Error: Bun executable not found at {bun_executable}. "
+                "Unable to load local definitions."
+            )
+            return []
+
+        payload = {"entries": [{"char": char, "readings": list(readings_key)}]}
+
+        try:
+            completed = subprocess.run(
+                [str(bun_executable), "run", str(lookup_script)],
+                input=json.dumps(payload),
+                capture_output=True,
+                text=True,
+                cwd=str(lookup_cwd),
+                check=True,
+            )
+        except FileNotFoundError:
+            print(
+                f"Error: Bun executable not found at {bun_executable}. "
+                "Unable to load local definitions."
+            )
+            return []
+        except subprocess.CalledProcessError as exc:
+            stderr = (exc.stderr or "").strip()
+            print(
+                f"Warning: Local definition lookup failed for '{char}': "
+                f"{stderr or exc}"
+            )
+            return []
+        else:
+            try:
+                data = json.loads(completed.stdout or "{}")
+            except json.JSONDecodeError as exc:
+                print(
+                    f"Warning: Invalid JSON from local definition lookup for '{char}': {exc}"
+                )
+                return []
+            return data.get(char, [])
+
+    def lookup_meaning(char: str, readings: list[str]) -> list[dict[str, str]]:
+        """
+        Return meanings for a single character keyed by its Cinix IPA readings.
+        """
+
+        readings_key = tuple(
+            reading if isinstance(reading, str) else "" for reading in readings
+        )
+        return _lookup_meaning_cached(char, readings_key)
 
     def replace_chars(text):
         """Replace characters according to replacement rules."""
@@ -240,9 +293,7 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
 
         return before_context, after_context
 
-    def transcribe_to_ipa(
-        text, dictionary, choice_cache=None, base_url="https://qieyun-tts.com"
-    ):
+    def transcribe_to_ipa(text, dictionary, choice_cache=None):
         """Transcribe Chinese text to IPA string.
 
         Args:
@@ -250,7 +301,6 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
             dictionary: Dictionary mapping characters to list of (transcription, frequency) tuples
             choice_cache: Deprecated parameter (kept for compatibility, not used)
                           Characters in SPECIAL_CASES are automatically handled without prompting
-            base_url: Base URL for the lookup_meaning API endpoint
         """
 
         normalized = normalize_text(text)
@@ -293,8 +343,8 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
                                 print(f"Context: {context_display}")
 
                                 # Fetch meanings to help with decision
-                                meanings_data = lookup_meaning(ch, base_url)
-                                char_meanings = meanings_data.get(ch, [])
+                                reading_variants = [trans for trans, _ in readings]
+                                char_meanings = lookup_meaning(ch, reading_variants)
 
                                 # Create a mapping from transcription to meaning
                                 trans_to_meaning = {}
@@ -306,12 +356,12 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
                                 # Display all options with meanings
                                 for idx, (trans, freq) in enumerate(readings, 1):
                                     meaning = trans_to_meaning.get(trans, "")
-                                    meaning_str = f" - {meaning}" if meaning else ""
+                                    display_value = meaning if meaning else trans
                                     selected_marker = (
                                         " ← SELECTED" if idx == choice_idx + 1 else ""
                                     )
                                     print(
-                                        f" {f'<{idx}> ' if idx == choice_idx + 1 else f' {idx}. '} {trans} {meaning_str}{selected_marker}"
+                                        f" {f'<{idx}> ' if idx == choice_idx + 1 else f' {idx}. '} {display_value}{selected_marker}"
                                     )
 
                                 transcription = readings[choice_idx][0]
@@ -338,8 +388,8 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
                             print(f"Context: {context_display}")
 
                             # Fetch meanings to help with decision
-                            meanings_data = lookup_meaning(ch, base_url)
-                            char_meanings = meanings_data.get(ch, [])
+                            reading_variants = [trans for trans, _ in readings]
+                            char_meanings = lookup_meaning(ch, reading_variants)
 
                             # Create a mapping from transcription to meaning
                             trans_to_meaning = {}
@@ -350,8 +400,8 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
 
                             for idx, (trans, freq) in enumerate(readings, 1):
                                 meaning = trans_to_meaning.get(trans, "")
-                                meaning_str = f" - {meaning}" if meaning else ""
-                                print(f"  {idx}. {trans}{meaning_str}")
+                                display_value = meaning if meaning else trans
+                                print(f"  {idx}. {display_value}")
 
                             went_back = False
                             while True:
