@@ -6,14 +6,12 @@ import { SegmentText } from "./SegmentText";
 interface NarrationProps {
   readonly segments: readonly Segment[];
   readonly startFrame: number;
-  readonly shouldShowTitle: boolean;
   readonly delayBetweenSegmentsFrames: number;
   readonly transitionFadeInFrames: number;
 }
 
 export const Narration: React.FC<NarrationProps> = ({
   segments,
-  shouldShowTitle,
   delayBetweenSegmentsFrames,
   transitionFadeInFrames,
 }) => {
@@ -31,7 +29,7 @@ export const Narration: React.FC<NarrationProps> = ({
   return (
     <>
       {/* Background music for reading segments - bg2.mp3 (starts with first segment) */}
-      {shouldShowTitle && segmentsDuration > 0 && (
+      {segmentsDuration > 0 && (
         <Sequence from={0} durationInFrames={segmentsDuration}>
           <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
@@ -60,11 +58,7 @@ export const Narration: React.FC<NarrationProps> = ({
             <SegmentText
               text={segment.text}
               sentences={segment.sentences ?? []}
-              fadeInDuration={
-                shouldShowTitle && index === 0
-                  ? transitionFadeInFrames
-                  : undefined
-              }
+              fadeInDuration={index === 0 ? transitionFadeInFrames : undefined}
             />
           </Sequence>
         );

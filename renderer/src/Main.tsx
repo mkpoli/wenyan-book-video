@@ -10,7 +10,7 @@ import { Narration } from "./WenyanNarration/Narration/Narration";
 import { z } from "zod";
 
 export const mainSchema = z.object({
-  chapterNumber: z.number().optional(),
+  chapterNumber: z.number(),
 });
 
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
@@ -22,16 +22,10 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
 }) => {
   const allSegments = loadSegments();
 
-  // Filter segments by chapter if chapterNumber is provided
-  const segments =
-    chapterNumber !== undefined
-      ? allSegments.filter(
-          (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber,
-        )
-      : allSegments;
-
-  // Always show book title, introductions, and chapter title at the start when filtering by chapter
-  const shouldShowTitle = chapterNumber !== undefined;
+  // Filter segments by chapter
+  const segments = allSegments.filter(
+    (segment) => parseInt(segment.id.split("-")[0], 10) === chapterNumber,
+  );
 
   // Calculate narration duration from segments
   const narrationDuration = segments.reduce((sum, segment, index) => {
@@ -45,24 +39,19 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
       <Series>
-        {shouldShowTitle && (
-          <Series.Sequence durationInFrames={INTRO_DURATION_FRAMES}>
-            <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
-          </Series.Sequence>
-        )}
-        {shouldShowTitle && (
-          <Series.Sequence durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
-            <ChapterTitle
-              chapterNumber={chapterNumber!}
-              durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
-            />
-          </Series.Sequence>
-        )}
+        <Series.Sequence durationInFrames={INTRO_DURATION_FRAMES}>
+          <Intro fadeOutDurationFrames={INTRO_BG_FADE_OUT_FRAMES} />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}>
+          <ChapterTitle
+            chapterNumber={chapterNumber}
+            durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+          />
+        </Series.Sequence>
         <Series.Sequence durationInFrames={narrationDuration}>
           <Narration
             segments={segments}
             startFrame={0}
-            shouldShowTitle={shouldShowTitle}
             delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
             transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
           />
