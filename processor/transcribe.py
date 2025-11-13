@@ -216,9 +216,7 @@ def _(re, requests):
                             # Validate choice index is within bounds
                             if 0 <= choice_idx < len(readings):
                                 # Show same information as non-special cases, but auto-select
-                                print(
-                                    f"\nCharacter '{ch}' has {len(readings)} transcription options (SPECIAL_CASES - auto-selecting option {choice_idx + 1}):"
-                                )
+                                print()
 
                                 # Get and display context
                                 before_context, after_context = get_context(
@@ -248,11 +246,10 @@ def _(re, requests):
                                         " ← SELECTED" if idx == choice_idx + 1 else ""
                                     )
                                     print(
-                                        f"  {idx}. {trans} (frequency: {freq}){meaning_str}{selected_marker}"
+                                        f" {f'<{idx}> ' if idx == choice_idx + 1 else f' {idx}. '} {trans} {meaning_str}{selected_marker}"
                                     )
 
                                 transcription = readings[choice_idx][0]
-                                print(f"Automatically selected: {transcription}")
                             else:
                                 # Fallback to first choice if index is out of bounds
                                 print(
@@ -262,9 +259,7 @@ def _(re, requests):
                                 transcription = readings[0][0]
                         else:
                             # Prompt user to choose
-                            print(
-                                f"\nCharacter '{ch}' has {len(readings)} transcription options:"
-                            )
+                            print()
 
                             # Get and display context
                             before_context, after_context = get_context(normalized, pos)
@@ -285,9 +280,7 @@ def _(re, requests):
                             for idx, (trans, freq) in enumerate(readings, 1):
                                 meaning = trans_to_meaning.get(trans, "")
                                 meaning_str = f" - {meaning}" if meaning else ""
-                                print(
-                                    f"  {idx}. {trans} (frequency: {freq}){meaning_str}"
-                                )
+                                print(f"  {idx}. {trans}{meaning_str}")
 
                             while True:
                                 try:
@@ -308,7 +301,6 @@ def _(re, requests):
                                     print("Please enter a valid number or 'q'")
 
                             transcription = readings[choice_idx][0]
-                            print(f"Selected: {transcription}")
                     else:
                         # Only one option, use it directly
                         transcription = readings[0][0]
@@ -378,6 +370,11 @@ def _(
 
         # Apply character replacements
         text = replace_chars(text)
+
+        def wrap_text(text, length=40):
+            return "\n".join(text[i : i + length] for i in range(0, len(text), length))
+
+        print(f"{wrap_text(text)}")
 
         # Transcribe to IPA (each character will be prompted individually)
         ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
