@@ -9,6 +9,7 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
+
     return Path, re, requests
 
 
@@ -65,8 +66,24 @@ def _(Path):
     return segments_dir, transcripts_dir
 
 
+@app.cell(hide_code=True)
+def _(segments_dir):
+    # Find all segment files
+    # Sort naturally by extracting chapter and segment numbers
+    def sort_key(path):
+        # Extract numbers from filename like "1-2.txt" -> (1, 2)
+        name = path.stem  # "1-2"
+        parts = name.split("-")  # ["1", "2"]
+        return (int(parts[0]), int(parts[1]))  # (chapter, segment)
+
+    segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
+
+    print(f"Found {len(segment_files)} segment files")
+    return (segment_files,)
+
+
 @app.cell
-def _(re, requests):
+def _():
     # Character replacement rules for transcription
     CHAR_REPLACEMENTS = {
         "吿": "告",
@@ -417,26 +434,11 @@ def _(CHAR_REPLACEMENTS, SPECIAL_CASES, re, requests):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
+
     return replace_chars, transcribe_to_ipa
 
 
-@app.cell
-def _(segments_dir):
-    # Find all segment files
-    # Sort naturally by extracting chapter and segment numbers
-    def sort_key(path):
-        # Extract numbers from filename like "1-2.txt" -> (1, 2)
-        name = path.stem  # "1-2"
-        parts = name.split("-")  # ["1", "2"]
-        return (int(parts[0]), int(parts[1]))  # (chapter, segment)
-
-    segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
-
-    print(f"Found {len(segment_files)} segment files")
-    return (segment_files,)
-
-
-@app.cell
+@app.cell(hide_code=True)
 def _(
     dictionary,
     replace_chars,
