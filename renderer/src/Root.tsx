@@ -1,5 +1,5 @@
 import "./index.css";
-import { Composition } from "remotion";
+import { Composition, Folder } from "remotion";
 import { Main, mainSchema } from "./Main";
 import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
@@ -63,44 +63,47 @@ const calculateChapterDuration = (chapterNumber: number): number => {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      {/* Custom Thumbnail with Logo and 陰符 */}
-      <Composition
-        id="Thumbnail"
-        component={Thumbnail}
-        durationInFrames={90}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* Book Title Page - appears before all chapters */}
-      <Composition
-        id="Intro"
-        component={Intro}
-        durationInFrames={INTRO_DURATION_FRAMES}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {chapterNumbers.map((chapterNumber) => {
-        const duration = calculateChapterDuration(chapterNumber);
-        return (
-          <Composition
-            key={`chapter-${chapterNumber}`}
-            // You can take the "id" to render a video:
-            // npx remotion render WenyanNarration-Chapter1
-            id={`WenyanNarration-Chapter${chapterNumber}`}
-            component={Main}
-            durationInFrames={duration}
-            fps={30}
-            width={1920}
-            height={1080}
-            // You can override these props for each render:
-            // https://www.remotion.dev/docs/parametrized-rendering
-            schema={mainSchema}
-            defaultProps={{ chapterNumber }}
-          />
-        );
-      })}
+      <Folder name="Elements">
+        {/* Custom Thumbnail with Logo and 陰符 */}
+        <Composition
+          id="Thumbnail"
+          component={Thumbnail}
+          durationInFrames={90}
+          fps={30}
+          width={1920}
+          height={1080}
+        />
+        {/* Book Title Page - appears before all chapters */}
+        <Composition
+          id="Intro"
+          component={Intro}
+          durationInFrames={INTRO_DURATION_FRAMES}
+          fps={30}
+          width={1920}
+          height={1080}
+        />
+      </Folder>
+      <Folder name="Chapters">
+        {chapterNumbers.map((chapterNumber) => {
+          const duration = calculateChapterDuration(chapterNumber);
+          return (
+            <Composition
+              // You can take the "id" to render a video:
+              // npx remotion render WenyanNarration-Chapter1
+              id={`WenyanNarration-Chapter${chapterNumber}`}
+              component={Main}
+              durationInFrames={duration}
+              fps={30}
+              width={1920}
+              height={1080}
+              // You can override these props for each render:
+              // https://www.remotion.dev/docs/parametrized-rendering
+              schema={mainSchema}
+              defaultProps={{ chapterNumber }}
+            />
+          );
+        })}
+      </Folder>
     </>
   );
 };
