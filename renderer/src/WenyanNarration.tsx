@@ -3,11 +3,11 @@ import { AbsoluteFill, Html5Audio, Sequence, staticFile } from "remotion";
 import { loadSegments } from "./loadSegments";
 import { SegmentText } from "./WenyanNarration/SegmentText";
 import { IntroBackgroundMusic } from "./WenyanNarration/IntroBackgroundMusic";
+import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro";
 import {
-  Intro,
-  INTRO_DURATION_FRAMES,
+  ChapterTitle,
   CHAPTER_TITLE_DURATION_FRAMES,
-} from "./WenyanNarration/Intro";
+} from "./WenyanNarration/ChapterTitle";
 import { z } from "zod";
 
 export const wenyanNarrationSchema = z.object({
@@ -74,7 +74,20 @@ export const WenyanNarration: React.FC<
           <Html5Audio src={staticFile("audios/bg2.mp3")} volume={0.02} loop />
         </Sequence>
       )}
-      {shouldShowTitle && <Intro chapterNumber={chapterNumber!} />}
+      {shouldShowTitle && <Intro />}
+      {/* Chapter Title - appears after intro */}
+      {shouldShowTitle && (
+        <Sequence
+          from={chapterTitleStartFrame}
+          durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+        >
+          <Html5Audio src={staticFile(`audios/audio-${chapterNumber}.mp3`)} />
+          <ChapterTitle
+            chapterNumber={chapterNumber!}
+            durationInFrames={CHAPTER_TITLE_DURATION_FRAMES}
+          />
+        </Sequence>
+      )}
 
       {segments.map((segment, index) => {
         const segmentStartFrame = currentFrame;

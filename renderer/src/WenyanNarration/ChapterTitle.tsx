@@ -6,6 +6,8 @@ import {
   useVideoConfig,
 } from "remotion";
 
+export const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
+
 const CHAPTER_TITLES: Record<number, string> = {
   1: "明義第一",
   2: "變數第二",
