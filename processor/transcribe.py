@@ -9,6 +9,7 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
+
     return Path, re, requests
 
 
@@ -335,6 +336,7 @@ def _(re, requests):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
+
     return replace_chars, transcribe_to_ipa
 
 
@@ -368,6 +370,10 @@ def _(
 
     # Process each segment
     for segment_file in segment_files:
+        print("\n" + "=" * 80)
+        print(f"Transcribing: {segment_file.name}")
+        print("=" * 80)
+
         # Check if transcript already exists
         transcript_filename = f"audio-{segment_file.stem}.txt"
         transcript_path = transcripts_dir / transcript_filename
@@ -382,8 +388,6 @@ def _(
 
         # Apply character replacements
         text = replace_chars(text)
-
-        print(f"Transcribing {segment_file.name}...")
 
         # Transcribe to IPA (pass choice_cache to remember user choices)
         ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
