@@ -15,35 +15,138 @@ interface SegmentTextProps {
   readonly fadeInDuration?: number; // Duration in frames for fade-in, undefined means no fade-in
 }
 
-function renderTextWithColoredBrackets(text: string): React.ReactNode {
-  const parts: React.ReactNode[] = [];
-  let currentPart = "";
-  
-  for (let i = 0; i < text.length; i++) {
+type QuoteRenderEntry = {
+  char: string;
+  prefixes: string[];
+  suffixes: string[];
+};
+
+type QuoteStackEntry = {
+  opening: "「" | "『";
+  closing: "」" | "』";
+  firstCharIndex: number | null;
+  lastCharIndex: number | null;
+};
+
+const OPEN_TO_CLOSE: Record<"「" | "『", "」" | "』"> = {
+  "「": "」",
+  "『": "』",
+};
+
+function buildQuoteRenderEntries(text: string): QuoteRenderEntry[] {
+  const entries: QuoteRenderEntry[] = [];
+  const stack: QuoteStackEntry[] = [];
+
+  for (let i = 0; i < text.length; i += 1) {
     const char = text[i];
-    if (char === "『" || char === "』" || char === "「" || char === "」") {
-      // Push current part if it exists
-      if (currentPart) {
-        parts.push(currentPart);
-        currentPart = "";
-      }
-      // Push colored bracket
-      parts.push(
-        <span key={`bracket-${i}`} style={{ color: "#d35835ee" }}>
-          {char}
-        </span>
-      );
-    } else {
-      currentPart += char;
+
+    if (char === "「" || char === "『") {
+      stack.push({
+        opening: char,
+        closing: OPEN_TO_CLOSE[char],
+        firstCharIndex: null,
+        lastCharIndex: null,
+      });
+      continue;
     }
+
+    if (char === "」" || char === "』") {
+      for (let j = stack.length - 1; j >= 0; j -= 1) {
+        const quote = stack[j];
+        if (quote.closing === char) {
+          stack.splice(j, 1);
+          if (quote.lastCharIndex !== null) {
+            entries[quote.lastCharIndex].suffixes.push(char);
+          }
+          break;
+        }
+      }
+      continue;
+    }
+
+    const entry: QuoteRenderEntry = {
+      char,
+      prefixes: [],
+      suffixes: [],
+    };
+
+    stack.forEach((quote) => {
+      if (quote.firstCharIndex === null) {
+        quote.firstCharIndex = entries.length;
+        entry.prefixes.push(quote.opening);
+      }
+      quote.lastCharIndex = entries.length;
+    });
+
+    entries.push(entry);
   }
-  
-  // Push remaining part
-  if (currentPart) {
-    parts.push(currentPart);
+
+  return entries;
+}
+
+function renderTextWithQuotes(
+  text: string,
+  options?: { trailingMarker?: string | null },
+): React.ReactNode {
+  if (!text) {
+    return null;
   }
-  
-  return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
+
+  const entries = buildQuoteRenderEntries(text);
+  if (entries.length === 0) {
+    return null;
+  }
+
+  const trailingMarker = options?.trailingMarker ?? null;
+
+  return entries.map((entry, index) => {
+    const prefixString = entry.prefixes.join("");
+    const suffixString = entry.suffixes.join("");
+    const showTrailingMarker =
+      Boolean(trailingMarker) && index === entries.length - 1;
+
+    return (
+      <span
+        key={`char-${index}-${entry.char}`}
+        className="relative inline-block align-middle"
+      >
+        {prefixString ? (
+          <span
+            className="absolute left-1/2 text-[#d35835ee] pointer-events-none select-none"
+            style={{
+              top: 0,
+              transform:
+                prefixString == "「"
+                  ? "translate(-50%, -60%)"
+                  : "translate(-40%, -70%)",
+            }}
+          >
+            {prefixString}
+          </span>
+        ) : null}
+        {entry.char}
+        {suffixString ? (
+          <span
+            className="absolute left-1/2 text-[#d35835ee] pointer-events-none select-none"
+            style={{
+              bottom: 0,
+              transform:
+                suffixString == "」"
+                  ? "translate(-50%, 60%)"
+                  : "translate(-60%, 70%)",
+            }}
+          >
+            {suffixString}
+          </span>
+        ) : null}
+        {showTrailingMarker && trailingMarker ? (
+          <span className="absolute bottom-0 right-0 text-red-400 pointer-events-none select-none font-normal transform translate-x-[42%] translate-y-[48%] duration-200 ease-in-out">
+            {trailingMarker}
+          </span>
+        ) : null}
+      </span>
+    );
+  });
 }
 
 function SentenceWithTrailingMarker({
@@ -53,13 +156,19 @@ function SentenceWithTrailingMarker({
   text: string;
   highlight: boolean;
 }) {
-  if (text.length === 0) {
+  if (!text) {
     return null;
   }
 
-  // Split text into all characters except the last one, and the last character
-  const allButLast = text.slice(0, -1);
-  const lastChar = text[text.length - 1];
+  const hasTrailingMarker = text.endsWith("。");
+  const content = hasTrailingMarker ? text.slice(0, -1) : text;
+  const renderedContent = renderTextWithQuotes(content, {
+    trailingMarker: hasTrailingMarker ? "。" : null,
+  });
+
+  if (!renderedContent) {
+    return null;
+  }
 
   return (
     <span
@@ -67,12 +176,7 @@ function SentenceWithTrailingMarker({
         highlight ? "text-gray-900 font-bold" : "text-gray-500 font-normal"
       }`}
     >
-      {renderTextWithColoredBrackets(allButLast)}
-      <span
-        className={`relative inline-block after:content-['。'] after:absolute after:bottom-0 after:right-0 after:translate-x-[42%] after:translate-y-[48%] after:text-red-400 after:pointer-events-none after:select-none after:duration-200 after:ease-in-out after:font-normal`}
-      >
-        {renderTextWithColoredBrackets(lastChar)}
-      </span>
+      {renderedContent}
     </span>
   );
 }
@@ -132,11 +236,11 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             ? sentences.map((sentence, index) => (
                 <SentenceWithTrailingMarker
                   key={`${index}-${sentence.chinese}`}
-                  text={sentence.chinese.replace(/。/g, "")}
+                  text={sentence.chinese}
                   highlight={index === currentSentenceIndex}
                 />
               ))
-            : renderTextWithColoredBrackets(text)}
+            : renderTextWithQuotes(text)}
         </div>
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
