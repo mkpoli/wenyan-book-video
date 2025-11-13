@@ -25,7 +25,8 @@ function convertWord(word: string): string {
   let rhyme = '';
 
   for (let i = 0; i < result.length; i++) {
-    if (result[i].match(/[aeiouɑɨəʉyʷ]/)) {
+    const char = result[i];
+    if (char && char.match(/[aeiouɑɨəʉyʷ]/)) {
       onset = result.slice(0, i);
       rhyme = result.slice(i);
       break;
@@ -94,7 +95,8 @@ function convertWord(word: string): string {
   let medialNucleus = '';
   let coda = '';
   for (let i = rhyme.length - 1; i >= 0; i--) {
-    if (rhyme[i].match(/[^mnŋptkjw]/)) {
+    const char = rhyme[i];
+    if (char && char.match(/[^mnŋptkjw]/)) {
       coda = rhyme.slice(i + 1);
       medialNucleus = rhyme.slice(0, i + 1);
       break;
@@ -131,8 +133,8 @@ function convertWord(word: string): string {
     //   medial = "";
     //   nucleus = tonelessMedialNucleus;
     // } else {
-    medial = tonelessMedialNucleus[0];
-    nucleus = tonelessMedialNucleus[1];
+    medial = tonelessMedialNucleus[0] ?? '';
+    nucleus = tonelessMedialNucleus[1] ?? '';
     // }
   } else {
     // if (tonelessMedialNucleus[0].match(/[jw]/)) {
