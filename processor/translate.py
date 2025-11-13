@@ -68,7 +68,7 @@ Follow these formatting and stylistic rules carefully.
 ## Glossary
 
 - “爻” should be translated as “Yáo (booleans)”.
-- “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.”
+- “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
 
 ## Examples
 
@@ -112,7 +112,16 @@ or to analyze the patterns of reason.
 ## Your Turn
 Now translate the following Classical Chinese text:
 
-{text}"""
+{text}
+
+With the following context:
+
+Before:
+{before_context}
+
+After:
+{after_context}
+"""
 
     return (TRANSLATION_PROMPT,)
 
@@ -178,11 +187,55 @@ def _(
     API_DELAY_SECONDS,
     MODEL_NAME,
     TRANSLATION_PROMPT,
+    all_segment_files,
     client,
     mo,
+    segments_dir,
     time,
     translations_dir,
 ):
+    def get_context(seg_file, all_segment_files, segments_dir, translations_dir):
+        """Get context from previous and next segment files."""
+        # Find current segment index
+        current_idx = None
+        for idx, f in enumerate(all_segment_files):
+            if f.stem == seg_file.stem:
+                current_idx = idx
+                break
+
+        before_context = ""
+        after_context = ""
+
+        # Get previous segment context
+        if current_idx is not None and current_idx > 0:
+            prev_file = all_segment_files[current_idx - 1]
+            prev_trans_path = translations_dir / f"{prev_file.stem}.txt"
+
+            if prev_trans_path.exists():
+                # Use translation if available
+                with open(prev_trans_path, "r", encoding="utf-8") as f:
+                    before_context = f.read().strip()
+            else:
+                # Fall back to Chinese text
+                with open(prev_file, "r", encoding="utf-8") as f:
+                    before_context = f.read().strip()
+
+        # Get next segment context
+        if current_idx is not None and current_idx < len(all_segment_files) - 1:
+            next_file = all_segment_files[current_idx + 1]
+            next_trans_path = translations_dir / f"{next_file.stem}.txt"
+
+            if next_trans_path.exists():
+                # Use translation if available
+                with open(next_trans_path, "r", encoding="utf-8") as f:
+                    after_context = f.read().strip()
+            else:
+                # Fall back to Chinese text
+                with open(next_file, "r", encoding="utf-8") as f:
+                    after_context = f.read().strip()
+
+        return before_context, after_context
+
     def process_segments(segment_files):
         """Process segment files and generate translations."""
         if not segment_files:
@@ -218,8 +271,21 @@ def _(
             print(f"\n[{i}/{len(segment_files)}] Translating {seg_file.name}...")
             print(f"  Chinese: {chinese_text[:100]}...")
 
+            # Get context from previous and next segments
+            before_context, after_context = get_context(
+                seg_file, all_segment_files, segments_dir, translations_dir
+            )
+
             # Prepare prompt
-            prompt = TRANSLATION_PROMPT.format(text=chinese_text)
+            prompt = TRANSLATION_PROMPT.format(
+                text=chinese_text,
+                before_context=(
+                    before_context if before_context else "(This is the first segment.)"
+                ),
+                after_context=(
+                    after_context if after_context else "(This is the last segment.)"
+                ),
+            )
 
             try:
                 # Call OpenAI API
