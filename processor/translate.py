@@ -29,7 +29,7 @@ def _(OpenAI, os):
         )
 
     client = OpenAI(api_key=api_key)
-    MODEL_NAME = "gpt-5-mini"  # Using GPT-5 as requested
+    MODEL_NAME = "gpt-5-nano"  # Using GPT-5 as requested
     API_DELAY_SECONDS = 1  # Small delay to avoid rate limits
     return API_DELAY_SECONDS, MODEL_NAME, client
 
