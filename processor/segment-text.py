@@ -23,6 +23,10 @@ def _(re):
 
     def remove_markdown(text):
         """Remove markdown formatting from text, preserving paragraph structure."""
+        # Convert double brackets 「「　」」 to 『 』
+        text = text.replace("「「", "『")
+        text = text.replace("」」", "』")
+
         # Remove code block markers (```...```) but keep content as plain text
         text = re.sub(r"```[\s\S]*?```", lambda m: m.group(0)[3:-3], text)
 
