@@ -7,21 +7,28 @@ import {
 } from "remotion";
 
 interface BookTitleProps {
-  readonly durationInFrames: number;
+  readonly durationInFrames?: number;
 }
 
 export const BookTitle: React.FC<BookTitleProps> = ({ durationInFrames }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames: videoDurationInFrames } = useVideoConfig();
+  const effectiveDurationInFrames = durationInFrames ?? videoDurationInFrames;
 
   // Classical fade in/out with subtle slide
   const fadeInDuration = fps * 1.0; // 1 second - elegant fade in
   const fadeOutDuration = fps * 1.0; // 1 second
-  const visibleDuration = durationInFrames - fadeInDuration - fadeOutDuration;
+  const visibleDuration =
+    effectiveDurationInFrames - fadeInDuration - fadeOutDuration;
 
   const opacity = interpolate(
     frame,
-    [0, fadeInDuration, fadeInDuration + visibleDuration, durationInFrames],
+    [
+      0,
+      fadeInDuration,
+      fadeInDuration + visibleDuration,
+      effectiveDurationInFrames,
+    ],
     [0, 1, 1, 0],
     {
       extrapolateLeft: "clamp",

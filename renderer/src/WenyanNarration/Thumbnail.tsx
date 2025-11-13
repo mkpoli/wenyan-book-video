@@ -1,11 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 
-interface ThumbnailProps {
-  readonly durationInFrames: number;
-}
-
-export const Thumbnail: React.FC<ThumbnailProps> = () => {
+export const Thumbnail: React.FC = () => {
   return (
     <AbsoluteFill className="bg-white flex items-center justify-center flex-col">
       {/* <div className="flex flex-col items-center justify-center">
