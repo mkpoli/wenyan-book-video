@@ -27,24 +27,10 @@
     "typescript": "5.8.2"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "dev:studio": "remotion studio",
+    "dev": "remotion studio src/index.ts",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "preview:chapter1": "remotion studio --composition=WenyanNarration-Chapter1",
-    "preview:chapter2": "remotion studio --composition=WenyanNarration-Chapter2",
-    "preview:chapter3": "remotion studio --composition=WenyanNarration-Chapter3",
-    "preview:chapter4": "remotion studio --composition=WenyanNarration-Chapter4",
-    "preview:chapter5": "remotion studio --composition=WenyanNarration-Chapter5",
-    "preview:chapter6": "remotion studio --composition=WenyanNarration-Chapter6",
-    "preview:chapter7": "remotion studio --composition=WenyanNarration-Chapter7",
-    "preview:chapter8": "remotion studio --composition=WenyanNarration-Chapter8",
-    "preview:chapter9": "remotion studio --composition=WenyanNarration-Chapter9",
-    "preview:chapter10": "remotion studio --composition=WenyanNarration-Chapter10",
-    "preview:chapter11": "remotion studio --composition=WenyanNarration-Chapter11",
-    "preview:chapter12": "remotion studio --composition=WenyanNarration-Chapter12",
-    "preview:chapter13": "remotion studio --composition=WenyanNarration-Chapter13",
     "render:chapter1": "remotion render WenyanNarration-Chapter1 out/chapter1.mp4",
     "render:chapter2": "remotion render WenyanNarration-Chapter2 out/chapter2.mp4",
     "render:chapter3": "remotion render WenyanNarration-Chapter3 out/chapter3.mp4",
@@ -59,7 +45,6 @@
     "render:chapter12": "remotion render WenyanNarration-Chapter12 out/chapter12.mp4",
     "render:chapter13": "remotion render WenyanNarration-Chapter13 out/chapter13.mp4",
     "render:all": "npm run render:chapter1 && npm run render:chapter2 && npm run render:chapter3 && npm run render:chapter4 && npm run render:chapter5 && npm run render:chapter6 && npm run render:chapter7 && npm run render:chapter8 && npm run render:chapter9 && npm run render:chapter10 && npm run render:chapter11 && npm run render:chapter12 && npm run render:chapter13",
-    "preview:thumbnail": "remotion studio --composition=Thumbnail",
     "thumbnail": "remotion still src/index.ts Thumbnail --frame=60 out/thumbnails/thumbnail.png"
   },
   "sideEffects": [
