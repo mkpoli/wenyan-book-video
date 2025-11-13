@@ -4,16 +4,15 @@ __generated_with = "0.17.7"
 app = marimo.App(width="medium")
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _():
     import requests
     import regex as re
     from pathlib import Path
-
     return Path, re, requests
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(requests):
     # Download the dictionary
     print("Downloading dictionary...")
@@ -27,7 +26,7 @@ def _(requests):
     return (dictionary_text,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(dictionary_text):
     # Load dictionary: TSV format <char>\t<transcription>\t<frequency>
     dictionary = {}
@@ -56,7 +55,7 @@ def _(dictionary_text):
     return (dictionary,)
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(Path):
     segments_dir = Path("../renderer/public/segments")
     transcripts_dir = Path("../renderer/public/transcripts")
@@ -129,6 +128,8 @@ def _(re, requests):
         "氏": 0,
         "知": 0,
         "先": 0,
+        "生": 0,
+        "三": 0,
     }
 
     def lookup_meaning(
@@ -390,6 +391,12 @@ def _(re, requests):
                         pos += 1
                 else:
                     # Fallback: use character itself if not found
+                    # Get and display context for warning
+                    before_context, after_context = get_context(normalized, pos)
+                    context_display = f"{before_context}[{ch}]{after_context}"
+                    print(
+                        f"\n⚠️  Warning: Character '{ch}' not found in dictionary (context: {context_display})"
+                    )
                     ipa_parts.append(ch)
                     pos += 1
 
@@ -398,7 +405,6 @@ def _(re, requests):
         # Filter out empty strings (periods are truthy so they'll be kept)
         ipa_parts = [p for p in ipa_parts if p]
         return " " + " ".join(ipa_parts) + " "
-
     return replace_chars, transcribe_to_ipa
 
 
