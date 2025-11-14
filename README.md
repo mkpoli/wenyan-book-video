@@ -16,15 +16,9 @@ This is a monorepo containing:
 ## Basic Workflow
 
 1. Clone the repository
-2. Generate segments from `wenyan-lang/book` submodule to `renderer/public/segments/`
-3. Check segments if they are correct and update the code to regenerate.
-4. Generate translation
-5. Generate transcription
-6. Generate audio
-7. Generate voice-changed audio
-8. Generate segments for rendering
-9. Check segments
-10. Render video
+2. Process the text data to generate required for rendering, the steps are defined in [processor/README.md](processor/README.md)
+3. Generate renderer segments file by running `bun run scripts/generate-segments.ts` in [renderer/](renderer/)
+4. Render video by running `bun run remotion render` in [renderer/](renderer/)
 
 ## Setup
 
