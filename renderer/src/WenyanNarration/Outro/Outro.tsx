@@ -10,6 +10,7 @@ import {
 
 export const OUTRO_DURATION_FRAMES = 380; // 12.66 seconds at 30fps
 const AUDIO_START_SECONDS = 4 * 60 + 50; // 4:42 in seconds
+const BASE_VOLUME = 0.2;
 
 export const Outro: React.FC = () => {
   const frame = useCurrentFrame();
@@ -18,7 +19,7 @@ export const Outro: React.FC = () => {
   // Calculate trimBefore in frames: 4:42 = 282 seconds * fps
   const trimBeforeFrames = AUDIO_START_SECONDS * fps;
 
-  const fadeInDuration = fps * 1;
+  const fadeInDuration = fps * 2.5; // Longer fade in
   const fadeOutDuration = fps * 1;
   const emptyDuration = fps * 1;
   const visibleDuration =
@@ -61,7 +62,7 @@ export const Outro: React.FC = () => {
       audioFadeEnd,
       OUTRO_DURATION_FRAMES,
     ],
-    [0.35, 0.35, 0.35, 0.35, 0, 0],
+    [0, BASE_VOLUME, BASE_VOLUME, BASE_VOLUME, 0, 0],
     {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
