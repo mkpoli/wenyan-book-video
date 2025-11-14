@@ -36,6 +36,7 @@
     "lint": "eslint src && tsc",
     "generate-segments": "bun run scripts/generate-segments.ts",
     "watch:segments": "chokidar \"public/segments/**/*.txt\" \"public/audios/**/*.mp3\" \"public/translations/**/*.txt\" \"public/transcripts/**/*.txt\" -c \"bun run scripts/generate-segments.ts\"",
+    "render:outro": "remotion render Outro --props '{ \"chapterNumber\": 1 }' out/outro.mp4",
     "render:chapter1": "remotion render Chapter1 --props '{ \"chapterNumber\": 1 }' out/chapter1.mp4",
     "render:chapter2": "remotion render Chapter2 --props '{ \"chapterNumber\": 2 }' out/chapter2.mp4",
     "render:chapter3": "remotion render Chapter3 --props '{ \"chapterNumber\": 3 }' out/chapter3.mp4",
