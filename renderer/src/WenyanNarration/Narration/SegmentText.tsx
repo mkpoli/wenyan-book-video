@@ -571,7 +571,9 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                 }
           }
         >
-          <div style={{ transform: "translateY(0.1em)" }}>
+          <div
+            style={{ transform: isCodeBlock ? undefined : "translateY(0.1em)" }}
+          >
             {hasSentenceData
               ? renderSentencesWithLineBreaks()
               : renderTextWithQuotes(text, {
