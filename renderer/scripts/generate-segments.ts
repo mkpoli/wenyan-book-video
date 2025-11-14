@@ -49,15 +49,29 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
   return DEFAULT_AUDIO_DURATION_SECONDS;
 };
 
+// Counts characters used to proportionally allocate audio duration across
+// Chinese sentences. This is about timing (how long a line should be on
+// screen), not IPA alignment, so we ignore punctuation and whitespace that
+// is not actually spoken.
 const countCharsExcludingQuotes = (text: string): number => {
-  return text.replace(/[「」『』`]/g, "").length;
+  return text.replace(/[「」『』`\n\t 　]/g, "").length;
+};
+
+// Helpers for aligning Chinese text with IPA transcript tokens.
+// `stripInlineCode` removes backtick-delimited code spans (e.g. `code`) from
+// the text so they do not participate in character counts used for alignment.
+const stripInlineCode = (text: string): string => {
+  // Remove inline code spans delimited by backticks (e.g. `code`) so that they
+  // do not participate in transcript alignment character counts, while keeping
+  // the visible text intact elsewhere in the pipeline.
+  return text.replace(/`[^`]*`/g, "");
 };
 
 // Counts Chinese characters relevant for aligning with IPA tokens.
-// This excludes whitespace, quotes, and common punctuation so that
-// each remaining character should correspond to one IPA token.
+// This excludes whitespace, quotes, and common punctuation so that each
+// remaining character should correspond to one IPA token in the transcript.
 const countCharsForTranscriptAlignment = (text: string): number => {
-  return text
+  return stripInlineCode(text)
     .replace(/[「」『』]/g, "")
     .replace(/\s/g, "")
     .replace(/[。，、！？；：,.!"'“”‘’]/g, "").length;
