@@ -45,7 +45,7 @@ def _():
     ## Translation Rules
 
     ### Preserve Original Format
-    - Each 。 (full stop) in the original Chinese marks a new line in the translation.
+    - Each 。 (full stop) in the original Chinese marks a new line in the translation, including "A者。B也。" (A is B, translate it as "A —\nB"). 
     - Keep the line structure exactly; DO NOT merge sentences into paragraphs.
     - Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
     - Add proper English punctuation (period, comma, semicolon, colon, dash etc.) to the translation according to the context.
