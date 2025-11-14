@@ -150,13 +150,7 @@ function renderTextWithQuotes(
   });
 }
 
-function SentenceWithTrailingMarker({
-  text,
-  highlight,
-}: {
-  text: string;
-  highlight: boolean;
-}) {
+function Sentence({ text, highlight }: { text: string; highlight: boolean }) {
   if (!text) {
     return null;
   }
@@ -243,7 +237,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
         >
           {hasSentenceData
             ? sentences.map((sentence, index) => (
-                <SentenceWithTrailingMarker
+                <Sentence
                   key={`${index}-${sentence.chinese}`}
                   text={sentence.chinese}
                   highlight={index === currentSentenceIndex}
