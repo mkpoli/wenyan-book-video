@@ -1,5 +1,11 @@
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import {
+  AbsoluteFill,
+  interpolate,
+  Sequence,
+  useCurrentFrame,
+  useRemotionEnvironment,
+} from "remotion";
 import { convertCinixToTUPA } from "transcription-utils";
 
 type SentenceEntry = {
@@ -185,14 +191,54 @@ function renderTextWithQuotes(
   const isCodeBlock = options?.isCodeBlock ?? false;
   const keywordMask = options?.keywordMask;
 
+  // Compute per-character trailing markers so that every "。" is rendered
+  // as an absolutely positioned marker attached to the previous character
+  // (subsentence-final punctuation), not only the very last one.
+  const perCharTrailingMarkers: Array<string | null> = new Array(
+    entries.length,
+  ).fill(null);
+  const hideChar: boolean[] = new Array(entries.length).fill(false);
+
+  // 1) Attach inline "。" to the previous visible (non-whitespace) character
+  for (let i = 0; i < entries.length; i += 1) {
+    const char = entries[i].char;
+    if (char !== "。") {
+      continue;
+    }
+
+    let target = i - 1;
+    while (target >= 0 && entries[target].char.trim().length === 0) {
+      target -= 1;
+    }
+
+    if (target >= 0) {
+      perCharTrailingMarkers[target] =
+        (perCharTrailingMarkers[target] ?? "") + char;
+      hideChar[i] = true;
+    }
+  }
+
+  // 2) If a trailingMarker is explicitly provided (e.g. for the final 「。」 that
+  // was removed at the Sentence level), attach it to the last non-whitespace char.
+  if (trailingMarker) {
+    let target = entries.length - 1;
+    while (target >= 0 && entries[target].char.trim().length === 0) {
+      target -= 1;
+    }
+    if (target >= 0) {
+      perCharTrailingMarkers[target] =
+        (perCharTrailingMarkers[target] ?? "") + trailingMarker;
+    }
+  }
+
   // Track quote depth to handle nested quotes correctly
   let quoteDepth = 0;
 
   return entries.map((entry, index) => {
     const prefixString = entry.prefixes.join("");
     const suffixString = entry.suffixes.join("");
-    const showTrailingMarker =
-      Boolean(trailingMarker) && index === entries.length - 1;
+    const currentTrailingMarker = perCharTrailingMarkers[index];
+    const showTrailingMarker = Boolean(currentTrailingMarker);
     const isChineseNumber = isCodeBlock && CHINESE_NUMBERS.has(entry.char);
 
     // Count quote markers in prefixes and suffixes
@@ -224,6 +270,22 @@ function renderTextWithQuotes(
     const isKeyword = Boolean(keywordMask?.[index]);
     const charStyle =
       !isKeyword && charColor ? { color: charColor } : undefined;
+
+    // When rendering the trailing marker(s) (e.g. 「。」), if it belongs to text that is
+    // inside quotes in a code block, color it like a string token so it visually
+    // matches the quoted content.
+    const trailingMarkerStyle =
+      showTrailingMarker &&
+      currentTrailingMarker &&
+      isCodeBlock &&
+      isInsideQuote
+        ? { color: "var(--color-code-token-string)" }
+        : undefined;
+
+    // Hide characters that have been converted into trailing markers on a previous char
+    if (hideChar[index]) {
+      return null;
+    }
 
     return (
       <span
@@ -264,9 +326,12 @@ function renderTextWithQuotes(
             {suffixString}
           </span>
         ) : null}
-        {showTrailingMarker && trailingMarker ? (
-          <span className="absolute bottom-0 right-0 text-punctuation pointer-events-none select-none font-normal transform translate-x-[38%] translate-y-[40%] duration-200 ease-in-out">
-            {trailingMarker}
+        {showTrailingMarker && currentTrailingMarker ? (
+          <span
+            className="absolute bottom-0 right-0 text-punctuation pointer-events-none select-none font-normal transform translate-x-[38%] translate-y-[40%] duration-200 ease-in-out"
+            style={trailingMarkerStyle}
+          >
+            {currentTrailingMarker}
           </span>
         ) : null}
       </span>
@@ -286,9 +351,27 @@ function Sentence({
   if (!text) {
     return null;
   }
+  // Treat 「。」 at the very end of the sentence as a trailing marker (existing behavior),
+  // and also handle 「。」 that appears immediately before closing quotes at the end,
+  // e.g. 『……。』 -> render 「。」 as a trailing marker on the last inner character.
+  let hasTrailingMarker = text.endsWith("。");
+  let content = text;
 
-  const hasTrailingMarker = text.endsWith("。");
-  const content = hasTrailingMarker ? text.slice(0, -1) : text;
+  if (hasTrailingMarker) {
+    content = text.slice(0, -1);
+  } else {
+    // Match a final 「。」 immediately followed by one or more closing quotes at the end
+    // Example: 『……。』 -> groups: [『……', '。', '』']
+    const insideQuoteMatch = text.match(/^(.*)(。)([」』]+)$/);
+    if (insideQuoteMatch) {
+      hasTrailingMarker = true;
+      // Remove the 「。」 but keep the closing quotes so that the trailing marker
+      // is positioned relative to the last inner character, with the quotes still
+      // rendered as suffixes on that character.
+      content = `${insideQuoteMatch[1]}${insideQuoteMatch[3]}`;
+    }
+  }
+
   const renderedContent = renderTextWithQuotes(content, {
     trailingMarker: hasTrailingMarker ? "。" : null,
     isCodeBlock,
