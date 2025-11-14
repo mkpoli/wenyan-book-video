@@ -357,6 +357,13 @@ const formatMetadataRows = (entries: Array<[string, string]>): string[] => {
 };
 
 const generateSegments = async () => {
+  const lintWarnings: Array<{
+    chapter: number;
+    segment: number;
+    title: string;
+    rows: string[];
+  }> = [];
+
   let entries: Array<{
     id: string;
     text: string;
@@ -521,7 +528,13 @@ const generateSegments = async () => {
                 : []),
             ];
 
-            logLintWarning(`⚠️  Translation mismatch in ${id}`, rows);
+            const [chapterStr, segmentStr] = id.split("-");
+            lintWarnings.push({
+              chapter: Number(chapterStr),
+              segment: Number(segmentStr),
+              title: `⚠️  Translation mismatch in ${id}`,
+              rows,
+            });
           }
 
           if (hasFemaleAudio) {
@@ -598,6 +611,15 @@ const generateSegments = async () => {
     console.error("[segments] Failed to read segments:", error);
     entries = [];
   }
+
+  lintWarnings
+    .sort(
+      (a, b) =>
+        b.chapter - a.chapter || a.segment - b.segment,
+    )
+    .forEach((warning) => {
+      logLintWarning(warning.title, warning.rows);
+    });
 
   mkdirSync(GENERATED_DIR, { recursive: true });
 
