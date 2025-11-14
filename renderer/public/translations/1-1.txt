@@ -1,5 +1,7 @@
-What is programming? That by which one commands machines.
-What is a machine? That by which human labor is replaced.
+What is programming?
+That by which one commands machines.
+What is a machine?
+That by which human labor is replaced.
 Yet the power of machines is vast,
 their calculations swift,
 but their wisdom does not reach that of man.

@@ -1,10 +1,12 @@
 I have two numbers.
 Named thirty-five.
 Named ninety-four.
-Named them “head” and “foot.”
+Named them “head”
+and “foot.”
 Divide the “foot” by two.
 Subtract it from the “head.”
 Named it “rabbit.”
 Subtract the “head” by the “rabbit.”
 Named it “pheasant.”
-The “pheasant” and the “rabbit.” Write them down.
+The “pheasant” and the “rabbit.”
+Write them down.

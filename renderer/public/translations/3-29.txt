@@ -3,7 +3,10 @@ Each of them are, three hundred forty
 thirty-two,
 two hundred and sixteen,
 and four hundred and seventeen.
-They are named, respectively, “Head,” “Arm,” “Foot,” and “Tail.”
+They are named, respectively, “Head,”
+“Arm,”
+“Foot,”
+and “Tail.”
 Divide “Arm” by two.
 Name it “Xing Tian.”
 Multiply “Xing Tian” by two.

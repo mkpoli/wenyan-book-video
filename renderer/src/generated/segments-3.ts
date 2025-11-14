@@ -914,54 +914,54 @@ export const segments = [
     "id": "3-18",
     "text": "例一。孫子算經有問焉。今有雉兔同籠。上有三十五頭。下九十四足。問雉兔各幾何。依其書之術。編程如是。",
     "audioPath": "audios/female/audio-3-18-f.mp3",
-    "translation": "Example One. The Sunzi Suan Jing contains a question.\nNow there is a pheasant and a rabbit in the same cage.\nAbove are thirty-five heads.\nBelow are ninety-four feet.\nAsk what are the respective numbers of pheasant and rabbit.\nFollowing the method of the book.\nThus the programming is as follows.",
+    "translation": "Example One.\nThe Sunzi Suan Jing contains a question.\nNow there is a pheasant and a rabbit in the same cage.\nAbove are thirty-five heads.\nBelow are ninety-four feet.\nAsk what are the respective numbers of pheasant and rabbit.\nFollowing the method of the book.\nThus the programming is as follows.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "例一。",
-        "english": "Example One. The Sunzi Suan Jing contains a question.",
+        "english": "Example One.",
         "transcription": "liěj ʔit",
         "durationInFrames": 30
       },
       {
         "chinese": "孫子算經有問焉。",
-        "english": "Now there is a pheasant and a rabbit in the same cage.",
+        "english": "The Sunzi Suan Jing contains a question.",
         "transcription": "sòn ʦɨ́ː sʷɑ̌n kèŋ ɦʉúː mʉ̌n ɦịèn",
         "durationInFrames": 81
       },
       {
         "chinese": "今有雉兔同籠。",
-        "english": "Above are thirty-five heads.",
+        "english": "Now there is a pheasant and a rabbit in the same cage.",
         "transcription": "kị̀m ɦʉúː ɖíː tʰǒː dùŋ lùŋ",
         "durationInFrames": 71
       },
       {
         "chinese": "上有三十五頭。",
-        "english": "Below are ninety-four feet.",
+        "english": "Above are thirty-five heads.",
         "transcription": "ʥɨɑ̌ŋ ɦʉúː sɑ̀m ʥip ŋóː dùː",
         "durationInFrames": 71
       },
       {
         "chinese": "下九十四足。",
-        "english": "Ask what are the respective numbers of pheasant and rabbit.",
+        "english": "Below are ninety-four feet.",
         "transcription": "ɦạ́ː kʉúː ʥip sǐː ʦʉok",
         "durationInFrames": 60
       },
       {
         "chinese": "問雉兔各幾何。",
-        "english": "Following the method of the book.",
+        "english": "Ask what are the respective numbers of pheasant and rabbit.",
         "transcription": "mʉ̌n ɖíː tʰǒː kɑk kɨ́j ɦɑ̀ː",
         "durationInFrames": 71
       },
       {
         "chinese": "依其書之術。",
-        "english": "Thus the programming is as follows.",
+        "english": "Following the method of the book.",
         "transcription": "ʔɨ̀j gɨ̀ː ɕɨə̀ː ʨɨ̀ː ʑʷit",
         "durationInFrames": 60
       },
       {
         "chinese": "編程如是。",
-        "english": null,
+        "english": "Thus the programming is as follows.",
         "transcription": "pèn ɖiàŋ ɲɨə̀ː ʥiéː",
         "durationInFrames": 50
       }
@@ -972,7 +972,7 @@ export const segments = [
     "id": "3-19",
     "text": "吾有二數。曰三十五。曰九十四。名之曰「頭」曰「足」。\n除「足」以二。減其以「頭」。名之曰「兔」。\n減「頭」以「兔」。名之曰「雉」。\n夫「雉」夫「兔」。書之。",
     "audioPath": "audios/female/audio-3-19-f.mp3",
-    "translation": "I have two numbers.\nNamed thirty-five.\nNamed ninety-four.\nNamed them “head” and “foot.”\nDivide the “foot” by two.\nSubtract it from the “head.”\nNamed it “rabbit.”\nSubtract the “head” by the “rabbit.”\nNamed it “pheasant.”\nThe “pheasant” and the “rabbit.” Write them down.",
+    "translation": "I have two numbers.\nNamed thirty-five.\nNamed ninety-four.\nNamed them “head”\nand “foot.”\nDivide the “foot” by two.\nSubtract it from the “head.”\nNamed it “rabbit.”\nSubtract the “head” by the “rabbit.”\nNamed it “pheasant.”\nThe “pheasant” and the “rabbit.”\nWrite them down.",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -995,55 +995,55 @@ export const segments = [
       },
       {
         "chinese": "名之曰「頭」",
-        "english": "Named them “head” and “foot.”",
+        "english": "Named them “head”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot dùː",
         "durationInFrames": 41
       },
       {
         "chinese": "曰「足」。",
-        "english": "Divide the “foot” by two.",
+        "english": "and “foot.”",
         "transcription": "ɦʉot ʦʉok",
         "durationInFrames": 31
       },
       {
         "chinese": "\n除「足」以二。",
-        "english": "Subtract it from the “head.”",
+        "english": "Divide the “foot” by two.",
         "transcription": "ɖɨə̀ː ʦʉok jɨ́ː ɲǐː",
         "durationInFrames": 61
       },
       {
         "chinese": "減其以「頭」。",
-        "english": "Named it “rabbit.”",
+        "english": "Subtract it from the “head.”",
         "transcription": "kẹ́m gɨ̀ː jɨ́ː dùː",
         "durationInFrames": 51
       },
       {
         "chinese": "名之曰「兔」。",
-        "english": "Subtract the “head” by the “rabbit.”",
+        "english": "Named it “rabbit.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot tʰǒː",
         "durationInFrames": 51
       },
       {
         "chinese": "\n減「頭」以「兔」。",
-        "english": "Named it “pheasant.”",
+        "english": "Subtract the “head” by the “rabbit.”",
         "transcription": "kẹ́m dùː jɨ́ː tʰǒː",
         "durationInFrames": 61
       },
       {
         "chinese": "名之曰「雉」。",
-        "english": "The “pheasant” and the “rabbit.” Write them down.",
+        "english": "Named it “pheasant.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɖíː",
         "durationInFrames": 51
       },
       {
         "chinese": "\n夫「雉」夫「兔」。",
-        "english": null,
+        "english": "The “pheasant” and the “rabbit.”",
         "transcription": "bʉòː ɖíː bʉòː tʰǒː",
         "durationInFrames": 61
       },
       {
         "chinese": "書之。",
-        "english": null,
+        "english": "Write them down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
         "durationInFrames": 29
       }
@@ -1284,7 +1284,7 @@ export const segments = [
     "id": "3-25",
     "text": "吾有二數。曰五百七十九。曰二千二百八十四。名之曰「頭」曰「足」。",
     "audioPath": "audios/female/audio-3-25-f.mp3",
-    "translation": "I have two numbers.\nNamed five hundred seventy-nine.\nNamed two thousand two hundred eighty-four.\nNamed them “head” and “foot.”",
+    "translation": "I have two numbers.\nNamed five hundred seventy-nine.\nNamed two thousand two hundred eighty-four.\nNamed them “head”\nand “foot.”",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1307,13 +1307,13 @@ export const segments = [
       },
       {
         "chinese": "名之曰「頭」",
-        "english": "Named them “head” and “foot.”",
+        "english": "Named them “head”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot dùː",
         "durationInFrames": 39
       },
       {
         "chinese": "曰「足」。",
-        "english": null,
+        "english": "and “foot.”",
         "transcription": "ɦʉot ʦʉok",
         "durationInFrames": 30
       }
@@ -1498,7 +1498,7 @@ export const segments = [
     "id": "3-29",
     "text": "吾有四數。曰三百四十。曰三十二。曰二百十六。曰四百十七。名之曰「頭」曰「臂」曰「足」曰「尾」。\n除「臂」以二。名之曰「刑天」。\n乘「刑天」以二。減其於「足」。除其以四。名之曰「許狐和」。",
     "audioPath": "audios/female/audio-3-29-f.mp3",
-    "translation": "I have four numbers.\nEach of them are, three hundred forty\nthirty-two,\ntwo hundred and sixteen,\nand four hundred and seventeen.\nThey are named, respectively, “Head,” “Arm,” “Foot,” and “Tail.”\nDivide “Arm” by two.\nName it “Xing Tian.”\nMultiply “Xing Tian” by two.\nSubtract it from the “Foot.”\nDivide it by four.\nName it “Sum of Hydra and Fox.”",
+    "translation": "I have four numbers.\nEach of them are, three hundred forty\nthirty-two,\ntwo hundred and sixteen,\nand four hundred and seventeen.\nThey are named, respectively, “Head,”\n“Arm,”\n“Foot,”\nand “Tail.”\nDivide “Arm” by two.\nName it “Xing Tian.”\nMultiply “Xing Tian” by two.\nSubtract it from the “Foot.”\nDivide it by four.\nName it “Sum of Hydra and Fox.”",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1533,61 +1533,61 @@ export const segments = [
       },
       {
         "chinese": "名之曰「頭」",
-        "english": "They are named, respectively, “Head,” “Arm,” “Foot,” and “Tail.”",
+        "english": "They are named, respectively, “Head,”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot dùː",
         "durationInFrames": 40
       },
       {
         "chinese": "曰「臂」",
-        "english": "Divide “Arm” by two.",
+        "english": "“Arm,”",
         "transcription": "ɦʉot piěː",
         "durationInFrames": 20
       },
       {
         "chinese": "曰「足」",
-        "english": "Name it “Xing Tian.”",
+        "english": "“Foot,”",
         "transcription": "ɦʉot ʦʉok",
         "durationInFrames": 20
       },
       {
         "chinese": "曰「尾」。",
-        "english": "Multiply “Xing Tian” by two.",
+        "english": "and “Tail.”",
         "transcription": "ɦʉot mʉ́j",
         "durationInFrames": 30
       },
       {
         "chinese": "\n除「臂」以二。",
-        "english": "Subtract it from the “Foot.”",
+        "english": "Divide “Arm” by two.",
         "transcription": "ɖɨə̀ː piěː jɨ́ː ɲǐː",
         "durationInFrames": 60
       },
       {
         "chinese": "名之曰「刑天」。",
-        "english": "Divide it by four.",
+        "english": "Name it “Xing Tian.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɦèŋ tʰèn",
         "durationInFrames": 60
       },
       {
         "chinese": "\n乘「刑天」以二。",
-        "english": "Name it “Sum of Hydra and Fox.”",
+        "english": "Multiply “Xing Tian” by two.",
         "transcription": "ʑɨ̀ŋ ɦèŋ tʰèn jɨ́ː ɲǐː",
         "durationInFrames": 70
       },
       {
         "chinese": "減其於「足」。",
-        "english": null,
+        "english": "Subtract it from the “Foot.”",
         "transcription": "kẹ́m gɨ̀ː ʔɨə̀ː ʦʉok",
         "durationInFrames": 50
       },
       {
         "chinese": "除其以四。",
-        "english": null,
+        "english": "Divide it by four.",
         "transcription": "ɖɨə̀ː gɨ̀ː jɨ́ː sǐː",
         "durationInFrames": 50
       },
       {
         "chinese": "名之曰「許狐和」。",
-        "english": null,
+        "english": "Name it “Sum of Hydra and Fox.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot hɨə́ː ɦòː ɦʷɑ̀ː",
         "durationInFrames": 75
       }

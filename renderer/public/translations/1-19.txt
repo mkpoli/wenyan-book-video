@@ -4,7 +4,8 @@ May I omit them
 if I wish?”
 
 He replied:
-“No, you may not. Those are quotation marks.
+“No, you may not.
+Those are quotation marks.
 
 ‘Single quotes’ —
 distinguish variables from other things.

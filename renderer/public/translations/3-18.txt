@@ -1,4 +1,5 @@
-Example One. The Sunzi Suan Jing contains a question.
+Example One.
+The Sunzi Suan Jing contains a question.
 Now there is a pheasant and a rabbit in the same cage.
 Above are thirty-five heads.
 Below are ninety-four feet.

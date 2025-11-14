@@ -6,102 +6,102 @@ export const segments = [
     "id": "1-1",
     "text": "編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。",
     "audioPath": "audios/female/audio-1-1-f.mp3",
-    "translation": "What is programming? That by which one commands machines.\nWhat is a machine? That by which human labor is replaced.\nYet the power of machines is vast,\ntheir calculations swift,\nbut their wisdom does not reach that of man.\n\nTherefore, the wise plan with care and foresight.\nThey set down a thousand words,\nas if issuing military orders,\nas if prescribing medicine —\nthis is called a program.\n\nOnce the machine comprehends it,\nit can then be made to serve mankind —\nto chart the movements of the stars,\nor to analyze the patterns of reason.",
+    "translation": "What is programming?\nThat by which one commands machines.\nWhat is a machine?\nThat by which human labor is replaced.\nYet the power of machines is vast,\ntheir calculations swift,\nbut their wisdom does not reach that of man.\n\nTherefore, the wise plan with care and foresight.\nThey set down a thousand words,\nas if issuing military orders,\nas if prescribing medicine —\nthis is called a program.\n\nOnce the machine comprehends it,\nit can then be made to serve mankind —\nto chart the movements of the stars,\nor to analyze the patterns of reason.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "編程者何。",
-        "english": "What is programming? That by which one commands machines.",
+        "english": "What is programming?",
         "transcription": "pèn ɖiàŋ ʨiáː ɦɑ̀ː",
         "durationInFrames": 50
       },
       {
         "chinese": "所以役機器也。",
-        "english": "What is a machine? That by which human labor is replaced.",
+        "english": "That by which one commands machines.",
         "transcription": "ʂɨə́ː jɨ́ː jyak kɨ̀j kʰị̌ː jiáː",
         "durationInFrames": 70
       },
       {
         "chinese": "機器者何。",
-        "english": "Yet the power of machines is vast,",
+        "english": "What is a machine?",
         "transcription": "kɨ̀j kʰị̌ː ʨiáː ɦɑ̀ː",
         "durationInFrames": 50
       },
       {
         "chinese": "所以代人力也。",
-        "english": "their calculations swift,",
+        "english": "That by which human labor is replaced.",
         "transcription": "ʂɨə́ː jɨ́ː də̌j ɲìn lɨk jiáː",
         "durationInFrames": 70
       },
       {
         "chinese": "然機器之力也廣。",
-        "english": "but their wisdom does not reach that of man.",
+        "english": "Yet the power of machines is vast,",
         "transcription": "ɲièn kɨ̀j kʰị̌ː ʨɨ̀ː lɨk jiáː kʷɑ́ŋ",
         "durationInFrames": 80
       },
       {
         "chinese": "其算也速。",
-        "english": "Therefore, the wise plan with care and foresight.",
+        "english": "their calculations swift,",
         "transcription": "gɨ̀ː sʷɑ̌n jiáː suk",
         "durationInFrames": 50
       },
       {
         "chinese": "唯智不逮也。",
-        "english": "They set down a thousand words,",
+        "english": "but their wisdom does not reach that of man.",
         "transcription": "jʷìː ʈiěː pʉùː də̌j jiáː",
         "durationInFrames": 60
       },
       {
         "chinese": "故有智者慎謀遠慮。",
-        "english": "as if issuing military orders,",
+        "english": "Therefore, the wise plan with care and foresight.",
         "transcription": "kǒː ɦʉúː ʈiěː ʨiáː ʥǐn mʉùː ɦʉón lɨə̌ː",
         "durationInFrames": 90
       },
       {
         "chinese": "下筆千言。",
-        "english": "as if prescribing medicine —",
+        "english": "They set down a thousand words,",
         "transcription": "ɦạ̌ː pịt ʦʰèn ŋɨə̀n",
         "durationInFrames": 50
       },
       {
         "chinese": "如軍令然。",
-        "english": "this is called a program.",
+        "english": "as if issuing military orders,",
         "transcription": "ɲɨə̀ː kʉ̀n liǎŋ ɲièn",
         "durationInFrames": 50
       },
       {
         "chinese": "如藥方然。",
-        "english": "Once the machine comprehends it,",
+        "english": "as if prescribing medicine —",
         "transcription": "ɲɨə̀ː jɨɑk pʉɑ̀ŋ ɲièn",
         "durationInFrames": 50
       },
       {
         "chinese": "謂之程式。",
-        "english": "it can then be made to serve mankind —",
+        "english": "this is called a program.",
         "transcription": "ɦʉ̌j ʨɨ̀ː ɖiàŋ ɕɨk",
         "durationInFrames": 50
       },
       {
         "chinese": "機器既明之。",
-        "english": "to chart the movements of the stars,",
+        "english": "Once the machine comprehends it,",
         "transcription": "kɨ̀j kʰị̌ː kɨ̌j mịàŋ ʨɨ̀ː",
         "durationInFrames": 60
       },
       {
         "chinese": "乃能為人所使。",
-        "english": "or to analyze the patterns of reason.",
+        "english": "it can then be made to serve mankind —",
         "transcription": "nə́j nə̀ŋ ɦỵèː ɲìn ʂɨə́ː ʂɨ́ː",
         "durationInFrames": 70
       },
       {
         "chinese": "或演星文。",
-        "english": null,
+        "english": "to chart the movements of the stars,",
         "transcription": "ɦʷək jién sèŋ mʉ̀n",
         "durationInFrames": 50
       },
       {
         "chinese": "或析事理。",
-        "english": null,
+        "english": "or to analyze the patterns of reason.",
         "transcription": "ɦʷək sek ꭦɨ̌ː lɨ́ː",
         "durationInFrames": 51
       }
@@ -1794,7 +1794,7 @@ export const segments = [
     "id": "1-19",
     "text": "甲字上下有符如矩尺然者。何焉。今欲省之。可乎。曰。不可。此引號也。「單引號」者。所以別變數於其他也。『雙引號』者。所以別言語於其他也。微是。不能別歧義也。又問曰。句讀。挪抬。無之可乎。",
     "audioPath": "audios/female/audio-1-19-f.mp3",
-    "translation": "“The character A is enclosed above and below by marks like a carpenter’s square —\nwhat are they for?\nMay I omit them\nif I wish?”\n\nHe replied:\n“No, you may not. Those are quotation marks.\n\n‘Single quotes’ —\ndistinguish variables from other things.\n‘Double quotes’ —\ndistinguish spoken phrases from other things.\nWithout them,\none could not avoid ambiguity.”\n\nHe asked again:\n“What of punctuation,\nand spacing —\nmay I do without them?”",
+    "translation": "“The character A is enclosed above and below by marks like a carpenter’s square —\nwhat are they for?\nMay I omit them\nif I wish?”\n\nHe replied:\n“No, you may not.\nThose are quotation marks.\n\n‘Single quotes’ —\ndistinguish variables from other things.\n‘Double quotes’ —\ndistinguish spoken phrases from other things.\nWithout them,\none could not avoid ambiguity.”\n\nHe asked again:\n“What of punctuation,\nand spacing —\nmay I do without them?”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1829,73 +1829,73 @@ export const segments = [
       },
       {
         "chinese": "不可。",
-        "english": "“No, you may not. Those are quotation marks.",
+        "english": "“No, you may not.",
         "transcription": "pʉùː kʰɑ́ː",
         "durationInFrames": 31
       },
       {
         "chinese": "此引號也。",
-        "english": "‘Single quotes’ —",
+        "english": "Those are quotation marks.",
         "transcription": "ʦʰiéː jín ɦɑ̌w jiáː",
         "durationInFrames": 51
       },
       {
         "chinese": "「單引號」者。",
-        "english": "distinguish variables from other things.",
+        "english": "‘Single quotes’ —",
         "transcription": "tɑ̀n jín ɦɑ̌w ʨiáː",
         "durationInFrames": 51
       },
       {
         "chinese": "所以別變數於其他也。",
-        "english": "‘Double quotes’ —",
+        "english": "distinguish variables from other things.",
         "transcription": "ʂɨə́ː jɨ́ː pịet pịěn ʂʉǒː ʔɨə̀ː gɨ̀ː tʰɑ̀ː jiáː",
         "durationInFrames": 102
       },
       {
         "chinese": "『雙引號』者。",
-        "english": "distinguish spoken phrases from other things.",
+        "english": "‘Double quotes’ —",
         "transcription": "ʂọ̀ŋ jín ɦɑ̌w ʨiáː",
         "durationInFrames": 51
       },
       {
         "chinese": "所以別言語於其他也。",
-        "english": "Without them,",
+        "english": "distinguish spoken phrases from other things.",
         "transcription": "ʂɨə́ː jɨ́ː pịet ŋɨə̀n ŋɨə́ː ʔɨə̀ː gɨ̀ː tʰɑ̀ː jiáː",
         "durationInFrames": 102
       },
       {
         "chinese": "微是。",
-        "english": "one could not avoid ambiguity.”",
+        "english": "Without them,",
         "transcription": "mʉ̀j ʥiéː",
         "durationInFrames": 31
       },
       {
         "chinese": "不能別歧義也。",
-        "english": "He asked again:",
+        "english": "one could not avoid ambiguity.”",
         "transcription": "pʉùː nə̀ŋ pịet gièː ŋịěː jiáː",
         "durationInFrames": 71
       },
       {
         "chinese": "又問曰。",
-        "english": "“What of punctuation,",
+        "english": "He asked again:",
         "transcription": "ɦʉǔː mʉ̌n ɦʉot",
         "durationInFrames": 41
       },
       {
         "chinese": "句讀。",
-        "english": "and spacing —",
+        "english": "“What of punctuation,",
         "transcription": "kʉǒː duk",
         "durationInFrames": 31
       },
       {
         "chinese": "挪抬。",
-        "english": "may I do without them?”",
+        "english": "and spacing —",
         "transcription": "nɑ̀ː də̀j",
         "durationInFrames": 31
       },
       {
         "chinese": "無之可乎。",
-        "english": null,
+        "english": "may I do without them?”",
         "transcription": "mʉòː ʨɨ̀ː kʰɑ́ː ɦòː",
         "durationInFrames": 49
       }

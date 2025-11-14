@@ -6,108 +6,108 @@ export const segments = [
     "id": "4-1",
     "text": "決策者。萬智之始。何耶。曰察而後動。魚之相吞。必先度彼之大小。犬之嚙人。必先觀主之喜惡。此禽獸之決策也。雨而蓑。寒而衣。價善乃沽。人善乃欺。匹夫之決策也。陟罰臧否。伐謀伐交。卿相之決策也。",
     "audioPath": "audios/female/audio-4-1-f.mp3",
-    "translation": "The decision-maker.\nThe beginning of all wisdom.\nWhat, you ask? It is said: observe before acting.\nThe way fish swallow one another.\nOne must first measure their size.\nThe dog’s biting.\nOne must first observe the master’s likes and dislikes.\nThis is the decision of beasts.\nIn rain, one dons a rain cloak.\nIn cold, one clothes oneself.\nWhen the price is good, one sells.\nWhen people are virtuous, they deceive.\nThis is the decision of the common man.\nReward and punishment; commendation and blame.\nAttack plots and sever alliances.\nThe decisions of ministers and chancellors.",
+    "translation": "Decision-making —\nis the beginning of all wisdom.\nWhat, you ask?\nIt is said: “Observe before acting.”\nThe way fish swallow one another.\nOne must first measure their size.\nThe dog’s biting on someone.\nOne must first observe the master’s likes and dislikes.\nThis is the decision of beasts.\nIn rain, one dons a rain cloak.\nIn cold, one clothes oneself.\nWhen the price is good, one sells.\nWhen people are virtuous, they deceive.\nThis is the decision of the common man.\nReward and punishment; commendation and blame.\nAttack plots and sever alliances.\nThe decisions of ministers and chancellors.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "決策者。",
-        "english": "The decision-maker.",
+        "english": "Decision-making —",
         "transcription": "kʷet ꭧʰẹk ʨiáː",
         "durationInFrames": 42
       },
       {
         "chinese": "萬智之始。",
-        "english": "The beginning of all wisdom.",
+        "english": "is the beginning of all wisdom.",
         "transcription": "mʉǒn ʈiěː ʨɨ̀ː ɕɨ́ː",
         "durationInFrames": 53
       },
       {
         "chinese": "何耶。",
-        "english": "What, you ask? It is said: observe before acting.",
+        "english": "What, you ask?",
         "transcription": "ɦɑ̀ː jiàː",
         "durationInFrames": 31
       },
       {
         "chinese": "曰察而後動。",
-        "english": "The way fish swallow one another.",
+        "english": "It is said: “Observe before acting.”",
         "transcription": "ɦʉot ꭧʰẹt ɲɨ̀ː ɦúː dúŋ",
         "durationInFrames": 63
       },
       {
         "chinese": "魚之相吞。",
-        "english": "One must first measure their size.",
+        "english": "The way fish swallow one another.",
         "transcription": "ŋɨə̀ː ʨɨ̀ː sɨɑ̀ŋ tʰə̀n",
         "durationInFrames": 53
       },
       {
         "chinese": "必先度彼之大小。",
-        "english": "The dog’s biting.",
+        "english": "One must first measure their size.",
         "transcription": "pit sèn dɑk pịéː ʨɨ̀ː dɑ̌j siéw",
         "durationInFrames": 84
       },
       {
         "chinese": "犬之嚙人。",
-        "english": "One must first observe the master’s likes and dislikes.",
+        "english": "The dog’s biting on someone.",
         "transcription": "kʰʷén ʨɨ̀ː ŋet ɲìn",
         "durationInFrames": 53
       },
       {
         "chinese": "必先觀主之喜惡。",
-        "english": "This is the decision of beasts.",
+        "english": "One must first observe the master’s likes and dislikes.",
         "transcription": "pit sèn kʷɑ̀n ʨʉóː ʨɨ̀ː hɨ́ː ʔǒː",
         "durationInFrames": 84
       },
       {
         "chinese": "此禽獸之決策也。",
-        "english": "In rain, one dons a rain cloak.",
+        "english": "This is the decision of beasts.",
         "transcription": "ʦʰiéː gị̀m ɕʉǔː ʨɨ̀ː kʷet ꭧʰẹk jiáː",
         "durationInFrames": 84
       },
       {
         "chinese": "雨而蓑。",
-        "english": "In cold, one clothes oneself.",
+        "english": "In rain, one dons a rain cloak.",
         "transcription": "ɦʉóː ɲɨ̀ː sʷɑ̀ː",
         "durationInFrames": 42
       },
       {
         "chinese": "寒而衣。",
-        "english": "When the price is good, one sells.",
+        "english": "In cold, one clothes oneself.",
         "transcription": "ɦɑ̀n ɲɨ̀ː ʔɨ̀j",
         "durationInFrames": 42
       },
       {
         "chinese": "價善乃沽。",
-        "english": "When people are virtuous, they deceive.",
+        "english": "When the price is good, one sells.",
         "transcription": "kạ̌ː ʥién nə́j kǒː",
         "durationInFrames": 53
       },
       {
         "chinese": "人善乃欺。",
-        "english": "This is the decision of the common man.",
+        "english": "When people are virtuous, they deceive.",
         "transcription": "ɲìn ʥién nə́j kʰɨ̀ː",
         "durationInFrames": 53
       },
       {
         "chinese": "匹夫之決策也。",
-        "english": "Reward and punishment; commendation and blame.",
+        "english": "This is the decision of the common man.",
         "transcription": "pʰit pʉòː ʨɨ̀ː kʷet ꭧʰẹk jiáː",
         "durationInFrames": 74
       },
       {
         "chinese": "陟罰臧否。",
-        "english": "Attack plots and sever alliances.",
+        "english": "Reward and punishment; commendation and blame.",
         "transcription": "ʈɨk bʉot ʦɑ̀ŋ bị́ː",
         "durationInFrames": 53
       },
       {
         "chinese": "伐謀伐交。",
-        "english": "The decisions of ministers and chancellors.",
+        "english": "Attack plots and sever alliances.",
         "transcription": "bʉot mʉùː bʉot kạ̀w",
         "durationInFrames": 53
       },
       {
         "chinese": "卿相之決策也。",
-        "english": null,
+        "english": "The decisions of ministers and chancellors.",
         "transcription": "kʰịàŋ sɨɑ̌ŋ ʨɨ̀ː kʷet ꭧʰẹk jiáː",
         "durationInFrames": 70
       }
@@ -1452,7 +1452,7 @@ export const segments = [
     "id": "4-22",
     "text": "夫「甲」「乙」中無陰乎。名之曰「丙」。若「丙」者。吾有一言。曰『古之人誠不我欺。』書之也。\n夫「甲」「乙」中無陰乎。若其然者。吾有一言。曰『古之人誠不我欺。』書之也。",
     "audioPath": "audios/female/audio-4-22-f.mp3",
-    "translation": "In the case of ‘A’ and ‘B’, is there no Yin?\nCall it ‘C’.\nIf it is “C”.\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.\nIn the case of ‘A’ and ‘B’, is there no Yin?\nIf so,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.” Write it down.",
+    "translation": "In the case of ‘A’ and ‘B’, is there no Yin?\nCall it ‘C’.\nIf it is “C”.\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.\nIn the case of ‘A’ and ‘B’, is there no Yin?\nIf so,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1511,13 +1511,13 @@ export const segments = [
       },
       {
         "chinese": "曰『古之人誠不我欺。』",
-        "english": "It says, “The ancient people were indeed not deceiving me.” Write it down.",
+        "english": "It says, “The ancient people were indeed not deceiving me.”",
         "transcription": "ɦʉot kóː ʨɨ̀ː ɲìn ʥiàŋ pʉùː ŋɑ́ː kʰɨ̀ː",
         "durationInFrames": 92
       },
       {
         "chinese": "書之也。",
-        "english": null,
+        "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
         "durationInFrames": 44
       }
@@ -1544,7 +1544,7 @@ export const segments = [
     "id": "4-24",
     "text": "夫「甲」「乙」中有陽乎。名之曰「丙」。變「丙」。名之曰「丁」。若「丁」者。吾有一言。曰『古之人誠不我欺。』書之也。",
     "audioPath": "audios/female/audio-4-24-f.mp3",
-    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nCall it ‘C’.\nChange ‘C’.\nCall it ‘D’.\nIf it is ‘D’,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.” Write it.\n",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nCall it ‘C’.\nChange ‘C’.\nCall it ‘D’.\nIf it is ‘D’,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.\n",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1585,13 +1585,13 @@ export const segments = [
       },
       {
         "chinese": "曰『古之人誠不我欺。』",
-        "english": "It says, “The ancient people were indeed not deceiving me.” Write it.",
+        "english": "It says, “The ancient people were indeed not deceiving me.”",
         "transcription": "ɦʉot kóː ʨɨ̀ː ɲìn ʥiàŋ pʉùː ŋɑ́ː kʰɨ̀ː",
         "durationInFrames": 94
       },
       {
         "chinese": "書之也。",
-        "english": null,
+        "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
         "durationInFrames": 42
       }
@@ -1602,7 +1602,7 @@ export const segments = [
     "id": "4-25",
     "text": "夫「甲」「乙」中有陽乎。若其不然者。吾有一言。曰『古之人誠不我欺。』書之也。",
     "audioPath": "audios/female/audio-4-25-f.mp3",
-    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nIf not so,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.” Write it.",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nIf not so,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”'\nWrite it down.",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1625,13 +1625,13 @@ export const segments = [
       },
       {
         "chinese": "曰『古之人誠不我欺。』",
-        "english": "It says, “The ancient people were indeed not deceiving me.” Write it.",
+        "english": "It says, “The ancient people were indeed not deceiving me.”'",
         "transcription": "ɦʉot kóː ʨɨ̀ː ɲìn ʥiàŋ pʉùː ŋɑ́ː kʰɨ̀ː",
         "durationInFrames": 94
       },
       {
         "chinese": "書之也。",
-        "english": null,
+        "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
         "durationInFrames": 42
       }
@@ -2064,7 +2064,7 @@ export const segments = [
     "id": "4-31",
     "text": " 吾有一言。曰『賜也。始可與言詩已矣。告諸往而知來者。』書之。\n 若非。\n 夫「衛人耶」。若其然者。\n 吾有一言。曰『起予者。商也。始可與言詩已矣。』書之。\n 若非。",
     "audioPath": "audios/female/audio-4-31-f.mp3",
-    "translation": "I have a word.\nIt says, “Ah, (Duanmu) Ci! Now I may truly discuss poetry with you.”\nWrite it down.\nIf not,\nThat ‘is he a man from Wei?’\nIf so,\nI have a word.\nIt says, “It is Shang, indeed—he is now fit to speak of the Odes with me.”\nWrite it down.",
+    "translation": "I have a word.\nIt says, “Ah, (Duanmu) Ci! Now I may truly discuss poetry with you.”\nWrite it down.\nIf not,\nThat ‘is he a man from Wei?’\nIf so,\nI have a word.\nIt says, “It is Shang, indeed—he is now fit to speak of the Odes with me.”\nWrite it down.\nIf not,",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -2123,7 +2123,7 @@ export const segments = [
       },
       {
         "chinese": "\n 若非。",
-        "english": null,
+        "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
         "durationInFrames": 47
       }
