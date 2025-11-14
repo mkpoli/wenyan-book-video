@@ -365,29 +365,31 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           </p>
         ) : null}
         <div
-          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9"
+          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9 h-[600px] min-h-[600px]"
           style={
             isCodeBlock
               ? { outline: "4px solid #000", outlineOffset: "16px" }
               : undefined
           }
         >
-          {hasSentenceData
-            ? renderSentencesWithLineBreaks()
-            : renderTextWithQuotes(text, { isCodeBlock })}
+          <div style={{ transform: "translateY(0.1em)" }}>
+            {hasSentenceData
+              ? renderSentencesWithLineBreaks()
+              : renderTextWithQuotes(text, { isCodeBlock })}
+          </div>
         </div>
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
             {transcriptionLine ? (
               <p
-                className={`font-transcription tracking-wide font-normal mb-2 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line ${transcriptionLine.length > 100 ? "text-2xl" : "text-5xl"}`}
+                className={`font-transcription tracking-wide font-normal mt-4 text-center w-full text-slate-500 leading-[1.2] m-0 whitespace-pre-line min-h-20 text-balance ${transcriptionLine.length > 100 ? "text-2xl" : "text-5xl"}`}
               >
                 {convertCinixToTUPA(transcriptionLine)}
               </p>
             ) : null}
             {englishLine ? (
               <p
-                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-[6.75rem] flex items-center justify-center ${
+                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-27 flex items-center justify-center ${
                   englishLine.length > 70
                     ? englishLine.length > 100
                       ? "text-2xl"
