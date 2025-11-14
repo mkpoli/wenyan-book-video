@@ -598,7 +598,7 @@ export const segments = [
     "id": "4-8",
     "text": "吾有二數。曰十。曰九。名之曰「器量」曰「酒量」。\n若「酒量」大於「器量」者。\n 昔之「酒量」者。今「器量」是矣。\n云云。\n夫「酒量」。書之。",
     "audioPath": "audios/female/audio-4-8-f.mp3",
-    "translation": "I have two numbers.\nOne is called “Ten.”\nThe other is called “Nine.”\nI name it “Vessel Capacity” and “Wine Capacity.”\nIf “Wine Capacity” is greater than “Vessel Capacity.”\nThe former “Wine Capacity” was,\nNow the “Vessel Capacity” is so.\nThus it is.\nFor “Wine Capacity,”\nwrite it down.",
+    "translation": "I have two numbers.\nOne is called “Ten.”\nThe other is called “Nine.”\nI name it “Vessel Capacity”,\nand “Wine Capacity.”\nIf “Wine Capacity” is greater than “Vessel Capacity.”\nThe former “Wine Capacity” was,\nNow the “Vessel Capacity” is so.\nThus it is.\nFor “Wine Capacity,”\nwrite it down.",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -621,49 +621,49 @@ export const segments = [
       },
       {
         "chinese": "名之曰「器量」",
-        "english": "I name it “Vessel Capacity” and “Wine Capacity.”",
+        "english": "I name it “Vessel Capacity”,",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kʰị̌ː lɨɑ̌ŋ",
         "durationInFrames": 49
       },
       {
         "chinese": "曰「酒量」。",
-        "english": "If “Wine Capacity” is greater than “Vessel Capacity.”",
+        "english": "and “Wine Capacity.”",
         "transcription": "ɦʉot ʦʉúː lɨɑ̌ŋ",
         "durationInFrames": 39
       },
       {
         "chinese": "\n若「酒量」大於「器量」者。",
-        "english": "The former “Wine Capacity” was,",
+        "english": "If “Wine Capacity” is greater than “Vessel Capacity.”",
         "transcription": "ɲɨɑk ʦʉúː lɨɑ̌ŋ dɑ̌j ʔɨə̀ː kʰị̌ː lɨɑ̌ŋ ʨiáː",
         "durationInFrames": 99
       },
       {
         "chinese": "\n 昔之「酒量」者。",
-        "english": "Now the “Vessel Capacity” is so.",
+        "english": "The former “Wine Capacity” was,",
         "transcription": "siak ʨɨ̀ː ʦʉúː lɨɑ̌ŋ ʨiáː",
         "durationInFrames": 79
       },
       {
         "chinese": "今「器量」是矣。",
-        "english": "Thus it is.",
+        "english": "Now the “Vessel Capacity” is so.",
         "transcription": "kị̀m kʰị̌ː lɨɑ̌ŋ ʥiéː ɦɨ́ː",
         "durationInFrames": 59
       },
       {
         "chinese": "\n云云。",
-        "english": "For “Wine Capacity,”",
+        "english": "Thus it is.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
         "durationInFrames": 39
       },
       {
         "chinese": "\n夫「酒量」。",
-        "english": "write it down.",
+        "english": "For “Wine Capacity,”",
         "transcription": "bʉòː ʦʉúː lɨɑ̌ŋ",
         "durationInFrames": 49
       },
       {
         "chinese": "書之。",
-        "english": null,
+        "english": "write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
         "durationInFrames": 30
       }
