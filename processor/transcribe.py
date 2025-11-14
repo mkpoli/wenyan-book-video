@@ -155,6 +155,8 @@ def _():
         "創": 0,
         "祭": 0,
         "向": 0,
+        "決": 0,
+        "示": 0,
     }
     return CHAR_REPLACEMENTS, SPECIAL_CASES
 
