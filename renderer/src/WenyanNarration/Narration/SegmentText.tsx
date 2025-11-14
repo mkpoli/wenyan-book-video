@@ -85,9 +85,26 @@ function buildQuoteRenderEntries(text: string): QuoteRenderEntry[] {
   return entries;
 }
 
+const CHINESE_NUMBERS = new Set([
+  "一",
+  "二",
+  "三",
+  "四",
+  "五",
+  "六",
+  "七",
+  "八",
+  "九",
+  "十",
+  "百",
+  "千",
+  "萬",
+  "零",
+]);
+
 function renderTextWithQuotes(
   text: string,
-  options?: { trailingMarker?: string | null },
+  options?: { trailingMarker?: string | null; isCodeBlock?: boolean },
 ): React.ReactNode {
   if (!text) {
     return null;
@@ -99,12 +116,41 @@ function renderTextWithQuotes(
   }
 
   const trailingMarker = options?.trailingMarker ?? null;
+  const isCodeBlock = options?.isCodeBlock ?? false;
+
+  // Track quote depth to handle nested quotes correctly
+  let quoteDepth = 0;
 
   return entries.map((entry, index) => {
     const prefixString = entry.prefixes.join("");
     const suffixString = entry.suffixes.join("");
     const showTrailingMarker =
       Boolean(trailingMarker) && index === entries.length - 1;
+    const isChineseNumber = isCodeBlock && CHINESE_NUMBERS.has(entry.char);
+
+    // Count quote markers in prefixes and suffixes
+    const quotePrefixCount =
+      (prefixString.match(/「/g)?.length ?? 0) +
+      (prefixString.match(/『/g)?.length ?? 0);
+    const quoteSuffixCount =
+      (suffixString.match(/」/g)?.length ?? 0) +
+      (suffixString.match(/』/g)?.length ?? 0);
+
+    // Check if we're currently inside quotes (before processing this character)
+    const isInsideQuote = quoteDepth > 0;
+
+    // Update quote depth
+    quoteDepth += quotePrefixCount - quoteSuffixCount;
+
+    // Determine color based on code block highlighting rules
+    let charColor: string | undefined;
+    if (isCodeBlock) {
+      if (isInsideQuote || quotePrefixCount > 0) {
+        charColor = "var(--color-code-token-string)";
+      } else if (isChineseNumber) {
+        charColor = "var(--color-code-token-number)";
+      }
+    }
 
     return (
       <span
@@ -125,7 +171,9 @@ function renderTextWithQuotes(
             {prefixString}
           </span>
         ) : null}
-        {entry.char}
+        <span style={charColor ? { color: charColor } : undefined}>
+          {entry.char}
+        </span>
         {suffixString ? (
           <span
             className="absolute left-1/2 text-punctuation pointer-events-none select-none"
@@ -150,7 +198,15 @@ function renderTextWithQuotes(
   });
 }
 
-function Sentence({ text, highlight }: { text: string; highlight: boolean }) {
+function Sentence({
+  text,
+  highlight,
+  isCodeBlock,
+}: {
+  text: string;
+  highlight: boolean;
+  isCodeBlock: boolean;
+}) {
   if (!text) {
     return null;
   }
@@ -159,6 +215,7 @@ function Sentence({ text, highlight }: { text: string; highlight: boolean }) {
   const content = hasTrailingMarker ? text.slice(0, -1) : text;
   const renderedContent = renderTextWithQuotes(content, {
     trailingMarker: hasTrailingMarker ? "。" : null,
+    isCodeBlock,
   });
 
   if (!renderedContent) {
@@ -241,9 +298,10 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                   key={`${index}-${sentence.chinese}`}
                   text={sentence.chinese}
                   highlight={index === currentSentenceIndex}
+                  isCodeBlock={isCodeBlock}
                 />
               ))
-            : renderTextWithQuotes(text)}
+            : renderTextWithQuotes(text, { isCodeBlock })}
         </div>
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
