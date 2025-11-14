@@ -48,6 +48,7 @@ def _():
     - Each 。 (full stop) in the original Chinese marks a new line in the translation.
     - Keep the line structure exactly; DO NOT merge sentences into paragraphs.
     - Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
+    - Add proper English punctuation (period, comma, semicolon, colon, dash etc.) to the translation according to the context.
 
     ### Maintain Classical Tone
     - Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
