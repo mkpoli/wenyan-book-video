@@ -320,894 +320,2278 @@
       "chapterId": "c10",
       "blockId": "b3",
       "index": 40,
-      "source": "吾有一物。名之曰「白馬」。其物如是。\n\t物之「「色」」者。言曰「「白」」。\n\t物之「「名」」者。言曰「「白義」」。\n\t物之「「日行里數」」者。數曰千。\n\t物之「「夜行里數」」者。數曰八百。\n\t物之「「良耶」」者。爻曰陽。\n\t物之「「足數」」者。數曰四。\n是謂「白馬」之物也。",
+      "source": "吾有一物。",
       "isCode": true
     },
     {
       "id": "c10-s41",
       "chapterId": "c10",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 41,
-      "source": "其物既敘。",
-      "isCode": false
+      "source": "名之曰「白馬」。",
+      "isCode": true
     },
     {
       "id": "c10-s42",
       "chapterId": "c10",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 42,
-      "source": "復得取其端書如是。",
-      "isCode": false
+      "source": "其物如是。",
+      "isCode": true
     },
     {
       "id": "c10-s43",
       "chapterId": "c10",
-      "blockId": "b5",
+      "blockId": "b3",
       "index": 43,
-      "source": "夫「白馬」之「「名」」。書之。\n夫「白馬」之「「日行里數」」。書之。",
+      "source": "\n\t物之「「色」」者。",
       "isCode": true
     },
     {
       "id": "c10-s44",
       "chapterId": "c10",
-      "blockId": "b6",
+      "blockId": "b3",
       "index": 44,
-      "source": "易之用之。",
-      "isCode": false
+      "source": "言曰「「白」」。",
+      "isCode": true
     },
     {
       "id": "c10-s45",
       "chapterId": "c10",
-      "blockId": "b6",
+      "blockId": "b3",
       "index": 45,
-      "source": "無少異於諸變數。",
-      "isCode": false
+      "source": "\n\t物之「「名」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s46",
       "chapterId": "c10",
-      "blockId": "b7",
+      "blockId": "b3",
       "index": 46,
-      "source": "夫「白馬」之「「日行里數」」。除其以二。昔之「白馬」之「「日行里數」」者。今其是矣。\n夫「白馬」之「「夜行里數」」。減其以五百。昔之「白馬」之「「夜行里數」」者。今其是矣。\n注曰。「「斯馬老矣」」。",
+      "source": "言曰「「白義」」。",
       "isCode": true
     },
     {
       "id": "c10-s47",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 47,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "\n\t物之「「日行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s48",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 48,
-      "source": "今有駿馬千匹。",
-      "isCode": false
+      "source": "數曰千。",
+      "isCode": true
     },
     {
       "id": "c10-s49",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 49,
-      "source": "似此一一敘之者。",
-      "isCode": false
+      "source": "\n\t物之「「夜行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s50",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 50,
-      "source": "不亦煩乎。",
-      "isCode": false
+      "source": "數曰八百。",
+      "isCode": true
     },
     {
       "id": "c10-s51",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 51,
-      "source": "曰。",
-      "isCode": false
+      "source": "\n\t物之「「良耶」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s52",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 52,
-      "source": "以術生之。",
-      "isCode": false
+      "source": "爻曰陽。",
+      "isCode": true
     },
     {
       "id": "c10-s53",
       "chapterId": "c10",
-      "blockId": "b8",
+      "blockId": "b3",
       "index": 53,
-      "source": "或謂造物之術。",
-      "isCode": false
+      "source": "\n\t物之「「足數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s54",
       "chapterId": "c10",
-      "blockId": "b9",
+      "blockId": "b3",
       "index": 54,
-      "source": "吾有一術。名之曰「生馬」。欲行是術。必先得二言。曰「馬名」。曰「毛色」。乃行是術曰。\n  吾有一物。名之曰「馬」。其物如是。\n    物之「「色」」者。言曰「毛色」。\n    物之「「名」」者。言曰「馬名」。\n    物之「「日行里數」」者。數曰千。\n    物之「「夜行里數」」者。數曰八百。\n    物之「「良耶」」者。爻曰陽。\n    物之「「足數」」者。數曰四。\n  是謂「馬」之物也。\n  乃得「馬」。\n是謂「生馬」之術也。",
+      "source": "數曰四。",
       "isCode": true
     },
     {
       "id": "c10-s55",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b3",
       "index": 55,
-      "source": "八駿者。",
-      "isCode": false
+      "source": "\n是謂「白馬」之物也。",
+      "isCode": true
     },
     {
       "id": "c10-s56",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b4",
       "index": 56,
-      "source": "同為穆天子良馬。",
+      "source": "其物既敘。",
       "isCode": false
     },
     {
       "id": "c10-s57",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b4",
       "index": 57,
-      "source": "唯毛色不同。",
+      "source": "復得取其端書如是。",
       "isCode": false
     },
     {
       "id": "c10-s58",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b5",
       "index": 58,
-      "source": "故其術唯參馬名毛色二者。",
-      "isCode": false
+      "source": "夫「白馬」之「「名」」。",
+      "isCode": true
     },
     {
       "id": "c10-s59",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b5",
       "index": 59,
-      "source": "或欲增其參數。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c10-s60",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b5",
       "index": 60,
-      "source": "亦無不可也。",
-      "isCode": false
+      "source": "\n夫「白馬」之「「日行里數」」。",
+      "isCode": true
     },
     {
       "id": "c10-s61",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b5",
       "index": 61,
-      "source": "施之乃聚八駿於一列。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c10-s62",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b6",
       "index": 62,
-      "source": "注。",
+      "source": "易之用之。",
       "isCode": false
     },
     {
       "id": "c10-s63",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b6",
       "index": 63,
-      "source": "郭璞曰。",
+      "source": "無少異於諸變數。",
       "isCode": false
     },
     {
       "id": "c10-s64",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 64,
-      "source": "八駿皆因其毛色以為名號耳。",
-      "isCode": false
+      "source": "夫「白馬」之「「日行里數」」。",
+      "isCode": true
     },
     {
       "id": "c10-s65",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 65,
-      "source": "然踰輪山子綠耳之色不見載。",
-      "isCode": false
+      "source": "除其以二。",
+      "isCode": true
     },
     {
       "id": "c10-s66",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 66,
-      "source": "世為圖畫者亦多。",
-      "isCode": false
+      "source": "昔之「白馬」之「「日行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s67",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 67,
-      "source": "然皆不知所據。",
-      "isCode": false
+      "source": "今其是矣。",
+      "isCode": true
     },
     {
       "id": "c10-s68",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 68,
-      "source": "余既不能考。",
-      "isCode": false
+      "source": "\n夫「白馬」之「「夜行里數」」。",
+      "isCode": true
     },
     {
       "id": "c10-s69",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 69,
-      "source": "而學又淺。",
-      "isCode": false
+      "source": "減其以五百。",
+      "isCode": true
     },
     {
       "id": "c10-s70",
       "chapterId": "c10",
-      "blockId": "b10",
+      "blockId": "b7",
       "index": 70,
-      "source": "故從闕耳。",
-      "isCode": false
+      "source": "昔之「白馬」之「「夜行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s71",
       "chapterId": "c10",
-      "blockId": "b11",
+      "blockId": "b7",
       "index": 71,
-      "source": "吾有一列。名之曰「八駿」。\n施「生馬」於「「赤驥」」於「「赤」」。充「八駿」以其。\n施「生馬」於「「盜驪」」於「「黑」」。充「八駿」以其。\n施「生馬」於「「白義」」於「「白」」。充「八駿」以其。\n施「生馬」於「「渠黃」」於「「黃」」。充「八駿」以其。\n施「生馬」於「「華騮」」於「「赤」」。充「八駿」以其。\n\t\n夫「八駿」之一。昔之其之「「名」」者。今「「騏驥」」是矣。\n\n凡「八駿」中之「馬」。\n\t夫「馬」之「「名」」。書之也。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
       "id": "c10-s72",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b7",
       "index": 72,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "\n注曰。",
+      "isCode": true
     },
     {
       "id": "c10-s73",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b7",
       "index": 73,
-      "source": "既有一物。",
-      "isCode": false
+      "source": "「「斯馬老矣」」。",
+      "isCode": true
     },
     {
       "id": "c10-s74",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 74,
-      "source": "欲知其諸端之名。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
       "id": "c10-s75",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 75,
-      "source": "奈何。",
+      "source": "今有駿馬千匹。",
       "isCode": false
     },
     {
       "id": "c10-s76",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 76,
-      "source": "或問曰。",
+      "source": "似此一一敘之者。",
       "isCode": false
     },
     {
       "id": "c10-s77",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 77,
-      "source": "今欲取物之一端。",
+      "source": "不亦煩乎。",
       "isCode": false
     },
     {
       "id": "c10-s78",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 78,
-      "source": "然其名未遽知。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c10-s79",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 79,
-      "source": "唯於運算中得之。",
+      "source": "以術生之。",
       "isCode": false
     },
     {
       "id": "c10-s80",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b8",
       "index": 80,
-      "source": "奈何。",
+      "source": "或謂造物之術。",
       "isCode": false
     },
     {
       "id": "c10-s81",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 81,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "吾有一術。",
+      "isCode": true
     },
     {
       "id": "c10-s82",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 82,
-      "source": "偶得一物。",
-      "isCode": false
+      "source": "名之曰「生馬」。",
+      "isCode": true
     },
     {
       "id": "c10-s83",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 83,
-      "source": "不知其為物耶。",
-      "isCode": false
+      "source": "欲行是術。",
+      "isCode": true
     },
     {
       "id": "c10-s84",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 84,
-      "source": "其為數為言為爻為術為列耶。",
-      "isCode": false
+      "source": "必先得二言。",
+      "isCode": true
     },
     {
       "id": "c10-s85",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 85,
-      "source": "奈何。",
-      "isCode": false
+      "source": "曰「馬名」。",
+      "isCode": true
     },
     {
       "id": "c10-s86",
       "chapterId": "c10",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 86,
-      "source": "曰引「格物」。",
-      "isCode": false
+      "source": "曰「毛色」。",
+      "isCode": true
     },
     {
       "id": "c10-s87",
       "chapterId": "c10",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 87,
-      "source": "吾嘗觀「「格物」」之書。方悟「取物」「置物」「列物之端」「識類」之義。\n\n吾有一言。曰「「日」」。注曰「「或曰「夜」」」。\n名之曰「時」。\n夫「白馬」。加「時」以「「行里數」」。取二以施「取物」。書之。\n\n吾有一數。曰三萬。名之曰「新數」。注曰。「「義山詩曰。八俊日行三萬里」」\n夫「白馬」。加「時」以「「行里數」」。夫「新數」。取三以施「置物」。書之。\n\n施「列物之端」於「白馬」。注曰「「得言之列也」」\n書之。\n\n施「識類」於三。書之。注曰「「得數」」\n施「識類」於陰。書之。注曰「「得爻」」\n施「識類」於「白馬」。書之。注曰「「得物」」\n施「識類」於「「善哉斯言」」。書之。注曰「「得言」」",
+      "source": "乃行是術曰。",
       "isCode": true
     },
     {
       "id": "c10-s88",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 88,
-      "source": "又物者。",
-      "isCode": false
+      "source": "\n  吾有一物。",
+      "isCode": true
     },
     {
       "id": "c10-s89",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 89,
-      "source": "雖貌盡同而其實或非一也。",
-      "isCode": false
+      "source": "名之曰「馬」。",
+      "isCode": true
     },
     {
       "id": "c10-s90",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 90,
-      "source": "如玉刻雙璋。",
-      "isCode": false
+      "source": "其物如是。",
+      "isCode": true
     },
     {
       "id": "c10-s91",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 91,
-      "source": "錦挑對褓。",
-      "isCode": false
+      "source": "\n    物之「「色」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s92",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 92,
-      "source": "故以「等於」法比之。",
-      "isCode": false
+      "source": "言曰「毛色」。",
+      "isCode": true
     },
     {
       "id": "c10-s93",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 93,
-      "source": "唯實一物二名方得陽。",
-      "isCode": false
+      "source": "\n    物之「「名」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s94",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 94,
-      "source": "非是。",
-      "isCode": false
+      "source": "言曰「馬名」。",
+      "isCode": true
     },
     {
       "id": "c10-s95",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 95,
-      "source": "皆得陰。",
-      "isCode": false
+      "source": "\n    物之「「日行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s96",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 96,
-      "source": "欲以諸端同而同之者。",
-      "isCode": false
+      "source": "數曰千。",
+      "isCode": true
     },
     {
       "id": "c10-s97",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 97,
-      "source": "必一一校而後可。",
-      "isCode": false
+      "source": "\n    物之「「夜行里數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s98",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 98,
-      "source": "非唯物然。",
-      "isCode": false
+      "source": "數曰八百。",
+      "isCode": true
     },
     {
       "id": "c10-s99",
       "chapterId": "c10",
-      "blockId": "b14",
+      "blockId": "b9",
       "index": 99,
-      "source": "列亦如是也。",
-      "isCode": false
+      "source": "\n    物之「「良耶」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s100",
       "chapterId": "c10",
-      "blockId": "b15",
+      "blockId": "b9",
       "index": 100,
-      "source": "吾有一物。名之曰「戊」。其物如是。\n\t物之「「甲」」者。數曰一。\n\t物之「「乙」」者。數曰二。\n是謂「戊」之物也。\n\n吾有一物。名之曰「戌」。其物如是。\n\t物之「「甲」」者。數曰一。\n\t物之「「乙」」者。數曰二。\n是謂「戌」之物也。\n\n若「戊」不等於「戌」者。\n\t吾有一言。曰「「然也」」。書之。\n也。\n若「戊」之「「甲」」等於「戌」之「「甲」」者。\n\t若「戊」之「「乙」」等於「戌」之「「乙」」者。\n\t\t吾有一言。曰「「然也」」。書之。\n\t也。\n也。\n\n夫「戊」。名之曰「戍」。\n\n若「戊」等於「戍」者。\n\t吾有一言。曰「「然也」」。書之。\n也。",
+      "source": "爻曰陽。",
       "isCode": true
     },
     {
       "id": "c10-s101",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b9",
       "index": 101,
-      "source": "又以物包羅諸象。",
-      "isCode": false
+      "source": "\n    物之「「足數」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s102",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b9",
       "index": 102,
-      "source": "或令機器寫之以存運算之所得。",
-      "isCode": false
+      "source": "數曰四。",
+      "isCode": true
     },
     {
       "id": "c10-s103",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b9",
       "index": 103,
-      "source": "或使讀之以為運算之所參。",
-      "isCode": false
+      "source": "\n  是謂「馬」之物也。",
+      "isCode": true
     },
     {
       "id": "c10-s104",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b9",
       "index": 104,
-      "source": "罔不嘉焉。",
-      "isCode": false
+      "source": "\n  乃得「馬」。",
+      "isCode": true
     },
     {
       "id": "c10-s105",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b9",
       "index": 105,
-      "source": "然以其辭稍煩。",
-      "isCode": false
+      "source": "\n是謂「生馬」之術也。",
+      "isCode": true
     },
     {
       "id": "c10-s106",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 106,
-      "source": "以所函略廣。",
+      "source": "八駿者。",
       "isCode": false
     },
     {
       "id": "c10-s107",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 107,
-      "source": "故另為渾沌之辭。",
+      "source": "同為穆天子良馬。",
       "isCode": false
     },
     {
       "id": "c10-s108",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 108,
-      "source": "精煉其字。",
+      "source": "唯毛色不同。",
       "isCode": false
     },
     {
       "id": "c10-s109",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 109,
-      "source": "簡易其法。",
+      "source": "故其術唯參馬名毛色二者。",
       "isCode": false
     },
     {
       "id": "c10-s110",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 110,
-      "source": "以資讀寫之便也。",
+      "source": "或欲增其參數。",
       "isCode": false
     },
     {
       "id": "c10-s111",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 111,
-      "source": "復作渾沌之術。",
+      "source": "亦無不可也。",
       "isCode": false
     },
     {
       "id": "c10-s112",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 112,
-      "source": "得其言而化之為物。",
+      "source": "施之乃聚八駿於一列。",
       "isCode": false
     },
     {
       "id": "c10-s113",
       "chapterId": "c10",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 113,
-      "source": "得其物而以其言載之。",
+      "source": "注。",
       "isCode": false
     },
     {
       "id": "c10-s114",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 114,
-      "source": "渾沌者。",
+      "source": "郭璞曰。",
       "isCode": false
     },
     {
       "id": "c10-s115",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 115,
-      "source": "食也。",
+      "source": "八駿皆因其毛色以為名號耳。",
       "isCode": false
     },
     {
       "id": "c10-s116",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 116,
-      "source": "揚雄曰。",
+      "source": "然踰輪山子綠耳之色不見載。",
       "isCode": false
     },
     {
       "id": "c10-s117",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 117,
-      "source": "餅謂之飩。",
+      "source": "世為圖畫者亦多。",
       "isCode": false
     },
     {
       "id": "c10-s118",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 118,
-      "source": "今薄麵夾餡入湯者也。",
+      "source": "然皆不知所據。",
       "isCode": false
     },
     {
       "id": "c10-s119",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 119,
-      "source": "取其包物之義。",
+      "source": "余既不能考。",
       "isCode": false
     },
     {
       "id": "c10-s120",
       "chapterId": "c10",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 120,
-      "source": "故名。",
+      "source": "而學又淺。",
       "isCode": false
     },
     {
       "id": "c10-s121",
       "chapterId": "c10",
-      "blockId": "b18",
+      "blockId": "b10",
       "index": 121,
-      "source": "吾嘗觀「渾沌經」之書。方悟「包渾沌」之義。\n\n施「包渾沌」於「白馬」。書之。",
-      "isCode": true
+      "source": "故從闕耳。",
+      "isCode": false
     },
     {
       "id": "c10-s122",
       "chapterId": "c10",
-      "blockId": "b19",
+      "blockId": "b11",
       "index": 122,
-      "source": "得如左。",
-      "isCode": false
+      "source": "吾有一列。",
+      "isCode": true
     },
     {
       "id": "c10-s123",
       "chapterId": "c10",
-      "blockId": "b19",
+      "blockId": "b11",
       "index": 123,
-      "source": "渾沌凡言數者。",
-      "isCode": false
+      "source": "名之曰「八駿」。",
+      "isCode": true
     },
     {
       "id": "c10-s124",
       "chapterId": "c10",
-      "blockId": "b19",
+      "blockId": "b11",
       "index": 124,
-      "source": "唯列其位。",
-      "isCode": false
+      "source": "\n施「生馬」於「「赤驥」」於「「赤」」。",
+      "isCode": true
     },
     {
       "id": "c10-s125",
       "chapterId": "c10",
-      "blockId": "b19",
+      "blockId": "b11",
       "index": 125,
-      "source": "譬不謂三千八百七十。",
-      "isCode": false
+      "source": "充「八駿」以其。",
+      "isCode": true
     },
     {
       "id": "c10-s126",
       "chapterId": "c10",
-      "blockId": "b19",
+      "blockId": "b11",
       "index": 126,
-      "source": "但謂三八七〇耳。",
-      "isCode": false
+      "source": "\n施「生馬」於「「盜驪」」於「「黑」」。",
+      "isCode": true
     },
     {
       "id": "c10-s127",
       "chapterId": "c10",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 127,
-      "source": "物\n　之「色」言「白」\n　之「名」言「白義」\n　之「日行里數」數「一〇〇〇」\n　之「夜行里數」數「八〇〇」\n　之「良耶」爻「陽」\n　之「足數」數「四」\n也",
+      "source": "充「八駿」以其。",
       "isCode": true
     },
     {
       "id": "c10-s128",
       "chapterId": "c10",
-      "blockId": "b21",
+      "blockId": "b11",
       "index": 128,
-      "source": "或列諸物而具包。",
-      "isCode": false
+      "source": "\n施「生馬」於「「白義」」於「「白」」。",
+      "isCode": true
     },
     {
       "id": "c10-s129",
       "chapterId": "c10",
-      "blockId": "b21",
+      "blockId": "b11",
       "index": 129,
-      "source": "輒加「諸」字於其術。",
-      "isCode": false
+      "source": "充「八駿」以其。",
+      "isCode": true
     },
     {
       "id": "c10-s130",
       "chapterId": "c10",
-      "blockId": "b21",
+      "blockId": "b11",
       "index": 130,
-      "source": "今取八駿之二。",
-      "isCode": false
+      "source": "\n施「生馬」於「「渠黃」」於「「黃」」。",
+      "isCode": true
     },
     {
       "id": "c10-s131",
       "chapterId": "c10",
-      "blockId": "b21",
+      "blockId": "b11",
       "index": 131,
-      "source": "書如是。",
-      "isCode": false
+      "source": "充「八駿」以其。",
+      "isCode": true
     },
     {
       "id": "c10-s132",
       "chapterId": "c10",
-      "blockId": "b22",
+      "blockId": "b11",
       "index": 132,
-      "source": "吾嘗觀「渾沌經」之書。方悟「包諸渾沌」之義。\n\n吾有一列。名之曰「二駿」。\n夫「八駿」之一。充「二駿」以其。\n夫「八駿」之二。充「二駿」以其。\n\n施「包諸渾沌」於「二駿」。書之。",
+      "source": "\n施「生馬」於「「華騮」」於「「赤」」。",
       "isCode": true
     },
     {
       "id": "c10-s133",
       "chapterId": "c10",
-      "blockId": "b23",
+      "blockId": "b11",
       "index": 133,
-      "source": "得",
-      "isCode": false
+      "source": "充「八駿」以其。",
+      "isCode": true
     },
     {
       "id": "c10-s134",
       "chapterId": "c10",
-      "blockId": "b24",
+      "blockId": "b11",
       "index": 134,
-      "source": "列\n　物\n　　之「色」言「赤」\n　　之「名」言「赤驥」\n　　之「日行里數」數「一〇〇〇」\n　　之「夜行里數」數「八〇〇」\n　　之「良耶」爻「陽」\n　　之「足數」數「四」\n　也\n　物\n　　之「色」言「黑」\n　　之「名」言「盜驪」\n　　之「日行里數」數「一〇〇〇」\n　　之「夜行里數」數「八〇〇」\n　　之「良耶」爻「陽」\n　　之「足數」數「四」\n　也\n也",
+      "source": "\n\t\n夫「八駿」之一。",
       "isCode": true
     },
     {
       "id": "c10-s135",
       "chapterId": "c10",
-      "blockId": "b25",
+      "blockId": "b11",
       "index": 135,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "昔之其之「「名」」者。",
+      "isCode": true
     },
     {
       "id": "c10-s136",
       "chapterId": "c10",
-      "blockId": "b25",
+      "blockId": "b11",
       "index": 136,
-      "source": "既得其渾沌語。",
-      "isCode": false
+      "source": "今「「騏驥」」是矣。",
+      "isCode": true
     },
     {
       "id": "c10-s137",
       "chapterId": "c10",
-      "blockId": "b25",
+      "blockId": "b11",
       "index": 137,
-      "source": "欲逆得其物。",
-      "isCode": false
+      "source": "\n\n凡「八駿」中之「馬」。",
+      "isCode": true
     },
     {
       "id": "c10-s138",
       "chapterId": "c10",
-      "blockId": "b25",
+      "blockId": "b11",
       "index": 138,
-      "source": "曰。",
-      "isCode": false
+      "source": "\n\t夫「馬」之「「名」」。",
+      "isCode": true
     },
     {
       "id": "c10-s139",
       "chapterId": "c10",
-      "blockId": "b25",
+      "blockId": "b11",
       "index": 139,
-      "source": "勞「食渾沌」「食諸渾沌」之術可矣。",
-      "isCode": false
+      "source": "書之也。",
+      "isCode": true
     },
     {
       "id": "c10-s140",
       "chapterId": "c10",
-      "blockId": "b26",
+      "blockId": "b12",
       "index": 140,
-      "source": "吾嘗觀「渾沌經」之書。方悟「包渾沌」「食渾沌」之義。\n\n施「包渾沌」於「白馬」。名之曰「渾沌」。\n施「食渾沌」於「渾沌」。名之曰「非馬」。注曰。「「公孫龍子曰。白馬非馬」」\n\n夫「非馬」之「「名」」。書之。\n夫「非馬」之「「色」」。書之。\n注曰。「「所得皆如白馬」」",
-      "isCode": true
+      "source": "或問曰。",
+      "isCode": false
     },
     {
       "id": "c10-s141",
       "chapterId": "c10",
-      "blockId": "b27",
+      "blockId": "b12",
       "index": 141,
-      "source": "今復以渾沌語書李翰林之生平如是。",
+      "source": "既有一物。",
       "isCode": false
     },
     {
       "id": "c10-s142",
       "chapterId": "c10",
-      "blockId": "b27",
+      "blockId": "b12",
       "index": 142,
-      "source": "以示其物包物。",
+      "source": "欲知其諸端之名。",
       "isCode": false
     },
     {
       "id": "c10-s143",
       "chapterId": "c10",
-      "blockId": "b27",
+      "blockId": "b12",
       "index": 143,
-      "source": "物包列。",
+      "source": "奈何。",
       "isCode": false
     },
     {
       "id": "c10-s144",
       "chapterId": "c10",
-      "blockId": "b27",
+      "blockId": "b12",
       "index": 144,
-      "source": "列包物也。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
       "id": "c10-s145",
       "chapterId": "c10",
-      "blockId": "b28",
+      "blockId": "b12",
       "index": 145,
-      "source": "物\n  之「字」言「太白」\n  之「號」言「青蓮」\n  之「壽考」數「六一」\n  之「生年」言「長安元年」\n  之「卒年」言「上元三年」\n  之「存詩」數「九〇〇」\n  之「擅詩」爻「陽」\n  之「官」物\n    之「銜」言「翰林」。\n    之「年」言「天寶元年」。\n  也\n  之「名句」列\n    物\n      之「題」言「清平調」\n      之「文」言「雲想衣裳花想容。春風拂檻露華濃。」\n    也\n    物\n      之「題」言「長相思」\n      之「文」言「長相思。在長安。絡緯秋啼金井闌。微霜淒淒簟色寒。」\n    也\n    物\n      之「題」言「襄陽歌」\n      之「文」言「落日欲沒峴山西。倒著接蘺花下迷。襄陽小兒齊拍手。攔街爭唱「白銅鞮」。」\n    也\n    物\n      之「題」言「楊叛兒」\n      之「文」言「烏啼隱楊花。君醉留妾家。博山爐中沉香火。雙煙一氣凌紫霞。」\n    也\n  也\n  之「子女」列\n    言「伯禽」言「平陽」言「頗黎」\n  也\n也",
-      "isCode": true
+      "source": "今欲取物之一端。",
+      "isCode": false
     },
     {
       "id": "c10-s146",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 146,
-      "source": "格物之道。",
+      "source": "然其名未遽知。",
       "isCode": false
     },
     {
       "id": "c10-s147",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 147,
-      "source": "至是亦略備矣。",
+      "source": "唯於運算中得之。",
       "isCode": false
     },
     {
       "id": "c10-s148",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 148,
-      "source": "其雖誠非編程之所必須。",
+      "source": "奈何。",
       "isCode": false
     },
     {
       "id": "c10-s149",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 149,
-      "source": "然條理以明。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
       "id": "c10-s150",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 150,
-      "source": "讀寫以便。",
+      "source": "偶得一物。",
       "isCode": false
     },
     {
       "id": "c10-s151",
       "chapterId": "c10",
-      "blockId": "b29",
+      "blockId": "b12",
       "index": 151,
+      "source": "不知其為物耶。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s152",
+      "chapterId": "c10",
+      "blockId": "b12",
+      "index": 152,
+      "source": "其為數為言為爻為術為列耶。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s153",
+      "chapterId": "c10",
+      "blockId": "b12",
+      "index": 153,
+      "source": "奈何。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s154",
+      "chapterId": "c10",
+      "blockId": "b12",
+      "index": 154,
+      "source": "曰引「格物」。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s155",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 155,
+      "source": "吾嘗觀「「格物」」之書。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s156",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 156,
+      "source": "方悟「取物」「置物」「列物之端」「識類」之義。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s157",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 157,
+      "source": "\n\n吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s158",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 158,
+      "source": "曰「「日」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s159",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 159,
+      "source": "注曰「「或曰「夜」」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s160",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 160,
+      "source": "\n名之曰「時」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s161",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 161,
+      "source": "\n夫「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s162",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 162,
+      "source": "加「時」以「「行里數」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s163",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 163,
+      "source": "取二以施「取物」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s164",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 164,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s165",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 165,
+      "source": "\n\n吾有一數。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s166",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 166,
+      "source": "曰三萬。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s167",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 167,
+      "source": "名之曰「新數」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s168",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 168,
+      "source": "注曰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s169",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 169,
+      "source": "「「義山詩曰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s170",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 170,
+      "source": "八俊日行三萬里」」\n夫「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s171",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 171,
+      "source": "加「時」以「「行里數」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s172",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 172,
+      "source": "夫「新數」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s173",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 173,
+      "source": "取三以施「置物」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s174",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 174,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s175",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 175,
+      "source": "\n\n施「列物之端」於「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s176",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 176,
+      "source": "注曰「「得言之列也」」\n書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s177",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 177,
+      "source": "\n\n施「識類」於三。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s178",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 178,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s179",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 179,
+      "source": "注曰「「得數」」\n施「識類」於陰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s180",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 180,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s181",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 181,
+      "source": "注曰「「得爻」」\n施「識類」於「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s182",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 182,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s183",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 183,
+      "source": "注曰「「得物」」\n施「識類」於「「善哉斯言」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s184",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 184,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s185",
+      "chapterId": "c10",
+      "blockId": "b13",
+      "index": 185,
+      "source": "注曰「「得言」」",
+      "isCode": true
+    },
+    {
+      "id": "c10-s186",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 186,
+      "source": "又物者。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s187",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 187,
+      "source": "雖貌盡同而其實或非一也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s188",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 188,
+      "source": "如玉刻雙璋。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s189",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 189,
+      "source": "錦挑對褓。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s190",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 190,
+      "source": "故以「等於」法比之。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s191",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 191,
+      "source": "唯實一物二名方得陽。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s192",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 192,
+      "source": "非是。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s193",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 193,
+      "source": "皆得陰。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s194",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 194,
+      "source": "欲以諸端同而同之者。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s195",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 195,
+      "source": "必一一校而後可。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s196",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 196,
+      "source": "非唯物然。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s197",
+      "chapterId": "c10",
+      "blockId": "b14",
+      "index": 197,
+      "source": "列亦如是也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s198",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 198,
+      "source": "吾有一物。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s199",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 199,
+      "source": "名之曰「戊」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s200",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 200,
+      "source": "其物如是。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s201",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 201,
+      "source": "\n\t物之「「甲」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s202",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 202,
+      "source": "數曰一。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s203",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 203,
+      "source": "\n\t物之「「乙」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s204",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 204,
+      "source": "數曰二。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s205",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 205,
+      "source": "\n是謂「戊」之物也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s206",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 206,
+      "source": "\n\n吾有一物。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s207",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 207,
+      "source": "名之曰「戌」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s208",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 208,
+      "source": "其物如是。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s209",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 209,
+      "source": "\n\t物之「「甲」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s210",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 210,
+      "source": "數曰一。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s211",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 211,
+      "source": "\n\t物之「「乙」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s212",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 212,
+      "source": "數曰二。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s213",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 213,
+      "source": "\n是謂「戌」之物也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s214",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 214,
+      "source": "\n\n若「戊」不等於「戌」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s215",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 215,
+      "source": "\n\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s216",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 216,
+      "source": "曰「「然也」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s217",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 217,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s218",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 218,
+      "source": "\n也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s219",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 219,
+      "source": "\n若「戊」之「「甲」」等於「戌」之「「甲」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s220",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 220,
+      "source": "\n\t若「戊」之「「乙」」等於「戌」之「「乙」」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s221",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 221,
+      "source": "\n\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s222",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 222,
+      "source": "曰「「然也」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s223",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 223,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s224",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 224,
+      "source": "\n\t也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s225",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 225,
+      "source": "\n也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s226",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 226,
+      "source": "\n\n夫「戊」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s227",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 227,
+      "source": "名之曰「戍」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s228",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 228,
+      "source": "\n\n若「戊」等於「戍」者。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s229",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 229,
+      "source": "\n\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s230",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 230,
+      "source": "曰「「然也」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s231",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 231,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s232",
+      "chapterId": "c10",
+      "blockId": "b15",
+      "index": 232,
+      "source": "\n也。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s233",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 233,
+      "source": "又以物包羅諸象。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s234",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 234,
+      "source": "或令機器寫之以存運算之所得。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s235",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 235,
+      "source": "或使讀之以為運算之所參。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s236",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 236,
+      "source": "罔不嘉焉。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s237",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 237,
+      "source": "然以其辭稍煩。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s238",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 238,
+      "source": "以所函略廣。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s239",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 239,
+      "source": "故另為渾沌之辭。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s240",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 240,
+      "source": "精煉其字。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s241",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 241,
+      "source": "簡易其法。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s242",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 242,
+      "source": "以資讀寫之便也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s243",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 243,
+      "source": "復作渾沌之術。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s244",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 244,
+      "source": "得其言而化之為物。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s245",
+      "chapterId": "c10",
+      "blockId": "b16",
+      "index": 245,
+      "source": "得其物而以其言載之。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s246",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 246,
+      "source": "渾沌者。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s247",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 247,
+      "source": "食也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s248",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 248,
+      "source": "揚雄曰。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s249",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 249,
+      "source": "餅謂之飩。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s250",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 250,
+      "source": "今薄麵夾餡入湯者也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s251",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 251,
+      "source": "取其包物之義。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s252",
+      "chapterId": "c10",
+      "blockId": "b17",
+      "index": 252,
+      "source": "故名。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s253",
+      "chapterId": "c10",
+      "blockId": "b18",
+      "index": 253,
+      "source": "吾嘗觀「渾沌經」之書。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s254",
+      "chapterId": "c10",
+      "blockId": "b18",
+      "index": 254,
+      "source": "方悟「包渾沌」之義。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s255",
+      "chapterId": "c10",
+      "blockId": "b18",
+      "index": 255,
+      "source": "\n\n施「包渾沌」於「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s256",
+      "chapterId": "c10",
+      "blockId": "b18",
+      "index": 256,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s257",
+      "chapterId": "c10",
+      "blockId": "b19",
+      "index": 257,
+      "source": "得如左。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s258",
+      "chapterId": "c10",
+      "blockId": "b19",
+      "index": 258,
+      "source": "渾沌凡言數者。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s259",
+      "chapterId": "c10",
+      "blockId": "b19",
+      "index": 259,
+      "source": "唯列其位。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s260",
+      "chapterId": "c10",
+      "blockId": "b19",
+      "index": 260,
+      "source": "譬不謂三千八百七十。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s261",
+      "chapterId": "c10",
+      "blockId": "b19",
+      "index": 261,
+      "source": "但謂三八七〇耳。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s262",
+      "chapterId": "c10",
+      "blockId": "b20",
+      "index": 262,
+      "source": "物\n　之「色」言「白」\n　之「名」言「白義」\n　之「日行里數」數「一〇〇〇」\n　之「夜行里數」數「八〇〇」\n　之「良耶」爻「陽」\n　之「足數」數「四」\n也",
+      "isCode": true
+    },
+    {
+      "id": "c10-s263",
+      "chapterId": "c10",
+      "blockId": "b21",
+      "index": 263,
+      "source": "或列諸物而具包。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s264",
+      "chapterId": "c10",
+      "blockId": "b21",
+      "index": 264,
+      "source": "輒加「諸」字於其術。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s265",
+      "chapterId": "c10",
+      "blockId": "b21",
+      "index": 265,
+      "source": "今取八駿之二。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s266",
+      "chapterId": "c10",
+      "blockId": "b21",
+      "index": 266,
+      "source": "書如是。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s267",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 267,
+      "source": "吾嘗觀「渾沌經」之書。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s268",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 268,
+      "source": "方悟「包諸渾沌」之義。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s269",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 269,
+      "source": "\n\n吾有一列。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s270",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 270,
+      "source": "名之曰「二駿」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s271",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 271,
+      "source": "\n夫「八駿」之一。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s272",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 272,
+      "source": "充「二駿」以其。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s273",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 273,
+      "source": "\n夫「八駿」之二。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s274",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 274,
+      "source": "充「二駿」以其。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s275",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 275,
+      "source": "\n\n施「包諸渾沌」於「二駿」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s276",
+      "chapterId": "c10",
+      "blockId": "b22",
+      "index": 276,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s277",
+      "chapterId": "c10",
+      "blockId": "b23",
+      "index": 277,
+      "source": "得",
+      "isCode": false
+    },
+    {
+      "id": "c10-s278",
+      "chapterId": "c10",
+      "blockId": "b24",
+      "index": 278,
+      "source": "列\n　物\n　　之「色」言「赤」\n　　之「名」言「赤驥」\n　　之「日行里數」數「一〇〇〇」\n　　之「夜行里數」數「八〇〇」\n　　之「良耶」爻「陽」\n　　之「足數」數「四」\n　也\n　物\n　　之「色」言「黑」\n　　之「名」言「盜驪」\n　　之「日行里數」數「一〇〇〇」\n　　之「夜行里數」數「八〇〇」\n　　之「良耶」爻「陽」\n　　之「足數」數「四」\n　也\n也",
+      "isCode": true
+    },
+    {
+      "id": "c10-s279",
+      "chapterId": "c10",
+      "blockId": "b25",
+      "index": 279,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s280",
+      "chapterId": "c10",
+      "blockId": "b25",
+      "index": 280,
+      "source": "既得其渾沌語。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s281",
+      "chapterId": "c10",
+      "blockId": "b25",
+      "index": 281,
+      "source": "欲逆得其物。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s282",
+      "chapterId": "c10",
+      "blockId": "b25",
+      "index": 282,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s283",
+      "chapterId": "c10",
+      "blockId": "b25",
+      "index": 283,
+      "source": "勞「食渾沌」「食諸渾沌」之術可矣。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s284",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 284,
+      "source": "吾嘗觀「渾沌經」之書。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s285",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 285,
+      "source": "方悟「包渾沌」「食渾沌」之義。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s286",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 286,
+      "source": "\n\n施「包渾沌」於「白馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s287",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 287,
+      "source": "名之曰「渾沌」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s288",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 288,
+      "source": "\n施「食渾沌」於「渾沌」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s289",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 289,
+      "source": "名之曰「非馬」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s290",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 290,
+      "source": "注曰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s291",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 291,
+      "source": "「「公孫龍子曰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s292",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 292,
+      "source": "白馬非馬」」\n\n夫「非馬」之「「名」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s293",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 293,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s294",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 294,
+      "source": "\n夫「非馬」之「「色」」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s295",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 295,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s296",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 296,
+      "source": "\n注曰。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s297",
+      "chapterId": "c10",
+      "blockId": "b26",
+      "index": 297,
+      "source": "「「所得皆如白馬」」",
+      "isCode": true
+    },
+    {
+      "id": "c10-s298",
+      "chapterId": "c10",
+      "blockId": "b27",
+      "index": 298,
+      "source": "今復以渾沌語書李翰林之生平如是。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s299",
+      "chapterId": "c10",
+      "blockId": "b27",
+      "index": 299,
+      "source": "以示其物包物。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s300",
+      "chapterId": "c10",
+      "blockId": "b27",
+      "index": 300,
+      "source": "物包列。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s301",
+      "chapterId": "c10",
+      "blockId": "b27",
+      "index": 301,
+      "source": "列包物也。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s302",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 302,
+      "source": "物\n  之「字」言「太白」\n  之「號」言「青蓮」\n  之「壽考」數「六一」\n  之「生年」言「長安元年」\n  之「卒年」言「上元三年」\n  之「存詩」數「九〇〇」\n  之「擅詩」爻「陽」\n  之「官」物\n    之「銜」言「翰林」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s303",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 303,
+      "source": "\n    之「年」言「天寶元年」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s304",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 304,
+      "source": "\n  也\n  之「名句」列\n    物\n      之「題」言「清平調」\n      之「文」言「雲想衣裳花想容。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s305",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 305,
+      "source": "春風拂檻露華濃。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s306",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 306,
+      "source": "」\n    也\n    物\n      之「題」言「長相思」\n      之「文」言「長相思。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s307",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 307,
+      "source": "在長安。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s308",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 308,
+      "source": "絡緯秋啼金井闌。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s309",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 309,
+      "source": "微霜淒淒簟色寒。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s310",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 310,
+      "source": "」\n    也\n    物\n      之「題」言「襄陽歌」\n      之「文」言「落日欲沒峴山西。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s311",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 311,
+      "source": "倒著接蘺花下迷。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s312",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 312,
+      "source": "襄陽小兒齊拍手。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s313",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 313,
+      "source": "攔街爭唱「白銅鞮」。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s314",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 314,
+      "source": "」\n    也\n    物\n      之「題」言「楊叛兒」\n      之「文」言「烏啼隱楊花。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s315",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 315,
+      "source": "君醉留妾家。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s316",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 316,
+      "source": "博山爐中沉香火。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s317",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 317,
+      "source": "雙煙一氣凌紫霞。",
+      "isCode": true
+    },
+    {
+      "id": "c10-s318",
+      "chapterId": "c10",
+      "blockId": "b28",
+      "index": 318,
+      "source": "」\n    也\n  也\n  之「子女」列\n    言「伯禽」言「平陽」言「頗黎」\n  也\n也",
+      "isCode": true
+    },
+    {
+      "id": "c10-s319",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 319,
+      "source": "格物之道。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s320",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 320,
+      "source": "至是亦略備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s321",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 321,
+      "source": "其雖誠非編程之所必須。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s322",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 322,
+      "source": "然條理以明。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s323",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 323,
+      "source": "讀寫以便。",
+      "isCode": false
+    },
+    {
+      "id": "c10-s324",
+      "chapterId": "c10",
+      "blockId": "b29",
+      "index": 324,
       "source": "孰言無益耳。",
       "isCode": false
     }

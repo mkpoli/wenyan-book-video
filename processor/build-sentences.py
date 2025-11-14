@@ -13,7 +13,9 @@ class Sentence:
     """
     Canonical sentence unit.
 
-    - `source` is the cleaned Chinese text used for transcription/translation.
+    - `source` is the text used for transcription/translation.
+      For prose it is markdown-cleaned; for code it preserves original
+      line breaks and indentation for that sentence-like chunk.
     - `isCode` marks sentences that originate from code blocks.
     """
 
@@ -51,6 +53,92 @@ def remove_markdown(text: str, preserve_newlines: bool = False) -> str:
         # Replace multiple newlines with single space
         text = re.sub(r"\n+", " ", text)
         return text.strip()
+
+
+def split_chinese_sentences(text: str, preserve_spaces: bool = False) -> List[str]:
+    """
+    Split Chinese text into sentences, with special handling for quoted text.
+
+    This mirrors renderer's `splitChineseSentences` in
+    `renderer/scripts/generate-segments.ts` so that code blocks and
+    prose are segmented in a compatible way.
+    """
+    sentences: List[str] = []
+    current_sentence: List[str] = []
+    inside_quotes = False  # for 『 ... 』
+
+    i = 0
+    length = len(text)
+
+    while i < length:
+        char = text[i]
+
+        if char == "『":
+            inside_quotes = True
+            current_sentence.append(char)
+        elif char == "』":
+            inside_quotes = False
+            current_sentence.append(char)
+
+            # Check if previous character was sentence-ending punctuation
+            if i > 0:
+                prev_char = text[i - 1]
+                if prev_char in ("。", "！", "？"):
+                    # Only split at 。』 if NOT immediately followed by another
+                    # sentence-ending punctuation (e.g., don't split "。』。")
+                    next_char = text[i + 1] if i + 1 < length else None
+                    if next_char not in ("。", "！", "？"):
+                        processed = "".join(current_sentence)
+                        if not preserve_spaces:
+                            processed = processed.strip()
+                        if processed:
+                            sentences.append(processed)
+                        current_sentence = []
+        elif char == "」":
+            # Always include the closing quote
+            current_sentence.append(char)
+
+            # Look ahead for the next non-whitespace character.
+            # If it's 「曰」, we treat this as a sentence boundary so that
+            # patterns like `…耶」曰「…耶」` or `…耶」\n曰「…耶」` are split
+            # between `」` and `曰`.
+            j = i + 1
+            next_non_ws: str | None = None
+            while j < length:
+                lookahead = text[j]
+                if not lookahead.isspace():
+                    next_non_ws = lookahead
+                    break
+                j += 1
+
+            if next_non_ws == "曰":
+                processed = "".join(current_sentence)
+                if not preserve_spaces:
+                    processed = processed.strip()
+                if processed:
+                    sentences.append(processed)
+                current_sentence = []
+        elif char in ("。", "！", "？") and not inside_quotes:
+            current_sentence.append(char)
+            processed = "".join(current_sentence)
+            if not preserve_spaces:
+                processed = processed.strip()
+            if processed:
+                sentences.append(processed)
+            current_sentence = []
+        else:
+            current_sentence.append(char)
+
+        i += 1
+
+    # Add any remaining text as the last sentence
+    processed = "".join(current_sentence)
+    if not preserve_spaces:
+        processed = processed.strip()
+    if processed:
+        sentences.append(processed)
+
+    return sentences
 
 
 def split_sentences(text: str) -> List[str]:
@@ -106,28 +194,37 @@ def build_sentences_for_chapter(chapter_path: Path, output_dir: Path) -> None:
             continue
 
         if block_type == "code":
-            # Treat each code block as a single sentence-like unit.
+            # Split code blocks into sentence-like units, preserving
+            # original line breaks and indentation for each chunk.
             source_markdown = block.get("source") or ""
             # Strip fence markers but keep code as-is
-            lines = []
+            lines: List[str] = []
             for line in source_markdown.split("\n"):
                 if line.strip().startswith("```"):
                     continue
                 lines.append(line)
-            code_text = "\n".join(lines).strip()
-            if not code_text:
+            code_text = "\n".join(lines)
+            if not code_text.strip():
                 continue
 
-            sentence = Sentence(
-                id=f"{chapter_id}-s{sentence_counter}",
-                chapterId=chapter_id,
-                blockId=block_id,
-                index=sentence_counter,
-                source=code_text,
-                isCode=True,
-            )
-            sentences.append(sentence)
-            sentence_counter += 1
+            code_sentences = split_chinese_sentences(code_text, preserve_spaces=True)
+            if not code_sentences:
+                # Fallback: treat entire block as one sentence-like unit
+                code_sentences = [code_text]
+
+            for part in code_sentences:
+                # Preserve exact whitespace from `part` so that code layout
+                # remains visible at the sentence level.
+                sentence = Sentence(
+                    id=f"{chapter_id}-s{sentence_counter}",
+                    chapterId=chapter_id,
+                    blockId=block_id,
+                    index=sentence_counter,
+                    source=part,
+                    isCode=True,
+                )
+                sentences.append(sentence)
+                sentence_counter += 1
 
         elif block_type == "list":
             items = block.get("items") or []

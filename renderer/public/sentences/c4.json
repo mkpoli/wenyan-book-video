@@ -288,103 +288,103 @@
       "chapterId": "c4",
       "blockId": "b3",
       "index": 36,
-      "source": "吾有一數。曰四十九。名之曰「貯」。\n若「貯」大於五十者。\n\t加「貯」以一。昔之「貯」者。今其是矣。\n若非。\n\t減「貯」以一。昔之「貯」者。今其是矣。\n也。",
+      "source": "吾有一數。",
       "isCode": true
     },
     {
       "id": "c4-s37",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 37,
-      "source": "`大於`者。",
-      "isCode": false
+      "source": "曰四十九。",
+      "isCode": true
     },
     {
       "id": "c4-s38",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 38,
-      "source": "比之也。",
-      "isCode": false
+      "source": "名之曰「貯」。",
+      "isCode": true
     },
     {
       "id": "c4-s39",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 39,
-      "source": "`若`。",
-      "isCode": false
+      "source": "\n若「貯」大於五十者。",
+      "isCode": true
     },
     {
       "id": "c4-s40",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 40,
-      "source": "`若非`者。",
-      "isCode": false
+      "source": "\n\t加「貯」以一。",
+      "isCode": true
     },
     {
       "id": "c4-s41",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 41,
-      "source": "決之也。",
-      "isCode": false
+      "source": "昔之「貯」者。",
+      "isCode": true
     },
     {
       "id": "c4-s42",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 42,
-      "source": "`加「貯」以一`云云者。",
-      "isCode": false
+      "source": "今其是矣。",
+      "isCode": true
     },
     {
       "id": "c4-s43",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 43,
-      "source": "為之也。",
-      "isCode": false
+      "source": "\n若非。",
+      "isCode": true
     },
     {
       "id": "c4-s44",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 44,
-      "source": "比之得其真者。",
-      "isCode": false
+      "source": "\n\t減「貯」以一。",
+      "isCode": true
     },
     {
       "id": "c4-s45",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 45,
-      "source": "必為`若`云云之次句。",
-      "isCode": false
+      "source": "昔之「貯」者。",
+      "isCode": true
     },
     {
       "id": "c4-s46",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 46,
-      "source": "必不為`若非`之次句。",
-      "isCode": false
+      "source": "今其是矣。",
+      "isCode": true
     },
     {
       "id": "c4-s47",
       "chapterId": "c4",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 47,
-      "source": "否。",
-      "isCode": false
+      "source": "\n也。",
+      "isCode": true
     },
     {
       "id": "c4-s48",
       "chapterId": "c4",
       "blockId": "b4",
       "index": 48,
-      "source": "則反之。",
+      "source": "`大於`者。",
       "isCode": false
     },
     {
@@ -392,7 +392,7 @@
       "chapterId": "c4",
       "blockId": "b4",
       "index": 49,
-      "source": "今以四十九不大於五十。",
+      "source": "比之也。",
       "isCode": false
     },
     {
@@ -400,7 +400,7 @@
       "chapterId": "c4",
       "blockId": "b4",
       "index": 50,
-      "source": "遂行`若非`之次句。",
+      "source": "`若`。",
       "isCode": false
     },
     {
@@ -408,95 +408,95 @@
       "chapterId": "c4",
       "blockId": "b4",
       "index": 51,
-      "source": "`「貯」`竟四十八。",
+      "source": "`若非`者。",
       "isCode": false
     },
     {
       "id": "c4-s52",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 52,
-      "source": "或問曰。",
+      "source": "決之也。",
       "isCode": false
     },
     {
       "id": "c4-s53",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 53,
-      "source": "末之`也`字者。",
+      "source": "`加「貯」以一`云云者。",
       "isCode": false
     },
     {
       "id": "c4-s54",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 54,
-      "source": "語助耶。",
+      "source": "為之也。",
       "isCode": false
     },
     {
       "id": "c4-s55",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 55,
-      "source": "無之可乎。",
+      "source": "比之得其真者。",
       "isCode": false
     },
     {
       "id": "c4-s56",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 56,
-      "source": "曰。",
+      "source": "必為`若`云云之次句。",
       "isCode": false
     },
     {
       "id": "c4-s57",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 57,
-      "source": "不可也。",
+      "source": "必不為`若非`之次句。",
       "isCode": false
     },
     {
       "id": "c4-s58",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 58,
-      "source": "所以別歧義。",
+      "source": "否。",
       "isCode": false
     },
     {
       "id": "c4-s59",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 59,
-      "source": "示一句之終止也。",
+      "source": "則反之。",
       "isCode": false
     },
     {
       "id": "c4-s60",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 60,
-      "source": "蓋編程之理或有極繁者。",
+      "source": "今以四十九不大於五十。",
       "isCode": false
     },
     {
       "id": "c4-s61",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 61,
-      "source": "或相嵌。",
+      "source": "遂行`若非`之次句。",
       "isCode": false
     },
     {
       "id": "c4-s62",
       "chapterId": "c4",
-      "blockId": "b5",
+      "blockId": "b4",
       "index": 62,
-      "source": "或相銜。",
+      "source": "`「貯」`竟四十八。",
       "isCode": false
     },
     {
@@ -504,7 +504,7 @@
       "chapterId": "c4",
       "blockId": "b5",
       "index": 63,
-      "source": "亡是不能斷。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -512,95 +512,95 @@
       "chapterId": "c4",
       "blockId": "b5",
       "index": 64,
-      "source": "用`云云`二字亦可。",
+      "source": "末之`也`字者。",
       "isCode": false
     },
     {
       "id": "c4-s65",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 65,
-      "source": "又問曰。",
+      "source": "語助耶。",
       "isCode": false
     },
     {
       "id": "c4-s66",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 66,
-      "source": "或雖非亦於我無與者。",
+      "source": "無之可乎。",
       "isCode": false
     },
     {
       "id": "c4-s67",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 67,
-      "source": "省`若非`之句。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c4-s68",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 68,
-      "source": "可乎。",
+      "source": "不可也。",
       "isCode": false
     },
     {
       "id": "c4-s69",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 69,
-      "source": "曰。",
+      "source": "所以別歧義。",
       "isCode": false
     },
     {
       "id": "c4-s70",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 70,
-      "source": "可也。",
+      "source": "示一句之終止也。",
       "isCode": false
     },
     {
       "id": "c4-s71",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 71,
-      "source": "例曰今有十斗之器。",
+      "source": "蓋編程之理或有極繁者。",
       "isCode": false
     },
     {
       "id": "c4-s72",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 72,
-      "source": "主人有酒若干。",
+      "source": "或相嵌。",
       "isCode": false
     },
     {
       "id": "c4-s73",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 73,
-      "source": "傾諸此器。",
+      "source": "或相銜。",
       "isCode": false
     },
     {
       "id": "c4-s74",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 74,
-      "source": "十斗以上者皆滿盈。",
+      "source": "亡是不能斷。",
       "isCode": false
     },
     {
       "id": "c4-s75",
       "chapterId": "c4",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 75,
-      "source": "問器有酒竟幾何。",
+      "source": "用`云云`二字亦可。",
       "isCode": false
     },
     {
@@ -608,822 +608,2294 @@
       "chapterId": "c4",
       "blockId": "b6",
       "index": 76,
-      "source": "解曰。",
+      "source": "又問曰。",
       "isCode": false
     },
     {
       "id": "c4-s77",
       "chapterId": "c4",
-      "blockId": "b7",
+      "blockId": "b6",
       "index": 77,
-      "source": "吾有二數。曰十。曰九。名之曰「器量」曰「酒量」。\n若「酒量」大於「器量」者。\n\t昔之「酒量」者。今「器量」是矣。\n云云。\n夫「酒量」。書之。",
-      "isCode": true
+      "source": "或雖非亦於我無與者。",
+      "isCode": false
     },
     {
       "id": "c4-s78",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 78,
-      "source": "比數之法有六。",
+      "source": "省`若非`之句。",
       "isCode": false
     },
     {
       "id": "c4-s79",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 79,
-      "source": "曰等於。",
+      "source": "可乎。",
       "isCode": false
     },
     {
       "id": "c4-s80",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 80,
-      "source": "曰不等於。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c4-s81",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 81,
-      "source": "曰大於。",
+      "source": "可也。",
       "isCode": false
     },
     {
       "id": "c4-s82",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 82,
-      "source": "曰小於。",
+      "source": "例曰今有十斗之器。",
       "isCode": false
     },
     {
       "id": "c4-s83",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 83,
-      "source": "曰不大於。",
+      "source": "主人有酒若干。",
       "isCode": false
     },
     {
       "id": "c4-s84",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 84,
-      "source": "曰不小於。",
+      "source": "傾諸此器。",
       "isCode": false
     },
     {
       "id": "c4-s85",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 85,
-      "source": "比他物之法有二。",
+      "source": "十斗以上者皆滿盈。",
       "isCode": false
     },
     {
       "id": "c4-s86",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 86,
-      "source": "曰等於。",
+      "source": "問器有酒竟幾何。",
       "isCode": false
     },
     {
       "id": "c4-s87",
       "chapterId": "c4",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 87,
-      "source": "曰不等於。",
+      "source": "解曰。",
       "isCode": false
     },
     {
       "id": "c4-s88",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 88,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "吾有二數。",
+      "isCode": true
     },
     {
       "id": "c4-s89",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 89,
-      "source": "事有千端。",
-      "isCode": false
+      "source": "曰十。",
+      "isCode": true
     },
     {
       "id": "c4-s90",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 90,
-      "source": "非一策能定者。",
-      "isCode": false
+      "source": "曰九。",
+      "isCode": true
     },
     {
       "id": "c4-s91",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 91,
-      "source": "奈何。",
-      "isCode": false
+      "source": "名之曰「器量」",
+      "isCode": true
     },
     {
       "id": "c4-s92",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 92,
-      "source": "曰。",
-      "isCode": false
+      "source": "曰「酒量」。",
+      "isCode": true
     },
     {
       "id": "c4-s93",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 93,
-      "source": "當用`或若`。",
-      "isCode": false
+      "source": "\n若「酒量」大於「器量」者。",
+      "isCode": true
     },
     {
       "id": "c4-s94",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 94,
-      "source": "`或若`者。",
-      "isCode": false
+      "source": "\n\t昔之「酒量」者。",
+      "isCode": true
     },
     {
       "id": "c4-s95",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 95,
-      "source": "一`若`之後。",
-      "isCode": false
+      "source": "今「器量」是矣。",
+      "isCode": true
     },
     {
       "id": "c4-s96",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 96,
-      "source": "連綿用之。",
-      "isCode": false
+      "source": "\n云云。",
+      "isCode": true
     },
     {
       "id": "c4-s97",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 97,
-      "source": "因序而比。",
-      "isCode": false
+      "source": "\n夫「酒量」。",
+      "isCode": true
     },
     {
       "id": "c4-s98",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 98,
-      "source": "遇真輒為之。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c4-s99",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 99,
-      "source": "為之乃止。",
+      "source": "比數之法有六。",
       "isCode": false
     },
     {
       "id": "c4-s100",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 100,
-      "source": "不更比也。",
+      "source": "曰等於。",
       "isCode": false
     },
     {
       "id": "c4-s101",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 101,
-      "source": "如皆不是者。",
+      "source": "曰不等於。",
       "isCode": false
     },
     {
       "id": "c4-s102",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 102,
-      "source": "厥行最末`若非`之句。",
+      "source": "曰大於。",
       "isCode": false
     },
     {
       "id": "c4-s103",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 103,
-      "source": "老氏有天地不仁。",
+      "source": "曰小於。",
       "isCode": false
     },
     {
       "id": "c4-s104",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 104,
-      "source": "以萬物為芻狗之句。",
+      "source": "曰不大於。",
       "isCode": false
     },
     {
       "id": "c4-s105",
       "chapterId": "c4",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 105,
-      "source": "今以`或若`擬天策如是。",
+      "source": "曰不小於。",
       "isCode": false
     },
     {
       "id": "c4-s106",
       "chapterId": "c4",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 106,
-      "source": "有言「「人」」。名之曰「物」。\n\n若「物」等於「「禽獸」」者。\n\t吾有一言。曰「「爾芻狗也。」」書之。\n或若「物」等於「「草木」」者。\n\t吾有一言。曰「「爾亦芻狗也。」」書之。\n或若「物」等於「「人」」者。\n\t吾有一言。曰「「爾雖人。於我實芻狗也。」」書之。\n或若「物」等於「「芻狗」」者。\n\t吾有一言。曰「「更不待言。」」書之。\n若非。\n\t吾有一言。曰「「吾不知爾何物。然爾之為芻狗明也。」」書之。\n云云。\n\n昔之「物」者。今「「芻狗」」是矣。",
-      "isCode": true
+      "source": "比他物之法有二。",
+      "isCode": false
     },
     {
       "id": "c4-s107",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b8",
       "index": 107,
-      "source": "爻者。",
+      "source": "曰等於。",
       "isCode": false
     },
     {
       "id": "c4-s108",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b8",
       "index": 108,
-      "source": "陰陽也。",
+      "source": "曰不等於。",
       "isCode": false
     },
     {
       "id": "c4-s109",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 109,
-      "source": "是非也。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
       "id": "c4-s110",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 110,
-      "source": "有無也。",
+      "source": "事有千端。",
       "isCode": false
     },
     {
       "id": "c4-s111",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 111,
-      "source": "臧否也。",
+      "source": "非一策能定者。",
       "isCode": false
     },
     {
       "id": "c4-s112",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 112,
-      "source": "見於變數之章。",
+      "source": "奈何。",
       "isCode": false
     },
     {
       "id": "c4-s113",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 113,
-      "source": "今用諸決策。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c4-s114",
       "chapterId": "c4",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 114,
-      "source": "不亦宜乎。",
+      "source": "當用`或若`。",
       "isCode": false
     },
     {
       "id": "c4-s115",
       "chapterId": "c4",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 115,
-      "source": "吾有一爻。曰陽。名之曰「甲」。\n若「甲」者。\n\t吾有一言。曰「「陽者。歲之主也。」」書之。\n若非。\n\t吾有一言。曰「「陰者。陽之助也。」」書之。\n也。",
-      "isCode": true
+      "source": "`或若`者。",
+      "isCode": false
     },
     {
       "id": "c4-s116",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 116,
-      "source": "易曰。",
+      "source": "一`若`之後。",
       "isCode": false
     },
     {
       "id": "c4-s117",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 117,
-      "source": "爻者。",
+      "source": "連綿用之。",
       "isCode": false
     },
     {
       "id": "c4-s118",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 118,
-      "source": "言乎變者也。",
+      "source": "因序而比。",
       "isCode": false
     },
     {
       "id": "c4-s119",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 119,
-      "source": "今爻之變。",
+      "source": "遇真輒為之。",
       "isCode": false
     },
     {
       "id": "c4-s120",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 120,
-      "source": "其日用者有三。",
+      "source": "為之乃止。",
       "isCode": false
     },
     {
       "id": "c4-s121",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 121,
-      "source": "曰與。",
+      "source": "不更比也。",
       "isCode": false
     },
     {
       "id": "c4-s122",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 122,
-      "source": "曰或。",
+      "source": "如皆不是者。",
       "isCode": false
     },
     {
       "id": "c4-s123",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 123,
-      "source": "曰非。",
+      "source": "厥行最末`若非`之句。",
       "isCode": false
     },
     {
       "id": "c4-s124",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 124,
-      "source": "二爻皆陽謂之與。",
+      "source": "老氏有天地不仁。",
       "isCode": false
     },
     {
       "id": "c4-s125",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 125,
-      "source": "二爻有陽謂之或。",
+      "source": "以萬物為芻狗之句。",
       "isCode": false
     },
     {
       "id": "c4-s126",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b9",
       "index": 126,
-      "source": "陰者陽陽者陰謂之非。",
+      "source": "今以`或若`擬天策如是。",
       "isCode": false
     },
     {
       "id": "c4-s127",
       "chapterId": "c4",
-      "blockId": "b13",
+      "blockId": "b10",
       "index": 127,
-      "source": "各書如是。",
-      "isCode": false
+      "source": "有言「「人」」。",
+      "isCode": true
     },
     {
       "id": "c4-s128",
       "chapterId": "c4",
-      "blockId": "b14",
+      "blockId": "b10",
       "index": 128,
-      "source": "夫「甲」「乙」中無陰乎。名之曰「丙」。\n夫「甲」「乙」中有陽乎。名之曰「丙」。\n變「甲」。名之曰「丙」。",
+      "source": "名之曰「物」。",
       "isCode": true
     },
     {
       "id": "c4-s129",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 129,
-      "source": "更有與非。",
-      "isCode": false
+      "source": "\n\n若「物」等於「「禽獸」」者。",
+      "isCode": true
     },
     {
       "id": "c4-s130",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 130,
-      "source": "或非。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s131",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 131,
-      "source": "異或諸術。",
-      "isCode": false
+      "source": "曰「「爾芻狗也。",
+      "isCode": true
     },
     {
       "id": "c4-s132",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 132,
-      "source": "皆得諸向三者。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s133",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 133,
-      "source": "與非者。",
-      "isCode": false
+      "source": "\n或若「物」等於「「草木」」者。",
+      "isCode": true
     },
     {
       "id": "c4-s134",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 134,
-      "source": "二爻有陰。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s135",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 135,
-      "source": "或非者。",
-      "isCode": false
+      "source": "曰「「爾亦芻狗也。",
+      "isCode": true
     },
     {
       "id": "c4-s136",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 136,
-      "source": "二爻皆陰。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s137",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 137,
-      "source": "異或者。",
-      "isCode": false
+      "source": "\n或若「物」等於「「人」」者。",
+      "isCode": true
     },
     {
       "id": "c4-s138",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 138,
-      "source": "一陰一陽。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s139",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 139,
-      "source": "而六者亦皆可得諸與非。",
-      "isCode": false
+      "source": "曰「「爾雖人。",
+      "isCode": true
     },
     {
       "id": "c4-s140",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 140,
-      "source": "故曰。",
-      "isCode": false
+      "source": "於我實芻狗也。",
+      "isCode": true
     },
     {
       "id": "c4-s141",
       "chapterId": "c4",
-      "blockId": "b15",
+      "blockId": "b10",
       "index": 141,
-      "source": "與非生萬物。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s142",
       "chapterId": "c4",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 142,
-      "source": "又有`若其然者`。",
-      "isCode": false
+      "source": "\n或若「物」等於「「芻狗」」者。",
+      "isCode": true
     },
     {
       "id": "c4-s143",
       "chapterId": "c4",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 143,
-      "source": "`若其不然`者。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s144",
       "chapterId": "c4",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 144,
-      "source": "以資爻策。",
-      "isCode": false
+      "source": "曰「「更不待言。",
+      "isCode": true
     },
     {
       "id": "c4-s145",
       "chapterId": "c4",
-      "blockId": "b16",
+      "blockId": "b10",
       "index": 145,
-      "source": "故是二句同。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s146",
       "chapterId": "c4",
-      "blockId": "b17",
+      "blockId": "b10",
       "index": 146,
-      "source": "夫「甲」「乙」中無陰乎。名之曰「丙」。若「丙」者。吾有一言。曰「「古之人誠不我欺。」」書之也。\n夫「甲」「乙」中無陰乎。若其然者。吾有一言。曰「「古之人誠不我欺。」」書之也。",
+      "source": "\n若非。",
       "isCode": true
     },
     {
       "id": "c4-s147",
       "chapterId": "c4",
-      "blockId": "b18",
+      "blockId": "b10",
       "index": 147,
-      "source": "是二句亦同。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s148",
       "chapterId": "c4",
-      "blockId": "b19",
+      "blockId": "b10",
       "index": 148,
-      "source": "夫「甲」「乙」中有陽乎。名之曰「丙」。變「丙」。名之曰「丁」。若「丁」者。吾有一言。曰「「古之人誠不我欺。」」書之也。\n夫「甲」「乙」中有陽乎。若其不然者。吾有一言。曰「「古之人誠不我欺。」」書之也。",
+      "source": "曰「「吾不知爾何物。",
       "isCode": true
     },
     {
       "id": "c4-s149",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b10",
       "index": 149,
-      "source": "孔門十哲。",
-      "isCode": false
+      "source": "然爾之為芻狗明也。",
+      "isCode": true
     },
     {
       "id": "c4-s150",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b10",
       "index": 150,
-      "source": "顏回。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s151",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b10",
       "index": 151,
-      "source": "閔損。",
-      "isCode": false
+      "source": "\n云云。",
+      "isCode": true
     },
     {
       "id": "c4-s152",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b10",
       "index": 152,
-      "source": "冉伯牛。",
-      "isCode": false
+      "source": "\n\n昔之「物」者。",
+      "isCode": true
     },
     {
       "id": "c4-s153",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b10",
       "index": 153,
-      "source": "仲弓。",
-      "isCode": false
+      "source": "今「「芻狗」」是矣。",
+      "isCode": true
     },
     {
       "id": "c4-s154",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 154,
-      "source": "宰予。",
+      "source": "爻者。",
       "isCode": false
     },
     {
       "id": "c4-s155",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 155,
-      "source": "子貢。",
+      "source": "陰陽也。",
       "isCode": false
     },
     {
       "id": "c4-s156",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 156,
-      "source": "冉求。",
+      "source": "是非也。",
       "isCode": false
     },
     {
       "id": "c4-s157",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 157,
-      "source": "子路。",
+      "source": "有無也。",
       "isCode": false
     },
     {
       "id": "c4-s158",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 158,
-      "source": "子游。",
+      "source": "臧否也。",
       "isCode": false
     },
     {
       "id": "c4-s159",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 159,
-      "source": "子夏。",
+      "source": "見於變數之章。",
       "isCode": false
     },
     {
       "id": "c4-s160",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 160,
-      "source": "並稱先賢。",
+      "source": "今用諸決策。",
       "isCode": false
     },
     {
       "id": "c4-s161",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b11",
       "index": 161,
-      "source": "而風采各異。",
+      "source": "不亦宜乎。",
       "isCode": false
     },
     {
       "id": "c4-s162",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b12",
       "index": 162,
-      "source": "今四問之內。",
-      "isCode": false
+      "source": "吾有一爻。",
+      "isCode": true
     },
     {
       "id": "c4-s163",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b12",
       "index": 163,
-      "source": "可知其誰。",
-      "isCode": false
+      "source": "曰陽。",
+      "isCode": true
     },
     {
       "id": "c4-s164",
       "chapterId": "c4",
-      "blockId": "b20",
+      "blockId": "b12",
       "index": 164,
-      "source": "其法如是。",
-      "isCode": false
+      "source": "名之曰「甲」。",
+      "isCode": true
     },
     {
       "id": "c4-s165",
       "chapterId": "c4",
-      "blockId": "b21",
+      "blockId": "b12",
       "index": 165,
-      "source": "夫「魯人耶」。若其然者。\n\t夫「德行科耶」。若其然者。\n\t\t夫「未仕耶」。若其然者。\n\t\t\t夫「蚤死耶」。若其然者。\n\t\t\t\t吾有一言。曰「「賢哉。回也。人不堪其憂。回也不改其樂。」」書之。\n\t\t\t若非。\n\t\t\t\t吾有一言。曰「「孝哉。閔子騫。人不間於其父母昆弟之間。」」書之也。\n\t\t若非。\n\t\t\t夫「病厲耶」。若其然者。\n\t\t\t\t吾有一言。曰「「亡之。命也夫。斯人也。而有斯疾也。」」書之。\n\t\t\t若非。\n\t\t\t\t吾有一言。曰「「雍也。可使南面。」」書之也。\n\t\t云云。\n\t若非。\n\t\t夫「政事科耶」。若其然者。\n\t\t\t夫「戰死耶」。若其然者。\n\t\t\t\t吾有一言。曰「「若由也。不得其死然。」」書之。\n\t\t\t若非。\n\t\t\t\t吾有一言。曰「「求。無乃爾是過與。」」書之也。\n\t\t若非。\n\t\t\t吾有一言。曰「「朽木不可雕也。糞土之牆不可杇也。於予與何誅。」」書之也。\n\t云云。\n若非。\n\t夫「複姓耶」。若其然者。\n\t\t吾有一言。曰「「賜也。始可與言詩已矣。告諸往而知來者。」」書之。\n\t若非。\n\t\t夫「衛人耶」。若其然者。\n\t\t\t吾有一言。曰「「起予者。商也。始可與言詩已矣。」」書之。\n\t\t若非。\n\t\t\t吾有一言。曰「「二三子。偃之言是也。」」書之也。\n\t云云。\n云云。",
+      "source": "\n若「甲」者。",
       "isCode": true
     },
     {
       "id": "c4-s166",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 166,
-      "source": "仲由字子路。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s167",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 167,
-      "source": "魯人。",
-      "isCode": false
+      "source": "曰「「陽者。",
+      "isCode": true
     },
     {
       "id": "c4-s168",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 168,
-      "source": "政事科。",
-      "isCode": false
+      "source": "歲之主也。",
+      "isCode": true
     },
     {
       "id": "c4-s169",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 169,
-      "source": "仕於魯衛。",
-      "isCode": false
+      "source": "」」書之。",
+      "isCode": true
     },
     {
       "id": "c4-s170",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 170,
-      "source": "戰死。",
-      "isCode": false
+      "source": "\n若非。",
+      "isCode": true
     },
     {
       "id": "c4-s171",
       "chapterId": "c4",
-      "blockId": "b22",
+      "blockId": "b12",
       "index": 171,
-      "source": "今一試之。",
-      "isCode": false
+      "source": "\n\t吾有一言。",
+      "isCode": true
     },
     {
       "id": "c4-s172",
       "chapterId": "c4",
-      "blockId": "b23",
+      "blockId": "b12",
       "index": 172,
-      "source": "吾有九爻。曰陽。曰陰。曰陰。曰陽。曰陰。曰陰。曰陰。曰陰。曰陽。\n名之曰「魯人耶」曰「衛人耶」曰「德行科耶」曰「政事科耶」\n曰「複姓耶」曰「未仕耶」曰「蚤死耶」曰「病厲耶」曰「戰死耶」",
+      "source": "曰「「陰者。",
       "isCode": true
     },
     {
       "id": "c4-s173",
       "chapterId": "c4",
-      "blockId": "b24",
+      "blockId": "b12",
       "index": 173,
-      "source": "乃得",
-      "isCode": false
+      "source": "陽之助也。",
+      "isCode": true
     },
     {
       "id": "c4-s174",
       "chapterId": "c4",
-      "blockId": "b25",
+      "blockId": "b12",
       "index": 174,
-      "source": "若由也。不得其死然。",
+      "source": "」」書之。",
       "isCode": true
     },
     {
       "id": "c4-s175",
       "chapterId": "c4",
-      "blockId": "b26",
+      "blockId": "b12",
       "index": 175,
-      "source": "似此決策連環相嵌者。",
-      "isCode": false
+      "source": "\n也。",
+      "isCode": true
     },
     {
       "id": "c4-s176",
       "chapterId": "c4",
-      "blockId": "b26",
+      "blockId": "b13",
       "index": 176,
-      "source": "或取其形謂之決策樹。",
+      "source": "易曰。",
       "isCode": false
     },
     {
       "id": "c4-s177",
       "chapterId": "c4",
-      "blockId": "b26",
+      "blockId": "b13",
       "index": 177,
-      "source": "編程決策之道。",
+      "source": "爻者。",
       "isCode": false
     },
     {
       "id": "c4-s178",
       "chapterId": "c4",
-      "blockId": "b26",
+      "blockId": "b13",
       "index": 178,
+      "source": "言乎變者也。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s179",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 179,
+      "source": "今爻之變。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s180",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 180,
+      "source": "其日用者有三。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s181",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 181,
+      "source": "曰與。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s182",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 182,
+      "source": "曰或。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s183",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 183,
+      "source": "曰非。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s184",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 184,
+      "source": "二爻皆陽謂之與。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s185",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 185,
+      "source": "二爻有陽謂之或。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s186",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 186,
+      "source": "陰者陽陽者陰謂之非。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s187",
+      "chapterId": "c4",
+      "blockId": "b13",
+      "index": 187,
+      "source": "各書如是。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s188",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 188,
+      "source": "夫「甲」「乙」中無陰乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s189",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 189,
+      "source": "名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s190",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 190,
+      "source": "\n夫「甲」「乙」中有陽乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s191",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 191,
+      "source": "名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s192",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 192,
+      "source": "\n變「甲」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s193",
+      "chapterId": "c4",
+      "blockId": "b14",
+      "index": 193,
+      "source": "名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s194",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 194,
+      "source": "更有與非。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s195",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 195,
+      "source": "或非。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s196",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 196,
+      "source": "異或諸術。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s197",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 197,
+      "source": "皆得諸向三者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s198",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 198,
+      "source": "與非者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s199",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 199,
+      "source": "二爻有陰。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s200",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 200,
+      "source": "或非者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s201",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 201,
+      "source": "二爻皆陰。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s202",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 202,
+      "source": "異或者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s203",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 203,
+      "source": "一陰一陽。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s204",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 204,
+      "source": "而六者亦皆可得諸與非。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s205",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 205,
+      "source": "故曰。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s206",
+      "chapterId": "c4",
+      "blockId": "b15",
+      "index": 206,
+      "source": "與非生萬物。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s207",
+      "chapterId": "c4",
+      "blockId": "b16",
+      "index": 207,
+      "source": "又有`若其然者`。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s208",
+      "chapterId": "c4",
+      "blockId": "b16",
+      "index": 208,
+      "source": "`若其不然`者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s209",
+      "chapterId": "c4",
+      "blockId": "b16",
+      "index": 209,
+      "source": "以資爻策。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s210",
+      "chapterId": "c4",
+      "blockId": "b16",
+      "index": 210,
+      "source": "故是二句同。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s211",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 211,
+      "source": "夫「甲」「乙」中無陰乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s212",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 212,
+      "source": "名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s213",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 213,
+      "source": "若「丙」者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s214",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 214,
+      "source": "吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s215",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 215,
+      "source": "曰「「古之人誠不我欺。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s216",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 216,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s217",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 217,
+      "source": "\n夫「甲」「乙」中無陰乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s218",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 218,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s219",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 219,
+      "source": "吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s220",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 220,
+      "source": "曰「「古之人誠不我欺。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s221",
+      "chapterId": "c4",
+      "blockId": "b17",
+      "index": 221,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s222",
+      "chapterId": "c4",
+      "blockId": "b18",
+      "index": 222,
+      "source": "是二句亦同。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s223",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 223,
+      "source": "夫「甲」「乙」中有陽乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s224",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 224,
+      "source": "名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s225",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 225,
+      "source": "變「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s226",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 226,
+      "source": "名之曰「丁」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s227",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 227,
+      "source": "若「丁」者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s228",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 228,
+      "source": "吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s229",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 229,
+      "source": "曰「「古之人誠不我欺。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s230",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 230,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s231",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 231,
+      "source": "\n夫「甲」「乙」中有陽乎。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s232",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 232,
+      "source": "若其不然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s233",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 233,
+      "source": "吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s234",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 234,
+      "source": "曰「「古之人誠不我欺。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s235",
+      "chapterId": "c4",
+      "blockId": "b19",
+      "index": 235,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s236",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 236,
+      "source": "孔門十哲。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s237",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 237,
+      "source": "顏回。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s238",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 238,
+      "source": "閔損。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s239",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 239,
+      "source": "冉伯牛。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s240",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 240,
+      "source": "仲弓。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s241",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 241,
+      "source": "宰予。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s242",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 242,
+      "source": "子貢。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s243",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 243,
+      "source": "冉求。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s244",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 244,
+      "source": "子路。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s245",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 245,
+      "source": "子游。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s246",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 246,
+      "source": "子夏。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s247",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 247,
+      "source": "並稱先賢。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s248",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 248,
+      "source": "而風采各異。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s249",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 249,
+      "source": "今四問之內。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s250",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 250,
+      "source": "可知其誰。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s251",
+      "chapterId": "c4",
+      "blockId": "b20",
+      "index": 251,
+      "source": "其法如是。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s252",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 252,
+      "source": "夫「魯人耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s253",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 253,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s254",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 254,
+      "source": "\n\t夫「德行科耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s255",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 255,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s256",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 256,
+      "source": "\n\t\t夫「未仕耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s257",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 257,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s258",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 258,
+      "source": "\n\t\t\t夫「蚤死耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s259",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 259,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s260",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 260,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s261",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 261,
+      "source": "曰「「賢哉。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s262",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 262,
+      "source": "回也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s263",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 263,
+      "source": "人不堪其憂。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s264",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 264,
+      "source": "回也不改其樂。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s265",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 265,
+      "source": "」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s266",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 266,
+      "source": "\n\t\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s267",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 267,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s268",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 268,
+      "source": "曰「「孝哉。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s269",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 269,
+      "source": "閔子騫。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s270",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 270,
+      "source": "人不間於其父母昆弟之間。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s271",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 271,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s272",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 272,
+      "source": "\n\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s273",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 273,
+      "source": "\n\t\t\t夫「病厲耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s274",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 274,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s275",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 275,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s276",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 276,
+      "source": "曰「「亡之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s277",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 277,
+      "source": "命也夫。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s278",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 278,
+      "source": "斯人也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s279",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 279,
+      "source": "而有斯疾也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s280",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 280,
+      "source": "」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s281",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 281,
+      "source": "\n\t\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s282",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 282,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s283",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 283,
+      "source": "曰「「雍也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s284",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 284,
+      "source": "可使南面。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s285",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 285,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s286",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 286,
+      "source": "\n\t\t云云。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s287",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 287,
+      "source": "\n\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s288",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 288,
+      "source": "\n\t\t夫「政事科耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s289",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 289,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s290",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 290,
+      "source": "\n\t\t\t夫「戰死耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s291",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 291,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s292",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 292,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s293",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 293,
+      "source": "曰「「若由也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s294",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 294,
+      "source": "不得其死然。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s295",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 295,
+      "source": "」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s296",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 296,
+      "source": "\n\t\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s297",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 297,
+      "source": "\n\t\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s298",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 298,
+      "source": "曰「「求。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s299",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 299,
+      "source": "無乃爾是過與。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s300",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 300,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s301",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 301,
+      "source": "\n\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s302",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 302,
+      "source": "\n\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s303",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 303,
+      "source": "曰「「朽木不可雕也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s304",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 304,
+      "source": "糞土之牆不可杇也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s305",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 305,
+      "source": "於予與何誅。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s306",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 306,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s307",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 307,
+      "source": "\n\t云云。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s308",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 308,
+      "source": "\n若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s309",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 309,
+      "source": "\n\t夫「複姓耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s310",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 310,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s311",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 311,
+      "source": "\n\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s312",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 312,
+      "source": "曰「「賜也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s313",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 313,
+      "source": "始可與言詩已矣。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s314",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 314,
+      "source": "告諸往而知來者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s315",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 315,
+      "source": "」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s316",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 316,
+      "source": "\n\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s317",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 317,
+      "source": "\n\t\t夫「衛人耶」。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s318",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 318,
+      "source": "若其然者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s319",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 319,
+      "source": "\n\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s320",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 320,
+      "source": "曰「「起予者。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s321",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 321,
+      "source": "商也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s322",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 322,
+      "source": "始可與言詩已矣。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s323",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 323,
+      "source": "」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s324",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 324,
+      "source": "\n\t\t若非。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s325",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 325,
+      "source": "\n\t\t\t吾有一言。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s326",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 326,
+      "source": "曰「「二三子。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s327",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 327,
+      "source": "偃之言是也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s328",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 328,
+      "source": "」」書之也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s329",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 329,
+      "source": "\n\t云云。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s330",
+      "chapterId": "c4",
+      "blockId": "b21",
+      "index": 330,
+      "source": "\n云云。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s331",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 331,
+      "source": "仲由字子路。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s332",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 332,
+      "source": "魯人。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s333",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 333,
+      "source": "政事科。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s334",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 334,
+      "source": "仕於魯衛。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s335",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 335,
+      "source": "戰死。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s336",
+      "chapterId": "c4",
+      "blockId": "b22",
+      "index": 336,
+      "source": "今一試之。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s337",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 337,
+      "source": "吾有九爻。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s338",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 338,
+      "source": "曰陽。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s339",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 339,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s340",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 340,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s341",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 341,
+      "source": "曰陽。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s342",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 342,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s343",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 343,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s344",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 344,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s345",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 345,
+      "source": "曰陰。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s346",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 346,
+      "source": "曰陽。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s347",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 347,
+      "source": "\n名之曰「魯人耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s348",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 348,
+      "source": "曰「衛人耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s349",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 349,
+      "source": "曰「德行科耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s350",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 350,
+      "source": "曰「政事科耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s351",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 351,
+      "source": "\n曰「複姓耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s352",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 352,
+      "source": "曰「未仕耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s353",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 353,
+      "source": "曰「蚤死耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s354",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 354,
+      "source": "曰「病厲耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s355",
+      "chapterId": "c4",
+      "blockId": "b23",
+      "index": 355,
+      "source": "曰「戰死耶」",
+      "isCode": true
+    },
+    {
+      "id": "c4-s356",
+      "chapterId": "c4",
+      "blockId": "b24",
+      "index": 356,
+      "source": "乃得",
+      "isCode": false
+    },
+    {
+      "id": "c4-s357",
+      "chapterId": "c4",
+      "blockId": "b25",
+      "index": 357,
+      "source": "若由也。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s358",
+      "chapterId": "c4",
+      "blockId": "b25",
+      "index": 358,
+      "source": "不得其死然。",
+      "isCode": true
+    },
+    {
+      "id": "c4-s359",
+      "chapterId": "c4",
+      "blockId": "b26",
+      "index": 359,
+      "source": "似此決策連環相嵌者。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s360",
+      "chapterId": "c4",
+      "blockId": "b26",
+      "index": 360,
+      "source": "或取其形謂之決策樹。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s361",
+      "chapterId": "c4",
+      "blockId": "b26",
+      "index": 361,
+      "source": "編程決策之道。",
+      "isCode": false
+    },
+    {
+      "id": "c4-s362",
+      "chapterId": "c4",
+      "blockId": "b26",
+      "index": 362,
       "source": "至是略備矣。",
       "isCode": false
     }

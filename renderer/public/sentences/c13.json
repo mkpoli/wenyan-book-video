@@ -312,1318 +312,1638 @@
       "chapterId": "c13",
       "blockId": "b3",
       "index": 39,
-      "source": "或云「「書「甲」焉」」。\n蓋謂「「吾有一言。曰「甲」。書之」」。\n\n注曰「「宏備矣。試用之」」\n吾有一數。曰五十。名之曰「大衍之數」。\n\n夫「大衍之數」。書之。\n注曰「「是舊文法也」」\n\n書「大衍之數」焉。\n注曰「「是新文法也」」",
+      "source": "或云「「書「甲」焉」」。",
       "isCode": true
     },
     {
       "id": "c13-s40",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 40,
-      "source": "又例曰。",
-      "isCode": false
+      "source": "\n蓋謂「「吾有一言。",
+      "isCode": true
     },
     {
       "id": "c13-s41",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 41,
-      "source": "冪者。",
-      "isCode": false
+      "source": "曰「甲」。",
+      "isCode": true
     },
     {
       "id": "c13-s42",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 42,
-      "source": "自乘也。",
-      "isCode": false
+      "source": "書之」」。",
+      "isCode": true
     },
     {
       "id": "c13-s43",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 43,
-      "source": "夫加減乘除皆得直謂「加甲以乙」云。",
-      "isCode": false
+      "source": "\n\n注曰「「宏備矣。",
+      "isCode": true
     },
     {
       "id": "c13-s44",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 44,
-      "source": "今作冪術。",
-      "isCode": false
+      "source": "試用之」」\n吾有一數。",
+      "isCode": true
     },
     {
       "id": "c13-s45",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 45,
-      "source": "不欲絮絮作「施」語。",
-      "isCode": false
+      "source": "曰五十。",
+      "isCode": true
     },
     {
       "id": "c13-s46",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 46,
-      "source": "而欲云「求甲之乙次冪」。",
-      "isCode": false
+      "source": "名之曰「大衍之數」。",
+      "isCode": true
     },
     {
       "id": "c13-s47",
       "chapterId": "c13",
-      "blockId": "b4",
+      "blockId": "b3",
       "index": 47,
-      "source": "故宏之如是。",
-      "isCode": false
+      "source": "\n\n夫「大衍之數」。",
+      "isCode": true
     },
     {
       "id": "c13-s48",
       "chapterId": "c13",
-      "blockId": "b5",
+      "blockId": "b3",
       "index": 48,
-      "source": "注曰「「先為冪術」」\n吾有一術。名之曰「冪」。欲行是術。必先得二數。曰「甲」。曰「乙」。乃行是術曰。\n\t有數一。名之曰「丙」。\n\t為是「乙」遍。乘「丙」以「甲」。昔之「丙」者。今其是矣。云云。\n\t乃得「丙」。\n是謂「冪」之術也。\n\n注曰「「乃宏之」」\n或云「「求「甲」之「乙」次冪」」。\n蓋謂「「施「冪」於「甲」於「乙」」」。\n\n注曰「「宏備。試用之」」\n求三之五次冪。書之。\n求二之十次冪。書之。\n\n注曰「「以變數亦可」」\n吾有二數。曰三。曰五。名之曰「丙」曰「丁」。\n求「丙」之「丁」次冪。書之。",
+      "source": "書之。",
       "isCode": true
     },
     {
       "id": "c13-s49",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b3",
       "index": 49,
-      "source": "凡宏者。",
-      "isCode": false
+      "source": "\n注曰「「是舊文法也」」\n\n書「大衍之數」焉。",
+      "isCode": true
     },
     {
       "id": "c13-s50",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b3",
       "index": 50,
-      "source": "域弗限焉。",
-      "isCode": false
+      "source": "\n注曰「「是新文法也」」",
+      "isCode": true
     },
     {
       "id": "c13-s51",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 51,
-      "source": "蓋程式未發。",
+      "source": "又例曰。",
       "isCode": false
     },
     {
       "id": "c13-s52",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 52,
-      "source": "一文之宏悉替之。",
+      "source": "冪者。",
       "isCode": false
     },
     {
       "id": "c13-s53",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 53,
-      "source": "然後運行也。",
+      "source": "自乘也。",
       "isCode": false
     },
     {
       "id": "c13-s54",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 54,
-      "source": "故「或云」語不得以引號作結。",
+      "source": "夫加減乘除皆得直謂「加甲以乙」云。",
       "isCode": false
     },
     {
       "id": "c13-s55",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 55,
-      "source": "何耶。",
+      "source": "今作冪術。",
       "isCode": false
     },
     {
       "id": "c13-s56",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 56,
-      "source": "為替不知其止也。",
+      "source": "不欲絮絮作「施」語。",
       "isCode": false
     },
     {
       "id": "c13-s57",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 57,
-      "source": "慎之。",
+      "source": "而欲云「求甲之乙次冪」。",
       "isCode": false
     },
     {
       "id": "c13-s58",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b4",
       "index": 58,
-      "source": "宏之為自由也。",
+      "source": "故宏之如是。",
       "isCode": false
     },
     {
       "id": "c13-s59",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 59,
-      "source": "眾君子文彩風流。",
-      "isCode": false
+      "source": "注曰「「先為冪術」」\n吾有一術。",
+      "isCode": true
     },
     {
       "id": "c13-s60",
       "chapterId": "c13",
-      "blockId": "b6",
+      "blockId": "b5",
       "index": 60,
-      "source": "藉此可傳焉。",
-      "isCode": false
+      "source": "名之曰「冪」。",
+      "isCode": true
     },
     {
       "id": "c13-s61",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 61,
-      "source": "陰符十三篇。",
-      "isCode": false
+      "source": "欲行是術。",
+      "isCode": true
     },
     {
       "id": "c13-s62",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 62,
-      "source": "至是盡矣。",
-      "isCode": false
+      "source": "必先得二數。",
+      "isCode": true
     },
     {
       "id": "c13-s63",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 63,
-      "source": "縱貫其書。",
-      "isCode": false
+      "source": "曰「甲」。",
+      "isCode": true
     },
     {
       "id": "c13-s64",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 64,
-      "source": "有明義。",
-      "isCode": false
+      "source": "曰「乙」。",
+      "isCode": true
     },
     {
       "id": "c13-s65",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 65,
-      "source": "有變數。",
-      "isCode": false
+      "source": "乃行是術曰。",
+      "isCode": true
     },
     {
       "id": "c13-s66",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 66,
-      "source": "有算術。",
-      "isCode": false
+      "source": "\n\t有數一。",
+      "isCode": true
     },
     {
       "id": "c13-s67",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 67,
-      "source": "有決策。",
-      "isCode": false
+      "source": "名之曰「丙」。",
+      "isCode": true
     },
     {
       "id": "c13-s68",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 68,
-      "source": "有循環。",
-      "isCode": false
+      "source": "\n\t為是「乙」遍。",
+      "isCode": true
     },
     {
       "id": "c13-s69",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 69,
-      "source": "有行列。",
-      "isCode": false
+      "source": "乘「丙」以「甲」。",
+      "isCode": true
     },
     {
       "id": "c13-s70",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 70,
-      "source": "有言語。",
-      "isCode": false
+      "source": "昔之「丙」者。",
+      "isCode": true
     },
     {
       "id": "c13-s71",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 71,
-      "source": "有方術。",
-      "isCode": false
+      "source": "今其是矣。",
+      "isCode": true
     },
     {
       "id": "c13-s72",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 72,
-      "source": "有府庫。",
-      "isCode": false
+      "source": "云云。",
+      "isCode": true
     },
     {
       "id": "c13-s73",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 73,
-      "source": "有格物。",
-      "isCode": false
+      "source": "\n\t乃得「丙」。",
+      "isCode": true
     },
     {
       "id": "c13-s74",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 74,
-      "source": "有克禍。",
-      "isCode": false
+      "source": "\n是謂「冪」之術也。",
+      "isCode": true
     },
     {
       "id": "c13-s75",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 75,
-      "source": "有圖畫。",
-      "isCode": false
+      "source": "\n\n注曰「「乃宏之」」\n或云「「求「甲」之「乙」次冪」」。",
+      "isCode": true
     },
     {
       "id": "c13-s76",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 76,
-      "source": "有宏略也。",
-      "isCode": false
+      "source": "\n蓋謂「「施「冪」於「甲」於「乙」」」。",
+      "isCode": true
     },
     {
       "id": "c13-s77",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 77,
-      "source": "於是之外。",
-      "isCode": false
+      "source": "\n\n注曰「「宏備。",
+      "isCode": true
     },
     {
       "id": "c13-s78",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 78,
-      "source": "復有丹道一門。",
-      "isCode": false
+      "source": "試用之」」\n求三之五次冪。",
+      "isCode": true
     },
     {
       "id": "c13-s79",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 79,
-      "source": "本亦自成一章。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c13-s80",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 80,
-      "source": "然以其理奧雅。",
-      "isCode": false
+      "source": "\n求二之十次冪。",
+      "isCode": true
     },
     {
       "id": "c13-s81",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 81,
-      "source": "二三言弗能窮。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c13-s82",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 82,
-      "source": "亦非初學易知。",
-      "isCode": false
+      "source": "\n\n注曰「「以變數亦可」」\n吾有二數。",
+      "isCode": true
     },
     {
       "id": "c13-s83",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 83,
-      "source": "故聊述其大義於是。",
-      "isCode": false
+      "source": "曰三。",
+      "isCode": true
     },
     {
       "id": "c13-s84",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 84,
-      "source": "以資博觀。",
-      "isCode": false
+      "source": "曰五。",
+      "isCode": true
     },
     {
       "id": "c13-s85",
       "chapterId": "c13",
-      "blockId": "b7",
+      "blockId": "b5",
       "index": 85,
-      "source": "好事君子自探微焉。",
-      "isCode": false
+      "source": "名之曰「丙」",
+      "isCode": true
     },
     {
       "id": "c13-s86",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b5",
       "index": 86,
-      "source": "昔秦王既掃六合。",
-      "isCode": false
+      "source": "曰「丁」。",
+      "isCode": true
     },
     {
       "id": "c13-s87",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b5",
       "index": 87,
-      "source": "入海求藥為鯨所阻。",
-      "isCode": false
+      "source": "\n求「丙」之「丁」次冪。",
+      "isCode": true
     },
     {
       "id": "c13-s88",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b5",
       "index": 88,
-      "source": "乃連弩射殺之。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c13-s89",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 89,
-      "source": "漢武亦好神仙之術。",
+      "source": "凡宏者。",
       "isCode": false
     },
     {
       "id": "c13-s90",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 90,
-      "source": "而徒誅文成樂通。",
+      "source": "域弗限焉。",
       "isCode": false
     },
     {
       "id": "c13-s91",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 91,
-      "source": "卒無所獲。",
+      "source": "蓋程式未發。",
       "isCode": false
     },
     {
       "id": "c13-s92",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 92,
-      "source": "後世煉丹餌朮之徒。",
+      "source": "一文之宏悉替之。",
       "isCode": false
     },
     {
       "id": "c13-s93",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 93,
-      "source": "未嘗絕於世。",
+      "source": "然後運行也。",
       "isCode": false
     },
     {
       "id": "c13-s94",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 94,
-      "source": "彼金丹大道者。",
+      "source": "故「或云」語不得以引號作結。",
       "isCode": false
     },
     {
       "id": "c13-s95",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 95,
-      "source": "有內丹。",
+      "source": "何耶。",
       "isCode": false
     },
     {
       "id": "c13-s96",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 96,
-      "source": "有外丹。",
+      "source": "為替不知其止也。",
       "isCode": false
     },
     {
       "id": "c13-s97",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 97,
-      "source": "內丹者。",
+      "source": "慎之。",
       "isCode": false
     },
     {
       "id": "c13-s98",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 98,
-      "source": "吐氣納神也。",
+      "source": "宏之為自由也。",
       "isCode": false
     },
     {
       "id": "c13-s99",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 99,
-      "source": "外丹者。",
+      "source": "眾君子文彩風流。",
       "isCode": false
     },
     {
       "id": "c13-s100",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b6",
       "index": 100,
-      "source": "燒鼎煉金也。",
+      "source": "藉此可傳焉。",
       "isCode": false
     },
     {
       "id": "c13-s101",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 101,
-      "source": "其術多玄奧莫解。",
+      "source": "陰符十三篇。",
       "isCode": false
     },
     {
       "id": "c13-s102",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 102,
-      "source": "周易叄同契。",
+      "source": "至是盡矣。",
       "isCode": false
     },
     {
       "id": "c13-s103",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 103,
-      "source": "抱朴子載焉。",
+      "source": "縱貫其書。",
       "isCode": false
     },
     {
       "id": "c13-s104",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 104,
-      "source": "今信之者鮮矣。",
+      "source": "有明義。",
       "isCode": false
     },
     {
       "id": "c13-s105",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 105,
-      "source": "然近有奇術。",
+      "source": "有變數。",
       "isCode": false
     },
     {
       "id": "c13-s106",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 106,
-      "source": "投諸機器。",
+      "source": "有算術。",
       "isCode": false
     },
     {
       "id": "c13-s107",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 107,
-      "source": "可以告往知來。",
+      "source": "有決策。",
       "isCode": false
     },
     {
       "id": "c13-s108",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 108,
-      "source": "聞一識十。",
+      "source": "有循環。",
       "isCode": false
     },
     {
       "id": "c13-s109",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 109,
-      "source": "人不之預而智每敵於人者。",
+      "source": "有行列。",
       "isCode": false
     },
     {
       "id": "c13-s110",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 110,
-      "source": "號曰深度學習。",
+      "source": "有言語。",
       "isCode": false
     },
     {
       "id": "c13-s111",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 111,
-      "source": "然趨之者若鶩。",
+      "source": "有方術。",
       "isCode": false
     },
     {
       "id": "c13-s112",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 112,
-      "source": "窮其理者寥寥。",
+      "source": "有府庫。",
       "isCode": false
     },
     {
       "id": "c13-s113",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 113,
-      "source": "比其煉也。",
+      "source": "有格物。",
       "isCode": false
     },
     {
       "id": "c13-s114",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 114,
-      "source": "每每耗時經日。",
+      "source": "有克禍。",
       "isCode": false
     },
     {
       "id": "c13-s115",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 115,
-      "source": "乃至於月。",
+      "source": "有圖畫。",
       "isCode": false
     },
     {
       "id": "c13-s116",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 116,
-      "source": "比其成也。",
+      "source": "有宏略也。",
       "isCode": false
     },
     {
       "id": "c13-s117",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 117,
-      "source": "或神機如響。",
+      "source": "於是之外。",
       "isCode": false
     },
     {
       "id": "c13-s118",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 118,
-      "source": "或闇昧無覩。",
+      "source": "復有丹道一門。",
       "isCode": false
     },
     {
       "id": "c13-s119",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 119,
-      "source": "得其方者著之。",
+      "source": "本亦自成一章。",
       "isCode": false
     },
     {
       "id": "c13-s120",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 120,
-      "source": "洋洋然誇諸天下。",
+      "source": "然以其理奧雅。",
       "isCode": false
     },
     {
       "id": "c13-s121",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 121,
-      "source": "失之者易之。",
+      "source": "二三言弗能窮。",
       "isCode": false
     },
     {
       "id": "c13-s122",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 122,
-      "source": "營營然冀有所得。",
+      "source": "亦非初學易知。",
       "isCode": false
     },
     {
       "id": "c13-s123",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 123,
-      "source": "吾儕每戲言。",
+      "source": "故聊述其大義於是。",
       "isCode": false
     },
     {
       "id": "c13-s124",
       "chapterId": "c13",
-      "blockId": "b8",
+      "blockId": "b7",
       "index": 124,
-      "source": "此誠當代之煉金術也。",
+      "source": "以資博觀。",
       "isCode": false
     },
     {
       "id": "c13-s125",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b7",
       "index": 125,
-      "source": "是道也。",
+      "source": "好事君子自探微焉。",
       "isCode": false
     },
     {
       "id": "c13-s126",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 126,
-      "source": "其術繁多。",
+      "source": "昔秦王既掃六合。",
       "isCode": false
     },
     {
       "id": "c13-s127",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 127,
-      "source": "有旋積。",
+      "source": "入海求藥為鯨所阻。",
       "isCode": false
     },
     {
       "id": "c13-s128",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 128,
-      "source": "有循環。",
+      "source": "乃連弩射殺之。",
       "isCode": false
     },
     {
       "id": "c13-s129",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 129,
-      "source": "有生成對抗。",
+      "source": "漢武亦好神仙之術。",
       "isCode": false
     },
     {
       "id": "c13-s130",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 130,
-      "source": "有長短記憶。",
+      "source": "而徒誅文成樂通。",
       "isCode": false
     },
     {
       "id": "c13-s131",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 131,
-      "source": "不可勝數。",
+      "source": "卒無所獲。",
       "isCode": false
     },
     {
       "id": "c13-s132",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 132,
-      "source": "其理則一宗。",
+      "source": "後世煉丹餌朮之徒。",
       "isCode": false
     },
     {
       "id": "c13-s133",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 133,
-      "source": "何耶。",
+      "source": "未嘗絕於世。",
       "isCode": false
     },
     {
       "id": "c13-s134",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 134,
-      "source": "法人之學也。",
+      "source": "彼金丹大道者。",
       "isCode": false
     },
     {
       "id": "c13-s135",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 135,
-      "source": "遍觀龜鑑。",
+      "source": "有內丹。",
       "isCode": false
     },
     {
       "id": "c13-s136",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 136,
-      "source": "覓其事理。",
+      "source": "有外丹。",
       "isCode": false
     },
     {
       "id": "c13-s137",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 137,
-      "source": "推被萬事而不爽。",
+      "source": "內丹者。",
       "isCode": false
     },
     {
       "id": "c13-s138",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 138,
-      "source": "初。",
+      "source": "吐氣納神也。",
       "isCode": false
     },
     {
       "id": "c13-s139",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 139,
-      "source": "其未煉也。",
+      "source": "外丹者。",
       "isCode": false
     },
     {
       "id": "c13-s140",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 140,
-      "source": "機器也茫昧然。",
+      "source": "燒鼎煉金也。",
       "isCode": false
     },
     {
       "id": "c13-s141",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 141,
-      "source": "問以一事。",
+      "source": "其術多玄奧莫解。",
       "isCode": false
     },
     {
       "id": "c13-s142",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 142,
-      "source": "胡亂以答。",
+      "source": "周易叄同契。",
       "isCode": false
     },
     {
       "id": "c13-s143",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 143,
-      "source": "或驗或否。",
+      "source": "抱朴子載焉。",
       "isCode": false
     },
     {
       "id": "c13-s144",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 144,
-      "source": "然則有成例千千萬萬。",
+      "source": "今信之者鮮矣。",
       "isCode": false
     },
     {
       "id": "c13-s145",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 145,
-      "source": "悉令觀而課之。",
+      "source": "然近有奇術。",
       "isCode": false
     },
     {
       "id": "c13-s146",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 146,
-      "source": "每驗輒褒之。",
+      "source": "投諸機器。",
       "isCode": false
     },
     {
       "id": "c13-s147",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 147,
-      "source": "否輒譴之。",
+      "source": "可以告往知來。",
       "isCode": false
     },
     {
       "id": "c13-s148",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 148,
-      "source": "乃漸知趨利避害。",
+      "source": "聞一識十。",
       "isCode": false
     },
     {
       "id": "c13-s149",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 149,
-      "source": "去偽存真。",
+      "source": "人不之預而智每敵於人者。",
       "isCode": false
     },
     {
       "id": "c13-s150",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 150,
-      "source": "如水流逐低。",
+      "source": "號曰深度學習。",
       "isCode": false
     },
     {
       "id": "c13-s151",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 151,
-      "source": "草木向陽然。",
+      "source": "然趨之者若鶩。",
       "isCode": false
     },
     {
       "id": "c13-s152",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 152,
-      "source": "漸進正理也。",
+      "source": "窮其理者寥寥。",
       "isCode": false
     },
     {
       "id": "c13-s153",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 153,
-      "source": "驗者彌多。",
+      "source": "比其煉也。",
       "isCode": false
     },
     {
       "id": "c13-s154",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 154,
-      "source": "否者彌少。",
+      "source": "每每耗時經日。",
       "isCode": false
     },
     {
       "id": "c13-s155",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 155,
-      "source": "正理昭昭。",
+      "source": "乃至於月。",
       "isCode": false
     },
     {
       "id": "c13-s156",
       "chapterId": "c13",
-      "blockId": "b9",
+      "blockId": "b8",
       "index": 156,
-      "source": "金丹成矣。",
+      "source": "比其成也。",
       "isCode": false
     },
     {
       "id": "c13-s157",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 157,
-      "source": "請以旋積為例。",
+      "source": "或神機如響。",
       "isCode": false
     },
     {
       "id": "c13-s158",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 158,
-      "source": "旋積者。",
+      "source": "或闇昧無覩。",
       "isCode": false
     },
     {
       "id": "c13-s159",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 159,
-      "source": "多用以觀圖識物也。",
+      "source": "得其方者著之。",
       "isCode": false
     },
     {
       "id": "c13-s160",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 160,
-      "source": "譬有一畫。",
+      "source": "洋洋然誇諸天下。",
       "isCode": false
     },
     {
       "id": "c13-s161",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 161,
-      "source": "不知所圖者犬耶。",
+      "source": "失之者易之。",
       "isCode": false
     },
     {
       "id": "c13-s162",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 162,
-      "source": "馬耶。",
+      "source": "營營然冀有所得。",
       "isCode": false
     },
     {
       "id": "c13-s163",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 163,
-      "source": "乃取萬千馬圖。",
+      "source": "吾儕每戲言。",
       "isCode": false
     },
     {
       "id": "c13-s164",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b8",
       "index": 164,
-      "source": "萬千犬圖使習之。",
+      "source": "此誠當代之煉金術也。",
       "isCode": false
     },
     {
       "id": "c13-s165",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 165,
-      "source": "乃漸知犬馬之同異。",
+      "source": "是道也。",
       "isCode": false
     },
     {
       "id": "c13-s166",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 166,
-      "source": "或既知其為馬圖也。",
+      "source": "其術繁多。",
       "isCode": false
     },
     {
       "id": "c13-s167",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 167,
-      "source": "然不知馬之所在。",
+      "source": "有旋積。",
       "isCode": false
     },
     {
       "id": "c13-s168",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 168,
-      "source": "或放南山。",
+      "source": "有循環。",
       "isCode": false
     },
     {
       "id": "c13-s169",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 169,
-      "source": "或馳平野。",
+      "source": "有生成對抗。",
       "isCode": false
     },
     {
       "id": "c13-s170",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 170,
-      "source": "或浴溪澗。",
+      "source": "有長短記憶。",
       "isCode": false
     },
     {
       "id": "c13-s171",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 171,
-      "source": "或飲城窟。",
+      "source": "不可勝數。",
       "isCode": false
     },
     {
       "id": "c13-s172",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 172,
-      "source": "乃取萬千馬圖既知馬之所在者。",
+      "source": "其理則一宗。",
       "isCode": false
     },
     {
       "id": "c13-s173",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 173,
-      "source": "令習之。",
+      "source": "何耶。",
       "isCode": false
     },
     {
       "id": "c13-s174",
       "chapterId": "c13",
-      "blockId": "b10",
+      "blockId": "b9",
       "index": 174,
-      "source": "乃能指馬於山野溪窟中。",
+      "source": "法人之學也。",
       "isCode": false
     },
     {
       "id": "c13-s175",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 175,
-      "source": "論今者機器之智。",
+      "source": "遍觀龜鑑。",
       "isCode": false
     },
     {
       "id": "c13-s176",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 176,
-      "source": "由是觀止也。",
+      "source": "覓其事理。",
       "isCode": false
     },
     {
       "id": "c13-s177",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 177,
-      "source": "然百年之後。",
+      "source": "推被萬事而不爽。",
       "isCode": false
     },
     {
       "id": "c13-s178",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 178,
-      "source": "觀止者何。",
+      "source": "初。",
       "isCode": false
     },
     {
       "id": "c13-s179",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 179,
-      "source": "吾死不能知矣。",
+      "source": "其未煉也。",
       "isCode": false
     },
     {
       "id": "c13-s180",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 180,
-      "source": "暢想其情。",
+      "source": "機器也茫昧然。",
       "isCode": false
     },
     {
       "id": "c13-s181",
       "chapterId": "c13",
-      "blockId": "b11",
+      "blockId": "b9",
       "index": 181,
-      "source": "當何其郁郁哉。",
+      "source": "問以一事。",
       "isCode": false
     },
     {
       "id": "c13-s182",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 182,
-      "source": "夫編程之奧義也無涯。",
+      "source": "胡亂以答。",
       "isCode": false
     },
     {
       "id": "c13-s183",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 183,
-      "source": "而一山之竹也有涯。",
+      "source": "或驗或否。",
       "isCode": false
     },
     {
       "id": "c13-s184",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 184,
-      "source": "況以學術之盛代。",
+      "source": "然則有成例千千萬萬。",
       "isCode": false
     },
     {
       "id": "c13-s185",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 185,
-      "source": "世術日新。",
+      "source": "悉令觀而課之。",
       "isCode": false
     },
     {
       "id": "c13-s186",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 186,
-      "source": "法門月異。",
+      "source": "每驗輒褒之。",
       "isCode": false
     },
     {
       "id": "c13-s187",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 187,
-      "source": "每有昨之驪珠。",
+      "source": "否輒譴之。",
       "isCode": false
     },
     {
       "id": "c13-s188",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 188,
-      "source": "今之敝屣。",
+      "source": "乃漸知趨利避害。",
       "isCode": false
     },
     {
       "id": "c13-s189",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 189,
-      "source": "然其為礎礩者。",
+      "source": "去偽存真。",
       "isCode": false
     },
     {
       "id": "c13-s190",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 190,
-      "source": "十世弗易。",
+      "source": "如水流逐低。",
       "isCode": false
     },
     {
       "id": "c13-s191",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 191,
-      "source": "萬變靡離。",
+      "source": "草木向陽然。",
       "isCode": false
     },
     {
       "id": "c13-s192",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 192,
-      "source": "是書所錄者是矣。",
+      "source": "漸進正理也。",
       "isCode": false
     },
     {
       "id": "c13-s193",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 193,
-      "source": "其餘不能盡美者。",
+      "source": "驗者彌多。",
       "isCode": false
     },
     {
       "id": "c13-s194",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 194,
-      "source": "唯待博雅君子。",
+      "source": "否者彌少。",
       "isCode": false
     },
     {
       "id": "c13-s195",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 195,
-      "source": "既詳覽其書而熟習其術。",
+      "source": "正理昭昭。",
       "isCode": false
     },
     {
       "id": "c13-s196",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b9",
       "index": 196,
-      "source": "靡不能觸類而長之。",
+      "source": "金丹成矣。",
       "isCode": false
     },
     {
       "id": "c13-s197",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 197,
-      "source": "則雖幽遐詭伏。",
+      "source": "請以旋積為例。",
       "isCode": false
     },
     {
       "id": "c13-s198",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 198,
-      "source": "無所不入。",
+      "source": "旋積者。",
       "isCode": false
     },
     {
       "id": "c13-s199",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 199,
-      "source": "告其往而知其來。",
+      "source": "多用以觀圖識物也。",
       "isCode": false
     },
     {
       "id": "c13-s200",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 200,
-      "source": "舉一隅而反其三。",
+      "source": "譬有一畫。",
       "isCode": false
     },
     {
       "id": "c13-s201",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 201,
-      "source": "聞一而知十者皆適。",
+      "source": "不知所圖者犬耶。",
       "isCode": false
     },
     {
       "id": "c13-s202",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 202,
-      "source": "然後乃置之尋常而不塞。",
+      "source": "馬耶。",
       "isCode": false
     },
     {
       "id": "c13-s203",
       "chapterId": "c13",
-      "blockId": "b12",
+      "blockId": "b10",
       "index": 203,
+      "source": "乃取萬千馬圖。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s204",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 204,
+      "source": "萬千犬圖使習之。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s205",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 205,
+      "source": "乃漸知犬馬之同異。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s206",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 206,
+      "source": "或既知其為馬圖也。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s207",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 207,
+      "source": "然不知馬之所在。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s208",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 208,
+      "source": "或放南山。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s209",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 209,
+      "source": "或馳平野。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s210",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 210,
+      "source": "或浴溪澗。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s211",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 211,
+      "source": "或飲城窟。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s212",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 212,
+      "source": "乃取萬千馬圖既知馬之所在者。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s213",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 213,
+      "source": "令習之。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s214",
+      "chapterId": "c13",
+      "blockId": "b10",
+      "index": 214,
+      "source": "乃能指馬於山野溪窟中。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s215",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 215,
+      "source": "論今者機器之智。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s216",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 216,
+      "source": "由是觀止也。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s217",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 217,
+      "source": "然百年之後。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s218",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 218,
+      "source": "觀止者何。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s219",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 219,
+      "source": "吾死不能知矣。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s220",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 220,
+      "source": "暢想其情。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s221",
+      "chapterId": "c13",
+      "blockId": "b11",
+      "index": 221,
+      "source": "當何其郁郁哉。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s222",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 222,
+      "source": "夫編程之奧義也無涯。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s223",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 223,
+      "source": "而一山之竹也有涯。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s224",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 224,
+      "source": "況以學術之盛代。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s225",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 225,
+      "source": "世術日新。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s226",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 226,
+      "source": "法門月異。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s227",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 227,
+      "source": "每有昨之驪珠。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s228",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 228,
+      "source": "今之敝屣。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s229",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 229,
+      "source": "然其為礎礩者。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s230",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 230,
+      "source": "十世弗易。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s231",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 231,
+      "source": "萬變靡離。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s232",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 232,
+      "source": "是書所錄者是矣。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s233",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 233,
+      "source": "其餘不能盡美者。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s234",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 234,
+      "source": "唯待博雅君子。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s235",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 235,
+      "source": "既詳覽其書而熟習其術。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s236",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 236,
+      "source": "靡不能觸類而長之。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s237",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 237,
+      "source": "則雖幽遐詭伏。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s238",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 238,
+      "source": "無所不入。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s239",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 239,
+      "source": "告其往而知其來。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s240",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 240,
+      "source": "舉一隅而反其三。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s241",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 241,
+      "source": "聞一而知十者皆適。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s242",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 242,
+      "source": "然後乃置之尋常而不塞。",
+      "isCode": false
+    },
+    {
+      "id": "c13-s243",
+      "chapterId": "c13",
+      "blockId": "b12",
+      "index": 243,
       "source": "布之天下而不窕也。",
       "isCode": false
     }
