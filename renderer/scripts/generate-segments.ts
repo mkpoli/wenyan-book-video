@@ -53,6 +53,16 @@ const countCharsExcludingQuotes = (text: string): number => {
   return text.replace(/[「」『』]/g, "").length;
 };
 
+// Counts Chinese characters relevant for aligning with IPA tokens.
+// This excludes whitespace, quotes, and common punctuation so that
+// each remaining character should correspond to one IPA token.
+const countCharsForTranscriptAlignment = (text: string): number => {
+  return text
+    .replace(/[「」『』]/g, "")
+    .replace(/\s/g, "")
+    .replace(/[。，、！？；：,.!"'“”‘’]/g, "").length;
+};
+
 const splitChineseSentences = (
   text: string,
   preserveSpaces = false,
@@ -89,6 +99,34 @@ const splitChineseSentences = (
           }
         }
       }
+    } else if (char === "」") {
+      // Always include the closing quote
+      currentSentence += char;
+
+      // Look ahead for the next non-whitespace character.
+      // If it's 「曰」, we treat this as a sentence boundary so that
+      // patterns like `…耶」曰「…耶」` or `…耶」\n曰「…耶」` are split
+      // between `」` and `曰`.
+      let j = i + 1;
+      let nextNonWhitespace: string | null = null;
+      while (j < text.length) {
+        const lookaheadChar = text[j];
+        if (!/\s/.test(lookaheadChar)) {
+          nextNonWhitespace = lookaheadChar;
+          break;
+        }
+        j++;
+      }
+
+      if (nextNonWhitespace === "曰") {
+        const processed = preserveSpaces
+          ? currentSentence
+          : currentSentence.trim();
+        if (processed.length > 0) {
+          sentences.push(processed);
+        }
+        currentSentence = "";
+      }
     } else if (
       (char === "。" || char === "！" || char === "？") &&
       !insideQuotes
@@ -123,56 +161,73 @@ const splitEnglishSentences = (
     return [];
   }
 
-  const blocks = translation
+  const sentences = translation
     .replace(/\r\n/g, "\n")
     .split(/\n+/)
-    .map((part) => (preserveSpaces ? part : part.trim()))
-    .filter(Boolean);
-
-  const sentences: string[] = [];
-
-  for (const block of blocks) {
-    const normalized = preserveSpaces ? block : block.replace(/\s+/g, " ");
-    const matches = normalized.match(/[^.!?]+[.!?]+(?:\u201d|\u2019|"|')?/g);
-    if (matches) {
-      matches.forEach((sentence) => {
-        const processed = preserveSpaces ? sentence : sentence.trim();
-        if (processed.length > 0) {
-          sentences.push(processed);
-        }
-      });
-
-      const remainder = preserveSpaces
-        ? normalized.replace(matches.join(""), "")
-        : normalized.replace(matches.join(""), "").trim();
-      if (remainder.length > 0) {
-        sentences.push(remainder);
-      }
-    } else if (normalized.length > 0) {
-      sentences.push(normalized);
-    }
-  }
+    .map((line) => (preserveSpaces ? line : line.trim()))
+    .filter((line) => line.length > 0);
 
   return sentences;
 };
 
 const splitIPATranscriptions = (
   transcript: string | null,
+  chineseSentences: string[],
   preserveSpaces = false,
 ): string[] => {
   if (!transcript) {
     return [];
   }
 
-  // Split IPA transcript by periods (sentence boundaries)
-  // Periods are followed by spaces in the transcript format
-  const normalized = preserveSpaces
-    ? transcript
-    : transcript.trim().replace(/\s+/g, " ");
-  const sentences = normalized
-    .split(/\s*[\.,]\s*/)
-    .map((sentence) => (preserveSpaces ? sentence : sentence.trim()))
+  // Tokenize IPA transcript: tokens are either IPA syllables or "." as a
+  // sentence boundary marker. There should be no other token types.
+  const rawTokens = transcript
+    .split(/\s+/)
+    .map((token) => token.trim())
     .filter(Boolean);
+
+  const ipaTokens = rawTokens.filter((token) => token !== ".");
+  const totalIpaTokens = ipaTokens.length;
+
+  const charCounts = chineseSentences.map((sentence) =>
+    countCharsForTranscriptAlignment(sentence),
+  );
+  const totalChars = charCounts.reduce((sum, count) => sum + count, 0);
+
+  // If the expected 1:1 mapping between Chinese characters and IPA tokens
+  // does not hold, fall back to a simpler sentence-based split to avoid
+  // producing obviously wrong alignments.
+  if (
+    totalChars === 0 ||
+    totalIpaTokens === 0 ||
+    totalChars !== totalIpaTokens
+  ) {
+    const normalized = preserveSpaces
+      ? transcript
+      : transcript.trim().replace(/\s+/g, " ");
+    return normalized
+      .split(/\s*[\.,]\s*/)
+      .map((sentence) => (preserveSpaces ? sentence : sentence.trim()))
+      .filter(Boolean);
+  }
+
+  const sentences: string[] = [];
+  let tokenIndex = 0;
+
+  for (const count of charCounts) {
+    if (count <= 0) {
+      sentences.push("");
+      continue;
+    }
+
+    const sentenceTokens = ipaTokens.slice(tokenIndex, tokenIndex + count);
+    tokenIndex += count;
+
+    const sentence = preserveSpaces
+      ? sentenceTokens.join(" ")
+      : sentenceTokens.join(" ").trim();
+    sentences.push(sentence);
+  }
 
   return sentences;
 };
@@ -270,7 +325,11 @@ const generateSegments = async () => {
             translation,
             isCodeBlock,
           );
-          const ipaSentences = splitIPATranscriptions(transcript, isCodeBlock);
+          const ipaSentences = splitIPATranscriptions(
+            transcript,
+            chineseSentences,
+            isCodeBlock,
+          );
 
           if (hasFemaleAudio) {
             debugLog(`Using female voice for segment ${id}.`);
