@@ -276,6 +276,86 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
   const englishLine =
     currentSentence?.english?.replace(/\s+/g, " ").trim() ?? null;
 
+  // Group sentences by lines when text contains newlines
+  const renderSentencesWithLineBreaks = () => {
+    if (!hasSentenceData || !text.includes("\n")) {
+      // Fallback to original behavior if no newlines
+      return sentences.map((sentence, index) => (
+        <Sentence
+          key={`${index}-${sentence.chinese}`}
+          text={sentence.chinese}
+          highlight={index === currentSentenceIndex}
+          isCodeBlock={isCodeBlock}
+        />
+      ));
+    }
+
+    // Split text by newlines to get lines
+    const textLines = text.split("\n").filter((line) => line.trim().length > 0);
+    const result: React.ReactNode[] = [];
+    let sentenceIndex = 0;
+
+    for (let lineIndex = 0; lineIndex < textLines.length; lineIndex += 1) {
+      const line = textLines[lineIndex];
+      // Find sentences that belong to this line
+      const lineSentences: React.ReactNode[] = [];
+      let lineText = "";
+
+      // Collect sentences until we've matched the line content
+      while (sentenceIndex < sentences.length) {
+        const sentence = sentences[sentenceIndex];
+        lineText += sentence.chinese;
+        lineSentences.push(
+          <Sentence
+            key={`${sentenceIndex}-${sentence.chinese}`}
+            text={sentence.chinese}
+            highlight={sentenceIndex === currentSentenceIndex}
+            isCodeBlock={isCodeBlock}
+          />,
+        );
+        sentenceIndex += 1;
+
+        // Check if we've matched the line (allowing for slight variations)
+        // Remove all whitespace and compare
+        const normalizedLine = line.replace(/\s+/g, "");
+        const normalizedLineText = lineText.replace(/\s+/g, "");
+        if (normalizedLineText === normalizedLine) {
+          break;
+        }
+        // Safety check: if we've exceeded the line length, break to avoid infinite loop
+        if (normalizedLineText.length > normalizedLine.length) {
+          break;
+        }
+      }
+
+      // Render the line with its sentences
+      // For vertical writing mode, wrap each line in a block container to create line breaks
+      if (lineSentences.length > 0) {
+        result.push(
+          <div key={`line-${lineIndex}`} className="block">
+            {lineSentences}
+          </div>,
+        );
+      }
+    }
+
+    // Render any remaining sentences that weren't matched to lines
+    while (sentenceIndex < sentences.length) {
+      const sentence = sentences[sentenceIndex];
+      result.push(
+        <Sentence
+          key={`${sentenceIndex}-${sentence.chinese}`}
+          text={sentence.chinese}
+          highlight={sentenceIndex === currentSentenceIndex}
+          isCodeBlock={isCodeBlock}
+        />,
+      );
+      sentenceIndex += 1;
+    }
+
+    return result;
+  };
+
   return (
     <AbsoluteFill style={{ opacity }}>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
@@ -293,14 +373,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           }
         >
           {hasSentenceData
-            ? sentences.map((sentence, index) => (
-                <Sentence
-                  key={`${index}-${sentence.chinese}`}
-                  text={sentence.chinese}
-                  highlight={index === currentSentenceIndex}
-                  isCodeBlock={isCodeBlock}
-                />
-              ))
+            ? renderSentencesWithLineBreaks()
             : renderTextWithQuotes(text, { isCodeBlock })}
         </div>
         {transcriptionLine || englishLine ? (
