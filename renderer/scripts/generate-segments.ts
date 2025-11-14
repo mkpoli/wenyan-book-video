@@ -50,7 +50,7 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
 };
 
 const countCharsExcludingQuotes = (text: string): number => {
-  return text.replace(/[「」『』]/g, "").length;
+  return text.replace(/[「」『』`]/g, "").length;
 };
 
 // Counts Chinese characters relevant for aligning with IPA tokens.
@@ -613,10 +613,7 @@ const generateSegments = async () => {
   }
 
   lintWarnings
-    .sort(
-      (a, b) =>
-        b.chapter - a.chapter || a.segment - b.segment,
-    )
+    .sort((a, b) => b.chapter - a.chapter || a.segment - b.segment)
     .forEach((warning) => {
       logLintWarning(warning.title, warning.rows);
     });
