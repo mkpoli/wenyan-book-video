@@ -41,20 +41,25 @@ def _(requests):
             print(f"Using cached dictionary from {cache_path}")
             dictionary_text = cache_path.read_text(encoding="utf-8")
         else:
-            print(f"Dictionary cache found but stale ({cache_path}), attempting refresh...")
+            print(
+                f"Dictionary cache found but stale ({cache_path}), attempting refresh..."
+            )
     else:
         print(f"No cached dictionary found at {cache_path}, downloading...")
 
     if dictionary_text is None:
         try:
-            response = requests.get(
-                "https://qieyun-tts.com/dictionary_txt", timeout=30
-            )
+            response = requests.get("https://qieyun-tts.com/dictionary_txt", timeout=30)
             response.raise_for_status()
-            dictionary_text = response.text
-            cache_path.write_text(dictionary_text, encoding="utf-8")
+            downloaded_text = response.text
+            if not isinstance(downloaded_text, str):
+                raise RuntimeError(
+                    "Unexpected non-text response when downloading Qieyun dictionary."
+                )
+            cache_path.write_text(downloaded_text, encoding="utf-8")
+            dictionary_text = downloaded_text
             print(
-                f"Dictionary downloaded and cached ({len(dictionary_text.splitlines())} lines)"
+                f"Dictionary downloaded and cached ({len(downloaded_text.splitlines())} lines)"
             )
         except Exception as download_error:
             if cache_path.exists():
