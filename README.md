@@ -13,6 +13,19 @@ This is a monorepo containing:
 - **`transcripts/`** - Transcript files
 - **`timings/`** - Timing data for video synchronization
 
+## Basic Workflow
+
+1. Clone the repository
+2. Generate segments from `wenyan-lang/book` submodule to `renderer/public/segments/`
+3. Check segments if they are correct and update the code to regenerate.
+4. Generate translation
+5. Generate transcription
+6. Generate audio
+7. Generate voice-changed audio
+8. Generate segments for rendering
+9. Check segments
+10. Render video
+
 ## Setup
 
 ### Cloning the Repository
