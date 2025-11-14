@@ -22,8 +22,9 @@ def _(re):
         # Filter out empty paragraphs
         return [p.strip() for p in paragraphs if p.strip()]
 
-    def remove_markdown(text):
-        """Remove markdown formatting from text, preserving paragraph structure."""
+    def remove_markdown(text, preserve_newlines=False):
+        """Remove markdown formatting from text, preserving paragraph structure.
+        If preserve_newlines is True, line breaks are preserved (for code blocks)."""
         # Convert double brackets 「「　」」 to 『 』
         text = text.replace("「「", "『")
         text = text.replace("」」", "』")
@@ -40,13 +41,28 @@ def _(re):
         # Remove list markers (- ...) but keep the content
         text = re.sub(r"^-\s+", "", text, flags=re.MULTILINE)
 
-        # Convert multiple whitespace (but preserve single newlines within paragraph)
-        # Replace multiple spaces/tabs with single space
-        text = re.sub(r"[ \t]+", " ", text)
-        # Replace multiple newlines with single space (paragraph boundaries already split)
-        text = re.sub(r"\n+", " ", text)
+        if preserve_newlines:
+            # For code blocks, preserve newlines and indentation
+            # Only normalize multiple consecutive spaces/tabs on the same line
+            # (replace multiple spaces/tabs with single space, but keep newlines)
+            lines = text.split("\n")
+            normalized_lines = []
+            for line in lines:
+                # Replace multiple spaces/tabs with single space within the line
+                normalized_line = re.sub(r"[ \t]+", " ", line)
+                normalized_lines.append(normalized_line)
+            text = "\n".join(normalized_lines)
+        else:
+            # Convert multiple whitespace (but preserve single newlines within paragraph)
+            # Replace multiple spaces/tabs with single space
+            text = re.sub(r"[ \t]+", " ", text)
+            # Replace multiple newlines with single space (paragraph boundaries already split)
+            text = re.sub(r"\n+", " ", text)
+            return text.strip()
 
-        return text.strip()
+        # For code blocks, don't strip (preserve leading/trailing newlines if any)
+        # But remove leading/trailing empty lines
+        return text
 
     def split_sentences(text):
         """Split text into sentences ending with '。'"""
@@ -161,18 +177,62 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
             is_code_block = paragraph.strip().startswith("```")
 
             # Remove markdown from this paragraph
-            text = remove_markdown(paragraph)
+            # Preserve newlines for code blocks
+            text = remove_markdown(paragraph, preserve_newlines=is_code_block)
 
             # Skip empty paragraphs
             if not text.strip():
                 continue
 
-            # Split into sentences within this paragraph
-            sentences = split_sentences(text)
+            if is_code_block:
+                # For code blocks, preserve newlines and split by newlines
+                # Create segments that preserve line breaks
+                lines = text.split("\n")
+                # Filter out empty lines at start/end but preserve internal empty lines
+                while lines and not lines[0].strip():
+                    lines.pop(0)
+                while lines and not lines[-1].strip():
+                    lines.pop()
 
-            # Create segments within this paragraph only
-            # (sentences from different paragraphs will never be combined)
-            paragraph_segments = create_segments(sentences)
+                # For code blocks, keep as single segment preserving all newlines
+                # or split into segments if too long, but always preserve newlines
+                code_text = "\n".join(lines)
+                if len(code_text) <= 95:
+                    # Single segment
+                    paragraph_segments = [code_text]
+                else:
+                    # Split into multiple segments, but preserve newlines within each
+                    # Split by newlines and group lines into segments
+                    paragraph_segments = []
+                    current_segment_lines = []
+                    current_length = 0
+
+                    for line in lines:
+                        line_length = len(line) + 1  # +1 for newline
+                        if current_length + line_length > 95 and current_segment_lines:
+                            # Finalize current segment
+                            paragraph_segments.append("\n".join(current_segment_lines))
+                            current_segment_lines = [line]
+                            current_length = line_length
+                        else:
+                            current_segment_lines.append(line)
+                            current_length += line_length
+
+                    # Add remaining segment
+                    if current_segment_lines:
+                        paragraph_segments.append("\n".join(current_segment_lines))
+            else:
+                # For regular text, split into sentences and create segments
+                sentences = split_sentences(text)
+                if sentences:
+                    paragraph_segments = create_segments(sentences)
+                else:
+                    # If no sentences ending with '。', still include the text as a segment
+                    # (e.g., short phrases like "乃得" that don't end with a period)
+                    if text.strip():
+                        paragraph_segments = [text.strip()]
+                    else:
+                        paragraph_segments = []
 
             # Track metadata for each segment from this paragraph
             for segment in paragraph_segments:
