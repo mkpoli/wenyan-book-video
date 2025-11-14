@@ -11,4 +11,3 @@ There is no difference, is there?
 Subtraction is likewise so.
 And addition and multiplication have commutativity;
 hence they are generally used.
-Hence they are commonly used.

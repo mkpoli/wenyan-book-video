@@ -452,7 +452,7 @@ export const segments = [
     "id": "3-12",
     "text": "又除法者。有除數與被除數之別。是謂除法無交換率也。今言除「甲」以「乙」者。甲者。被除數也。乙者。除數也。亦可書除「乙」於「甲」。無少異耳。減法亦然。而加乘有交換率者。於乃通以。",
     "audioPath": "audios/female/audio-3-12-f.mp3",
-    "translation": "Moreover, as for division,\nThere is a distinction between the divisor and the dividend.\nThis is to say that division has no commutativity.\nNow, to say divide A by B.\nA —\nis the dividend.\nB —\nis the divisor.\nIt may also be written as dividing with B to A.\nThere is no difference, is there?\nSubtraction is likewise so.\nAnd addition and multiplication have commutativity;\nhence they are generally used.\nHence they are commonly used.",
+    "translation": "Moreover, as for division,\nThere is a distinction between the divisor and the dividend.\nThis is to say that division has no commutativity.\nNow, to say divide A by B.\nA —\nis the dividend.\nB —\nis the divisor.\nIt may also be written as dividing with B to A.\nThere is no difference, is there?\nSubtraction is likewise so.\nAnd addition and multiplication have commutativity;\nhence they are generally used.",
     "isCodeBlock": false,
     "sentences": [
       {

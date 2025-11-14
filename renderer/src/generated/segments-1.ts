@@ -918,7 +918,7 @@ export const segments = [
     "id": "1-10",
     "text": "亦視其用也。「報錯」者。或以人之誤。或以物之限。機器不能達人所欲。是以其因吿人也。今世之編程語言豈下百種。各爭一日之長。然多西人所製。亦沿西人之語。今有滬上黃生。博考諸書。效古人之雅言。",
     "audioPath": "audios/female/audio-1-10-f.mp3",
-    "translation": "So too does its usage depend on the task.\n\n“Error reporting” means this:\nwhether by human mistake\nor material limitation,\nthe machine cannot fulfill what the user intends —\nthus it gives a message to inform the person of the cause.\n\nIn the world today, there are not fewer than a hundred programming languages,\neach contending to show its excellence for a time.\nMost, however, are creations of Westerners\nand thus follow the patterns of Western speech.\n\nNow there is Scholar Huang of Shanghai,\nwho has studied many texts in depth\nand, imitating the elegant diction of the ancients,\nhas composed anew in refined classical style.",
+    "translation": "So too does its usage depend on the task.\n\n“Error reporting” means this:\nwhether by human mistake\nor material limitation,\nthe machine cannot fulfill what the user intends —\nthus it gives a message to inform the person of the cause.\n\nIn the world today, there are not fewer than a hundred programming languages,\neach contending to show its excellence for a time.\nMost, however, are creations of Westerners\nand thus follow the patterns of Western speech.\n\nNow there is Scholar Huang of Shanghai,\nwho has studied many texts in depth\nand, imitating the elegant diction of the ancients,",
     "isCodeBlock": false,
     "sentences": [
       {
