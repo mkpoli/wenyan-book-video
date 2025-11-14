@@ -44,8 +44,8 @@ export const CreatorIntroduction: React.FC<CreatorIntroductionProps> = ({
             所製，得吉尼斯世界紀錄。
             <br />
             今由開源之士共治之，貢獻者有
-            <span className="text-blue-500 text-3xl font-transcription ml-10">
-              @antfu
+            <span className="text-blue-500 text-4xl font-serif-emph italic ml-10">
+              Anthony Fu
             </span>
             及諸君子。
           </p>
@@ -57,7 +57,7 @@ export const CreatorIntroduction: React.FC<CreatorIntroductionProps> = ({
             Today they are maintained by the open-source community, with
             contributors including{" "}
             <span className="text-blue-500 text-2xl font-transcription">
-              @antfu
+              Anthony Fu (@antfu)
             </span>{" "}
             and many others.
           </p>

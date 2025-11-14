@@ -48,8 +48,10 @@ export const WenyanLanguageIntroduction: React.FC<
             Wenyan Language
           </h2>
           <p className="font-serif text-3xl leading-relaxed text-gray-700 text-center max-w-4xl">
-            文言, or wenyan, is an esoteric programming language that closely
-            follows the grammar and tone of classical Chinese literature.
+            <span className="text-bold">文言</span>, or{" "}
+            <span className="font-serif-emph">wenyan</span>, is an esoteric
+            programming language that closely follows the grammar and tone of
+            classical Chinese literature.
           </p>
           <p className="font-[QijiCombo,serif] text-4xl leading-relaxed text-gray-900 text-center max-w-4xl">
             「文言」者，漢文風編程語言也。

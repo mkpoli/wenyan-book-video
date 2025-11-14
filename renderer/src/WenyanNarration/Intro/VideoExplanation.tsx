@@ -49,13 +49,13 @@ export const VideoExplanation: React.FC<VideoExplanationProps> = ({
             <span className="italic">The Book</span> aloud through a TTS system
             based on the <span className="italic">Tshet-uinh (Qieyun)</span>{" "}
             Phonological System (Middle Chinese), developed by{" "}
-            <span className="text-blue-500">@cinix</span>, together with various
-            other modern technologies.
+            <span className="text-blue-500 font-serif-emph">cinix</span>,
+            together with various other modern technologies.
           </p>
           <p className="font-[QijiCombo,serif] text-4xl leading-relaxed text-gray-900 text-center max-w-5xl">
             是映像也，以　
-            <span className="font-transcription text-3xl mr-2 ml-10 text-blue-500">
-              @cinix
+            <span className="font-serif-emph italic text-[2.125rem] mr-2 ml-10 text-blue-500">
+              cinix
             </span>
             氏所製中古漢語切韻音系語音合成之法，
             <br />
