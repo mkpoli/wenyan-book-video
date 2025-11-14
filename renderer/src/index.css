@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho");
 
 @font-face {
   font-family: "QijiCombo";
@@ -49,7 +50,8 @@
 }
 
 @theme {
-  --font-serif: "IM Fell DW Pica English SC", serif;
+  --font-serif: "IM Fell DW Pica English SC", "Hina Mincho", serif;
+  --font-serif-emph: "IM Fell DW Pica", "Hina Mincho", serif;
   --font-ipa: "Charis SIL", "Tinos", serif;
   --font-transcription: "IM Fell DW Pica", "Tinos", serif;
 
