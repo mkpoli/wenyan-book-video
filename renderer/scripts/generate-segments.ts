@@ -7,7 +7,7 @@ import {
   unlinkSync,
 } from "fs";
 import { parseFile } from "music-metadata";
-import { join } from "path";
+import { join, relative } from "path";
 
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
 const SEGMENTS_DIR = join(rendererDir, "public", "segments");
@@ -232,6 +232,130 @@ const splitIPATranscriptions = (
   return sentences;
 };
 
+const ansi = (code: number) => (text: string) => `\x1b[${code}m${text}\x1b[0m`;
+const styles = {
+  bold: ansi(1),
+  dim: ansi(2),
+  red: ansi(31),
+  yellow: ansi(33),
+  cyan: ansi(36),
+  gray: ansi(90),
+};
+
+const stripAnsi = (text: string) => text.replace(/\x1b\[[0-9;]*m/g, "");
+const INNER_DIVIDER_TOKEN = "__INNER_DIVIDER__";
+const LINT_LINE_LENGTH = 96;
+
+const toRendererRelative = (absolutePath: string): string => {
+  const rel = relative(rendererDir, absolutePath);
+  return rel.startsWith("..") ? absolutePath : rel || ".";
+};
+
+const formatLintBlock = (title: string, rows: string[]): string => {
+  const expandedRows = rows.flatMap((row) => {
+    if (row === INNER_DIVIDER_TOKEN) {
+      return [row];
+    }
+    return row.includes("\n") ? row.split("\n") : [row];
+  });
+
+  const dividerLength = LINT_LINE_LENGTH;
+  const titlePlainLength = stripAnsi(title).length;
+  const trailingLength = Math.max(2, dividerLength - (titlePlainLength + 4));
+  const headingLine = `${styles.yellow("──")} ${styles.bold(
+    title,
+  )} ${styles.yellow("─".repeat(trailingLength))}`;
+  const bottomLine = styles.yellow("─".repeat(dividerLength));
+
+  const innerDivider = styles.yellow("─".repeat(dividerLength));
+
+  const formatRow = (line: string) => {
+    if (line === INNER_DIVIDER_TOKEN) {
+      return innerDivider;
+    }
+    return line.trim().length === 0 ? "" : `  ${line}`;
+  };
+
+  const lines = [
+    "",
+    headingLine,
+    ...expandedRows.map(formatRow),
+    bottomLine,
+    "",
+  ].filter((line, index, arr) => {
+    if (line !== "") {
+      return true;
+    }
+    const prev = index > 0 ? arr[index - 1] : null;
+    return prev !== "";
+  });
+
+  return lines.join("\n");
+};
+
+const logLintWarning = (title: string, rows: string[]) => {
+  console.warn(formatLintBlock(title, rows));
+};
+
+const formatPreviewEntry = (
+  indexLabel: string,
+  label: "zh" | "en",
+  content: string | null | undefined,
+  highlight: boolean,
+): string => {
+  const markerRaw = highlight ? "(!)" : "·";
+  const paddedMarkerRaw = markerRaw.padEnd(3, " ");
+  const baseStyled = highlight ? styles.red("(!)") : styles.gray("·");
+  const styledPadLength = paddedMarkerRaw.length - stripAnsi(baseStyled).length;
+  const markerStyled =
+    styledPadLength > 0
+      ? `${baseStyled}${" ".repeat(styledPadLength)}`
+      : baseStyled;
+  const safeContent =
+    content === null || content === undefined || content.length === 0
+      ? styles.red("(missing)")
+      : content;
+
+  const plainIndex =
+    label === "zh" ? indexLabel : " ".repeat(indexLabel.length);
+  const styledIndex =
+    label === "zh" ? styles.bold(indexLabel) : " ".repeat(indexLabel.length);
+
+  const rawPrefix = `${paddedMarkerRaw} ${plainIndex} ${label}: `;
+  const styledPrefix = `${markerStyled} ${styledIndex} ${styles.dim(label)}: `;
+  const indentedContent = safeContent.replace(
+    /\n/g,
+    `\n${" ".repeat(rawPrefix.length)}`,
+  );
+
+  return `${styledPrefix}${indentedContent}`;
+};
+
+const formatSentenceCount = (
+  count: number,
+  relation: "more" | "fewer" | null,
+) => {
+  const relationText =
+    relation === "more"
+      ? ` ${styles.yellow("(more)")}`
+      : relation === "fewer"
+        ? ` ${styles.red("(fewer)")}`
+        : "";
+  return `${count}${relationText}`;
+};
+
+const formatMetadataRows = (entries: Array<[string, string]>): string[] => {
+  const maxLabelLength = entries.reduce(
+    (max, [label]) => Math.max(max, stripAnsi(label).length),
+    0,
+  );
+
+  return entries.map(([label, value]) => {
+    const paddedLabel = label.padEnd(maxLabelLength, " ");
+    return `${styles.dim(paddedLabel)} : ${value}`;
+  });
+};
+
 const generateSegments = async () => {
   let entries: Array<{
     id: string;
@@ -350,34 +474,10 @@ const generateSegments = async () => {
             englishSentences.length !== chineseSentences.length;
 
           if (englishIsEmpty || sentenceCountMismatch) {
-            const header = `[segments] Translation mismatch in segment "${id}"`;
-            const locationLines = [
-              `  SEGMENT:       ${segmentPath}`,
-              `  TRANSLATION:   ${
-                existsSync(translationPath) ? translationPath : "(missing)"
-              }`,
-            ];
-
-            const detailLines: string[] = [];
-            if (englishIsEmpty) {
-              detailLines.push(
-                "  ISSUE:         English translation is empty while Chinese text is present.",
-              );
-            }
-            if (sentenceCountMismatch) {
-              const relation =
-                englishSentences.length > chineseSentences.length
-                  ? "more"
-                  : "fewer";
-              detailLines.push(
-                `  ISSUE:         Sentence count mismatch (English has ${relation} sentences than Chinese).`,
-              );
-            }
-
-            detailLines.push(
-              `  CHINESE SENTENCES: ${chineseSentences.length}`,
-              `  ENGLISH SENTENCES: ${englishSentences.length}`,
-            );
+            const relation =
+              englishSentences.length > chineseSentences.length
+                ? "more"
+                : "fewer";
 
             const previews: string[] = [];
             const maxPairs = Math.max(
@@ -390,35 +490,38 @@ const generateSegments = async () => {
               if (c === undefined && e === undefined) {
                 break;
               }
-              const marker =
-                c === undefined || e === undefined ? "(!)" : "   ";
-              previews.push(
-                `${marker} [${i}] zh: ${c ?? "(missing)"}\n${marker}      en: ${
-                  e ?? "(missing)"
-                }`,
-              );
+              const indexLabel = `#${i.toString().padStart(2, "0")}`;
+              const highlight = c === undefined || e === undefined;
+              previews.push(formatPreviewEntry(indexLabel, "zh", c, highlight));
+              previews.push(formatPreviewEntry(indexLabel, "en", e, highlight));
             }
 
-            const guidanceLines = [
-              "  HINT:          Ensure that the English translation file:",
-              "                  - Exists for this segment, and",
-              "                  - Has the same number of logical sentences/lines as the Chinese source.",
+            const metadataRows = formatMetadataRows([
+              ["Segmented text", toRendererRelative(segmentPath)],
+              [
+                "Eng. Translation",
+                existsSync(translationPath)
+                  ? toRendererRelative(translationPath)
+                  : styles.red("(missing)"),
+              ],
+              [
+                "Chinese sentences",
+                formatSentenceCount(chineseSentences.length, null),
+              ],
+              [
+                "English sentences",
+                formatSentenceCount(englishSentences.length, relation),
+              ],
+            ]);
+
+            const rows = [
+              ...metadataRows,
+              ...(previews.length > 0
+                ? [INNER_DIVIDER_TOKEN, ...previews]
+                : []),
             ];
 
-            const message = [
-              header,
-              ...locationLines,
-              "",
-              ...detailLines,
-              "",
-              "  PREVIEW:",
-              ...previews,
-              "",
-              ...guidanceLines,
-            ].join("\n");
-
-            // eslint-disable-next-line no-console
-            console.warn(message);
+            logLintWarning(`⚠️  Translation mismatch in ${id}`, rows);
           }
 
           if (hasFemaleAudio) {
