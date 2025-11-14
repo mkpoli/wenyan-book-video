@@ -29,6 +29,7 @@ type QuoteRenderEntry = {
   char: string;
   prefixes: string[];
   suffixes: string[];
+  isInlineCode?: boolean;
 };
 
 type QuoteStackEntry = {
@@ -46,9 +47,18 @@ const OPEN_TO_CLOSE: Record<"「" | "『", "」" | "』"> = {
 function buildQuoteRenderEntries(text: string): QuoteRenderEntry[] {
   const entries: QuoteRenderEntry[] = [];
   const stack: QuoteStackEntry[] = [];
+  let inInlineCode = false;
 
   for (let i = 0; i < text.length; i += 1) {
     const char = text[i];
+
+    // Toggle inline code spans on backticks. The backtick characters themselves
+    // are not rendered; instead, characters inside the span are marked so that
+    // they can be styled (e.g. with a right border) downstream.
+    if (char === "`") {
+      inInlineCode = !inInlineCode;
+      continue;
+    }
 
     if (char === "「" || char === "『") {
       stack.push({
@@ -78,6 +88,7 @@ function buildQuoteRenderEntries(text: string): QuoteRenderEntry[] {
       char,
       prefixes: [],
       suffixes: [],
+      isInlineCode: inInlineCode,
     };
 
     stack.forEach((quote) => {
@@ -130,9 +141,10 @@ function computeKeywordMask(text: string): boolean[] {
   const chars: string[] = [];
 
   for (const char of text) {
-    if (!QUOTE_CHARACTERS.has(char)) {
-      chars.push(char);
+    if (QUOTE_CHARACTERS.has(char) || char === "`") {
+      continue;
     }
+    chars.push(char);
   }
 
   if (chars.length === 0) {
@@ -268,8 +280,22 @@ function renderTextWithQuotes(
     const displayChar =
       entry.char === " " || entry.char === "\u00A0" ? "\u00A0" : entry.char;
     const isKeyword = Boolean(keywordMask?.[index]);
-    const charStyle =
-      !isKeyword && charColor ? { color: charColor } : undefined;
+    const isInlineCode = entry.isInlineCode === true;
+
+    const charStyle: React.CSSProperties | undefined = (() => {
+      const style: React.CSSProperties = {};
+      if (!isKeyword && charColor) {
+        style.color = charColor;
+      }
+      if (isInlineCode) {
+        // In vertical writing mode this visually appears as a horizontal rule
+        // across the inline-code run, which still reads as a "right border".
+        style.borderLeft = "2px solid currentColor";
+        style.paddingLeft = "0em";
+        // style.marginLeft = "0.08em";
+      }
+      return Object.keys(style).length > 0 ? style : undefined;
+    })();
 
     // When rendering the trailing marker(s) (e.g. 「。」), if it belongs to text that is
     // inside quotes in a code block, color it like a string token so it visually
