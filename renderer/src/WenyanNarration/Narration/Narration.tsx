@@ -59,6 +59,7 @@ export const Narration: React.FC<NarrationProps> = ({
               text={segment.text}
               sentences={segment.sentences ?? []}
               fadeInDuration={index === 0 ? transitionFadeInFrames : undefined}
+              isCodeBlock={segment.isCodeBlock}
             />
           </Sequence>
         );

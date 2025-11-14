@@ -13,6 +13,7 @@ interface SegmentTextProps {
   readonly text: string;
   readonly sentences: ReadonlyArray<SentenceEntry>;
   readonly fadeInDuration?: number; // Duration in frames for fade-in, undefined means no fade-in
+  readonly isCodeBlock?: boolean;
 }
 
 type QuoteRenderEntry = {
@@ -185,6 +186,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
   text,
   sentences,
   fadeInDuration,
+  isCodeBlock = false,
 }) => {
   const frame = useCurrentFrame();
   const hasSentenceData = sentences.length > 0;
@@ -231,7 +233,14 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             [{transcriptionLine}]
           </p>
         ) : null}
-        <div className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1">
+        <div
+          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1"
+          style={
+            isCodeBlock
+              ? { outline: "4px solid #000", outlineOffset: "16px" }
+              : undefined
+          }
+        >
           {hasSentenceData
             ? sentences.map((sentence, index) => (
                 <SentenceWithTrailingMarker
