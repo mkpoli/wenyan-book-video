@@ -15,6 +15,10 @@ def _():
 
 @app.cell
 def _(re):
+    def visible_length(text: str) -> int:
+        """Count non-whitespace characters only (ignore spaces, tabs, newlines)."""
+        return len(re.sub(r"\s+", "", text))
+
     def split_paragraphs(text):
         """Split text into paragraphs (separated by blank lines)."""
         # Split by double newlines (blank lines)
@@ -24,13 +28,14 @@ def _(re):
 
     def remove_markdown(text, preserve_newlines=False):
         """Remove markdown formatting from text, preserving paragraph structure.
-        If preserve_newlines is True, line breaks are preserved (for code blocks)."""
+        If preserve_newlines is True, line breaks are preserved (for code blocks).
+
+        Note: fenced code block markers (```...```) are handled at the paragraph
+        level in process_chapter and are not stripped here.
+        """
         # Convert double brackets 「「　」」 to 『 』
         text = text.replace("「「", "『")
         text = text.replace("」」", "』")
-
-        # Remove code block markers (```...```) but keep content as plain text
-        text = re.sub(r"```[\s\S]*?```", lambda m: m.group(0)[3:-3], text)
 
         # Remove inline code markers (`...`) but keep content
         text = re.sub(r"`([^`]+)`", r"\1", text)
@@ -60,8 +65,7 @@ def _(re):
             text = re.sub(r"\n+", " ", text)
             return text.strip()
 
-        # For code blocks, don't strip (preserve leading/trailing newlines if any)
-        # But remove leading/trailing empty lines
+        # For code blocks, don't strip globally; just return normalized text
         return text
 
     def split_sentences(text):
@@ -89,12 +93,12 @@ def _(re):
         This function processes sentences within a single paragraph only."""
         segments = []
         current_segment = []
-        current_length = 0
+        current_length = 0  # measured using visible_length (ignoring whitespace)
         i = 0
 
         while i < len(sentences):
             sentence = sentences[i]
-            sentence_length = len(sentence)
+            sentence_length = visible_length(sentence)
 
             # If current segment is empty, start with this sentence
             if not current_segment:
@@ -129,7 +133,7 @@ def _(re):
                 # If we're in the target range and next sentence would push us over,
                 # consider finalizing (but only if we have more sentences)
                 if current_length >= min_chars and i < len(sentences):
-                    next_sentence_length = len(sentences[i])
+                    next_sentence_length = visible_length(sentences[i])
                     if current_length + next_sentence_length > max_chars:
                         segments.append("".join(current_segment))
                         current_segment = []
@@ -171,16 +175,42 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
         all_segments = []
         segment_metadata = {}
         segment_counter = 1
+        # Track whether we're currently inside a fenced code block (``` ... ```)
+        in_code_block = False
 
         for paragraph in paragraphs:
-            # Check if this paragraph is a code block
-            is_code_block = paragraph.strip().startswith("```")
+            # Detect and strip fenced code markers from this paragraph, and decide if it
+            # is part of a code block that may span multiple paragraphs.
+            lines = paragraph.split("\n")
+            fence_count = 0
+            cleaned_lines = []
+            for line in lines:
+                if line.strip().startswith("```"):
+                    fence_count += 1
+                    # Skip fence lines from content
+                    continue
+                cleaned_lines.append(line)
+
+            # A paragraph is a code block if we are already inside a fenced block
+            # or if this paragraph starts a fenced block.
+            starts_with_fence = bool(lines and lines[0].strip().startswith("```"))
+            is_code_block = in_code_block or starts_with_fence
+
+            # Toggle in_code_block if this paragraph has an odd number of fences
+            if fence_count % 2 == 1:
+                in_code_block = not in_code_block
+
+            paragraph = "\n".join(cleaned_lines)
+
+            # Skip paragraphs that are only fences / whitespace
+            if not paragraph.strip():
+                continue
 
             # Remove markdown from this paragraph
             # Preserve newlines for code blocks
             text = remove_markdown(paragraph, preserve_newlines=is_code_block)
 
-            # Skip empty paragraphs
+            # Skip empty paragraphs after markdown removal
             if not text.strip():
                 continue
 
