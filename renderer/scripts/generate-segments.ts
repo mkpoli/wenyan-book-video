@@ -337,8 +337,8 @@ const generateSegments = async () => {
           // Emit a compiler-style warning if:
           // - There is Chinese text but the overall English translation is
           //   empty/missing.
-          // - The number of English sentences is greater than the number of
-          //   Chinese sentences for this segment.
+          // - The number of English sentences differs from the number of Chinese
+          //   sentences for this segment (missing or extra lines).
           // ------------------------------------------------------------------
           const hasChinese = chineseSentences.length > 0;
           const trimmedTranslation =
@@ -346,10 +346,10 @@ const generateSegments = async () => {
           const englishIsEmpty =
             hasChinese &&
             (trimmedTranslation === null || trimmedTranslation.length === 0);
-          const englishMoreThanChinese =
-            englishSentences.length > chineseSentences.length;
+          const sentenceCountMismatch =
+            englishSentences.length !== chineseSentences.length;
 
-          if (englishIsEmpty || englishMoreThanChinese) {
+          if (englishIsEmpty || sentenceCountMismatch) {
             const header = `[segments] Translation mismatch in segment "${id}"`;
             const locationLines = [
               `  SEGMENT:       ${segmentPath}`,
@@ -364,9 +364,13 @@ const generateSegments = async () => {
                 "  ISSUE:         English translation is empty while Chinese text is present.",
               );
             }
-            if (englishMoreThanChinese) {
+            if (sentenceCountMismatch) {
+              const relation =
+                englishSentences.length > chineseSentences.length
+                  ? "more"
+                  : "fewer";
               detailLines.push(
-                "  ISSUE:         Sentence count mismatch (English has more sentences than Chinese).",
+                `  ISSUE:         Sentence count mismatch (English has ${relation} sentences than Chinese).`,
               );
             }
 
@@ -375,14 +379,23 @@ const generateSegments = async () => {
               `  ENGLISH SENTENCES: ${englishSentences.length}`,
             );
 
-            const previewLimit = 3;
             const previews: string[] = [];
-            for (let i = 0; i < previewLimit; i++) {
+            const maxPairs = Math.max(
+              chineseSentences.length,
+              englishSentences.length,
+            );
+            for (let i = 0; i < maxPairs; i++) {
               const c = chineseSentences[i];
               const e = englishSentences[i];
-              if (c === undefined && e === undefined) break;
+              if (c === undefined && e === undefined) {
+                break;
+              }
+              const marker =
+                c === undefined || e === undefined ? "(!)" : "   ";
               previews.push(
-                `  [${i}] zh: ${c ?? "(none)"}\n      en: ${e ?? "(none)"}`,
+                `${marker} [${i}] zh: ${c ?? "(missing)"}\n${marker}      en: ${
+                  e ?? "(missing)"
+                }`,
               );
             }
 
