@@ -553,7 +553,9 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
     <AbsoluteFill style={{ opacity }}>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
         {transcriptionLine ? (
-          <p className="font-ipa text-4xl tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line">
+          <p
+            className={`font-ipa tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line text-balance ${transcriptionLine.length > 100 ? "text-2xl" : "text-4xl"}`}
+          >
             [{transcriptionLine}]
           </p>
         ) : null}
