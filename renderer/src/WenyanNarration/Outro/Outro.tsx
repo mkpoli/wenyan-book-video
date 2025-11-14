@@ -8,11 +8,15 @@ import {
   useVideoConfig,
 } from "remotion";
 
-export const OUTRO_DURATION_FRAMES = 250; // 9 seconds at 30fps
+export const OUTRO_DURATION_FRAMES = 380; // 12.66 seconds at 30fps
+const AUDIO_START_SECONDS = 4 * 60 + 50; // 4:42 in seconds
 
 export const Outro: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+
+  // Calculate trimBefore in frames: 4:42 = 282 seconds * fps
+  const trimBeforeFrames = AUDIO_START_SECONDS * fps;
 
   const fadeInDuration = fps * 1;
   const fadeOutDuration = fps * 1;
@@ -66,7 +70,11 @@ export const Outro: React.FC = () => {
 
   return (
     <AbsoluteFill className="bg-white flex items-center justify-center px-16">
-      <Html5Audio src={staticFile("audios/bg3.mp3")} volume={audioVolume} />
+      <Html5Audio
+        src={staticFile("audios/bg3.mp3")}
+        volume={audioVolume}
+        trimBefore={trimBeforeFrames}
+      />
       <div
         className="flex flex-col items-center justify-center gap-12 text-center"
         style={{ opacity }}
