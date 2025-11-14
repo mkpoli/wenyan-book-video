@@ -67,8 +67,9 @@ def _():
 
     ## Glossary
     - “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
-
+    - “至此畧備矣” means “Thus it is now briefly complete.”.
     ### Classes
+    - “書之” means “Write it down.”.
 
     - “數” -> “Numbers (numerals)”.
     - “言” -> “Words (strings)”.
