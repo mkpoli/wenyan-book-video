@@ -28,7 +28,8 @@ def _(re):
 
     def remove_markdown(text, preserve_newlines=False):
         """Remove markdown formatting from text, preserving paragraph structure.
-        If preserve_newlines is True, line breaks are preserved (for code blocks).
+        If preserve_newlines is True, line breaks (and exact indentation) are preserved
+        for code blocks.
 
         Note: fenced code block markers (```...```) are handled at the paragraph
         level in process_chapter and are not stripped here.
@@ -47,16 +48,10 @@ def _(re):
         text = re.sub(r"^-\s+", "", text, flags=re.MULTILINE)
 
         if preserve_newlines:
-            # For code blocks, preserve newlines and indentation
-            # Only normalize multiple consecutive spaces/tabs on the same line
-            # (replace multiple spaces/tabs with single space, but keep newlines)
-            lines = text.split("\n")
-            normalized_lines = []
-            for line in lines:
-                # Replace multiple spaces/tabs with single space within the line
-                normalized_line = re.sub(r"[ \t]+", " ", line)
-                normalized_lines.append(normalized_line)
-            text = "\n".join(normalized_lines)
+            # For code blocks, preserve newlines and the exact amount of whitespace.
+            # Do not collapse multiple spaces/tabs; just return the text as-is after
+            # the basic markdown cleanups above.
+            return text
         else:
             # Convert multiple whitespace (but preserve single newlines within paragraph)
             # Replace multiple spaces/tabs with single space
@@ -64,9 +59,6 @@ def _(re):
             # Replace multiple newlines with single space (paragraph boundaries already split)
             text = re.sub(r"\n+", " ", text)
             return text.strip()
-
-        # For code blocks, don't strip globally; just return normalized text
-        return text
 
     def split_sentences(text):
         """Split text into sentences ending with '。'"""
