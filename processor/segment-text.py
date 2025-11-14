@@ -141,7 +141,7 @@ def _(re):
 
 
 @app.cell
-def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences, Path):
+def _(create_segments, json, remove_markdown, split_sentences, Path):
     def segments_exist(chapter_num, output_dir):
         """Check if segments already exist for a chapter."""
         # Check if at least one segment file exists for this chapter
@@ -150,81 +150,60 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
         exists = len(existing_files) > 0
         return exists
 
-    def process_chapter(chapter_path, output_dir):
-        """Process a single chapter file, respecting paragraph boundaries."""
-        # Get chapter number from filename (e.g., "01 明義第一.md" -> "1")
-        chapter_num = chapter_path.stem.split()[0]
-        chapter_num = str(int(chapter_num))  # Remove leading zeros
+    def process_chapter(chapter_json_path, output_dir):
+        """Process a single chapter JSON file from renderer/public/chapters."""
+        # Load chapter data from JSON produced by parse-markdown.py
+        with open(chapter_json_path, "r", encoding="utf-8") as f:
+            chapter_data = json.load(f)
 
-        # Read the chapter
-        with open(chapter_path, "r", encoding="utf-8") as f:
-            content = f.read()
+        chapter_num = chapter_data.get("number")
+        if chapter_num is None:
+            # Fallback: derive from filename like "c1.json"
+            chapter_num = int(chapter_json_path.stem.lstrip("c"))
+        chapter_num = str(int(chapter_num))  # normalize
 
-        # Split into paragraphs first (before removing markdown)
-        paragraphs = split_paragraphs(content)
+        blocks = chapter_data.get("blocks", [])
 
-        # Process each paragraph separately
         all_segments = []
-        segment_metadata = {}
+        segment_metadata: dict[str, dict[str, bool]] = {}
         segment_counter = 1
-        # Track whether we're currently inside a fenced code block (``` ... ```)
-        in_code_block = False
 
-        for paragraph in paragraphs:
-            # Detect and strip fenced code markers from this paragraph, and decide if it
-            # is part of a code block that may span multiple paragraphs.
-            lines = paragraph.split("\n")
-            fence_count = 0
-            cleaned_lines = []
-            for line in lines:
-                if line.strip().startswith("```"):
-                    fence_count += 1
-                    # Skip fence lines from content
+        for block in blocks:
+            block_type = block.get("type")
+            is_code_block = block_type == "code"
+            paragraph_segments = []
+
+            if block_type == "code":
+                # Code block: source contains fenced markdown (``` ... ```).
+                source = block.get("source") or ""
+                lines = source.split("\n")
+                cleaned_lines = []
+                for line in lines:
+                    # Strip fence lines but keep code as-is
+                    if line.strip().startswith("```"):
+                        continue
+                    cleaned_lines.append(line)
+
+                paragraph = "\n".join(cleaned_lines)
+                if not paragraph.strip():
                     continue
-                cleaned_lines.append(line)
 
-            # A paragraph is a code block if we are already inside a fenced block
-            # or if this paragraph starts a fenced block.
-            starts_with_fence = bool(lines and lines[0].strip().startswith("```"))
-            is_code_block = in_code_block or starts_with_fence
+                # Remove minimal markdown but preserve newlines/indentation
+                text = remove_markdown(paragraph, preserve_newlines=True)
+                if not text.strip():
+                    continue
 
-            # Toggle in_code_block if this paragraph has an odd number of fences
-            if fence_count % 2 == 1:
-                in_code_block = not in_code_block
-
-            paragraph = "\n".join(cleaned_lines)
-
-            # Skip paragraphs that are only fences / whitespace
-            if not paragraph.strip():
-                continue
-
-            # Remove markdown from this paragraph
-            # Preserve newlines for code blocks
-            text = remove_markdown(paragraph, preserve_newlines=is_code_block)
-
-            # Skip empty paragraphs after markdown removal
-            if not text.strip():
-                continue
-
-            if is_code_block:
-                # For code blocks, preserve newlines and split by newlines
-                # Create segments that preserve line breaks
+                # Replicate previous code-block segmentation logic
                 lines = text.split("\n")
-                # Filter out empty lines at start/end but preserve internal empty lines
                 while lines and not lines[0].strip():
                     lines.pop(0)
                 while lines and not lines[-1].strip():
                     lines.pop()
 
-                # For code blocks, keep as single segment preserving all newlines
-                # or split into segments if too long, but always preserve newlines
                 code_text = "\n".join(lines)
                 if len(code_text) <= 95:
-                    # Single segment
-                    paragraph_segments = [code_text]
+                    paragraph_segments = [code_text] if code_text else []
                 else:
-                    # Split into multiple segments, but preserve newlines within each
-                    # Split by newlines and group lines into segments
                     paragraph_segments = []
                     current_segment_lines = []
                     current_length = 0
@@ -232,7 +211,6 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
                     for line in lines:
                         line_length = len(line) + 1  # +1 for newline
                         if current_length + line_length > 95 and current_segment_lines:
-                            # Finalize current segment
                             paragraph_segments.append("\n".join(current_segment_lines))
                             current_segment_lines = [line]
                             current_length = line_length
@@ -240,29 +218,52 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
                             current_segment_lines.append(line)
                             current_length += line_length
 
-                    # Add remaining segment
                     if current_segment_lines:
                         paragraph_segments.append("\n".join(current_segment_lines))
-            else:
-                # For regular text, split into sentences and create segments
+
+            elif block_type == "list":
+                # Reconstruct a markdown list paragraph from items so that
+                # remove_markdown + sentence splitting behave as before.
+                items = block.get("items") or []
+                if not items:
+                    continue
+
+                paragraph_markdown = "\n".join(f"- {item}" for item in items)
+                text = remove_markdown(paragraph_markdown, preserve_newlines=False)
+                if not text.strip():
+                    continue
+
                 sentences = split_sentences(text)
                 if sentences:
                     paragraph_segments = create_segments(sentences)
                 else:
-                    # If no sentences ending with '。', still include the text as a segment
-                    # (e.g., short phrases like "乃得" that don't end with a period)
                     if text.strip():
                         paragraph_segments = [text.strip()]
-                    else:
-                        paragraph_segments = []
 
-            # Track metadata for each segment from this paragraph
+            else:
+                # Plain text block
+                source = block.get("source") or ""
+                paragraph = source
+                if not paragraph.strip():
+                    continue
+
+                text = remove_markdown(paragraph, preserve_newlines=False)
+                if not text.strip():
+                    continue
+
+                sentences = split_sentences(text)
+                if sentences:
+                    paragraph_segments = create_segments(sentences)
+                else:
+                    if text.strip():
+                        paragraph_segments = [text.strip()]
+
+            # Track metadata for each segment from this block
             for segment in paragraph_segments:
                 segment_id = f"{chapter_num}-{segment_counter}"
                 segment_metadata[segment_id] = {"isCodeBlock": is_code_block}
                 segment_counter += 1
-
-            all_segments.extend(paragraph_segments)
+                all_segments.append(segment)
 
         # Write segments to files
         for i, segment in enumerate(all_segments, start=1):
@@ -275,39 +276,39 @@ def _(create_segments, json, remove_markdown, split_paragraphs, split_sentences,
         with open(metadata_path, "w", encoding="utf-8") as f:
             json.dump(segment_metadata, f, ensure_ascii=False, indent=2)
 
-        print(f"Processed {chapter_path.name}: {len(all_segments)} segments")
+        print(f"Processed {chapter_json_path.name}: {len(all_segments)} segments")
 
     return process_chapter, segments_exist
 
 
 @app.cell
 def _(Path):
-    book_dir = Path("../book").resolve()
+    chapters_dir = Path("../renderer/public/chapters").resolve()
     output_dir = Path("../renderer/public/segments").resolve()
 
     # Ensure output directory exists
     output_dir.mkdir(exist_ok=True)
 
-    # Find all markdown files in book directory
-    chapter_files = sorted(book_dir.glob("*.md"))
-
-    # Filter out non-chapter files (like README.md, LICENSE)
-    chapter_files = [f for f in chapter_files if f.stem[0].isdigit()]
+    # Find all chapter JSON files
+    chapter_files = sorted(chapters_dir.glob("c*.json"))
     return chapter_files, output_dir
 
 
 @app.cell
-def _(chapter_files, output_dir, process_chapter, segments_exist):
-    # Process each chapter
+def _(chapter_files, json, output_dir, process_chapter, segments_exist):
+    # Process each chapter JSON
     for chapter_file in chapter_files:
-        # Get chapter number from filename (e.g., "01 明義第一.md" -> "1")
-        chapter_num = chapter_file.stem.split()[0]
-        chapter_num = str(int(chapter_num))  # Remove leading zeros
+        with open(chapter_file, "r", encoding="utf-8") as f:
+            chapter_data = json.load(f)
+
+        chapter_num = chapter_data.get("number")
+        if chapter_num is None:
+            chapter_num = int(chapter_file.stem.lstrip("c"))
+        chapter_num = str(int(chapter_num))
 
         # Check if segments already exist
-        pattern = f"{chapter_num}-*.txt"
-        existing_files = list(output_dir.glob(pattern))
-        if existing_files:
+        if segments_exist(chapter_num, output_dir):
+            existing_files = list(output_dir.glob(f"{chapter_num}-*.txt"))
             print(
                 f"Skipping {chapter_file.name}: {len(existing_files)} segment files already exist"
             )
