@@ -6,6 +6,8 @@ import {
   interpolate,
   useCurrentFrame,
   useVideoConfig,
+  AbsoluteFill,
+  useRemotionEnvironment,
 } from "remotion";
 import { Segment } from "../../generated/segments";
 import { SegmentText } from "./SegmentText";
@@ -64,6 +66,7 @@ export const Narration: React.FC<NarrationProps> = ({
         )
       : 0;
 
+  const { isStudio } = useRemotionEnvironment();
   return (
     <>
       {/* Background music for reading segments - bg2.mp3 (starts with first segment) */}
@@ -92,6 +95,13 @@ export const Narration: React.FC<NarrationProps> = ({
             from={segmentStartFrame}
             durationInFrames={visualDurationFrames}
           >
+            {isStudio && (
+              <AbsoluteFill>
+                <div className="absolute top-0 right-0 text-8xl">
+                  <p>Segment {segment.id}</p>
+                </div>
+              </AbsoluteFill>
+            )}
             {/* Audio plays only for its original duration */}
             <Sequence from={0} durationInFrames={audioDurationFrames}>
               <Html5Audio src={staticFile(segment.audioPath)} />
