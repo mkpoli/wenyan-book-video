@@ -7,6 +7,7 @@ import {
   CHAPTER_TITLE_DURATION_FRAMES,
 } from "./WenyanNarration/ChapterTitle";
 import { Narration } from "./WenyanNarration/Narration/Narration";
+import { Outro, OUTRO_DURATION_FRAMES } from "./WenyanNarration/Outro/Outro";
 import { z } from "zod";
 
 export const mainSchema = z.object({
@@ -55,6 +56,9 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
             delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
             transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
           />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={OUTRO_DURATION_FRAMES}>
+          <Outro />
         </Series.Sequence>
       </Series>
     </AbsoluteFill>

@@ -4,6 +4,7 @@ import { Main, mainSchema } from "./Main";
 import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
+import { Outro, OUTRO_DURATION_FRAMES } from "./WenyanNarration/Outro/Outro";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -37,7 +38,8 @@ const calculateChapterDuration = (chapterNumber: number): number => {
       BOOK_INTRODUCTION_DURATION_FRAMES +
       CREATOR_INTRODUCTION_DURATION_FRAMES +
       VIDEO_EXPLANATION_DURATION_FRAMES +
-      CHAPTER_TITLE_DURATION_FRAMES
+      CHAPTER_TITLE_DURATION_FRAMES +
+      OUTRO_DURATION_FRAMES
     );
   }
 
@@ -55,13 +57,14 @@ const calculateChapterDuration = (chapterNumber: number): number => {
     BOOK_INTRODUCTION_DURATION_FRAMES +
     CREATOR_INTRODUCTION_DURATION_FRAMES +
     VIDEO_EXPLANATION_DURATION_FRAMES +
-    CHAPTER_TITLE_DURATION_FRAMES;
+    CHAPTER_TITLE_DURATION_FRAMES +
+    OUTRO_DURATION_FRAMES;
 
   return segmentDuration + delaysDuration + titleDuration;
 };
 
 export const RemotionRoot: React.FC = () => {
-  const currentChapterNumber = 2;
+  const currentChapterNumber = 3;
   return (
     <>
       <Folder name="Elements">
@@ -79,6 +82,14 @@ export const RemotionRoot: React.FC = () => {
           id="Intro"
           component={Intro}
           durationInFrames={INTRO_DURATION_FRAMES}
+          fps={30}
+          width={1920}
+          height={1080}
+        />
+        <Composition
+          id="Outro"
+          component={Outro}
+          durationInFrames={OUTRO_DURATION_FRAMES}
           fps={30}
           width={1920}
           height={1080}
