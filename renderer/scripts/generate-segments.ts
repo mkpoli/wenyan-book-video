@@ -53,7 +53,10 @@ const countCharsExcludingQuotes = (text: string): number => {
   return text.replace(/[「」『』]/g, "").length;
 };
 
-const splitChineseSentences = (text: string): string[] => {
+const splitChineseSentences = (
+  text: string,
+  preserveSpaces = false,
+): string[] => {
   const sentences: string[] = [];
   let currentSentence = "";
   let insideQuotes = false;
@@ -76,9 +79,11 @@ const splitChineseSentences = (text: string): string[] => {
           const nextChar = i + 1 < text.length ? text[i + 1] : null;
           if (nextChar !== "。" && nextChar !== "！" && nextChar !== "？") {
             // Split at 。』 (period followed by closing quote)
-            const trimmed = currentSentence.trim();
-            if (trimmed.length > 0) {
-              sentences.push(trimmed);
+            const processed = preserveSpaces
+              ? currentSentence
+              : currentSentence.trim();
+            if (processed.length > 0) {
+              sentences.push(processed);
             }
             currentSentence = "";
           }
@@ -89,9 +94,11 @@ const splitChineseSentences = (text: string): string[] => {
       !insideQuotes
     ) {
       currentSentence += char;
-      const trimmed = currentSentence.trim();
-      if (trimmed.length > 0) {
-        sentences.push(trimmed);
+      const processed = preserveSpaces
+        ? currentSentence
+        : currentSentence.trim();
+      if (processed.length > 0) {
+        sentences.push(processed);
       }
       currentSentence = "";
     } else {
@@ -100,15 +107,18 @@ const splitChineseSentences = (text: string): string[] => {
   }
 
   // Add any remaining text as the last sentence
-  const trimmed = currentSentence.trim();
-  if (trimmed.length > 0) {
-    sentences.push(trimmed);
+  const processed = preserveSpaces ? currentSentence : currentSentence.trim();
+  if (processed.length > 0) {
+    sentences.push(processed);
   }
 
   return sentences;
 };
 
-const splitEnglishSentences = (translation: string | null): string[] => {
+const splitEnglishSentences = (
+  translation: string | null,
+  preserveSpaces = false,
+): string[] => {
   if (!translation) {
     return [];
   }
@@ -116,23 +126,25 @@ const splitEnglishSentences = (translation: string | null): string[] => {
   const blocks = translation
     .replace(/\r\n/g, "\n")
     .split(/\n+/)
-    .map((part) => part.trim())
+    .map((part) => (preserveSpaces ? part : part.trim()))
     .filter(Boolean);
 
   const sentences: string[] = [];
 
   for (const block of blocks) {
-    const normalized = block.replace(/\s+/g, " ");
+    const normalized = preserveSpaces ? block : block.replace(/\s+/g, " ");
     const matches = normalized.match(/[^.!?]+[.!?]+(?:\u201d|\u2019|"|')?/g);
     if (matches) {
       matches.forEach((sentence) => {
-        const trimmed = sentence.trim();
-        if (trimmed.length > 0) {
-          sentences.push(trimmed);
+        const processed = preserveSpaces ? sentence : sentence.trim();
+        if (processed.length > 0) {
+          sentences.push(processed);
         }
       });
 
-      const remainder = normalized.replace(matches.join(""), "").trim();
+      const remainder = preserveSpaces
+        ? normalized.replace(matches.join(""), "")
+        : normalized.replace(matches.join(""), "").trim();
       if (remainder.length > 0) {
         sentences.push(remainder);
       }
@@ -144,17 +156,22 @@ const splitEnglishSentences = (translation: string | null): string[] => {
   return sentences;
 };
 
-const splitIPATranscriptions = (transcript: string | null): string[] => {
+const splitIPATranscriptions = (
+  transcript: string | null,
+  preserveSpaces = false,
+): string[] => {
   if (!transcript) {
     return [];
   }
 
   // Split IPA transcript by periods (sentence boundaries)
   // Periods are followed by spaces in the transcript format
-  const normalized = transcript.trim().replace(/\s+/g, " ");
+  const normalized = preserveSpaces
+    ? transcript
+    : transcript.trim().replace(/\s+/g, " ");
   const sentences = normalized
     .split(/\s*[\.,]\s*/)
-    .map((sentence) => sentence.trim())
+    .map((sentence) => (preserveSpaces ? sentence : sentence.trim()))
     .filter(Boolean);
 
   return sentences;
@@ -223,25 +240,37 @@ const generateSegments = async () => {
             return null;
           }
 
-          const segmentPath = join(SEGMENTS_DIR, file);
-          const text = readFileSync(segmentPath, "utf-8").trim();
-          const translationPath = join(TRANSLATIONS_DIR, `${id}.txt`);
-          const translation = existsSync(translationPath)
-            ? readFileSync(translationPath, "utf-8").trim()
-            : null;
-          const transcriptPath = join(TRANSCRIPTS_DIR, `audio-${id}.txt`);
-          const transcript = existsSync(transcriptPath)
-            ? readFileSync(transcriptPath, "utf-8").trim()
-            : null;
-
-          const chineseSentences = splitChineseSentences(text);
-          const englishSentences = splitEnglishSentences(translation);
-          const ipaSentences = splitIPATranscriptions(transcript);
-
           // Get chapter number from segment ID (e.g., "3-1" -> "3")
           const chapterNum = id.split("-")[0];
           const metadata = chapterMetadata[chapterNum]?.[id];
           const isCodeBlock = metadata?.isCodeBlock ?? false;
+
+          const segmentPath = join(SEGMENTS_DIR, file);
+          const rawText = readFileSync(segmentPath, "utf-8");
+          const text = isCodeBlock ? rawText : rawText.trim();
+          const translationPath = join(TRANSLATIONS_DIR, `${id}.txt`);
+          const rawTranslation = existsSync(translationPath)
+            ? readFileSync(translationPath, "utf-8")
+            : null;
+          const translation =
+            isCodeBlock && rawTranslation
+              ? rawTranslation
+              : (rawTranslation?.trim() ?? null);
+          const transcriptPath = join(TRANSCRIPTS_DIR, `audio-${id}.txt`);
+          const rawTranscript = existsSync(transcriptPath)
+            ? readFileSync(transcriptPath, "utf-8")
+            : null;
+          const transcript =
+            isCodeBlock && rawTranscript
+              ? rawTranscript
+              : (rawTranscript?.trim() ?? null);
+
+          const chineseSentences = splitChineseSentences(text, isCodeBlock);
+          const englishSentences = splitEnglishSentences(
+            translation,
+            isCodeBlock,
+          );
+          const ipaSentences = splitIPATranscriptions(transcript, isCodeBlock);
 
           if (hasFemaleAudio) {
             debugLog(`Using female voice for segment ${id}.`);
