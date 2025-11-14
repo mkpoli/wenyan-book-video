@@ -3,7 +3,15 @@ import { Composition, Folder } from "remotion";
 import { Main, mainSchema, NARRATION_TAIL_FRAMES } from "./Main";
 import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
-import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
+import {
+  Intro,
+  INTRO_DURATION_FRAMES,
+  BOOK_TITLE_DURATION_FRAMES,
+  WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES,
+  BOOK_INTRODUCTION_DURATION_FRAMES,
+  CREATOR_INTRODUCTION_DURATION_FRAMES,
+  VIDEO_EXPLANATION_DURATION_FRAMES,
+} from "./WenyanNarration/Intro/Intro";
 import { Outro, OUTRO_DURATION_FRAMES } from "./WenyanNarration/Outro/Outro";
 
 // Each <Composition> is an entry in the sidebar!
@@ -12,11 +20,6 @@ const segments = loadSegments();
 const DEFAULT_DURATION_FRAMES = 150;
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const CHAPTER_TITLE_DURATION_FRAMES = 90; // 3 seconds at 30fps
-const BOOK_TITLE_DURATION_FRAMES = 120; // 4 seconds at 30fps
-const WENYAN_LANGUAGE_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const BOOK_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const CREATOR_INTRODUCTION_DURATION_FRAMES = 240; // 8 seconds at 30fps
-const VIDEO_EXPLANATION_DURATION_FRAMES = 240; // 8 seconds at 30fps
 
 // Get unique chapter numbers
 // const uniqueChapters = new Set(
