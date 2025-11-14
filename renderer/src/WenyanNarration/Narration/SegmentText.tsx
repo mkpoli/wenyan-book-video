@@ -234,7 +234,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           </p>
         ) : null}
         <div
-          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1"
+          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9"
           style={
             isCodeBlock
               ? { outline: "4px solid #000", outlineOffset: "16px" }
