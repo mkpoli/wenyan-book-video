@@ -177,21 +177,21 @@ def _(create_segments, json, remove_markdown, split_sentences, Path):
                 # Code block: source contains fenced markdown (``` ... ```).
                 source = block.get("source") or ""
                 lines = source.split("\n")
-                cleaned_lines = []
-                for line in lines:
-                    # Strip fence lines but keep code as-is
-                    if line.strip().startswith("```"):
-                        continue
-                    cleaned_lines.append(line)
-
-                paragraph = "\n".join(cleaned_lines)
-                if not paragraph.strip():
+            cleaned_lines = []
+            for line in lines:
+                # Strip fence lines but keep code as-is
+                if line.strip().startswith("```"):
                     continue
+                cleaned_lines.append(line)
+
+            paragraph = "\n".join(cleaned_lines)
+            if not paragraph.strip():
+                continue
 
                 # Remove minimal markdown but preserve newlines/indentation
                 text = remove_markdown(paragraph, preserve_newlines=True)
-                if not text.strip():
-                    continue
+            if not text.strip():
+                continue
 
                 # Replicate previous code-block segmentation logic
                 lines = text.split("\n")
