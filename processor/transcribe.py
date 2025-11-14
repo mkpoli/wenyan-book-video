@@ -15,15 +15,58 @@ def _():
 
 @app.cell(hide_code=True)
 def _(requests):
-    # Download the dictionary
-    print("Downloading dictionary...")
-    dictionary_response = requests.get("https://qieyun-tts.com/dictionary_txt")
-    if dictionary_response.status_code != 200:
-        raise Exception(
-            f"Failed to download dictionary: {dictionary_response.status_code}"
-        )
-    print(f"Dictionary downloaded: {len(dictionary_response.text.splitlines())} lines")
-    dictionary_text = dictionary_response.text
+    import os
+    import time
+    from datetime import timedelta
+    from pathlib import Path
+
+    CACHE_MAX_AGE = timedelta(days=7)
+    cache_root = Path(os.getenv("XDG_CACHE_HOME", Path.home() / ".cache"))
+    cache_dir = cache_root / "wenyan-book-video"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_path = cache_dir / "qieyun_dictionary.txt"
+
+    def cache_is_fresh(path: Path) -> bool:
+        try:
+            mtime = path.stat().st_mtime
+        except FileNotFoundError:
+            return False
+        age = time.time() - mtime
+        return age <= CACHE_MAX_AGE.total_seconds()
+
+    dictionary_text: str | None = None
+
+    if cache_path.exists():
+        if cache_is_fresh(cache_path):
+            print(f"Using cached dictionary from {cache_path}")
+            dictionary_text = cache_path.read_text(encoding="utf-8")
+        else:
+            print(f"Dictionary cache found but stale ({cache_path}), attempting refresh...")
+    else:
+        print(f"No cached dictionary found at {cache_path}, downloading...")
+
+    if dictionary_text is None:
+        try:
+            response = requests.get(
+                "https://qieyun-tts.com/dictionary_txt", timeout=30
+            )
+            response.raise_for_status()
+            dictionary_text = response.text
+            cache_path.write_text(dictionary_text, encoding="utf-8")
+            print(
+                f"Dictionary downloaded and cached ({len(dictionary_text.splitlines())} lines)"
+            )
+        except Exception as download_error:
+            if cache_path.exists():
+                print(
+                    "Warning: Failed to refresh dictionary, falling back to cached copy:"
+                    f" {download_error}"
+                )
+                dictionary_text = cache_path.read_text(encoding="utf-8")
+            else:
+                raise RuntimeError(
+                    "Failed to download Qieyun dictionary and no cache is available."
+                ) from download_error
     return (dictionary_text,)
 
 
@@ -179,12 +222,39 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
     from functools import lru_cache
     import subprocess
     import json
+    import os
+    from shutil import which
+
+    def resolve_bun_executable() -> Path | None:
+        """Locate Bun using environment hints or PATH."""
+        bun_candidates: list[Path] = []
+
+        bun_install = os.getenv("BUN_INSTALL")
+        if bun_install:
+            bun_candidates.append(Path(bun_install) / "bin" / "bun")
+
+        bun_path = os.getenv("BUN_PATH")
+        if bun_path:
+            bun_candidates.append(Path(bun_path))
+
+        default_install = Path.home() / ".bun" / "bin" / "bun"
+        bun_candidates.append(default_install)
+
+        path_candidate = which("bun")
+        if path_candidate:
+            bun_candidates.append(Path(path_candidate))
+
+        for candidate in bun_candidates:
+            if candidate and candidate.is_file() and os.access(candidate, os.X_OK):
+                return candidate.resolve()
+
+        return None
 
     lookup_script = Path(__file__).resolve().parent / "lookup_meaning.ts"
     lookup_cwd = lookup_script.parent
-    bun_executable = Path("/home/mkpoli/.bun/bin/bun")
+    bun_executable = resolve_bun_executable()
     lookup_script_exists = lookup_script.exists()
-    bun_exists = bun_executable.exists()
+    bun_exists = bun_executable is not None
 
     @lru_cache(maxsize=None)
     def _lookup_meaning_cached(
@@ -202,9 +272,9 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
                 "Definitions will be omitted."
             )
             return []
-        if not bun_exists:
+        if not bun_exists or bun_executable is None:
             print(
-                f"Error: Bun executable not found at {bun_executable}. "
+                "Error: Bun executable not found in $BUN_INSTALL, $BUN_PATH, or PATH. "
                 "Unable to load local definitions."
             )
             return []
@@ -222,8 +292,7 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
             )
         except FileNotFoundError:
             print(
-                f"Error: Bun executable not found at {bun_executable}. "
-                "Unable to load local definitions."
+                "Error: Bun executable became unavailable while invoking lookup helper."
             )
             return []
         except subprocess.CalledProcessError as exc:
