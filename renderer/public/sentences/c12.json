@@ -1,0 +1,1591 @@
+{
+  "chapterId": "c12",
+  "number": 12,
+  "title": "圖畫第十二",
+  "sentences": [
+    {
+      "id": "c12-s1",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 1,
+      "source": "子曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s2",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 2,
+      "source": "游於藝。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s3",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 3,
+      "source": "昔庖犧作卦。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s4",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 4,
+      "source": "史皇作圖。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s5",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 5,
+      "source": "乃有鳥鼎鸞旂。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s6",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 6,
+      "source": "琱戈黼黻。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s7",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 7,
+      "source": "輿圖絺繡。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s8",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 8,
+      "source": "九州十服。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s9",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 9,
+      "source": "屈子謁廟厥有天問。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s10",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 10,
+      "source": "荀卿屬文以為養目。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s11",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 11,
+      "source": "雲臺畫壁以旌功臣。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s12",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 12,
+      "source": "洛陽鑿磚以紀射馳。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s13",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 13,
+      "source": "毛寫昭君。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s14",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 14,
+      "source": "至於棄市。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s15",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 15,
+      "source": "顧描鄰女。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s16",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 16,
+      "source": "竟得悅之。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s17",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 17,
+      "source": "弗興畫龍。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s18",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 18,
+      "source": "百年祝雨。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s19",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 19,
+      "source": "僧繇點睛。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s20",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 20,
+      "source": "一時飛去。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s21",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 21,
+      "source": "曹為梵象。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s22",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 22,
+      "source": "其衣出水。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s23",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 23,
+      "source": "吳寫神仙。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s24",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 24,
+      "source": "其帶當風。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s25",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 25,
+      "source": "李將軍富貴入畫。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s26",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 26,
+      "source": "雍容金碧。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s27",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 27,
+      "source": "王右丞以畫為詩。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s28",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 28,
+      "source": "幽雅超逸。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s29",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 29,
+      "source": "凌煙功臣。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s30",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 30,
+      "source": "太宗得諸立本。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s31",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 31,
+      "source": "御園駿馬。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s32",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 32,
+      "source": "子美觀諸曹霸。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s33",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 33,
+      "source": "韓幹馬。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s34",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 34,
+      "source": "韓滉牛。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s35",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 35,
+      "source": "宣和鶴。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s36",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 36,
+      "source": "元吉猴。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s37",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 37,
+      "source": "徐熙野筆。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s38",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 38,
+      "source": "黃荃精勾。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s39",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 39,
+      "source": "荊關山峻。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s40",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 40,
+      "source": "米家雲悠。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s41",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 41,
+      "source": "雲林蕭索。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s42",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 42,
+      "source": "松雪俊秀。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s43",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 43,
+      "source": "老蓮高古。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s44",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 44,
+      "source": "桃庵風流。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s45",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 45,
+      "source": "理論董九友。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s46",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 46,
+      "source": "工細仇十洲。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s47",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 47,
+      "source": "有清以降。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s48",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 48,
+      "source": "丹青傳世者不計其數。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s49",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 49,
+      "source": "吾曹先人之苗裔兮。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s50",
+      "chapterId": "c12",
+      "blockId": "b1",
+      "index": 50,
+      "source": "宜乎哉其畫脈之繼武。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s51",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 51,
+      "source": "今以程式為翰墨。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s52",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 52,
+      "source": "其術有「備紙」「落筆」「運筆」「提筆」云。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s53",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 53,
+      "source": "蓋皆以畫家語方之也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s54",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 54,
+      "source": "「備紙」者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s55",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 55,
+      "source": "參二。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s56",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 56,
+      "source": "紙之縱橫長寬也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s57",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 57,
+      "source": "得其紙。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s58",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 58,
+      "source": "輒「落筆」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s59",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 59,
+      "source": "「落筆」者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s60",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 60,
+      "source": "起其一劃也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s61",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 61,
+      "source": "「運筆」者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s62",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 62,
+      "source": "一劃既起。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s63",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 63,
+      "source": "連筆而畫也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s64",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 64,
+      "source": "參皆三。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s65",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 65,
+      "source": "一者其紙。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s66",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 66,
+      "source": "二三者東南。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s67",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 67,
+      "source": "東者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s68",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 68,
+      "source": "其筆去紙左之遠近。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s69",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 69,
+      "source": "南者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s70",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 70,
+      "source": "去紙頂之遠近。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s71",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 71,
+      "source": "皆所以定方位者也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s72",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 72,
+      "source": "運筆再三。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s73",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 73,
+      "source": "而一劃既成。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s74",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 74,
+      "source": "乃施「提筆」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s75",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 75,
+      "source": "欲復更有所畫者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s76",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 76,
+      "source": "則復以落筆運筆提筆次第為之云。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s77",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 77,
+      "source": "畫成。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s78",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 78,
+      "source": "裱以示人。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s79",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 79,
+      "source": "古人以識丁字為最易。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s80",
+      "chapterId": "c12",
+      "blockId": "b2",
+      "index": 80,
+      "source": "今且畫丁字為例。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s81",
+      "chapterId": "c12",
+      "blockId": "b3",
+      "index": 81,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「落筆」「運筆」「提筆」「裱畫」之義。\n\n施「備紙」於二百。於二百。名之曰「紙」。\n\n注曰。「「先書丁字之一橫」」\n施「落筆」於「紙」於五十。於五十。\n施「運筆」於「紙」於一百五十。於五十。\n施「提筆」於「紙」。\n\n注曰。「「復書丁字之豎鉤」」\n施「落筆」於「紙」於一百。於五十。\n施「運筆」於「紙」於一百。於一百五十。\n施「運筆」於「紙」於九十。於一百四十。\n施「提筆」於「紙」。\n\n施「裱畫」於「紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s82",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 82,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s83",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 83,
+      "source": "適所畫者黑。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s84",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 84,
+      "source": "欲其紅。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s85",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 85,
+      "source": "當何如。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s86",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 86,
+      "source": "適筆細。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s87",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 87,
+      "source": "欲粗。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s88",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 88,
+      "source": "當何如。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s89",
+      "chapterId": "c12",
+      "blockId": "b4",
+      "index": 89,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s90",
+      "chapterId": "c12",
+      "blockId": "b5",
+      "index": 90,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「擇筆」「蘸色」「落筆」「運筆」「提筆」「裱畫」之義。\n施「備紙」於二百。於二百。名之曰「紙」。\n\n施「蘸色」於「紙」於「「大紅」」。\n施「擇筆」於「紙」於十二。\n注曰。「「大紅者。赤之正者也。十二者。筆鋒之粗細也」」\n\n注曰。「「色既蘸也。畫法如前」」\n施「落筆」於「紙」於五十。於五十。\n施「運筆」於「紙」於一百五十。於五十。\n施「提筆」於「紙」。\n\n注曰。「「更易一色為丁字之鉤」」\n施「蘸色」於「紙」於「「硃磦」」。\n施「落筆」於「紙」於一百。於五十。\n施「運筆」於「紙」於一百。於一百五十。\n施「運筆」於「紙」於九十。於一百四十。\n施「提筆」於「紙」。\n\n施「裱畫」於「紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s91",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 91,
+      "source": "十三色者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s92",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 92,
+      "source": "曰黑。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s93",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 93,
+      "source": "曰鈦白。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s94",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 94,
+      "source": "曰藤黃。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s95",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 95,
+      "source": "曰硃磦。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s96",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 96,
+      "source": "曰硃砂。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s97",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 97,
+      "source": "曰胭脂。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s98",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 98,
+      "source": "曰曙紅。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s99",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 99,
+      "source": "曰赭石。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s100",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 100,
+      "source": "曰大紅。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s101",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 101,
+      "source": "曰花青。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s102",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 102,
+      "source": "曰三綠。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s103",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 103,
+      "source": "曰酞青藍。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s104",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 104,
+      "source": "曰三青。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s105",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 105,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s106",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 106,
+      "source": "擇筆蘸色者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s107",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 107,
+      "source": "唯筆也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s108",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 108,
+      "source": "干其紙底事耶。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s109",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 109,
+      "source": "乃以紙為参。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s110",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 110,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s111",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 111,
+      "source": "一紙其為一圖也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s112",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 112,
+      "source": "圖非一乃各營其具。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s113",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 113,
+      "source": "是故明之。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s114",
+      "chapterId": "c12",
+      "blockId": "b6",
+      "index": 114,
+      "source": "例曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s115",
+      "chapterId": "c12",
+      "blockId": "b7",
+      "index": 115,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「擇筆」「蘸色」「落筆」「運筆」「提筆」「裱畫」之義。\n\n施「備紙」於二百。於二百。名之曰「甲紙」。\n施「備紙」於二百。於二百。名之曰「乙紙」。\n\n施「蘸色」於「甲紙」於「「赭石」」。\n施「擇筆」於「甲紙」於五。\n施「落筆」於「甲紙」於五十。於五十。\n施「運筆」於「甲紙」於一百五十。於一百五十。\n施「提筆」於「甲紙」。\n\n注曰。「「乙紙之用筆。與甲無與也」」\n施「蘸色」於「乙紙」於「「花青」」。\n施「擇筆」於「乙紙」於十。\n施「落筆」於「乙紙」於一百五十。於五十。\n施「運筆」於「乙紙」於五十。於一百五十。\n施「提筆」於「乙紙」。\n\n注曰。「「甲紙之用筆。亦與乙無與也」」\n施「落筆」於「甲紙」於一百五十。於五十。\n施「運筆」於「甲紙」於五十。於一百五十。\n施「提筆」於「甲紙」。\n\n施「裱畫」於「甲紙」於「「出」」。\n施「裱畫」於「乙紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s116",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 116,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s117",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 117,
+      "source": "吾有一色。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s118",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 118,
+      "source": "非赤非青。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s119",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 119,
+      "source": "介乎兩者之間者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s120",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 120,
+      "source": "不在十三色之中。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s121",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 121,
+      "source": "可得乎。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s122",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 122,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s123",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 123,
+      "source": "色其濃甚。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s124",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 124,
+      "source": "欲薄施淡掃。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s125",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 125,
+      "source": "可為乎。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s126",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 126,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s127",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 127,
+      "source": "以「調色」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s128",
+      "chapterId": "c12",
+      "blockId": "b8",
+      "index": 128,
+      "source": "以「蘸水」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s129",
+      "chapterId": "c12",
+      "blockId": "b9",
+      "index": 129,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「擇筆」「蘸色」「蘸水」「調色」「落筆」「運筆」「提筆」「裱畫」之義。\n施「備紙」於二百。於二百。名之曰「紙」。\n\n施「蘸色」於「紙」於「「藤黃」」。\n\n施「調色」於「紙」於「「花青」」於五分。\n注曰。「「調色者。参三。曰紙。曰色。曰比」」\n疏曰。「「色者。混前色於是色也。比者。零一間分數也。大之則重新色。小之則重舊色」」\n\n施「蘸水」於「紙」於四分。\n注曰。「「蘸水者。参二。曰紙。曰比。比者。亦零一間分數也。大之則色淡。小之則色濃」」\n疏曰。「「必先蘸色調色而後蘸水也。」」\n\n施「擇筆」於「紙」於十。\n施「落筆」於「紙」於五十。於五十。\n施「運筆」於「紙」於一百五十。於一百五十。\n施「提筆」於「紙」。\n\n施「落筆」於「紙」於一百五十。於五十。\n施「運筆」於「紙」於五十。於一百五十。\n施「提筆」於「紙」。\n\n施「裱畫」於「紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s130",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 130,
+      "source": "又凡曰蘸色。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s131",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 131,
+      "source": "曩所調之色輒棄之。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s132",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 132,
+      "source": "蓋另為一色也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s133",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 133,
+      "source": "又色可再三調。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s134",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 134,
+      "source": "蘸水亦如是。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s135",
+      "chapterId": "c12",
+      "blockId": "b10",
+      "index": 135,
+      "source": "愈蘸彌淡也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s136",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 136,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s137",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 137,
+      "source": "適所畫。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s138",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 138,
+      "source": "勾線也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s139",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 139,
+      "source": "欲設色。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s140",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 140,
+      "source": "當何如。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s141",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 141,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s142",
+      "chapterId": "c12",
+      "blockId": "b11",
+      "index": 142,
+      "source": "當易「提筆」為「設色」如是。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s143",
+      "chapterId": "c12",
+      "blockId": "b12",
+      "index": 143,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「落筆」「運筆」「設色」「裱畫」之義。\n施「備紙」於二百。於二百。名之曰「紙」。\n\n注曰。「「四角畫方也」」\n施「落筆」於「紙」於五十。於五十。\n施「運筆」於「紙」於一百五十。於五十。\n施「運筆」於「紙」於一百五十。於一百五十。\n施「運筆」於「紙」於五十。於一百五十。\n施「設色」於「紙」。\n\n施「裱畫」於「紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s144",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 144,
+      "source": "古人曰青。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s145",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 145,
+      "source": "通稱也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s146",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 146,
+      "source": "其色每不同指。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s147",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 147,
+      "source": "譬有「又疑瑤台鏡。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s148",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 148,
+      "source": "飛在青雲端」又有「大道如青天。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s149",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 149,
+      "source": "我獨不得出」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s150",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 150,
+      "source": "天與雲豈同色耶。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s151",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 151,
+      "source": "譬有「青天白日摧紫荊」又有「青天有月來幾時」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s152",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 152,
+      "source": "晝夜豈亦同色耶。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s153",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 153,
+      "source": "譬有「朝如青絲暮成雪」又有「今朝東門柳。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s154",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 154,
+      "source": "夾道垂青絲」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s155",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 155,
+      "source": "髮柳之為絲者同。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s156",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 156,
+      "source": "豈其色亦同耶。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s157",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 157,
+      "source": "最奇者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s158",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 158,
+      "source": "當數孔雀東南飛「青雀白鵠舫」至「皆用青絲穿」四十言。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s159",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 159,
+      "source": "蓋今曰綠。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s160",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 160,
+      "source": "曰藍。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s161",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 161,
+      "source": "曰青。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s162",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 162,
+      "source": "曰灰。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s163",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 163,
+      "source": "曰黑者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s164",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 164,
+      "source": "古皆云青一字蔽之。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s165",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 165,
+      "source": "兹戲為「青圖」。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s166",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 166,
+      "source": "夫「青圖」者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s167",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 167,
+      "source": "融諸青於一圖。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s168",
+      "chapterId": "c12",
+      "blockId": "b13",
+      "index": 168,
+      "source": "而相漸變也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s169",
+      "chapterId": "c12",
+      "blockId": "b14",
+      "index": 169,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「蘸色」「調色」「落筆」「運筆」「設色」「裱畫」之義。\n\n吾有一數。曰二百。名之曰「廣」。注曰「「紙之長寬也」」。\n施「備紙」於「廣」。於「廣」。名之曰「紙」。\n\n吾有一數。曰十。名之曰「度」。注曰。「「漸變之層次也」」。\n\n注曰「「四角各一色。循環相嵌者。所以為縱橫之漸變也」」\n吾有一數。名之曰「戊」。為是「度」遍。\n\t吾有一數。名之曰「戌」。為是「度」遍。\n\t\n\t\t注曰「「因縱橫之位。算四色之比也」」\n\t\t減「度」以一。除其於「戊」。名之曰「甲」。減「甲」於一。名之曰「乙」。\n\t\t減「度」以一。除其於「戌」。名之曰「丙」。減「丙」於一。名之曰「丁」。\t\t\n\t\t乘「乙」以「丙」。名之曰「庚」。加「丁」以「庚」。除其於「庚」。名之曰「壬」。\n\t\t乘「甲」以「丙」。名之曰「辛」。\n\t\t\n\t\t注曰「「算得其比。乃調四色也。唯甲壬辛之序斷不可易。慎之」」\n\t\t施「蘸色」於「紙」於「「三青」」。\n\t\t施「調色」於「紙」於「「三綠」」於「甲」。\n\t\t施「調色」於「紙」於「「酞青藍」」於「壬」。\n\t\t施「調色」於「紙」於「「硃砂」」於「辛」。\n\t\t\n\t\t注曰「「棋布於紙上」」\n\t\t除「廣」以「度」。名之曰「子」。\n\t\t乘「子」以「戊」。名之曰「西」。加「西」以「子」。名之曰「東」。\n\t\t乘「子」以「戌」。名之曰「北」。加「北」以「子」。名之曰「南」。\n\t\t\n\t\t注曰「「乃以是色畫方也」」\n\t\t施「落筆」於「紙」於「西」。於「北」。\n\t\t施「運筆」於「紙」於「東」。於「北」。\n\t\t施「運筆」於「紙」於「東」。於「南」。\n\t\t施「運筆」於「紙」於「西」。於「南」。\n\t\t施「設色」於「紙」。\n\t\t\n\t加「戌」以一。昔之「戌」者。今其是矣。云云。\n加「戊」以一。昔之「戊」者。今其是矣。云云。\n\n施「裱畫」於「紙」於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s170",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 170,
+      "source": "分形者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s171",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 171,
+      "source": "圖形之遞歸者也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s172",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 172,
+      "source": "譬木發二枝。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s173",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 173,
+      "source": "枝各發二小枝。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s174",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 174,
+      "source": "小枝復發焉。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s175",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 175,
+      "source": "二生四。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s176",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 176,
+      "source": "四生八。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s177",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 177,
+      "source": "八生十六也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s178",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 178,
+      "source": "或譬雪華一片。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s179",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 179,
+      "source": "熟視其角。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s180",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 180,
+      "source": "如復有小霙於其中然。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s181",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 181,
+      "source": "或譬鹿茸。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s182",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 182,
+      "source": "或譬閃電。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s183",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 183,
+      "source": "其美也如是。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s184",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 184,
+      "source": "然人之欲之圖者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s185",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 185,
+      "source": "則頗恨其繁複。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s186",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 186,
+      "source": "而假機器為之。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s187",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 187,
+      "source": "雖百疊千重。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s188",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 188,
+      "source": "亦能分毫畢現也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s189",
+      "chapterId": "c12",
+      "blockId": "b15",
+      "index": 189,
+      "source": "今以畫樹為例。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s190",
+      "chapterId": "c12",
+      "blockId": "b16",
+      "index": 190,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「擇筆」「落筆」「運筆」「提筆」「裱畫」之義。\n吾嘗觀「「算經」」之書。方悟「正弦」「餘弦」「半圓周率」之義。\n注曰。「「正弦者。得股弦之角而知其勾弦之比。餘弦者。得股弦之角而知其股弦之比。」」\n注曰。「「角者。以二倍圓周率為一周。於古書之三百六十又四分之一度不同也」」\n\n吾有一術。名之曰「畫樹法」。欲行是術。必先得一物。曰「紙」。\n五數。曰「東」曰「南」曰「長」曰「粗」曰「向」。是術曰。\n\n\t施「餘弦」於「向」。乘其以「長」。加其以「東」。名之曰「末東」\n\t施「正弦」於「向」。乘其以「長」。減其於「南」。名之曰「末南」\n\t注曰「「正餘弦者。所以自枝之向算其末端之方位也。」」\n\n\t施「擇筆」於「紙」於「粗」。\n\n\t施「落筆」於「紙」於「東」於「南」。\n\t施「運筆」於「紙」於「末東」於「末南」。\n\t施「提筆」於「紙」。\n\t注曰。「「是畫本枝也」」\n\n\t加「向」以零又三分。名之曰「左向」。\n\t減「向」以零又三分。名之曰「右向」。\n\t注曰。「「是算左右小枝所向也」」\n\t\n\t乘「長」以零又八分。名之曰「枝長」。\n\t乘「粗」以零又八分。名之曰「枝粗」。\n\t注曰。「「是遞減其粗長也」」\n\n\t若「枝長」小於五者。乃歸空無也。\n\t注曰。「「枝小甚。目不能辨。遂止不畫」」\n\n\t施「畫樹法」於「紙」。於「末東」。於「末南」。於「枝長」。於「枝粗」。於「左向」。\n\t施「畫樹法」於「紙」。於「末東」。於「末南」。於「枝長」。於「枝粗」。於「右向」。\n\t注曰。「「是以遞歸畫左右小枝也」」\n\t\n是謂「畫樹法」之術也。\n\n施「備紙」於二百五十六。於二百五十六。名之曰「紙」。\n施「畫樹法」於「紙」。於一百二十八。於二百五十六。於五十。於五。於「半圓周率」。\n施「裱畫」於「紙」於「「出」」",
+      "isCode": true
+    },
+    {
+      "id": "c12-s191",
+      "chapterId": "c12",
+      "blockId": "b17",
+      "index": 191,
+      "source": "復以畫霙為例。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s192",
+      "chapterId": "c12",
+      "blockId": "b18",
+      "index": 192,
+      "source": "吾嘗觀「「畫譜」」之書。方悟「備紙」「落筆」「運筆」「提筆」「裱畫」之義。\n\n注曰「「雪華六角。一角二邊。計十二邊。今以四邊為一瓣。邊角邊者也。如是者計三瓣。是術畫其一瓣」」\n注曰「「瓣術曰。層數盡。輒畫為邊。不然。則瓣之四邊各以本法畫之。而減其層數以為遞歸也。」」\n\n吾有一術。名之曰「畫霙」。欲行是術。必先得一物。曰「紙」。\n五數。曰「起東」曰「起南」曰「訖東」曰「訖南」。曰「層數」乃行是術曰。\n注曰「「起訖者。定瓣之方位也」」\n\n\t注曰。「「層盡矣。故直畫為邊。」」\n\t若「層數」等於零者。\n\t\t施「落筆」於「紙」於「起東」於「起南」。\n\t\t施「運筆」於「紙」於「訖東」於「訖南」。\n\t\t施「提筆」於「紙」。\n\t\t乃歸空無也。\n\t\n\t注曰「「四邊之交三。升降者。左右之交也。因其勢而名之」」\n\t乘「起東」以二。加其以「訖東」。除其以三。名之曰「升東」。\n\t乘「訖東」以二。加其以「起東」。除其以三。名之曰「降東」。\n\t乘「起南」以二。加其以「訖南」。除其以三。名之曰「升南」。\n\t乘「訖南」以二。加其以「起南」。除其以三。名之曰「降南」。\n\t\n\t注曰「「勾股者。蓋以其邊為弦。取其長也」」\n\t減「起東」於「訖東」。除其以三。名之曰「勾」。\n\t減「起南」於「訖南」。除其以三。名之曰「股」。\n\t\n\t注曰「「峰者。正中之交也。亦因勢而名」」\n\t疏曰「「一又七分三釐二毫者。三之平方根。股一弦二之勾也。」」\n\t乘「股」以一又七分三釐二毫。減其於「勾」。除其以二。加其以「升東」。名之曰「峰東」。\n\t乘「勾」以一又七分三釐二毫。加其於「股」。除其以二。加其以「升南」。名之曰「峰南」。\n\n\t注曰「「四邊各以本法遞歸」」\n\t減「層數」以一。昔之「層數」者。今其是矣。\n\t施「畫霙」於「紙」於「起東」於「起南」於「升東」於「升南」於「層數」。\n\t施「畫霙」於「紙」於「升東」於「升南」於「峰東」於「峰南」於「層數」。\n\t施「畫霙」於「紙」於「峰東」於「峰南」於「降東」於「降南」於「層數」。\n\t施「畫霙」於「紙」於「降東」於「降南」於「訖東」於「訖南」於「層數」。\n\n是謂「畫霙」之術也。\n\n施「備紙」於四百。於四百。名之曰「紙」。\n\n注曰「「左右下三瓣一一畫之。六角雪華成矣。試易其層數。以觀簡繁之異趣」」\n施「畫霙」於「紙」。於二百。於十。於五十。於三百十。於五。\n施「畫霙」於「紙」。於三百五十。於三百十。於二百。於十。於五。\n施「畫霙」於「紙」。於五十。於三百十。於三百五十。於三百十。於五。\n施「裱畫」於「紙」。於「「出」」。",
+      "isCode": true
+    },
+    {
+      "id": "c12-s193",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 193,
+      "source": "以程式為丹青者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s194",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 194,
+      "source": "余素好焉。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s195",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 195,
+      "source": "營之經年。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s196",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 196,
+      "source": "而灑然不倦者。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s197",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 197,
+      "source": "其妙趣愈探而不知其所窮也。",
+      "isCode": false
+    },
+    {
+      "id": "c12-s198",
+      "chapterId": "c12",
+      "blockId": "b19",
+      "index": 198,
+      "source": "但恨一篇不能具載耳。",
+      "isCode": false
+    }
+  ]
+}

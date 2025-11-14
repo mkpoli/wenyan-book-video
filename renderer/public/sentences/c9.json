@@ -1,0 +1,1343 @@
+{
+  "chapterId": "c9",
+  "number": 9,
+  "title": "府庫第九",
+  "sentences": [
+    {
+      "id": "c9-s1",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 1,
+      "source": "夫人之欲蓄一物。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s2",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 2,
+      "source": "或諸袖中。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s3",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 3,
+      "source": "或諸案左。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s4",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 4,
+      "source": "物其多也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s5",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 5,
+      "source": "乃藏諸箱篋。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s6",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 6,
+      "source": "儲諸籠笥。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s7",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 7,
+      "source": "篋笥不能盡容。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s8",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 8,
+      "source": "復載以牛車。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s9",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 9,
+      "source": "束以高閣。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s10",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 10,
+      "source": "彼亦不能足者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s11",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 11,
+      "source": "乃入山斷木。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s12",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 12,
+      "source": "文梓楩柟。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s13",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 13,
+      "source": "巧工施校。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s14",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 14,
+      "source": "為雕梁畫棟。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s15",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 15,
+      "source": "樓閣起焉。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s16",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 16,
+      "source": "蓄一國之物。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s17",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 17,
+      "source": "乃興冊府。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s18",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 18,
+      "source": "武庫。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s19",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 19,
+      "source": "倉廩。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s20",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 20,
+      "source": "以羅天下之可寶。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s21",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 21,
+      "source": "今以編程之繁複。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s22",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 22,
+      "source": "亦設府庫以輯有用之法。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s23",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 23,
+      "source": "既驗之策。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s24",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 24,
+      "source": "如書齋然。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s25",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 25,
+      "source": "如箱篋然。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s26",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 26,
+      "source": "唯時取之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s27",
+      "chapterId": "c9",
+      "blockId": "b1",
+      "index": 27,
+      "source": "以為作者助也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s28",
+      "chapterId": "c9",
+      "blockId": "b2",
+      "index": 28,
+      "source": "所藏者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s29",
+      "chapterId": "c9",
+      "blockId": "b2",
+      "index": 29,
+      "source": "術之集也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s30",
+      "chapterId": "c9",
+      "blockId": "b2",
+      "index": 30,
+      "source": "法古而名之曰書。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s31",
+      "chapterId": "c9",
+      "blockId": "b2",
+      "index": 31,
+      "source": "今擷數書為例。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s32",
+      "chapterId": "c9",
+      "blockId": "b2",
+      "index": 32,
+      "source": "計開。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s33",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 33,
+      "source": "算經者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s34",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 34,
+      "source": "所以資算術也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s35",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 35,
+      "source": "開方。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s36",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 36,
+      "source": "勾股。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s37",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 37,
+      "source": "密率。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s38",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 38,
+      "source": "此之類也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s39",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 39,
+      "source": "列經者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s40",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 40,
+      "source": "所以析列也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s41",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 41,
+      "source": "篩剔。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s42",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 42,
+      "source": "合併。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s43",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 43,
+      "source": "排序。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s44",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 44,
+      "source": "此之類也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s45",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 45,
+      "source": "曆法者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s46",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 46,
+      "source": "演算天時也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s47",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 47,
+      "source": "求年月日時刻。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s48",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 48,
+      "source": "此之類也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s49",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 49,
+      "source": "畫譜者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s50",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 50,
+      "source": "所以為圖畫也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s51",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 51,
+      "source": "勾描。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s52",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 52,
+      "source": "皴法。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s53",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 53,
+      "source": "設色。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s54",
+      "chapterId": "c9",
+      "blockId": "b3",
+      "index": 54,
+      "source": "此之類也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s55",
+      "chapterId": "c9",
+      "blockId": "b4",
+      "index": 55,
+      "source": "欲得一書一術。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s56",
+      "chapterId": "c9",
+      "blockId": "b4",
+      "index": 56,
+      "source": "乃引之如是。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s57",
+      "chapterId": "c9",
+      "blockId": "b5",
+      "index": 57,
+      "source": "吾嘗觀「「算經」」之書。方悟「平方根」之義。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s58",
+      "chapterId": "c9",
+      "blockId": "b6",
+      "index": 58,
+      "source": "既得「平方根」之術。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s59",
+      "chapterId": "c9",
+      "blockId": "b6",
+      "index": 59,
+      "source": "遂得而用之如是。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s60",
+      "chapterId": "c9",
+      "blockId": "b7",
+      "index": 60,
+      "source": "施「平方根」於八十一。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s61",
+      "chapterId": "c9",
+      "blockId": "b8",
+      "index": 61,
+      "source": "乃得「九」耳。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s62",
+      "chapterId": "c9",
+      "blockId": "b8",
+      "index": 62,
+      "source": "欲取非一者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s63",
+      "chapterId": "c9",
+      "blockId": "b8",
+      "index": 63,
+      "source": "但魚貫之可也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s64",
+      "chapterId": "c9",
+      "blockId": "b8",
+      "index": 64,
+      "source": "例曰。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s65",
+      "chapterId": "c9",
+      "blockId": "b9",
+      "index": 65,
+      "source": "吾嘗觀「「算經」」之書。方悟「圓周率」「勾股求弦」「冪」之義。\n吾嘗觀「「曆法」」之書。方悟「今日何日」之義。\n\n乘「圓周率」以四。書之。\n\n施「勾股求弦」於三。於四。書之。\n\n施「冪」於二。於十。書之。\n\n施「今日何日」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s66",
+      "chapterId": "c9",
+      "blockId": "b10",
+      "index": 66,
+      "source": "又聊取列經之諸術。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s67",
+      "chapterId": "c9",
+      "blockId": "b10",
+      "index": 67,
+      "source": "略述其用也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s68",
+      "chapterId": "c9",
+      "blockId": "b11",
+      "index": 68,
+      "source": "吾嘗觀「「列經」」之書。方悟「遍施」「篩剔」「左併」「右併」「排序」「倒序」「索一」之義。\n\n吾有一列。名之曰「甲」。充「甲」以三。以二。以九。以一。以六。以十七。以四十二。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s69",
+      "chapterId": "c9",
+      "blockId": "b12",
+      "index": 69,
+      "source": "遍施者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s70",
+      "chapterId": "c9",
+      "blockId": "b12",
+      "index": 70,
+      "source": "參者一術一列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s71",
+      "chapterId": "c9",
+      "blockId": "b12",
+      "index": 71,
+      "source": "凡列中之物。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s72",
+      "chapterId": "c9",
+      "blockId": "b12",
+      "index": 72,
+      "source": "一一施其術。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s73",
+      "chapterId": "c9",
+      "blockId": "b12",
+      "index": 73,
+      "source": "另充於一列而得之也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s74",
+      "chapterId": "c9",
+      "blockId": "b13",
+      "index": 74,
+      "source": "吾有一術。名之曰「倍」。欲行是術。必先得一數。名之曰「甲」。乃行是術曰。\n\t乘「甲」以二。乃得矣。\n是謂「倍」之術也。\n\n施「遍施」於「倍」於「甲」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s75",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 75,
+      "source": "篩剔者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s76",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 76,
+      "source": "參者一術一列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s77",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 77,
+      "source": "凡列中之物。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s78",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 78,
+      "source": "先施其術。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s79",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 79,
+      "source": "得陽而留之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s80",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 80,
+      "source": "得陰而棄之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s81",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 81,
+      "source": "以為取捨。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s82",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 82,
+      "source": "乃聚得陽者為一列也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s83",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 83,
+      "source": "前章有「篩剔」之例。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s84",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 84,
+      "source": "此其是也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s85",
+      "chapterId": "c9",
+      "blockId": "b14",
+      "index": 85,
+      "source": "故不贅以例也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s86",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 86,
+      "source": "左右併者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s87",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 87,
+      "source": "參者一術一元一列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s88",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 88,
+      "source": "元者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s89",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 89,
+      "source": "變數之類不預知者也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s90",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 90,
+      "source": "蓋得其實而後定也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s91",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 91,
+      "source": "其參術參二。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s92",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 92,
+      "source": "取列中一物及元。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s93",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 93,
+      "source": "施參術得新元。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s94",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 94,
+      "source": "次第為之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s95",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 95,
+      "source": "縮列為元也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s96",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 96,
+      "source": "左併者自列首順縮之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s97",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 97,
+      "source": "參術之施先元後列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s98",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 98,
+      "source": "右併者自列末逆縮之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s99",
+      "chapterId": "c9",
+      "blockId": "b15",
+      "index": 99,
+      "source": "參術之施先列後元。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s100",
+      "chapterId": "c9",
+      "blockId": "b16",
+      "index": 100,
+      "source": "吾有一術。名之曰「合」。欲行是術。必先得二數。名之曰「甲」。曰「乙」。乃行是術曰。\n\t加「甲」以「乙」。乃得矣。\n是謂「合」之術也。\n\n施「左併」於「合」於零於「甲」。書之。\n注曰。「「所以得「甲」中數之總和也」」",
+      "isCode": true
+    },
+    {
+      "id": "c9-s101",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 101,
+      "source": "排序者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s102",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 102,
+      "source": "參者一術一列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s103",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 103,
+      "source": "易列之序。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s104",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 104,
+      "source": "令彼物自小而大者也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s105",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 105,
+      "source": "其參術者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s106",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 106,
+      "source": "所以定小大也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s107",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 107,
+      "source": "蓋因數之小大易明。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s108",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 108,
+      "source": "然可排序者不唯數而已矣。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s109",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 109,
+      "source": "故小大之繩。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s110",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 110,
+      "source": "施者視其類而自定也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s111",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 111,
+      "source": "其比二物也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s112",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 112,
+      "source": "小之當得負。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s113",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 113,
+      "source": "大之當得正。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s114",
+      "chapterId": "c9",
+      "blockId": "b17",
+      "index": 114,
+      "source": "等之當得零。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s115",
+      "chapterId": "c9",
+      "blockId": "b18",
+      "index": 115,
+      "source": "吾有一術。名之曰「比」。欲行是術。必先得二數。名之曰「甲」。曰「乙」。乃行是術曰。\n\t若「甲」小於「乙」者。乃得負一也。\n\t若「甲」大於「乙」者。乃得一也。\n\t乃得零。\n\t注曰「「或云「減甲以乙乃得矣」亦可」」\n是謂「比」之術也。\n\n施「排序」於「比」於「甲」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s116",
+      "chapterId": "c9",
+      "blockId": "b19",
+      "index": 116,
+      "source": "倒序者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s117",
+      "chapterId": "c9",
+      "blockId": "b19",
+      "index": 117,
+      "source": "參者一列。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s118",
+      "chapterId": "c9",
+      "blockId": "b19",
+      "index": 118,
+      "source": "唯逆其序耳。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s119",
+      "chapterId": "c9",
+      "blockId": "b19",
+      "index": 119,
+      "source": "入者甲乙丙丁。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s120",
+      "chapterId": "c9",
+      "blockId": "b19",
+      "index": 120,
+      "source": "出者丁丙乙甲也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s121",
+      "chapterId": "c9",
+      "blockId": "b20",
+      "index": 121,
+      "source": "施「倒序」於「甲」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s122",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 122,
+      "source": "索一者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s123",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 123,
+      "source": "參者一列一元。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s124",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 124,
+      "source": "於列中尋其元也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s125",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 125,
+      "source": "尋而得之者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s126",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 126,
+      "source": "乃得其序數也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s127",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 127,
+      "source": "首物等元者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s128",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 128,
+      "source": "得一。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s129",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 129,
+      "source": "次物等元者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s130",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 130,
+      "source": "得二。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s131",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 131,
+      "source": "不得者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s132",
+      "chapterId": "c9",
+      "blockId": "b21",
+      "index": 132,
+      "source": "乃得零也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s133",
+      "chapterId": "c9",
+      "blockId": "b22",
+      "index": 133,
+      "source": "施「索一」於「甲」於九。書之。\n施「索一」於「甲」於十五。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s134",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 134,
+      "source": "其餘諸書所羅者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s135",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 135,
+      "source": "亦多也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s136",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 136,
+      "source": "一一敘之者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s137",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 137,
+      "source": "則非此篇之本意也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s138",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 138,
+      "source": "唯「渾沌」「格物」「畫譜」三經。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s139",
+      "chapterId": "c9",
+      "blockId": "b23",
+      "index": 139,
+      "source": "更見於後章。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s140",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 140,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s141",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 141,
+      "source": "此引他書之法吾明矣。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s142",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 142,
+      "source": "欲自為一書而引之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s143",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 143,
+      "source": "可乎。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s144",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 144,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s145",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 145,
+      "source": "可也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s146",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 146,
+      "source": "另立一程式。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s147",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 147,
+      "source": "命之以書名。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s148",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 148,
+      "source": "於其書中。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s149",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 149,
+      "source": "凡欲為他書所引之變數。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s150",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 150,
+      "source": "皆易「吾有」為「今有」。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s151",
+      "chapterId": "c9",
+      "blockId": "b24",
+      "index": 151,
+      "source": "如是。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s152",
+      "chapterId": "c9",
+      "blockId": "b25",
+      "index": 152,
+      "source": "注曰「「當名是程式曰「勾股算經」」」。\n\n吾嘗觀「算經」之書。方悟「平方根」之義。\n注曰「「書書相引也」」\n\n今有一術。名之曰「勾股求弦」。欲行是術。必先得二數。曰「勾」。曰「股」。乃行是術曰。\n\t乘「勾」以「勾」。名之曰「勾方」。\n\t乘「股」以「股」。加其於「勾方」。取一以施「平方根」。乃得矣。\n是謂「勾股求弦」之術也。\n\n今有一術。名之曰「勾弦求股」。欲行是術。必先得二數。曰「勾」。曰「弦」。乃行是術曰。\n\t乘「勾」以「勾」。名之曰「勾方」。\n\t乘「弦」以「弦」。減其以「勾方」。取一以施「平方根」。乃得矣。\n是謂「勾弦求股」之術也。\n\n今有三數。曰三。曰四。曰五。名之曰「勾例」曰「股例」曰「弦例」。\n\n吾有一數。曰六。名之曰「唯吾知之」。注曰「「凡以「吾有」言變數者。他書不得引之」」",
+      "isCode": true
+    },
+    {
+      "id": "c9-s153",
+      "chapterId": "c9",
+      "blockId": "b26",
+      "index": 153,
+      "source": "是書既成。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s154",
+      "chapterId": "c9",
+      "blockId": "b26",
+      "index": 154,
+      "source": "乃另作一程式。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s155",
+      "chapterId": "c9",
+      "blockId": "b26",
+      "index": 155,
+      "source": "引而驗之。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s156",
+      "chapterId": "c9",
+      "blockId": "b27",
+      "index": 156,
+      "source": "吾嘗觀「「勾股算經」」之書。方悟「勾股求弦」「勾弦求股」「勾例」「股例」之義。\n\n施「勾股求弦」於「勾例」「股例」。書之。\n施「勾弦求股」於五。於十三。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c9-s157",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 157,
+      "source": "著引二道。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s158",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 158,
+      "source": "至是略備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s159",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 159,
+      "source": "程式既長。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s160",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 160,
+      "source": "使盡入一文。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s161",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 161,
+      "source": "輒如亂粥也。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s162",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 162,
+      "source": "故立大事者。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s163",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 163,
+      "source": "多擘其文。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s164",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 164,
+      "source": "分作數書。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s165",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 165,
+      "source": "而更相引用。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s166",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 166,
+      "source": "脈絡既明。",
+      "isCode": false
+    },
+    {
+      "id": "c9-s167",
+      "chapterId": "c9",
+      "blockId": "b28",
+      "index": 167,
+      "source": "亦大裨益於檢索也。",
+      "isCode": false
+    }
+  ]
+}

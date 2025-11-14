@@ -1,0 +1,1247 @@
+{
+  "chapterId": "c2",
+  "number": 2,
+  "title": "變數第二",
+  "sentences": [
+    {
+      "id": "c2-s1",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 1,
+      "source": "易曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s2",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 2,
+      "source": "變化者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s3",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 3,
+      "source": "進退之象也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s4",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 4,
+      "source": "今編程者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s5",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 5,
+      "source": "罔不以變數為本。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s6",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 6,
+      "source": "變數者何。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s7",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 7,
+      "source": "一名命一物也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s8",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 8,
+      "source": "其物或更。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s9",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 9,
+      "source": "而名不易。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s10",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 10,
+      "source": "其名或眾。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s11",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 11,
+      "source": "而物故一也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s12",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 12,
+      "source": "譬葉之逢秋。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s13",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 13,
+      "source": "虎之離山。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s14",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 14,
+      "source": "物雖改而名未易。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s15",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 15,
+      "source": "又譬張祿之於范睢。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s16",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 16,
+      "source": "相如之於犬子。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s17",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 17,
+      "source": "名二而實則一也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s18",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 18,
+      "source": "夫人物之別。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s19",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 19,
+      "source": "復以類分之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s20",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 20,
+      "source": "故曰無名無以別所言。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s21",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 21,
+      "source": "無物無以志所得。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s22",
+      "chapterId": "c2",
+      "blockId": "b1",
+      "index": 22,
+      "source": "無類無以知其用。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s23",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 23,
+      "source": "類者何。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s24",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 24,
+      "source": "或數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s25",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 25,
+      "source": "或言。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s26",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 26,
+      "source": "或爻。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s27",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 27,
+      "source": "或列。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s28",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 28,
+      "source": "或物。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s29",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 29,
+      "source": "或術。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s30",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 30,
+      "source": "數者算。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s31",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 31,
+      "source": "言者表。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s32",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 32,
+      "source": "既見於前章。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s33",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 33,
+      "source": "今概敘其餘如左。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s34",
+      "chapterId": "c2",
+      "blockId": "b2",
+      "index": 34,
+      "source": "計開。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s35",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 35,
+      "source": "「爻」者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s36",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 36,
+      "source": "陰陽也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s37",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 37,
+      "source": "陰陽者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s38",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 38,
+      "source": "是非也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s39",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 39,
+      "source": "有無也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s40",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 40,
+      "source": "臧否也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s41",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 41,
+      "source": "凡物之有二極者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s42",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 42,
+      "source": "皆是也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s43",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 43,
+      "source": "「列」者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s44",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 44,
+      "source": "所以列同類之諸物也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s45",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 45,
+      "source": "如釋家之念珠。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s46",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 46,
+      "source": "兵家之長蛇陣也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s47",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 47,
+      "source": "「物」者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s48",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 48,
+      "source": "所以狀一物之諸端也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s49",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 49,
+      "source": "譬人之姓字者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s50",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 50,
+      "source": "言也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s51",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 51,
+      "source": "人之年齒者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s52",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 52,
+      "source": "數也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s53",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 53,
+      "source": "人有男女。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s54",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 54,
+      "source": "陰陽也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s55",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 55,
+      "source": "合諸端而謂之物。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s56",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 56,
+      "source": "「術」者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s57",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 57,
+      "source": "方也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s58",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 58,
+      "source": "策也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s59",
+      "chapterId": "c2",
+      "blockId": "b3",
+      "index": 59,
+      "source": "行一事之法也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s60",
+      "chapterId": "c2",
+      "blockId": "b4",
+      "index": 60,
+      "source": "既知變數之名實類。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s61",
+      "chapterId": "c2",
+      "blockId": "b4",
+      "index": 61,
+      "source": "即能創而述之如左。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s62",
+      "chapterId": "c2",
+      "blockId": "b5",
+      "index": 62,
+      "source": "吾有一數。曰三。名之曰「甲」。\n吾有一爻。曰陰。名之曰「乙」。\n吾有一言。曰「「噫吁戲」」。名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s63",
+      "chapterId": "c2",
+      "blockId": "b6",
+      "index": 63,
+      "source": "不知其名。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s64",
+      "chapterId": "c2",
+      "blockId": "b6",
+      "index": 64,
+      "source": "但知其實類者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s65",
+      "chapterId": "c2",
+      "blockId": "b6",
+      "index": 65,
+      "source": "猶能述之如左。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s66",
+      "chapterId": "c2",
+      "blockId": "b7",
+      "index": 66,
+      "source": "吾有一數。曰三。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s67",
+      "chapterId": "c2",
+      "blockId": "b8",
+      "index": 67,
+      "source": "未名之變數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s68",
+      "chapterId": "c2",
+      "blockId": "b8",
+      "index": 68,
+      "source": "機器聊志之以待其用也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s69",
+      "chapterId": "c2",
+      "blockId": "b8",
+      "index": 69,
+      "source": "`其`字者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s70",
+      "chapterId": "c2",
+      "blockId": "b8",
+      "index": 70,
+      "source": "即謂前未名之變數也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s71",
+      "chapterId": "c2",
+      "blockId": "b8",
+      "index": 71,
+      "source": "用如左。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s72",
+      "chapterId": "c2",
+      "blockId": "b9",
+      "index": 72,
+      "source": "吾有一數。曰三。加其以五。減其以二。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s73",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 73,
+      "source": "夫方謂`加其以五`時。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s74",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 74,
+      "source": "`其`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s75",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 75,
+      "source": "三也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s76",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 76,
+      "source": "至`減其以二`時。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s77",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 77,
+      "source": "`其`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s78",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 78,
+      "source": "八也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s79",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 79,
+      "source": "復減以二。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s80",
+      "chapterId": "c2",
+      "blockId": "b10",
+      "index": 80,
+      "source": "終得六也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s81",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 81,
+      "source": "但知其名。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s82",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 82,
+      "source": "不知其類者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s83",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 83,
+      "source": "亦可述之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s84",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 84,
+      "source": "然其用繁矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s85",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 85,
+      "source": "其義奧矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s86",
+      "chapterId": "c2",
+      "blockId": "b11",
+      "index": 86,
+      "source": "是故留待後章敘之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s87",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 87,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s88",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 88,
+      "source": "奈何止一數焉。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s89",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 89,
+      "source": "今欲有三數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s90",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 90,
+      "source": "五數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s91",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 91,
+      "source": "千千數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s92",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 92,
+      "source": "可得乎。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s93",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 93,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s94",
+      "chapterId": "c2",
+      "blockId": "b12",
+      "index": 94,
+      "source": "易矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s95",
+      "chapterId": "c2",
+      "blockId": "b13",
+      "index": 95,
+      "source": "吾有三數。曰三。曰九。曰二十七。名之曰「甲」。曰「乙」。曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s96",
+      "chapterId": "c2",
+      "blockId": "b14",
+      "index": 96,
+      "source": "又。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s97",
+      "chapterId": "c2",
+      "blockId": "b14",
+      "index": 97,
+      "source": "`吾有一數曰` 可省為`有數`。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s98",
+      "chapterId": "c2",
+      "blockId": "b14",
+      "index": 98,
+      "source": "故是二句無少異。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s99",
+      "chapterId": "c2",
+      "blockId": "b15",
+      "index": 99,
+      "source": "有數三。名之曰「甲」。\n吾有一數。曰三。名之曰「甲」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s100",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 100,
+      "source": "又。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s101",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 101,
+      "source": "數之不言幾何者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s102",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 102,
+      "source": "默為零。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s103",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 103,
+      "source": "爻之不明默為陰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s104",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 104,
+      "source": "言之不明默為緘。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s105",
+      "chapterId": "c2",
+      "blockId": "b16",
+      "index": 105,
+      "source": "故是三句盡同。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s106",
+      "chapterId": "c2",
+      "blockId": "b17",
+      "index": 106,
+      "source": "吾有一數。曰零。名之曰「甲」。\n吾有一數。名之曰「甲」。\n有數零。名之曰「甲」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s107",
+      "chapterId": "c2",
+      "blockId": "b18",
+      "index": 107,
+      "source": "既創變數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s108",
+      "chapterId": "c2",
+      "blockId": "b18",
+      "index": 108,
+      "source": "後或變之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s109",
+      "chapterId": "c2",
+      "blockId": "b18",
+      "index": 109,
+      "source": "乃書如是。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s110",
+      "chapterId": "c2",
+      "blockId": "b19",
+      "index": 110,
+      "source": "昔之「甲」者。今四是矣。\n昔之「乙」者。今「甲」是矣。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s111",
+      "chapterId": "c2",
+      "blockId": "b20",
+      "index": 111,
+      "source": "首句變甲為四。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s112",
+      "chapterId": "c2",
+      "blockId": "b20",
+      "index": 112,
+      "source": "次句變乙為甲。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s113",
+      "chapterId": "c2",
+      "blockId": "b20",
+      "index": 113,
+      "source": "故乙之為四。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s114",
+      "chapterId": "c2",
+      "blockId": "b20",
+      "index": 114,
+      "source": "易明矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s115",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 115,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s116",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 116,
+      "source": "曩者未創之物。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s117",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 117,
+      "source": "後算而得之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s118",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 118,
+      "source": "欲名之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s119",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 119,
+      "source": "奈何。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s120",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 120,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s121",
+      "chapterId": "c2",
+      "blockId": "b21",
+      "index": 121,
+      "source": "當如是。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s122",
+      "chapterId": "c2",
+      "blockId": "b22",
+      "index": 122,
+      "source": "加一以三。名之曰「丙」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s123",
+      "chapterId": "c2",
+      "blockId": "b23",
+      "index": 123,
+      "source": "又問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s124",
+      "chapterId": "c2",
+      "blockId": "b23",
+      "index": 124,
+      "source": "一時算得之物眾矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s125",
+      "chapterId": "c2",
+      "blockId": "b23",
+      "index": 125,
+      "source": "能一舉而盡名之乎。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s126",
+      "chapterId": "c2",
+      "blockId": "b23",
+      "index": 126,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s127",
+      "chapterId": "c2",
+      "blockId": "b23",
+      "index": 127,
+      "source": "亦可。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s128",
+      "chapterId": "c2",
+      "blockId": "b24",
+      "index": 128,
+      "source": "加一以三。加六以九。名之曰「甲」。曰「乙」。",
+      "isCode": true
+    },
+    {
+      "id": "c2-s129",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 129,
+      "source": "客曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s130",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 130,
+      "source": "吾知之矣。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s131",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 131,
+      "source": "應作如是觀。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s132",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 132,
+      "source": "凡未名之變數。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s133",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 133,
+      "source": "皆如獺祭然。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s134",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 134,
+      "source": "言`其`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s135",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 135,
+      "source": "取至近之魚而棄其餘。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s136",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 136,
+      "source": "言`書之`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s137",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 137,
+      "source": "盡書之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s138",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 138,
+      "source": "言`名之`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s139",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 139,
+      "source": "取若干而名之。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s140",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 140,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s141",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 141,
+      "source": "然也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s142",
+      "chapterId": "c2",
+      "blockId": "b25",
+      "index": 142,
+      "source": "善哉此比。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s143",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 143,
+      "source": "問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s144",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 144,
+      "source": "每有未名者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s145",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 145,
+      "source": "輒祭如是。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s146",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 146,
+      "source": "豈非終累累然焉。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s147",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 147,
+      "source": "今欲盡棄其魚。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s148",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 148,
+      "source": "復當作何書。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s149",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 149,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s150",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 150,
+      "source": "當書`噫`。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s151",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 151,
+      "source": "`噫`者。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s152",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 152,
+      "source": "嘆辭也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s153",
+      "chapterId": "c2",
+      "blockId": "b26",
+      "index": 153,
+      "source": "所以嘆彼之盡棄也。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s154",
+      "chapterId": "c2",
+      "blockId": "b27",
+      "index": 154,
+      "source": "變數之道。",
+      "isCode": false
+    },
+    {
+      "id": "c2-s155",
+      "chapterId": "c2",
+      "blockId": "b27",
+      "index": 155,
+      "source": "至是略備矣。",
+      "isCode": false
+    }
+  ]
+}

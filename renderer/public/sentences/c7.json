@@ -1,0 +1,1463 @@
+{
+  "chapterId": "c7",
+  "number": 7,
+  "title": "言語第七",
+  "sentences": [
+    {
+      "id": "c7-s1",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 1,
+      "source": "維天地生人之初。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s2",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 2,
+      "source": "茹毛飲血而衣皮葦。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s3",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 3,
+      "source": "所以異於禽獸者幾稀。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s4",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 4,
+      "source": "而自三代以降。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s5",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 5,
+      "source": "其去禽獸之日遠。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s6",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 6,
+      "source": "其文明之愈盛。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s7",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 7,
+      "source": "何邪。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s8",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 8,
+      "source": "得無言語之益乎。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s9",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 9,
+      "source": "夫嗚嗚然。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s10",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 10,
+      "source": "啾啾然。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s11",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 11,
+      "source": "狺狺然。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s12",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 12,
+      "source": "奔走而吿其黨者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s13",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 13,
+      "source": "此禽獸之言語也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s14",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 14,
+      "source": "然上治萬乘之國。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s15",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 15,
+      "source": "牧天下之民。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s16",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 16,
+      "source": "下鑄達革之兵。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s17",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 17,
+      "source": "造罟耨之具。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s18",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 18,
+      "source": "皆非其嗚嗚然。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s19",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 19,
+      "source": "啾啾然。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s20",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 20,
+      "source": "狺狺然可以傳也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s21",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 21,
+      "source": "不能傳者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s22",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 22,
+      "source": "父偶得之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s23",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 23,
+      "source": "子偶失之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s24",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 24,
+      "source": "子偶知之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s25",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 25,
+      "source": "孫偶忘之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s26",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 26,
+      "source": "是故智巧之萌。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s27",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 27,
+      "source": "自言語始。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s28",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 28,
+      "source": "倉頡造字。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s29",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 29,
+      "source": "天雨粟。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s30",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 30,
+      "source": "鬼夜哭。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s31",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 31,
+      "source": "所泣者何。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s32",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 32,
+      "source": "洩天地之機也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s33",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 33,
+      "source": "先賢言語既見於書。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s34",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 34,
+      "source": "後人欲有所建。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s35",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 35,
+      "source": "豈必起於平地。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s36",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 36,
+      "source": "但添一瓦於鴻基。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s37",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 37,
+      "source": "而郁郁乎廣廈日成矣。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s38",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 38,
+      "source": "西哲牛頓曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s39",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 39,
+      "source": "或有異吾之遠見者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s40",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 40,
+      "source": "無他。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s41",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 41,
+      "source": "但立巨人肩耳。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s42",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 42,
+      "source": "是理也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s43",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 43,
+      "source": "故易繫辭曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s44",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 44,
+      "source": "上古結繩而治。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s45",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 45,
+      "source": "後世聖人易之以書契。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s46",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 46,
+      "source": "百官以治。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s47",
+      "chapterId": "c7",
+      "blockId": "b1",
+      "index": 47,
+      "source": "萬民以察。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s48",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 48,
+      "source": "今編程之用言語者有二。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s49",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 49,
+      "source": "曰互答。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s50",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 50,
+      "source": "曰自諭。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s51",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 51,
+      "source": "互答者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s52",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 52,
+      "source": "所以補數之不足。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s53",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 53,
+      "source": "令用者明機器之所算。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s54",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 54,
+      "source": "令機器明用者之所欲。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s55",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 55,
+      "source": "`吾有一言`云云是矣。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s56",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 56,
+      "source": "其狀略見於前章。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s57",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 57,
+      "source": "於其術則未備耳。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s58",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 58,
+      "source": "自諭者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s59",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 59,
+      "source": "批也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s60",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 60,
+      "source": "注也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s61",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 61,
+      "source": "所以令觀代碼之人。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s62",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 62,
+      "source": "望其文而解其義也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s63",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 63,
+      "source": "古文之注疏。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s64",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 64,
+      "source": "算經之細草。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s65",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 65,
+      "source": "其流亞也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s66",
+      "chapterId": "c7",
+      "blockId": "b2",
+      "index": 66,
+      "source": "故分敘二用如下。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s67",
+      "chapterId": "c7",
+      "blockId": "b3",
+      "index": 67,
+      "source": "言者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s68",
+      "chapterId": "c7",
+      "blockId": "b3",
+      "index": 68,
+      "source": "彷彿字之列也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s69",
+      "chapterId": "c7",
+      "blockId": "b3",
+      "index": 69,
+      "source": "厥得以取列法取其一字。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s70",
+      "chapterId": "c7",
+      "blockId": "b3",
+      "index": 70,
+      "source": "以取長法得其字數。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s71",
+      "chapterId": "c7",
+      "blockId": "b4",
+      "index": 71,
+      "source": "吾有一言。曰「「仁義禮智信」」。名之曰「五常」。\n夫「五常」之四。書之。\n夫「五常」之長。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s72",
+      "chapterId": "c7",
+      "blockId": "b5",
+      "index": 72,
+      "source": "乃得`智`字。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s73",
+      "chapterId": "c7",
+      "blockId": "b5",
+      "index": 73,
+      "source": "長五。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s74",
+      "chapterId": "c7",
+      "blockId": "b5",
+      "index": 74,
+      "source": "又倣效數之加法。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s75",
+      "chapterId": "c7",
+      "blockId": "b5",
+      "index": 75,
+      "source": "合二言如是。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s76",
+      "chapterId": "c7",
+      "blockId": "b6",
+      "index": 76,
+      "source": "加「五常」於「「夫五常者」」。加其以「「是也」」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s77",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 77,
+      "source": "乃得`夫五常者仁義禮智信是也`之句。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s78",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 78,
+      "source": "注曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s79",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 79,
+      "source": "引號之單者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s80",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 80,
+      "source": "別變數。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s81",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 81,
+      "source": "雙者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s82",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 82,
+      "source": "別言語。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s83",
+      "chapterId": "c7",
+      "blockId": "b7",
+      "index": 83,
+      "source": "慎毋混淆也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s84",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 84,
+      "source": "回文者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s85",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 85,
+      "source": "順逆讀之皆成韻文者也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s86",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 86,
+      "source": "漢有鏡銘。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s87",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 87,
+      "source": "蘇蕙有璇璣圖。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s88",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 88,
+      "source": "晉以降作者甚眾。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s89",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 89,
+      "source": "而東坡尤工之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s90",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 90,
+      "source": "今作是程式。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s91",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 91,
+      "source": "因其順而得其逆。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s92",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 92,
+      "source": "因其逆而得其順。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s93",
+      "chapterId": "c7",
+      "blockId": "b8",
+      "index": 93,
+      "source": "以示諸法之用。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s94",
+      "chapterId": "c7",
+      "blockId": "b9",
+      "index": 94,
+      "source": "吾有一言。曰「「旱蓮生竭鑊。嫩菊養秋潾。滿池留浴鷺。分橋上戲人」」名之曰「順讀」。\n\n吾有一言。名之曰「逆讀」。\n有數一。名之曰「字」。夫「順讀」之長。為是其遍。\n\t夫「順讀」之「字」。加其以「逆讀」。昔之「逆讀」者。今其是矣。\n加「字」以一。昔之「字」者。今其是矣。云云。\n\n夫「順讀」。書之。\n夫「逆讀」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s95",
+      "chapterId": "c7",
+      "blockId": "b10",
+      "index": 95,
+      "source": "乃得庾子山和回文詩一首。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s96",
+      "chapterId": "c7",
+      "blockId": "b11",
+      "index": 96,
+      "source": "旱蓮生竭鑊。嫩菊養秋潾。滿池留浴鷺。分橋上戲人\n人戲上橋分。鷺浴留池滿。潾秋養菊嫩。鑊竭生蓮旱",
+      "isCode": true
+    },
+    {
+      "id": "c7-s97",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 97,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s98",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 98,
+      "source": "今有一言。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s99",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 99,
+      "source": "或恐藏回文。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s100",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 100,
+      "source": "故欲求其中至長之回文句。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s101",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 101,
+      "source": "當作何書。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s102",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 102,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s103",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 103,
+      "source": "或有拙法。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s104",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 104,
+      "source": "作也易。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s105",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 105,
+      "source": "然機器行也緩。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s106",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 106,
+      "source": "或有巧法。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s107",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 107,
+      "source": "作也難。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s108",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 108,
+      "source": "然機器行也速。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s109",
+      "chapterId": "c7",
+      "blockId": "b12",
+      "index": 109,
+      "source": "先書其拙法如是。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s110",
+      "chapterId": "c7",
+      "blockId": "b13",
+      "index": 110,
+      "source": "吾有一言。曰「「晚紅飛盡春寒淺淺寒春盡飛紅晚尊酒綠陰繁繁陰綠酒尊老仙詩句好好句詩仙老長恨送年芳芳年送恨長」」名之曰「文」。\n\n吾有二數。名之曰「至長中」曰「至長長」。\n有數一。名之曰「中」。夫「文」之長。為是其遍。\n\t有數零。名之曰「奇」。為是二遍。\n\t\t減「中」以「奇」。名之曰「左」。\n\t\t加「中」以一。名之曰「右」。\n    為是「中」遍。\n      若「文」之「左」不等於「文」之「右」者。乃止也。\n      減「左」以一。昔之「左」者。今其是矣。\n      加「右」以一。昔之「右」者。今其是矣。\n    云云。\n    減「右」以「左」。減其以一。名之曰「長」。\n    若「長」大於「至長長」者。\n    \t昔之「至長長」者。今「長」是矣。\n    \t昔之「至長中」者。今「中」是矣。\n    云云。\n  加「奇」以一。昔之「奇」者。今其是矣。云云。\n加「中」以一。昔之「中」者。今其是矣。云云。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s111",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 111,
+      "source": "術曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s112",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 112,
+      "source": "每歷一字。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s113",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 113,
+      "source": "或奇或偶。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s114",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 114,
+      "source": "左右張之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s115",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 115,
+      "source": "同則復張異輒止。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s116",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 116,
+      "source": "遍觀其文。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s117",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 117,
+      "source": "厥得其最長者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s118",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 118,
+      "source": "持回文之「至長中」「至長長」。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s119",
+      "chapterId": "c7",
+      "blockId": "b14",
+      "index": 119,
+      "source": "乃書「至長句」如是。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s120",
+      "chapterId": "c7",
+      "blockId": "b15",
+      "index": 120,
+      "source": "除「至長長」以二。所餘幾何。名之曰「奇」。\n減「至長長」以「奇」。除其以二。減其於「至長中」。加其以一。減其以「奇」。名之曰「字」。\n\n吾有一言。名之曰「至長句」\n為是「至長長」遍。\n\t夫「文」之「字」。加其於「至長句」。昔之「至長句」者。今其是矣。\n加「字」以一。昔之「字」者。今其是矣。云云。\n夫「至長句」書之。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s121",
+      "chapterId": "c7",
+      "blockId": "b16",
+      "index": 121,
+      "source": "遂得朱子菩薩蠻首聯。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s122",
+      "chapterId": "c7",
+      "blockId": "b17",
+      "index": 122,
+      "source": "晚紅飛盡春寒淺淺寒春盡飛紅晚",
+      "isCode": true
+    },
+    {
+      "id": "c7-s123",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 123,
+      "source": "其巧法者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s124",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 124,
+      "source": "蓋列既得之回文之長。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s125",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 125,
+      "source": "以資後來之算。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s126",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 126,
+      "source": "或名之曰馬拉車法。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s127",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 127,
+      "source": "以其術稍繁。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s128",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 128,
+      "source": "亦非初學易知。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s129",
+      "chapterId": "c7",
+      "blockId": "b18",
+      "index": 129,
+      "source": "故留待好事君子自思焉。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s130",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 130,
+      "source": "說文曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s131",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 131,
+      "source": "釋經以明其義曰注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s132",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 132,
+      "source": "批注之法有三。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s133",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 133,
+      "source": "一曰注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s134",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 134,
+      "source": "二曰疏。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s135",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 135,
+      "source": "三曰批。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s136",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 136,
+      "source": "批者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s137",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 137,
+      "source": "評也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s138",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 138,
+      "source": "疏者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s139",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 139,
+      "source": "注其注也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s140",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 140,
+      "source": "此三者既非正文。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s141",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 141,
+      "source": "唯人觀之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s142",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 142,
+      "source": "機器盡棄之若無睹。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s143",
+      "chapterId": "c7",
+      "blockId": "b19",
+      "index": 143,
+      "source": "書如是。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s144",
+      "chapterId": "c7",
+      "blockId": "b20",
+      "index": 144,
+      "source": "注曰。「「文言備矣」」。\n疏曰。「「居第一之位故稱初。以其陽爻故稱九」」。\n批曰。「「文氣淋灕。字句切實」」。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s145",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 145,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s146",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 146,
+      "source": "既無少益於程式之運行。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s147",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 147,
+      "source": "吾法吾自知之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s148",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 148,
+      "source": "奚注為。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s149",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 149,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s150",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 150,
+      "source": "所以資同事者後人之觀也。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s151",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 151,
+      "source": "蓋程式之欲大有所為者。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s152",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 152,
+      "source": "多非一時之力。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s153",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 153,
+      "source": "一人之功。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s154",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 154,
+      "source": "他人得觀其注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s155",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 155,
+      "source": "立明其義。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s156",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 156,
+      "source": "刪補增修。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s157",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 157,
+      "source": "得於心而應於手。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s158",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 158,
+      "source": "余少時。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s159",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 159,
+      "source": "下筆了不容思。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s160",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 160,
+      "source": "乃以批注為累。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s161",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 161,
+      "source": "灑灑千言。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s162",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 162,
+      "source": "卒無一注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s163",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 163,
+      "source": "故至今為時人所病。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s164",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 164,
+      "source": "不亦悲夫。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s165",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 165,
+      "source": "故聰明君子。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s166",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 166,
+      "source": "莫我效焉。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s167",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 167,
+      "source": "注有二必注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s168",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 168,
+      "source": "有二不注。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s169",
+      "chapterId": "c7",
+      "blockId": "b21",
+      "index": 169,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s170",
+      "chapterId": "c7",
+      "blockId": "b22",
+      "index": 170,
+      "source": "開宗明義者必注 奇技淫巧者必注 用意自明者不注 為注而注者不注",
+      "isCode": false
+    },
+    {
+      "id": "c7-s171",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 171,
+      "source": "除是外。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s172",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 172,
+      "source": "復有一妙用。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s173",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 173,
+      "source": "作程式之時。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s174",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 174,
+      "source": "往往調試無已。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s175",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 175,
+      "source": "夫置一句乎注釋之內。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s176",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 176,
+      "source": "可聊止其運行。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s177",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 177,
+      "source": "然或曰程式既成乃當去之。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s178",
+      "chapterId": "c7",
+      "blockId": "b23",
+      "index": 178,
+      "source": "蓋以其醜陋云耳。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s179",
+      "chapterId": "c7",
+      "blockId": "b24",
+      "index": 179,
+      "source": "注曰。「「吾有一言。曰「「是語處批注之中。故終不得行」」。書之。」」",
+      "isCode": true
+    },
+    {
+      "id": "c7-s180",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 180,
+      "source": "注釋之方既備。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s181",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 181,
+      "source": "後章之範例。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s182",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 182,
+      "source": "皆以為剖析。",
+      "isCode": false
+    }
+  ]
+}

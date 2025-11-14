@@ -1,0 +1,1503 @@
+{
+  "chapterId": "c11",
+  "number": 11,
+  "title": "克禍第十一",
+  "sentences": [
+    {
+      "id": "c11-s1",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 1,
+      "source": "夫上蔡臨市而嘆黃。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s2",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 2,
+      "source": "杜陵望雲而感蒼。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s3",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 3,
+      "source": "括母劾子竟免於族。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s4",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 4,
+      "source": "俶父效之猶見於誅。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s5",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 5,
+      "source": "宣子以立瑤亡智。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s6",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 6,
+      "source": "輔果改氏而逭之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s7",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 7,
+      "source": "北海以譏曹取死。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s8",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 8,
+      "source": "二子琢釘而待之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s9",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 9,
+      "source": "天道幽遠以降禍。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s10",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 10,
+      "source": "或速或遲。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s11",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 11,
+      "source": "世人處之乃顯志。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s12",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 12,
+      "source": "有得有失。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s13",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 13,
+      "source": "又麋子仲婦人之私。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s14",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 14,
+      "source": "火燒其室。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s15",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 15,
+      "source": "諸葛恪腥狗之讖。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s16",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 16,
+      "source": "兵加其身。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s17",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 17,
+      "source": "眾君子謀社宮以亡曹。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s18",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 18,
+      "source": "諸小人戲池陽而覆莽。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s19",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 19,
+      "source": "永嘉狗語而天下飢。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s20",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 20,
+      "source": "太安牛言而天下亂。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s21",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 21,
+      "source": "吾人既不得其徵。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s22",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 22,
+      "source": "唯綢繆於未雨。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s23",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 23,
+      "source": "徙薪於未焚。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s24",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 24,
+      "source": "補羊牢於未亡。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s25",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 25,
+      "source": "避南牆於未撞。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s26",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 26,
+      "source": "故韓非子曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s27",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 27,
+      "source": "夫事之禍福亦有腠理之地。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s28",
+      "chapterId": "c11",
+      "blockId": "b1",
+      "index": 28,
+      "source": "聖人蚤從事焉。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s29",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 29,
+      "source": "非獨世事然。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s30",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 30,
+      "source": "程式亦然。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s31",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 31,
+      "source": "夫程式之運行也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s32",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 32,
+      "source": "或以作者之昏昏。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s33",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 33,
+      "source": "禍根為埋。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s34",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 34,
+      "source": "或以機器之蹇蹇。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s35",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 35,
+      "source": "禍起於內。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s36",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 36,
+      "source": "或以用者之渾渾。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s37",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 37,
+      "source": "禍起於外。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s38",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 38,
+      "source": "或以時命之茫茫。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s39",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 39,
+      "source": "禍起於不測。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s40",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 40,
+      "source": "既起焉。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s41",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 41,
+      "source": "輕者貽誤一時。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s42",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 42,
+      "source": "重者民業為廢。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s43",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 43,
+      "source": "舊傳。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s44",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 44,
+      "source": "初。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s45",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 45,
+      "source": "編程草創。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s46",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 46,
+      "source": "有前輩程式恆謬者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s47",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 47,
+      "source": "啟機器乃得一蛾。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s48",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 48,
+      "source": "方知其由。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s49",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 49,
+      "source": "恨不已。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s50",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 50,
+      "source": "遂效王莽頭故事。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s51",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 51,
+      "source": "以膠封之於紙。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s52",
+      "chapterId": "c11",
+      "blockId": "b2",
+      "index": 52,
+      "source": "其屍至今猶傳也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s53",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 53,
+      "source": "程式克禍之法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s54",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 54,
+      "source": "凡成敗不定有取禍之嫌者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s55",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 55,
+      "source": "皆告其姑妄於前。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s56",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 56,
+      "source": "料其因由於後。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s57",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 57,
+      "source": "乃一一列其解法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s58",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 58,
+      "source": "以為補救。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s59",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 59,
+      "source": "多見之禍有四。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s60",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 60,
+      "source": "曰虛指。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s61",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 61,
+      "source": "曰文法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s62",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 62,
+      "source": "曰異類。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s63",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 63,
+      "source": "曰逾界。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s64",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 64,
+      "source": "今為是例。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s65",
+      "chapterId": "c11",
+      "blockId": "b3",
+      "index": 65,
+      "source": "並書四禍之由。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s66",
+      "chapterId": "c11",
+      "blockId": "b4",
+      "index": 66,
+      "source": "姑妄行此。\n\t注曰。「「行險著於是。」」\n\n如事不諧。豈「「虛指」」之禍歟。\n\t吾有一言。曰「「本無此物。奈何用之」」。書之。\n\n豈「「文法」」之禍歟。\n\t吾有一言。曰「「不合文法。不通之甚」」。書之。\n\n豈「「異類」」之禍歟。\n\t吾有一言。曰「「物各其類。豈可混同」」。書之。\n\t\n豈「「逾界」」之禍歟。\n\t吾有一言。曰「「祭不越望。俎不代庖」」。書之。\n\n不知何禍歟。\n\t吾有一言。曰「「嗚呼哀哉。伏維尚飨」」。書之。\n乃作罷。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s67",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 67,
+      "source": "若姑妄之行未便致禍者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s68",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 68,
+      "source": "則解法不行。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s69",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 69,
+      "source": "既致。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s70",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 70,
+      "source": "則立視其解法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s71",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 71,
+      "source": "合者輒為之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s72",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 72,
+      "source": "其餘更不復行。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s73",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 73,
+      "source": "直繼以「乃作罷」語之後也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s74",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 74,
+      "source": "於諸解法之末。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s75",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 75,
+      "source": "或加「不知何禍歟」之語。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s76",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 76,
+      "source": "以備其未料者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s77",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 77,
+      "source": "微是。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s78",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 78,
+      "source": "終不得解法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s79",
+      "chapterId": "c11",
+      "blockId": "b5",
+      "index": 79,
+      "source": "乃崩潰焉。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s80",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 80,
+      "source": "復有報錯之法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s81",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 81,
+      "source": "所以自定一禍而發之也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s82",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 82,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s83",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 83,
+      "source": "誕矣。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s84",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 84,
+      "source": "無禍則當以手加額而慶焉。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s85",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 85,
+      "source": "奈何故為禍乎。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s86",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 86,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s87",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 87,
+      "source": "其一者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s88",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 88,
+      "source": "不濟之兆既見。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s89",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 89,
+      "source": "與其坐待其潰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s90",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 90,
+      "source": "不若於未崩之時先行告急。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s91",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 91,
+      "source": "更以克禍之法為補救也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s92",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 92,
+      "source": "其二者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s93",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 93,
+      "source": "夫程式之作也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s94",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 94,
+      "source": "多集眾力。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s95",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 95,
+      "source": "或各為一部。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s96",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 96,
+      "source": "或互為徵引。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s97",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 97,
+      "source": "故告之者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s98",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 98,
+      "source": "處之者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s99",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 99,
+      "source": "未必同一人也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s100",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 100,
+      "source": "至於用之者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s101",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 101,
+      "source": "天下之人也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s102",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 102,
+      "source": "故曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s103",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 103,
+      "source": "吾之報之者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s104",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 104,
+      "source": "所以令彼知其不行之由也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s105",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 105,
+      "source": "至於解者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s106",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 106,
+      "source": "或彼之責也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s107",
+      "chapterId": "c11",
+      "blockId": "b6",
+      "index": 107,
+      "source": "報錯之法如是。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s108",
+      "chapterId": "c11",
+      "blockId": "b7",
+      "index": 108,
+      "source": "嗚呼。「「滅頂」」之禍。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s109",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 109,
+      "source": "夫「滅頂」者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s110",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 110,
+      "source": "所以名禍也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s111",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 111,
+      "source": "視禍之因由而後定也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s112",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 112,
+      "source": "亦得以「虛指」「文法」「異類」「逾界」名之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s113",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 113,
+      "source": "以合舊製。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s114",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 114,
+      "source": "既報。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s115",
+      "chapterId": "c11",
+      "blockId": "b8",
+      "index": 115,
+      "source": "解法之作同於向者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s116",
+      "chapterId": "c11",
+      "blockId": "b9",
+      "index": 116,
+      "source": "姑妄行此。\n\t嗚呼。「「滅頂」」之禍。\n如事不諧。豈「「滅頂」」之禍歟。\n\t吾有一言。曰「「嗚呼哀哉。伏維尚飨」」。書之。\n乃作罷。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s117",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 117,
+      "source": "又或加一言於禍後。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s118",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 118,
+      "source": "以明細得禍之本來。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s119",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 119,
+      "source": "蓋禍之名或一。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s120",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 120,
+      "source": "而取之之由非一。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s121",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 121,
+      "source": "故以是釋之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s122",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 122,
+      "source": "曰禍之「文」。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s123",
+      "chapterId": "c11",
+      "blockId": "b10",
+      "index": 123,
+      "source": "例曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s124",
+      "chapterId": "c11",
+      "blockId": "b11",
+      "index": 124,
+      "source": "嗚呼。「「無關」」之禍。曰「「事不關心。關心者亂」」。\n嗚呼。「「自取」」之禍。曰「「招禍取咎。無不自己」」。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s125",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 125,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s126",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 126,
+      "source": "於解法中何由而得之耶。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s127",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 127,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s128",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 128,
+      "source": "可蓄其禍之於一物而名之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s129",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 129,
+      "source": "如左。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s130",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 130,
+      "source": "其「名」「文」既明。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s131",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 131,
+      "source": "至於其「蹤」者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s132",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 132,
+      "source": "所以敘得禍之所。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s133",
+      "chapterId": "c11",
+      "blockId": "b12",
+      "index": 133,
+      "source": "以為檢索之便也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s134",
+      "chapterId": "c11",
+      "blockId": "b13",
+      "index": 134,
+      "source": "姑妄行此。\n\t嗚呼。「「無關」」之禍。曰「「事不關心。關心者亂」」。\n如事不諧。豈「「無關」」之禍歟。名之曰「禍」。\n\t夫「禍」之「「名」」。書之。\n\t夫「禍」之「「文」」。書之。\n\t夫「禍」之「「蹤」」。書之。\n不知何禍歟。名之曰「奇禍」。\n\t夫「奇禍」之「「名」」。書之。\n乃作罷。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s135",
+      "chapterId": "c11",
+      "blockId": "b14",
+      "index": 135,
+      "source": "問。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s136",
+      "chapterId": "c11",
+      "blockId": "b14",
+      "index": 136,
+      "source": "除一數以零。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s137",
+      "chapterId": "c11",
+      "blockId": "b14",
+      "index": 137,
+      "source": "其商幾何。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s138",
+      "chapterId": "c11",
+      "blockId": "b14",
+      "index": 138,
+      "source": "今以之為例。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s139",
+      "chapterId": "c11",
+      "blockId": "b15",
+      "index": 139,
+      "source": "吾有一術。名之曰「除」。欲行是術。必先得二數。曰「甲」。曰「乙」。乃行是術曰。\n\t若「乙」等於零者。\n\t\t嗚呼。「「零除」」之禍。曰「「除數不得為零」」。\n\t云云。\n\t除「甲」以「乙」。乃得矣。\n是謂「除」之術也。\n\n施「除」於二。於三。書之。\n施「除」於四。於零。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s140",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 140,
+      "source": "或曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s141",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 141,
+      "source": "零除誠為非。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s142",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 142,
+      "source": "然以其漸近無窮。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s143",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 143,
+      "source": "不必即為禍。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s144",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 144,
+      "source": "今以克禍之法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s145",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 145,
+      "source": "稍加寬恕。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s146",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 146,
+      "source": "取至大之數而聊為出脫。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s147",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 147,
+      "source": "至於零除零者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s148",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 148,
+      "source": "則實無可解。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s149",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 149,
+      "source": "乃於解法之體更報一錯。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s150",
+      "chapterId": "c11",
+      "blockId": "b16",
+      "index": 150,
+      "source": "不令姑息也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s151",
+      "chapterId": "c11",
+      "blockId": "b17",
+      "index": 151,
+      "source": "吾有一術。名之曰「除乙」。欲行是術。必先得二數。曰「甲」。曰「乙」。乃行是術曰。\n\t姑妄行此。\n\t\t施「除」於「甲」。於「乙」。乃得矣。\n\t如事不諧。豈「「零除」」之禍歟。\n\t\t若「甲」大於零者。\n\t\t\t乃得一載。\n\t\t或若「甲」小於零者。\n\t\t\t乃得負一載。\n\t\t若非。\n\t\t\t嗚呼。「「零除零」」之禍。曰「「二數皆零。無可救也」」。\n\t\t云云。\n\t乃作罷。\n是謂「除乙」之術也。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s152",
+      "chapterId": "c11",
+      "blockId": "b18",
+      "index": 152,
+      "source": "或又曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s153",
+      "chapterId": "c11",
+      "blockId": "b18",
+      "index": 153,
+      "source": "零除零誠為非。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s154",
+      "chapterId": "c11",
+      "blockId": "b18",
+      "index": 154,
+      "source": "然今實不欲致禍。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s155",
+      "chapterId": "c11",
+      "blockId": "b18",
+      "index": 155,
+      "source": "強令得零可乎。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s156",
+      "chapterId": "c11",
+      "blockId": "b18",
+      "index": 156,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s157",
+      "chapterId": "c11",
+      "blockId": "b19",
+      "index": 157,
+      "source": "吾有一術。名之曰「除丙」。欲行是術。必先得二數。曰「甲」。曰「乙」。乃行是術曰。\n\t姑妄行此。\n\t\t施「除乙」於「甲」。於「乙」。乃得矣。\n\t如事不諧。豈「「零除零」」之禍歟。\n\t\t乃得零。注曰「「氣殺算學先生也」」。\n\t乃作罷。\n是謂「除丙」之術也。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s158",
+      "chapterId": "c11",
+      "blockId": "b20",
+      "index": 158,
+      "source": "又前章有莊子棰術。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s159",
+      "chapterId": "c11",
+      "blockId": "b20",
+      "index": 159,
+      "source": "今以報錯法。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s160",
+      "chapterId": "c11",
+      "blockId": "b20",
+      "index": 160,
+      "source": "易之如是。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s161",
+      "chapterId": "c11",
+      "blockId": "b20",
+      "index": 161,
+      "source": "以禁不宜之參。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s162",
+      "chapterId": "c11",
+      "blockId": "b21",
+      "index": 162,
+      "source": "吾有一術。名之曰「量棰」。欲行是術。必先得二數。曰「今長」。曰「餘日」。乃行是術曰。\n\t若「今長」不大於零者。嗚呼。「「參數」」之禍。曰「「萬世不竭。必當為正」」也。\n\t若「餘日」小於零者。　嗚呼。「「參數」」之禍。曰「「逝者如斯。豈得逆耶」」也。\n\t\n\t若「餘日」等於零者。乃得「今長」也。\n\t除「今長」以二。昔之「今長」者。今其是矣。\n\t減「餘日」以一。昔之「餘日」者。今其是矣。\n\t施「量棰」於「今長」於「餘日」。乃得矣。\n是謂「量棰」之術也。",
+      "isCode": true
+    },
+    {
+      "id": "c11-s163",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 163,
+      "source": "凡一術未行。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s164",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 164,
+      "source": "先驗其參數如是者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s165",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 165,
+      "source": "或號之曰「斷言」。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s166",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 166,
+      "source": "「斷言」者。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s167",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 167,
+      "source": "如繞城之池。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s168",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 168,
+      "source": "護齒之唇。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s169",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 169,
+      "source": "省己之良方。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s170",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 170,
+      "source": "警彼之佳策也。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s171",
+      "chapterId": "c11",
+      "blockId": "b22",
+      "index": 171,
+      "source": "欲有所為者多為是。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s172",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 172,
+      "source": "克禍之道。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s173",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 173,
+      "source": "至是略備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s174",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 174,
+      "source": "或曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s175",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 175,
+      "source": "妙哉其道。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s176",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 176,
+      "source": "吾之程式。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s177",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 177,
+      "source": "將以「姑妄行此」起之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s178",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 178,
+      "source": "以「不知何禍歟」結之。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s179",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 179,
+      "source": "千謬百錯盡為所苞。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s180",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 180,
+      "source": "永不得禍矣。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s181",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 181,
+      "source": "豈不美哉。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s182",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 182,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s183",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 183,
+      "source": "殆矣。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s184",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 184,
+      "source": "陋之甚。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s185",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 185,
+      "source": "小禍不與聞。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s186",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 186,
+      "source": "大禍不遠矣。",
+      "isCode": false
+    },
+    {
+      "id": "c11-s187",
+      "chapterId": "c11",
+      "blockId": "b23",
+      "index": 187,
+      "source": "吾子當其慎之。",
+      "isCode": false
+    }
+  ]
+}

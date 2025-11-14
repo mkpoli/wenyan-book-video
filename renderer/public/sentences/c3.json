@@ -1,0 +1,1471 @@
+{
+  "chapterId": "c3",
+  "number": 3,
+  "title": "算術第三",
+  "sentences": [
+    {
+      "id": "c3-s1",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 1,
+      "source": "古有周髀。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s2",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 2,
+      "source": "海島。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s3",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 3,
+      "source": "九章算經云。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s4",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 4,
+      "source": "後世疇人輯之為十書。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s5",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 5,
+      "source": "古希臘國畢氏曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s6",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 6,
+      "source": "萬物皆數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s7",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 7,
+      "source": "乃知算學者中外所重。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s8",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 8,
+      "source": "今編程之用雖不勝數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s9",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 9,
+      "source": "究其本原。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s10",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 10,
+      "source": "亦皆算焉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s11",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 11,
+      "source": "而算之本原。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s12",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 12,
+      "source": "曰加。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s13",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 13,
+      "source": "曰減。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s14",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 14,
+      "source": "曰乘。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s15",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 15,
+      "source": "曰除。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s16",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 16,
+      "source": "加者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s17",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 17,
+      "source": "求和也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s18",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 18,
+      "source": "減者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s19",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 19,
+      "source": "求差也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s20",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 20,
+      "source": "乘者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s21",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 21,
+      "source": "求積也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s22",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 22,
+      "source": "除者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s23",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 23,
+      "source": "求商也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s24",
+      "chapterId": "c3",
+      "blockId": "b1",
+      "index": 24,
+      "source": "書如是。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s25",
+      "chapterId": "c3",
+      "blockId": "b2",
+      "index": 25,
+      "source": "加一以二。書之。\n減二以一。書之。\n乘二以三。書之。\n除八以四。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s26",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 26,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s27",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 27,
+      "source": "此易耳。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s28",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 28,
+      "source": "三尺之童亦能算也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s29",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 29,
+      "source": "胡用機器為。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s30",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 30,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s31",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 31,
+      "source": "試問九萬八千七百六十五乘三千四百五十六。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s32",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 32,
+      "source": "又當幾何。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s33",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 33,
+      "source": "當謝不能也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s34",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 34,
+      "source": "乃令機器算之。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s35",
+      "chapterId": "c3",
+      "blockId": "b3",
+      "index": 35,
+      "source": "轉瞬可曉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s36",
+      "chapterId": "c3",
+      "blockId": "b4",
+      "index": 36,
+      "source": "乘九萬八千七百六十五以三千四百五十六。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s37",
+      "chapterId": "c3",
+      "blockId": "b5",
+      "index": 37,
+      "source": "乃得",
+      "isCode": false
+    },
+    {
+      "id": "c3-s38",
+      "chapterId": "c3",
+      "blockId": "b6",
+      "index": 38,
+      "source": "三億四千一百三十三萬一千八百四十",
+      "isCode": true
+    },
+    {
+      "id": "c3-s39",
+      "chapterId": "c3",
+      "blockId": "b7",
+      "index": 39,
+      "source": "又算有繁複非一步所能得者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s40",
+      "chapterId": "c3",
+      "blockId": "b7",
+      "index": 40,
+      "source": "當如是。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s41",
+      "chapterId": "c3",
+      "blockId": "b8",
+      "index": 41,
+      "source": "加七十五以二。乘其以九。減其以三十六。除其以二。加其以五百。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s42",
+      "chapterId": "c3",
+      "blockId": "b9",
+      "index": 42,
+      "source": "乃得",
+      "isCode": false
+    },
+    {
+      "id": "c3-s43",
+      "chapterId": "c3",
+      "blockId": "b10",
+      "index": 43,
+      "source": "八百二十八又五分",
+      "isCode": true
+    },
+    {
+      "id": "c3-s44",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 44,
+      "source": "又除法者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s45",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 45,
+      "source": "有除數與被除數之別。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s46",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 46,
+      "source": "是謂除法無交換率也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s47",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 47,
+      "source": "今言`除「甲」以「乙」`者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s48",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 48,
+      "source": "甲者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s49",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 49,
+      "source": "被除數也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s50",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 50,
+      "source": "乙者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s51",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 51,
+      "source": "除數也。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s52",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 52,
+      "source": "亦可書`除「乙」於「甲」`。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s53",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 53,
+      "source": "無少異耳。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s54",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 54,
+      "source": "減法亦然。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s55",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 55,
+      "source": "而加乘有交換率者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s56",
+      "chapterId": "c3",
+      "blockId": "b11",
+      "index": 56,
+      "source": "`於`乃通`以`。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s57",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 57,
+      "source": "或問曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s58",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 58,
+      "source": "有不能整除者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s59",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 59,
+      "source": "不欲得商之小數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s60",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 60,
+      "source": "乃願得其餘數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s61",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 61,
+      "source": "當作何書。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s62",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 62,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s63",
+      "chapterId": "c3",
+      "blockId": "b12",
+      "index": 63,
+      "source": "當如是。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s64",
+      "chapterId": "c3",
+      "blockId": "b13",
+      "index": 64,
+      "source": "除二以三。所餘幾何。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s65",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 65,
+      "source": "以上加減乘除之法。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s66",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 66,
+      "source": "算術者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s67",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 67,
+      "source": "既知其算。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s68",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 68,
+      "source": "乃習其數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s69",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 69,
+      "source": "曩者朱氏算學啟蒙有大數之類。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s70",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 70,
+      "source": "小數之類。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s71",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 71,
+      "source": "然近世多不用。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s72",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 72,
+      "source": "今考眾說。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s73",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 73,
+      "source": "尊實用。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s74",
+      "chapterId": "c3",
+      "blockId": "b14",
+      "index": 74,
+      "source": "點定如是。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s75",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 75,
+      "source": "大數之類。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s76",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 76,
+      "source": "一。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s77",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 77,
+      "source": "十。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s78",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 78,
+      "source": "十十曰百。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s79",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 79,
+      "source": "十百曰千。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s80",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 80,
+      "source": "十千曰萬。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s81",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 81,
+      "source": "十萬。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s82",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 82,
+      "source": "百萬。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s83",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 83,
+      "source": "千萬。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s84",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 84,
+      "source": "萬萬曰億。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s85",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 85,
+      "source": "萬億曰兆。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s86",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 86,
+      "source": "萬兆曰京。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s87",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 87,
+      "source": "萬京曰陔。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s88",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 88,
+      "source": "萬陔曰秭。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s89",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 89,
+      "source": "萬秭曰壤。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s90",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 90,
+      "source": "萬壤曰溝。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s91",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 91,
+      "source": "萬溝曰澗。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s92",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 92,
+      "source": "萬澗曰正。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s93",
+      "chapterId": "c3",
+      "blockId": "b15",
+      "index": 93,
+      "source": "萬正曰載。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s94",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 94,
+      "source": "小數之類。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s95",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 95,
+      "source": "漠者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s96",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 96,
+      "source": "兆分之一。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s97",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 97,
+      "source": "十漠曰渺。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s98",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 98,
+      "source": "十渺曰埃。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s99",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 99,
+      "source": "十埃曰塵。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s100",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 100,
+      "source": "十塵曰沙。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s101",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 101,
+      "source": "十沙曰纖。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s102",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 102,
+      "source": "十纖曰微。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s103",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 103,
+      "source": "十微曰忽。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s104",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 104,
+      "source": "十忽曰絲。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s105",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 105,
+      "source": "十絲曰毫。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s106",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 106,
+      "source": "十毫曰釐。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s107",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 107,
+      "source": "十釐曰分。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s108",
+      "chapterId": "c3",
+      "blockId": "b16",
+      "index": 108,
+      "source": "十分曰一。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s109",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 109,
+      "source": "例一。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s110",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 110,
+      "source": "孫子算經有問焉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s111",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 111,
+      "source": "今有雉兔同籠。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s112",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 112,
+      "source": "上有三十五頭。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s113",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 113,
+      "source": "下九十四足。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s114",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 114,
+      "source": "問雉兔各幾何。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s115",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 115,
+      "source": "依其書之術。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s116",
+      "chapterId": "c3",
+      "blockId": "b17",
+      "index": 116,
+      "source": "編程如是。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s117",
+      "chapterId": "c3",
+      "blockId": "b18",
+      "index": 117,
+      "source": "吾有二數。曰三十五。曰九十四。名之曰「頭」曰「足」。\n除「足」以二。減其以「頭」。名之曰「兔」。\n減「頭」以「兔」。名之曰「雉」。\n夫「雉」夫「兔」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s118",
+      "chapterId": "c3",
+      "blockId": "b19",
+      "index": 118,
+      "source": "遂得",
+      "isCode": false
+    },
+    {
+      "id": "c3-s119",
+      "chapterId": "c3",
+      "blockId": "b20",
+      "index": 119,
+      "source": "二十三 一十二",
+      "isCode": true
+    },
+    {
+      "id": "c3-s120",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 120,
+      "source": "吾聞有善詼諧者注此解曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s121",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 121,
+      "source": "今有能禽獸語者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s122",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 122,
+      "source": "申其令。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s123",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 123,
+      "source": "雉獨立。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s124",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 124,
+      "source": "兔人立。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s125",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 125,
+      "source": "是時足數為向者之半。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s126",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 126,
+      "source": "故曰`除「足」以二`。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s127",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 127,
+      "source": "是人又有令曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s128",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 128,
+      "source": "雉兔復各舉一足。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s129",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 129,
+      "source": "故曰`減其以「頭」`。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s130",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 130,
+      "source": "雉雙足皆舉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s131",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 131,
+      "source": "遂仆於地。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s132",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 132,
+      "source": "兔尚有一足。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s133",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 133,
+      "source": "故數是時之足。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s134",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 134,
+      "source": "乃得兔之數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s135",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 135,
+      "source": "既知兔幾何。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s136",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 136,
+      "source": "則雉易矣。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s137",
+      "chapterId": "c3",
+      "blockId": "b21",
+      "index": 137,
+      "source": "`減「頭」以「兔」`可得。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s138",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 138,
+      "source": "兔善好逑。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s139",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 139,
+      "source": "乃有劉勝之風流。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s140",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 140,
+      "source": "雉稱佳味。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s141",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 141,
+      "source": "遂遭酈生之慘禍。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s142",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 142,
+      "source": "主人旬日復臨。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s143",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 143,
+      "source": "上見頭五百七十九。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s144",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 144,
+      "source": "下見足二千二百八十四。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s145",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 145,
+      "source": "問何以編程求雉兔之數。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s146",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 146,
+      "source": "曰。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s147",
+      "chapterId": "c3",
+      "blockId": "b22",
+      "index": 147,
+      "source": "但易首句可矣。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s148",
+      "chapterId": "c3",
+      "blockId": "b23",
+      "index": 148,
+      "source": "吾有二數。曰五百七十九。曰二千二百八十四。名之曰「頭」曰「足」。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s149",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 149,
+      "source": "遂得雉一十六。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s150",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 150,
+      "source": "兔五百六十三。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s151",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 151,
+      "source": "遑論頭足之多少。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s152",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 152,
+      "source": "唯易一句。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s153",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 153,
+      "source": "變數之用。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s154",
+      "chapterId": "c3",
+      "blockId": "b24",
+      "index": 154,
+      "source": "不亦妙乎。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s155",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 155,
+      "source": "例二。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s156",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 156,
+      "source": "古勒拿有九首四足一尾之怪。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s157",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 157,
+      "source": "名曰許德拉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s158",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 158,
+      "source": "山海經載南山有狐九尾。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s159",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 159,
+      "source": "刑天無首。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s160",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 160,
+      "source": "孫叔敖嘗見兩頭蛇。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s161",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 161,
+      "source": "今楚王田獵。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s162",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 162,
+      "source": "獲四怪各若干。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s163",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 163,
+      "source": "盡納籠中。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s164",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 164,
+      "source": "上有三百四十頭。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s165",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 165,
+      "source": "三十二臂。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s166",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 166,
+      "source": "下有二百十六足。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s167",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 167,
+      "source": "四百十七尾。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s168",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 168,
+      "source": "問許得拉。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s169",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 169,
+      "source": "九尾狐。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s170",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 170,
+      "source": "刑天。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s171",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 171,
+      "source": "兩頭蛇。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s172",
+      "chapterId": "c3",
+      "blockId": "b25",
+      "index": 172,
+      "source": "各幾何。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s173",
+      "chapterId": "c3",
+      "blockId": "b26",
+      "index": 173,
+      "source": "吾有四數。曰三百四十。曰三十二。曰二百十六。曰四百十七。名之曰「頭」曰「臂」曰「足」曰「尾」。\n除「臂」以二。名之曰「刑天」。\n乘「刑天」以二。減其於「足」。除其以四。名之曰「許狐和」。\n乘「許狐和」以十。名之曰「十倍許狐和」。\n加「頭」以「尾」。減其以「十倍許狐和」。除其以三。名之曰「兩頭蛇」。\n減「尾」以「兩頭蛇」。減其以「許狐和」。除其以八。名之曰「九尾狐」。\n減「許狐和」以「九尾狐」。名之曰「許德拉」。\n夫「許德拉」夫「九尾狐」夫「刑天」夫「兩頭蛇」。書之。",
+      "isCode": true
+    },
+    {
+      "id": "c3-s174",
+      "chapterId": "c3",
+      "blockId": "b27",
+      "index": 174,
+      "source": "乃得",
+      "isCode": false
+    },
+    {
+      "id": "c3-s175",
+      "chapterId": "c3",
+      "blockId": "b28",
+      "index": 175,
+      "source": "一十二 三十四 一十六 九十九",
+      "isCode": true
+    },
+    {
+      "id": "c3-s176",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 176,
+      "source": "其解法蓋與雉兔同籠相類。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s177",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 177,
+      "source": "算術之道。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s178",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 178,
+      "source": "至是少備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s179",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 179,
+      "source": "更有圓周密率。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s180",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 180,
+      "source": "開平方。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s181",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 181,
+      "source": "大衍求一諸術者。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s182",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 182,
+      "source": "以其稍繁。",
+      "isCode": false
+    },
+    {
+      "id": "c3-s183",
+      "chapterId": "c3",
+      "blockId": "b29",
+      "index": 183,
+      "source": "故留待後章也。",
+      "isCode": false
+    }
+  ]
+}
