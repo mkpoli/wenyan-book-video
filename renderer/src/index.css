@@ -56,6 +56,7 @@
   --font-transcription: "IM Fell DW Pica", "Tinos", serif;
 
   --color-punctuation: #cf4235ee;
+  --color-keyword: #cf4235ee;
   --color-code-token-number: #872;
   --color-code-token-string: #357;
 }

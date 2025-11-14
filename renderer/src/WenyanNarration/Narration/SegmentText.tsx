@@ -102,9 +102,61 @@ const CHINESE_NUMBERS = new Set([
   "零",
 ]);
 
+const QUOTE_CHARACTERS = new Set(["「", "」", "『", "』"]);
+
+const KEYWORD_SENTENCES = new Set([
+  "若非",
+  "也",
+  "云云",
+  "或若",
+  "若其然者",
+  "若其不然者",
+]);
+
+function computeKeywordMask(text: string): boolean[] {
+  if (!text) {
+    return [];
+  }
+
+  const chars: string[] = [];
+
+  for (const char of text) {
+    if (!QUOTE_CHARACTERS.has(char)) {
+      chars.push(char);
+    }
+  }
+
+  if (chars.length === 0) {
+    return [];
+  }
+
+  const mask = new Array<boolean>(chars.length).fill(false);
+  const normalized = chars.join("").trim();
+
+  if (KEYWORD_SENTENCES.has(normalized)) {
+    mask.fill(true);
+    return mask;
+  }
+
+  if (chars[0] === "若") {
+    mask[0] = true;
+  }
+
+  const lastIndex = chars.length - 1;
+  if (chars[lastIndex] === "者") {
+    mask[lastIndex] = true;
+  }
+
+  return mask;
+}
+
 function renderTextWithQuotes(
   text: string,
-  options?: { trailingMarker?: string | null; isCodeBlock?: boolean },
+  options?: {
+    trailingMarker?: string | null;
+    isCodeBlock?: boolean;
+    keywordMask?: ReadonlyArray<boolean>;
+  },
 ): React.ReactNode {
   if (!text) {
     return null;
@@ -117,6 +169,7 @@ function renderTextWithQuotes(
 
   const trailingMarker = options?.trailingMarker ?? null;
   const isCodeBlock = options?.isCodeBlock ?? false;
+  const keywordMask = options?.keywordMask;
 
   // Track quote depth to handle nested quotes correctly
   let quoteDepth = 0;
@@ -152,6 +205,10 @@ function renderTextWithQuotes(
       }
     }
 
+    const isKeyword = Boolean(keywordMask?.[index]);
+    const charStyle =
+      !isKeyword && charColor ? { color: charColor } : undefined;
+
     return (
       <span
         key={`char-${index}-${entry.char}`}
@@ -171,7 +228,10 @@ function renderTextWithQuotes(
             {prefixString}
           </span>
         ) : null}
-        <span style={charColor ? { color: charColor } : undefined}>
+        <span
+          className={isKeyword ? "text-keyword" : undefined}
+          style={charStyle}
+        >
           {entry.char}
         </span>
         {suffixString ? (
@@ -216,6 +276,7 @@ function Sentence({
   const renderedContent = renderTextWithQuotes(content, {
     trailingMarker: hasTrailingMarker ? "。" : null,
     isCodeBlock,
+    keywordMask: isCodeBlock ? computeKeywordMask(content) : undefined,
   });
 
   if (!renderedContent) {
@@ -375,7 +436,12 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           <div style={{ transform: "translateY(0.1em)" }}>
             {hasSentenceData
               ? renderSentencesWithLineBreaks()
-              : renderTextWithQuotes(text, { isCodeBlock })}
+              : renderTextWithQuotes(text, {
+                  isCodeBlock,
+                  keywordMask: isCodeBlock
+                    ? computeKeywordMask(text)
+                    : undefined,
+                })}
           </div>
         </div>
         {transcriptionLine || englishLine ? (
@@ -392,8 +458,8 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                 className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-27 flex items-center justify-center ${
                   englishLine.length > 70
                     ? englishLine.length > 100
-                      ? "text-2xl"
-                      : "text-4xl"
+                      ? "text-3xl"
+                      : "text-5xl"
                     : "text-6xl"
                 }`}
               >
