@@ -331,6 +331,83 @@ const generateSegments = async () => {
             isCodeBlock,
           );
 
+          // ------------------------------------------------------------------
+          // Translation sanity checks
+          //
+          // Emit a compiler-style warning if:
+          // - There is Chinese text but the overall English translation is
+          //   empty/missing.
+          // - The number of English sentences is greater than the number of
+          //   Chinese sentences for this segment.
+          // ------------------------------------------------------------------
+          const hasChinese = chineseSentences.length > 0;
+          const trimmedTranslation =
+            translation !== null ? translation.trim() : translation;
+          const englishIsEmpty =
+            hasChinese &&
+            (trimmedTranslation === null || trimmedTranslation.length === 0);
+          const englishMoreThanChinese =
+            englishSentences.length > chineseSentences.length;
+
+          if (englishIsEmpty || englishMoreThanChinese) {
+            const header = `[segments] Translation mismatch in segment "${id}"`;
+            const locationLines = [
+              `  SEGMENT:       ${segmentPath}`,
+              `  TRANSLATION:   ${
+                existsSync(translationPath) ? translationPath : "(missing)"
+              }`,
+            ];
+
+            const detailLines: string[] = [];
+            if (englishIsEmpty) {
+              detailLines.push(
+                "  ISSUE:         English translation is empty while Chinese text is present.",
+              );
+            }
+            if (englishMoreThanChinese) {
+              detailLines.push(
+                "  ISSUE:         Sentence count mismatch (English has more sentences than Chinese).",
+              );
+            }
+
+            detailLines.push(
+              `  CHINESE SENTENCES: ${chineseSentences.length}`,
+              `  ENGLISH SENTENCES: ${englishSentences.length}`,
+            );
+
+            const previewLimit = 3;
+            const previews: string[] = [];
+            for (let i = 0; i < previewLimit; i++) {
+              const c = chineseSentences[i];
+              const e = englishSentences[i];
+              if (c === undefined && e === undefined) break;
+              previews.push(
+                `  [${i}] zh: ${c ?? "(none)"}\n      en: ${e ?? "(none)"}`,
+              );
+            }
+
+            const guidanceLines = [
+              "  HINT:          Ensure that the English translation file:",
+              "                  - Exists for this segment, and",
+              "                  - Has the same number of logical sentences/lines as the Chinese source.",
+            ];
+
+            const message = [
+              header,
+              ...locationLines,
+              "",
+              ...detailLines,
+              "",
+              "  PREVIEW:",
+              ...previews,
+              "",
+              ...guidanceLines,
+            ].join("\n");
+
+            // eslint-disable-next-line no-console
+            console.warn(message);
+          }
+
           if (hasFemaleAudio) {
             debugLog(`Using female voice for segment ${id}.`);
           }
