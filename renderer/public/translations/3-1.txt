@@ -1,0 +1,18 @@
+In ancient times there was Zhoubi Suanjing,
+Haidao Suanjing, and
+The Nine Chapters on the Mathematical Art.
+In later ages, scholars compiled it into ten books.
+The ancient Greek Pythagoras said.
+All things are numbers.
+Thereby it is known that arithmeticians, both at home and abroad, prize it.
+Now the uses of programming are innumerable;
+in probing its origin,
+they are all computations.
+The origin of computation —
+is called addition,
+subtraction,
+multiplication,
+and division.
+To add —
+is to seek the sum,
+To subtract —

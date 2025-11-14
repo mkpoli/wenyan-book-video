@@ -1,0 +1,6 @@
+Add seventy-five to two.
+Multiply it by nine.
+Subtract thirty-six from it.
+Divide it by two.
+Add five hundred to it.
+Write it down.

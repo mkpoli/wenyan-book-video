@@ -1,0 +1,7 @@
+Some ask,
+“There are those who cannot be evenly divided.
+They do not wish to obtain the quotient's decimal part.
+They would thus have the remainder.
+What should be written, then?”
+Answered,
+“Thus it should be.”

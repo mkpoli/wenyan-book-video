@@ -1,0 +1,7 @@
+Example One. The Sunzi Suan Jing contains a question.
+Now there is a pheasant and a rabbit in the same cage.
+Above are thirty-five heads.
+Below are ninety-four feet.
+Ask what are the respective numbers of pheasant and rabbit.
+Following the method of the book.
+Thus the programming is as follows.

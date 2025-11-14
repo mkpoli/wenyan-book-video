@@ -1,0 +1,19 @@
+About the large numerals,
+One (Qyit, 一, 10°).
+Ten (Djip, 十, 10¹).
+Ten tens are called a hundred (Paek, 百, 10²).
+Ten hundreds are called a thousand (Tshen, 千, 10³).
+Ten thousands are called a myriad (Muonh, 萬, 10⁴).
+Ten myriad (one hundred thousand, Djip muonh, 十萬, 10⁵).
+Hundred myriad (one million, Paek muonh, 百萬, 10⁶).
+Thousand myriad (ten million, Tshen muonh, 千萬, 10⁷).
+A myriad myriad (one hundred million) are called Qyk (億, 10⁸).
+A myriad Qyk (a trillion) are called Driewq (兆, 10¹²).
+A myriad Driewq (ten quadrillion) are called Kyaeng (京, 10¹⁶).
+A myriad Kyaeng (a hundred quintillion) are called Koej (垓, 10²°).
+A myriad Koej (one septillion) are called Tsiq (秭, 10²⁴).
+A myriad Tsiq (ten octillion) are called Njyangq (壤, 10²⁸).
+A myriad Njyangq (one hundred nonillion) are called Kou (溝, 10³²).
+A myriad Kou (one undecillion) are called Kaenh (澗, 10³⁶).
+A myriad Kaenh (ten duodecillion) are called Tjiaengh (正, 10⁴°).
+A myriad Tjiaengh (a hundred tredecillion) are called Tseojq (載, 10⁴⁴)
