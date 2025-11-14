@@ -31,15 +31,15 @@ def _(re):
         If preserve_newlines is True, line breaks (and exact indentation) are preserved
         for code blocks.
 
-        Note: fenced code block markers (```...```) are handled at the paragraph
-        level in process_chapter and are not stripped here.
+        Note:
+        - Fenced code block markers (```...```) are handled at the paragraph
+          level in process_chapter and are not stripped here.
+        - Inline code spans delimited by backticks (e.g. `code`) are preserved
+          verbatim so they can be handled specially downstream.
         """
         # Convert double brackets 「「　」」 to 『 』
         text = text.replace("「「", "『")
         text = text.replace("」」", "』")
-
-        # Remove inline code markers (`...`) but keep content
-        text = re.sub(r"`([^`]+)`", r"\1", text)
 
         # Remove headings (# ...)
         text = re.sub(r"^#+\s+.*$", "", text, flags=re.MULTILINE)

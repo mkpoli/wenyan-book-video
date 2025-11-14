@@ -431,7 +431,15 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
         return text
 
     def normalize_text(text):
-        """Normalize text: remove whitespace, normalize punctuation."""
+        """Normalize text: remove whitespace, normalize punctuation.
+
+        Inline code spans delimited by backticks (e.g. `code`) are removed
+        entirely so they are ignored during transcription.
+        """
+        # Strip inline code spans first so they do not participate in
+        # dictionary lookup or context display.
+        text = re.sub(r"`[^`]*`", "", text)
+
         # Remove whitespace
         normalized = re.sub(r"\s+", "", text)
         # Normalize punctuation: map '。' → '.'
