@@ -167,6 +167,9 @@ def _():
         "複": 1,
         "嵌": 0,
         "樹": 0,
+        "夫": 1,
+        "父": 0,
+        "土": 0,
     }
     return CHAR_REPLACEMENTS, SPECIAL_CASES
 
