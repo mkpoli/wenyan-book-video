@@ -14,7 +14,7 @@ export const Outro: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const fadeInDuration = fps * 0.5;
+  const fadeInDuration = fps * 1;
   const fadeOutDuration = fps * 1;
   const emptyDuration = fps * 1;
   const visibleDuration =
@@ -66,7 +66,7 @@ export const Outro: React.FC = () => {
 
   return (
     <AbsoluteFill className="bg-white flex items-center justify-center px-16">
-      <Html5Audio src={staticFile("audios/bg.mp3")} volume={audioVolume} />
+      <Html5Audio src={staticFile("audios/bg3.mp3")} volume={audioVolume} />
       <div
         className="flex flex-col items-center justify-center gap-12 text-center"
         style={{ opacity }}

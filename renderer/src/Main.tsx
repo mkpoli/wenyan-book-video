@@ -17,6 +17,9 @@ export const mainSchema = z.object({
 const DELAY_BETWEEN_SEGMENTS_FRAMES = 6;
 const TRANSITION_FADE_IN_FRAMES = 30; // 1 second at 30fps for fade-in transition
 const INTRO_BG_FADE_OUT_FRAMES = 60; // 2 seconds at 30fps for fade-out
+export const NARRATION_TAIL_FRAMES = 90; // Hold last frame for 3s before outro
+const NARRATION_BG_FADE_OUT_FRAMES = 45; // Fade bg2.mp3 over 1.5s at the end
+const NARRATION_TAIL_FADE_OUT_FRAMES = 60; // Fade out text over 2s at the end
 
 export const Main: React.FC<z.infer<typeof mainSchema>> = ({
   chapterNumber,
@@ -29,13 +32,14 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
   );
 
   // Calculate narration duration from segments
-  const narrationDuration = segments.reduce((sum, segment, index) => {
-    const audioDurationFrames = segment.durationInFrames;
-    const visualDurationFrames =
-      audioDurationFrames +
-      (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
-    return sum + visualDurationFrames;
-  }, 0);
+  const narrationDuration =
+    segments.reduce((sum, segment, index) => {
+      const audioDurationFrames = segment.durationInFrames;
+      const visualDurationFrames =
+        audioDurationFrames +
+        (index < segments.length - 1 ? DELAY_BETWEEN_SEGMENTS_FRAMES : 0);
+      return sum + visualDurationFrames;
+    }, 0) + NARRATION_TAIL_FRAMES;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
@@ -55,6 +59,9 @@ export const Main: React.FC<z.infer<typeof mainSchema>> = ({
             startFrame={0}
             delayBetweenSegmentsFrames={DELAY_BETWEEN_SEGMENTS_FRAMES}
             transitionFadeInFrames={TRANSITION_FADE_IN_FRAMES}
+            tailHoldFrames={NARRATION_TAIL_FRAMES}
+            bgFadeOutFrames={NARRATION_BG_FADE_OUT_FRAMES}
+            tailFadeOutFrames={NARRATION_TAIL_FADE_OUT_FRAMES}
           />
         </Series.Sequence>
         <Series.Sequence durationInFrames={OUTRO_DURATION_FRAMES}>

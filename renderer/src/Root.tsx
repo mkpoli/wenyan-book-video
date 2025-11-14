@@ -1,6 +1,6 @@
 import "./index.css";
 import { Composition, Folder } from "remotion";
-import { Main, mainSchema } from "./Main";
+import { Main, mainSchema, NARRATION_TAIL_FRAMES } from "./Main";
 import { Thumbnail } from "./WenyanNarration/Thumbnail";
 import { loadSegments } from "./loadSegments";
 import { Intro, INTRO_DURATION_FRAMES } from "./WenyanNarration/Intro/Intro";
@@ -58,6 +58,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
     CREATOR_INTRODUCTION_DURATION_FRAMES +
     VIDEO_EXPLANATION_DURATION_FRAMES +
     CHAPTER_TITLE_DURATION_FRAMES +
+    NARRATION_TAIL_FRAMES +
     OUTRO_DURATION_FRAMES;
 
   return segmentDuration + delaysDuration + titleDuration;

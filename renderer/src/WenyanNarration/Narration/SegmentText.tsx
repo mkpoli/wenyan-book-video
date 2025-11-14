@@ -13,7 +13,10 @@ interface SegmentTextProps {
   readonly text: string;
   readonly sentences: ReadonlyArray<SentenceEntry>;
   readonly fadeInDuration?: number; // Duration in frames for fade-in, undefined means no fade-in
+  readonly fadeOutDuration?: number; // Duration in frames for fade-out, undefined means no fade-out
+  readonly totalDuration?: number; // Total duration in frames (needed for fade-out calculation)
   readonly isCodeBlock?: boolean;
+  readonly showAllCompleted?: boolean; // If true, show all sentences as non-highlighted (completed state)
 }
 
 type QuoteRenderEntry = {
@@ -300,23 +303,47 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
   text,
   sentences,
   fadeInDuration,
+  fadeOutDuration,
+  totalDuration,
   isCodeBlock = false,
+  showAllCompleted = false,
 }) => {
   const frame = useCurrentFrame();
   const hasSentenceData = sentences.length > 0;
 
-  // Calculate fade-in opacity if fadeInDuration is provided
-  const opacity = fadeInDuration
-    ? interpolate(frame, [0, fadeInDuration], [0, 1], {
+  // Calculate opacity with fade-in and/or fade-out
+  let opacity = 1;
+
+  if (fadeInDuration && fadeOutDuration && totalDuration) {
+    // Both fade in and fade out
+    const fadeOutStart = totalDuration - fadeOutDuration;
+    opacity = interpolate(
+      frame,
+      [0, fadeInDuration, fadeOutStart, totalDuration],
+      [0, 1, 1, 0],
+      {
         extrapolateLeft: "clamp",
         extrapolateRight: "clamp",
-      })
-    : 1;
+      },
+    );
+  } else if (fadeInDuration) {
+    // Only fade in
+    opacity = interpolate(frame, [0, fadeInDuration], [0, 1], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+  } else if (fadeOutDuration && totalDuration) {
+    // Only fade out - start immediately from frame 0
+    opacity = interpolate(frame, [0, fadeOutDuration], [1, 0], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+  }
 
   let cumulative = 0;
   let currentSentenceIndex = -1;
 
-  if (hasSentenceData) {
+  if (hasSentenceData && !showAllCompleted) {
     for (let i = 0; i < sentences.length; i += 1) {
       const sentence = sentences[i];
       const start = cumulative;
@@ -330,14 +357,23 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
     if (currentSentenceIndex === -1 && sentences.length > 0) {
       currentSentenceIndex = sentences.length - 1;
     }
+  } else if (showAllCompleted && sentences.length > 0) {
+    // Highlight only the last sentence
+    currentSentenceIndex = sentences.length - 1;
   }
+  // If showAllCompleted is true, currentSentenceIndex stays -1, so no sentence is highlighted
 
-  const currentSentence =
-    currentSentenceIndex >= 0 ? sentences[currentSentenceIndex] : null;
+  // For transcription/english display: use current sentence if available, otherwise use last sentence when showing all completed
+  const sentenceForDisplay =
+    currentSentenceIndex >= 0
+      ? sentences[currentSentenceIndex]
+      : sentences.length > 0
+        ? sentences[sentences.length - 1]
+        : null;
   const transcriptionLine =
-    currentSentence?.transcription?.replace(/\s+/g, " ").trim() ?? null;
+    sentenceForDisplay?.transcription?.replace(/\s+/g, " ").trim() ?? null;
   const englishLine =
-    currentSentence?.english?.replace(/\s+/g, " ").trim() ?? null;
+    sentenceForDisplay?.english?.replace(/\s+/g, " ").trim() ?? null;
 
   // Group sentences by lines when text contains newlines
   const renderSentencesWithLineBreaks = () => {
@@ -428,7 +464,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           </p>
         ) : null}
         <div
-          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9 h-[600px] min-h-[600px]"
+          className="font-[QijiCombo,serif] text-[72px] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9 h-[600px] min-h-[600px] max-h-[600px]"
           style={
             isCodeBlock
               ? { outline: "4px solid #000", outlineOffset: "16px" }
