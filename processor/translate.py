@@ -156,7 +156,20 @@ def _(Path):
 @app.cell
 def _(segments_dir, translations_dir):
     # Maximum number of files to process per run (safety limit)
+    # Can be overridden via command-line argument:
+    #   python translate.py 5
+    # will process at most 5 files in this run.
+    import sys
+
     MAX_FILES_PER_RUN = 10
+    if len(sys.argv) > 1:
+        try:
+            MAX_FILES_PER_RUN = int(sys.argv[1])
+        except ValueError:
+            print(
+                f"Invalid MAX_FILES_PER_RUN value '{sys.argv[1]}'; "
+                "falling back to default of 10."
+            )
 
     # Find all segment files
     # Sort naturally by extracting chapter and segment numbers
