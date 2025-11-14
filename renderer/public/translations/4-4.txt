@@ -1,0 +1,12 @@
+I have a number.
+It is forty-nine.
+It is named “Reserve.”
+If “Reserve” is greater than fifty.
+Add one to “Reserve.”
+The former value of “Reserve” is thus.
+Now it is thus.
+If not.
+Subtract one from “Reserve.”
+The former value of “Reserve” is thus.
+Now it is thus.
+So be it.
