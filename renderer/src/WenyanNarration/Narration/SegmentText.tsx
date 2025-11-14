@@ -205,6 +205,8 @@ function renderTextWithQuotes(
       }
     }
 
+    const displayChar =
+      entry.char === " " || entry.char === "\u00A0" ? "\u00A0" : entry.char;
     const isKeyword = Boolean(keywordMask?.[index]);
     const charStyle =
       !isKeyword && charColor ? { color: charColor } : undefined;
@@ -232,7 +234,7 @@ function renderTextWithQuotes(
           className={isKeyword ? "text-keyword" : undefined}
           style={charStyle}
         >
-          {entry.char}
+          {displayChar}
         </span>
         {suffixString ? (
           <span
