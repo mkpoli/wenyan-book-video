@@ -141,13 +141,24 @@ function computeKeywordMask(text: string): boolean[] {
     return mask;
   }
 
-  if (chars[0] === "若") {
-    mask[0] = true;
+  // Find first non-whitespace character
+  const firstNonWhitespaceIndex = chars.findIndex(
+    (char) => char.trim().length > 0,
+  );
+  if (firstNonWhitespaceIndex >= 0 && chars[firstNonWhitespaceIndex] === "若") {
+    mask[firstNonWhitespaceIndex] = true;
   }
 
-  const lastIndex = chars.length - 1;
-  if (chars[lastIndex] === "者") {
-    mask[lastIndex] = true;
+  // Find last non-whitespace character
+  let lastNonWhitespaceIndex = -1;
+  for (let i = chars.length - 1; i >= 0; i -= 1) {
+    if (chars[i].trim().length > 0) {
+      lastNonWhitespaceIndex = i;
+      break;
+    }
+  }
+  if (lastNonWhitespaceIndex >= 0 && chars[lastNonWhitespaceIndex] === "者") {
+    mask[lastNonWhitespaceIndex] = true;
   }
 
   return mask;
