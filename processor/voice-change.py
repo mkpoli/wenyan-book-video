@@ -58,18 +58,21 @@ def _(
     female_dir,
     voice_settings,
 ):
-    import re
     from io import BytesIO
 
-    # Pattern to match files: audio-{number}-{number}.mp3
-    audio_pattern = re.compile(r"^audio-\d+-\d+\.mp3$")
+    # Sort audio files naturally by chapter and segment, e.g. "audio-1-2.mp3"
+    def sort_key(path):
+        # Extract numbers from filename like "audio-1-2.mp3" -> (1, 2)
+        name = path.stem  # "audio-1-2"
+        parts = name.split("-")  # ["audio", "1", "2"]
+        return (int(parts[1]), int(parts[2]))  # (chapter, segment)
 
-    for file in AUDIO_DIR.glob("*.mp3"):
-        # Only process files matching audio-\d+-\d+ pattern
-        if not audio_pattern.match(file.name):
-            print(f"⏭ Skipping {file.name} (does not match audio-\\d+-\\d+ pattern)")
-            continue
+    # Collect and sort files matching audio-*-*.mp3
+    audio_files = sorted(AUDIO_DIR.glob("audio-*-*.mp3"), key=sort_key)
 
+    print(f"Found {len(audio_files)} audio files to process")
+
+    for file in audio_files:
         female_file = female_dir / f"{file.stem}-f.mp3"
         if female_file.exists():
             continue
