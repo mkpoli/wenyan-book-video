@@ -5,7 +5,9 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, List
 
-from processor.utils.cli_style import (
+import regex
+
+from utils.cli_style import (
     INNER_DIVIDER,
     format_metadata_rows,
     format_preview_entry,
@@ -17,20 +19,42 @@ Build segment-level IPA transcript files `audio-{c}-{s}.txt` under
 `renderer/public/transcripts/build` from:
 
   - `renderer/public/segments/c{n}.segments.json`
-  - `renderer/public/transcripts/c{n}.sentences.json`
+  - `renderer/public/transcripts/c{n}.transcripts.json`
 
 Each entry in `c{n}.segments.json` describes a segment (e.g. "1-17") and the
-ordered list of sentence IDs (e.g. ["c1-s245", "c1-s246", ...]) which belong to
-that segment. For each such segment, we concatenate the sentence-level IPA
-strings for those sentence IDs and write the result to:
+ordered list of sentence IDs (e.g. ["c1-s245", "c1-s246", ...]) that belong to
+that segment. For each segment, we concatenate the sentence-level IPA strings
+for those sentence IDs and write the result to:
 
   `renderer/public/transcripts/build/audio-{segment_id}.txt`
 
 This prepares pronunciation text, one segment per file, for the TTS engine.
 The TTS engine expects a leading and trailing space around the entire IPA
 string in each file, so this script ensures there is exactly one space at the
-start and one space at the end (before the newline).
+start and one space at the end (before the newline). When a converted IPA line
+still contains any Chinese (Han) characters, we emit warnings so those failures
+can be reviewed manually.
 """
+
+# Any remaining Han characters indicate the conversion failed.
+HAN_CHAR_PATTERN = regex.compile(r"\p{Han}")
+
+
+def contains_han_characters(value: str) -> bool:
+    """Return True when the provided text includes any Chinese character."""
+
+    if not value:
+        return False
+    return bool(HAN_CHAR_PATTERN.search(value))
+
+
+def summarize_for_preview(value: str, limit: int = 80) -> str:
+    """Collapse whitespace and truncate previews for CLI readability."""
+
+    collapsed = " ".join(value.split())
+    if len(collapsed) <= limit:
+        return collapsed
+    return f"{collapsed[: limit - 1]}…"
 
 
 def _segments_file_sort_key(path: Path) -> int:
@@ -124,6 +148,7 @@ def build_segment_ipa(
     """
     ipa_chunks: List[str] = []
     missing_sentences: List[str] = []
+    han_sentences: List[tuple[str, str]] = []
 
     for sent_id in segment.get("sentenceIds", []):
         entry = sentence_data.get(sent_id)
@@ -134,7 +159,10 @@ def build_segment_ipa(
         if not isinstance(ipa, str) or not ipa.strip():
             missing_sentences.append(sent_id)
             continue
-        ipa_chunks.append(ipa.strip())
+        ipa_clean = ipa.strip()
+        if contains_han_characters(ipa_clean):
+            han_sentences.append((sent_id, ipa_clean))
+        ipa_chunks.append(ipa_clean)
 
     if missing_sentences:
         preview_rows = [
@@ -151,6 +179,27 @@ def build_segment_ipa(
         )
         metadata.extend([INNER_DIVIDER, *preview_rows])
         print_warning("Missing IPA data", metadata)
+
+    if han_sentences:
+        preview_rows = [
+            format_preview_entry(
+                f"#{idx:02}",
+                "zh",
+                f"{sent_id}: {summarize_for_preview(sample)}",
+                True,
+            )
+            for idx, (sent_id, sample) in enumerate(han_sentences, start=1)
+        ]
+        metadata = list(
+            format_metadata_rows(
+                [
+                    ("Segment ID", str(segment.get("id"))),
+                    ("Chinese text hits", str(len(han_sentences))),
+                ]
+            )
+        )
+        metadata.extend([INNER_DIVIDER, *preview_rows])
+        print_warning("Chinese text detected in IPA transcripts", metadata)
 
     return " ".join(ipa_chunks).strip()
 
