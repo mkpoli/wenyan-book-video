@@ -1,0 +1,3113 @@
+{
+  "c2-s1": {
+    "source": "易曰。",
+    "ipa": "jiak ɦʉot .",
+    "tupa": "jiaek uot",
+    "choices": [
+      {
+        "char": "易",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "jiak",
+        "tupa": "jiaek"
+      }
+    ]
+  },
+  "c2-s2": {
+    "source": "變化者。",
+    "ipa": "pịěn hʷạ̌ː ʨiáː .",
+    "tupa": "pyenh hwaeh tjiaeq"
+  },
+  "c2-s3": {
+    "source": "進退之象也。",
+    "ipa": "ʦǐn tʰǒj ʨɨ̀ː zɨɑ́ŋ jiáː .",
+    "tupa": "tsinh thojh tjy zyangq jiaeq"
+  },
+  "c2-s4": {
+    "source": "今編程者。",
+    "ipa": "kị̀m pèn ɖiàŋ ʨiáː .",
+    "tupa": "kyim pen driaeng tjiaeq",
+    "choices": [
+      {
+        "char": "編",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "pèn",
+        "tupa": "pen"
+      }
+    ]
+  },
+  "c2-s5": {
+    "source": "罔不以變數為本。",
+    "ipa": "mʉɑ́ŋ pʉùː jɨ́ː pịěn ʂʉǒː ɦỵèː pón .",
+    "tupa": "muangq pu jyq pyenh sruoh ue ponq",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "為",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s6": {
+    "source": "變數者何。",
+    "ipa": "pịěn ʂʉǒː ʨiáː ɦɑ̀ː .",
+    "tupa": "pyenh sruoh tjiaeq gha",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "何",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      }
+    ]
+  },
+  "c2-s7": {
+    "source": "一名命一物也。",
+    "ipa": "ʔit miàŋ mịǎŋ ʔit mʉt jiáː .",
+    "tupa": "qit miaeng myaengh qit mut jiaeq"
+  },
+  "c2-s8": {
+    "source": "其物或更。",
+    "ipa": "gɨ̀ː mʉt ɦʷək kạ̌ŋ .",
+    "tupa": "gy mut ghweok kaengh",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      },
+      {
+        "char": "更",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "kạ̌ŋ",
+        "tupa": "kaengh"
+      }
+    ]
+  },
+  "c2-s9": {
+    "source": "而名不易。",
+    "ipa": "ɲɨ̀ː miàŋ pʉùː jiak .",
+    "tupa": "njy miaeng pu jiaek",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "易",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "jiak",
+        "tupa": "jiaek"
+      }
+    ]
+  },
+  "c2-s10": {
+    "source": "其名或眾。",
+    "ipa": "gɨ̀ː miàŋ ɦʷək ʨʉǔŋ .",
+    "tupa": "gy miaeng ghweok tjungh",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      },
+      {
+        "char": "眾",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʨʉǔŋ",
+        "tupa": "tjungh"
+      }
+    ]
+  },
+  "c2-s11": {
+    "source": "而物故一也。",
+    "ipa": "ɲɨ̀ː mʉt kǒː ʔit jiáː .",
+    "tupa": "njy mut koh qit jiaeq"
+  },
+  "c2-s12": {
+    "source": "譬葉之逢秋。",
+    "ipa": "pʰiěː jiep ʨɨ̀ː bʉòŋ ʦʰʉùː .",
+    "tupa": "phieh jiep tjy buong tshu",
+    "choices": [
+      {
+        "char": "葉",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "jiep",
+        "tupa": "jiep"
+      }
+    ]
+  },
+  "c2-s13": {
+    "source": "虎之離山。",
+    "ipa": "hóː ʨɨ̀ː liěː ʂẹ̀n .",
+    "tupa": "hoq tjy lieh sreen",
+    "choices": [
+      {
+        "char": "離",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "liěː",
+        "tupa": "lieh"
+      }
+    ]
+  },
+  "c2-s14": {
+    "source": "物雖改而名未易。",
+    "ipa": "mʉt sʷìː kə́j ɲɨ̀ː miàŋ mʉ̌j jiak .",
+    "tupa": "mut swi keojq njy miaeng mujh jiaek",
+    "choices": [
+      {
+        "char": "易",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "jiak",
+        "tupa": "jiaek"
+      }
+    ]
+  },
+  "c2-s15": {
+    "source": "又譬張祿之於范睢。",
+    "ipa": "ɦʉǔː pʰiěː ʈɨɑ̀ŋ luk ʨɨ̀ː ʔɨə̀ː bʉóm hʷìː .",
+    "tupa": "uh phieh tryang louk tjy qyo buomq hwi",
+    "choices": [
+      {
+        "char": "張",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʈɨɑ̀ŋ",
+        "tupa": "tryang"
+      },
+      {
+        "char": "於",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨə̀ː",
+        "tupa": "qyo"
+      },
+      {
+        "char": "睢",
+        "indexInSource": 7,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "hʷìː",
+        "tupa": "hwi"
+      }
+    ]
+  },
+  "c2-s16": {
+    "source": "相如之於犬子。",
+    "ipa": "sɨɑ̌ŋ ɲɨə̀ː ʨɨ̀ː ʔɨə̀ː kʰʷén ʦɨ́ː .",
+    "tupa": "syangh njyo tjy qyo khwenq tsyq",
+    "choices": [
+      {
+        "char": "相",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "sɨɑ̌ŋ",
+        "tupa": "syangh"
+      },
+      {
+        "char": "如",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "於",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨə̀ː",
+        "tupa": "qyo"
+      }
+    ]
+  },
+  "c2-s17": {
+    "source": "名二而實則一也。",
+    "ipa": "miàŋ ɲǐː ɲɨ̀ː ʑit ʦək ʔit jiáː .",
+    "tupa": "miaeng njih njy zjit tseok qit jiaeq"
+  },
+  "c2-s18": {
+    "source": "夫人物之別。",
+    "ipa": "bʉòː ɲìn mʉt ʨɨ̀ː pịet .",
+    "tupa": "buo njin mut tjy pyet",
+    "choices": [
+      {
+        "char": "夫",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "bʉòː",
+        "tupa": "buo"
+      },
+      {
+        "char": "別",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "pịet",
+        "tupa": "pyet"
+      }
+    ]
+  },
+  "c2-s19": {
+    "source": "復以類分之。",
+    "ipa": "bʉǔː jɨ́ː lʷǐː pʉ̀n ʨɨ̀ː .",
+    "tupa": "buh jyq lwih pun tjy",
+    "choices": [
+      {
+        "char": "復",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "bʉǔː",
+        "tupa": "buh"
+      },
+      {
+        "char": "分",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "pʉ̀n",
+        "tupa": "pun"
+      }
+    ]
+  },
+  "c2-s20": {
+    "source": "故曰無名無以別所言。",
+    "ipa": "kǒː ɦʉot mʉòː miàŋ mʉòː jɨ́ː pịet ʂɨə́ː ŋɨə̀n .",
+    "tupa": "koh uot muo miaeng muo jyq pyet sryoq ngyon",
+    "choices": [
+      {
+        "char": "別",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "pịet",
+        "tupa": "pyet"
+      }
+    ]
+  },
+  "c2-s21": {
+    "source": "無物無以志所得。",
+    "ipa": "mʉòː mʉt mʉòː jɨ́ː ʨɨ̌ː ʂɨə́ː tək .",
+    "tupa": "muo mut muo jyq tjyh sryoq teok"
+  },
+  "c2-s22": {
+    "source": "無類無以知其用。",
+    "ipa": "mʉòː lʷǐː mʉòː jɨ́ː ʈièː gɨ̀ː jʉǒŋ .",
+    "tupa": "muo lwih muo jyq trie gy juongh",
+    "choices": [
+      {
+        "char": "知",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "其",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s23": {
+    "source": "類者何。",
+    "ipa": "lʷǐː ʨiáː ɦɑ̀ː .",
+    "tupa": "lwih tjiaeq gha",
+    "choices": [
+      {
+        "char": "何",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      }
+    ]
+  },
+  "c2-s24": {
+    "source": "或數。",
+    "ipa": "ɦʷək ʂʉǒː .",
+    "tupa": "ghweok sruoh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s25": {
+    "source": "或言。",
+    "ipa": "ɦʷək ŋɨə̀n .",
+    "tupa": "ghweok ngyon"
+  },
+  "c2-s26": {
+    "source": "或爻。",
+    "ipa": "ɦʷək ɦạ̀w .",
+    "tupa": "ghweok ghaew"
+  },
+  "c2-s27": {
+    "source": "或列。",
+    "ipa": "ɦʷək liet .",
+    "tupa": "ghweok liet",
+    "choices": [
+      {
+        "char": "列",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "liet",
+        "tupa": "liet"
+      }
+    ]
+  },
+  "c2-s28": {
+    "source": "或物。",
+    "ipa": "ɦʷək mʉt .",
+    "tupa": "ghweok mut"
+  },
+  "c2-s29": {
+    "source": "或術。",
+    "ipa": "ɦʷək ʑʷit .",
+    "tupa": "ghweok zjwit"
+  },
+  "c2-s30": {
+    "source": "數者算。",
+    "ipa": "ʂʉǒː ʨiáː sʷɑ̌n .",
+    "tupa": "sruoh tjiaeq swanh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "算",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "sʷɑ̌n",
+        "tupa": "swanh"
+      }
+    ]
+  },
+  "c2-s31": {
+    "source": "言者表。",
+    "ipa": "ŋɨə̀n ʨiáː pịéw .",
+    "tupa": "ngyon tjiaeq pyewq"
+  },
+  "c2-s32": {
+    "source": "既見於前章。",
+    "ipa": "kɨ̌j kěn ʔɨə̀ː ʣèn ʨɨɑ̀ŋ .",
+    "tupa": "kyjh kenh qyo dzen tjyang",
+    "choices": [
+      {
+        "char": "見",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "kěn",
+        "tupa": "kenh"
+      },
+      {
+        "char": "於",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨə̀ː",
+        "tupa": "qyo"
+      }
+    ]
+  },
+  "c2-s33": {
+    "source": "今概敘其餘如左。",
+    "ipa": "kị̀m kə̌j zɨə́ː gɨ̀ː jɨə̀ː ɲɨə̀ː ʦɑ́ː .",
+    "tupa": "kyim keojh zyoq gy jyo njyo tsaq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      },
+      {
+        "char": "如",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "左",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑ́ː",
+        "tupa": "tsaq"
+      }
+    ]
+  },
+  "c2-s34": {
+    "source": "計開。",
+    "ipa": "kěj kʰə̀j .",
+    "tupa": "kejh kheoj"
+  },
+  "c2-s35": {
+    "source": "「爻」者。",
+    "ipa": "ɦạ̀w ʨiáː .",
+    "tupa": "ghaew tjiaeq"
+  },
+  "c2-s36": {
+    "source": "陰陽也。",
+    "ipa": "ʔị̀m jɨɑ̀ŋ jiáː .",
+    "tupa": "qyim jyang jiaeq"
+  },
+  "c2-s37": {
+    "source": "陰陽者。",
+    "ipa": "ʔị̀m jɨɑ̀ŋ ʨiáː .",
+    "tupa": "qyim jyang tjiaeq"
+  },
+  "c2-s38": {
+    "source": "是非也。",
+    "ipa": "ʥiéː pʉ̀j jiáː .",
+    "tupa": "djieq puj jiaeq"
+  },
+  "c2-s39": {
+    "source": "有無也。",
+    "ipa": "ɦʉúː mʉòː jiáː .",
+    "tupa": "uq muo jiaeq",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      }
+    ]
+  },
+  "c2-s40": {
+    "source": "臧否也。",
+    "ipa": "ʦɑ̀ŋ bị́ː jiáː .",
+    "tupa": "tsang byiq jiaeq",
+    "choices": [
+      {
+        "char": "否",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "bị́ː",
+        "tupa": "byiq"
+      }
+    ]
+  },
+  "c2-s41": {
+    "source": "凡物之有二極者。",
+    "ipa": "bʉòm mʉt ʨɨ̀ː ɦʉúː ɲǐː gɨk ʨiáː .",
+    "tupa": "buom mut tjy uq njih gyk tjiaeq",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      }
+    ]
+  },
+  "c2-s42": {
+    "source": "皆是也。",
+    "ipa": "kẹ̀j ʥiéː jiáː .",
+    "tupa": "keej djieq jiaeq"
+  },
+  "c2-s43": {
+    "source": "「列」者。",
+    "ipa": "liet ʨiáː .",
+    "tupa": "liet tjiaeq",
+    "choices": [
+      {
+        "char": "列",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "liet",
+        "tupa": "liet"
+      }
+    ]
+  },
+  "c2-s44": {
+    "source": "所以列同類之諸物也。",
+    "ipa": "ʂɨə́ː jɨ́ː liet dùŋ lʷǐː ʨɨ̀ː ʨɨə̀ː mʉt jiáː .",
+    "tupa": "sryoq jyq liet doung lwih tjy tjyo mut jiaeq",
+    "choices": [
+      {
+        "char": "列",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "liet",
+        "tupa": "liet"
+      },
+      {
+        "char": "諸",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ʨɨə̀ː",
+        "tupa": "tjyo"
+      }
+    ]
+  },
+  "c2-s45": {
+    "source": "如釋家之念珠。",
+    "ipa": "ɲɨə̀ː ɕiak kạ̀ː ʨɨ̀ː něm ʨʉòː .",
+    "tupa": "njyo sjiaek kae tjy nemh tjuo",
+    "choices": [
+      {
+        "char": "如",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      }
+    ]
+  },
+  "c2-s46": {
+    "source": "兵家之長蛇陣也。",
+    "ipa": "pịàŋ kạ̀ː ʨɨ̀ː ɖɨɑ̀ŋ ʑiàː ɖǐn jiáː .",
+    "tupa": "pyaeng kae tjy dryang zjiae drinh jiaeq",
+    "choices": [
+      {
+        "char": "長",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɖɨɑ̀ŋ",
+        "tupa": "dryang"
+      },
+      {
+        "char": "蛇",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʑiàː",
+        "tupa": "zjiae"
+      }
+    ]
+  },
+  "c2-s47": {
+    "source": "「物」者。",
+    "ipa": "mʉt ʨiáː .",
+    "tupa": "mut tjiaeq"
+  },
+  "c2-s48": {
+    "source": "所以狀一物之諸端也。",
+    "ipa": "ʂɨə́ː jɨ́ː ꭦɨɑ̌ŋ ʔit mʉt ʨɨ̀ː ʨɨə̀ː tʷɑ̀n jiáː .",
+    "tupa": "sryoq jyq dzryangh qit mut tjy tjyo twan jiaeq",
+    "choices": [
+      {
+        "char": "諸",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ʨɨə̀ː",
+        "tupa": "tjyo"
+      }
+    ]
+  },
+  "c2-s49": {
+    "source": "譬人之姓字者。",
+    "ipa": "pʰiěː ɲìn ʨɨ̀ː siǎŋ ʣɨ̌ː ʨiáː .",
+    "tupa": "phieh njin tjy siaengh dzyh tjiaeq"
+  },
+  "c2-s50": {
+    "source": "言也。",
+    "ipa": "ŋɨə̀n jiáː .",
+    "tupa": "ngyon jiaeq"
+  },
+  "c2-s51": {
+    "source": "人之年齒者。",
+    "ipa": "ɲìn ʨɨ̀ː nèn ʨʰɨ́ː ʨiáː .",
+    "tupa": "njin tjy nen tjhyq tjiaeq"
+  },
+  "c2-s52": {
+    "source": "數也。",
+    "ipa": "ʂʉǒː jiáː .",
+    "tupa": "sruoh jiaeq",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s53": {
+    "source": "人有男女。",
+    "ipa": "ɲìn ɦʉúː nə̀m ɳɨə́ː .",
+    "tupa": "njin uq neom nryoq",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "女",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɳɨə́ː",
+        "tupa": "nryoq"
+      }
+    ]
+  },
+  "c2-s54": {
+    "source": "陰陽也。",
+    "ipa": "ʔị̀m jɨɑ̀ŋ jiáː .",
+    "tupa": "qyim jyang jiaeq"
+  },
+  "c2-s55": {
+    "source": "合諸端而謂之物。",
+    "ipa": "ɦəp ʨɨə̀ː tʷɑ̀n ɲɨ̀ː ɦʉ̌j ʨɨ̀ː mʉt .",
+    "tupa": "gheop tjyo twan njy ujh tjy mut",
+    "choices": [
+      {
+        "char": "合",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦəp",
+        "tupa": "gheop"
+      },
+      {
+        "char": "諸",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʨɨə̀ː",
+        "tupa": "tjyo"
+      }
+    ]
+  },
+  "c2-s56": {
+    "source": "「術」者。",
+    "ipa": "ʑʷit ʨiáː .",
+    "tupa": "zjwit tjiaeq"
+  },
+  "c2-s57": {
+    "source": "方也。",
+    "ipa": "pʉɑ̀ŋ jiáː .",
+    "tupa": "puang jiaeq",
+    "choices": [
+      {
+        "char": "方",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "pʉɑ̀ŋ",
+        "tupa": "puang"
+      }
+    ]
+  },
+  "c2-s58": {
+    "source": "策也。",
+    "ipa": "ꭧʰẹk jiáː .",
+    "tupa": "tshreek jiaeq"
+  },
+  "c2-s59": {
+    "source": "行一事之法也。",
+    "ipa": "ɦạ̀ŋ ʔit ꭦɨ̌ː ʨɨ̀ː pʉop jiáː .",
+    "tupa": "ghaeng qit dzryh tjy puop jiaeq",
+    "choices": [
+      {
+        "char": "行",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦạ̀ŋ",
+        "tupa": "ghaeng"
+      },
+      {
+        "char": "事",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ꭦɨ̌ː",
+        "tupa": "dzryh"
+      }
+    ]
+  },
+  "c2-s60": {
+    "source": "既知變數之名實類。",
+    "ipa": "kɨ̌j ʈièː pịěn ʂʉǒː ʨɨ̀ː miàŋ ʑit lʷǐː .",
+    "tupa": "kyjh trie pyenh sruoh tjy miaeng zjit lwih",
+    "choices": [
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s61": {
+    "source": "即能創而述之如左。",
+    "ipa": "ʦɨk nə̀ŋ ꭧʰɨɑ̌ŋ ɲɨ̀ː ʑʷit ʨɨ̀ː ɲɨə̀ː ʦɑ́ː .",
+    "tupa": "tsyk neong tshryangh njy zjwit tjy njyo tsaq",
+    "choices": [
+      {
+        "char": "能",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "nə̀ŋ",
+        "tupa": "neong"
+      },
+      {
+        "char": "創",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ꭧʰɨɑ̌ŋ",
+        "tupa": "tshryangh"
+      },
+      {
+        "char": "如",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "左",
+        "indexInSource": 7,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑ́ː",
+        "tupa": "tsaq"
+      }
+    ]
+  },
+  "c2-s62": {
+    "source": "吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s63": {
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s64": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s65": {
+    "source": "\n吾有一爻。",
+    "ipa": "ŋòː ɦʉúː ʔit ɦạ̀w .",
+    "tupa": "ngo uq qit ghaew",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      }
+    ]
+  },
+  "c2-s66": {
+    "source": "曰陰。",
+    "ipa": "ɦʉot ʔị̀m .",
+    "tupa": "uot qyim"
+  },
+  "c2-s67": {
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
+  },
+  "c2-s68": {
+    "source": "\n吾有一言。",
+    "ipa": "ŋòː ɦʉúː ʔit ŋɨə̀n .",
+    "tupa": "ngo uq qit ngyon",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      }
+    ]
+  },
+  "c2-s69": {
+    "source": "曰『噫吁戲』。",
+    "ipa": "ɦʉot ʔɨ̀ː hʉòː hịèː .",
+    "tupa": "uot qy huo hye",
+    "choices": [
+      {
+        "char": "噫",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨ̀ː",
+        "tupa": "qy"
+      },
+      {
+        "char": "吁",
+        "indexInSource": 3,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "hʉòː",
+        "tupa": "huo"
+      },
+      {
+        "char": "戲",
+        "indexInSource": 4,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "hịèː",
+        "tupa": "hye"
+      }
+    ]
+  },
+  "c2-s70": {
+    "source": "名之曰「丙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot pịáŋ .",
+    "tupa": "miaeng tjy uot pyaengq"
+  },
+  "c2-s71": {
+    "source": "不知其名。",
+    "ipa": "pʉùː ʈièː gɨ̀ː miàŋ .",
+    "tupa": "pu trie gy miaeng",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "其",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s72": {
+    "source": "但知其實類者。",
+    "ipa": "dɑ́n ʈièː gɨ̀ː ʑit lʷǐː ʨiáː .",
+    "tupa": "danq trie gy zjit lwih tjiaeq",
+    "choices": [
+      {
+        "char": "但",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "dɑ́n",
+        "tupa": "danq"
+      },
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "其",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s73": {
+    "source": "猶能述之如左。",
+    "ipa": "jʉùː nə̀ŋ ʑʷit ʨɨ̀ː ɲɨə̀ː ʦɑ́ː .",
+    "tupa": "ju neong zjwit tjy njyo tsaq",
+    "choices": [
+      {
+        "char": "猶",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "jʉùː",
+        "tupa": "ju"
+      },
+      {
+        "char": "能",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "nə̀ŋ",
+        "tupa": "neong"
+      },
+      {
+        "char": "如",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "左",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑ́ː",
+        "tupa": "tsaq"
+      }
+    ]
+  },
+  "c2-s74": {
+    "source": "吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s75": {
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s76": {
+    "source": "未名之變數。",
+    "ipa": "mʉ̌j miàŋ ʨɨ̀ː pịěn ʂʉǒː .",
+    "tupa": "mujh miaeng tjy pyenh sruoh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s77": {
+    "source": "機器聊志之以待其用也。",
+    "ipa": "kɨ̀j kʰị̌ː lèw ʨɨ̌ː ʨɨ̀ː jɨ́ː də́j gɨ̀ː jʉǒŋ jiáː .",
+    "tupa": "kyj khyih lew tjyh tjy jyq deojq gy juongh jiaeq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 7,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s78": {
+    "source": "`其`字者。",
+    "ipa": "gɨ̀ː ʣɨ̌ː ʨiáː .",
+    "tupa": "gy dzyh tjiaeq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s79": {
+    "source": "即謂前未名之變數也。",
+    "ipa": "ʦɨk ɦʉ̌j ʣèn mʉ̌j miàŋ ʨɨ̀ː pịěn ʂʉǒː jiáː .",
+    "tupa": "tsyk ujh dzen mujh miaeng tjy pyenh sruoh jiaeq",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 7,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s80": {
+    "source": "用如左。",
+    "ipa": "jʉǒŋ ɲɨə̀ː ʦɑ́ː .",
+    "tupa": "juongh njyo tsaq",
+    "choices": [
+      {
+        "char": "如",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "左",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑ́ː",
+        "tupa": "tsaq"
+      }
+    ]
+  },
+  "c2-s81": {
+    "source": "吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s82": {
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s83": {
+    "source": "加其以五。",
+    "ipa": "kạ̀ː gɨ̀ː jɨ́ː ŋóː .",
+    "tupa": "kae gy jyq ngoq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s84": {
+    "source": "減其以二。",
+    "ipa": "kẹ́m gɨ̀ː jɨ́ː ɲǐː .",
+    "tupa": "keemq gy jyq njih",
+    "choices": [
+      {
+        "char": "減",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "kẹ́m",
+        "tupa": "keemq"
+      },
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s85": {
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
+  },
+  "c2-s86": {
+    "source": "夫方謂`加其以五`時。",
+    "ipa": "bʉòː pʉɑ̀ŋ ɦʉ̌j kạ̀ː gɨ̀ː jɨ́ː ŋóː ʥɨ̀ː .",
+    "tupa": "buo puang ujh kae gy jyq ngoq djy",
+    "choices": [
+      {
+        "char": "夫",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "bʉòː",
+        "tupa": "buo"
+      },
+      {
+        "char": "方",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "pʉɑ̀ŋ",
+        "tupa": "puang"
+      },
+      {
+        "char": "其",
+        "indexInSource": 5,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s87": {
+    "source": "`其`者。",
+    "ipa": "gɨ̀ː ʨiáː .",
+    "tupa": "gy tjiaeq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s88": {
+    "source": "三也。",
+    "ipa": "sɑ̀m jiáː .",
+    "tupa": "sam jiaeq",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s89": {
+    "source": "至`減其以二`時。",
+    "ipa": "ʨǐː kẹ́m gɨ̀ː jɨ́ː ɲǐː ʥɨ̀ː .",
+    "tupa": "tjih keemq gy jyq njih djy",
+    "choices": [
+      {
+        "char": "減",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "kẹ́m",
+        "tupa": "keemq"
+      },
+      {
+        "char": "其",
+        "indexInSource": 3,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s90": {
+    "source": "`其`者。",
+    "ipa": "gɨ̀ː ʨiáː .",
+    "tupa": "gy tjiaeq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s91": {
+    "source": "八也。",
+    "ipa": "pẹt jiáː .",
+    "tupa": "peet jiaeq"
+  },
+  "c2-s92": {
+    "source": "復減以二。",
+    "ipa": "bʉǔː kẹ́m jɨ́ː ɲǐː .",
+    "tupa": "buh keemq jyq njih",
+    "choices": [
+      {
+        "char": "復",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "bʉǔː",
+        "tupa": "buh"
+      },
+      {
+        "char": "減",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "kẹ́m",
+        "tupa": "keemq"
+      }
+    ]
+  },
+  "c2-s93": {
+    "source": "終得六也。",
+    "ipa": "ʨʉùŋ tək lʉuk jiáː .",
+    "tupa": "tjung teok luk jiaeq"
+  },
+  "c2-s94": {
+    "source": "但知其名。",
+    "ipa": "dɑ́n ʈièː gɨ̀ː miàŋ .",
+    "tupa": "danq trie gy miaeng",
+    "choices": [
+      {
+        "char": "但",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "dɑ́n",
+        "tupa": "danq"
+      },
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "其",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s95": {
+    "source": "不知其類者。",
+    "ipa": "pʉùː ʈièː gɨ̀ː lʷǐː ʨiáː .",
+    "tupa": "pu trie gy lwih tjiaeq",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      },
+      {
+        "char": "其",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s96": {
+    "source": "亦可述之。",
+    "ipa": "jiak kʰɑ́ː ʑʷit ʨɨ̀ː .",
+    "tupa": "jiaek khaq zjwit tjy"
+  },
+  "c2-s97": {
+    "source": "然其用繁矣。",
+    "ipa": "ɲièn gɨ̀ː jʉǒŋ bʉòn ɦɨ́ː .",
+    "tupa": "njien gy juongh buon yq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      },
+      {
+        "char": "繁",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "bʉòn",
+        "tupa": "buon"
+      }
+    ]
+  },
+  "c2-s98": {
+    "source": "其義奧矣。",
+    "ipa": "gɨ̀ː ŋịěː ʔɑ̌w ɦɨ́ː .",
+    "tupa": "gy ngyeh qawh yq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s99": {
+    "source": "是故留待後章敘之。",
+    "ipa": "ʥiéː kǒː lʉùː də́j ɦúː ʨɨɑ̀ŋ zɨə́ː ʨɨ̀ː .",
+    "tupa": "djieq koh lu deojq ghouq tjyang zyoq tjy",
+    "choices": [
+      {
+        "char": "留",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "lʉùː",
+        "tupa": "lu"
+      },
+      {
+        "char": "後",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ɦúː",
+        "tupa": "ghouq"
+      }
+    ]
+  },
+  "c2-s100": {
+    "source": "或問曰。",
+    "ipa": "ɦʷək mʉ̌n ɦʉot .",
+    "tupa": "ghweok munh uot"
+  },
+  "c2-s101": {
+    "source": "奈何止一數焉。",
+    "ipa": "nɑ̌j ɦɑ̀ː ʨɨ́ː ʔit ʂʉǒː ɦịèn .",
+    "tupa": "najh gha tjyq qit sruoh yen",
+    "choices": [
+      {
+        "char": "奈",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "nɑ̌j",
+        "tupa": "najh"
+      },
+      {
+        "char": "何",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "焉",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɦịèn",
+        "tupa": "yen"
+      }
+    ]
+  },
+  "c2-s102": {
+    "source": "今欲有三數。",
+    "ipa": "kị̀m jʉok ɦʉúː sɑ̀m ʂʉǒː .",
+    "tupa": "kyim juok uq sam sruoh",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "三",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s103": {
+    "source": "五數。",
+    "ipa": "ŋóː ʂʉǒː .",
+    "tupa": "ngoq sruoh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s104": {
+    "source": "千千數。",
+    "ipa": "ʦʰèn ʦʰèn ʂʉǒː .",
+    "tupa": "tshen tshen sruoh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s105": {
+    "source": "可得乎。",
+    "ipa": "kʰɑ́ː tək ɦòː .",
+    "tupa": "khaq teok gho"
+  },
+  "c2-s106": {
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
+  },
+  "c2-s107": {
+    "source": "易矣。",
+    "ipa": "jiěː ɦɨ́ː .",
+    "tupa": "jieh yq",
+    "choices": [
+      {
+        "char": "易",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "jiěː",
+        "tupa": "jieh"
+      }
+    ]
+  },
+  "c2-s108": {
+    "source": "吾有三數。",
+    "ipa": "ŋòː ɦʉúː sɑ̀m ʂʉǒː .",
+    "tupa": "ngo uq sam sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "三",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s109": {
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s110": {
+    "source": "曰九。",
+    "ipa": "ɦʉot kʉúː .",
+    "tupa": "uot kuq"
+  },
+  "c2-s111": {
+    "source": "曰二十七。",
+    "ipa": "ɦʉot ɲǐː ʥip ʦʰit .",
+    "tupa": "uot njih djip tshit"
+  },
+  "c2-s112": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s113": {
+    "source": "曰「乙」。",
+    "ipa": "ɦʉot ʔịt .",
+    "tupa": "uot qyit"
+  },
+  "c2-s114": {
+    "source": "曰「丙」。",
+    "ipa": "ɦʉot pịáŋ .",
+    "tupa": "uot pyaengq"
+  },
+  "c2-s115": {
+    "source": "又。",
+    "ipa": "ɦʉǔː .",
+    "tupa": "uh"
+  },
+  "c2-s116": {
+    "source": "`吾有一數曰` 可省為`有數`。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː ɦʉot kʰɑ́ː ʂịáŋ ɦỵèː ɦʉúː ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh uot khaq sryaengq ue uq sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "省",
+        "indexInSource": 9,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ʂịáŋ",
+        "tupa": "sryaengq"
+      },
+      {
+        "char": "為",
+        "indexInSource": 10,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      },
+      {
+        "char": "有",
+        "indexInSource": 12,
+        "indexAmongChinese": 8,
+        "sameCharIndex": 1,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 13,
+        "indexAmongChinese": 9,
+        "sameCharIndex": 1,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s117": {
+    "source": "故是二句無少異。",
+    "ipa": "kǒː ʥiéː ɲǐː kʉǒː mʉòː ɕiéw jɨ̌ː .",
+    "tupa": "koh djieq njih kuoh muo sjiewq jyh",
+    "choices": [
+      {
+        "char": "句",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "kʉǒː",
+        "tupa": "kuoh"
+      },
+      {
+        "char": "少",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɕiéw",
+        "tupa": "sjiewq"
+      }
+    ]
+  },
+  "c2-s118": {
+    "source": "有數三。",
+    "ipa": "ɦʉúː ʂʉǒː sɑ̀m .",
+    "tupa": "uq sruoh sam",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "三",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s119": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s120": {
+    "source": "\n吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s121": {
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s122": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s123": {
+    "source": "又。",
+    "ipa": "ɦʉǔː .",
+    "tupa": "uh"
+  },
+  "c2-s124": {
+    "source": "數之不言幾何者。",
+    "ipa": "ʂʉǒː ʨɨ̀ː pʉùː ŋɨə̀n kɨ́j ɦɑ̀ː ʨiáː .",
+    "tupa": "sruoh tjy pu ngyon kyjq gha tjiaeq",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "不",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "幾",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "kɨ́j",
+        "tupa": "kyjq"
+      },
+      {
+        "char": "何",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      }
+    ]
+  },
+  "c2-s125": {
+    "source": "默為零。",
+    "ipa": "mək ɦỵèː lèŋ .",
+    "tupa": "meok ue leng",
+    "choices": [
+      {
+        "char": "為",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      },
+      {
+        "char": "零",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "lèŋ",
+        "tupa": "leng"
+      }
+    ]
+  },
+  "c2-s126": {
+    "source": "爻之不明默為陰。",
+    "ipa": "ɦạ̀w ʨɨ̀ː pʉùː mịàŋ mək ɦỵèː ʔị̀m .",
+    "tupa": "ghaew tjy pu myaeng meok ue qyim",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "為",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s127": {
+    "source": "言之不明默為緘。",
+    "ipa": "ŋɨə̀n ʨɨ̀ː pʉùː mịàŋ mək ɦỵèː kẹ̀m .",
+    "tupa": "ngyon tjy pu myaeng meok ue keem",
+    "choices": [
+      {
+        "char": "不",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "pʉùː",
+        "tupa": "pu"
+      },
+      {
+        "char": "為",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s128": {
+    "source": "故是三句盡同。",
+    "ipa": "kǒː ʥiéː sɑ̀m kʉǒː ʣín dùŋ .",
+    "tupa": "koh djieq sam kuoh dzinq doung",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      },
+      {
+        "char": "句",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "kʉǒː",
+        "tupa": "kuoh"
+      },
+      {
+        "char": "盡",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʣín",
+        "tupa": "dzinq"
+      }
+    ]
+  },
+  "c2-s129": {
+    "source": "吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s130": {
+    "source": "曰零。",
+    "ipa": "ɦʉot lèŋ .",
+    "tupa": "uot leng",
+    "choices": [
+      {
+        "char": "零",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "lèŋ",
+        "tupa": "leng"
+      }
+    ]
+  },
+  "c2-s131": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s132": {
+    "source": "\n吾有一數。",
+    "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
+    "tupa": "ngo uq qit sruoh",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "有",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 4,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s133": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s134": {
+    "source": "\n有數零。",
+    "ipa": "ɦʉúː ʂʉǒː lèŋ .",
+    "tupa": "uq sruoh leng",
+    "choices": [
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      },
+      {
+        "char": "數",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "零",
+        "indexInSource": 3,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "lèŋ",
+        "tupa": "leng"
+      }
+    ]
+  },
+  "c2-s135": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s136": {
+    "source": "既創變數。",
+    "ipa": "kɨ̌j ꭧʰɨɑ̌ŋ pịěn ʂʉǒː .",
+    "tupa": "kyjh tshryangh pyenh sruoh",
+    "choices": [
+      {
+        "char": "創",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ꭧʰɨɑ̌ŋ",
+        "tupa": "tshryangh"
+      },
+      {
+        "char": "數",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s137": {
+    "source": "後或變之。",
+    "ipa": "ɦúː ɦʷək pịěn ʨɨ̀ː .",
+    "tupa": "ghouq ghweok pyenh tjy",
+    "choices": [
+      {
+        "char": "後",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦúː",
+        "tupa": "ghouq"
+      }
+    ]
+  },
+  "c2-s138": {
+    "source": "乃書如是。",
+    "ipa": "nə́j ɕɨə̀ː ɲɨə̀ː ʥiéː .",
+    "tupa": "neojq sjyo njyo djieq",
+    "choices": [
+      {
+        "char": "如",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      }
+    ]
+  },
+  "c2-s139": {
+    "source": "昔之「甲」者。",
+    "ipa": "siak ʨɨ̀ː kạp ʨiáː .",
+    "tupa": "siaek tjy kaep tjiaeq"
+  },
+  "c2-s140": {
+    "source": "今四是矣。",
+    "ipa": "kị̀m sǐː ʥiéː ɦɨ́ː .",
+    "tupa": "kyim sih djieq yq"
+  },
+  "c2-s141": {
+    "source": "\n昔之「乙」者。",
+    "ipa": "siak ʨɨ̀ː ʔịt ʨiáː .",
+    "tupa": "siaek tjy qyit tjiaeq"
+  },
+  "c2-s142": {
+    "source": "今「甲」是矣。",
+    "ipa": "kị̀m kạp ʥiéː ɦɨ́ː .",
+    "tupa": "kyim kaep djieq yq"
+  },
+  "c2-s143": {
+    "source": "首句變甲為四。",
+    "ipa": "ɕʉúː kʉǒː pịěn kạp ɦỵèː sǐː .",
+    "tupa": "sjuq kuoh pyenh kaep ue sih",
+    "choices": [
+      {
+        "char": "首",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɕʉúː",
+        "tupa": "sjuq"
+      },
+      {
+        "char": "句",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "kʉǒː",
+        "tupa": "kuoh"
+      },
+      {
+        "char": "為",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s144": {
+    "source": "次句變乙為甲。",
+    "ipa": "ʦʰǐː kʉǒː pịěn ʔịt ɦỵèː kạp .",
+    "tupa": "tshih kuoh pyenh qyit ue kaep",
+    "choices": [
+      {
+        "char": "句",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "kʉǒː",
+        "tupa": "kuoh"
+      },
+      {
+        "char": "為",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s145": {
+    "source": "故乙之為四。",
+    "ipa": "kǒː ʔịt ʨɨ̀ː ɦỵèː sǐː .",
+    "tupa": "koh qyit tjy ue sih",
+    "choices": [
+      {
+        "char": "為",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɦỵèː",
+        "tupa": "ue"
+      }
+    ]
+  },
+  "c2-s146": {
+    "source": "易明矣。",
+    "ipa": "jiěː mịàŋ ɦɨ́ː .",
+    "tupa": "jieh myaeng yq",
+    "choices": [
+      {
+        "char": "易",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "jiěː",
+        "tupa": "jieh"
+      }
+    ]
+  },
+  "c2-s147": {
+    "source": "或問曰。",
+    "ipa": "ɦʷək mʉ̌n ɦʉot .",
+    "tupa": "ghweok munh uot"
+  },
+  "c2-s148": {
+    "source": "曩者未創之物。",
+    "ipa": "nɑ́ŋ ʨiáː mʉ̌j ꭧʰɨɑ̌ŋ ʨɨ̀ː mʉt .",
+    "tupa": "nangq tjiaeq mujh tshryangh tjy mut",
+    "choices": [
+      {
+        "char": "創",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ꭧʰɨɑ̌ŋ",
+        "tupa": "tshryangh"
+      }
+    ]
+  },
+  "c2-s149": {
+    "source": "後算而得之。",
+    "ipa": "ɦúː sʷɑ̌n ɲɨ̀ː tək ʨɨ̀ː .",
+    "tupa": "ghouq swanh njy teok tjy",
+    "choices": [
+      {
+        "char": "後",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ɦúː",
+        "tupa": "ghouq"
+      },
+      {
+        "char": "算",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "sʷɑ̌n",
+        "tupa": "swanh"
+      }
+    ]
+  },
+  "c2-s150": {
+    "source": "欲名之。",
+    "ipa": "jʉok miàŋ ʨɨ̀ː .",
+    "tupa": "juok miaeng tjy"
+  },
+  "c2-s151": {
+    "source": "奈何。",
+    "ipa": "nɑ̌j ɦɑ̀ː .",
+    "tupa": "najh gha",
+    "choices": [
+      {
+        "char": "奈",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "nɑ̌j",
+        "tupa": "najh"
+      },
+      {
+        "char": "何",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      }
+    ]
+  },
+  "c2-s152": {
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
+  },
+  "c2-s153": {
+    "source": "當如是。",
+    "ipa": "tɑ̀ŋ ɲɨə̀ː ʥiéː .",
+    "tupa": "tang njyo djieq",
+    "choices": [
+      {
+        "char": "當",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "tɑ̀ŋ",
+        "tupa": "tang"
+      },
+      {
+        "char": "如",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      }
+    ]
+  },
+  "c2-s154": {
+    "source": "加一以三。",
+    "ipa": "kạ̀ː ʔit jɨ́ː sɑ̀m .",
+    "tupa": "kae qit jyq sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s155": {
+    "source": "名之曰「丙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot pịáŋ .",
+    "tupa": "miaeng tjy uot pyaengq"
+  },
+  "c2-s156": {
+    "source": "又問曰。",
+    "ipa": "ɦʉǔː mʉ̌n ɦʉot .",
+    "tupa": "uh munh uot"
+  },
+  "c2-s157": {
+    "source": "一時算得之物眾矣。",
+    "ipa": "ʔit ʥɨ̀ː sʷɑ̌n tək ʨɨ̀ː mʉt ʨʉǔŋ ɦɨ́ː .",
+    "tupa": "qit djy swanh teok tjy mut tjungh yq",
+    "choices": [
+      {
+        "char": "算",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "sʷɑ̌n",
+        "tupa": "swanh"
+      },
+      {
+        "char": "眾",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ʨʉǔŋ",
+        "tupa": "tjungh"
+      }
+    ]
+  },
+  "c2-s158": {
+    "source": "能一舉而盡名之乎。",
+    "ipa": "nə̀ŋ ʔit kɨə́ː ɲɨ̀ː ʣín miàŋ ʨɨ̀ː ɦòː .",
+    "tupa": "neong qit kyoq njy dzinq miaeng tjy gho",
+    "choices": [
+      {
+        "char": "能",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "nə̀ŋ",
+        "tupa": "neong"
+      },
+      {
+        "char": "盡",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʣín",
+        "tupa": "dzinq"
+      }
+    ]
+  },
+  "c2-s159": {
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
+  },
+  "c2-s160": {
+    "source": "亦可。",
+    "ipa": "jiak kʰɑ́ː .",
+    "tupa": "jiaek khaq"
+  },
+  "c2-s161": {
+    "source": "加一以三。",
+    "ipa": "kạ̀ː ʔit jɨ́ː sɑ̀m .",
+    "tupa": "kae qit jyq sam",
+    "choices": [
+      {
+        "char": "三",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "sɑ̀m",
+        "tupa": "sam"
+      }
+    ]
+  },
+  "c2-s162": {
+    "source": "加六以九。",
+    "ipa": "kạ̀ː lʉuk jɨ́ː kʉúː .",
+    "tupa": "kae luk jyq kuq"
+  },
+  "c2-s163": {
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
+  },
+  "c2-s164": {
+    "source": "曰「乙」。",
+    "ipa": "ɦʉot ʔịt .",
+    "tupa": "uot qyit"
+  },
+  "c2-s165": {
+    "source": "客曰。",
+    "ipa": "kʰạk ɦʉot .",
+    "tupa": "khaek uot"
+  },
+  "c2-s166": {
+    "source": "吾知之矣。",
+    "ipa": "ŋòː ʈièː ʨɨ̀ː ɦɨ́ː .",
+    "tupa": "ngo trie tjy yq",
+    "choices": [
+      {
+        "char": "吾",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ŋòː",
+        "tupa": "ngo"
+      },
+      {
+        "char": "知",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʈièː",
+        "tupa": "trie"
+      }
+    ]
+  },
+  "c2-s167": {
+    "source": "應作如是觀。",
+    "ipa": "ʔɨ̀ŋ ʦɑk ɲɨə̀ː ʥiéː kʷɑ̀n .",
+    "tupa": "qyng tsak njyo djieq kwan",
+    "choices": [
+      {
+        "char": "應",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨ̀ŋ",
+        "tupa": "qyng"
+      },
+      {
+        "char": "作",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑk",
+        "tupa": "tsak"
+      },
+      {
+        "char": "如",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "觀",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "kʷɑ̀n",
+        "tupa": "kwan"
+      }
+    ]
+  },
+  "c2-s168": {
+    "source": "凡未名之變數。",
+    "ipa": "bʉòm mʉ̌j miàŋ ʨɨ̀ː pịěn ʂʉǒː .",
+    "tupa": "buom mujh miaeng tjy pyenh sruoh",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      }
+    ]
+  },
+  "c2-s169": {
+    "source": "皆如獺祭然。",
+    "ipa": "kẹ̀j ɲɨə̀ː tʰɑt ʦiěj ɲièn .",
+    "tupa": "keej njyo that tsiejh njien",
+    "choices": [
+      {
+        "char": "如",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      },
+      {
+        "char": "獺",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "tʰɑt",
+        "tupa": "that"
+      },
+      {
+        "char": "祭",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ʦiěj",
+        "tupa": "tsiejh"
+      }
+    ]
+  },
+  "c2-s170": {
+    "source": "言`其`者。",
+    "ipa": "ŋɨə̀n gɨ̀ː ʨiáː .",
+    "tupa": "ngyon gy tjiaeq",
+    "choices": [
+      {
+        "char": "其",
+        "indexInSource": 2,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s171": {
+    "source": "取至近之魚而棄其餘。",
+    "ipa": "ʦʰʉóː ʨǐː gɨ́n ʨɨ̀ː ŋɨə̀ː ɲɨ̀ː kʰǐː gɨ̀ː jɨə̀ː .",
+    "tupa": "tshuoq tjih gynq tjy ngyo njy khih gy jyo",
+    "choices": [
+      {
+        "char": "取",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʦʰʉóː",
+        "tupa": "tshuoq"
+      },
+      {
+        "char": "近",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "gɨ́n",
+        "tupa": "gynq"
+      },
+      {
+        "char": "其",
+        "indexInSource": 7,
+        "indexAmongChinese": 7,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s172": {
+    "source": "言`書之`者。",
+    "ipa": "ŋɨə̀n ɕɨə̀ː ʨɨ̀ː ʨiáː .",
+    "tupa": "ngyon sjyo tjy tjiaeq"
+  },
+  "c2-s173": {
+    "source": "盡書之。",
+    "ipa": "ʣín ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "dzinq sjyo tjy",
+    "choices": [
+      {
+        "char": "盡",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʣín",
+        "tupa": "dzinq"
+      }
+    ]
+  },
+  "c2-s174": {
+    "source": "言`名之`者。",
+    "ipa": "ŋɨə̀n miàŋ ʨɨ̀ː ʨiáː .",
+    "tupa": "ngyon miaeng tjy tjiaeq"
+  },
+  "c2-s175": {
+    "source": "取若干而名之。",
+    "ipa": "ʦʰʉóː ɲɨɑk kɑ̀n ɲɨ̀ː miàŋ ʨɨ̀ː .",
+    "tupa": "tshuoq njyak kan njy miaeng tjy",
+    "choices": [
+      {
+        "char": "取",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʦʰʉóː",
+        "tupa": "tshuoq"
+      },
+      {
+        "char": "若",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨɑk",
+        "tupa": "njyak"
+      }
+    ]
+  },
+  "c2-s176": {
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
+  },
+  "c2-s177": {
+    "source": "然也。",
+    "ipa": "ɲièn jiáː .",
+    "tupa": "njien jiaeq"
+  },
+  "c2-s178": {
+    "source": "善哉此比。",
+    "ipa": "ʥién ʦə̀j ʦʰiéː píː .",
+    "tupa": "djienq tseoj tshieq piq",
+    "choices": [
+      {
+        "char": "比",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "píː",
+        "tupa": "piq"
+      }
+    ]
+  },
+  "c2-s179": {
+    "source": "問曰。",
+    "ipa": "mʉ̌n ɦʉot .",
+    "tupa": "munh uot"
+  },
+  "c2-s180": {
+    "source": "每有未名者。",
+    "ipa": "mój ɦʉúː mʉ̌j miàŋ ʨiáː .",
+    "tupa": "mojq uq mujh miaeng tjiaeq",
+    "choices": [
+      {
+        "char": "每",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "mój",
+        "tupa": "mojq"
+      },
+      {
+        "char": "有",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ɦʉúː",
+        "tupa": "uq"
+      }
+    ]
+  },
+  "c2-s181": {
+    "source": "輒祭如是。",
+    "ipa": "ʈiep ʦiěj ɲɨə̀ː ʥiéː .",
+    "tupa": "triep tsiejh njyo djieq",
+    "choices": [
+      {
+        "char": "祭",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʦiěj",
+        "tupa": "tsiejh"
+      },
+      {
+        "char": "如",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ɲɨə̀ː",
+        "tupa": "njyo"
+      }
+    ]
+  },
+  "c2-s182": {
+    "source": "豈非終累累然焉。",
+    "ipa": "kʰɨ́j pʉ̀j ʨʉùŋ lʷìː lʷìː ɲièn ɦịèn .",
+    "tupa": "khyjq puj tjung lwi lwi njien yen",
+    "choices": [
+      {
+        "char": "累",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "lʷìː",
+        "tupa": "lwi"
+      },
+      {
+        "char": "累",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 1,
+        "ipa": "lʷìː",
+        "tupa": "lwi"
+      },
+      {
+        "char": "焉",
+        "indexInSource": 6,
+        "indexAmongChinese": 6,
+        "sameCharIndex": 0,
+        "ipa": "ɦịèn",
+        "tupa": "yen"
+      }
+    ]
+  },
+  "c2-s183": {
+    "source": "今欲盡棄其魚。",
+    "ipa": "kị̀m jʉok ʣín kʰǐː gɨ̀ː ŋɨə̀ː .",
+    "tupa": "kyim juok dzinq khih gy ngyo",
+    "choices": [
+      {
+        "char": "盡",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʣín",
+        "tupa": "dzinq"
+      },
+      {
+        "char": "其",
+        "indexInSource": 4,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "gɨ̀ː",
+        "tupa": "gy"
+      }
+    ]
+  },
+  "c2-s184": {
+    "source": "復當作何書。",
+    "ipa": "bʉǔː tɑ̀ŋ ʦɑk ɦɑ̀ː ɕɨə̀ː .",
+    "tupa": "buh tang tsak gha sjyo",
+    "choices": [
+      {
+        "char": "復",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "bʉǔː",
+        "tupa": "buh"
+      },
+      {
+        "char": "當",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "tɑ̀ŋ",
+        "tupa": "tang"
+      },
+      {
+        "char": "作",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʦɑk",
+        "tupa": "tsak"
+      },
+      {
+        "char": "何",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "ɦɑ̀ː",
+        "tupa": "gha"
+      }
+    ]
+  },
+  "c2-s185": {
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
+  },
+  "c2-s186": {
+    "source": "當書`噫`。",
+    "ipa": "tɑ̀ŋ ɕɨə̀ː ʔɨ̀ː .",
+    "tupa": "tang sjyo qy",
+    "choices": [
+      {
+        "char": "當",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "tɑ̀ŋ",
+        "tupa": "tang"
+      },
+      {
+        "char": "噫",
+        "indexInSource": 3,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨ̀ː",
+        "tupa": "qy"
+      }
+    ]
+  },
+  "c2-s187": {
+    "source": "`噫`者。",
+    "ipa": "ʔɨ̀ː ʨiáː .",
+    "tupa": "qy tjiaeq",
+    "choices": [
+      {
+        "char": "噫",
+        "indexInSource": 1,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "ʔɨ̀ː",
+        "tupa": "qy"
+      }
+    ]
+  },
+  "c2-s188": {
+    "source": "嘆辭也。",
+    "ipa": "tʰɑ̀n zɨ̀ː jiáː .",
+    "tupa": "than zy jiaeq",
+    "choices": [
+      {
+        "char": "嘆",
+        "indexInSource": 0,
+        "indexAmongChinese": 0,
+        "sameCharIndex": 0,
+        "ipa": "tʰɑ̀n",
+        "tupa": "than"
+      }
+    ]
+  },
+  "c2-s189": {
+    "source": "所以嘆彼之盡棄也。",
+    "ipa": "ʂɨə́ː jɨ́ː tʰɑ̀n pịéː ʨɨ̀ː ʣín kʰǐː jiáː .",
+    "tupa": "sryoq jyq than pyeq tjy dzinq khih jiaeq",
+    "choices": [
+      {
+        "char": "嘆",
+        "indexInSource": 2,
+        "indexAmongChinese": 2,
+        "sameCharIndex": 0,
+        "ipa": "tʰɑ̀n",
+        "tupa": "than"
+      },
+      {
+        "char": "盡",
+        "indexInSource": 5,
+        "indexAmongChinese": 5,
+        "sameCharIndex": 0,
+        "ipa": "ʣín",
+        "tupa": "dzinq"
+      }
+    ]
+  },
+  "c2-s190": {
+    "source": "變數之道。",
+    "ipa": "pịěn ʂʉǒː ʨɨ̀ː dɑ́w .",
+    "tupa": "pyenh sruoh tjy dawq",
+    "choices": [
+      {
+        "char": "數",
+        "indexInSource": 1,
+        "indexAmongChinese": 1,
+        "sameCharIndex": 0,
+        "ipa": "ʂʉǒː",
+        "tupa": "sruoh"
+      },
+      {
+        "char": "道",
+        "indexInSource": 3,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "dɑ́w",
+        "tupa": "dawq"
+      }
+    ]
+  },
+  "c2-s191": {
+    "source": "至是略備矣。",
+    "ipa": "ʨǐː ʥiéː lɨɑk bị̌ː ɦɨ́ː .",
+    "tupa": "tjih djieq lyak byih yq"
+  }
+}
