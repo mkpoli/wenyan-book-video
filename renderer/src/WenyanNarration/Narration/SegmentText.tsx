@@ -512,7 +512,8 @@ function Sentence({
   } else {
     // Match a final 「。」 immediately followed by one or more closing quotes at the end
     // Example: 『……。』 -> groups: [『……', '。', '』']
-    const insideQuoteMatch = textWithoutLeadingBreaks.match(/^(.*)(。)([」』]+)$/);
+    const insideQuoteMatch =
+      textWithoutLeadingBreaks.match(/^(.*)(。)([」』]+)$/);
     if (insideQuoteMatch) {
       hasTrailingMarker = true;
       // Remove the 「。」 but keep the closing quotes so that the trailing marker
@@ -636,7 +637,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
         {transcriptionLine ? (
           <p
-            className={`font-ipa tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line text-balance ${transcriptionLine.length > 100 ? "text-2xl" : "text-4xl"}`}
+            className={`font-ipa tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line text-balance ${transcriptionLine.length > 100 ? "text-3xl" : "text-4xl"}`}
           >
             [{transcriptionLine}]
           </p>
@@ -665,7 +666,9 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                       <Sentence
                         key={`line-${lineIndex}-${fragmentIndex}`}
                         text={fragment.text}
-                        highlight={fragment.sentenceIndex === currentSentenceIndex}
+                        highlight={
+                          fragment.sentenceIndex === currentSentenceIndex
+                        }
                         isCodeBlock={isCodeBlock}
                       />
                     ))}
@@ -693,7 +696,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
           <div className="w-3/4 text-center text-slate-900 mt-4">
             {transcriptionLine ? (
               <p
-                className={`font-transcription tracking-wide font-normal mt-4 text-center w-full text-slate-500 leading-[1.2] m-0 whitespace-pre-line min-h-20 text-balance ${transcriptionLine.length > 100 ? "text-2xl" : "text-5xl"}`}
+                className={`font-transcription tracking-wide font-normal mt-4 text-center w-full text-slate-500 leading-[1.2] m-0 whitespace-pre-line min-h-20 text-balance ${transcriptionLine.length > 100 ? "text-3xl" : "text-5xl"}`}
               >
                 {convertCinixToTUPA(transcriptionLine)}
               </p>
