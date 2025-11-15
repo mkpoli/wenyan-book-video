@@ -651,11 +651,12 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
                                         ", or 'b' to go back" if choice_history else ""
                                     )
                                     choice = input(
-                                        f"Choose option (1-{len(readings)}, 'q' to use default #1, 'm' for manual input{back_option}): "
+                                        f"Choose option (1-{len(readings)}, 'q' to save & quit, 'm' for manual input{back_option}): "
                                     ).strip()
                                     if choice.lower() == "q":
-                                        choice_idx = 0
-                                        break
+                                        # Save & quit the whole transcription run.
+                                        # We signal this to the outer loop via KeyboardInterrupt.
+                                        raise KeyboardInterrupt
                                     elif choice.lower() == "b":
                                         if choice_history:
                                             # Go back to last selection
@@ -778,29 +779,50 @@ def _(
                     return 0
             return 0
 
-        for sent_id in sorted(data.keys(), key=sent_sort_key):
-            entry = data.get(sent_id) or {}
-            source = entry.get("source")
-            if not isinstance(source, str) or not source.strip():
-                continue
+        try:
+            for sent_id in sorted(data.keys(), key=sent_sort_key):
+                entry = data.get(sent_id) or {}
+                source = entry.get("source")
+                if not isinstance(source, str) or not source.strip():
+                    continue
 
-            # Skip sentences that already have a non-empty IPA string
-            existing_ipa = entry.get("ipa")
-            if isinstance(existing_ipa, str) and existing_ipa.strip():
-                continue
+                # Skip sentences that already have a non-empty IPA string.
+                # If we have already transcribed new sentences in this file
+                # (`changed` is True), and we encounter an existing IPA in the
+                # middle, stop processing this file to avoid crossing a
+                # user-defined boundary.
+                existing_ipa = entry.get("ipa")
+                if isinstance(existing_ipa, str) and existing_ipa.strip():
+                    if changed:
+                        print(
+                            f"  ↷ Encountered already-transcribed sentence {sent_id}; "
+                            "stopping further transcription in this file."
+                        )
+                        break
+                    continue
 
-            # Apply character replacements
-            text = replace_chars(source)
+                # Apply character replacements
+                text = replace_chars(source)
 
-            # Transcribe to IPA (each character may prompt for disambiguation)
-            ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
-            entry["ipa"] = ipa_text
+                # Transcribe to IPA (each character may prompt for disambiguation)
+                ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
+                entry["ipa"] = ipa_text
 
-            # Also compute TUPA transcription from IPA
-            entry["tupa"] = convert_cinix_to_tupa(ipa_text)
+                # Also compute TUPA transcription from IPA
+                entry["tupa"] = convert_cinix_to_tupa(ipa_text)
 
-            data[sent_id] = entry
-            changed = True
+                data[sent_id] = entry
+                changed = True
+        except KeyboardInterrupt:
+            # User requested save & quit ('q') during disambiguation.
+            if changed:
+                sentence_file.write_text(
+                    _json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+                print(f"\n✓ Saved partial updates for {sentence_file.name}")
+            print("\n↯ Quit requested; stopping transcription.")
+            raise SystemExit(0)
 
         if changed:
             sentence_file.write_text(
@@ -810,8 +832,6 @@ def _(
             print(f"✓ Saved updated sentence transcripts: {sentence_file.name}")
         else:
             print(f"✓ No changes needed for {sentence_file.name}")
-
-    return
 
 
 if __name__ == "__main__":
