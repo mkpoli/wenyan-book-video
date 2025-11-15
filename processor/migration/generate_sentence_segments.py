@@ -4,7 +4,19 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-from processor.utils.cli_style import format_metadata_rows, print_warning
+try:  # Support both `-m processor.migration...` and direct script execution
+    from ..utils.cli_style import format_metadata_rows, print_warning
+except ImportError:
+    if __package__ in (None, "", "__main__"):
+        import sys
+
+        current_dir = Path(__file__).resolve().parent
+        package_root = current_dir.parent
+        if str(package_root) not in sys.path:
+            sys.path.insert(0, str(package_root))
+        from utils.cli_style import format_metadata_rows, print_warning
+    else:  # pragma: no cover - unexpected import failure
+        raise
 
 """
 Generate chapter-scoped segment mapping files from existing text segments and
