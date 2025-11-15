@@ -18,7 +18,7 @@ export const segments = [
       {
         "chinese": "萬智之始。",
         "english": "is the beginning of all wisdom.",
-        "transcription": null,
+        "transcription": "mʉǒn ʈiěː ʨɨ̀ː ɕɨ́ː",
         "durationInFrames": 53
       },
       {
