@@ -6,6 +6,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from processor.utils.cli_style import format_metadata_rows, print_warning
+
 
 @dataclass
 class RawSegment:
@@ -294,7 +296,15 @@ def normalize_for_comparison(text: str) -> str:
 def load_chapter_sentences(sentences_dir: Path, chapter_id: str) -> list[dict[str, Any]]:
     sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
-        print(f"⚠ No sentences file found for {chapter_id}, skipping chapter.")
+        print_warning(
+            "Missing sentences file",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return []
 
     with sentences_path.open("r", encoding="utf-8") as f:
@@ -321,8 +331,15 @@ def map_segments_to_sentence_ids(
 
         for cn_sentence in cn_sentences:
             if sent_index >= len(chapter_sentences):
-                print(
-                    f"⚠ Ran out of sentences while processing segment {segment.id} in {chapter_segments.chapter_id}."
+                print_warning(
+                    "Ran out of canonical sentences",
+                    format_metadata_rows(
+                        [
+                            ("Segment ID", segment.id),
+                            ("Chapter ID", chapter_segments.chapter_id),
+                            ("Sentence index", str(sent_index)),
+                        ]
+                    ),
                 )
                 break
 
@@ -392,8 +409,14 @@ def write_chapter_segments_json(
         "segments": [serialize_segment_record(seg) for seg in segments],
     }
     if output_path.exists() and not overwrite:
-        print(
-            f"⚠ {output_path} already exists; skipping write. Pass overwrite=True to replace existing output."
+        print_warning(
+            "Segment JSON already exists",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter.chapter_id),
+                    ("Output path", output_path.as_posix()),
+                ]
+            ),
         )
         return output_path
 
@@ -421,8 +444,14 @@ def main() -> None:
         sentences = load_chapter_sentences(sentences_dir, chapter_id)
         mapped = map_segments_to_sentence_ids(chapter_segments, sentences)
         if not mapped:
-            print(
-                f"Processed {chapter_file.name}: no sentence mappings produced; skipping JSON write."
+            print_warning(
+                "No sentence mappings produced",
+                format_metadata_rows(
+                    [
+                        ("Chapter file", chapter_file.name),
+                        ("Chapter ID", chapter_id),
+                    ]
+                ),
             )
             continue
 
