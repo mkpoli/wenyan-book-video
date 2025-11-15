@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 
-MODEL_NAME = "gpt-5-nano"
+MODEL_NAME = "gpt-5-mini"
 API_DELAY_SECONDS = 1.0  # Small delay between batches
 MAX_SENTENCES_PER_BATCH = 30
 MAX_CHARS_PER_BATCH = 2000
