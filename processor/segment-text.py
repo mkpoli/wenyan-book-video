@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from processor.utils.cli_style import format_metadata_rows, print_warning
+from utils.cli_style import format_metadata_rows, print_warning
 
 
 @dataclass
@@ -15,6 +15,7 @@ class RawSegment:
     segment_index: int
     text: str
     is_code_block: bool
+    block_id: str | None = None
 
 
 @dataclass
@@ -77,7 +78,9 @@ def split_sentences(text: str) -> list[str]:
     return [s for s in sentences if s.endswith("。")]
 
 
-def create_segments(sentences: list[str], min_chars: int = 85, max_chars: int = 95) -> list[str]:
+def create_segments(
+    sentences: list[str], min_chars: int = 85, max_chars: int = 95
+) -> list[str]:
     segments: list[str] = []
     current_segment: list[str] = []
     current_length = 0
@@ -178,6 +181,7 @@ def segment_chapter(chapter_path: Path) -> ChapterSegments:
     segment_counter = 1
 
     for block in blocks:
+        block_id = block.get("id")
         block_type = block.get("type")
         is_code_block = block_type == "code"
         paragraph_segments: list[str] = []
@@ -221,11 +225,14 @@ def segment_chapter(chapter_path: Path) -> ChapterSegments:
                     segment_index=segment_counter,
                     text=cleaned,
                     is_code_block=is_code_block,
+                    block_id=block_id,
                 )
             )
             segment_counter += 1
 
-    return ChapterSegments(chapter_id=chapter_id, chapter_num=chapter_num, segments=segments)
+    return ChapterSegments(
+        chapter_id=chapter_id, chapter_num=chapter_num, segments=segments
+    )
 
 
 def split_chinese_sentences(text: str) -> list[str]:
@@ -293,7 +300,9 @@ def normalize_for_comparison(text: str) -> str:
     return text.strip()
 
 
-def load_chapter_sentences(sentences_dir: Path, chapter_id: str) -> list[dict[str, Any]]:
+def load_chapter_sentences(
+    sentences_dir: Path, chapter_id: str
+) -> list[dict[str, Any]]:
     sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
         print_warning(
@@ -326,6 +335,7 @@ def map_segments_to_sentence_ids(
         cn_sentences = split_chinese_sentences(segment_text)
         if not cn_sentences and segment_text:
             cn_sentences = [segment_text]
+        segment_block_id = getattr(segment, "block_id", None)
 
         sentence_ids_for_segment: list[str] = []
 
@@ -344,6 +354,41 @@ def map_segments_to_sentence_ids(
                 break
 
             entry = chapter_sentences[sent_index]
+            entry_block_id = entry.get("blockId")
+
+            if (
+                segment_block_id
+                and entry_block_id
+                and entry_block_id != segment_block_id
+            ):
+                if sentence_ids_for_segment:
+                    break
+
+                match_index = next(
+                    (
+                        idx
+                        for idx in range(sent_index, len(chapter_sentences))
+                        if chapter_sentences[idx].get("blockId") == segment_block_id
+                    ),
+                    None,
+                )
+                if match_index is None:
+                    print_warning(
+                        "Could not locate sentences for block",
+                        format_metadata_rows(
+                            [
+                                ("Segment ID", segment.id),
+                                ("Block ID", str(segment_block_id)),
+                                ("Chapter ID", chapter_segments.chapter_id),
+                            ]
+                        ),
+                    )
+                    break
+
+                sent_index = match_index
+                entry = chapter_sentences[sent_index]
+                entry_block_id = entry.get("blockId")
+
             sent_id = entry.get("id")
             canonical_source = entry.get("source", "")
 
@@ -355,7 +400,11 @@ def map_segments_to_sentence_ids(
             cn_normalized = normalize_for_comparison(cn_sentence)
 
             spans_multiple = False
-            if canonical_normalized and cn_normalized and canonical_normalized in cn_normalized:
+            if (
+                canonical_normalized
+                and cn_normalized
+                and canonical_normalized in cn_normalized
+            ):
                 if sent_index + 1 < len(chapter_sentences):
                     next_source = chapter_sentences[sent_index + 1].get("source", "")
                     next_normalized = normalize_for_comparison(next_source)
@@ -432,7 +481,9 @@ def main() -> None:
     sentences_dir = root / "renderer" / "public" / "sentences"
     segments_output_dir = root / "renderer" / "public" / "segments"
 
-    chapter_files = sorted(chapters_dir.glob("c*.json"), key=lambda p: int(p.stem.lstrip("c")))
+    chapter_files = sorted(
+        chapters_dir.glob("c*.json"), key=lambda p: int(p.stem.lstrip("c"))
+    )
     if not chapter_files:
         raise SystemExit(f"No chapter JSON files found in {chapters_dir}")
 
