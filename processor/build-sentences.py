@@ -148,22 +148,103 @@ def split_sentences(text: str) -> List[str]:
     This matches the logic in `segment-text.py` so that segmentation
     stays compatible.
     """
+    # Fast path: no backticks, use simple splitting to preserve legacy behavior.
+    if "`" not in text:
+        sentences: List[str] = []
+        parts = text.split("。")
+
+        for i, part in enumerate(parts):
+            part = part.strip()
+            if not part:
+                continue
+
+            if i < len(parts) - 1:
+                sentences.append(part + "。")
+            elif text.endswith("。"):
+                sentences.append(part + "。")
+            # If text doesn't end with '。', skip the trailing fragment.
+
+        # Ensure only sentences that actually end with '。'
+        return [s for s in sentences if s and s.endswith("。")]
+
+    # Backtick-aware path: never break *inside* paired backticks.
+    # We treat inline code spans as atomic units, but allow them to
+    # carry sentence-final punctuation. For example:
+    #   `曰三` `曰『問天地好在。』`者。
+    # becomes:
+    #   1) `曰三` `曰『問天地好在。』`
+    #   2) 者。
+
+    # First, tokenize into (segment, is_code) pairs, where code segments
+    # are delimited by backticks and never split.
+    tokens: List[tuple[str, bool]] = []
+    i = 0
+    n = len(text)
+
+    while i < n:
+        ch = text[i]
+        if ch == "`":
+            # Capture everything until the next backtick (or end of string).
+            j = i + 1
+            while j < n and text[j] != "`":
+                j += 1
+            if j < n:
+                token = text[i : j + 1]
+                i = j + 1
+            else:
+                token = text[i:]
+                i = n
+            tokens.append((token, True))
+        else:
+            # Plain text until the next backtick.
+            j = i
+            while j < n and text[j] != "`":
+                j += 1
+            token = text[i:j]
+            if token:
+                tokens.append((token, False))
+            i = j
+
     sentences: List[str] = []
-    parts = text.split("。")
+    current_parts: List[str] = []
 
-    for i, part in enumerate(parts):
-        part = part.strip()
-        if not part:
-            continue
+    for segment, is_code in tokens:
+        if is_code:
+            # Always keep code spans intact.
+            current_parts.append(segment)
+            # If the code span contains '。', treat it as sentence-final
+            # punctuation and end the sentence *after* this code span.
+            if "。" in segment:
+                sentence = "".join(current_parts).strip()
+                if sentence:
+                    sentences.append(sentence)
+                current_parts = []
+        else:
+            # Plain text may contain multiple '。' characters; we split
+            # on them, but never cross into code spans.
+            buf: List[str] = []
+            for ch in segment:
+                buf.append(ch)
+                if ch == "。":
+                    current_parts.append("".join(buf))
+                    sentence = "".join(current_parts).strip()
+                    if sentence:
+                        sentences.append(sentence)
+                    current_parts = []
+                    buf = []
+            if buf:
+                current_parts.append("".join(buf))
 
-        if i < len(parts) - 1:
-            sentences.append(part + "。")
-        elif text.endswith("。"):
-            sentences.append(part + "。")
-        # If text doesn't end with '。', skip the trailing fragment.
+    # Add any remaining text as the last sentence, but only if it ends
+    # with '。' to stay consistent with previous behavior for tails.
+    tail = "".join(current_parts).strip()
+    if tail and tail.endswith("。"):
+        sentences.append(tail)
 
-    # Ensure only sentences that actually end with '。'
-    return [s for s in sentences if s and s.endswith("。")]
+    # For the backtick-aware path, we've already enforced sentence
+    # boundaries based on '。' (including those inside code spans),
+    # so we only need to drop empty fragments.
+    return [s for s in sentences if s]
 
 
 def build_sentences_for_chapter(chapter_path: Path, output_dir: Path) -> None:
@@ -207,10 +288,19 @@ def build_sentences_for_chapter(chapter_path: Path, output_dir: Path) -> None:
             if not code_text.strip():
                 continue
 
-            code_sentences = split_chinese_sentences(code_text, preserve_spaces=True)
+            # For sentence splitting, mirror the behavior used when creating
+            # segments: normalize double corner quotes to 『』 so that quoted
+            # runs like `曰「「問天地好在。」」` are treated as a single
+            # sentence, not split in the middle.
+            # We preserve all spacing and newlines.
+            normalized_code_text = code_text.replace("「「", "『").replace("」」", "』")
+
+            code_sentences = split_chinese_sentences(
+                normalized_code_text, preserve_spaces=True
+            )
             if not code_sentences:
                 # Fallback: treat entire block as one sentence-like unit
-                code_sentences = [code_text]
+                code_sentences = [normalized_code_text]
 
             for part in code_sentences:
                 # Preserve exact whitespace from `part` so that code layout
@@ -259,7 +349,6 @@ def build_sentences_for_chapter(chapter_path: Path, output_dir: Path) -> None:
             paragraph_markdown = block.get("source") or ""
             if not paragraph_markdown.strip():
                 continue
-
             text = remove_markdown(paragraph_markdown, preserve_newlines=False)
             if not text.strip():
                 continue
