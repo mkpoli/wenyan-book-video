@@ -1,0 +1,766 @@
+{
+  "c2-s1": {
+    "source": "易曰。",
+    "translation": "The Book of Changes says,"
+  },
+  "c2-s2": {
+    "source": "變化者。",
+    "translation": "“Transformation —"
+  },
+  "c2-s3": {
+    "source": "進退之象也。",
+    "translation": "is the image of advance and retreat.”"
+  },
+  "c2-s4": {
+    "source": "今編程者。",
+    "translation": "Now, in programming,"
+  },
+  "c2-s5": {
+    "source": "罔不以變數為本。",
+    "translation": "nothing is without variables as its foundation."
+  },
+  "c2-s6": {
+    "source": "變數者何。",
+    "translation": "“What is a variable?”"
+  },
+  "c2-s7": {
+    "source": "一名命一物也。",
+    "translation": "“It is a name assigned to a thing.”"
+  },
+  "c2-s8": {
+    "source": "其物或更。",
+    "translation": "The thing itself may change,"
+  },
+  "c2-s9": {
+    "source": "而名不易。",
+    "translation": "yet the name does not."
+  },
+  "c2-s10": {
+    "source": "其名或眾。",
+    "translation": "Or the names may be many,"
+  },
+  "c2-s11": {
+    "source": "而物故一也。",
+    "translation": "yet the thing remains one."
+  },
+  "c2-s12": {
+    "source": "譬葉之逢秋。",
+    "translation": "It is like leaves meeting autumn,"
+  },
+  "c2-s13": {
+    "source": "虎之離山。",
+    "translation": "or a tiger leaving the mountain —"
+  },
+  "c2-s14": {
+    "source": "物雖改而名未易。",
+    "translation": "the thing changes, yet the name endures."
+  },
+  "c2-s15": {
+    "source": "又譬張祿之於范睢。",
+    "translation": "Or like Zhang Lu, who became Fan Sui,"
+  },
+  "c2-s16": {
+    "source": "相如之於犬子。",
+    "translation": "and Sima Xiangru, who called himself Dog’s Son."
+  },
+  "c2-s17": {
+    "source": "名二而實則一也。",
+    "translation": "Called by two names, yet in truth one."
+  },
+  "c2-s18": {
+    "source": "夫人物之別。",
+    "translation": "As for the distinction between persons and things."
+  },
+  "c2-s19": {
+    "source": "復以類分之。",
+    "translation": "They are further divided according to class."
+  },
+  "c2-s20": {
+    "source": "故曰無名無以別所言。",
+    "translation": "Therefore: without a name there is no means to distinguish what is spoken of."
+  },
+  "c2-s21": {
+    "source": "無物無以志所得。",
+    "translation": "Without a thing, there is no means by which to indicate what has been obtained."
+  },
+  "c2-s22": {
+    "source": "無類無以知其用。",
+    "translation": "Without a class there is no means to know its use."
+  },
+  "c2-s23": {
+    "source": "類者何。",
+    "translation": "What, then, are the kinds?"
+  },
+  "c2-s24": {
+    "source": "或數。",
+    "translation": "Some are numbers (numerals)."
+  },
+  "c2-s25": {
+    "source": "或言。",
+    "translation": "Some are words (strings)."
+  },
+  "c2-s26": {
+    "source": "或爻。",
+    "translation": "Some are yáo (booleans)."
+  },
+  "c2-s27": {
+    "source": "或列。",
+    "translation": "Some are lists (arrays)."
+  },
+  "c2-s28": {
+    "source": "或物。",
+    "translation": "Some are things (objects)."
+  },
+  "c2-s29": {
+    "source": "或術。",
+    "translation": "Some are means (methods)."
+  },
+  "c2-s30": {
+    "source": "數者算。",
+    "translation": "Numbers are for reckoning."
+  },
+  "c2-s31": {
+    "source": "言者表。",
+    "translation": "Words serve as representation."
+  },
+  "c2-s32": {
+    "source": "既見於前章。",
+    "translation": "These were already shown in the preceding chapter."
+  },
+  "c2-s33": {
+    "source": "今概敘其餘如左。",
+    "translation": "Now I shall briefly set forth the remainder as follows."
+  },
+  "c2-s34": {
+    "source": "計開。",
+    "translation": "Let us begin."
+  },
+  "c2-s35": {
+    "source": "「爻」者。",
+    "translation": "“Yáo” (booleans) denotes"
+  },
+  "c2-s36": {
+    "source": "陰陽也。",
+    "translation": "Yin and Yang."
+  },
+  "c2-s37": {
+    "source": "陰陽者。",
+    "translation": "“Yin and Yang” —"
+  },
+  "c2-s38": {
+    "source": "是非也。",
+    "translation": "rightness and wrongness."
+  },
+  "c2-s39": {
+    "source": "有無也。",
+    "translation": "Being and non‑being."
+  },
+  "c2-s40": {
+    "source": "臧否也。",
+    "translation": "Approval and rejection."
+  },
+  "c2-s41": {
+    "source": "凡物之有二極者。",
+    "translation": "All things which possess two extremes"
+  },
+  "c2-s42": {
+    "source": "皆是也。",
+    "translation": "are of this sort."
+  },
+  "c2-s43": {
+    "source": "「列」者。",
+    "translation": "“Lists” (arrays) denotes."
+  },
+  "c2-s44": {
+    "source": "所以列同類之諸物也。",
+    "translation": "It is that by which one arrays the several things of a like kind."
+  },
+  "c2-s45": {
+    "source": "如釋家之念珠。",
+    "translation": "For example, the prayer‑beads of the followers of the Buddha."
+  },
+  "c2-s46": {
+    "source": "兵家之長蛇陣也。",
+    "translation": "Or the long‑snake formation of the military arts."
+  },
+  "c2-s47": {
+    "source": "「物」者。",
+    "translation": "“Things” (objects) denotes."
+  },
+  "c2-s48": {
+    "source": "所以狀一物之諸端也。",
+    "translation": "It is what portrays the manifold aspects of a single entity."
+  },
+  "c2-s49": {
+    "source": "譬人之姓字者。",
+    "translation": "Compare it to a person's family name and personal name."
+  },
+  "c2-s50": {
+    "source": "言也。",
+    "translation": "Those are words."
+  },
+  "c2-s51": {
+    "source": "人之年齒者。",
+    "translation": "As for a person's span of years and age,"
+  },
+  "c2-s52": {
+    "source": "數也。",
+    "translation": "Those are numbers."
+  },
+  "c2-s53": {
+    "source": "人有男女。",
+    "translation": "Among people are the male and the female."
+  },
+  "c2-s54": {
+    "source": "陰陽也。",
+    "translation": "They are Yin and Yang."
+  },
+  "c2-s55": {
+    "source": "合諸端而謂之物。",
+    "translation": "When their several aspects are combined, one calls them things."
+  },
+  "c2-s56": {
+    "source": "「術」者。",
+    "translation": "“Means” (methods) denotes:"
+  },
+  "c2-s57": {
+    "source": "方也。",
+    "translation": "a method."
+  },
+  "c2-s58": {
+    "source": "策也。",
+    "translation": "a stratagem."
+  },
+  "c2-s59": {
+    "source": "行一事之法也。",
+    "translation": "It is the manner by which one conducts a single undertaking."
+  },
+  "c2-s60": {
+    "source": "既知變數之名實類。",
+    "translation": "Now, having known the names, essences, and classes of variables."
+  },
+  "c2-s61": {
+    "source": "即能創而述之如左。",
+    "translation": "Thereupon one may create and declare them as follows."
+  },
+  "c2-s62": {
+    "source": "吾有一數。",
+    "translation": "I have a number."
+  },
+  "c2-s63": {
+    "source": "曰三。",
+    "translation": "It is named “Three”."
+  },
+  "c2-s64": {
+    "source": "名之曰「甲」。",
+    "translation": "It is named “A”."
+  },
+  "c2-s65": {
+    "source": "\n吾有一爻。",
+    "translation": "I have a Yáo."
+  },
+  "c2-s66": {
+    "source": "曰陰。",
+    "translation": "It is called “Yin”."
+  },
+  "c2-s67": {
+    "source": "名之曰「乙」。",
+    "translation": "It is named “B”."
+  },
+  "c2-s68": {
+    "source": "\n吾有一言。",
+    "translation": "I have a Word."
+  },
+  "c2-s69": {
+    "source": "曰『噫吁戲』。",
+    "translation": "It is named “噫吁戲”."
+  },
+  "c2-s70": {
+    "source": "名之曰「丙」。",
+    "translation": "It is named “C”."
+  },
+  "c2-s71": {
+    "source": "不知其名。",
+    "translation": "Not knowing its name."
+  },
+  "c2-s72": {
+    "source": "但知其實類者。",
+    "translation": "Yet knowing its true class."
+  },
+  "c2-s73": {
+    "source": "猶能述之如左。",
+    "translation": "One may still recount it as follows."
+  },
+  "c2-s74": {
+    "source": "吾有一數。",
+    "translation": "I have a number."
+  },
+  "c2-s75": {
+    "source": "曰三。",
+    "translation": "It is named “Three”."
+  },
+  "c2-s76": {
+    "source": "未名之變數。",
+    "translation": "An unnamed variable."
+  },
+  "c2-s77": {
+    "source": "機器聊志之以待其用也。",
+    "translation": "The machine takes note of it, awaiting its use."
+  },
+  "c2-s78": {
+    "source": "`其`字者。",
+    "translation": "Its label is,"
+  },
+  "c2-s79": {
+    "source": "即謂前未名之變數也。",
+    "translation": "That is to say, the previously unnamed variable."
+  },
+  "c2-s80": {
+    "source": "用如左。",
+    "translation": "Use as follows."
+  },
+  "c2-s81": {
+    "source": "吾有一數。",
+    "translation": "I have a number."
+  },
+  "c2-s82": {
+    "source": "曰三。",
+    "translation": "It is named three."
+  },
+  "c2-s83": {
+    "source": "加其以五。",
+    "translation": "Add five to it."
+  },
+  "c2-s84": {
+    "source": "減其以二。",
+    "translation": "Subtract two from it."
+  },
+  "c2-s85": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c2-s86": {
+    "source": "夫方謂`加其以五`時。",
+    "translation": "When one says to add five to it,"
+  },
+  "c2-s87": {
+    "source": "`其`者。",
+    "translation": "the thing —"
+  },
+  "c2-s88": {
+    "source": "三也。",
+    "translation": "is three."
+  },
+  "c2-s89": {
+    "source": "至`減其以二`時。",
+    "translation": "When one subtracts two from it,"
+  },
+  "c2-s90": {
+    "source": "`其`者。",
+    "translation": "the thing —"
+  },
+  "c2-s91": {
+    "source": "八也。",
+    "translation": "is eight."
+  },
+  "c2-s92": {
+    "source": "復減以二。",
+    "translation": "Again, subtract two."
+  },
+  "c2-s93": {
+    "source": "終得六也。",
+    "translation": "In the end, one obtains six."
+  },
+  "c2-s94": {
+    "source": "但知其名。",
+    "translation": "If one knows only its name,"
+  },
+  "c2-s95": {
+    "source": "不知其類者。",
+    "translation": "and does not know its kind,"
+  },
+  "c2-s96": {
+    "source": "亦可述之。",
+    "translation": "it may still be described."
+  },
+  "c2-s97": {
+    "source": "然其用繁矣。",
+    "translation": "Yet its use is manifold."
+  },
+  "c2-s98": {
+    "source": "其義奧矣。",
+    "translation": "Its meaning is profound."
+  },
+  "c2-s99": {
+    "source": "是故留待後章敘之。",
+    "translation": "Therefore, it is left to a later chapter to narrate."
+  },
+  "c2-s100": {
+    "source": "或問曰。",
+    "translation": "Some ask,"
+  },
+  "c2-s101": {
+    "source": "奈何止一數焉。",
+    "translation": "“How is there only one number?”"
+  },
+  "c2-s102": {
+    "source": "今欲有三數。",
+    "translation": "Now one desires to have three numbers."
+  },
+  "c2-s103": {
+    "source": "五數。",
+    "translation": "Five numbers."
+  },
+  "c2-s104": {
+    "source": "千千數。",
+    "translation": "A thousand-thousand numbers."
+  },
+  "c2-s105": {
+    "source": "可得乎。",
+    "translation": "Can they be obtained?"
+  },
+  "c2-s106": {
+    "source": "曰。",
+    "translation": "He replied,"
+  },
+  "c2-s107": {
+    "source": "易矣。",
+    "translation": "“Easy indeed.”"
+  },
+  "c2-s108": {
+    "source": "吾有三數。",
+    "translation": "I have three numbers."
+  },
+  "c2-s109": {
+    "source": "曰三。",
+    "translation": "It is named “Three.”"
+  },
+  "c2-s110": {
+    "source": "曰九。",
+    "translation": "It is named “Nine.”"
+  },
+  "c2-s111": {
+    "source": "曰二十七。",
+    "translation": "It is named “Twenty-seven.”"
+  },
+  "c2-s112": {
+    "source": "名之曰「甲」。",
+    "translation": "It is named “A.”"
+  },
+  "c2-s113": {
+    "source": "曰「乙」。",
+    "translation": "It is named “B.”"
+  },
+  "c2-s114": {
+    "source": "曰「丙」。",
+    "translation": "It is named “C.”"
+  },
+  "c2-s115": {
+    "source": "又。",
+    "translation": "Moreover."
+  },
+  "c2-s116": {
+    "source": "`吾有一數曰` 可省為`有數`。",
+    "translation": "“I have a number” can also be omitted as “be a number”."
+  },
+  "c2-s117": {
+    "source": "故是二句無少異。",
+    "translation": "Thus, the two sentences are not greatly different."
+  },
+  "c2-s118": {
+    "source": "有數三。",
+    "translation": "There is a numeral three."
+  },
+  "c2-s119": {
+    "source": "名之曰「甲」。",
+    "translation": "It is named “A”."
+  },
+  "c2-s120": {
+    "source": "\n吾有一數。",
+    "translation": "I have a numeral."
+  },
+  "c2-s121": {
+    "source": "曰三。",
+    "translation": "It is named three."
+  },
+  "c2-s122": {
+    "source": "名之曰「甲」。",
+    "translation": "It is named “A”."
+  },
+  "c2-s123": {
+    "source": "又。",
+    "translation": "Moreover."
+  },
+  "c2-s124": {
+    "source": "數之不言幾何者。",
+    "translation": "The numbers do not speak of quantity."
+  },
+  "c2-s125": {
+    "source": "默為零。",
+    "translation": "The silent value is zero."
+  },
+  "c2-s126": {
+    "source": "爻之不明默為陰。",
+    "translation": "When a Yáo is unclear, it becomes Yin."
+  },
+  "c2-s127": {
+    "source": "言之不明默為緘。",
+    "translation": "When a word is unclear, it becomes silence."
+  },
+  "c2-s128": {
+    "source": "故是三句盡同。",
+    "translation": "Therefore, the three sentences are all the same."
+  },
+  "c2-s129": {
+    "source": "吾有一數。",
+    "translation": "I have a numeral."
+  },
+  "c2-s130": {
+    "source": "曰零。",
+    "translation": "It is named zero."
+  },
+  "c2-s131": {
+    "source": "名之曰「甲」。",
+    "translation": "Named it “A”."
+  },
+  "c2-s132": {
+    "source": "\n吾有一數。",
+    "translation": "I have a numeral."
+  },
+  "c2-s133": {
+    "source": "名之曰「甲」。",
+    "translation": "It is named “A”."
+  },
+  "c2-s134": {
+    "source": "\n有數零。",
+    "translation": "There exists a numeral zero."
+  },
+  "c2-s135": {
+    "source": "名之曰「甲」。",
+    "translation": "Named it “A”."
+  },
+  "c2-s136": {
+    "source": "既創變數。",
+    "translation": "Having created a variable,"
+  },
+  "c2-s137": {
+    "source": "後或變之。",
+    "translation": "Thereafter, it may be changed."
+  },
+  "c2-s138": {
+    "source": "乃書如是。",
+    "translation": "Thereupon, it is written thus."
+  },
+  "c2-s139": {
+    "source": "昔之「甲」者。",
+    "translation": "As for the former “A”."
+  },
+  "c2-s140": {
+    "source": "今四是矣。",
+    "translation": "Now four it is."
+  },
+  "c2-s141": {
+    "source": "\n昔之「乙」者。",
+    "translation": "As for the former “B”."
+  },
+  "c2-s142": {
+    "source": "今「甲」是矣。",
+    "translation": "Now “A” is indeed so."
+  },
+  "c2-s143": {
+    "source": "首句變甲為四。",
+    "translation": "In the first sentence, A becomes four."
+  },
+  "c2-s144": {
+    "source": "次句變乙為甲。",
+    "translation": "In the next sentence, B becomes A."
+  },
+  "c2-s145": {
+    "source": "故乙之為四。",
+    "translation": "Thus, B is four."
+  },
+  "c2-s146": {
+    "source": "易明矣。",
+    "translation": "Now it is obviously clear."
+  },
+  "c2-s147": {
+    "source": "或問曰。",
+    "translation": "One asks."
+  },
+  "c2-s148": {
+    "source": "曩者未創之物。",
+    "translation": "That which was not yet created previously,"
+  },
+  "c2-s149": {
+    "source": "後算而得之。",
+    "translation": "Later calculation yields it."
+  },
+  "c2-s150": {
+    "source": "欲名之。",
+    "translation": "Wishing to name it."
+  },
+  "c2-s151": {
+    "source": "奈何。",
+    "translation": "How shall it be named?"
+  },
+  "c2-s152": {
+    "source": "曰。",
+    "translation": "He said."
+  },
+  "c2-s153": {
+    "source": "當如是。",
+    "translation": "It should be thus."
+  },
+  "c2-s154": {
+    "source": "加一以三。",
+    "translation": "Add one to three."
+  },
+  "c2-s155": {
+    "source": "名之曰「丙」。",
+    "translation": "Name it “C”."
+  },
+  "c2-s156": {
+    "source": "又問曰。",
+    "translation": "One asks."
+  },
+  "c2-s157": {
+    "source": "一時算得之物眾矣。",
+    "translation": "In an instant, many things are obtained."
+  },
+  "c2-s158": {
+    "source": "能一舉而盡名之乎。",
+    "translation": "Can one name them all in one go?"
+  },
+  "c2-s159": {
+    "source": "曰。",
+    "translation": "It is said,"
+  },
+  "c2-s160": {
+    "source": "亦可。",
+    "translation": "“It is also possible.”"
+  },
+  "c2-s161": {
+    "source": "加一以三。",
+    "translation": "Add one to reach three."
+  },
+  "c2-s162": {
+    "source": "加六以九。",
+    "translation": "Add six to reach nine."
+  },
+  "c2-s163": {
+    "source": "名之曰「甲」。",
+    "translation": "Name it “A”."
+  },
+  "c2-s164": {
+    "source": "曰「乙」。",
+    "translation": "It is named “B”."
+  },
+  "c2-s165": {
+    "source": "客曰。",
+    "translation": "The guest said."
+  },
+  "c2-s166": {
+    "source": "吾知之矣。",
+    "translation": "“Now I see."
+  },
+  "c2-s167": {
+    "source": "應作如是觀。",
+    "translation": "One should view it thus."
+  },
+  "c2-s168": {
+    "source": "凡未名之變數。",
+    "translation": "All unnamed variables."
+  },
+  "c2-s169": {
+    "source": "皆如獺祭然。",
+    "translation": "All unnamed variables are, as it were, like an otter’s sacrifice."
+  },
+  "c2-s170": {
+    "source": "言`其`者。",
+    "translation": "Those who speak of it."
+  },
+  "c2-s171": {
+    "source": "取至近之魚而棄其餘。",
+    "translation": "Take the nearest fish and discard the rest."
+  },
+  "c2-s172": {
+    "source": "言`書之`者。",
+    "translation": "The one who writes it down."
+  },
+  "c2-s173": {
+    "source": "盡書之。",
+    "translation": "Write it all down."
+  },
+  "c2-s174": {
+    "source": "言`名之`者。",
+    "translation": "The one who names it."
+  },
+  "c2-s175": {
+    "source": "取若干而名之。",
+    "translation": "Take some and name them.”"
+  },
+  "c2-s176": {
+    "source": "曰。",
+    "translation": "He replies,"
+  },
+  "c2-s177": {
+    "source": "然也。",
+    "translation": "“So be it."
+  },
+  "c2-s178": {
+    "source": "善哉此比。",
+    "translation": "Well done, nice analogy.”"
+  },
+  "c2-s179": {
+    "source": "問曰。",
+    "translation": "The questioner asked,"
+  },
+  "c2-s180": {
+    "source": "每有未名者。",
+    "translation": "“Whenever there is an unnamed one,"
+  },
+  "c2-s181": {
+    "source": "輒祭如是。",
+    "translation": "They are sacrificed thus."
+  },
+  "c2-s182": {
+    "source": "豈非終累累然焉。",
+    "translation": "Would it not, in the end, be a ceaseless, manyfold piling?"
+  },
+  "c2-s183": {
+    "source": "今欲盡棄其魚。",
+    "translation": "Now I would discard all its fish."
+  },
+  "c2-s184": {
+    "source": "復當作何書。",
+    "translation": "And what should be written?”"
+  },
+  "c2-s185": {
+    "source": "曰。",
+    "translation": "He said,"
+  },
+  "c2-s186": {
+    "source": "當書`噫`。",
+    "translation": "“It should be written as ‘alas.’"
+  },
+  "c2-s187": {
+    "source": "`噫`者。",
+    "translation": "‘Alas’ —"
+  },
+  "c2-s188": {
+    "source": "嘆辭也。",
+    "translation": "is a sighing utterance."
+  },
+  "c2-s189": {
+    "source": "所以嘆彼之盡棄也。",
+    "translation": "Thus one laments its thorough discard.”"
+  },
+  "c2-s190": {
+    "source": "變數之道。",
+    "translation": "The Way of variables."
+  },
+  "c2-s191": {
+    "source": "至是略備矣。",
+    "translation": "Thus it is now briefly complete."
+  }
+}

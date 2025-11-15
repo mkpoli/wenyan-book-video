@@ -1,0 +1,1362 @@
+{
+  "c4-s1": {
+    "source": "決策者。",
+    "translation": "Decision-making —"
+  },
+  "c4-s2": {
+    "source": "萬智之始。",
+    "translation": "is the beginning of all wisdom."
+  },
+  "c4-s3": {
+    "source": "何耶。",
+    "translation": "What, you ask?"
+  },
+  "c4-s4": {
+    "source": "曰察而後動。",
+    "translation": "It is said: “Observe before acting.”"
+  },
+  "c4-s5": {
+    "source": "魚之相吞。",
+    "translation": "The way fish swallow one another."
+  },
+  "c4-s6": {
+    "source": "必先度彼之大小。",
+    "translation": "One must first measure their size."
+  },
+  "c4-s7": {
+    "source": "犬之嚙人。",
+    "translation": "The dog’s biting on someone."
+  },
+  "c4-s8": {
+    "source": "必先觀主之喜惡。",
+    "translation": "One must first observe the master’s likes and dislikes."
+  },
+  "c4-s9": {
+    "source": "此禽獸之決策也。",
+    "translation": "This is the decision of beasts."
+  },
+  "c4-s10": {
+    "source": "雨而蓑。",
+    "translation": "In rain, one dons a rain cloak."
+  },
+  "c4-s11": {
+    "source": "寒而衣。",
+    "translation": "In cold, one clothes oneself."
+  },
+  "c4-s12": {
+    "source": "價善乃沽。",
+    "translation": "When the price is good, one sells."
+  },
+  "c4-s13": {
+    "source": "人善乃欺。",
+    "translation": "When people are virtuous, they deceive."
+  },
+  "c4-s14": {
+    "source": "匹夫之決策也。",
+    "translation": "This is the decision of the common man."
+  },
+  "c4-s15": {
+    "source": "陟罰臧否。",
+    "translation": "Reward and punishment; commendation and blame."
+  },
+  "c4-s16": {
+    "source": "伐謀伐交。",
+    "translation": "Attack plots and sever alliances."
+  },
+  "c4-s17": {
+    "source": "卿相之決策也。",
+    "translation": "The decisions of ministers and chancellors."
+  },
+  "c4-s18": {
+    "source": "其所以智於向者。",
+    "translation": "Its wisdom in directing —"
+  },
+  "c4-s19": {
+    "source": "唯決策有難易之別耳。",
+    "translation": "lies in the differences of decision-making."
+  },
+  "c4-s20": {
+    "source": "故程式之能於決策者。",
+    "translation": "Therefore, the program’s capability of decision-making,"
+  },
+  "c4-s21": {
+    "source": "智比於人。",
+    "translation": "its wisdom compared to that of men,"
+  },
+  "c4-s22": {
+    "source": "不能者。",
+    "translation": "will not be superior."
+  },
+  "c4-s23": {
+    "source": "止一算盤耳。",
+    "translation": "It remains only a single abacus, this is all."
+  },
+  "c4-s24": {
+    "source": "其決步驟有三。",
+    "translation": "The steps of its decision are three."
+  },
+  "c4-s25": {
+    "source": "一曰比之。",
+    "translation": "First, to compare it."
+  },
+  "c4-s26": {
+    "source": "二曰決之。",
+    "translation": "Second, to determine it."
+  },
+  "c4-s27": {
+    "source": "三曰為之。",
+    "translation": "Third, to do it."
+  },
+  "c4-s28": {
+    "source": "今以馬太效應為例。",
+    "translation": "Now, take the Matthew Effect as an example."
+  },
+  "c4-s29": {
+    "source": "書之如是。",
+    "translation": "Record it thus."
+  },
+  "c4-s30": {
+    "source": "注。",
+    "translation": "Note."
+  },
+  "c4-s31": {
+    "source": "馬太效應者。",
+    "translation": "The Matthew Effect —"
+  },
+  "c4-s32": {
+    "source": "西人典故也。",
+    "translation": "is a Western allusion."
+  },
+  "c4-s33": {
+    "source": "曰。",
+    "translation": "It is said,"
+  },
+  "c4-s34": {
+    "source": "盈者愈予之。",
+    "translation": "“The rich get richer,"
+  },
+  "c4-s35": {
+    "source": "乏者更奪之。",
+    "translation": "The poor get poorer.”"
+  },
+  "c4-s36": {
+    "source": "吾有一數。",
+    "translation": "I have a number."
+  },
+  "c4-s37": {
+    "source": "曰四十九。",
+    "translation": "It is forty-nine."
+  },
+  "c4-s38": {
+    "source": "名之曰「貯」。",
+    "translation": "It is named “Reserve.”"
+  },
+  "c4-s39": {
+    "source": "\n若「貯」大於五十者。",
+    "translation": "If “Reserve” is greater than fifty."
+  },
+  "c4-s40": {
+    "source": "\n\t加「貯」以一。",
+    "translation": "Add one to “Reserve.”"
+  },
+  "c4-s41": {
+    "source": "昔之「貯」者。",
+    "translation": "The former value of “Reserve” is thus."
+  },
+  "c4-s42": {
+    "source": "今其是矣。",
+    "translation": "Now it is thus."
+  },
+  "c4-s43": {
+    "source": "\n若非。",
+    "translation": "If not."
+  },
+  "c4-s44": {
+    "source": "\n\t減「貯」以一。",
+    "translation": "Subtract one from “Reserve.”"
+  },
+  "c4-s45": {
+    "source": "昔之「貯」者。",
+    "translation": "The former value of “Reserve” is thus."
+  },
+  "c4-s46": {
+    "source": "今其是矣。",
+    "translation": "Now it is thus."
+  },
+  "c4-s47": {
+    "source": "\n也。",
+    "translation": "So be it."
+  },
+  "c4-s48": {
+    "source": "`大於`者。",
+    "translation": "“Greater than,” that is,"
+  },
+  "c4-s49": {
+    "source": "比之也。",
+    "translation": "to compare it."
+  },
+  "c4-s50": {
+    "source": "`若`。",
+    "translation": "“If,”"
+  },
+  "c4-s51": {
+    "source": "`若非`者。",
+    "translation": "“If not,” that is,"
+  },
+  "c4-s52": {
+    "source": "決之也。",
+    "translation": "to decide it."
+  },
+  "c4-s53": {
+    "source": "`加「貯」以一`云云者。",
+    "translation": "“To add one to ‘Reserve,’” and so on,"
+  },
+  "c4-s54": {
+    "source": "為之也。",
+    "translation": "is to do it."
+  },
+  "c4-s55": {
+    "source": "比之得其真者。",
+    "translation": "To compare it yields its true value."
+  },
+  "c4-s56": {
+    "source": "必為`若`云云之次句。",
+    "translation": "This must be the sentence that follows “if …”"
+  },
+  "c4-s57": {
+    "source": "必不為`若非`之次句。",
+    "translation": "It must not be the sentence that follows “if not.”"
+  },
+  "c4-s58": {
+    "source": "否。",
+    "translation": "If it is “No,”"
+  },
+  "c4-s59": {
+    "source": "則反之。",
+    "translation": "then the reverse."
+  },
+  "c4-s60": {
+    "source": "今以四十九不大於五十。",
+    "translation": "Now, since forty-nine is not greater than fifty."
+  },
+  "c4-s61": {
+    "source": "遂行`若非`之次句。",
+    "translation": "Proceed to the next sentence for the “not” case."
+  },
+  "c4-s62": {
+    "source": "`「貯」`竟四十八。",
+    "translation": "“Reserve” ends at forty-eight."
+  },
+  "c4-s63": {
+    "source": "或問曰。",
+    "translation": "Some may ask,"
+  },
+  "c4-s64": {
+    "source": "末之`也`字者。",
+    "translation": "“Is the final word “jiaeq” (也),"
+  },
+  "c4-s65": {
+    "source": "語助耶。",
+    "translation": "a grammatical particle?"
+  },
+  "c4-s66": {
+    "source": "無之可乎。",
+    "translation": "Can it be omitted?”"
+  },
+  "c4-s67": {
+    "source": "曰。",
+    "translation": "It is answered, “"
+  },
+  "c4-s68": {
+    "source": "不可也。",
+    "translation": "No, it is not permissible."
+  },
+  "c4-s69": {
+    "source": "所以別歧義。",
+    "translation": "It is used to distinguish the shades of meaning."
+  },
+  "c4-s70": {
+    "source": "示一句之終止也。",
+    "translation": "That marks the end of a sentence."
+  },
+  "c4-s71": {
+    "source": "蓋編程之理或有極繁者。",
+    "translation": "Indeed, the theory of programming may have extremes of complexity."
+  },
+  "c4-s72": {
+    "source": "或相嵌。",
+    "translation": "Some things are nested within others."
+  },
+  "c4-s73": {
+    "source": "或相銜。",
+    "translation": "Some things interlock."
+  },
+  "c4-s74": {
+    "source": "亡是不能斷。",
+    "translation": "Without this, one cannot determine."
+  },
+  "c4-s75": {
+    "source": "用`云云`二字亦可。",
+    "translation": "The two graphs un un (云云, ‘and so on’) may also suffice.”"
+  },
+  "c4-s76": {
+    "source": "又問曰。",
+    "translation": "And he asked again,"
+  },
+  "c4-s77": {
+    "source": "或雖非亦於我無與者。",
+    "translation": "“Sometimes, there may be a thing that is false but isn't relevant to me."
+  },
+  "c4-s78": {
+    "source": "省`若非`之句。",
+    "translation": "If I omit the negation's clause,"
+  },
+  "c4-s79": {
+    "source": "可乎。",
+    "translation": "will it be permissible?”"
+  },
+  "c4-s80": {
+    "source": "曰。",
+    "translation": "It is answered, “"
+  },
+  "c4-s81": {
+    "source": "可也。",
+    "translation": "Certainly."
+  },
+  "c4-s82": {
+    "source": "例曰今有十斗之器。",
+    "translation": "For example, there is a vessel of ten dou capacity."
+  },
+  "c4-s83": {
+    "source": "主人有酒若干。",
+    "translation": "The host has a certain quantity of wine."
+  },
+  "c4-s84": {
+    "source": "傾諸此器。",
+    "translation": "He pours all the wine into this vessel."
+  },
+  "c4-s85": {
+    "source": "十斗以上者皆滿盈。",
+    "translation": "Vessels of more than ten dou are all full."
+  },
+  "c4-s86": {
+    "source": "問器有酒竟幾何。",
+    "translation": "The question asks: how much wine does the vessel contain in the end?”"
+  },
+  "c4-s87": {
+    "source": "解曰。",
+    "translation": "The explanation says:"
+  },
+  "c4-s88": {
+    "source": "吾有二數。",
+    "translation": "I have two numbers."
+  },
+  "c4-s89": {
+    "source": "曰十。",
+    "translation": "One is called “Ten.”"
+  },
+  "c4-s90": {
+    "source": "曰九。",
+    "translation": "The other is called “Nine.”"
+  },
+  "c4-s91": {
+    "source": "名之曰「器量」",
+    "translation": "I name it “Vessel Capacity”,"
+  },
+  "c4-s92": {
+    "source": "曰「酒量」。",
+    "translation": "and “Wine Capacity.”"
+  },
+  "c4-s93": {
+    "source": "\n若「酒量」大於「器量」者。",
+    "translation": "If “Wine Capacity” is greater than “Vessel Capacity.”"
+  },
+  "c4-s94": {
+    "source": "\n\t昔之「酒量」者。",
+    "translation": "The former “Wine Capacity” was,"
+  },
+  "c4-s95": {
+    "source": "今「器量」是矣。",
+    "translation": "Now the “Vessel Capacity” is so."
+  },
+  "c4-s96": {
+    "source": "\n云云。",
+    "translation": "Thus it is."
+  },
+  "c4-s97": {
+    "source": "\n夫「酒量」。",
+    "translation": "For “Wine Capacity,”"
+  },
+  "c4-s98": {
+    "source": "書之。",
+    "translation": "write it down."
+  },
+  "c4-s99": {
+    "source": "比數之法有六。",
+    "translation": "There are six methods of numerical comparison."
+  },
+  "c4-s100": {
+    "source": "曰等於。",
+    "translation": "They are called “equal to.”"
+  },
+  "c4-s101": {
+    "source": "曰不等於。",
+    "translation": "They are called “not equal to.”"
+  },
+  "c4-s102": {
+    "source": "曰大於。",
+    "translation": "They are called “greater than.”"
+  },
+  "c4-s103": {
+    "source": "曰小於。",
+    "translation": "They are called “less than.”"
+  },
+  "c4-s104": {
+    "source": "曰不大於。",
+    "translation": "They are called “not greater than.”"
+  },
+  "c4-s105": {
+    "source": "曰不小於。",
+    "translation": "They are called “not less than.”"
+  },
+  "c4-s106": {
+    "source": "比他物之法有二。",
+    "translation": "There are two methods for comparing with other objects."
+  },
+  "c4-s107": {
+    "source": "曰等於。",
+    "translation": "They are called “equal to.”"
+  },
+  "c4-s108": {
+    "source": "曰不等於。",
+    "translation": "They are called “not equal to.”"
+  },
+  "c4-s109": {
+    "source": "或問曰。",
+    "translation": "Some asked,"
+  },
+  "c4-s110": {
+    "source": "事有千端。",
+    "translation": "“There are a thousand ends to affairs."
+  },
+  "c4-s111": {
+    "source": "非一策能定者。",
+    "translation": "Not a single plan can determine it."
+  },
+  "c4-s112": {
+    "source": "奈何。",
+    "translation": "What then?”"
+  },
+  "c4-s113": {
+    "source": "曰。",
+    "translation": "It is answered, “"
+  },
+  "c4-s114": {
+    "source": "當用`或若`。",
+    "translation": "We ought to employ “or if.”"
+  },
+  "c4-s115": {
+    "source": "`或若`者。",
+    "translation": "“Or if，” —"
+  },
+  "c4-s116": {
+    "source": "一`若`之後。",
+    "translation": "After the first “if.”"
+  },
+  "c4-s117": {
+    "source": "連綿用之。",
+    "translation": "Continue to apply it."
+  },
+  "c4-s118": {
+    "source": "因序而比。",
+    "translation": "Compare by order."
+  },
+  "c4-s119": {
+    "source": "遇真輒為之。",
+    "translation": "When truth is met, act upon it."
+  },
+  "c4-s120": {
+    "source": "為之乃止。",
+    "translation": "Thus do, and cease."
+  },
+  "c4-s121": {
+    "source": "不更比也。",
+    "translation": "No further comparison."
+  },
+  "c4-s122": {
+    "source": "如皆不是者。",
+    "translation": "If all are not so."
+  },
+  "c4-s123": {
+    "source": "厥行最末`若非`之句。",
+    "translation": "Then, turn to the last line of “if not,”"
+  },
+  "c4-s124": {
+    "source": "老氏有天地不仁。",
+    "translation": "Lao Tzu says, Heaven and Earth are not benevolent."
+  },
+  "c4-s125": {
+    "source": "以萬物為芻狗之句。",
+    "translation": "And treat all things as straw-dogs."
+  },
+  "c4-s126": {
+    "source": "今以`或若`擬天策如是。",
+    "translation": "Now, using the celestial stratagem of the “or-if,” thus it is."
+  },
+  "c4-s127": {
+    "source": "有言『人』。",
+    "translation": "There is a word, “Man.”"
+  },
+  "c4-s128": {
+    "source": "名之曰「物」。",
+    "translation": "Let us call it ‘Thing.’"
+  },
+  "c4-s129": {
+    "source": "\n\n若「物」等於『禽獸』者。",
+    "translation": "If the ‘Thing’ is equal to “Beast,”"
+  },
+  "c4-s130": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word,"
+  },
+  "c4-s131": {
+    "source": "曰『爾芻狗也。』",
+    "translation": "Say, “You are a straw-dog.”"
+  },
+  "c4-s132": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s133": {
+    "source": "\n或若「物」等於『草木』者。",
+    "translation": "Or if the ‘Thing’ is equal to “Plants,”"
+  },
+  "c4-s134": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word,"
+  },
+  "c4-s135": {
+    "source": "曰『爾亦芻狗也。』",
+    "translation": "Say, “You also are straw-dogs.”"
+  },
+  "c4-s136": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s137": {
+    "source": "\n或若「物」等於『人』者。",
+    "translation": "Or if the ‘Thing’ is equal to “Person,”"
+  },
+  "c4-s138": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word,"
+  },
+  "c4-s139": {
+    "source": "曰『爾雖人。於我實芻狗也。』",
+    "translation": "Say, “Though you are human, to me you are indeed straw-dogs.”"
+  },
+  "c4-s140": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s141": {
+    "source": "\n或若「物」等於『芻狗』者。",
+    "translation": "Or if the ‘Thing’ is equal to “Straw-dogs,”"
+  },
+  "c4-s142": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s143": {
+    "source": "曰『更不待言。』",
+    "translation": "Say, “There is no need to speak further”"
+  },
+  "c4-s144": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s145": {
+    "source": "\n若非。",
+    "translation": "If not,"
+  },
+  "c4-s146": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s147": {
+    "source": "曰『吾不知爾何物。然爾之為芻狗明也。』",
+    "translation": "Say, “I do not know what you are; yet your being straw-dogs is clear.”"
+  },
+  "c4-s148": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s149": {
+    "source": "\n云云。",
+    "translation": "Thus do."
+  },
+  "c4-s150": {
+    "source": "\n\n昔之「物」者。",
+    "translation": "What formerly known as ‘Thing’,"
+  },
+  "c4-s151": {
+    "source": "今『芻狗』是矣。",
+    "translation": "are now “straw-dogs.”"
+  },
+  "c4-s152": {
+    "source": "爻者。",
+    "translation": "Ghaew (爻 Yáo, booleans) —"
+  },
+  "c4-s153": {
+    "source": "陰陽也。",
+    "translation": "are Yin and Yang."
+  },
+  "c4-s154": {
+    "source": "是非也。",
+    "translation": "They are True and Flase."
+  },
+  "c4-s155": {
+    "source": "有無也。",
+    "translation": "They are existence and nonexistence."
+  },
+  "c4-s156": {
+    "source": "臧否也。",
+    "translation": "They are praise and blame."
+  },
+  "c4-s157": {
+    "source": "見於變數之章。",
+    "translation": "They are seen in the chapter on variables."
+  },
+  "c4-s158": {
+    "source": "今用諸決策。",
+    "translation": "Now apply them to decision-making."
+  },
+  "c4-s159": {
+    "source": "不亦宜乎。",
+    "translation": "Is it not proper?"
+  },
+  "c4-s160": {
+    "source": "吾有一爻。",
+    "translation": "I have a Ghaew (boolean)."
+  },
+  "c4-s161": {
+    "source": "曰陽。",
+    "translation": "It is Yang."
+  },
+  "c4-s162": {
+    "source": "名之曰「甲」。",
+    "translation": "Call it “A”."
+  },
+  "c4-s163": {
+    "source": "\n若「甲」者。",
+    "translation": "If it be “A”."
+  },
+  "c4-s164": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s165": {
+    "source": "曰『陽者。歲之主也。』",
+    "translation": "It says, “Yang is the master of the year.”"
+  },
+  "c4-s166": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s167": {
+    "source": "\n若非。",
+    "translation": "If not."
+  },
+  "c4-s168": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s169": {
+    "source": "曰『陰者。陽之助也。』",
+    "translation": "It says, “The Yin is the helper of Yang.”"
+  },
+  "c4-s170": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s171": {
+    "source": "\n也。",
+    "translation": "Thus."
+  },
+  "c4-s172": {
+    "source": "易曰。",
+    "translation": "The Book of Changes says,"
+  },
+  "c4-s173": {
+    "source": "爻者。",
+    "translation": "A Ghaew (爻) —"
+  },
+  "c4-s174": {
+    "source": "言乎變者也。",
+    "translation": "speaks of change."
+  },
+  "c4-s175": {
+    "source": "今爻之變。",
+    "translation": "Now, the Ghaew’s change."
+  },
+  "c4-s176": {
+    "source": "其日用者有三。",
+    "translation": "Its daily use has three forms:"
+  },
+  "c4-s177": {
+    "source": "曰與。",
+    "translation": "“AND”,"
+  },
+  "c4-s178": {
+    "source": "曰或。",
+    "translation": "“OR”,"
+  },
+  "c4-s179": {
+    "source": "曰非。",
+    "translation": "“NOT”."
+  },
+  "c4-s180": {
+    "source": "二爻皆陽謂之與。",
+    "translation": "Two Ghaew, both Yang, are called “AND”."
+  },
+  "c4-s181": {
+    "source": "二爻有陽謂之或。",
+    "translation": "Two Ghaew bearing Yang are called “OR”."
+  },
+  "c4-s182": {
+    "source": "陰者陽陽者陰謂之非。",
+    "translation": "Yin to Yang, and Yang to Yin, are called “NOT”."
+  },
+  "c4-s183": {
+    "source": "各書如是。",
+    "translation": "Thus are they written."
+  },
+  "c4-s184": {
+    "source": "夫「甲」「乙」中無陰乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there no Yin?"
+  },
+  "c4-s185": {
+    "source": "名之曰「丙」。",
+    "translation": "Call it ‘C’"
+  },
+  "c4-s186": {
+    "source": "\n夫「甲」「乙」中有陽乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?"
+  },
+  "c4-s187": {
+    "source": "名之曰「丙」。",
+    "translation": "Call it ‘C’."
+  },
+  "c4-s188": {
+    "source": "\n變「甲」。",
+    "translation": "Change ‘A’,"
+  },
+  "c4-s189": {
+    "source": "名之曰「丙」。",
+    "translation": "Call it ‘C’."
+  },
+  "c4-s190": {
+    "source": "更有與非。",
+    "translation": "There are also “not and (NAND)”."
+  },
+  "c4-s191": {
+    "source": "或非。",
+    "translation": "“Not or (NOR)”."
+  },
+  "c4-s192": {
+    "source": "異或諸術。",
+    "translation": "“Exclusive or (XOR)”."
+  },
+  "c4-s193": {
+    "source": "皆得諸向三者。",
+    "translation": "All can be derived from the combination of the previous three."
+  },
+  "c4-s194": {
+    "source": "與非者。",
+    "translation": "“NAND” —"
+  },
+  "c4-s195": {
+    "source": "二爻有陰。",
+    "translation": "means “two Ghaew has Yin”."
+  },
+  "c4-s196": {
+    "source": "或非者。",
+    "translation": "“NOR” —"
+  },
+  "c4-s197": {
+    "source": "二爻皆陰。",
+    "translation": "means “two Ghaew are both Yin”."
+  },
+  "c4-s198": {
+    "source": "異或者。",
+    "translation": "“XOR” —"
+  },
+  "c4-s199": {
+    "source": "一陰一陽。",
+    "translation": "means “one Ghaew is Yin, the other is Yang”."
+  },
+  "c4-s200": {
+    "source": "而六者亦皆可得諸與非。",
+    "translation": "and the six operations can also be derived from “NAND”."
+  },
+  "c4-s201": {
+    "source": "故曰。",
+    "translation": "Thus we say,"
+  },
+  "c4-s202": {
+    "source": "與非生萬物。",
+    "translation": "“NAND” generates everything."
+  },
+  "c4-s203": {
+    "source": "又有`若其然者`。",
+    "translation": "Moreover, there are also “if so”"
+  },
+  "c4-s204": {
+    "source": "`若其不然`者。",
+    "translation": "and “if not so”."
+  },
+  "c4-s205": {
+    "source": "以資爻策。",
+    "translation": "To guide the Ghaew’s stratagem."
+  },
+  "c4-s206": {
+    "source": "故是二句同。",
+    "translation": "Thus these two lines are the same."
+  },
+  "c4-s207": {
+    "source": "夫「甲」「乙」中無陰乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there no Yin?"
+  },
+  "c4-s208": {
+    "source": "名之曰「丙」。",
+    "translation": "Call it ‘C’."
+  },
+  "c4-s209": {
+    "source": "若「丙」者。",
+    "translation": "If it is “C”."
+  },
+  "c4-s210": {
+    "source": "吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s211": {
+    "source": "曰『古之人誠不我欺。』",
+    "translation": "It says, “The ancient people were indeed not deceiving me.”"
+  },
+  "c4-s212": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s213": {
+    "source": "\n夫「甲」「乙」中無陰乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there no Yin?"
+  },
+  "c4-s214": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s215": {
+    "source": "吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s216": {
+    "source": "曰『古之人誠不我欺。』",
+    "translation": "It says, “The ancient people were indeed not deceiving me.”"
+  },
+  "c4-s217": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s218": {
+    "source": "是二句亦同。",
+    "translation": "These two lines are likewise the same."
+  },
+  "c4-s219": {
+    "source": "夫「甲」「乙」中有陽乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?"
+  },
+  "c4-s220": {
+    "source": "名之曰「丙」。",
+    "translation": "Call it ‘C’."
+  },
+  "c4-s221": {
+    "source": "變「丙」。",
+    "translation": "Change ‘C’."
+  },
+  "c4-s222": {
+    "source": "名之曰「丁」。",
+    "translation": "Call it ‘D’."
+  },
+  "c4-s223": {
+    "source": "若「丁」者。",
+    "translation": "If it is ‘D’,"
+  },
+  "c4-s224": {
+    "source": "吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s225": {
+    "source": "曰『古之人誠不我欺。』",
+    "translation": "It says, “The ancient people were indeed not deceiving me.”"
+  },
+  "c4-s226": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s227": {
+    "source": "\n夫「甲」「乙」中有陽乎。",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?"
+  },
+  "c4-s228": {
+    "source": "若其不然者。",
+    "translation": "If not so,"
+  },
+  "c4-s229": {
+    "source": "吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s230": {
+    "source": "曰『古之人誠不我欺。』",
+    "translation": "It says, “The ancient people were indeed not deceiving me.”'"
+  },
+  "c4-s231": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s232": {
+    "source": "孔門十哲。",
+    "translation": "The Ten Philosophers of Confucius:"
+  },
+  "c4-s233": {
+    "source": "顏回。",
+    "translation": "Yan Hui (Ziyuan, 子淵),"
+  },
+  "c4-s234": {
+    "source": "閔損。",
+    "translation": "Min Sun (Ziqian, 子騫),"
+  },
+  "c4-s235": {
+    "source": "冉伯牛。",
+    "translation": "Ran Boniu (Ran Geng, 冉耕),"
+  },
+  "c4-s236": {
+    "source": "仲弓。",
+    "translation": "Zhong Gong (Ran Yong, 冉雍),"
+  },
+  "c4-s237": {
+    "source": "宰予。",
+    "translation": "Zai Yu (Ziwo, 子我),"
+  },
+  "c4-s238": {
+    "source": "子貢。",
+    "translation": "Zi Gong (Duanmu Ci, 端木賜),"
+  },
+  "c4-s239": {
+    "source": "冉求。",
+    "translation": "Ran Qiu (Ziyou, 子有),"
+  },
+  "c4-s240": {
+    "source": "子路。",
+    "translation": "Zilu (Zhong You, 仲由),"
+  },
+  "c4-s241": {
+    "source": "子游。",
+    "translation": "Ziyou (Yan Yan, 言偃),"
+  },
+  "c4-s242": {
+    "source": "子夏。",
+    "translation": "Zixia (Bu Shang, 卜商)."
+  },
+  "c4-s243": {
+    "source": "並稱先賢。",
+    "translation": "Together they are called the Former Wise Ones,"
+  },
+  "c4-s244": {
+    "source": "而風采各異。",
+    "translation": "and their bearing is diverse."
+  },
+  "c4-s245": {
+    "source": "今四問之內。",
+    "translation": "Now within these four questions."
+  },
+  "c4-s246": {
+    "source": "可知其誰。",
+    "translation": "One may know who they are."
+  },
+  "c4-s247": {
+    "source": "其法如是。",
+    "translation": "Their method is thus."
+  },
+  "c4-s248": {
+    "source": "夫「魯人耶」。",
+    "translation": "That ‘is he the people of the Lu state?’"
+  },
+  "c4-s249": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s250": {
+    "source": "\n\t夫「德行科耶」。",
+    "translation": "That ‘is his virtue tested?’"
+  },
+  "c4-s251": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s252": {
+    "source": "\n\t\t夫「未仕耶」。",
+    "translation": "That ‘is he yet unappointed?’"
+  },
+  "c4-s253": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s254": {
+    "source": "\n\t\t\t夫「蚤死耶」。",
+    "translation": "That ‘did he faced early death?’"
+  },
+  "c4-s255": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s256": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s257": {
+    "source": "曰『賢哉。回也。人不堪其憂。回也不改其樂。』",
+    "translation": "It says, “Wise indeed is Hui; People cannot bear his sorrows; Hui, as he is, does not alter his joys.”"
+  },
+  "c4-s258": {
+    "source": "書之。",
+    "translation": "Write it."
+  },
+  "c4-s259": {
+    "source": "\n\t\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s260": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s261": {
+    "source": "曰『孝哉。閔子騫。人不間於其父母昆弟之間。』",
+    "translation": "It says, “Filial indeed. Min Ziqian, A man does not live at odds with his father, mother, and brothers."
+  },
+  "c4-s262": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s263": {
+    "source": "\n\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s264": {
+    "source": "\n\t\t\t夫「病厲耶」。",
+    "translation": "That ‘is he gravely ill?’"
+  },
+  "c4-s265": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s266": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s267": {
+    "source": "曰『亡之。命也夫。斯人也。而有斯疾也。』",
+    "translation": "It says, “He (Ran Geng, Boniu) is lost — it is fate indeed. That such a man should suffer such an illness…”"
+  },
+  "c4-s268": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s269": {
+    "source": "\n\t\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s270": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s271": {
+    "source": "曰『雍也。可使南面。』",
+    "translation": "It says, “Yong (Ran Yong, Zhonggong) is fit to sit facing south — fit to govern.”"
+  },
+  "c4-s272": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s273": {
+    "source": "\n\t\t云云。",
+    "translation": "Thus and thus."
+  },
+  "c4-s274": {
+    "source": "\n\t若非。",
+    "translation": "If not."
+  },
+  "c4-s275": {
+    "source": "\n\t\t夫「政事科耶」。",
+    "translation": "That ‘is he gifted in matters of governance?’"
+  },
+  "c4-s276": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s277": {
+    "source": "\n\t\t\t夫「戰死耶」。",
+    "translation": "That ‘did he die in battle?’"
+  },
+  "c4-s278": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s279": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s280": {
+    "source": "曰『若由也。不得其死然。』",
+    "translation": "It says, “Speaking of You (Zhong You, Zilu), he indeed, did not die the death befitting him.”"
+  },
+  "c4-s281": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s282": {
+    "source": "\n\t\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s283": {
+    "source": "\n\t\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s284": {
+    "source": "曰『求。無乃爾是過與。』",
+    "translation": "It says, “Qiu (Ran You, Ziyou), is this not your error?”"
+  },
+  "c4-s285": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s286": {
+    "source": "\n\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s287": {
+    "source": "\n\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s288": {
+    "source": "曰『朽木不可雕也。糞土之牆不可杇也。於予與何誅。』",
+    "translation": "It says, “Rotten wood cannot be carved. The dung-and-earth wall cannot be plastered. What punishment would be due to me?”"
+  },
+  "c4-s289": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s290": {
+    "source": "\n\t云云。",
+    "translation": "Thus and thus."
+  },
+  "c4-s291": {
+    "source": "\n若非。",
+    "translation": "If not,"
+  },
+  "c4-s292": {
+    "source": "\n\t夫「複姓耶」。",
+    "translation": "That ‘is he of a double surname?’"
+  },
+  "c4-s293": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s294": {
+    "source": "\n\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s295": {
+    "source": "曰『賜也。始可與言詩已矣。告諸往而知來者。』",
+    "translation": "It says, “Ah, (Duanmu) Ci! Now I may truly discuss poetry with you.”"
+  },
+  "c4-s296": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s297": {
+    "source": "\n\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s298": {
+    "source": "\n\t\t夫「衛人耶」。",
+    "translation": "That ‘is he a man from Wei?’"
+  },
+  "c4-s299": {
+    "source": "若其然者。",
+    "translation": "If so,"
+  },
+  "c4-s300": {
+    "source": "\n\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s301": {
+    "source": "曰『起予者。商也。始可與言詩已矣。』",
+    "translation": "It says, “It is Shang, indeed—he is now fit to speak of the Odes with me.”"
+  },
+  "c4-s302": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c4-s303": {
+    "source": "\n\t\t若非。",
+    "translation": "If not,"
+  },
+  "c4-s304": {
+    "source": "\n\t\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c4-s305": {
+    "source": "曰『二三子。偃之言是也。』",
+    "translation": "It says, “My disciples, Yan has spoken truly.”"
+  },
+  "c4-s306": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c4-s307": {
+    "source": "\n\t云云。",
+    "translation": "Thus and thus."
+  },
+  "c4-s308": {
+    "source": "\n云云。",
+    "translation": "Thus and thus."
+  },
+  "c4-s309": {
+    "source": "仲由字子路。",
+    "translation": "Zhong You, styled Zilu,"
+  },
+  "c4-s310": {
+    "source": "魯人。",
+    "translation": "A man of Lu,"
+  },
+  "c4-s311": {
+    "source": "政事科。",
+    "translation": "Ranked among those gifted in statecraft."
+  },
+  "c4-s312": {
+    "source": "仕於魯衛。",
+    "translation": "He served in Lu & Wei."
+  },
+  "c4-s313": {
+    "source": "戰死。",
+    "translation": "Fell in battle."
+  },
+  "c4-s314": {
+    "source": "今一試之。",
+    "translation": "Now I shall test it."
+  },
+  "c4-s315": {
+    "source": "吾有九爻。",
+    "translation": "I have nine Yáo (booleans)."
+  },
+  "c4-s316": {
+    "source": "曰陽。",
+    "translation": "It is Yang."
+  },
+  "c4-s317": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s318": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s319": {
+    "source": "曰陽。",
+    "translation": "It is Yang."
+  },
+  "c4-s320": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s321": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s322": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s323": {
+    "source": "曰陰。",
+    "translation": "It is Yin."
+  },
+  "c4-s324": {
+    "source": "曰陽。",
+    "translation": "It is Yang."
+  },
+  "c4-s325": {
+    "source": "\n名之曰「魯人耶」",
+    "translation": "Name it as “is he a Lu person?”"
+  },
+  "c4-s326": {
+    "source": "曰「衛人耶」",
+    "translation": "Name it as “is he a Wei person?”"
+  },
+  "c4-s327": {
+    "source": "曰「德行科耶」",
+    "translation": "Name it as “is he gifted in matters of moral conduct?”"
+  },
+  "c4-s328": {
+    "source": "曰「政事科耶」",
+    "translation": "Name it as “is he gifted in matters of government affairs?”"
+  },
+  "c4-s329": {
+    "source": "\n曰「複姓耶」",
+    "translation": "Name it as “is he of a double surname?”"
+  },
+  "c4-s330": {
+    "source": "曰「未仕耶」",
+    "translation": "Name it as “is he not yet in office?”"
+  },
+  "c4-s331": {
+    "source": "曰「蚤死耶」",
+    "translation": "Name it as “is he died early?”"
+  },
+  "c4-s332": {
+    "source": "曰「病厲耶」",
+    "translation": "Name it as “is he ill and grievous?”"
+  },
+  "c4-s333": {
+    "source": "曰「戰死耶」",
+    "translation": "Name it as “is he died in battle?”"
+  },
+  "c4-s334": {
+    "source": "乃得",
+    "translation": "Thus one may obtain."
+  },
+  "c4-s335": {
+    "source": "若由也。",
+    "translation": "Speaking of You, he indeed,"
+  },
+  "c4-s336": {
+    "source": "不得其死然。",
+    "translation": "did not die the death befitting him."
+  },
+  "c4-s337": {
+    "source": "似此決策連環相嵌者。",
+    "translation": "There are thus interlocking decision chains in this manner."
+  },
+  "c4-s338": {
+    "source": "或取其形謂之決策樹。",
+    "translation": "Some, taking its form, call it the Decision Tree."
+  },
+  "c4-s339": {
+    "source": "編程決策之道。",
+    "translation": "The way of programming decisions."
+  },
+  "c4-s340": {
+    "source": "至是略備矣。",
+    "translation": "Thereupon, it is somewhat complete."
+  }
+}

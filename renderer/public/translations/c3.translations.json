@@ -1,0 +1,966 @@
+{
+  "c3-s1": {
+    "source": "古有周髀。",
+    "translation": "In ancient times there was Zhoubi Suanjing,"
+  },
+  "c3-s2": {
+    "source": "海島。",
+    "translation": "Haidao Suanjing, and"
+  },
+  "c3-s3": {
+    "source": "九章算經云。",
+    "translation": "The Nine Chapters on the Mathematical Art."
+  },
+  "c3-s4": {
+    "source": "後世疇人輯之為十書。",
+    "translation": "In later ages, scholars compiled it into ten books."
+  },
+  "c3-s5": {
+    "source": "古希臘國畢氏曰。",
+    "translation": "The ancient Greek Pythagoras said."
+  },
+  "c3-s6": {
+    "source": "萬物皆數。",
+    "translation": "All things are numbers."
+  },
+  "c3-s7": {
+    "source": "乃知算學者中外所重。",
+    "translation": "Thereby it is known that arithmeticians, both at home and abroad, prize it."
+  },
+  "c3-s8": {
+    "source": "今編程之用雖不勝數。",
+    "translation": "Now the uses of programming are innumerable;"
+  },
+  "c3-s9": {
+    "source": "究其本原。",
+    "translation": "in probing its origin,"
+  },
+  "c3-s10": {
+    "source": "亦皆算焉。",
+    "translation": "they are all computations."
+  },
+  "c3-s11": {
+    "source": "而算之本原。",
+    "translation": "The origin of computation —"
+  },
+  "c3-s12": {
+    "source": "曰加。",
+    "translation": "is called addition,"
+  },
+  "c3-s13": {
+    "source": "曰減。",
+    "translation": "subtraction,"
+  },
+  "c3-s14": {
+    "source": "曰乘。",
+    "translation": "multiplication,"
+  },
+  "c3-s15": {
+    "source": "曰除。",
+    "translation": "and division."
+  },
+  "c3-s16": {
+    "source": "加者。",
+    "translation": "To add —"
+  },
+  "c3-s17": {
+    "source": "求和也。",
+    "translation": "is to seek the sum,"
+  },
+  "c3-s18": {
+    "source": "減者。",
+    "translation": "To subtract —"
+  },
+  "c3-s19": {
+    "source": "求差也。",
+    "translation": "is to seek the difference,"
+  },
+  "c3-s20": {
+    "source": "乘者。",
+    "translation": "To multiply —"
+  },
+  "c3-s21": {
+    "source": "求積也。",
+    "translation": "is to seek the product,"
+  },
+  "c3-s22": {
+    "source": "除者。",
+    "translation": "To divide —"
+  },
+  "c3-s23": {
+    "source": "求商也。",
+    "translation": "The division is to seek the quotient."
+  },
+  "c3-s24": {
+    "source": "書如是。",
+    "translation": "Thus it can be written,"
+  },
+  "c3-s25": {
+    "source": "加一以二。",
+    "translation": "Add to one with two."
+  },
+  "c3-s26": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s27": {
+    "source": "\n減二以一。",
+    "translation": "Subtract from two with one."
+  },
+  "c3-s28": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s29": {
+    "source": "\n乘二以三。",
+    "translation": "Multiply two with three."
+  },
+  "c3-s30": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s31": {
+    "source": "\n除八以四。",
+    "translation": "Divide eight by four."
+  },
+  "c3-s32": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s33": {
+    "source": "或問曰。",
+    "translation": "Some ask,"
+  },
+  "c3-s34": {
+    "source": "此易耳。",
+    "translation": "“This is easy, indeed."
+  },
+  "c3-s35": {
+    "source": "三尺之童亦能算也。",
+    "translation": "A three-foot-tall child can calculate it as well."
+  },
+  "c3-s36": {
+    "source": "胡用機器為。",
+    "translation": "Why use a machine?”"
+  },
+  "c3-s37": {
+    "source": "曰。",
+    "translation": "Answered,"
+  },
+  "c3-s38": {
+    "source": "試問九萬八千七百六十五乘三千四百五十六。",
+    "translation": "“Let us ask: 98,765 multiplied by 3,456."
+  },
+  "c3-s39": {
+    "source": "又當幾何。",
+    "translation": "And what is the product?"
+  },
+  "c3-s40": {
+    "source": "當謝不能也。",
+    "translation": "It cannot be answered then."
+  },
+  "c3-s41": {
+    "source": "乃令機器算之。",
+    "translation": "Thereupon one orders the machine to compute it."
+  },
+  "c3-s42": {
+    "source": "轉瞬可曉。",
+    "translation": "In an instant it is clear.”"
+  },
+  "c3-s43": {
+    "source": "乘九萬八千七百六十五以三千四百五十六。",
+    "translation": "Multiply 98,765 by 3,456."
+  },
+  "c3-s44": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s45": {
+    "source": "乃得",
+    "translation": "Thus one obtains."
+  },
+  "c3-s46": {
+    "source": "三億四千一百三十三萬一千八百四十",
+    "translation": "341,331,840"
+  },
+  "c3-s47": {
+    "source": "又算有繁複非一步所能得者。",
+    "translation": "There are calculations that are intricate and cannot be obtained in a single step."
+  },
+  "c3-s48": {
+    "source": "當如是。",
+    "translation": "Thus it shall be."
+  },
+  "c3-s49": {
+    "source": "加七十五以二。",
+    "translation": "Add seventy-five to two."
+  },
+  "c3-s50": {
+    "source": "乘其以九。",
+    "translation": "Multiply it by nine."
+  },
+  "c3-s51": {
+    "source": "減其以三十六。",
+    "translation": "Subtract thirty-six from it."
+  },
+  "c3-s52": {
+    "source": "除其以二。",
+    "translation": "Divide it by two."
+  },
+  "c3-s53": {
+    "source": "加其以五百。",
+    "translation": "Add five hundred to it."
+  },
+  "c3-s54": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s55": {
+    "source": "乃得",
+    "translation": "Thus one obtains."
+  },
+  "c3-s56": {
+    "source": "八百二十八又五分",
+    "translation": "Eight hundred twenty-eight and five-tenths (828,5)."
+  },
+  "c3-s57": {
+    "source": "又除法者。",
+    "translation": "Moreover, as for division,"
+  },
+  "c3-s58": {
+    "source": "有除數與被除數之別。",
+    "translation": "There is a distinction between the divisor and the dividend."
+  },
+  "c3-s59": {
+    "source": "是謂除法無交換率也。",
+    "translation": "This is to say that division has no commutativity."
+  },
+  "c3-s60": {
+    "source": "今言`除「甲」以「乙」`者。",
+    "translation": "Now, to say divide A by B."
+  },
+  "c3-s61": {
+    "source": "甲者。",
+    "translation": "A —"
+  },
+  "c3-s62": {
+    "source": "被除數也。",
+    "translation": "is the dividend."
+  },
+  "c3-s63": {
+    "source": "乙者。",
+    "translation": "B —"
+  },
+  "c3-s64": {
+    "source": "除數也。",
+    "translation": "is the divisor."
+  },
+  "c3-s65": {
+    "source": "亦可書`除「乙」於「甲」`。",
+    "translation": "It may also be written as dividing with B to A."
+  },
+  "c3-s66": {
+    "source": "無少異耳。",
+    "translation": "There is no difference, is there?"
+  },
+  "c3-s67": {
+    "source": "減法亦然。",
+    "translation": "Subtraction is likewise so."
+  },
+  "c3-s68": {
+    "source": "而加乘有交換率者。",
+    "translation": "And addition and multiplication have commutativity;"
+  },
+  "c3-s69": {
+    "source": "`於`乃通`以`。",
+    "translation": "hence they are generally used."
+  },
+  "c3-s70": {
+    "source": "或問曰。",
+    "translation": "Some ask,"
+  },
+  "c3-s71": {
+    "source": "有不能整除者。",
+    "translation": "“There are those who cannot be evenly divided."
+  },
+  "c3-s72": {
+    "source": "不欲得商之小數。",
+    "translation": "They do not wish to obtain the quotient's decimal part."
+  },
+  "c3-s73": {
+    "source": "乃願得其餘數。",
+    "translation": "They would thus have the remainder."
+  },
+  "c3-s74": {
+    "source": "當作何書。",
+    "translation": "What should be written, then?”"
+  },
+  "c3-s75": {
+    "source": "曰。",
+    "translation": "Answered,"
+  },
+  "c3-s76": {
+    "source": "當如是。",
+    "translation": "“Thus it should be.”"
+  },
+  "c3-s77": {
+    "source": "除二以三。",
+    "translation": "Divide 2 by 3."
+  },
+  "c3-s78": {
+    "source": "所餘幾何。",
+    "translation": "What remains?"
+  },
+  "c3-s79": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c3-s80": {
+    "source": "以上加減乘除之法。",
+    "translation": "The methods of the four operations above."
+  },
+  "c3-s81": {
+    "source": "算術者。",
+    "translation": "The arithmetics —"
+  },
+  "c3-s82": {
+    "source": "既知其算。",
+    "translation": "Having grasped its calculation."
+  },
+  "c3-s83": {
+    "source": "乃習其數。",
+    "translation": "Thereafter one studies its numerals."
+  },
+  "c3-s84": {
+    "source": "曩者朱氏算學啟蒙有大數之類。",
+    "translation": "Formerly, Zhu’s Primer of Mathematics had classifications of large numbers,"
+  },
+  "c3-s85": {
+    "source": "小數之類。",
+    "translation": "and the small numerals."
+  },
+  "c3-s86": {
+    "source": "然近世多不用。",
+    "translation": "Yet in modern times, many do not use them."
+  },
+  "c3-s87": {
+    "source": "今考眾說。",
+    "translation": "Now I weigh the various opinions."
+  },
+  "c3-s88": {
+    "source": "尊實用。",
+    "translation": "Value practicality."
+  },
+  "c3-s89": {
+    "source": "點定如是。",
+    "translation": "Thus set forth as follows."
+  },
+  "c3-s90": {
+    "source": "大數之類。",
+    "translation": "About the large numerals,"
+  },
+  "c3-s91": {
+    "source": "一。",
+    "translation": "One (Qyit, 一, 10°)."
+  },
+  "c3-s92": {
+    "source": "十。",
+    "translation": "Ten (Djip, 十, 10¹)."
+  },
+  "c3-s93": {
+    "source": "十十曰百。",
+    "translation": "Ten tens are called a hundred (Paek, 百, 10²)."
+  },
+  "c3-s94": {
+    "source": "十百曰千。",
+    "translation": "Ten hundreds are called a thousand (Tshen, 千, 10³)."
+  },
+  "c3-s95": {
+    "source": "十千曰萬。",
+    "translation": "Ten thousands are called a myriad (Muonh, 萬, 10⁴)."
+  },
+  "c3-s96": {
+    "source": "十萬。",
+    "translation": "Ten myriad (one hundred thousand, Djip muonh, 十萬, 10⁵)."
+  },
+  "c3-s97": {
+    "source": "百萬。",
+    "translation": "Hundred myriad (one million, Paek muonh, 百萬, 10⁶)."
+  },
+  "c3-s98": {
+    "source": "千萬。",
+    "translation": "Thousand myriad (ten million, Tshen muonh, 千萬, 10⁷)."
+  },
+  "c3-s99": {
+    "source": "萬萬曰億。",
+    "translation": "A myriad myriad (one hundred million) are called Qyk (億, 10⁸)."
+  },
+  "c3-s100": {
+    "source": "萬億曰兆。",
+    "translation": "A myriad Qyk (a trillion) are called Driewq (兆, 10¹²)."
+  },
+  "c3-s101": {
+    "source": "萬兆曰京。",
+    "translation": "A myriad Driewq (ten quadrillion) are called Kyaeng (京, 10¹⁶)."
+  },
+  "c3-s102": {
+    "source": "萬京曰陔。",
+    "translation": "A myriad Kyaeng (a hundred quintillion) are called Koej (垓, 10²°)."
+  },
+  "c3-s103": {
+    "source": "萬陔曰秭。",
+    "translation": "A myriad Koej (one septillion) are called Tsiq (秭, 10²⁴)."
+  },
+  "c3-s104": {
+    "source": "萬秭曰壤。",
+    "translation": "A myriad Tsiq (ten octillion) are called Njyangq (壤, 10²⁸)."
+  },
+  "c3-s105": {
+    "source": "萬壤曰溝。",
+    "translation": "A myriad Njyangq (one hundred nonillion) are called Kou (溝, 10³²)."
+  },
+  "c3-s106": {
+    "source": "萬溝曰澗。",
+    "translation": "A myriad Kou (one undecillion) are called Kaenh (澗, 10³⁶)."
+  },
+  "c3-s107": {
+    "source": "萬澗曰正。",
+    "translation": "A myriad Kaenh (ten duodecillion) are called Tjiaengh (正, 10⁴°)."
+  },
+  "c3-s108": {
+    "source": "萬正曰載。",
+    "translation": "A myriad Tjiaengh (a hundred tredecillion) are called Tseojq (載, 10⁴⁴)"
+  },
+  "c3-s109": {
+    "source": "小數之類。",
+    "translation": "About the small numerals,"
+  },
+  "c3-s110": {
+    "source": "漠者。",
+    "translation": "The Mak (漠) —,"
+  },
+  "c3-s111": {
+    "source": "兆分之一。",
+    "translation": "is a trillionth (pico-, 10⁻¹²)."
+  },
+  "c3-s112": {
+    "source": "十漠曰渺。",
+    "translation": "Ten Mak (one hundred billionth) are called Miewq (渺, 10⁻¹¹)."
+  },
+  "c3-s113": {
+    "source": "十渺曰埃。",
+    "translation": "Ten Miewq (one ten-billionth) are called Qeoj (埃, 10⁻¹⁰)."
+  },
+  "c3-s114": {
+    "source": "十埃曰塵。",
+    "translation": "Ten Qeoj (one billionth) are called Drin (塵, 10⁻⁹)."
+  },
+  "c3-s115": {
+    "source": "十塵曰沙。",
+    "translation": "Ten Drin (one hundred millionth) are called Srae (沙, 10⁻⁸)."
+  },
+  "c3-s116": {
+    "source": "十沙曰纖。",
+    "translation": "Ten Srae (one ten-millionth) are called Siem (纖, 10⁻⁷)."
+  },
+  "c3-s117": {
+    "source": "十纖曰微。",
+    "translation": "Ten Siem (one millionth) are called Muj (微, 10⁻⁶)."
+  },
+  "c3-s118": {
+    "source": "十微曰忽。",
+    "translation": "Ten Muj (one hundred thousandth) are called Hot (忽, 10⁻⁵)."
+  },
+  "c3-s119": {
+    "source": "十忽曰絲。",
+    "translation": "Ten Hot (one ten-thousandth) are called Sy (絲, 10⁻⁴)."
+  },
+  "c3-s120": {
+    "source": "十絲曰毫。",
+    "translation": "Ten Sy (one thousandth, milli-) are called Ghaw (毫, 10⁻³)."
+  },
+  "c3-s121": {
+    "source": "十毫曰釐。",
+    "translation": "Ten Ghaw (one hundredth) are called Ly (釐, 10⁻²)."
+  },
+  "c3-s122": {
+    "source": "十釐曰分。",
+    "translation": "Ten Ly (one tenth) are called Pun (分, 10⁻¹)."
+  },
+  "c3-s123": {
+    "source": "十分曰一。",
+    "translation": "Ten Pun (one) are called Qit (一, 10⁰)."
+  },
+  "c3-s124": {
+    "source": "例一。",
+    "translation": "Example One."
+  },
+  "c3-s125": {
+    "source": "孫子算經有問焉。",
+    "translation": "The Sunzi Suan Jing contains a question."
+  },
+  "c3-s126": {
+    "source": "今有雉兔同籠。",
+    "translation": "Now there is a pheasant and a rabbit in the same cage."
+  },
+  "c3-s127": {
+    "source": "上有三十五頭。",
+    "translation": "Above are thirty-five heads."
+  },
+  "c3-s128": {
+    "source": "下九十四足。",
+    "translation": "Below are ninety-four feet."
+  },
+  "c3-s129": {
+    "source": "問雉兔各幾何。",
+    "translation": "Ask what are the respective numbers of pheasant and rabbit."
+  },
+  "c3-s130": {
+    "source": "依其書之術。",
+    "translation": "Following the method of the book."
+  },
+  "c3-s131": {
+    "source": "編程如是。",
+    "translation": "Thus the programming is as follows."
+  },
+  "c3-s132": {
+    "source": "吾有二數。",
+    "translation": "I have two numbers."
+  },
+  "c3-s133": {
+    "source": "曰三十五。",
+    "translation": "Named thirty-five."
+  },
+  "c3-s134": {
+    "source": "曰九十四。",
+    "translation": "Named ninety-four."
+  },
+  "c3-s135": {
+    "source": "名之曰「頭」",
+    "translation": "Named them “head”"
+  },
+  "c3-s136": {
+    "source": "曰「足」。",
+    "translation": "and “foot.”"
+  },
+  "c3-s137": {
+    "source": "\n除「足」以二。",
+    "translation": "Divide the “foot” by two."
+  },
+  "c3-s138": {
+    "source": "減其以「頭」。",
+    "translation": "Subtract it from the “head.”"
+  },
+  "c3-s139": {
+    "source": "名之曰「兔」。",
+    "translation": "Named it “rabbit.”"
+  },
+  "c3-s140": {
+    "source": "\n減「頭」以「兔」。",
+    "translation": "Subtract the “head” by the “rabbit.”"
+  },
+  "c3-s141": {
+    "source": "名之曰「雉」。",
+    "translation": "Named it “pheasant.”"
+  },
+  "c3-s142": {
+    "source": "\n夫「雉」夫「兔」。",
+    "translation": "The “pheasant” and the “rabbit.”"
+  },
+  "c3-s143": {
+    "source": "書之。",
+    "translation": "Write them down."
+  },
+  "c3-s144": {
+    "source": "遂得",
+    "translation": "Thus obtained."
+  },
+  "c3-s145": {
+    "source": "二十三 一十二",
+    "translation": "Twenty-three and twelve."
+  },
+  "c3-s146": {
+    "source": "吾聞有善詼諧者注此解曰。",
+    "translation": "I have heard a witty commentator annotate this interpretation as follows."
+  },
+  "c3-s147": {
+    "source": "今有能禽獸語者。",
+    "translation": "Now there exists one who can speak the language of beasts."
+  },
+  "c3-s148": {
+    "source": "申其令。",
+    "translation": "State his commands."
+  },
+  "c3-s149": {
+    "source": "雉獨立。",
+    "translation": "The pheasant stands by itself."
+  },
+  "c3-s150": {
+    "source": "兔人立。",
+    "translation": "The rabbit stands upright."
+  },
+  "c3-s151": {
+    "source": "是時足數為向者之半。",
+    "translation": "The number of feet is half that of the heads."
+  },
+  "c3-s152": {
+    "source": "故曰`除「足」以二`。",
+    "translation": "Therefore, divide the feet by two."
+  },
+  "c3-s153": {
+    "source": "是人又有令曰。",
+    "translation": "This person also has an instruction:"
+  },
+  "c3-s154": {
+    "source": "雉兔復各舉一足。",
+    "translation": "The pheasant and the rabbit each raise one foot again."
+  },
+  "c3-s155": {
+    "source": "故曰`減其以「頭」`。",
+    "translation": "Therefore, subtract it from the “head.”"
+  },
+  "c3-s156": {
+    "source": "雉雙足皆舉。",
+    "translation": "The pheasant’s two feet are both raised."
+  },
+  "c3-s157": {
+    "source": "遂仆於地。",
+    "translation": "They fall to the ground."
+  },
+  "c3-s158": {
+    "source": "兔尚有一足。",
+    "translation": "The rabbit still has one foot."
+  },
+  "c3-s159": {
+    "source": "故數是時之足。",
+    "translation": "Thus the feet are the numbers at this time."
+  },
+  "c3-s160": {
+    "source": "乃得兔之數。",
+    "translation": "Thereby the rabbit’s number is obtained."
+  },
+  "c3-s161": {
+    "source": "既知兔幾何。",
+    "translation": "Once the rabbit’s measure is known."
+  },
+  "c3-s162": {
+    "source": "則雉易矣。",
+    "translation": "Then the pheasant becomes easy."
+  },
+  "c3-s163": {
+    "source": "`減「頭」以「兔」`可得。",
+    "translation": "Subtract the “head” by the “rabbit” to obtain."
+  },
+  "c3-s164": {
+    "source": "兔善好逑。",
+    "translation": "The rabbit loves to pair."
+  },
+  "c3-s165": {
+    "source": "乃有劉勝之風流。",
+    "translation": "There is Liu Sheng’s refined bearing."
+  },
+  "c3-s166": {
+    "source": "雉稱佳味。",
+    "translation": "The pheasant is deemed a fine delicacy."
+  },
+  "c3-s167": {
+    "source": "遂遭酈生之慘禍。",
+    "translation": "Thus Li Sheng met a cruel fate."
+  },
+  "c3-s168": {
+    "source": "主人旬日復臨。",
+    "translation": "The master returns after ten days."
+  },
+  "c3-s169": {
+    "source": "上見頭五百七十九。",
+    "translation": "The head-count is five hundred seventy-nine."
+  },
+  "c3-s170": {
+    "source": "下見足二千二百八十四。",
+    "translation": "The feet count is two thousand two hundred eighty-four."
+  },
+  "c3-s171": {
+    "source": "問何以編程求雉兔之數。",
+    "translation": "They asked how, by programming, to compute the numbers of pheasant and rabbit."
+  },
+  "c3-s172": {
+    "source": "曰。",
+    "translation": "He answered,"
+  },
+  "c3-s173": {
+    "source": "但易首句可矣。",
+    "translation": "“Only changing the first sentence is enough.”"
+  },
+  "c3-s174": {
+    "source": "吾有二數。",
+    "translation": "I have two numbers."
+  },
+  "c3-s175": {
+    "source": "曰五百七十九。",
+    "translation": "Named five hundred seventy-nine."
+  },
+  "c3-s176": {
+    "source": "曰二千二百八十四。",
+    "translation": "Named two thousand two hundred eighty-four."
+  },
+  "c3-s177": {
+    "source": "名之曰「頭」",
+    "translation": "Named them “head”"
+  },
+  "c3-s178": {
+    "source": "曰「足」。",
+    "translation": "and “foot.”"
+  },
+  "c3-s179": {
+    "source": "遂得雉一十六。",
+    "translation": "Thereby the pheasant becomes sixteen."
+  },
+  "c3-s180": {
+    "source": "兔五百六十三。",
+    "translation": "The rabbit is five hundred sixty-three."
+  },
+  "c3-s181": {
+    "source": "遑論頭足之多少。",
+    "translation": "Not to mention the counts of head and foot."
+  },
+  "c3-s182": {
+    "source": "唯易一句。",
+    "translation": "Only changing one sentence."
+  },
+  "c3-s183": {
+    "source": "變數之用。",
+    "translation": "The use of variables."
+  },
+  "c3-s184": {
+    "source": "不亦妙乎。",
+    "translation": "Is it not marvelous?"
+  },
+  "c3-s185": {
+    "source": "例二。",
+    "translation": "Example two."
+  },
+  "c3-s186": {
+    "source": "古勒拿有九首四足一尾之怪。",
+    "translation": "Ancient Lerna has a monster with nine heads, four feet, and one tail,"
+  },
+  "c3-s187": {
+    "source": "名曰許德拉。",
+    "translation": "named the Hydra."
+  },
+  "c3-s188": {
+    "source": "山海經載南山有狐九尾。",
+    "translation": "The Classic of Mountains and Seas records that in the Southern Mountains there is a fox with nine tails."
+  },
+  "c3-s189": {
+    "source": "刑天無首。",
+    "translation": "Xing Tian has no head."
+  },
+  "c3-s190": {
+    "source": "孫叔敖嘗見兩頭蛇。",
+    "translation": "Sun Shu-ao once saw a two-headed snake."
+  },
+  "c3-s191": {
+    "source": "今楚王田獵。",
+    "translation": "Now the King of Chu is hunting;"
+  },
+  "c3-s192": {
+    "source": "獲四怪各若干。",
+    "translation": "he has captured four kind of monsters, each some."
+  },
+  "c3-s193": {
+    "source": "盡納籠中。",
+    "translation": "All were brought into the cage."
+  },
+  "c3-s194": {
+    "source": "上有三百四十頭。",
+    "translation": "Above are three hundred and forty heads."
+  },
+  "c3-s195": {
+    "source": "三十二臂。",
+    "translation": "Thirty-two arms."
+  },
+  "c3-s196": {
+    "source": "下有二百十六足。",
+    "translation": "Below are two hundred sixteen feet."
+  },
+  "c3-s197": {
+    "source": "四百十七尾。",
+    "translation": "Four hundred seventeen tails."
+  },
+  "c3-s198": {
+    "source": "問許得拉。",
+    "translation": "One asks, “Hydra,"
+  },
+  "c3-s199": {
+    "source": "九尾狐。",
+    "translation": "nine-tailed fox,"
+  },
+  "c3-s200": {
+    "source": "刑天。",
+    "translation": "Xing Tian,"
+  },
+  "c3-s201": {
+    "source": "兩頭蛇。",
+    "translation": "and the two-headed snake;"
+  },
+  "c3-s202": {
+    "source": "各幾何。",
+    "translation": "what, then, are the quantities of each?"
+  },
+  "c3-s203": {
+    "source": "吾有四數。",
+    "translation": "I have four numbers."
+  },
+  "c3-s204": {
+    "source": "曰三百四十。",
+    "translation": "Each of them are, three hundred forty"
+  },
+  "c3-s205": {
+    "source": "曰三十二。",
+    "translation": "thirty-two,"
+  },
+  "c3-s206": {
+    "source": "曰二百十六。",
+    "translation": "two hundred and sixteen,"
+  },
+  "c3-s207": {
+    "source": "曰四百十七。",
+    "translation": "and four hundred and seventeen."
+  },
+  "c3-s208": {
+    "source": "名之曰「頭」",
+    "translation": "They are named, respectively, “Head,”"
+  },
+  "c3-s209": {
+    "source": "曰「臂」",
+    "translation": "“Arm,”"
+  },
+  "c3-s210": {
+    "source": "曰「足」",
+    "translation": "“Foot,”"
+  },
+  "c3-s211": {
+    "source": "曰「尾」。",
+    "translation": "and “Tail.”"
+  },
+  "c3-s212": {
+    "source": "\n除「臂」以二。",
+    "translation": "Divide “Arm” by two."
+  },
+  "c3-s213": {
+    "source": "名之曰「刑天」。",
+    "translation": "Name it “Xing Tian.”"
+  },
+  "c3-s214": {
+    "source": "\n乘「刑天」以二。",
+    "translation": "Multiply “Xing Tian” by two."
+  },
+  "c3-s215": {
+    "source": "減其於「足」。",
+    "translation": "Subtract it from the “Foot.”"
+  },
+  "c3-s216": {
+    "source": "除其以四。",
+    "translation": "Divide it by four."
+  },
+  "c3-s217": {
+    "source": "名之曰「許狐和」。",
+    "translation": "Name it “Sum of Hydra and Fox.”"
+  },
+  "c3-s218": {
+    "source": "\n乘「許狐和」以十。",
+    "translation": "Multiply “Sum of Hydra and Fox” by ten."
+  },
+  "c3-s219": {
+    "source": "名之曰「十倍許狐和」。",
+    "translation": "Name it “Ten-fold Sum of Hydra and Fox.”"
+  },
+  "c3-s220": {
+    "source": "\n加「頭」以「尾」。",
+    "translation": "Add “Head” by “Tail.”"
+  },
+  "c3-s221": {
+    "source": "減其以「十倍許狐和」。",
+    "translation": "Subtract the result by “Ten-fold Sum of Hydra and Fox.”"
+  },
+  "c3-s222": {
+    "source": "除其以三。",
+    "translation": "Divide it by three."
+  },
+  "c3-s223": {
+    "source": "名之曰「兩頭蛇」。",
+    "translation": "Name it “Two-headed Snake.”"
+  },
+  "c3-s224": {
+    "source": "\n減「尾」以「兩頭蛇」。",
+    "translation": "Subtract “Tail” by “Two-headed Snake.”"
+  },
+  "c3-s225": {
+    "source": "減其以「許狐和」。",
+    "translation": "Subtract it by “Sum of Hydra and Fox.”"
+  },
+  "c3-s226": {
+    "source": "除其以八。",
+    "translation": "Divide it by eight."
+  },
+  "c3-s227": {
+    "source": "名之曰「九尾狐」。",
+    "translation": "Name it “Nine-tailed Fox.”"
+  },
+  "c3-s228": {
+    "source": "\n減「許狐和」以「九尾狐」。",
+    "translation": "Subtract “Sum of Hydra and Fox” by the “Nine-tailed Fox,”"
+  },
+  "c3-s229": {
+    "source": "名之曰「許德拉」。",
+    "translation": "Name it “Hydra.”"
+  },
+  "c3-s230": {
+    "source": "\n夫「許德拉」夫「九尾狐」夫「刑天」夫「兩頭蛇」。",
+    "translation": "As for “Hydra,” “Nine-tailed Fox,” “Xing Tian,” and “Two-headed Snake,”"
+  },
+  "c3-s231": {
+    "source": "書之。",
+    "translation": "write them down."
+  },
+  "c3-s232": {
+    "source": "乃得",
+    "translation": "Thus obtained."
+  },
+  "c3-s233": {
+    "source": "一十二 三十四 一十六 九十九",
+    "translation": "Twelve, Thirty-four, Sixteen, Ninety-nine."
+  },
+  "c3-s234": {
+    "source": "其解法蓋與雉兔同籠相類。",
+    "translation": "The method, indeed, resembles the pheasant and rabbit kept in the same cage."
+  },
+  "c3-s235": {
+    "source": "算術之道。",
+    "translation": "The way of arithmetic,"
+  },
+  "c3-s236": {
+    "source": "至是少備矣。",
+    "translation": "Thus far, is somewhat complete."
+  },
+  "c3-s237": {
+    "source": "更有圓周密率。",
+    "translation": "Moreover there is a precise ratio for the circumference."
+  },
+  "c3-s238": {
+    "source": "開平方。",
+    "translation": "Take square roots."
+  },
+  "c3-s239": {
+    "source": "大衍求一諸術者。",
+    "translation": "The Art of the Great Expansion in Seeking the Unity (Solution to Diophantine equations), and several arts alike."
+  },
+  "c3-s240": {
+    "source": "以其稍繁。",
+    "translation": "For it is somewhat more involved,"
+  },
+  "c3-s241": {
+    "source": "故留待後章也。",
+    "translation": "Therefore it remains to be treated in the later chapter."
+  }
+}

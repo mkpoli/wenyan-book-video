@@ -1,0 +1,1170 @@
+{
+  "c1-s1": {
+    "source": "編程者何。",
+    "translation": "What is programming?"
+  },
+  "c1-s2": {
+    "source": "所以役機器也。",
+    "translation": "That by which one commands machines."
+  },
+  "c1-s3": {
+    "source": "機器者何。",
+    "translation": "What is a machine?"
+  },
+  "c1-s4": {
+    "source": "所以代人力也。",
+    "translation": "That by which human labor is replaced."
+  },
+  "c1-s5": {
+    "source": "然機器之力也廣。",
+    "translation": "Yet the power of machines is vast,"
+  },
+  "c1-s6": {
+    "source": "其算也速。",
+    "translation": "their calculations swift,"
+  },
+  "c1-s7": {
+    "source": "唯智不逮也。",
+    "translation": "but their wisdom does not reach that of man."
+  },
+  "c1-s8": {
+    "source": "故有智者慎謀遠慮。",
+    "translation": "Therefore, the wise plan with care and foresight."
+  },
+  "c1-s9": {
+    "source": "下筆千言。",
+    "translation": "They set down a thousand words,"
+  },
+  "c1-s10": {
+    "source": "如軍令然。",
+    "translation": "as if issuing military orders,"
+  },
+  "c1-s11": {
+    "source": "如藥方然。",
+    "translation": "as if prescribing medicine —"
+  },
+  "c1-s12": {
+    "source": "謂之程式。",
+    "translation": "this is called a program."
+  },
+  "c1-s13": {
+    "source": "機器既明之。",
+    "translation": "Once the machine comprehends it,"
+  },
+  "c1-s14": {
+    "source": "乃能為人所使。",
+    "translation": "it can then be made to serve mankind —"
+  },
+  "c1-s15": {
+    "source": "或演星文。",
+    "translation": "to chart the movements of the stars,"
+  },
+  "c1-s16": {
+    "source": "或析事理。",
+    "translation": "or to analyze the patterns of reason."
+  },
+  "c1-s17": {
+    "source": "其用豈止萬端。",
+    "translation": "Its applications are by no means limited in number."
+  },
+  "c1-s18": {
+    "source": "問曰。",
+    "translation": "One asks:"
+  },
+  "c1-s19": {
+    "source": "機器者。",
+    "translation": "“The machine is"
+  },
+  "c1-s20": {
+    "source": "物也。",
+    "translation": "but a thing —"
+  },
+  "c1-s21": {
+    "source": "銅鐵也。",
+    "translation": "of bronze and iron."
+  },
+  "c1-s22": {
+    "source": "何能為而能識人之語。",
+    "translation": "How can it do, and how can it understand the speech of men,"
+  },
+  "c1-s23": {
+    "source": "而為人之使耶。",
+    "translation": "to serve at their command?”"
+  },
+  "c1-s24": {
+    "source": "曰。",
+    "translation": "It is answered:"
+  },
+  "c1-s25": {
+    "source": "此所以有編程語言也。",
+    "translation": "“This is precisely why programming languages exist."
+  },
+  "c1-s26": {
+    "source": "人之所常言。",
+    "translation": "Human speech, in its common use —"
+  },
+  "c1-s27": {
+    "source": "辭或斐然。",
+    "translation": "its words at times splendidly adorned,"
+  },
+  "c1-s28": {
+    "source": "典或奧雅。",
+    "translation": "its allusions at times profound and graceful."
+  },
+  "c1-s29": {
+    "source": "機器故不能解。",
+    "translation": "such the machine cannot comprehend."
+  },
+  "c1-s30": {
+    "source": "然機器所解者。",
+    "translation": "Yet what the machine can understand"
+  },
+  "c1-s31": {
+    "source": "則寥寥然二三言也。",
+    "translation": "is but a few sparse and simple expressions.”"
+  },
+  "c1-s32": {
+    "source": "曰與。",
+    "translation": "“AND,”"
+  },
+  "c1-s33": {
+    "source": "曰或。",
+    "translation": "“OR,”"
+  },
+  "c1-s34": {
+    "source": "曰非。",
+    "translation": "“NOT” —"
+  },
+  "c1-s35": {
+    "source": "此皆至元之辭。",
+    "translation": "these are words of utmost abstraction,"
+  },
+  "c1-s36": {
+    "source": "人又未易用之。",
+    "translation": "yet even people do not easily wield them."
+  },
+  "c1-s37": {
+    "source": "故取其中庸之道。",
+    "translation": "Therefore, a balanced way was taken:"
+  },
+  "c1-s38": {
+    "source": "倣人之所言。",
+    "translation": "to imitate human speech,"
+  },
+  "c1-s39": {
+    "source": "取其精煉明要者。",
+    "translation": "choosing from it what is concise and essential;"
+  },
+  "c1-s40": {
+    "source": "點竄典字。",
+    "translation": "to refine the classical diction,"
+  },
+  "c1-s41": {
+    "source": "嚴定其義。",
+    "translation": "and to fix their meanings with rigor."
+  },
+  "c1-s42": {
+    "source": "上足觀之而為人之用。",
+    "translation": "Thus, it stands high enough to be read and used by people,"
+  },
+  "c1-s43": {
+    "source": "下足譯之而為機器所解。",
+    "translation": "yet low enough to be translated and understood by machines."
+  },
+  "c1-s44": {
+    "source": "是謂編程語言也。",
+    "translation": "This is what is called a programming language."
+  },
+  "c1-s45": {
+    "source": "古有算經。",
+    "translation": "In ancient times there were the Classics of Calculation;"
+  },
+  "c1-s46": {
+    "source": "易有繫辭。",
+    "translation": "in the Book of Changes there were the Appended Remarks —"
+  },
+  "c1-s47": {
+    "source": "其用雖不同。",
+    "translation": "though their purposes differed,"
+  },
+  "c1-s48": {
+    "source": "語如其類也。",
+    "translation": "the principle was the same."
+  },
+  "c1-s49": {
+    "source": "或問曰。",
+    "translation": "Someone asked:"
+  },
+  "c1-s50": {
+    "source": "程式所貴者何。",
+    "translation": "“What is most valued in a program?”"
+  },
+  "c1-s51": {
+    "source": "曰二。",
+    "translation": "Answered: “Two things are prized —"
+  },
+  "c1-s52": {
+    "source": "貴巧。",
+    "translation": "One is ingenuity,"
+  },
+  "c1-s53": {
+    "source": "貴工。",
+    "translation": "the other is craftsmanship."
+  },
+  "c1-s54": {
+    "source": "蓋謀一事。",
+    "translation": "When one sets out to accomplish a task,"
+  },
+  "c1-s55": {
+    "source": "其計非一。",
+    "translation": "there is never only a single plan."
+  },
+  "c1-s56": {
+    "source": "然或事倍而功半。",
+    "translation": "Yet some ways double the effort and halve the result;"
+  },
+  "c1-s57": {
+    "source": "或道迂而求遠。",
+    "translation": "some paths are circuitous yet reach for the distant —"
+  },
+  "c1-s58": {
+    "source": "皆非良策也。",
+    "translation": "none of these are good strategies."
+  },
+  "c1-s59": {
+    "source": "故編程之人。",
+    "translation": "Therefore, those who program"
+  },
+  "c1-s60": {
+    "source": "必研於策。",
+    "translation": "must study their methods deeply."
+  },
+  "c1-s61": {
+    "source": "策之佳者。",
+    "translation": "When a method is excellent,"
+  },
+  "c1-s62": {
+    "source": "其算也精。",
+    "translation": "its calculations are precise,"
+  },
+  "c1-s63": {
+    "source": "其行也速。",
+    "translation": "its execution swift —"
+  },
+  "c1-s64": {
+    "source": "是謂之巧。",
+    "translation": "this is called ingenuity.”"
+  },
+  "c1-s65": {
+    "source": "又程式如文章然。",
+    "translation": "Furthermore, a program is like a piece of writing."
+  },
+  "c1-s66": {
+    "source": "如其信筆雜湊者。",
+    "translation": "If one merely jots down words at random,"
+  },
+  "c1-s67": {
+    "source": "其義亦必不通。",
+    "translation": "its meaning will surely be incoherent,"
+  },
+  "c1-s68": {
+    "source": "其謬亦必多矣。",
+    "translation": "and its errors many."
+  },
+  "c1-s69": {
+    "source": "程式亦一理。",
+    "translation": "So too with programs: they follow the same principle."
+  },
+  "c1-s70": {
+    "source": "脈絡通順。",
+    "translation": "When their structure flows smoothly"
+  },
+  "c1-s71": {
+    "source": "文理了然者。",
+    "translation": "and their logic is clear throughout,"
+  },
+  "c1-s72": {
+    "source": "令人讀之而達其意。",
+    "translation": "a reader may grasp their intent with ease,"
+  },
+  "c1-s73": {
+    "source": "機器行之而無少失。",
+    "translation": "and a machine may execute them without the slightest fault."
+  },
+  "c1-s74": {
+    "source": "是謂之工。",
+    "translation": "This is called craftsmanship."
+  },
+  "c1-s75": {
+    "source": "或問曰。",
+    "translation": "Someone then asked:"
+  },
+  "c1-s76": {
+    "source": "君言編程亦美矣。",
+    "translation": "“You speak of programming as a beautiful art indeed —"
+  },
+  "c1-s77": {
+    "source": "然吾既不以其為生計。",
+    "translation": "but I do not make my living by it.”"
+  },
+  "c1-s78": {
+    "source": "好之者自謀之。",
+    "translation": "“If only those who love it may pursue it,"
+  },
+  "c1-s79": {
+    "source": "吾何學為。",
+    "translation": "why should I learn it?”"
+  },
+  "c1-s80": {
+    "source": "曰。",
+    "translation": "It was answered:"
+  },
+  "c1-s81": {
+    "source": "雖不為用。",
+    "translation": "“Even if not for practical use,"
+  },
+  "c1-s82": {
+    "source": "學之亦有益於思。",
+    "translation": "to study it refines the mind —"
+  },
+  "c1-s83": {
+    "source": "慎密而遠。",
+    "translation": "making one’s thought careful and far-reaching,"
+  },
+  "c1-s84": {
+    "source": "明辨而清。",
+    "translation": "one’s judgment precise and clear."
+  },
+  "c1-s85": {
+    "source": "此其一。",
+    "translation": "That is one benefit."
+  },
+  "c1-s86": {
+    "source": "為作者之樂。",
+    "translation": "Another lies in the joy of creation itself."
+  },
+  "c1-s87": {
+    "source": "此其二。",
+    "translation": "This is the second benefit.”"
+  },
+  "c1-s88": {
+    "source": "又問曰。",
+    "translation": "Then he asked again:"
+  },
+  "c1-s89": {
+    "source": "編程復何樂耶。",
+    "translation": "“What joy can there be in programming?"
+  },
+  "c1-s90": {
+    "source": "終日營營然。",
+    "translation": "All day one toils restlessly,"
+  },
+  "c1-s91": {
+    "source": "對字麻麻然。",
+    "translation": "facing endless lines of symbols,"
+  },
+  "c1-s92": {
+    "source": "逢謬急急然。",
+    "translation": "rushing to correct each mistake in haste —"
+  },
+  "c1-s93": {
+    "source": "何如鬥雞走犬呼盧傳杯之樂歟。",
+    "translation": "how can that compare to the pleasures of cockfighting, dog racing, dice games, or passing cups of wine?”"
+  },
+  "c1-s94": {
+    "source": "曰。",
+    "translation": "He answered:"
+  },
+  "c1-s95": {
+    "source": "編程之樂者。",
+    "translation": "“The joy of programming"
+  },
+  "c1-s96": {
+    "source": "在造物也。",
+    "translation": "lies in creation itself."
+  },
+  "c1-s97": {
+    "source": "女媧氏初知之。",
+    "translation": "The Lady Nüwa first knew this joy;"
+  },
+  "c1-s98": {
+    "source": "公輸子復知之。",
+    "translation": "Master Gongshu (Lu Ban) knew it again;"
+  },
+  "c1-s99": {
+    "source": "歐冶子三知之。",
+    "translation": "Master Ou Yeh-Tzu (Ou Yezi) knew it a third time."
+  },
+  "c1-s100": {
+    "source": "今有是戲。",
+    "translation": "Now this art exists as a pastime —"
+  },
+  "c1-s101": {
+    "source": "匹夫能為。",
+    "translation": "any common person may partake in it,"
+  },
+  "c1-s102": {
+    "source": "而其趣蓋同。",
+    "translation": "yet its delight remains the same."
+  },
+  "c1-s103": {
+    "source": "何言不樂歟。",
+    "translation": "How can one say there is no joy in it?”"
+  },
+  "c1-s104": {
+    "source": "問曰。",
+    "translation": "The questioner said:"
+  },
+  "c1-s105": {
+    "source": "吾知編程之益也。",
+    "translation": "“I understand now the value of programming,"
+  },
+  "c1-s106": {
+    "source": "然無由而學之。",
+    "translation": "yet I have no way to learn it.”"
+  },
+  "c1-s107": {
+    "source": "曰。",
+    "translation": "He replied with a laugh:"
+  },
+  "c1-s108": {
+    "source": "嘻嘻哉。",
+    "translation": "“Ha!"
+  },
+  "c1-s109": {
+    "source": "觀此書可也。",
+    "translation": "Simply read this book — that will do."
+  },
+  "c1-s110": {
+    "source": "今世之編程。",
+    "translation": "For the programming of the present age"
+  },
+  "c1-s111": {
+    "source": "實西人草創。",
+    "translation": "was first devised by the people of the West."
+  },
+  "c1-s112": {
+    "source": "故其用字必譯耳。",
+    "translation": "Thus, its terms must be translated into our tongue."
+  },
+  "c1-s113": {
+    "source": "其辭古多未聞。",
+    "translation": "Much of its diction was unknown in antiquity;"
+  },
+  "c1-s114": {
+    "source": "或有其字。",
+    "translation": "and even where the characters are the same,"
+  },
+  "c1-s115": {
+    "source": "意乃不同。",
+    "translation": "the meanings differ."
+  },
+  "c1-s116": {
+    "source": "故曰未言其編程。",
+    "translation": "Therefore, before speaking of programming itself,"
+  },
+  "c1-s117": {
+    "source": "先解其用字。",
+    "translation": "one must first make plain the words it employs."
+  },
+  "c1-s118": {
+    "source": "昔徐利之譯幾何原本。",
+    "translation": "Once Paul Siu translated The Elements,"
+  },
+  "c1-s119": {
+    "source": "先解幾何之用字。",
+    "translation": "he first clarified the terminology of geometry —"
+  },
+  "c1-s120": {
+    "source": "是理也。",
+    "translation": "such is the proper way."
+  },
+  "c1-s121": {
+    "source": "必不能效抱朴之河車朱雀。",
+    "translation": "One must not, like the ‘river chariots’ and ‘vermillion birds’ in Baopuzi,"
+  },
+  "c1-s122": {
+    "source": "乃使觀者不知所云。",
+    "translation": "bewilder the learner with arcane words, leaving the reader unsure of what is being said."
+  },
+  "c1-s123": {
+    "source": "計開。",
+    "translation": "Let us, then, begin to unfold our explanation."
+  },
+  "c1-s124": {
+    "source": "「代碼」者。",
+    "translation": "“Code” —"
+  },
+  "c1-s125": {
+    "source": "程式之文字也。",
+    "translation": "these are the written words of a program."
+  },
+  "c1-s126": {
+    "source": "或僅數言。",
+    "translation": "Sometimes only a few lines,"
+  },
+  "c1-s127": {
+    "source": "或至累牘。",
+    "translation": "sometimes filling many scrolls —"
+  },
+  "c1-s128": {
+    "source": "視其用也。",
+    "translation": "it depends on the task."
+  },
+  "c1-s129": {
+    "source": "「編譯器」者。",
+    "translation": "A “compiler”"
+  },
+  "c1-s130": {
+    "source": "亦一程式也。",
+    "translation": "is itself also a program:"
+  },
+  "c1-s131": {
+    "source": "所以譯編程語言。",
+    "translation": "it translates the programming language"
+  },
+  "c1-s132": {
+    "source": "令其為機器之所解也。",
+    "translation": "into a form the machine can understand."
+  },
+  "c1-s133": {
+    "source": "「運行」者。",
+    "translation": "To “run” a program"
+  },
+  "c1-s134": {
+    "source": "其程式既為機器所解。",
+    "translation": "is to cause the machine, having understood it,"
+  },
+  "c1-s135": {
+    "source": "復令彼行之。",
+    "translation": "to then carry it out —"
+  },
+  "c1-s136": {
+    "source": "或算一數。",
+    "translation": "perhaps to compute a number,"
+  },
+  "c1-s137": {
+    "source": "或行一事。",
+    "translation": "or to perform an action."
+  },
+  "c1-s138": {
+    "source": "亦視其用也。",
+    "translation": "So too does its usage depend on the task."
+  },
+  "c1-s139": {
+    "source": "「報錯」者。",
+    "translation": "“Error reporting” means this:"
+  },
+  "c1-s140": {
+    "source": "或以人之誤。",
+    "translation": "whether by human mistake"
+  },
+  "c1-s141": {
+    "source": "或以物之限。",
+    "translation": "or material limitation,"
+  },
+  "c1-s142": {
+    "source": "機器不能達人所欲。",
+    "translation": "the machine cannot fulfill what the user intends —"
+  },
+  "c1-s143": {
+    "source": "是以其因吿人也。",
+    "translation": "thus it gives a message to inform the person of the cause."
+  },
+  "c1-s144": {
+    "source": "今世之編程語言豈下百種。",
+    "translation": "In the world today, there are not fewer than a hundred programming languages,"
+  },
+  "c1-s145": {
+    "source": "各爭一日之長。",
+    "translation": "each contending to show its excellence for a time."
+  },
+  "c1-s146": {
+    "source": "然多西人所製。",
+    "translation": "Most, however, are creations of Westerners"
+  },
+  "c1-s147": {
+    "source": "亦沿西人之語。",
+    "translation": "and thus follow the patterns of Western speech."
+  },
+  "c1-s148": {
+    "source": "今有滬上黃生。",
+    "translation": "Now there is Scholar Huang of Shanghai,"
+  },
+  "c1-s149": {
+    "source": "博考諸書。",
+    "translation": "who has studied many texts in depth"
+  },
+  "c1-s150": {
+    "source": "效古人之雅言。",
+    "translation": "and, imitating the elegant diction of the ancients,"
+  },
+  "c1-s151": {
+    "source": "為漢語作編程之計。",
+    "translation": "He devised a plan to make programming in the Chinese tongue,"
+  },
+  "c1-s152": {
+    "source": "名其言曰「文言」。",
+    "translation": "and named his language “Wenyan” — Literary Speech."
+  },
+  "c1-s153": {
+    "source": "此書用之。",
+    "translation": "The fact that this book employs it,"
+  },
+  "c1-s154": {
+    "source": "不亦宜乎。",
+    "translation": "is that not fitting indeed?"
+  },
+  "c1-s155": {
+    "source": "古之啟蒙。",
+    "translation": "In ancient times, all primers"
+  },
+  "c1-s156": {
+    "source": "無不以最易始。",
+    "translation": "began with what was easiest to learn —"
+  },
+  "c1-s157": {
+    "source": "昔龍文三字是也。",
+    "translation": "such was The Three-Character Classic."
+  },
+  "c1-s158": {
+    "source": "今亦因之。",
+    "translation": "Let us likewise begin from what is simplest."
+  },
+  "c1-s159": {
+    "source": "編程之最易者。",
+    "translation": "The most basic example of programming"
+  },
+  "c1-s160": {
+    "source": "曰「問天地好在」。",
+    "translation": "is called “Ask Heaven and Earth if They Are Well.”"
+  },
+  "c1-s161": {
+    "source": "列其代碼如左。",
+    "translation": "Its code is written as follows:"
+  },
+  "c1-s162": {
+    "source": "吾有一數。",
+    "translation": "I have a number,"
+  },
+  "c1-s163": {
+    "source": "曰三。",
+    "translation": "named three,"
+  },
+  "c1-s164": {
+    "source": "名之曰「甲」。",
+    "translation": "and I call it A."
+  },
+  "c1-s165": {
+    "source": "\n為是「甲」遍。",
+    "translation": "Then repeat this “A” three times."
+  },
+  "c1-s166": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a phrase:"
+  },
+  "c1-s167": {
+    "source": "曰『問天地好在。』。",
+    "translation": "“Ask Heaven and Earth if They Are Well.”"
+  },
+  "c1-s168": {
+    "source": "書之。",
+    "translation": "Write it out"
+  },
+  "c1-s169": {
+    "source": "\n云云。",
+    "translation": "— and so on."
+  },
+  "c1-s170": {
+    "source": "運行之。",
+    "translation": "When it is run,"
+  },
+  "c1-s171": {
+    "source": "問天地好在。",
+    "translation": "the result is: Ask Heaven and Earth if They Are Well."
+  },
+  "c1-s172": {
+    "source": "\n問天地好在。",
+    "translation": "Ask Heaven and Earth if They Are Well."
+  },
+  "c1-s173": {
+    "source": "\n問天地好在。",
+    "translation": "Ask Heaven and Earth if They Are Well."
+  },
+  "c1-s174": {
+    "source": "或問曰。",
+    "translation": "Someone asked:"
+  },
+  "c1-s175": {
+    "source": "胡曰「問天地好在」耶。",
+    "translation": "“Why say Ask Heaven and Earth if They Are Well?”"
+  },
+  "c1-s176": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s177": {
+    "source": "蓋機器未編程時。",
+    "translation": "“Because before programming,"
+  },
+  "c1-s178": {
+    "source": "混沌茫昧。",
+    "translation": "the machine dwells in chaos and obscurity,"
+  },
+  "c1-s179": {
+    "source": "不知天地之所在。",
+    "translation": "knowing not where Heaven and Earth themselves are.”"
+  },
+  "c1-s180": {
+    "source": "既經編程。",
+    "translation": "Once it has been programmed,"
+  },
+  "c1-s181": {
+    "source": "頓而明朗。",
+    "translation": "the machine suddenly becomes clear and bright,"
+  },
+  "c1-s182": {
+    "source": "撥雲見日然。",
+    "translation": "as though the clouds were parted and the sun revealed —"
+  },
+  "c1-s183": {
+    "source": "故欲問天地之好在也。",
+    "translation": "thus we ask Heaven and Earth if they are well."
+  },
+  "c1-s184": {
+    "source": "或問曰。",
+    "translation": "Someone asked:"
+  },
+  "c1-s185": {
+    "source": "胡問之三遍耶。",
+    "translation": "“Why ask three times?"
+  },
+  "c1-s186": {
+    "source": "天地豈聾也哉。",
+    "translation": "Are Heaven and Earth deaf?"
+  },
+  "c1-s187": {
+    "source": "君不聞秦宓之辯耶。",
+    "translation": "Haven't you heard of Qin Mi's debate?”"
+  },
+  "c1-s188": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s189": {
+    "source": "非也。",
+    "translation": "“No —"
+  },
+  "c1-s190": {
+    "source": "所以示「循環」之用也。",
+    "translation": "it is to demonstrate the use of repetition, or looping."
+  },
+  "c1-s191": {
+    "source": "「循環」者。",
+    "translation": "‘Looping’ —"
+  },
+  "c1-s192": {
+    "source": "為一事數遍也。",
+    "translation": "means to perform one action several times,"
+  },
+  "c1-s193": {
+    "source": "如輻輳輪轉然。",
+    "translation": "like the spokes of a wheel turning in unison."
+  },
+  "c1-s194": {
+    "source": "如日月交替然。",
+    "translation": "As the sun and moon take turns in the sky.”"
+  },
+  "c1-s195": {
+    "source": "或問曰。",
+    "translation": "Someone asked:"
+  },
+  "c1-s196": {
+    "source": "欲行之五遍。",
+    "translation": "“If I wish to run it five times,"
+  },
+  "c1-s197": {
+    "source": "可乎。",
+    "translation": "may I?"
+  },
+  "c1-s198": {
+    "source": "行之千遍。",
+    "translation": "If a thousand times,"
+  },
+  "c1-s199": {
+    "source": "可乎。",
+    "translation": "may I?”"
+  },
+  "c1-s200": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s201": {
+    "source": "無不可也。",
+    "translation": "“There is no limit that it cannot be done.”"
+  },
+  "c1-s202": {
+    "source": "為是五遍。",
+    "translation": "To run it five times, write:"
+  },
+  "c1-s203": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a phrase:"
+  },
+  "c1-s204": {
+    "source": "曰『問天地好在。』。",
+    "translation": "“Ask Heaven and Earth if They Are Well.”"
+  },
+  "c1-s205": {
+    "source": "書之。",
+    "translation": "Write it out"
+  },
+  "c1-s206": {
+    "source": "\n云云。",
+    "translation": "— and so on."
+  },
+  "c1-s207": {
+    "source": "\n\n為是千遍。",
+    "translation": "To run it a thousand times, likewise write:"
+  },
+  "c1-s208": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a phrase:"
+  },
+  "c1-s209": {
+    "source": "曰『問天地好在。』。",
+    "translation": "“Ask Heaven and Earth if They Are Well.”"
+  },
+  "c1-s210": {
+    "source": "書之。",
+    "translation": "Write it out"
+  },
+  "c1-s211": {
+    "source": "\n云云。",
+    "translation": "— and so on."
+  },
+  "c1-s212": {
+    "source": "或問曰。",
+    "translation": "Then someone asked:"
+  },
+  "c1-s213": {
+    "source": "「甲」者謂何。",
+    "translation": "“What is this ‘A’?"
+  },
+  "c1-s214": {
+    "source": "胡不謂「乙」耶。",
+    "translation": "Why not call it ‘B’ instead?”"
+  },
+  "c1-s215": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s216": {
+    "source": "皆可也。",
+    "translation": "“All are acceptable."
+  },
+  "c1-s217": {
+    "source": "「甲」者。",
+    "translation": "‘A’ is"
+  },
+  "c1-s218": {
+    "source": "名也。",
+    "translation": "merely a name."
+  },
+  "c1-s219": {
+    "source": "名者。",
+    "translation": "A name —"
+  },
+  "c1-s220": {
+    "source": "實之賓耶。",
+    "translation": "is the guest of a reality —"
+  },
+  "c1-s221": {
+    "source": "實者何。",
+    "translation": "and what is that reality?"
+  },
+  "c1-s222": {
+    "source": "悉聽尊便也。",
+    "translation": "Whatever one pleases to assign to it."
+  },
+  "c1-s223": {
+    "source": "欲三則三。",
+    "translation": "If you wish it to be three, let it be three;"
+  },
+  "c1-s224": {
+    "source": "欲五則五。",
+    "translation": "if you wish it to be five, let it be five."
+  },
+  "c1-s225": {
+    "source": "是謂「變數」也。",
+    "translation": "This is called a variable.”"
+  },
+  "c1-s226": {
+    "source": "復觀此二句。",
+    "translation": "Now observe these two lines again:"
+  },
+  "c1-s227": {
+    "source": "吾有一數。",
+    "translation": "I have a number,"
+  },
+  "c1-s228": {
+    "source": "曰三。",
+    "translation": "named three,"
+  },
+  "c1-s229": {
+    "source": "名之曰「甲」。",
+    "translation": "and I call it A."
+  },
+  "c1-s230": {
+    "source": "\n吾有一言。",
+    "translation": "I have a phrase..."
+  },
+  "c1-s231": {
+    "source": "曰『問天地好在。』。",
+    "translation": "…it says: “Ask Heaven and Earth if They Are Well.”"
+  },
+  "c1-s232": {
+    "source": "書之。",
+    "translation": "Then write it out."
+  },
+  "c1-s233": {
+    "source": "`吾有一數` `吾有一言`者。",
+    "translation": "The phrases ‘I have a number’ and ‘I have a phrase’ —"
+  },
+  "c1-s234": {
+    "source": "蓋言是變數之類也。",
+    "translation": "these both refer to kinds of variables."
+  },
+  "c1-s235": {
+    "source": "數者。",
+    "translation": "A number —"
+  },
+  "c1-s236": {
+    "source": "所以算也。",
+    "translation": "is that by which one performs calculations."
+  },
+  "c1-s237": {
+    "source": "言者。",
+    "translation": "A phrase —"
+  },
+  "c1-s238": {
+    "source": "所以吿人也。",
+    "translation": "is that by which one conveys words to people."
+  },
+  "c1-s239": {
+    "source": "物各其類。",
+    "translation": "Each thing has its own kind"
+  },
+  "c1-s240": {
+    "source": "不宜混同。",
+    "translation": "and should not be confused —"
+  },
+  "c1-s241": {
+    "source": "猶馬之不同於鹿。",
+    "translation": "just as a horse is not a deer,"
+  },
+  "c1-s242": {
+    "source": "人之不同於鬼。",
+    "translation": "and a human is not a spirit."
+  },
+  "c1-s243": {
+    "source": "遂預言之。",
+    "translation": "Thus we declare their types beforehand,"
+  },
+  "c1-s244": {
+    "source": "以明其類。",
+    "translation": "so that their nature may be made clear."
+  },
+  "c1-s245": {
+    "source": "`曰三` `曰『問天地好在。』`",
+    "translation": "“To say ‘three’ or ‘Ask Heaven and Earth if They Are Well’"
+  },
+  "c1-s246": {
+    "source": "者。",
+    "translation": "—"
+  },
+  "c1-s247": {
+    "source": "所以命其實也。",
+    "translation": "is to assign a value to a thing."
+  },
+  "c1-s248": {
+    "source": "後若有問數幾何者。",
+    "translation": "Thus, when later one asks, ‘What is the number?’"
+  },
+  "c1-s249": {
+    "source": "乃自是知其為三。",
+    "translation": "it will know of itself that it is three."
+  },
+  "c1-s250": {
+    "source": "言亦同。",
+    "translation": "The same holds for words."
+  },
+  "c1-s251": {
+    "source": "`名之曰「甲」`者。",
+    "translation": "To say ‘call it A’ —"
+  },
+  "c1-s252": {
+    "source": "所以名變數也。",
+    "translation": "is to give the variable a name —"
+  },
+  "c1-s253": {
+    "source": "如人之名贓獲。",
+    "translation": "just as a man may be named Zanghuo,"
+  },
+  "c1-s254": {
+    "source": "劍之名巨闕。",
+    "translation": "or a sword may be named Juque."
+  },
+  "c1-s255": {
+    "source": "後凡曰「贓獲」者。",
+    "translation": "Hence, whenever one later speaks of Zanghuo,"
+  },
+  "c1-s256": {
+    "source": "乃知謂「贓獲」其人。",
+    "translation": "all will understand it refers to that very man.”"
+  },
+  "c1-s257": {
+    "source": "又萬物皆變化之中。",
+    "translation": "Moreover, all things are in constant change —"
+  },
+  "c1-s258": {
+    "source": "如昔人之廣陵。",
+    "translation": "as once was Guangling in ancient days,"
+  },
+  "c1-s259": {
+    "source": "鮑照之蕪城也。",
+    "translation": "or the desolate city sung of by Bao Zhao."
+  },
+  "c1-s260": {
+    "source": "今易「甲」為四如是。",
+    "translation": "Now, if we alter “A” to be four, it is thus:"
+  },
+  "c1-s261": {
+    "source": "昔之「甲」者。",
+    "translation": "what was once “A” —"
+  },
+  "c1-s262": {
+    "source": "今四是矣。",
+    "translation": "is now four."
+  },
+  "c1-s263": {
+    "source": "`書之`者。",
+    "translation": "To write it out means:"
+  },
+  "c1-s264": {
+    "source": "蓋彼運行之所得。",
+    "translation": "that is the result obtained when the machine runs."
+  },
+  "c1-s265": {
+    "source": "機器自知之。",
+    "translation": "The machine itself knows it,"
+  },
+  "c1-s266": {
+    "source": "而人無由而知之。",
+    "translation": "but man has no means to see it directly."
+  },
+  "c1-s267": {
+    "source": "故用此辭令其示人以果也。",
+    "translation": "Therefore, we can use this command to make it display the outcome to us."
+  },
+  "c1-s268": {
+    "source": "或問曰。",
+    "translation": "Someone then asked:"
+  },
+  "c1-s269": {
+    "source": "甲字上下有符如矩尺然者。",
+    "translation": "“The character A is enclosed above and below by marks like a carpenter’s square —"
+  },
+  "c1-s270": {
+    "source": "何焉。",
+    "translation": "what are they for?"
+  },
+  "c1-s271": {
+    "source": "今欲省之。",
+    "translation": "May I omit them"
+  },
+  "c1-s272": {
+    "source": "可乎。",
+    "translation": "if I wish?”"
+  },
+  "c1-s273": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s274": {
+    "source": "不可。",
+    "translation": "“No, you may not."
+  },
+  "c1-s275": {
+    "source": "此引號也。",
+    "translation": "Those are quotation marks."
+  },
+  "c1-s276": {
+    "source": "「單引號」者。",
+    "translation": "‘Single quotes’ —"
+  },
+  "c1-s277": {
+    "source": "所以別變數於其他也。",
+    "translation": "distinguish variables from other things."
+  },
+  "c1-s278": {
+    "source": "『雙引號』者。",
+    "translation": "‘Double quotes’ —"
+  },
+  "c1-s279": {
+    "source": "所以別言語於其他也。",
+    "translation": "distinguish spoken phrases from other things."
+  },
+  "c1-s280": {
+    "source": "微是。",
+    "translation": "Without them,"
+  },
+  "c1-s281": {
+    "source": "不能別歧義也。",
+    "translation": "one could not avoid ambiguity.”"
+  },
+  "c1-s282": {
+    "source": "又問曰。",
+    "translation": "He asked again:"
+  },
+  "c1-s283": {
+    "source": "句讀。",
+    "translation": "“What of punctuation,"
+  },
+  "c1-s284": {
+    "source": "挪抬。",
+    "translation": "and spacing —"
+  },
+  "c1-s285": {
+    "source": "無之可乎。",
+    "translation": "may I do without them?”"
+  },
+  "c1-s286": {
+    "source": "曰。",
+    "translation": "He replied:"
+  },
+  "c1-s287": {
+    "source": "此唯觀者助也。",
+    "translation": "“They serve only to aid the reader’s eyes;"
+  },
+  "c1-s288": {
+    "source": "無之無損於義。",
+    "translation": "their absence does not harm the meaning."
+  },
+  "c1-s289": {
+    "source": "故前例亦可書若是。",
+    "translation": "Thus, the earlier example may also be written in this way:"
+  },
+  "c1-s290": {
+    "source": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云",
+    "translation": "I have a number named three call it A repeat A times I have a phrase ‘Ask Heaven and Earth if They Are Well’ write it out and so on."
+  },
+  "c1-s291": {
+    "source": "「問天地好在」之例。",
+    "translation": "The example of ‘Ask Heaven and Earth if They Are Well’"
+  },
+  "c1-s292": {
+    "source": "至此略明矣。",
+    "translation": "should, by this, now be roughly understood.”"
+  }
+}
