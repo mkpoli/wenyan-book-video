@@ -13,6 +13,7 @@ MODEL_NAME = "gpt-5-mini"
 API_DELAY_SECONDS = 1.0  # Small delay between batches
 MAX_SENTENCES_PER_BATCH = 30
 MAX_CHARS_PER_BATCH = 2000
+MAX_CONTEXT_CHARS = 1800
 
 
 TRANSLATION_PROMPT = """The following is requirements for a translation task. Follow these rules carefully and operate accordingly.
@@ -33,22 +34,28 @@ Topic: Programming basics and a programming language called Wenyan (world's firs
 ## Consistency
 - Each Chinese sentence ends with 。 -> one English line (no line-breaking). Keep strict 1:1 mapping: no merging, no splitting, no reordering, no omission, authentic and faithful as possible without hurting the natural flow and clarity.
 - Equivalent of comma and period in English are all marked with “。”, so potentially two or more Chinese sentences may be mapped to one English line.
-    - X者。 = topic (“As for X—”, “‘X,’ —”, etc.)
-    - X者。Y也。 = two lines: topic → explanation. (["A者。", "B也。"] -> ["A —", "is B"] etc.) h
+    - X者。 = topic (“As for X —”, “‘X,’ —”, etc.)
+    - X者。Y也。 = two lines: topic → explanation. (["A者。", "B也。"] -> ["A —", "is B"] etc.)
     - 夫X者。……。 = “Speaking of/Regarding/About X,…”
 - Keep all nested quotations and rhetorical questions, metaphors intact if possible.
-- Use typographical punctuation (— , ; … “” ‘ ’) where natural.
+- Use typographical punctuation (— , ; … “” ‘ ’) where natural. For quotations of speech, try to add quotation marks and make it across:
+    - ["曰然。", "「醫者」不可乎。", "可矣。"] → ["It is answered, “Yes,", "isn't it possible for ‘a doctor’?", "It is possible.”"]
 
 ## Glossary
 Use below for meaning consistency, but be flexible and accommdating, not literal word-for-word mapping, adjust depending on context.
 - “計開” → means “Table of Contents”, used as “As follows,”, or “Let us begin.”, can be translated as  “Let us unfold our explanation.”, .
 - “至此畧備矣” → “Thus it is now briefly complete.”
 - After a question, “耶。” or “乎。”, usually there will be a follow-up answer witf “曰。”, translate it as “It is answered,” or a like.
+- 易 has three meanings:
+    - “易曰”, “周易” → “The Book of Changes”
+    - “易矣”, “易乎” → “Easy”
+    - “易首句” → “Modify the first line”
 
 ### Code
 - “甲” → “A”, “乙” → “B”, “丙” → “C”, “丁” → “D”, “戊” → “E”, “己” → “F”, “庚” → “G”, “辛” → “H”, “壬” → “I”, “癸” → “J”, etc.
 - “書之” → “Write it down.”
 - “云云。” → “Thus and thus.” (“……云云。” → “And alike”, “like ……”, “beginning with ……”, etc.)
+- Translate variable names if applicable, e.g. “「始」” → “‘Begin’,”
 - Classes:
     - “數” → “Numbers (numerals)”.
     - “言” → “Words (strings)”.
@@ -56,13 +63,16 @@ Use below for meaning consistency, but be flexible and accommdating, not literal
     - “列” → “Lists (arrays)”.
     - “物” → “Things (objects)”.
     - “術” → “Means (methods)”.
-    - “吾有一言。曰『……』。名之曰……。” → “I have a word.” “It says, ‘……’.”; Name it ‘……’.”
-    - “有數九。名之曰「……」” -> “There are a number of nine.” “It is named ‘……’.”
+- Variables: Variable names are always in single quotes. String literals are always in double quotes. Don't mix them up.
+    - “吾有一言。曰『……』。名之曰「……」。” → “I have a word.” “It says, ‘……’.”; Name it ‘……’.”
+    - “有數九。名之曰「……」” -> “There are a number of nine.” “It is named ‘……’.” 
+    - “吾有二數。名之曰「甲」曰「乙」。” -> “I have two numbers.” “Name one ‘A’.” “Name one ‘B’.”
 - Loops
     - “循環” → “Loops”, “Looping”
     - “恆為是。” → “Constantly do this.”
     - “為是百遍。” → “Do this one hundred times.”
-
+- Algorithms:
+    - “更相減損術” → “Method of aAlternating mutual subtraction”
 
 ## Output
 
@@ -239,6 +249,58 @@ def _build_batches_for_chapter(
     return batches
 
 
+def _collect_previous_context(
+    translations_data: Dict[str, Dict[str, str]],
+    batch_ids: List[str],
+    max_chars: int = MAX_CONTEXT_CHARS,
+) -> Tuple[str, str]:
+    """
+    Gather concatenated prior sentence sources and translations to seed the prompt.
+    Only sentences that occur before the current batch (and that have translations)
+    are included, up to `max_chars` combined characters.
+    """
+
+    if not batch_ids:
+        return "", ""
+
+    ordered_ids = sorted(translations_data.keys(), key=_sentence_sort_key)
+    try:
+        first_batch_index = ordered_ids.index(batch_ids[0])
+    except ValueError:
+        return "", ""
+
+    context_ids = ordered_ids[:first_batch_index]
+    collected: List[Tuple[str, str]] = []
+    running_chars = 0
+
+    for sid in reversed(context_ids):
+        entry = translations_data.get(sid) or {}
+        source = (entry.get("source") or "").strip()
+        translation = (entry.get("translation") or "").strip()
+
+        if not source and not translation:
+            continue
+
+        addition = len(source) + len(translation)
+        if addition == 0:
+            continue
+
+        if running_chars + addition > max_chars:
+            break
+
+        collected.append((source, translation))
+        running_chars += addition
+
+    if not collected:
+        return "", ""
+
+    collected.reverse()
+    sentences_context = " ".join(src for src, _ in collected if src).strip()
+    translations_context = " ".join(tr for _, tr in collected if tr).strip()
+
+    return sentences_context, translations_context
+
+
 def _build_text_block_for_batch(
     translations_data: Dict[str, Dict[str, str]],
     batch_ids: List[str],
@@ -246,7 +308,27 @@ def _build_text_block_for_batch(
     """
     Build the `{text}` payload inserted into TRANSLATION_PROMPT for one batch.
     """
+    context_sentences, context_translations = _collect_previous_context(
+        translations_data, batch_ids
+    )
+
     lines: List[str] = []
+
+    if context_sentences or context_translations:
+        lines.append("PREVIOUS CONTEXT (already translated; reference only)")
+        if context_sentences:
+            lines.append("Chinese Sentences:")
+            lines.append(context_sentences)
+            lines.append("")
+        if context_translations:
+            lines.append("English Translations:")
+            lines.append(context_translations)
+            lines.append("")
+        lines.append("END OF CONTEXT")
+        lines.append("")
+
+    lines.append("CURRENT SENTENCES TO TRANSLATE:")
+
     for idx, sid in enumerate(batch_ids, start=1):
         source = translations_data[sid].get("source", "")
         lines.append(f"SENTENCE {idx}: {sid}")
@@ -329,9 +411,11 @@ def _translate_chapter(
     client: OpenAI,
     sentences_path: Path,
     translations_path: Path,
-) -> None:
+) -> bool:
     """
-    Translate all missing sentences in one chapter's translations file.
+    Translate all missing sentences in one chapter's translations file, but stop
+    after the first batch so users can review before continuing.
+    Returns True if a batch was processed.
     """
     chapter_id = sentences_path.stem.split(".")[0]  # "c1"
     print("\n" + "=" * 80)
@@ -345,7 +429,7 @@ def _translate_chapter(
     batches = _build_batches_for_chapter(translations_data)
     if not batches:
         print("  ✓ No missing translations; nothing to do.")
-        return
+        return False
 
     print(
         f"  Found {sum(len(b) for b in batches)} missing sentence(s) "
@@ -353,6 +437,7 @@ def _translate_chapter(
     )
 
     changed = False
+    processed_batch = False
 
     try:
         for batch_idx, batch_ids in enumerate(batches, start=1):
@@ -389,8 +474,9 @@ def _translate_chapter(
                 )
                 print(f"  ✓ Saved progress after batch {batch_idx}")
 
-            print(f"  ⏳ Waiting {API_DELAY_SECONDS:.1f}s before next batch...")
-            time.sleep(API_DELAY_SECONDS)
+            processed_batch = True
+            print("  🚫 Single-batch mode active; rerun the script for the next batch.")
+            break
     except KeyboardInterrupt:
         # User interrupted (Ctrl+C); save what we have
         if changed:
@@ -402,10 +488,12 @@ def _translate_chapter(
         print("\n  ↯ Interrupted by user; stopping translation.")
         raise SystemExit(0)
 
-    if changed:
-        print(f"\n  ✓ Completed all batches for {translations_path.name}")
+    if processed_batch:
+        print(f"\n  ✓ Completed one batch for {translations_path.name}")
     else:
         print("\n  ✓ No changes made for this chapter.")
+
+    return processed_batch
 
 
 def main() -> None:
@@ -423,13 +511,21 @@ def main() -> None:
     if len(sys.argv) > 1:
         wanted = list(sys.argv[1:])
 
+    processed_any = False
+
     for sentences_path, translations_path in chapter_pairs:
         chapter_id = sentences_path.stem.split(".")[0]  # "c1"
         if wanted and chapter_id not in wanted:
             continue
-        _translate_chapter(client, sentences_path, translations_path)
+        did_process = _translate_chapter(client, sentences_path, translations_path)
+        if did_process:
+            processed_any = True
+            break
 
-    print("\nAll done.")
+    if processed_any:
+        print("\nSingle batch completed. Run again for the next batch.")
+    else:
+        print("\nAll done (no batches needed).")
 
 
 if __name__ == "__main__":
