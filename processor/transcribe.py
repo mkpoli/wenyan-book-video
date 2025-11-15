@@ -107,26 +107,54 @@ def _(dictionary_text):
 def _(Path):
     segments_dir = Path("../renderer/public/segments")
     transcripts_dir = Path("../renderer/public/transcripts")
+    sentences_dir = Path("../renderer/public/sentences")
 
     # Ensure transcripts directory exists
     transcripts_dir.mkdir(exist_ok=True)
-    return segments_dir, transcripts_dir
+    sentences_dir.mkdir(exist_ok=True)
+    return segments_dir, transcripts_dir, sentences_dir
 
 
 @app.cell(hide_code=True)
-def _(segments_dir):
-    # Find all segment files
-    # Sort naturally by extracting chapter and segment numbers
+def _(transcripts_dir, sentences_dir):
+    import json as _json_init
+
+    # Prepare sentence transcript files (c1.sentences.json, c2.sentences.json, ...)
+    # for all chapters that have canonical sentences (c1.json, c2.json, ...).
     def sort_key(path):
-        # Extract numbers from filename like "1-2.txt" -> (1, 2)
-        name = path.stem  # "1-2"
-        parts = name.split("-")  # ["1", "2"]
-        return (int(parts[0]), int(parts[1]))  # (chapter, segment)
+        # Extract chapter number from filename like "c1.json" -> 1
+        name = path.stem  # "c1"
+        num_str = name.lstrip("c")
+        return int(num_str) if num_str.isdigit() else 0
 
-    segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
+    sentence_files = []
 
-    print(f"Found {len(segment_files)} segment files")
-    return (segment_files,)
+    for sentences_path in sorted(sentences_dir.glob("c*.json"), key=sort_key):
+        chapter_id = sentences_path.stem  # e.g. "c5"
+        transcript_path = transcripts_dir / f"{chapter_id}.sentences.json"
+
+        if not transcript_path.exists():
+            # Initialize a sentence transcript file from canonical sentences.
+            canon = _json_init.loads(sentences_path.read_text(encoding="utf-8"))
+            _init_data: dict[str, dict[str, str]] = {}
+
+            for s in canon.get("sentences", []):
+                sid = s.get("id")
+                _source = s.get("source", "")
+                if not isinstance(sid, str) or not isinstance(_source, str):
+                    continue
+                _init_data[sid] = {"source": _source}
+
+            transcript_path.write_text(
+                _json_init.dumps(_init_data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print(f"Created {transcript_path}")
+
+        sentence_files.append(transcript_path)
+
+    print(f"Prepared {len(sentence_files)} sentence transcript files")
+    return (sentence_files,)
 
 
 @app.cell
@@ -217,6 +245,19 @@ def _():
         "夫": 1,
         "父": 0,
         "土": 0,
+        "莫": 0,
+        "共": 0,
+        "積": 0,
+        "作": 0,
+        "反": 0,
+        "甚": 0,
+        "首": 0,
+        "大": 0,
+        "等": 0,
+        "約": 0,
+        "歟": 0,
+        "兩": 0,
+        "頗": 0,
     }
     return CHAR_REPLACEMENTS, SPECIAL_CASES
 
@@ -227,6 +268,7 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
     import subprocess
     import json
     from shutil import which
+    from migration.cinix_to_tupa import convert_cinix_to_tupa
 
     def resolve_bun_executable() -> Path | None:
         """Locate Bun using environment hints or PATH."""
@@ -695,62 +737,80 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
                     ipa_parts.append(ch)
                     pos += 1
 
-        # Join transcriptions with spaces
-        # Format: " word1 word2 . word3 "
-        # Filter out empty strings (periods are truthy so they'll be kept)
+        # Join transcriptions with spaces.
+        # Format: "word1 word2 . word3"
+        # Filter out empty strings (periods are truthy so they'll be kept).
         ipa_parts = [p for p in ipa_parts if p]
-        return " " + " ".join(ipa_parts) + " "
+        return " ".join(ipa_parts)
 
-    return replace_chars, transcribe_to_ipa
+    return replace_chars, transcribe_to_ipa, convert_cinix_to_tupa
 
 
 @app.cell(hide_code=True)
 def _(
     dictionary,
     replace_chars,
-    segment_files,
+    sentence_files,
     transcribe_to_ipa,
     transcripts_dir,
+    convert_cinix_to_tupa,
 ):
+    import json as _json
 
-    # Shared choice cache across all segments
+    # Shared choice cache across all sentences in all chapters
     choice_cache = {}
 
-    # Process each segment
-    for segment_file in segment_files:
+    # Process each chapter sentence-transcript file
+    for sentence_file in sentence_files:
         print("\n" + "=" * 80)
-        print(f"Transcribing: {segment_file.name}")
+        print(f"Transcribing sentence file: {sentence_file.name}")
         print("=" * 80)
 
-        # Check if transcript already exists
-        transcript_filename = f"audio-{segment_file.stem}.txt"
-        transcript_path = transcripts_dir / transcript_filename
+        data = _json.loads(sentence_file.read_text(encoding="utf-8"))
+        changed = False
 
-        if transcript_path.exists():
-            print(f"✓ Transcript already exists (skipped): {transcript_filename}")
-            continue
+        # Process sentences in numeric order (c1-s1, c1-s2, ...)
+        def sent_sort_key(key: str) -> int:
+            if "-s" in key:
+                try:
+                    return int(key.split("-s", 1)[1])
+                except ValueError:
+                    return 0
+            return 0
 
-        # Read segment text
-        with open(segment_file, "r", encoding="utf-8") as f:
-            text = f.read().strip()
+        for sent_id in sorted(data.keys(), key=sent_sort_key):
+            entry = data.get(sent_id) or {}
+            source = entry.get("source")
+            if not isinstance(source, str) or not source.strip():
+                continue
 
-        # Apply character replacements
-        text = replace_chars(text)
+            # Skip sentences that already have a non-empty IPA string
+            existing_ipa = entry.get("ipa")
+            if isinstance(existing_ipa, str) and existing_ipa.strip():
+                continue
 
-        def wrap_text(text, length=40):
-            return "\n".join(text[i : i + length] for i in range(0, len(text), length))
+            # Apply character replacements
+            text = replace_chars(source)
 
-        print(f"{wrap_text(text)}")
+            # Transcribe to IPA (each character may prompt for disambiguation)
+            ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
+            entry["ipa"] = ipa_text
 
-        # Transcribe to IPA (each character will be prompted individually)
-        ipa_text = transcribe_to_ipa(text, dictionary, choice_cache)
+            # Also compute TUPA transcription from IPA
+            entry["tupa"] = convert_cinix_to_tupa(ipa_text)
 
-        # Save transcript
-        with open(transcript_path, "w", encoding="utf-8") as f:
-            f.write(ipa_text)
+            data[sent_id] = entry
+            changed = True
 
-        print(f"✓ Saved transcript: {transcript_filename}")
-        print(f"  IPA: {ipa_text[:100]}...")
+        if changed:
+            sentence_file.write_text(
+                _json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print(f"✓ Saved updated sentence transcripts: {sentence_file.name}")
+        else:
+            print(f"✓ No changes needed for {sentence_file.name}")
+
     return
 
 
