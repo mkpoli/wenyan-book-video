@@ -38,12 +38,17 @@ def _(AUDIO_DIR):
     MODEL_ID = "eleven_multilingual_sts_v2"  # Speech-to-speech model
     OUTPUT_FORMAT = "mp3_44100_128"
     STABILITY = 0.5  # 50%
-    SIMILARITY_BOOST = 0.75  # 75%
+    SIMILARITY_BOOST = 0.9  # 90%
+    SPEAKER_BOOST = True  #
 
     VOICE_ID = "Xb7hH8MSUJpSbSDYk0k2"  # Alice
 
     voice_settings = json.dumps(
-        {"stability": STABILITY, "similarity_boost": SIMILARITY_BOOST}
+        {
+            "stability": STABILITY,
+            "similarity_boost": SIMILARITY_BOOST,
+            "use_speaker_boost": SPEAKER_BOOST,
+        }
     )
     return MODEL_ID, OUTPUT_FORMAT, VOICE_ID, female_dir, voice_settings
 
