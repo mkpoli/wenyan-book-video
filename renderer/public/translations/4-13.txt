@@ -1,9 +1,0 @@
-If the ‘Thing’ is equal to “Beast,”
-I have a word,
-Say, “You are a straw-dog.”
-Write it down.
-Or if the ‘Thing’ is equal to “Plants,”
-I have a word,
-Say, “You also are straw-dogs.”
-Write it down.
-Or if the ‘Thing’ is equal to “Person,”

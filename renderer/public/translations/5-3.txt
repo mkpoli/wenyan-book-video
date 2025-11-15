@@ -1,8 +1,0 @@
-There are three methods of the cycle.
-The first is called “infinite.”
-For it runs without end.
-The second is called “a certain number.”
-For it runs a certain number of times.
-The third is called “enumeration.”
-For it regards the ordering of the items in the list, one by one.
-Thus are all writings.

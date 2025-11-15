@@ -1,2 +1,0 @@
-There are calculations that are intricate and cannot be obtained in a single step.
-Thus it shall be.

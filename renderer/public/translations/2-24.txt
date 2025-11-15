@@ -1,2 +1,0 @@
-Add one to three.
-Name it “C”.

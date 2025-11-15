@@ -1,5 +1,0 @@
-There is a numeral three.
-It is named “A”.
-I have a numeral.
-It is named three.
-It is named “A”.

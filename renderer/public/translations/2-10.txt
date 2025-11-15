@@ -1,5 +1,0 @@
-An unnamed variable.
-The machine takes note of it, awaiting its use.
-Its label is,
-That is to say, the previously unnamed variable.
-Use as follows.

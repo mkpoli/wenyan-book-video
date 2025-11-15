@@ -1,4 +1,0 @@
-Add one to reach three.
-Add six to reach nine.
-Name it “A”.
-It is named “B”.

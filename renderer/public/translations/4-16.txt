@@ -1,8 +1,0 @@
-Ghaew (爻 Yáo, booleans) —
-are Yin and Yang.
-They are True and Flase.
-They are existence and nonexistence.
-They are praise and blame.
-They are seen in the chapter on variables.
-Now apply them to decision-making.
-Is it not proper?
