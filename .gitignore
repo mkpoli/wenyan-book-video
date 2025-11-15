@@ -49,3 +49,5 @@ book/tmp/
 
 # Processor-specific (already covered by Python section above)
 
+# Renderer build artifacts
+renderer/public/transcripts/build/

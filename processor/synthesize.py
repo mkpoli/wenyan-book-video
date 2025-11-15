@@ -16,10 +16,12 @@ def _():
 @app.cell
 def _(Path):
     transcripts_dir = Path("../renderer/public/transcripts")
+    segment_transcripts_dir = transcripts_dir / "build"
     audios_dir = Path("../renderer/public/audios")
 
-    # Ensure audios directory exists
+    # Ensure directories exist
     audios_dir.mkdir(exist_ok=True)
+    segment_transcripts_dir.mkdir(parents=True, exist_ok=True)
 
     # API settings
     SYNTHESIZE_URL = "https://qieyun-tts.com/synthesize"
@@ -30,7 +32,7 @@ def _(Path):
         MODEL_NAME,
         SYNTHESIZE_URL,
         audios_dir,
-        transcripts_dir,
+        segment_transcripts_dir,
     )
 
 
@@ -42,7 +44,7 @@ def _(
     audios_dir,
     requests,
     time,
-    transcripts_dir,
+    segment_transcripts_dir,
 ):
     # Find all transcript files
     # Sort naturally by extracting chapter and segment numbers
@@ -52,7 +54,10 @@ def _(
         parts = name.split("-")  # ["audio", "1", "2"]
         return (int(parts[1]), int(parts[2]))  # (chapter, segment)
 
-    transcript_files = sorted(transcripts_dir.glob("audio-*-*.txt"), key=sort_key)
+    transcript_files = sorted(
+        segment_transcripts_dir.glob("audio-*-*.txt"),
+        key=sort_key,
+    )
 
     print(f"Found {len(transcript_files)} transcript files")
 

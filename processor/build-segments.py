@@ -14,7 +14,7 @@ from processor.utils.cli_style import (
 
 """
 Build segment-level IPA transcript files `audio-{c}-{s}.txt` under
-`renderer/public/transcripts` from:
+`renderer/public/transcripts/build` from:
 
   - `renderer/public/segments/c{n}.segments.json`
   - `renderer/public/transcripts/c{n}.sentences.json`
@@ -24,7 +24,7 @@ ordered list of sentence IDs (e.g. ["c1-s245", "c1-s246", ...]) which belong to
 that segment. For each such segment, we concatenate the sentence-level IPA
 strings for those sentence IDs and write the result to:
 
-  `renderer/public/transcripts/audio-{segment_id}.txt`
+  `renderer/public/transcripts/build/audio-{segment_id}.txt`
 
 This prepares pronunciation text, one segment per file, for the TTS engine.
 The TTS engine expects a leading and trailing space around the entire IPA
@@ -157,6 +157,13 @@ def build_segment_ipa(
 
 def reconstruct_segment_transcripts(root: Path) -> None:
     transcripts_dir = root / "renderer" / "public" / "transcripts"
+    build_dir = transcripts_dir / "build"
+
+    # Ensure the build directory exists and is clean so stale
+    # transcript files don't linger between runs.
+    build_dir.mkdir(parents=True, exist_ok=True)
+    for stale in build_dir.glob("audio-*.txt"):
+        stale.unlink()
 
     segments = load_sentence_segments(root)
     if not segments:
@@ -213,7 +220,7 @@ def reconstruct_segment_transcripts(root: Path) -> None:
             # TTS engine requires exactly one leading and trailing space
             # around the content.
             ipa_text = f" {ipa_body.strip()} "
-            out_path = transcripts_dir / f"audio-{seg_id}.txt"
+            out_path = build_dir / f"audio-{seg_id}.txt"
             out_path.write_text(ipa_text, encoding="utf-8")
             total_written += 1
 
