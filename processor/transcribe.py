@@ -3,6 +3,10 @@ import marimo
 __generated_with = "0.17.7"
 app = marimo.App(width="medium")
 
+# Global sentence-level context used to show the previous/next sentences
+# around the character currently being disambiguated.
+CURRENT_SENTENCE_CONTEXT: tuple[str | None, str | None] | None = None
+
 
 @app.cell(hide_code=True)
 def _():
@@ -129,9 +133,7 @@ def _(transcripts_dir, sentences_dir):
 
     sentence_files = []
 
-    for sentences_path in sorted(
-        sentences_dir.glob("c*.sentences.json"), key=sort_key
-    ):
+    for sentences_path in sorted(sentences_dir.glob("c*.sentences.json"), key=sort_key):
         # Derive chapter id like "c5" from "c5.sentences"
         chapter_id = sentences_path.stem.split(".")[0]
         # Sentence-level transcripts live as `c{n}.transcripts.json`.
@@ -443,43 +445,66 @@ def _(CHAR_REPLACEMENTS, Path, os, re, requests):
         normalized = re.sub(r"\.+$", ".", normalized)
         return normalized
 
+    def set_sentence_context(prev_source: str | None, next_source: str | None) -> None:
+        """
+        Set the sentence-level context for subsequent disambiguation prompts.
+
+        This is called from the transcription driver with the canonical
+        previous and next sentence sources (if any) taken from the
+        `cN.sentences.json` files. The low-level `get_context` helper will
+        then stitch these together with the local character context.
+        """
+
+        global CURRENT_SENTENCE_CONTEXT
+        CURRENT_SENTENCE_CONTEXT = (prev_source, next_source)
+
     def get_context(text: str, pos: int, min_chars: int = 10) -> tuple[str, str]:
         """
         Extract context around a character position.
-        Shows at least min_chars before/after, extending to sentence boundaries (periods).
 
-        Args:
-            text: The normalized text
-            pos: Position of the current character
-            min_chars: Minimum characters to show before/after
+        If a sentence-level context has been provided via
+        `set_sentence_context`, then the context displayed to the user is:
 
-        Returns:
-            Tuple of (before_context, after_context)
+            <prev_sentence>。<text_before_char> [char] <text_after_char>。<next_sentence>
+
+        using `。` as the sentence separator where applicable.
+
+        If no sentence-level context is available, a small window based only
+        on `text` is returned.
         """
-        # Find start position: go back at least min_chars, but extend to previous period
-        start_pos = max(0, pos - min_chars)
-        # Look for the previous period before start_pos
-        for i in range(start_pos - 1, -1, -1):
-            if text[i] == ".":
-                start_pos = i + 1
-                break
-        else:
-            # No period found, use beginning
-            start_pos = 0
 
-        # Find end position: go forward at least min_chars, but extend to next period
-        end_pos = min(len(text), pos + 1 + min_chars)
-        # Look for the next period after end_pos
-        for i in range(end_pos, len(text)):
-            if text[i] == ".":
-                end_pos = i + 1
-                break
-        else:
-            # No period found, use end
-            end_pos = len(text)
+        # Local context within the current (normalized) sentence. Strip any
+        # sentence-final/initial '.' here because we add `。` as the separator
+        # between sentences when stitching the full context for display.
+        before_core = text[:pos].rstrip(".")
+        after_core = text[pos + 1 :].lstrip(".")
 
-        before_context = text[start_pos:pos]
-        after_context = text[pos + 1 : end_pos]
+        prev_source: str | None = None
+        next_source: str | None = None
+        if CURRENT_SENTENCE_CONTEXT is not None:
+            prev_source, next_source = CURRENT_SENTENCE_CONTEXT
+
+        before_parts: list[str] = []
+        after_parts: list[str] = []
+
+        if prev_source:
+            before_parts.append(prev_source.rstrip("。").strip())
+        if before_core:
+            before_parts.append(before_core)
+
+        if after_core:
+            after_parts.append(after_core)
+        if next_source:
+            after_parts.append(next_source.lstrip("。").strip())
+
+        before_context = "。".join(p for p in before_parts if p)
+        after_context = "。".join(p for p in after_parts if p)
+
+        # Fallback for the very first/last sentences where we may have no
+        # surrounding context and very short local text.
+        if not before_context and not after_context:
+            before_context = text[max(0, pos - min_chars) : pos]
+            after_context = text[pos + 1 : pos + 1 + min_chars]
 
         return before_context, after_context
 
@@ -695,7 +720,7 @@ def _(CHAR_REPLACEMENTS, Path, os, re, requests):
         ipa_parts = [p for p in ipa_parts if p]
         return " ".join(ipa_parts)
 
-    return replace_chars, transcribe_to_ipa, convert_cinix_to_tupa
+    return replace_chars, transcribe_to_ipa, convert_cinix_to_tupa, set_sentence_context
 
 
 @app.cell(hide_code=True)
@@ -706,6 +731,7 @@ def _(
     transcribe_to_ipa,
     transcripts_dir,
     convert_cinix_to_tupa,
+    set_sentence_context,
 ):
     import json as _json
 
@@ -720,6 +746,31 @@ def _(
 
         data = _json.loads(sentence_file.read_text(encoding="utf-8"))
         changed = False
+
+        # Load canonical sentence ordering for this chapter so that we can
+        # show the previous and next sentences as context during
+        # disambiguation. This uses the `cN.sentences.json` files.
+        _chapter_id = sentence_file.stem.split(".")[0]  # e.g. "c1"
+        sentences_root = transcripts_dir.parent / "sentences"
+        canon_sentences: list[dict] = []
+        sentence_index_by_id: dict[str, int] = {}
+        try:
+            canon_path = sentences_root / f"{_chapter_id}.sentences.json"
+            if canon_path.exists():
+                canon_payload = _json.loads(canon_path.read_text(encoding="utf-8"))
+                maybe_list = canon_payload.get("sentences") or []
+                if isinstance(maybe_list, list):
+                    canon_sentences = maybe_list
+                    for idx, _s_ctx in enumerate(canon_sentences):
+                        _sid_ctx = _s_ctx.get("id")
+                        if isinstance(_sid_ctx, str):
+                            sentence_index_by_id[_sid_ctx] = idx
+        except Exception as exc:
+            print(
+                f"Warning: Failed to load canonical sentences for {_chapter_id}: {exc}"
+            )
+            canon_sentences = []
+            sentence_index_by_id = {}
 
         # Process sentences in numeric order (c1-s1, c1-s2, ...)
         def sent_sort_key(key: str) -> int:
@@ -751,6 +802,25 @@ def _(
                         )
                         break
                     continue
+
+                # Establish sentence-level context: previous and next canonical
+                # sentences (if available) from the chapter's sentence file.
+                prev_source = None
+                next_source = None
+                idx = sentence_index_by_id.get(sent_id)
+                if isinstance(idx, int) and canon_sentences:
+                    if idx > 0:
+                        prev = canon_sentences[idx - 1].get("source")
+                        if isinstance(prev, str) and prev.strip():
+                            prev_source = prev
+                    if idx + 1 < len(canon_sentences):
+                        nxt = canon_sentences[idx + 1].get("source")
+                        if isinstance(nxt, str) and nxt.strip():
+                            next_source = nxt
+
+                # Push context into the transcription helper so that all
+                # interactive prompts can show it.
+                set_sentence_context(prev_source, next_source)
 
                 # Apply character replacements
                 text = replace_chars(source)
