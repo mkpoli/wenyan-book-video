@@ -166,107 +166,17 @@ def _():
         "「": "",  # Remove CJK corner quotes
         "」": "",  # Remove CJK corner quotes
     }
-
-    # Special cases: characters with preselected pronunciation choices
-    # Maps character to choice index (0-based, where 0 = 1st choice)
-    SPECIAL_CASES = {
-        "不": 0,  # Always use 1st choice (index 0)
-        "有": 0,  # Always use 1st choice (index 0),
-        "編": 0,
-        "造": 0,  # 【從|豪|上】造作又七到切 vs.【清|豪|去】至也又昨早切,
-        "何": 0,  # 【匣|開|哥一|平】辝也說文儋也又姓出自周成王母弟唐叔虞後封於韓韓滅子孫分散江淮閒音以韓爲何字隨音變遂爲何氏出廬江東海陳郡三望胡歌切七 vs 【匣|開|哥一|上】上同（荷：負荷也胡可切又戶哥切二）,
-        "事": 0,  # 【崇|之|去】使也立也由也鉏吏切又側吏切二 vs 【莊|之|去】事刃又作剚倳,
-        "算": 0,  # 【心|合|寒|去】#同筭（筭：計也數也說文曰筭長六寸計歷數者也又有九章術漢許商杜忠吳陳熾魏王粲並善之世本曰黃帝時隷首作數蘇貫切四） vs 【心|合|寒|上】物之數也蘇管切三
-        "視": 0,  # 【常|開|脂|上】比也瞻也效也承矢切三 vs 【常|開|脂|去】看視又音是,
-        "其": 0,  # 【羣|之|平】辝也亦姓陽阿侯其石是也又漢複姓六氏左傳邾庶其之後以庶其爲氏世本楚大夫涉其帑漢清河都尉祝其承先王僧孺百家譜蘭陵蕭休緒娶高密侍其義叔女何氏姓苑有行其氏今其氏渠之切又音基三十 vs 【見|之|平】不其邑名在琅邪又人名漢有酈食其,
-        "錯": 0,  # 【清|開|鐸|入】鑢別名又雜也摩也詩傳云東西爲交邪行爲錯說文云金涂也倉各切七 vs 【清|模|去】金塗又姓宋太宰之後又千各切
-        "能": 0,  # 【泥|開|登|平】工善也又獸名熊屬足似鹿亦賢能也奴登切又奴代奴來二切一,
-        "達": 0,  # 【定|開|末|入】通達亦姓出何氏姓苑又虜複姓三氏後魏獻帝弟爲達奚氏又達勃氏後改爲襃氏周文帝達步妃生齊煬王憲唐割切二 vs 【透|開|末|入】挑達往來皃又唐割切
-        "西": 0,  # 【心|開|齊|平】秋方說文曰鳥在巢上也日在西方而鳥西故因以爲東西之西篆文作㢴象形亦州名本漢車師國之地至貞觀討平以其地爲西州亦姓又漢複姓十一氏左傳秦帥西乞術宋大夫西鉏吾西鄉錯出世本又黃帝娶西陵氏爲妃名纍祖史記魏文侯鄴令西門豹周末分爲東西二周武公庶子西周爲氏晉有北海西郭陽何承天以爲西朝名士慕容廆以北平西方虔爲股肱何氏姓苑有西野氏西宮氏王符潛夫論姓氏志曰如有東門西郭南宮北郭皆是因居也先稽切十六 vs 【心|開|先|平】#《集韻》金方也
-        "列": 0,
-        "如": 0,
-        "左": 0,
-        "吾": 0,
-        "後": 0,
-        "引": 0,
-        "眾": 0,
-        "方": 0,
-        "猶": 0,
-        "唯": 0,
-        "逮": 0,
-        "遠": 0,
-        "使": 0,
-        "演": 0,
-        "識": 0,
-        "與": 0,
-        "取": 0,
-        "道": 0,
-        "精": 0,
-        "要": 0,
-        "定": 0,
-        "足": 0,
-        "觀": 0,
-        "經": 0,
-        "語": 0,
-        "巧": 0,
-        "蓋": 0,
-        "半": 0,
-        "迂": 0,
-        "研": 0,
-        "生": 0,
-        "思": 0,
-        "辨": 0,
-        "走": 0,
-        "氏": 0,
-        "知": 0,
-        "先": 0,
-        "三": 0,
-        "若": 0,
-        "葉": 0,
-        "數": 0,
-        "減": 0,
-        "留": 0,
-        "句": 0,
-        "創": 0,
-        "祭": 0,
-        "向": 0,
-        "決": 0,
-        "示": 0,
-        "丁": 0,
-        "伯": 0,
-        "冉": 1,
-        "風": 0,
-        "科": 0,
-        "弟": 0,
-        "亡": 0,
-        "複": 1,
-        "嵌": 0,
-        "樹": 0,
-        "夫": 1,
-        "父": 0,
-        "土": 0,
-        "莫": 0,
-        "共": 0,
-        "積": 0,
-        "作": 0,
-        "反": 0,
-        "甚": 0,
-        "首": 0,
-        "大": 0,
-        "等": 0,
-        "約": 0,
-        "歟": 0,
-        "兩": 0,
-        "頗": 0,
-    }
-    return CHAR_REPLACEMENTS, SPECIAL_CASES
+    # No built-in SPECIAL_CASES here; see `special_cases.toml` for the
+    # human-editable configuration of disambiguation choices.
+    return CHAR_REPLACEMENTS
 
 
 @app.cell(hide_code=True)
-def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
+def _(CHAR_REPLACEMENTS, Path, os, re, requests):
     from functools import lru_cache
     import subprocess
     import json
+    import tomllib
     from shutil import which
     from migration.cinix_to_tupa import convert_cinix_to_tupa
 
@@ -300,6 +210,42 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
     bun_executable = resolve_bun_executable()
     lookup_script_exists = lookup_script.exists()
     bun_exists = bun_executable is not None
+
+    def load_special_cases_config() -> dict[str, int]:
+        """
+        Load SPECIAL_CASES overrides from `special_cases.toml` on disk.
+
+        The file is a human-editable TOML config with a `[special_cases]`
+        table mapping characters to 0-based indices, e.g.:
+
+          [special_cases]
+          "不" = 0
+          "冉" = 1
+
+        This function is intentionally called each time we need to check
+        special cases so that edits to the config file are picked up
+        immediately during an interactive transcription session.
+        """
+        config_path = Path(__file__).resolve().parent / "special_cases.toml"
+
+        merged: dict[str, int] = {}
+        if not config_path.exists():
+            return merged
+
+        try:
+            with config_path.open("rb") as f:
+                cfg = tomllib.load(f)
+        except Exception as exc:  # pragma: no cover - defensive
+            print(f"Warning: Failed to load special cases config {config_path}: {exc}")
+            return merged
+
+        table = cfg.get("special_cases")
+        if isinstance(table, dict):
+            for key, value in table.items():
+                if isinstance(key, str) and isinstance(value, int):
+                    merged[key] = value
+
+        return merged
 
     @lru_cache(maxsize=None)
     def _lookup_meaning_cached(
@@ -564,10 +510,11 @@ def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
                 if readings and len(readings) > 0:
                     # Check if we have multiple options
                     if len(readings) > 1:
-                        # Check for special cases first
-                        if ch in SPECIAL_CASES:
+                        # Check for special cases first (from editable config)
+                        special_cases = load_special_cases_config()
+                        if ch in special_cases:
                             # Special case: use specified choice index
-                            choice_idx = SPECIAL_CASES[ch]
+                            choice_idx = special_cases[ch]
                             # Validate choice index is within bounds
                             if 0 <= choice_idx < len(readings):
                                 # Show same information as non-special cases, but auto-select
