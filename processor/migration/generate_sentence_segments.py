@@ -152,7 +152,7 @@ def build_sentence_segments_for_chapter(
     Compute the mapping from segment id (e.g. '1-17') to sentence ids
     (e.g. ['c1-s245', 'c1-s246']) for one chapter.
     """
-    sentences_path = sentences_dir / f"{chapter_id}.json"
+    sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
         print(f"  ⚠ No sentences file found for {chapter_id}, skipping.")
         return []
