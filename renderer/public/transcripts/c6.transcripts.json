@@ -20,52 +20,84 @@
     "tupa": "lin lin khoungq puang"
   },
   "c6-s5": {
-    "source": "穰穰青蚨。"
+    "source": "穰穰青蚨。",
+    "ipa": "ɲɨɑ́ŋ ɲɨɑ́ŋ ʦʰèŋ bʉòː .",
+    "tupa": "njyangq njyangq tsheng buo"
   },
   "c6-s6": {
-    "source": "吊者錢之列也。"
+    "source": "吊者錢之列也。",
+    "ipa": "těw ʨiáː ʣièn ʨɨ̀ː liet jiáː .",
+    "tupa": "tewh tjiaeq dzien tjy liet jiaeq"
   },
   "c6-s7": {
-    "source": "靡靡鄭聲。"
+    "source": "靡靡鄭聲。",
+    "ipa": "mịéː mịéː ɖiǎŋ ɕiàŋ .",
+    "tupa": "myeq myeq driaengh sjiaeng"
   },
   "c6-s8": {
-    "source": "丁丁清響。"
+    "source": "丁丁清響。",
+    "ipa": "tèŋ tèŋ ʦʰiàŋ hɨɑ́ŋ .",
+    "tupa": "teng teng tshiaeng hyangq"
   },
   "c6-s9": {
-    "source": "曲者音之列也。"
+    "source": "曲者音之列也。",
+    "ipa": "kʰʉok ʨiáː ʔị̀m ʨɨ̀ː liet jiáː .",
+    "tupa": "khuok tjiaeq qyim tjy liet jiaeq"
   },
   "c6-s10": {
-    "source": "浩浩汪洋。"
+    "source": "浩浩汪洋。",
+    "ipa": "ɦɑ́w ɦɑ́w ʔʷɑ̀ŋ jɨɑ̀ŋ .",
+    "tupa": "ghawq ghawq qwang jyang"
   },
   "c6-s11": {
-    "source": "揚揚義氣。"
+    "source": "揚揚義氣。",
+    "ipa": "jɨɑ̀ŋ jɨɑ̀ŋ ŋịěː kʰɨ̌j .",
+    "tupa": "jyang jyang ngyeh khyjh"
   },
   "c6-s12": {
-    "source": "文章者字之列也。"
+    "source": "文章者字之列也。",
+    "ipa": "mʉ̀n ʨɨɑ̀ŋ ʨiáː ʣɨ̌ː ʨɨ̀ː liet jiáː .",
+    "tupa": "mun tjyang tjiaeq dzyh tjy liet jiaeq"
   },
   "c6-s13": {
-    "source": "天下之物既眾。"
+    "source": "天下之物既眾。",
+    "ipa": "tʰèn ɦạ́ː ʨɨ̀ː mʉt kɨ̌j ʨʉǔŋ .",
+    "tupa": "then ghaeq tjy mut kyjh tjungh"
   },
   "c6-s14": {
-    "source": "或不知幾何。"
+    "source": "或不知幾何。",
+    "ipa": "ɦʷək pʉùː ʈièː kɨ́j ɦɑ̀ː .",
+    "tupa": "ghweok pu trie kyjq gha"
   },
   "c6-s15": {
-    "source": "或不可勝數。"
+    "source": "或不可勝數。",
+    "ipa": "ɦʷək pʉùː kʰɑ́ː ɕɨ̌ŋ ʂʉǒː .",
+    "tupa": "ghweok pu khaq sjyngh sruoh"
   },
   "c6-s16": {
-    "source": "皆以列法法之。"
+    "source": "皆以列法法之。",
+    "ipa": "kẹ̀j jɨ́ː liet pʉop pʉop ʨɨ̀ː .",
+    "tupa": "keej jyq liet puop puop tjy"
   },
   "c6-s17": {
-    "source": "數列列數。"
+    "source": "數列列數。",
+    "ipa": "ʂʉǒː liet liet ʂʉǒː .",
+    "tupa": "sruoh liet liet sruoh"
   },
   "c6-s18": {
-    "source": "言列列言。"
+    "source": "言列列言。",
+    "ipa": "ŋɨə̀n liet liet ŋɨə̀n .",
+    "tupa": "ngyon liet liet ngyon"
   },
   "c6-s19": {
-    "source": "爻列列爻。"
+    "source": "爻列列爻。",
+    "ipa": "ɦạ̀w liet liet ɦạ̀w .",
+    "tupa": "ghaew liet liet ghaew"
   },
   "c6-s20": {
-    "source": "列列列列。"
+    "source": "列列列列。",
+    "ipa": "liet liet liet liet .",
+    "tupa": "liet liet liet liet"
   },
   "c6-s21": {
     "source": "罔不裁物而器。"
