@@ -5,6 +5,13 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, List
 
+from processor.utils.cli_style import (
+    INNER_DIVIDER,
+    format_metadata_rows,
+    format_preview_entry,
+    print_warning,
+)
+
 """
 Build segment-level IPA transcript files `audio-{c}-{s}.txt` under
 `renderer/public/transcripts` from:
@@ -59,8 +66,14 @@ def load_sentence_segments(root: Path) -> List[Dict[str, Any]]:
 
         file_segments = data.get("segments")
         if not isinstance(file_segments, list):
-            print(
-                f"  ⚠ Segments file {json_path} did not contain a 'segments' array; skipping."
+            print_warning(
+                "Invalid segments JSON structure",
+                format_metadata_rows(
+                    [
+                        ("File", json_path.as_posix()),
+                        ("Issue", "Missing 'segments' array"),
+                    ]
+                ),
             )
             continue
 
@@ -124,10 +137,20 @@ def build_segment_ipa(
         ipa_chunks.append(ipa.strip())
 
     if missing_sentences:
-        print(
-            f"  ⚠ Segment {segment.get('id')}: missing IPA for "
-            f"{', '.join(missing_sentences)}; skipping those sentences."
+        preview_rows = [
+            format_preview_entry(f"#{idx:02}", "zh", sid, True)
+            for idx, sid in enumerate(missing_sentences)
+        ]
+        metadata: List[str | object] = list(
+            format_metadata_rows(
+                [
+                    ("Segment ID", str(segment.get("id"))),
+                    ("Missing sentences", str(len(missing_sentences))),
+                ]
+            )
         )
+        metadata.extend([INNER_DIVIDER, *preview_rows])
+        print_warning("Missing IPA data", metadata)
 
     return " ".join(ipa_chunks).strip()
 
@@ -176,9 +199,14 @@ def reconstruct_segment_transcripts(root: Path) -> None:
 
             ipa_body = build_segment_ipa(seg, sentence_data)
             if not ipa_body:
-                print(
-                    f"  ⚠ Segment {seg_id}: no IPA could be constructed; "
-                    f"skipping file output."
+                print_warning(
+                    "No IPA constructed for segment",
+                    format_metadata_rows(
+                        [
+                            ("Segment ID", seg_id),
+                            ("Chapter ID", chapter_id),
+                        ]
+                    ),
                 )
                 continue
 
