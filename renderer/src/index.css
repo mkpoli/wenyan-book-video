@@ -47,3 +47,8 @@
   --color-code-token-number: #872;
   --color-code-token-string: #357;
 }
+
+.font-serif em {
+  font-family: var(--font-serif-emph);
+  font-style: italic;
+}

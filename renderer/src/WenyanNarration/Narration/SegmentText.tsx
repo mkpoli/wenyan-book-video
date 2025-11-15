@@ -133,6 +133,45 @@ const KEYWORD_SENTENCES = new Set([
   "若其不然者",
 ]);
 
+function formatEnglishSentence(text: string): string {
+  if (!text) {
+    return "";
+  }
+  if (text.length === 1) {
+    return text.toLocaleUpperCase();
+  }
+  return `${text[0].toLocaleUpperCase()}${text.slice(1)}`;
+}
+
+function renderUnderscoreItalics(text: string): React.ReactNode {
+  if (!text) {
+    return null;
+  }
+
+  const segments: React.ReactNode[] = [];
+  const italicPattern = /_([^_]+)_/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = italicPattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      segments.push(text.slice(lastIndex, match.index));
+    }
+    segments.push(<em key={`italic-${match.index}`}>{match[1]}</em>);
+    lastIndex = italicPattern.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    segments.push(text.slice(lastIndex));
+  }
+
+  if (segments.length === 0) {
+    return text;
+  }
+
+  return segments;
+}
+
 function computeKeywordMask(text: string): boolean[] {
   if (!text) {
     return [];
@@ -494,6 +533,12 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
     sentenceForDisplay?.transcription?.replace(/\s+/g, " ").trim() ?? null;
   const englishLine =
     sentenceForDisplay?.english?.replace(/\s+/g, " ").trim() ?? null;
+  const formattedEnglishLine = englishLine
+    ? formatEnglishSentence(englishLine)
+    : null;
+  const englishLineWithItalics = formattedEnglishLine
+    ? renderUnderscoreItalics(formattedEnglishLine)
+    : null;
 
   // Group sentences by lines when text contains newlines
   const renderSentencesWithLineBreaks = () => {
@@ -621,17 +666,17 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
                 {convertCinixToTUPA(transcriptionLine)}
               </p>
             ) : null}
-            {englishLine ? (
+            {englishLineWithItalics ? (
               <p
                 className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-27 flex items-center justify-center ${
-                  englishLine.length > 70
-                    ? englishLine.length > 100
+                  formattedEnglishLine && formattedEnglishLine.length > 70
+                    ? formattedEnglishLine.length > 100
                       ? "text-4xl"
                       : "text-5xl"
                     : "text-6xl"
                 }`}
               >
-                {`${englishLine[0].toLocaleUpperCase()}${englishLine.slice(1)}`}
+                {englishLineWithItalics}
               </p>
             ) : null}
           </div>
