@@ -1336,7 +1336,7 @@
       "chapterId": "c1",
       "blockId": "b8",
       "index": 167,
-      "source": "曰「「問天地好在。",
+      "source": "曰『問天地好在。』。",
       "isCode": true
     },
     {
@@ -1344,7 +1344,7 @@
       "chapterId": "c1",
       "blockId": "b8",
       "index": 168,
-      "source": "」」。",
+      "source": "書之。",
       "isCode": true
     },
     {
@@ -1352,31 +1352,31 @@
       "chapterId": "c1",
       "blockId": "b8",
       "index": 169,
-      "source": "書之。",
+      "source": "\n云云。",
       "isCode": true
     },
     {
       "id": "c1-s170",
       "chapterId": "c1",
-      "blockId": "b8",
+      "blockId": "b9",
       "index": 170,
-      "source": "\n云云。",
-      "isCode": true
+      "source": "運行之。",
+      "isCode": false
     },
     {
       "id": "c1-s171",
       "chapterId": "c1",
-      "blockId": "b9",
+      "blockId": "b10",
       "index": 171,
-      "source": "運行之。",
-      "isCode": false
+      "source": "問天地好在。",
+      "isCode": true
     },
     {
       "id": "c1-s172",
       "chapterId": "c1",
       "blockId": "b10",
       "index": 172,
-      "source": "問天地好在。",
+      "source": "\n問天地好在。",
       "isCode": true
     },
     {
@@ -1390,17 +1390,17 @@
     {
       "id": "c1-s174",
       "chapterId": "c1",
-      "blockId": "b10",
+      "blockId": "b11",
       "index": 174,
-      "source": "\n問天地好在。",
-      "isCode": true
+      "source": "或問曰。",
+      "isCode": false
     },
     {
       "id": "c1-s175",
       "chapterId": "c1",
       "blockId": "b11",
       "index": 175,
-      "source": "或問曰。",
+      "source": "胡曰「問天地好在」耶。",
       "isCode": false
     },
     {
@@ -1408,7 +1408,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 176,
-      "source": "胡曰「問天地好在」耶。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -1416,7 +1416,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 177,
-      "source": "曰。",
+      "source": "蓋機器未編程時。",
       "isCode": false
     },
     {
@@ -1424,7 +1424,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 178,
-      "source": "蓋機器未編程時。",
+      "source": "混沌茫昧。",
       "isCode": false
     },
     {
@@ -1432,7 +1432,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 179,
-      "source": "混沌茫昧。",
+      "source": "不知天地之所在。",
       "isCode": false
     },
     {
@@ -1440,7 +1440,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 180,
-      "source": "不知天地之所在。",
+      "source": "既經編程。",
       "isCode": false
     },
     {
@@ -1448,7 +1448,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 181,
-      "source": "既經編程。",
+      "source": "頓而明朗。",
       "isCode": false
     },
     {
@@ -1456,7 +1456,7 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 182,
-      "source": "頓而明朗。",
+      "source": "撥雲見日然。",
       "isCode": false
     },
     {
@@ -1464,15 +1464,15 @@
       "chapterId": "c1",
       "blockId": "b11",
       "index": 183,
-      "source": "撥雲見日然。",
+      "source": "故欲問天地之好在也。",
       "isCode": false
     },
     {
       "id": "c1-s184",
       "chapterId": "c1",
-      "blockId": "b11",
+      "blockId": "b12",
       "index": 184,
-      "source": "故欲問天地之好在也。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -1480,7 +1480,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 185,
-      "source": "或問曰。",
+      "source": "胡問之三遍耶。",
       "isCode": false
     },
     {
@@ -1488,7 +1488,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 186,
-      "source": "胡問之三遍耶。",
+      "source": "天地豈聾也哉。",
       "isCode": false
     },
     {
@@ -1496,7 +1496,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 187,
-      "source": "天地豈聾也哉。",
+      "source": "君不聞秦宓之辯耶。",
       "isCode": false
     },
     {
@@ -1504,7 +1504,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 188,
-      "source": "君不聞秦宓之辯耶。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -1512,7 +1512,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 189,
-      "source": "曰。",
+      "source": "非也。",
       "isCode": false
     },
     {
@@ -1520,7 +1520,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 190,
-      "source": "非也。",
+      "source": "所以示「循環」之用也。",
       "isCode": false
     },
     {
@@ -1528,7 +1528,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 191,
-      "source": "所以示「循環」之用也。",
+      "source": "「循環」者。",
       "isCode": false
     },
     {
@@ -1536,7 +1536,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 192,
-      "source": "「循環」者。",
+      "source": "為一事數遍也。",
       "isCode": false
     },
     {
@@ -1544,7 +1544,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 193,
-      "source": "為一事數遍也。",
+      "source": "如輻輳輪轉然。",
       "isCode": false
     },
     {
@@ -1552,7 +1552,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 194,
-      "source": "如輻輳輪轉然。",
+      "source": "如日月交替然。",
       "isCode": false
     },
     {
@@ -1560,7 +1560,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 195,
-      "source": "如日月交替然。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -1568,7 +1568,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 196,
-      "source": "或問曰。",
+      "source": "欲行之五遍。",
       "isCode": false
     },
     {
@@ -1576,7 +1576,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 197,
-      "source": "欲行之五遍。",
+      "source": "可乎。",
       "isCode": false
     },
     {
@@ -1584,7 +1584,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 198,
-      "source": "可乎。",
+      "source": "行之千遍。",
       "isCode": false
     },
     {
@@ -1592,7 +1592,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 199,
-      "source": "行之千遍。",
+      "source": "可乎。",
       "isCode": false
     },
     {
@@ -1600,7 +1600,7 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 200,
-      "source": "可乎。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -1608,23 +1608,23 @@
       "chapterId": "c1",
       "blockId": "b12",
       "index": 201,
-      "source": "曰。",
+      "source": "無不可也。",
       "isCode": false
     },
     {
       "id": "c1-s202",
       "chapterId": "c1",
-      "blockId": "b12",
+      "blockId": "b13",
       "index": 202,
-      "source": "無不可也。",
-      "isCode": false
+      "source": "為是五遍。",
+      "isCode": true
     },
     {
       "id": "c1-s203",
       "chapterId": "c1",
       "blockId": "b13",
       "index": 203,
-      "source": "為是五遍。",
+      "source": "\n\t吾有一言。",
       "isCode": true
     },
     {
@@ -1632,7 +1632,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 204,
-      "source": "\n\t吾有一言。",
+      "source": "曰『問天地好在。』。",
       "isCode": true
     },
     {
@@ -1640,7 +1640,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 205,
-      "source": "曰「「問天地好在。",
+      "source": "書之。",
       "isCode": true
     },
     {
@@ -1648,7 +1648,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 206,
-      "source": "」」。",
+      "source": "\n云云。",
       "isCode": true
     },
     {
@@ -1656,7 +1656,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 207,
-      "source": "書之。",
+      "source": "\n\n為是千遍。",
       "isCode": true
     },
     {
@@ -1664,7 +1664,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 208,
-      "source": "\n云云。",
+      "source": "\n\t吾有一言。",
       "isCode": true
     },
     {
@@ -1672,7 +1672,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 209,
-      "source": "\n\n為是千遍。",
+      "source": "曰『問天地好在。』。",
       "isCode": true
     },
     {
@@ -1680,7 +1680,7 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 210,
-      "source": "\n\t吾有一言。",
+      "source": "書之。",
       "isCode": true
     },
     {
@@ -1688,39 +1688,39 @@
       "chapterId": "c1",
       "blockId": "b13",
       "index": 211,
-      "source": "曰「「問天地好在。",
+      "source": "\n云云。",
       "isCode": true
     },
     {
       "id": "c1-s212",
       "chapterId": "c1",
-      "blockId": "b13",
+      "blockId": "b14",
       "index": 212,
-      "source": "」」。",
-      "isCode": true
+      "source": "或問曰。",
+      "isCode": false
     },
     {
       "id": "c1-s213",
       "chapterId": "c1",
-      "blockId": "b13",
+      "blockId": "b14",
       "index": 213,
-      "source": "書之。",
-      "isCode": true
+      "source": "「甲」者謂何。",
+      "isCode": false
     },
     {
       "id": "c1-s214",
       "chapterId": "c1",
-      "blockId": "b13",
+      "blockId": "b14",
       "index": 214,
-      "source": "\n云云。",
-      "isCode": true
+      "source": "胡不謂「乙」耶。",
+      "isCode": false
     },
     {
       "id": "c1-s215",
       "chapterId": "c1",
       "blockId": "b14",
       "index": 215,
-      "source": "或問曰。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -1728,7 +1728,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 216,
-      "source": "「甲」者謂何。",
+      "source": "皆可也。",
       "isCode": false
     },
     {
@@ -1736,7 +1736,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 217,
-      "source": "胡不謂「乙」耶。",
+      "source": "「甲」者。",
       "isCode": false
     },
     {
@@ -1744,7 +1744,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 218,
-      "source": "曰。",
+      "source": "名也。",
       "isCode": false
     },
     {
@@ -1752,7 +1752,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 219,
-      "source": "皆可也。",
+      "source": "名者。",
       "isCode": false
     },
     {
@@ -1760,7 +1760,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 220,
-      "source": "「甲」者。",
+      "source": "實之賓耶。",
       "isCode": false
     },
     {
@@ -1768,7 +1768,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 221,
-      "source": "名也。",
+      "source": "實者何。",
       "isCode": false
     },
     {
@@ -1776,7 +1776,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 222,
-      "source": "名者。",
+      "source": "悉聽尊便也。",
       "isCode": false
     },
     {
@@ -1784,7 +1784,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 223,
-      "source": "實之賓耶。",
+      "source": "欲三則三。",
       "isCode": false
     },
     {
@@ -1792,7 +1792,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 224,
-      "source": "實者何。",
+      "source": "欲五則五。",
       "isCode": false
     },
     {
@@ -1800,7 +1800,7 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 225,
-      "source": "悉聽尊便也。",
+      "source": "是謂「變數」也。",
       "isCode": false
     },
     {
@@ -1808,39 +1808,39 @@
       "chapterId": "c1",
       "blockId": "b14",
       "index": 226,
-      "source": "欲三則三。",
+      "source": "復觀此二句。",
       "isCode": false
     },
     {
       "id": "c1-s227",
       "chapterId": "c1",
-      "blockId": "b14",
+      "blockId": "b15",
       "index": 227,
-      "source": "欲五則五。",
-      "isCode": false
+      "source": "吾有一數。",
+      "isCode": true
     },
     {
       "id": "c1-s228",
       "chapterId": "c1",
-      "blockId": "b14",
+      "blockId": "b15",
       "index": 228,
-      "source": "是謂「變數」也。",
-      "isCode": false
+      "source": "曰三。",
+      "isCode": true
     },
     {
       "id": "c1-s229",
       "chapterId": "c1",
-      "blockId": "b14",
+      "blockId": "b15",
       "index": 229,
-      "source": "復觀此二句。",
-      "isCode": false
+      "source": "名之曰「甲」。",
+      "isCode": true
     },
     {
       "id": "c1-s230",
       "chapterId": "c1",
       "blockId": "b15",
       "index": 230,
-      "source": "吾有一數。",
+      "source": "\n吾有一言。",
       "isCode": true
     },
     {
@@ -1848,7 +1848,7 @@
       "chapterId": "c1",
       "blockId": "b15",
       "index": 231,
-      "source": "曰三。",
+      "source": "曰『問天地好在。』。",
       "isCode": true
     },
     {
@@ -1856,47 +1856,47 @@
       "chapterId": "c1",
       "blockId": "b15",
       "index": 232,
-      "source": "名之曰「甲」。",
+      "source": "書之。",
       "isCode": true
     },
     {
       "id": "c1-s233",
       "chapterId": "c1",
-      "blockId": "b15",
+      "blockId": "b16",
       "index": 233,
-      "source": "\n吾有一言。",
-      "isCode": true
+      "source": "`吾有一數` `吾有一言`者。",
+      "isCode": false
     },
     {
       "id": "c1-s234",
       "chapterId": "c1",
-      "blockId": "b15",
+      "blockId": "b16",
       "index": 234,
-      "source": "曰「「問天地好在。",
-      "isCode": true
+      "source": "蓋言是變數之類也。",
+      "isCode": false
     },
     {
       "id": "c1-s235",
       "chapterId": "c1",
-      "blockId": "b15",
+      "blockId": "b16",
       "index": 235,
-      "source": "」」。",
-      "isCode": true
+      "source": "數者。",
+      "isCode": false
     },
     {
       "id": "c1-s236",
       "chapterId": "c1",
-      "blockId": "b15",
+      "blockId": "b16",
       "index": 236,
-      "source": "書之。",
-      "isCode": true
+      "source": "所以算也。",
+      "isCode": false
     },
     {
       "id": "c1-s237",
       "chapterId": "c1",
       "blockId": "b16",
       "index": 237,
-      "source": "`吾有一數` `吾有一言`者。",
+      "source": "言者。",
       "isCode": false
     },
     {
@@ -1904,7 +1904,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 238,
-      "source": "蓋言是變數之類也。",
+      "source": "所以吿人也。",
       "isCode": false
     },
     {
@@ -1912,7 +1912,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 239,
-      "source": "數者。",
+      "source": "物各其類。",
       "isCode": false
     },
     {
@@ -1920,7 +1920,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 240,
-      "source": "所以算也。",
+      "source": "不宜混同。",
       "isCode": false
     },
     {
@@ -1928,7 +1928,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 241,
-      "source": "言者。",
+      "source": "猶馬之不同於鹿。",
       "isCode": false
     },
     {
@@ -1936,7 +1936,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 242,
-      "source": "所以吿人也。",
+      "source": "人之不同於鬼。",
       "isCode": false
     },
     {
@@ -1944,7 +1944,7 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 243,
-      "source": "物各其類。",
+      "source": "遂預言之。",
       "isCode": false
     },
     {
@@ -1952,39 +1952,39 @@
       "chapterId": "c1",
       "blockId": "b16",
       "index": 244,
-      "source": "不宜混同。",
+      "source": "以明其類。",
       "isCode": false
     },
     {
       "id": "c1-s245",
       "chapterId": "c1",
-      "blockId": "b16",
+      "blockId": "b17",
       "index": 245,
-      "source": "猶馬之不同於鹿。",
+      "source": "`曰三` `曰『問天地好在。』`",
       "isCode": false
     },
     {
       "id": "c1-s246",
       "chapterId": "c1",
-      "blockId": "b16",
+      "blockId": "b17",
       "index": 246,
-      "source": "人之不同於鬼。",
+      "source": "者。",
       "isCode": false
     },
     {
       "id": "c1-s247",
       "chapterId": "c1",
-      "blockId": "b16",
+      "blockId": "b17",
       "index": 247,
-      "source": "遂預言之。",
+      "source": "所以命其實也。",
       "isCode": false
     },
     {
       "id": "c1-s248",
       "chapterId": "c1",
-      "blockId": "b16",
+      "blockId": "b17",
       "index": 248,
-      "source": "以明其類。",
+      "source": "後若有問數幾何者。",
       "isCode": false
     },
     {
@@ -1992,7 +1992,7 @@
       "chapterId": "c1",
       "blockId": "b17",
       "index": 249,
-      "source": "`曰三` `曰『問天地好在。",
+      "source": "乃自是知其為三。",
       "isCode": false
     },
     {
@@ -2000,39 +2000,39 @@
       "chapterId": "c1",
       "blockId": "b17",
       "index": 250,
-      "source": "』`者。",
+      "source": "言亦同。",
       "isCode": false
     },
     {
       "id": "c1-s251",
       "chapterId": "c1",
-      "blockId": "b17",
+      "blockId": "b18",
       "index": 251,
-      "source": "所以命其實也。",
+      "source": "`名之曰「甲」`者。",
       "isCode": false
     },
     {
       "id": "c1-s252",
       "chapterId": "c1",
-      "blockId": "b17",
+      "blockId": "b18",
       "index": 252,
-      "source": "後若有問數幾何者。",
+      "source": "所以名變數也。",
       "isCode": false
     },
     {
       "id": "c1-s253",
       "chapterId": "c1",
-      "blockId": "b17",
+      "blockId": "b18",
       "index": 253,
-      "source": "乃自是知其為三。",
+      "source": "如人之名贓獲。",
       "isCode": false
     },
     {
       "id": "c1-s254",
       "chapterId": "c1",
-      "blockId": "b17",
+      "blockId": "b18",
       "index": 254,
-      "source": "言亦同。",
+      "source": "劍之名巨闕。",
       "isCode": false
     },
     {
@@ -2040,7 +2040,7 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 255,
-      "source": "`名之曰「甲」`者。",
+      "source": "後凡曰「贓獲」者。",
       "isCode": false
     },
     {
@@ -2048,7 +2048,7 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 256,
-      "source": "所以名變數也。",
+      "source": "乃知謂「贓獲」其人。",
       "isCode": false
     },
     {
@@ -2056,7 +2056,7 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 257,
-      "source": "如人之名贓獲。",
+      "source": "又萬物皆變化之中。",
       "isCode": false
     },
     {
@@ -2064,7 +2064,7 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 258,
-      "source": "劍之名巨闕。",
+      "source": "如昔人之廣陵。",
       "isCode": false
     },
     {
@@ -2072,7 +2072,7 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 259,
-      "source": "後凡曰「贓獲」者。",
+      "source": "鮑照之蕪城也。",
       "isCode": false
     },
     {
@@ -2080,95 +2080,95 @@
       "chapterId": "c1",
       "blockId": "b18",
       "index": 260,
-      "source": "乃知謂「贓獲」其人。",
+      "source": "今易「甲」為四如是。",
       "isCode": false
     },
     {
       "id": "c1-s261",
       "chapterId": "c1",
-      "blockId": "b18",
+      "blockId": "b19",
       "index": 261,
-      "source": "又萬物皆變化之中。",
-      "isCode": false
+      "source": "昔之「甲」者。",
+      "isCode": true
     },
     {
       "id": "c1-s262",
       "chapterId": "c1",
-      "blockId": "b18",
+      "blockId": "b19",
       "index": 262,
-      "source": "如昔人之廣陵。",
-      "isCode": false
+      "source": "今四是矣。",
+      "isCode": true
     },
     {
       "id": "c1-s263",
       "chapterId": "c1",
-      "blockId": "b18",
+      "blockId": "b20",
       "index": 263,
-      "source": "鮑照之蕪城也。",
+      "source": "`書之`者。",
       "isCode": false
     },
     {
       "id": "c1-s264",
       "chapterId": "c1",
-      "blockId": "b18",
+      "blockId": "b20",
       "index": 264,
-      "source": "今易「甲」為四如是。",
+      "source": "蓋彼運行之所得。",
       "isCode": false
     },
     {
       "id": "c1-s265",
       "chapterId": "c1",
-      "blockId": "b19",
+      "blockId": "b20",
       "index": 265,
-      "source": "昔之「甲」者。",
-      "isCode": true
+      "source": "機器自知之。",
+      "isCode": false
     },
     {
       "id": "c1-s266",
       "chapterId": "c1",
-      "blockId": "b19",
+      "blockId": "b20",
       "index": 266,
-      "source": "今四是矣。",
-      "isCode": true
+      "source": "而人無由而知之。",
+      "isCode": false
     },
     {
       "id": "c1-s267",
       "chapterId": "c1",
       "blockId": "b20",
       "index": 267,
-      "source": "`書之`者。",
+      "source": "故用此辭令其示人以果也。",
       "isCode": false
     },
     {
       "id": "c1-s268",
       "chapterId": "c1",
-      "blockId": "b20",
+      "blockId": "b21",
       "index": 268,
-      "source": "蓋彼運行之所得。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
       "id": "c1-s269",
       "chapterId": "c1",
-      "blockId": "b20",
+      "blockId": "b21",
       "index": 269,
-      "source": "機器自知之。",
+      "source": "甲字上下有符如矩尺然者。",
       "isCode": false
     },
     {
       "id": "c1-s270",
       "chapterId": "c1",
-      "blockId": "b20",
+      "blockId": "b21",
       "index": 270,
-      "source": "而人無由而知之。",
+      "source": "何焉。",
       "isCode": false
     },
     {
       "id": "c1-s271",
       "chapterId": "c1",
-      "blockId": "b20",
+      "blockId": "b21",
       "index": 271,
-      "source": "故用此辭令其示人以果也。",
+      "source": "今欲省之。",
       "isCode": false
     },
     {
@@ -2176,7 +2176,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 272,
-      "source": "或問曰。",
+      "source": "可乎。",
       "isCode": false
     },
     {
@@ -2184,7 +2184,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 273,
-      "source": "甲字上下有符如矩尺然者。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -2192,7 +2192,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 274,
-      "source": "何焉。",
+      "source": "不可。",
       "isCode": false
     },
     {
@@ -2200,7 +2200,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 275,
-      "source": "今欲省之。",
+      "source": "此引號也。",
       "isCode": false
     },
     {
@@ -2208,7 +2208,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 276,
-      "source": "可乎。",
+      "source": "「單引號」者。",
       "isCode": false
     },
     {
@@ -2216,7 +2216,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 277,
-      "source": "曰。",
+      "source": "所以別變數於其他也。",
       "isCode": false
     },
     {
@@ -2224,7 +2224,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 278,
-      "source": "不可。",
+      "source": "『雙引號』者。",
       "isCode": false
     },
     {
@@ -2232,7 +2232,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 279,
-      "source": "此引號也。",
+      "source": "所以別言語於其他也。",
       "isCode": false
     },
     {
@@ -2240,7 +2240,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 280,
-      "source": "「單引號」者。",
+      "source": "微是。",
       "isCode": false
     },
     {
@@ -2248,7 +2248,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 281,
-      "source": "所以別變數於其他也。",
+      "source": "不能別歧義也。",
       "isCode": false
     },
     {
@@ -2256,7 +2256,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 282,
-      "source": "『雙引號』者。",
+      "source": "又問曰。",
       "isCode": false
     },
     {
@@ -2264,7 +2264,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 283,
-      "source": "所以別言語於其他也。",
+      "source": "句讀。",
       "isCode": false
     },
     {
@@ -2272,7 +2272,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 284,
-      "source": "微是。",
+      "source": "挪抬。",
       "isCode": false
     },
     {
@@ -2280,7 +2280,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 285,
-      "source": "不能別歧義也。",
+      "source": "無之可乎。",
       "isCode": false
     },
     {
@@ -2288,7 +2288,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 286,
-      "source": "又問曰。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -2296,7 +2296,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 287,
-      "source": "句讀。",
+      "source": "此唯觀者助也。",
       "isCode": false
     },
     {
@@ -2304,7 +2304,7 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 288,
-      "source": "挪抬。",
+      "source": "無之無損於義。",
       "isCode": false
     },
     {
@@ -2312,62 +2312,30 @@
       "chapterId": "c1",
       "blockId": "b21",
       "index": 289,
-      "source": "無之可乎。",
+      "source": "故前例亦可書若是。",
       "isCode": false
     },
     {
       "id": "c1-s290",
       "chapterId": "c1",
-      "blockId": "b21",
+      "blockId": "b22",
       "index": 290,
-      "source": "曰。",
-      "isCode": false
+      "source": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云",
+      "isCode": true
     },
     {
       "id": "c1-s291",
       "chapterId": "c1",
-      "blockId": "b21",
+      "blockId": "b23",
       "index": 291,
-      "source": "此唯觀者助也。",
+      "source": "「問天地好在」之例。",
       "isCode": false
     },
     {
       "id": "c1-s292",
       "chapterId": "c1",
-      "blockId": "b21",
+      "blockId": "b23",
       "index": 292,
-      "source": "無之無損於義。",
-      "isCode": false
-    },
-    {
-      "id": "c1-s293",
-      "chapterId": "c1",
-      "blockId": "b21",
-      "index": 293,
-      "source": "故前例亦可書若是。",
-      "isCode": false
-    },
-    {
-      "id": "c1-s294",
-      "chapterId": "c1",
-      "blockId": "b22",
-      "index": 294,
-      "source": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰「「問天地好在」」書之云云",
-      "isCode": true
-    },
-    {
-      "id": "c1-s295",
-      "chapterId": "c1",
-      "blockId": "b23",
-      "index": 295,
-      "source": "「問天地好在」之例。",
-      "isCode": false
-    },
-    {
-      "id": "c1-s296",
-      "chapterId": "c1",
-      "blockId": "b23",
-      "index": 296,
       "source": "至此略明矣。",
       "isCode": false
     }
