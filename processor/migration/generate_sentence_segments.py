@@ -4,8 +4,10 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
+from processor.utils.cli_style import format_metadata_rows, print_warning
+
 """
-Generate a structured segments mapping from existing text segments and
+Generate chapter-scoped segment mapping files from existing text segments and
 sentence-level JSON files.
 
 This script reads:
@@ -13,21 +15,23 @@ This script reads:
   - renderer/public/segments/{chapter}-{index}.txt
   - renderer/public/segments/{chapter}.json (isCodeBlock metadata, if present)
 
-and writes:
-  - renderer/src/generated/sentence-segments.ts
+and writes, per chapter:
+  - renderer/public/segments/c{n}.segments.json
 
-The output format is a TypeScript file exporting:
-
-  export type SentenceSegment = {
-    id: string;             // e.g. "1-17"
-    chapterId: string;      // e.g. "c1"
-    segmentIndex: number;   // e.g. 17
-    sentenceIds: string[];  // e.g. ["c1-s245", "c1-s246"]
-    isCodeBlock: boolean;
-  };
-
-  export const segments = [...] as const;
-  export type Segment = (typeof segments)[number];
+Each JSON file contains:
+{
+  "chapterId": "c1",
+  "chapterNumber": 1,
+  "segments": [
+    {
+      "id": "1-17",
+      "chapterId": "c1",
+      "segmentIndex": 17,
+      "sentenceIds": ["c1-s245", "c1-s246"],
+      "isCodeBlock": false
+    }
+  ]
+}
 """
 
 
@@ -154,19 +158,43 @@ def build_sentence_segments_for_chapter(
     """
     sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
-        print(f"  ⚠ No sentences file found for {chapter_id}, skipping.")
+        print_warning(
+            "Missing sentences file",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return []
 
     chapter_sentences = load_chapter_sentences(sentences_path)
     if not chapter_sentences:
-        print(f"  ⚠ No sentences entries in {sentences_path}, skipping.")
+        print_warning(
+            "No sentences entries",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return []
 
     # Determine numeric chapter number from chapter_id like "c1"
     try:
         chapter_num = int(chapter_id.lstrip("c"))
     except ValueError:
-        print(f"  ⚠ Invalid chapter id format: {chapter_id}, skipping.")
+        print_warning(
+            "Invalid chapter identifier",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return []
 
     # Load code-block metadata if present (e.g. 3.json, 4.json)
@@ -181,7 +209,15 @@ def build_sentence_segments_for_chapter(
         key=natural_segment_sort_key,
     )
     if not segment_files:
-        print(f"  ⚠ No segment files found for chapter {chapter_num}, skipping.")
+        print_warning(
+            "No segment files found",
+            format_metadata_rows(
+                [
+                    ("Chapter", str(chapter_num)),
+                    ("Segments dir", segments_dir.as_posix()),
+                ]
+            ),
+        )
         return []
 
     results: List[Dict[str, Any]] = []
@@ -201,9 +237,15 @@ def build_sentence_segments_for_chapter(
 
         for cn_sentence in cn_sentences:
             if sent_index >= len(chapter_sentences):
-                print(
-                    f"  ⚠ Ran out of chapter sentences while processing {seg_path.name}; "
-                    f"remaining segment content will be ignored."
+                print_warning(
+                    "Ran out of canonical sentences",
+                    format_metadata_rows(
+                        [
+                            ("Segment", seg_path.name),
+                            ("Chapter ID", chapter_id),
+                            ("Chapter index", str(sent_index)),
+                        ]
+                    ),
                 )
                 break
 
@@ -282,14 +324,32 @@ def build_sentence_segments_for_chapter(
     return results
 
 
-def generate_sentence_segments_ts(root: Path) -> None:
+def write_chapter_segments_json(
+    output_dir: Path,
+    chapter_id: str,
+    chapter_num: int,
+    segments: List[Dict[str, Any]],
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / f"{chapter_id}.segments.json"
+    payload = {
+        "chapterId": chapter_id,
+        "chapterNumber": chapter_num,
+        "segments": segments,
+    }
+    output_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    return output_path
+
+
+def generate_sentence_segments_json(root: Path) -> None:
     sentences_dir = root / "renderer" / "public" / "sentences"
     segments_dir = root / "renderer" / "public" / "segments"
-    output_dir = root / "renderer" / "src" / "generated"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / "sentence-segments.ts"
+    if not segments_dir.exists():
+        raise SystemExit(f"Segments directory not found: {segments_dir}")
 
-    # Sort chapters in numeric order by chapter number (c1, c2, ..., c10),
+    # Sort chapters in numeric order by chapter number (c1, c2, ...),
     # using the canonical sentence files `c{n}.sentences.json`.
     chapter_files = list(sentences_dir.glob("c*.sentences.json"))
     chapter_files.sort(
@@ -302,7 +362,7 @@ def generate_sentence_segments_ts(root: Path) -> None:
     if not chapter_files:
         raise SystemExit(f"No sentence JSON files found in {sentences_dir}")
 
-    all_segments: List[Dict[str, Any]] = []
+    total_segments = 0
 
     print("Building sentence segments from existing segments and sentences...")
     for sentences_path in chapter_files:
@@ -312,68 +372,38 @@ def generate_sentence_segments_ts(root: Path) -> None:
         chapter_segments = build_sentence_segments_for_chapter(
             chapter_id, sentences_dir, segments_dir
         )
-        all_segments.extend(chapter_segments)
+        if not chapter_segments:
+            print_warning(
+                "No sentence segments generated",
+                format_metadata_rows(
+                    [
+                        ("Chapter ID", chapter_id),
+                        ("Sentences path", sentences_path.as_posix()),
+                        ("Segments dir", segments_dir.as_posix()),
+                    ]
+                ),
+            )
+            continue
 
-    # Sort by (chapter number, segment index) for stable output
-    def sort_key(entry: Dict[str, Any]) -> Tuple[int, int]:
-        cid = entry.get("chapterId", "")
         try:
-            cnum = int(str(cid).lstrip("c"))
+            chapter_num = int(chapter_id.lstrip("c"))
         except ValueError:
-            cnum = 0
-        return (cnum, int(entry.get("segmentIndex", 0)))
+            chapter_num = 0
 
-    all_segments.sort(key=sort_key)
+        output_path = write_chapter_segments_json(
+            segments_dir, chapter_id, chapter_num, chapter_segments
+        )
+        total_segments += len(chapter_segments)
+        print(f"  • Wrote {len(chapter_segments)} segments → {output_path}")
 
-    # Emit TypeScript
-    lines: List[str] = []
-    lines.append(
-        "// Auto-generated by processor/migration/generate_sentence_segments.py. "
-        "Do not edit manually."
+    print(
+        f"Done. Wrote {total_segments} segments across {len(chapter_files)} chapter files."
     )
-    lines.append("")
-    lines.append("export type SentenceSegment = {")
-    lines.append("  id: string;")
-    lines.append("  chapterId: string;")
-    lines.append("  segmentIndex: number;")
-    lines.append("  sentenceIds: string[];")
-    lines.append("  isCodeBlock: boolean;")
-    lines.append("};")
-    lines.append("")
-    lines.append("export const segments = [")
-
-    for seg in all_segments:
-        seg_id = seg["id"]
-        chapter_id = seg["chapterId"]
-        segment_index = seg["segmentIndex"]
-        sentence_ids: List[str] = seg["sentenceIds"]
-        is_code_block = seg["isCodeBlock"]
-
-        lines.append("  {")
-        lines.append(f'    id: "{seg_id}",')
-        lines.append(f'    chapterId: "{chapter_id}",')
-        lines.append(f"    segmentIndex: {segment_index},")
-
-        if sentence_ids:
-            ids_literal = ", ".join(f'"{sid}"' for sid in sentence_ids)
-            lines.append(f"    sentenceIds: [{ids_literal}],")
-        else:
-            lines.append("    sentenceIds: [],")
-
-        lines.append(f"    isCodeBlock: {str(is_code_block).lower()},")
-        lines.append("  },")
-
-    lines.append("] as const;")
-    lines.append("export type Segment = (typeof segments)[number];")
-    lines.append("")
-
-    output_path.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {len(all_segments)} segments to {output_path}")
 
 
 def main() -> None:
     root = Path(__file__).resolve().parents[2]
-    generate_sentence_segments_ts(root)
+    generate_sentence_segments_json(root)
 
 
 if __name__ == "__main__":

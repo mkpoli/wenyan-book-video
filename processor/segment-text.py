@@ -1,323 +1,443 @@
-import marimo
+from __future__ import annotations
 
-__generated_with = "0.17.7"
-app = marimo.App(width="medium")
-
-
-@app.cell
-def _():
-    import json
-    import re
-    from pathlib import Path
-
-    return Path, json, re
+import json
+import re
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
 
 
-@app.cell
-def _(re):
-    def visible_length(text: str) -> int:
-        """Count non-whitespace characters only (ignore spaces, tabs, newlines)."""
-        return len(re.sub(r"\s+", "", text))
+@dataclass
+class RawSegment:
+    id: str
+    segment_index: int
+    text: str
+    is_code_block: bool
 
-    def split_paragraphs(text):
-        """Split text into paragraphs (separated by blank lines)."""
-        # Split by double newlines (blank lines)
-        paragraphs = re.split(r"\n\s*\n", text)
-        # Filter out empty paragraphs
-        return [p.strip() for p in paragraphs if p.strip()]
 
-    def remove_markdown(text, preserve_newlines=False):
-        """Remove markdown formatting from text, preserving paragraph structure.
-        If preserve_newlines is True, line breaks (and exact indentation) are preserved
-        for code blocks.
+@dataclass
+class ChapterSegments:
+    chapter_id: str
+    chapter_num: int
+    segments: list[RawSegment]
 
-        Note:
-        - Fenced code block markers (```...```) are handled at the paragraph
-          level in process_chapter and are not stripped here.
-        - Inline code spans delimited by backticks (e.g. `code`) are preserved
-          verbatim so they can be handled specially downstream.
-        """
-        # Convert double brackets 「「　」」 to 『 』
-        text = text.replace("「「", "『")
-        text = text.replace("」」", "』")
 
-        # Remove headings (# ...)
-        text = re.sub(r"^#+\s+.*$", "", text, flags=re.MULTILINE)
+@dataclass
+class SentenceSegmentRecord:
+    id: str
+    chapter_id: str
+    chapter_num: int
+    segment_index: int
+    sentence_ids: list[str]
+    is_code_block: bool
 
-        # Remove list markers (- ...) but keep the content
-        text = re.sub(r"^-\s+", "", text, flags=re.MULTILINE)
 
-        if preserve_newlines:
-            # For code blocks, preserve newlines and the exact amount of whitespace.
-            # Do not collapse multiple spaces/tabs; just return the text as-is after
-            # the basic markdown cleanups above.
-            return text
-        else:
-            # Convert multiple whitespace (but preserve single newlines within paragraph)
-            # Replace multiple spaces/tabs with single space
-            text = re.sub(r"[ \t]+", " ", text)
-            # Replace multiple newlines with single space (paragraph boundaries already split)
-            text = re.sub(r"\n+", " ", text)
-            return text.strip()
+def serialize_segment_record(record: SentenceSegmentRecord) -> dict[str, Any]:
+    return {
+        "id": record.id,
+        "chapterId": record.chapter_id,
+        "segmentIndex": record.segment_index,
+        "sentenceIds": record.sentence_ids,
+        "isCodeBlock": record.is_code_block,
+    }
 
-    def split_sentences(text):
-        """Split text into sentences ending with '。'"""
-        # Split by '。' and keep sentences that end with it
-        sentences = []
-        parts = text.split("。")
 
-        for i, part in enumerate(parts):
-            part = part.strip()
-            if part:
-                # Add '。' back to all parts except possibly the last one
-                # But since we only want sentences ending with '。', we'll add it to all
-                if i < len(parts) - 1:
-                    sentences.append(part + "。")
-                elif text.endswith("。"):
-                    # Last part and text ends with '。', so add it
-                    sentences.append(part + "。")
-                # If text doesn't end with '。', we skip the last part
+def visible_length(text: str) -> int:
+    return len(re.sub(r"\s+", "", text))
 
-        return [s for s in sentences if s and s.endswith("。")]
 
-    def create_segments(sentences, min_chars=85, max_chars=95):
-        """Group sentences into segments of 85-95 characters.
-        This function processes sentences within a single paragraph only."""
-        segments = []
-        current_segment = []
-        current_length = 0  # measured using visible_length (ignoring whitespace)
-        i = 0
+def remove_markdown(text: str, preserve_newlines: bool = False) -> str:
+    text = text.replace("「「", "『")
+    text = text.replace("」」", "』")
 
-        while i < len(sentences):
-            sentence = sentences[i]
-            sentence_length = visible_length(sentence)
+    text = re.sub(r"^#+\s+.*$", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^-\s+", "", text, flags=re.MULTILINE)
 
-            # If current segment is empty, start with this sentence
-            if not current_segment:
-                current_segment.append(sentence)
-                current_length = sentence_length
-                i += 1
-                continue
+    if preserve_newlines:
+        return text
 
-            # Check if adding this sentence would exceed max
-            if current_length + sentence_length > max_chars:
-                # If current segment is already at least min_chars, finalize it
-                if current_length >= min_chars:
-                    segments.append("".join(current_segment))
-                    current_segment = []
-                    current_length = 0
-                    # Don't increment i, process this sentence again
-                else:
-                    # Current segment is too short, but adding would exceed max
-                    # Add it anyway to avoid infinite loop, then finalize
-                    current_segment.append(sentence)
-                    current_length += sentence_length
-                    segments.append("".join(current_segment))
-                    current_segment = []
-                    current_length = 0
-                    i += 1
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n+", " ", text)
+    return text.strip()
+
+
+def split_sentences(text: str) -> list[str]:
+    sentences: list[str] = []
+    parts = text.split("。")
+
+    for i, part in enumerate(parts):
+        part = part.strip()
+        if not part:
+            continue
+        if i < len(parts) - 1 or text.endswith("。"):
+            sentences.append(part + "。")
+
+    return [s for s in sentences if s.endswith("。")]
+
+
+def create_segments(sentences: list[str], min_chars: int = 85, max_chars: int = 95) -> list[str]:
+    segments: list[str] = []
+    current_segment: list[str] = []
+    current_length = 0
+    i = 0
+
+    while i < len(sentences):
+        sentence = sentences[i]
+        sentence_length = visible_length(sentence)
+
+        if not current_segment:
+            current_segment.append(sentence)
+            current_length = sentence_length
+            i += 1
+            continue
+
+        if current_length + sentence_length > max_chars:
+            if current_length >= min_chars:
+                segments.append("".join(current_segment))
+                current_segment = []
+                current_length = 0
             else:
-                # Can add this sentence
                 current_segment.append(sentence)
                 current_length += sentence_length
+                segments.append("".join(current_segment))
+                current_segment = []
+                current_length = 0
                 i += 1
+        else:
+            current_segment.append(sentence)
+            current_length += sentence_length
+            i += 1
 
-                # If we're in the target range and next sentence would push us over,
-                # consider finalizing (but only if we have more sentences)
-                if current_length >= min_chars and i < len(sentences):
-                    next_sentence_length = visible_length(sentences[i])
-                    if current_length + next_sentence_length > max_chars:
-                        segments.append("".join(current_segment))
-                        current_segment = []
-                        current_length = 0
-
-        # Add remaining segment if any
-        if current_segment:
-            segments.append("".join(current_segment))
-
-        return segments
-
-    return create_segments, remove_markdown, split_paragraphs, split_sentences
-
-
-@app.cell
-def _(create_segments, json, remove_markdown, split_sentences, Path):
-    def segments_exist(chapter_num, output_dir):
-        """Check if segments already exist for a chapter."""
-        # Check if at least one segment file exists for this chapter
-        pattern = f"{chapter_num}-*.txt"
-        existing_files = list(output_dir.glob(pattern))
-        exists = len(existing_files) > 0
-        return exists
-
-    def process_chapter(chapter_json_path, output_dir):
-        """Process a single chapter JSON file from renderer/public/chapters."""
-        # Load chapter data from JSON produced by parse-markdown.py
-        with open(chapter_json_path, "r", encoding="utf-8") as f:
-            chapter_data = json.load(f)
-
-        chapter_num = chapter_data.get("number")
-        if chapter_num is None:
-            # Fallback: derive from filename like "c1.json"
-            chapter_num = int(chapter_json_path.stem.lstrip("c"))
-        chapter_num = str(int(chapter_num))  # normalize
-
-        blocks = chapter_data.get("blocks", [])
-
-        all_segments = []
-        segment_metadata: dict[str, dict[str, bool]] = {}
-        segment_counter = 1
-
-        for block in blocks:
-            block_type = block.get("type")
-            is_code_block = block_type == "code"
-            paragraph_segments = []
-
-            if block_type == "code":
-                # Code block: source contains fenced markdown (``` ... ```).
-                source = block.get("source") or ""
-                lines = source.split("\n")
-            cleaned_lines = []
-            for line in lines:
-                # Strip fence lines but keep code as-is
-                if line.strip().startswith("```"):
-                    continue
-                cleaned_lines.append(line)
-
-            paragraph = "\n".join(cleaned_lines)
-            if not paragraph.strip():
-                continue
-
-                # Remove minimal markdown but preserve newlines/indentation
-                text = remove_markdown(paragraph, preserve_newlines=True)
-            if not text.strip():
-                continue
-
-                # Replicate previous code-block segmentation logic
-                lines = text.split("\n")
-                while lines and not lines[0].strip():
-                    lines.pop(0)
-                while lines and not lines[-1].strip():
-                    lines.pop()
-
-                code_text = "\n".join(lines)
-                if len(code_text) <= 95:
-                    paragraph_segments = [code_text] if code_text else []
-                else:
-                    paragraph_segments = []
-                    current_segment_lines = []
+            if current_length >= min_chars and i < len(sentences):
+                next_length = visible_length(sentences[i])
+                if current_length + next_length > max_chars:
+                    segments.append("".join(current_segment))
+                    current_segment = []
                     current_length = 0
 
-                    for line in lines:
-                        line_length = len(line) + 1  # +1 for newline
-                        if current_length + line_length > 95 and current_segment_lines:
-                            paragraph_segments.append("\n".join(current_segment_lines))
-                            current_segment_lines = [line]
-                            current_length = line_length
-                        else:
-                            current_segment_lines.append(line)
-                            current_length += line_length
+    if current_segment:
+        segments.append("".join(current_segment))
 
-                    if current_segment_lines:
-                        paragraph_segments.append("\n".join(current_segment_lines))
-
-            elif block_type == "list":
-                # Reconstruct a markdown list paragraph from items so that
-                # remove_markdown + sentence splitting behave as before.
-                items = block.get("items") or []
-                if not items:
-                    continue
-
-                paragraph_markdown = "\n".join(f"- {item}" for item in items)
-                text = remove_markdown(paragraph_markdown, preserve_newlines=False)
-                if not text.strip():
-                    continue
-
-                sentences = split_sentences(text)
-                if sentences:
-                    paragraph_segments = create_segments(sentences)
-                else:
-                    if text.strip():
-                        paragraph_segments = [text.strip()]
-
-            else:
-                # Plain text block
-                source = block.get("source") or ""
-                paragraph = source
-                if not paragraph.strip():
-                    continue
-
-                text = remove_markdown(paragraph, preserve_newlines=False)
-                if not text.strip():
-                    continue
-
-                sentences = split_sentences(text)
-                if sentences:
-                    paragraph_segments = create_segments(sentences)
-                else:
-                    if text.strip():
-                        paragraph_segments = [text.strip()]
-
-            # Track metadata for each segment from this block
-            for segment in paragraph_segments:
-                segment_id = f"{chapter_num}-{segment_counter}"
-                segment_metadata[segment_id] = {"isCodeBlock": is_code_block}
-                segment_counter += 1
-                all_segments.append(segment)
-
-        # Write segments to files
-        for i, segment in enumerate(all_segments, start=1):
-            output_path = output_dir / f"{chapter_num}-{i}.txt"
-            with open(output_path, "w", encoding="utf-8") as f:
-                f.write(segment)
-
-        # Write metadata JSON file for this chapter
-        metadata_path = output_dir / f"{chapter_num}.json"
-        with open(metadata_path, "w", encoding="utf-8") as f:
-            json.dump(segment_metadata, f, ensure_ascii=False, indent=2)
-
-        print(f"Processed {chapter_json_path.name}: {len(all_segments)} segments")
-
-    return process_chapter, segments_exist
+    return segments
 
 
-@app.cell
-def _(Path):
-    chapters_dir = Path("../renderer/public/chapters").resolve()
-    output_dir = Path("../renderer/public/segments").resolve()
+def segment_code_block(source: str) -> list[str]:
+    lines = []
+    for line in source.splitlines():
+        if line.strip().startswith("```"):
+            continue
+        lines.append(line)
 
-    # Ensure output directory exists
-    output_dir.mkdir(exist_ok=True)
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
 
-    # Find all chapter JSON files
-    chapter_files = sorted(chapters_dir.glob("c*.json"))
-    return chapter_files, output_dir
+    if not lines:
+        return []
+
+    code_text = "\n".join(lines)
+    if len(code_text) <= 95:
+        return [code_text]
+
+    segments: list[str] = []
+    current_lines: list[str] = []
+    current_length = 0
+
+    for line in lines:
+        line_length = len(line) + 1
+        if current_length + line_length > 95 and current_lines:
+            segments.append("\n".join(current_lines))
+            current_lines = [line]
+            current_length = line_length
+        else:
+            current_lines.append(line)
+            current_length += line_length
+
+    if current_lines:
+        segments.append("\n".join(current_lines))
+
+    return segments
 
 
-@app.cell
-def _(chapter_files, json, output_dir, process_chapter, segments_exist):
-    # Process each chapter JSON
+def segment_chapter(chapter_path: Path) -> ChapterSegments:
+    with chapter_path.open("r", encoding="utf-8") as f:
+        chapter_data = json.load(f)
+
+    chapter_num = chapter_data.get("number")
+    if chapter_num is None:
+        chapter_num = int(chapter_path.stem.lstrip("c"))
+    chapter_num = int(chapter_num)
+
+    chapter_id = chapter_data.get("id") or f"c{chapter_num}"
+    blocks = chapter_data.get("blocks", [])
+
+    segments: list[RawSegment] = []
+    segment_counter = 1
+
+    for block in blocks:
+        block_type = block.get("type")
+        is_code_block = block_type == "code"
+        paragraph_segments: list[str] = []
+
+        if block_type == "code":
+            paragraph_segments = segment_code_block(block.get("source") or "")
+        elif block_type == "list":
+            items = block.get("items") or []
+            if not items:
+                continue
+            paragraph_markdown = "\n".join(f"- {item}" for item in items)
+            text = remove_markdown(paragraph_markdown, preserve_newlines=False)
+            if not text.strip():
+                continue
+            sentences = split_sentences(text)
+            if sentences:
+                paragraph_segments = create_segments(sentences)
+            elif text.strip():
+                paragraph_segments = [text.strip()]
+        else:
+            source = block.get("source") or ""
+            if not source.strip():
+                continue
+            text = remove_markdown(source, preserve_newlines=False)
+            if not text.strip():
+                continue
+            sentences = split_sentences(text)
+            if sentences:
+                paragraph_segments = create_segments(sentences)
+            elif text.strip():
+                paragraph_segments = [text.strip()]
+
+        for segment_text in paragraph_segments:
+            cleaned = segment_text.strip()
+            if not cleaned:
+                continue
+            segment_id = f"{chapter_num}-{segment_counter}"
+            segments.append(
+                RawSegment(
+                    id=segment_id,
+                    segment_index=segment_counter,
+                    text=cleaned,
+                    is_code_block=is_code_block,
+                )
+            )
+            segment_counter += 1
+
+    return ChapterSegments(chapter_id=chapter_id, chapter_num=chapter_num, segments=segments)
+
+
+def split_chinese_sentences(text: str) -> list[str]:
+    sentences: list[str] = []
+    current_sentence: list[str] = []
+    inside_quotes = False
+
+    i = 0
+    length = len(text)
+
+    while i < length:
+        char = text[i]
+
+        if char == "『":
+            inside_quotes = True
+            current_sentence.append(char)
+        elif char == "』":
+            inside_quotes = False
+            current_sentence.append(char)
+            if i > 0:
+                prev_char = text[i - 1]
+                if prev_char in ("。", "！", "？"):
+                    next_char = text[i + 1] if i + 1 < length else None
+                    if next_char not in ("。", "！", "？"):
+                        processed = "".join(current_sentence).strip()
+                        if processed:
+                            sentences.append(processed)
+                        current_sentence = []
+        elif char == "」":
+            current_sentence.append(char)
+            j = i + 1
+            next_non_ws = None
+            while j < length:
+                lookahead = text[j]
+                if not lookahead.isspace():
+                    next_non_ws = lookahead
+                    break
+                j += 1
+            if next_non_ws == "曰":
+                processed = "".join(current_sentence).strip()
+                if processed:
+                    sentences.append(processed)
+                current_sentence = []
+        elif char in ("。", "！", "？") and not inside_quotes:
+            current_sentence.append(char)
+            processed = "".join(current_sentence).strip()
+            if processed:
+                sentences.append(processed)
+            current_sentence = []
+        else:
+            current_sentence.append(char)
+
+        i += 1
+
+    processed = "".join(current_sentence).strip()
+    if processed:
+        sentences.append(processed)
+
+    return [s for s in sentences if s]
+
+
+def normalize_for_comparison(text: str) -> str:
+    text = text.replace("`", "")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def load_chapter_sentences(sentences_dir: Path, chapter_id: str) -> list[dict[str, Any]]:
+    sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
+    if not sentences_path.exists():
+        print(f"⚠ No sentences file found for {chapter_id}, skipping chapter.")
+        return []
+
+    with sentences_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    return list(data.get("sentences", []))
+
+
+def map_segments_to_sentence_ids(
+    chapter_segments: ChapterSegments, chapter_sentences: list[dict[str, Any]]
+) -> list[SentenceSegmentRecord]:
+    if not chapter_sentences:
+        return []
+
+    sent_index = 0
+    results: list[SentenceSegmentRecord] = []
+
+    for segment in chapter_segments.segments:
+        segment_text = segment.text.strip()
+        cn_sentences = split_chinese_sentences(segment_text)
+        if not cn_sentences and segment_text:
+            cn_sentences = [segment_text]
+
+        sentence_ids_for_segment: list[str] = []
+
+        for cn_sentence in cn_sentences:
+            if sent_index >= len(chapter_sentences):
+                print(
+                    f"⚠ Ran out of sentences while processing segment {segment.id} in {chapter_segments.chapter_id}."
+                )
+                break
+
+            entry = chapter_sentences[sent_index]
+            sent_id = entry.get("id")
+            canonical_source = entry.get("source", "")
+
+            canonical_normalized = (
+                normalize_for_comparison(canonical_source)
+                if isinstance(canonical_source, str)
+                else ""
+            )
+            cn_normalized = normalize_for_comparison(cn_sentence)
+
+            spans_multiple = False
+            if canonical_normalized and cn_normalized and canonical_normalized in cn_normalized:
+                if sent_index + 1 < len(chapter_sentences):
+                    next_source = chapter_sentences[sent_index + 1].get("source", "")
+                    next_normalized = normalize_for_comparison(next_source)
+                    if next_normalized:
+                        combined = canonical_normalized + " " + next_normalized
+                        if combined.replace(" ", "") in cn_normalized.replace(" ", ""):
+                            spans_multiple = True
+
+            if spans_multiple:
+                if sent_id:
+                    sentence_ids_for_segment.append(sent_id)
+                sent_index += 1
+                if sent_index < len(chapter_sentences):
+                    next_entry = chapter_sentences[sent_index]
+                    next_id = next_entry.get("id")
+                    if next_id:
+                        sentence_ids_for_segment.append(next_id)
+                    sent_index += 1
+                continue
+
+            if sent_id:
+                sentence_ids_for_segment.append(sent_id)
+            sent_index += 1
+
+        results.append(
+            SentenceSegmentRecord(
+                id=segment.id,
+                chapter_id=chapter_segments.chapter_id,
+                chapter_num=chapter_segments.chapter_num,
+                segment_index=segment.segment_index,
+                sentence_ids=sentence_ids_for_segment,
+                is_code_block=segment.is_code_block,
+            )
+        )
+
+    return results
+
+
+def write_chapter_segments_json(
+    output_dir: Path,
+    chapter: ChapterSegments,
+    segments: list[SentenceSegmentRecord],
+    *,
+    overwrite: bool = False,
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / f"{chapter.chapter_id}.segments.json"
+    payload = {
+        "chapterId": chapter.chapter_id,
+        "chapterNumber": chapter.chapter_num,
+        "segments": [serialize_segment_record(seg) for seg in segments],
+    }
+    if output_path.exists() and not overwrite:
+        print(
+            f"⚠ {output_path} already exists; skipping write. Pass overwrite=True to replace existing output."
+        )
+        return output_path
+
+    output_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    return output_path
+
+
+def main() -> None:
+    root = Path(__file__).resolve().parents[1]
+    chapters_dir = root / "renderer" / "public" / "chapters"
+    sentences_dir = root / "renderer" / "public" / "sentences"
+    segments_output_dir = root / "renderer" / "public" / "segments"
+
+    chapter_files = sorted(chapters_dir.glob("c*.json"), key=lambda p: int(p.stem.lstrip("c")))
+    if not chapter_files:
+        raise SystemExit(f"No chapter JSON files found in {chapters_dir}")
+
+    total_segments = 0
+
     for chapter_file in chapter_files:
-        with open(chapter_file, "r", encoding="utf-8") as f:
-            chapter_data = json.load(f)
-
-        chapter_num = chapter_data.get("number")
-        if chapter_num is None:
-            chapter_num = int(chapter_file.stem.lstrip("c"))
-        chapter_num = str(int(chapter_num))
-
-        # Check if segments already exist
-        if segments_exist(chapter_num, output_dir):
-            existing_files = list(output_dir.glob(f"{chapter_num}-*.txt"))
+        chapter_segments = segment_chapter(chapter_file)
+        chapter_id = chapter_segments.chapter_id
+        sentences = load_chapter_sentences(sentences_dir, chapter_id)
+        mapped = map_segments_to_sentence_ids(chapter_segments, sentences)
+        if not mapped:
             print(
-                f"Skipping {chapter_file.name}: {len(existing_files)} segment files already exist"
+                f"Processed {chapter_file.name}: no sentence mappings produced; skipping JSON write."
             )
             continue
 
-        print(f"Processing {chapter_file.name} (chapter {chapter_num})...")
-        process_chapter(chapter_file, output_dir)
-    return
+        output_path = write_chapter_segments_json(
+            segments_output_dir, chapter_segments, mapped
+        )
+        total_segments += len(mapped)
+        print(
+            f"Processed {chapter_file.name}: {len(chapter_segments.segments)} segments → {len(mapped)} SentenceSegment records → {output_path}"
+        )
+
+    print(
+        f"Wrote {total_segments} sentence segments across {len(chapter_files)} chapter files."
+    )
 
 
 if __name__ == "__main__":
-    app.run()
+    main()
