@@ -292,7 +292,13 @@ def generate_sentence_segments_ts(root: Path) -> None:
     # Sort chapters in numeric order by chapter number (c1, c2, ..., c10),
     # using the canonical sentence files `c{n}.sentences.json`.
     chapter_files = list(sentences_dir.glob("c*.sentences.json"))
-    chapter_files.sort(key=lambda p: int(p.stem.split(".")[0].lstrip("c")) if p.stem.split(".")[0].lstrip("c").isdigit() else 0)
+    chapter_files.sort(
+        key=lambda p: (
+            int(p.stem.split(".")[0].lstrip("c"))
+            if p.stem.split(".")[0].lstrip("c").isdigit()
+            else 0
+        )
+    )
     if not chapter_files:
         raise SystemExit(f"No sentence JSON files found in {sentences_dir}")
 
