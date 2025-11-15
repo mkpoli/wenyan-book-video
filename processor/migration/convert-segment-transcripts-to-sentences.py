@@ -9,6 +9,13 @@ from pathlib import Path
 from shutil import which
 from typing import Any, Dict, List, Tuple
 
+from processor.utils.cli_style import (
+    INNER_DIVIDER,
+    format_metadata_rows,
+    format_preview_entry,
+    print_warning,
+)
+
 from cinix_to_tupa import convert_cinix_to_tupa
 
 
@@ -24,9 +31,14 @@ def load_qieyun_dictionary() -> Dict[str, List[Tuple[str, int]]]:
     cache_path = cache_dir / "qieyun_dictionary.txt"
 
     if not cache_path.exists():
-        print(
-            f"  ⚠ Qieyun dictionary cache not found at {cache_path}; "
-            "choices metadata will be omitted."
+        print_warning(
+            "Qieyun dictionary cache missing",
+            format_metadata_rows(
+                [
+                    ("Cache path", cache_path.as_posix()),
+                    ("Effect", "Choices metadata will be omitted"),
+                ]
+            ),
         )
         return {}
 
@@ -102,15 +114,26 @@ def _lookup_meaning_cached(
     if not char:
         return []
     if not LOOKUP_SCRIPT_EXISTS:
-        print(
-            f"  ⚠ Local definition helper not found at {LOOKUP_SCRIPT}. "
-            "Choices will omit meanings."
+        print_warning(
+            "Local definition helper missing",
+            format_metadata_rows(
+                [
+                    ("Lookup script", LOOKUP_SCRIPT.as_posix()),
+                    ("Effect", "Choices will omit meanings"),
+                ]
+            ),
         )
         return []
     if not BUN_EXISTS or BUN_EXECUTABLE is None:
-        print(
-            "  ⚠ Bun executable not found in $BUN_INSTALL, $BUN_PATH, or PATH. "
-            "Choices will omit meanings."
+        print_warning(
+            "Bun executable not found",
+            format_metadata_rows(
+                [
+                    ("BUN_INSTALL", os.getenv("BUN_INSTALL", "")),
+                    ("BUN_PATH", os.getenv("BUN_PATH", "")),
+                    ("Effect", "Choices will omit meanings"),
+                ]
+            ),
         )
         return []
 
@@ -129,13 +152,31 @@ def _lookup_meaning_cached(
         stderr = ""
         if isinstance(exc, subprocess.CalledProcessError):
             stderr = (exc.stderr or "").strip()
-        print(f"  ⚠ Local definition lookup failed for '{char}': " f"{stderr or exc}")
+        print_warning(
+            "Local definition lookup failed",
+            format_metadata_rows(
+                [
+                    ("Character", char),
+                    ("Script", LOOKUP_SCRIPT.as_posix()),
+                    ("Details", stderr or str(exc)),
+                ]
+            ),
+        )
         return []
     else:
         try:
             data = json.loads(completed.stdout or "{}")
         except json.JSONDecodeError as exc:
-            print(f"  ⚠ Invalid JSON from local definition lookup for '{char}': {exc}")
+            print_warning(
+                "Invalid JSON from lookup helper",
+                format_metadata_rows(
+                    [
+                        ("Character", char),
+                        ("Script", LOOKUP_SCRIPT.as_posix()),
+                        ("Details", str(exc)),
+                    ]
+                ),
+            )
             return []
         results = data.get(char)
         return results if isinstance(results, list) else []
@@ -495,25 +536,57 @@ def convert_chapter(
     # Canonical sentences are stored as `c{n}.sentences.json`.
     sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
-        print(f"  ⚠ No sentences file found for {chapter_id}, skipping.")
+        print_warning(
+            "Missing sentences file",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return
 
     chapter_sentences = load_chapter_sentences(sentences_path)
     if not chapter_sentences:
-        print(f"  ⚠ No sentences entries in {sentences_path}, skipping.")
+        print_warning(
+            "No sentences entries",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return
 
     # Determine numeric chapter number from chapter_id like "c1"
     try:
         chapter_num = int(chapter_id.lstrip("c"))
     except ValueError:
-        print(f"  ⚠ Invalid chapter id format: {chapter_id}, skipping.")
+        print_warning(
+            "Invalid chapter identifier",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return
 
     # Check if any transcript files exist for this chapter
     transcript_files = list(transcripts_dir.glob(f"audio-{chapter_num}-*.txt"))
     if not transcript_files:
-        print(f"  ⚠ No transcript files found for chapter {chapter_num}, skipping.")
+        print_warning(
+            "No transcript files found",
+            format_metadata_rows(
+                [
+                    ("Chapter", str(chapter_num)),
+                    ("Transcripts dir", transcripts_dir.as_posix()),
+                ]
+            ),
+        )
         return
 
     # Find all segments for this chapter
@@ -522,7 +595,15 @@ def convert_chapter(
         key=natural_segment_sort_key,
     )
     if not segment_files:
-        print(f"  ⚠ No segment files found for chapter {chapter_num}, skipping.")
+        print_warning(
+            "No segment files found",
+            format_metadata_rows(
+                [
+                    ("Chapter", str(chapter_num)),
+                    ("Segments dir", segments_dir.as_posix()),
+                ]
+            ),
+        )
         return
 
     result: Dict[str, Dict[str, str]] = {}
