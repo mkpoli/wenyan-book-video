@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AbsoluteFill,
-  interpolate,
-  useCurrentFrame,
-} from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { convertCinixToTUPA } from "transcription-utils";
 
 type SentenceEntry = {
@@ -325,11 +321,12 @@ function renderTextWithQuotes(
         style.color = charColor;
       }
       if (isInlineCode) {
-        // In vertical writing mode this visually appears as a horizontal rule
-        // across the inline-code run, which still reads as a "right border".
-        style.borderLeft = "2px solid currentColor";
-        style.paddingLeft = "0em";
-        // style.marginLeft = "0.08em";
+        //   // In vertical writing mode this visually appears as a horizontal rule
+        //   // across the inline-code run, which still reads as a "right border".
+        //   style.borderLeft = "2px solid currentColor";
+        //   style.paddingLeft = "0em";
+        //   // style.marginLeft = "0.08em";
+        style.position = "relative";
       }
       return Object.keys(style).length > 0 ? style : undefined;
     })();
@@ -374,6 +371,9 @@ function renderTextWithQuotes(
           style={charStyle}
         >
           {displayChar}
+          {isInlineCode && (
+            <span className="border-l-2 border-current absolute left-2 top-0 bottom-0 opacity-80" />
+          )}
         </span>
         {suffixString ? (
           <span
