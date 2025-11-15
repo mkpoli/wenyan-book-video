@@ -100,508 +100,844 @@
     "tupa": "liet liet liet liet"
   },
   "c6-s21": {
-    "source": "罔不裁物而器。"
+    "source": "罔不裁物而器。",
+    "ipa": "mʉɑ́ŋ pʉùː ʣə̌j mʉt ɲɨ̀ː kʰị̌ː .",
+    "tupa": "muangq pu dzeojh mut njy khyih"
   },
   "c6-s22": {
-    "source": "序物而次。"
+    "source": "序物而次。",
+    "ipa": "zɨə́ː mʉt ɲɨ̀ː ʦʰǐː .",
+    "tupa": "zyoq mut njy tshih"
   },
   "c6-s23": {
-    "source": "載物而厚。"
+    "source": "載物而厚。",
+    "ipa": "ʣə̌j mʉt ɲɨ̀ː ɦúː .",
+    "tupa": "dzeojh mut njy ghouq"
   },
   "c6-s24": {
-    "source": "是謂之列。"
+    "source": "是謂之列。",
+    "ipa": "ʥiéː ɦʉ̌j ʨɨ̀ː liet .",
+    "tupa": "djieq ujh tjy liet"
   },
   "c6-s25": {
-    "source": "維編程用列之法。"
+    "source": "維編程用列之法。",
+    "ipa": "jʷìː pèn ɖiàŋ jʉǒŋ liet ʨɨ̀ː pʉop .",
+    "tupa": "jwi pen driaeng juongh liet tjy puop"
   },
   "c6-s26": {
-    "source": "或入之。"
+    "source": "或入之。",
+    "ipa": "ɦʷək ɲip ʨɨ̀ː .",
+    "tupa": "ghweok njip tjy"
   },
   "c6-s27": {
-    "source": "或取之。"
+    "source": "或取之。",
+    "ipa": "ɦʷək ʦʰʉóː ʨɨ̀ː .",
+    "tupa": "ghweok tshuoq tjy"
   },
   "c6-s28": {
-    "source": "入法二。"
+    "source": "入法二。",
+    "ipa": "ɲip pʉop ɲǐː .",
+    "tupa": "njip puop njih"
   },
   "c6-s29": {
-    "source": "曰`充`。"
+    "source": "曰`充`。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s30": {
-    "source": "曰`銜`。"
+    "source": "曰`銜`。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s31": {
-    "source": "取法三。"
+    "source": "取法三。",
+    "ipa": "ʦʰʉóː pʉop sɑ̀m .",
+    "tupa": "tshuoq puop sam"
   },
   "c6-s32": {
-    "source": "曰`其一`。"
+    "source": "曰`其一`。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s33": {
-    "source": "曰`其餘`。"
+    "source": "曰`其餘`。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s34": {
-    "source": "曰`之長`。"
+    "source": "曰`之長`。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s35": {
-    "source": "列之初創。"
+    "source": "列之初創。",
+    "ipa": "liet ʨɨ̀ː ꭧʰɨə̀ː ꭧʰɨɑ̌ŋ .",
+    "tupa": "liet tjy tshryo tshryangh"
   },
   "c6-s36": {
-    "source": "空無一物。"
+    "source": "空無一物。",
+    "ipa": "kʰùŋ mʉòː ʔit mʉt .",
+    "tupa": "khoung muo qit mut"
   },
   "c6-s37": {
-    "source": "`充`者。"
+    "source": "`充`者。",
+    "ipa": "ʨiáː .",
+    "tupa": "tjiaeq"
   },
   "c6-s38": {
-    "source": "一一添於其後也。"
+    "source": "一一添於其後也。",
+    "ipa": "ʔit ʔit tʰèm ʔɨə̀ː gɨ̀ː ɦúː jiáː .",
+    "tupa": "qit qit them qyo gy ghouq jiaeq"
   },
   "c6-s39": {
-    "source": "吾有一列。"
+    "source": "吾有一列。",
+    "ipa": "ŋòː ɦʉúː ʔit liet .",
+    "tupa": "ngo uq qit liet"
   },
   "c6-s40": {
-    "source": "名之曰「甲」。"
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
   },
   "c6-s41": {
-    "source": "充「甲」以三。"
+    "source": "充「甲」以三。",
+    "ipa": "ʨʰʉùŋ kạp jɨ́ː sɑ̀m .",
+    "tupa": "tjhung kaep jyq sam"
   },
   "c6-s42": {
-    "source": "充「甲」以五。"
+    "source": "充「甲」以五。",
+    "ipa": "ʨʰʉùŋ kạp jɨ́ː ŋóː .",
+    "tupa": "tjhung kaep jyq ngoq"
   },
   "c6-s43": {
-    "source": "當是時。"
+    "source": "當是時。",
+    "ipa": "tɑ̀ŋ ʥiéː ʥɨ̀ː .",
+    "tupa": "tang djieq djy"
   },
   "c6-s44": {
-    "source": "「甲」之列乃有二數。"
+    "source": "「甲」之列乃有二數。",
+    "ipa": "kạp ʨɨ̀ː liet nə́j ɦʉúː ɲǐː ʂʉǒː .",
+    "tupa": "kaep tjy liet neojq uq njih sruoh"
   },
   "c6-s45": {
-    "source": "曰三。"
+    "source": "曰三。",
+    "ipa": "ɦʉot sɑ̀m .",
+    "tupa": "uot sam"
   },
   "c6-s46": {
-    "source": "曰五。"
+    "source": "曰五。",
+    "ipa": "ɦʉot ŋóː .",
+    "tupa": "uot ngoq"
   },
   "c6-s47": {
-    "source": "或問曰。"
+    "source": "或問曰。",
+    "ipa": "ɦʷək mʉ̌n ɦʉot .",
+    "tupa": "ghweok munh uot"
   },
   "c6-s48": {
-    "source": "欲一舉而充之。"
+    "source": "欲一舉而充之。",
+    "ipa": "jʉok ʔit kɨə́ː ɲɨ̀ː ʨʰʉùŋ ʨɨ̀ː .",
+    "tupa": "juok qit kyoq njy tjhung tjy"
   },
   "c6-s49": {
-    "source": "可乎。"
+    "source": "可乎。",
+    "ipa": "kʰɑ́ː ɦòː .",
+    "tupa": "khaq gho"
   },
   "c6-s50": {
-    "source": "曰。"
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s51": {
-    "source": "可也。"
+    "source": "可也。",
+    "ipa": "kʰɑ́ː jiáː .",
+    "tupa": "khaq jiaeq"
   },
   "c6-s52": {
-    "source": "吾有一列。"
+    "source": "吾有一列。",
+    "ipa": "ŋòː ɦʉúː ʔit liet .",
+    "tupa": "ngo uq qit liet"
   },
   "c6-s53": {
-    "source": "名之曰「乙」。"
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
   },
   "c6-s54": {
-    "source": "充「乙」以二。"
+    "source": "充「乙」以二。",
+    "ipa": "ʨʰʉùŋ ʔịt jɨ́ː ɲǐː .",
+    "tupa": "tjhung qyit jyq njih"
   },
   "c6-s55": {
-    "source": "以九。"
+    "source": "以九。",
+    "ipa": "jɨ́ː kʉúː .",
+    "tupa": "jyq kuq"
   },
   "c6-s56": {
-    "source": "以四。"
+    "source": "以四。",
+    "ipa": "jɨ́ː sǐː .",
+    "tupa": "jyq sih"
   },
   "c6-s57": {
-    "source": "以二十二。"
+    "source": "以二十二。",
+    "ipa": "jɨ́ː ɲǐː ʥip ɲǐː .",
+    "tupa": "jyq njih djip njih"
   },
   "c6-s58": {
-    "source": "故是「甲」有二數。"
+    "source": "故是「甲」有二數。",
+    "ipa": "kǒː ʥiéː kạp ɦʉúː ɲǐː ʂʉǒː .",
+    "tupa": "koh djieq kaep uq njih sruoh"
   },
   "c6-s59": {
-    "source": "「乙」有四數。"
+    "source": "「乙」有四數。",
+    "ipa": "ʔịt ɦʉúː sǐː ʂʉǒː .",
+    "tupa": "qyit uq sih sruoh"
   },
   "c6-s60": {
-    "source": "今欲聯合甲乙。"
+    "source": "今欲聯合甲乙。",
+    "ipa": "kị̀m jʉok lièn ɦəp kạp ʔịt .",
+    "tupa": "kyim juok lien gheop kaep qyit"
   },
   "c6-s61": {
-    "source": "令甲之後為乙。"
+    "source": "令甲之後為乙。",
+    "ipa": "liàŋ kạp ʨɨ̀ː ɦúː ɦỵèː ʔịt .",
+    "tupa": "liaeng kaep tjy ghouq ue qyit"
   },
   "c6-s62": {
-    "source": "乙之前為甲。"
+    "source": "乙之前為甲。",
+    "ipa": "ʔịt ʨɨ̀ː ʣèn ɦỵèː kạp .",
+    "tupa": "qyit tjy dzen ue kaep"
   },
   "c6-s63": {
-    "source": "併兩列成一列。"
+    "source": "併兩列成一列。",
+    "ipa": "piáŋ lɨɑ́ŋ liet ʥiàŋ ʔit liet .",
+    "tupa": "piaengq lyangq liet djiaeng qit liet"
   },
   "c6-s64": {
-    "source": "乃用`銜`句。"
+    "source": "乃用`銜`句。",
+    "ipa": "nə́j jʉǒŋ kʉǒː .",
+    "tupa": "neojq juongh kuoh"
   },
   "c6-s65": {
-    "source": "銜「甲」以「乙」。"
+    "source": "銜「甲」以「乙」。",
+    "ipa": "ɦạ̀m kạp jɨ́ː ʔịt .",
+    "tupa": "ghaem kaep jyq qyit"
   },
   "c6-s66": {
-    "source": "名之曰「丙」。"
+    "source": "名之曰「丙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot pịáŋ .",
+    "tupa": "miaeng tjy uot pyaengq"
   },
   "c6-s67": {
-    "source": "遑論列之若干。"
+    "source": "遑論列之若干。",
+    "ipa": "ɦʷɑ̀ŋ lòn liet ʨɨ̀ː ɲɨɑk kɑ̀n .",
+    "tupa": "ghwang lon liet tjy njyak kan"
   },
   "c6-s68": {
-    "source": "亦可一舉而銜之如是。"
+    "source": "亦可一舉而銜之如是。",
+    "ipa": "jiak kʰɑ́ː ʔit kɨə́ː ɲɨ̀ː ɦạ̀m ʨɨ̀ː ɲɨə̀ː ʥiéː .",
+    "tupa": "jiaek khaq qit kyoq njy ghaem tjy njyo djieq"
   },
   "c6-s69": {
-    "source": "銜「甲」以「乙」。"
+    "source": "銜「甲」以「乙」。",
+    "ipa": "ɦạ̀m kạp jɨ́ː ʔịt .",
+    "tupa": "ghaem kaep jyq qyit"
   },
   "c6-s70": {
-    "source": "以「丙」。"
+    "source": "以「丙」。",
+    "ipa": "jɨ́ː pịáŋ .",
+    "tupa": "jyq pyaengq"
   },
   "c6-s71": {
-    "source": "以「丁」。"
+    "source": "以「丁」。",
+    "ipa": "jɨ́ː tèŋ .",
+    "tupa": "jyq teng"
   },
   "c6-s72": {
-    "source": "名之曰「戊」。"
+    "source": "名之曰「戊」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot mǔː .",
+    "tupa": "miaeng tjy uot mouh"
   },
   "c6-s73": {
-    "source": "既見入法。"
+    "source": "既見入法。",
+    "ipa": "kɨ̌j kěn ɲip pʉop .",
+    "tupa": "kyjh kenh njip puop"
   },
   "c6-s74": {
-    "source": "復聞取法。"
+    "source": "復聞取法。",
+    "ipa": "bʉǔː mʉ̀n ʦʰʉóː pʉop .",
+    "tupa": "buh mun tshuoq puop"
   },
   "c6-s75": {
-    "source": "今取其列之首物。"
+    "source": "今取其列之首物。",
+    "ipa": "kị̀m ʦʰʉóː gɨ̀ː liet ʨɨ̀ː ɕʉúː mʉt .",
+    "tupa": "kyim tshuoq gy liet tjy sjuq mut"
   },
   "c6-s76": {
-    "source": "次物。"
+    "source": "次物。",
+    "ipa": "ʦʰǐː mʉt .",
+    "tupa": "tshih mut"
   },
   "c6-s77": {
-    "source": "觀之用之。"
+    "source": "觀之用之。",
+    "ipa": "kʷɑ̀n ʨɨ̀ː jʉǒŋ ʨɨ̀ː .",
+    "tupa": "kwan tjy juongh tjy"
   },
   "c6-s78": {
-    "source": "書之如是。"
+    "source": "書之如是。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː ɲɨə̀ː ʥiéː .",
+    "tupa": "sjyo tjy njyo djieq"
   },
   "c6-s79": {
-    "source": "夫「甲」之一。"
+    "source": "夫「甲」之一。",
+    "ipa": "bʉòː kạp ʨɨ̀ː ʔit .",
+    "tupa": "buo kaep tjy qit"
   },
   "c6-s80": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s81": {
-    "source": "\n夫「甲」之二。"
+    "source": "\n夫「甲」之二。",
+    "ipa": "bʉòː kạp ʨɨ̀ː ɲǐː .",
+    "tupa": "buo kaep tjy njih"
   },
   "c6-s82": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s83": {
-    "source": "\n夫「乙」之四。"
+    "source": "\n夫「乙」之四。",
+    "ipa": "bʉòː ʔịt ʨɨ̀ː sǐː .",
+    "tupa": "buo qyit tjy sih"
   },
   "c6-s84": {
-    "source": "加其以四十五。"
+    "source": "加其以四十五。",
+    "ipa": "kạ̀ː gɨ̀ː jɨ́ː sǐː ʥip ŋóː .",
+    "tupa": "kae gy jyq sih djip ngoq"
   },
   "c6-s85": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s86": {
-    "source": "欲易列中之物。"
+    "source": "欲易列中之物。",
+    "ipa": "jʉok jiak liet ʈʉùŋ ʨɨ̀ː mʉt .",
+    "tupa": "juok jiaek liet trung tjy mut"
   },
   "c6-s87": {
-    "source": "乃稍變前章`昔之`句。"
+    "source": "乃稍變前章`昔之`句。",
+    "ipa": "nə́j ʂạ̌w pịěn ʣèn ʨɨɑ̀ŋ kʉǒː .",
+    "tupa": "neojq sraewh pyenh dzen tjyang kuoh"
   },
   "c6-s88": {
-    "source": "書如是。"
+    "source": "書如是。",
+    "ipa": "ɕɨə̀ː ɲɨə̀ː ʥiéː .",
+    "tupa": "sjyo njyo djieq"
   },
   "c6-s89": {
-    "source": "昔之「甲」之一者。"
+    "source": "昔之「甲」之一者。",
+    "ipa": "siak ʨɨ̀ː kạp ʨɨ̀ː ʔit ʨiáː .",
+    "tupa": "siaek tjy kaep tjy qit tjiaeq"
   },
   "c6-s90": {
-    "source": "今五是矣。"
+    "source": "今五是矣。",
+    "ipa": "kị̀m ŋóː ʥiéː ɦɨ́ː .",
+    "tupa": "kyim ngoq djieq yq"
   },
   "c6-s91": {
-    "source": "\n昔之「乙」之三者。"
+    "source": "\n昔之「乙」之三者。",
+    "ipa": "siak ʨɨ̀ː ʔịt ʨɨ̀ː sɑ̀m ʨiáː .",
+    "tupa": "siaek tjy qyit tjy sam tjiaeq"
   },
   "c6-s92": {
-    "source": "今「丙」之四是矣。"
+    "source": "今「丙」之四是矣。",
+    "ipa": "kị̀m pịáŋ ʨɨ̀ː sǐː ʥiéː ɦɨ́ː .",
+    "tupa": "kyim pyaengq tjy sih djieq yq"
   },
   "c6-s93": {
-    "source": "列之長短無定。"
+    "source": "列之長短無定。",
+    "ipa": "liet ʨɨ̀ː ɖɨɑ̀ŋ tʷɑ́n mʉòː děŋ .",
+    "tupa": "liet tjy dryang twanq muo dengh"
   },
   "c6-s94": {
-    "source": "或寥寥二三物。"
+    "source": "或寥寥二三物。",
+    "ipa": "ɦʷək lèw lèw ɲǐː sɑ̀m mʉt .",
+    "tupa": "ghweok lew lew njih sam mut"
   },
   "c6-s95": {
-    "source": "乃至成千上萬。"
+    "source": "乃至成千上萬。",
+    "ipa": "nə́j ʨǐː ʥiàŋ ʦʰèn ʥɨɑ̌ŋ mʉǒn .",
+    "tupa": "neojq tjih djiaeng tshen djyangh muonh"
   },
   "c6-s96": {
-    "source": "然亦毋須另記。"
+    "source": "然亦毋須另記。",
+    "ipa": "ɲièn jiak mʉòː sʉòː 另 kɨ̌ː .",
+    "tupa": "njien jiaek muo suo 另 kyh"
   },
   "c6-s97": {
-    "source": "時可以`之長`句得之也。"
+    "source": "時可以`之長`句得之也。",
+    "ipa": "ʥɨ̀ː kʰɑ́ː jɨ́ː kʉǒː tək ʨɨ̀ː jiáː .",
+    "tupa": "djy khaq jyq kuoh teok tjy jiaeq"
   },
   "c6-s98": {
-    "source": "既知其長。"
+    "source": "既知其長。",
+    "ipa": "kɨ̌j ʈièː gɨ̀ː ɖɨɑ̀ŋ .",
+    "tupa": "kyjh trie gy dryang"
   },
   "c6-s99": {
-    "source": "以循環次第觀一列之物。"
+    "source": "以循環次第觀一列之物。",
+    "ipa": "jɨ́ː zʷìn ɦʷạ̀n ʦʰǐː děj kʷɑ̀n ʔit liet ʨɨ̀ː mʉt .",
+    "tupa": "jyq zwin ghwaen tshih dejh kwan qit liet tjy mut"
   },
   "c6-s100": {
-    "source": "易矣。"
+    "source": "易矣。",
+    "ipa": "jiěː ɦɨ́ː .",
+    "tupa": "jieh yq"
   },
   "c6-s101": {
-    "source": "夫「甲」之長。"
+    "source": "夫「甲」之長。",
+    "ipa": "bʉòː kạp ʨɨ̀ː ɖɨɑ̀ŋ .",
+    "tupa": "buo kaep tjy dryang"
   },
   "c6-s102": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s103": {
-    "source": "\n\n有數一。"
+    "source": "\n\n有數一。",
+    "ipa": "ɦʉúː ʂʉǒː ʔit .",
+    "tupa": "uq sruoh qit"
   },
   "c6-s104": {
-    "source": "名之曰「乙」。"
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
   },
   "c6-s105": {
-    "source": "\n恆為是。"
+    "source": "\n恆為是。",
+    "ipa": "ɦə̀ŋ ɦỵèː ʥiéː .",
+    "tupa": "gheong ue djieq"
   },
   "c6-s106": {
-    "source": "若「乙」大於「甲」之長者。"
+    "source": "若「乙」大於「甲」之長者。",
+    "ipa": "ɲɨɑk ʔịt dɑ̌j ʔɨə̀ː kạp ʨɨ̀ː ɖɨɑ̀ŋ ʨiáː .",
+    "tupa": "njyak qyit dajh qyo kaep tjy dryang tjiaeq"
   },
   "c6-s107": {
-    "source": "乃止也。"
+    "source": "乃止也。",
+    "ipa": "nə́j ʨɨ́ː jiáː .",
+    "tupa": "neojq tjyq jiaeq"
   },
   "c6-s108": {
-    "source": "\n\t夫「甲」之「乙」。"
+    "source": "\n\t夫「甲」之「乙」。",
+    "ipa": "bʉòː kạp ʨɨ̀ː ʔịt .",
+    "tupa": "buo kaep tjy qyit"
   },
   "c6-s109": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s110": {
-    "source": "\n加「乙」以一。"
+    "source": "\n加「乙」以一。",
+    "ipa": "kạ̀ː ʔịt jɨ́ː ʔit .",
+    "tupa": "kae qyit jyq qit"
   },
   "c6-s111": {
-    "source": "昔之「乙」者。"
+    "source": "昔之「乙」者。",
+    "ipa": "siak ʨɨ̀ː ʔịt ʨiáː .",
+    "tupa": "siaek tjy qyit tjiaeq"
   },
   "c6-s112": {
-    "source": "今其是矣。"
+    "source": "今其是矣。",
+    "ipa": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː .",
+    "tupa": "kyim gy djieq yq"
   },
   "c6-s113": {
-    "source": "云云。"
+    "source": "云云。",
+    "ipa": "ɦʉ̀n ɦʉ̀n .",
+    "tupa": "un un"
   },
   "c6-s114": {
-    "source": "列既能增而長之。"
+    "source": "列既能增而長之。",
+    "ipa": "liet kɨ̌j nə̀ŋ ʦə̀ŋ ɲɨ̀ː ʈɨɑ́ŋ ʨɨ̀ː .",
+    "tupa": "liet kyjh neong tseong njy tryangq tjy"
   },
   "c6-s115": {
-    "source": "亦可分以短之。"
+    "source": "亦可分以短之。",
+    "ipa": "jiak kʰɑ́ː pʉ̀n jɨ́ː tʷɑ́n ʨɨ̀ː .",
+    "tupa": "jiaek khaq pun jyq twanq tjy"
   },
   "c6-s116": {
-    "source": "`其餘`者。"
+    "source": "`其餘`者。",
+    "ipa": "ʨiáː .",
+    "tupa": "tjiaeq"
   },
   "c6-s117": {
-    "source": "棄其第一而留其他也。"
+    "source": "棄其第一而留其他也。",
+    "ipa": "kʰǐː gɨ̀ː děj ʔit ɲɨ̀ː lʉùː gɨ̀ː tʰɑ̀ː jiáː .",
+    "tupa": "khih gy dejh qit njy lu gy tha jiaeq"
   },
   "c6-s118": {
-    "source": "夫「甲」之其餘。"
+    "source": "夫「甲」之其餘。",
+    "ipa": "bʉòː kạp ʨɨ̀ː gɨ̀ː jɨə̀ː .",
+    "tupa": "buo kaep tjy gy jyo"
   },
   "c6-s119": {
-    "source": "名之曰「乙」。"
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
   },
   "c6-s120": {
-    "source": "使「甲」有一二三者。"
+    "source": "使「甲」有一二三者。",
+    "ipa": "ʂɨ́ː kạp ɦʉúː ʔit ɲǐː sɑ̀m ʨiáː .",
+    "tupa": "sryq kaep uq qit njih sam tjiaeq"
   },
   "c6-s121": {
-    "source": "「乙」乃有二三。"
+    "source": "「乙」乃有二三。",
+    "ipa": "ʔịt nə́j ɦʉúː ɲǐː sɑ̀m .",
+    "tupa": "qyit neojq uq njih sam"
   },
   "c6-s122": {
-    "source": "使「甲」有二四六八者。"
+    "source": "使「甲」有二四六八者。",
+    "ipa": "ʂɨ́ː kạp ɦʉúː ɲǐː sǐː lʉuk pẹt ʨiáː .",
+    "tupa": "sryq kaep uq njih sih luk peet tjiaeq"
   },
   "c6-s123": {
-    "source": "「乙」乃有四六八。"
+    "source": "「乙」乃有四六八。",
+    "ipa": "ʔịt nə́j ɦʉúː sǐː lʉuk pẹt .",
+    "tupa": "qyit neojq uq sih luk peet"
   },
   "c6-s124": {
-    "source": "是謂`其餘`也。"
+    "source": "是謂`其餘`也。",
+    "ipa": "ʥiéː ɦʉ̌j jiáː .",
+    "tupa": "djieq ujh jiaeq"
   },
   "c6-s125": {
-    "source": "或問曰。"
+    "source": "或問曰。",
+    "ipa": "ɦʷək mʉ̌n ɦʉot .",
+    "tupa": "ghweok munh uot"
   },
   "c6-s126": {
-    "source": "先充之以數。"
+    "source": "先充之以數。",
+    "ipa": "sèn ʨʰʉùŋ ʨɨ̀ː jɨ́ː ʂʉǒː .",
+    "tupa": "sen tjhung tjy jyq sruoh"
   },
   "c6-s127": {
-    "source": "後充之以言。"
+    "source": "後充之以言。",
+    "ipa": "ɦúː ʨʰʉùŋ ʨɨ̀ː jɨ́ː ŋɨə̀n .",
+    "tupa": "ghouq tjhung tjy jyq ngyon"
   },
   "c6-s128": {
-    "source": "或復充之以爻。"
+    "source": "或復充之以爻。",
+    "ipa": "ɦʷək bʉǔː ʨʰʉùŋ ʨɨ̀ː jɨ́ː ɦạ̀w .",
+    "tupa": "ghweok buh tjhung tjy jyq ghaew"
   },
   "c6-s129": {
-    "source": "可乎。"
+    "source": "可乎。",
+    "ipa": "kʰɑ́ː ɦòː .",
+    "tupa": "khaq gho"
   },
   "c6-s130": {
-    "source": "曰。"
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s131": {
-    "source": "不可也。"
+    "source": "不可也。",
+    "ipa": "pʉùː kʰɑ́ː jiáː .",
+    "tupa": "pu khaq jiaeq"
   },
   "c6-s132": {
-    "source": "列初創。"
+    "source": "列初創。",
+    "ipa": "liet ꭧʰɨə̀ː ꭧʰɨɑ̌ŋ .",
+    "tupa": "liet tshryo tshryangh"
   },
   "c6-s133": {
-    "source": "其類無定。"
+    "source": "其類無定。",
+    "ipa": "gɨ̀ː lʷǐː mʉòː děŋ .",
+    "tupa": "gy lwih muo dengh"
   },
   "c6-s134": {
-    "source": "然既充輒知。"
+    "source": "然既充輒知。",
+    "ipa": "ɲièn kɨ̌j ʨʰʉùŋ ʈiep ʈièː .",
+    "tupa": "njien kyjh tjhung triep trie"
   },
   "c6-s135": {
-    "source": "自是不得混淆耳。"
+    "source": "自是不得混淆耳。",
+    "ipa": "ʣǐː ʥiéː pʉùː tək ɦón ɦạ̀w ɲɨ́ː .",
+    "tupa": "dzih djieq pu teok ghonq ghaew njyq"
   },
   "c6-s136": {
-    "source": "又列有異名者。"
+    "source": "又列有異名者。",
+    "ipa": "ɦʉǔː liet ɦʉúː jɨ̌ː miàŋ ʨiáː .",
+    "tupa": "uh liet uq jyh miaeng tjiaeq"
   },
   "c6-s137": {
-    "source": "其實或同。"
+    "source": "其實或同。",
+    "ipa": "gɨ̀ː ʑit ɦʷək dùŋ .",
+    "tupa": "gy zjit ghweok doung"
   },
   "c6-s138": {
-    "source": "牽一而二動。"
+    "source": "牽一而二動。",
+    "ipa": "kʰèn ʔit ɲɨ̀ː ɲǐː dúŋ .",
+    "tupa": "khen qit njy njih doungq"
   },
   "c6-s139": {
-    "source": "例曰。"
+    "source": "例曰。",
+    "ipa": "liěj ɦʉot .",
+    "tupa": "liejh uot"
   },
   "c6-s140": {
-    "source": "吾有一列。"
+    "source": "吾有一列。",
+    "ipa": "ŋòː ɦʉúː ʔit liet .",
+    "tupa": "ngo uq qit liet"
   },
   "c6-s141": {
-    "source": "名之曰「甲」。"
+    "source": "名之曰「甲」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
+    "tupa": "miaeng tjy uot kaep"
   },
   "c6-s142": {
-    "source": "充「甲」以一。"
+    "source": "充「甲」以一。",
+    "ipa": "ʨʰʉùŋ kạp jɨ́ː ʔit .",
+    "tupa": "tjhung kaep jyq qit"
   },
   "c6-s143": {
-    "source": "以二。"
+    "source": "以二。",
+    "ipa": "jɨ́ː ɲǐː .",
+    "tupa": "jyq njih"
   },
   "c6-s144": {
-    "source": "以三。"
+    "source": "以三。",
+    "ipa": "jɨ́ː sɑ̀m .",
+    "tupa": "jyq sam"
   },
   "c6-s145": {
-    "source": "\n吾有一列。"
+    "source": "\n吾有一列。",
+    "ipa": "ŋòː ɦʉúː ʔit liet .",
+    "tupa": "ngo uq qit liet"
   },
   "c6-s146": {
-    "source": "曰「甲」。"
+    "source": "曰「甲」。",
+    "ipa": "ɦʉot kạp .",
+    "tupa": "uot kaep"
   },
   "c6-s147": {
-    "source": "名之曰「乙」。"
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
   },
   "c6-s148": {
-    "source": "\n昔之「乙」之一者。"
+    "source": "\n昔之「乙」之一者。",
+    "ipa": "siak ʨɨ̀ː ʔịt ʨɨ̀ː ʔit ʨiáː .",
+    "tupa": "siaek tjy qyit tjy qit tjiaeq"
   },
   "c6-s149": {
-    "source": "今四是矣。"
+    "source": "今四是矣。",
+    "ipa": "kị̀m sǐː ʥiéː ɦɨ́ː .",
+    "tupa": "kyim sih djieq yq"
   },
   "c6-s150": {
-    "source": "\n夫「甲」。"
+    "source": "\n夫「甲」。",
+    "ipa": "bʉòː kạp .",
+    "tupa": "buo kaep"
   },
   "c6-s151": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c6-s152": {
-    "source": "乃得「甲」者。"
+    "source": "乃得「甲」者。",
+    "ipa": "nə́j tək kạp ʨiáː .",
+    "tupa": "neojq teok kaep tjiaeq"
   },
   "c6-s153": {
-    "source": "`四。二。三。`"
+    "source": "`四。二。三。`",
+    "ipa": "",
+    "tupa": ""
   },
   "c6-s154": {
-    "source": "也。"
+    "source": "也。",
+    "ipa": "jiáː .",
+    "tupa": "jiaeq"
   },
   "c6-s155": {
-    "source": "唯易「乙」而殃及「甲」。"
+    "source": "唯易「乙」而殃及「甲」。",
+    "ipa": "jʷìː jiak ʔịt ɲɨ̀ː ʔɨɑ̀ŋ gịp kạp .",
+    "tupa": "jwi jiaek qyit njy qyang gyip kaep"
   },
   "c6-s156": {
-    "source": "不亦謬乎。"
+    "source": "不亦謬乎。",
+    "ipa": "pʉùː jiak mị̌w ɦòː .",
+    "tupa": "pu jiaek myiwh gho"
   },
   "c6-s157": {
-    "source": "曰。"
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s158": {
-    "source": "非也。"
+    "source": "非也。",
+    "ipa": "pʉ̀j jiáː .",
+    "tupa": "puj jiaeq"
   },
   "c6-s159": {
-    "source": "蓋「甲」「乙」所指。"
+    "source": "蓋「甲」「乙」所指。",
+    "ipa": "kɑ̌j kạp ʔịt ʂɨə́ː ʨíː .",
+    "tupa": "kajh kaep qyit sryoq tjiq"
   },
   "c6-s160": {
-    "source": "同一列也。"
+    "source": "同一列也。",
+    "ipa": "dùŋ ʔit liet jiáː .",
+    "tupa": "doung qit liet jiaeq"
   },
   "c6-s161": {
-    "source": "名雖二則實一也。"
+    "source": "名雖二則實一也。",
+    "ipa": "miàŋ sʷìː ɲǐː ʦək ʑit ʔit jiáː .",
+    "tupa": "miaeng swi njih tseok zjit qit jiaeq"
   },
   "c6-s162": {
-    "source": "問曰。"
+    "source": "問曰。",
+    "ipa": "mʉ̌n ɦʉot .",
+    "tupa": "munh uot"
   },
   "c6-s163": {
-    "source": "欲令其實亦二。"
+    "source": "欲令其實亦二。",
+    "ipa": "jʉok liàŋ gɨ̀ː ʑit jiak ɲǐː .",
+    "tupa": "juok liaeng gy zjit jiaek njih"
   },
   "c6-s164": {
-    "source": "互不相干。"
+    "source": "互不相干。",
+    "ipa": "ɦǒː pʉùː sɨɑ̀ŋ kɑ̀n .",
+    "tupa": "ghoh pu syang kan"
   },
   "c6-s165": {
-    "source": "當如何。"
+    "source": "當如何。",
+    "ipa": "tɑ̀ŋ ɲɨə̀ː ɦɑ̀ː .",
+    "tupa": "tang njyo gha"
   },
   "c6-s166": {
-    "source": "曰。"
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c6-s167": {
-    "source": "當如是。"
+    "source": "當如是。",
+    "ipa": "tɑ̀ŋ ɲɨə̀ː ʥiéː .",
+    "tupa": "tang njyo djieq"
   },
   "c6-s168": {
-    "source": "吾有一列。"
+    "source": "吾有一列。",
+    "ipa": "ŋòː ɦʉúː ʔit liet .",
+    "tupa": "ngo uq qit liet"
   },
   "c6-s169": {
-    "source": "名之曰「乙」。"
+    "source": "名之曰「乙」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʔịt .",
+    "tupa": "miaeng tjy uot qyit"
   },
   "c6-s170": {
-    "source": "\n凡「甲」中之「元」。"
+    "source": "\n凡「甲」中之「元」。",
+    "ipa": "bʉòm kạp ʈʉùŋ ʨɨ̀ː ŋʉòn .",
+    "tupa": "buom kaep trung tjy nguon"
   },
   "c6-s171": {
-    "source": "充「乙」以「元」也。"
+    "source": "充「乙」以「元」也。",
+    "ipa": "ʨʰʉùŋ ʔịt jɨ́ː ŋʉòn jiáː .",
+    "tupa": "tjhung qyit jyq nguon jiaeq"
   },
   "c6-s172": {
-    "source": "漢張衡字平子。"
+    "source": "漢張衡字平子。",
+    "ipa": "hɑ̌n ʈɨɑ̀ŋ ɦạ̀ŋ ʣɨ̌ː bịàŋ ʦɨ́ː .",
+    "tupa": "hanh tryang ghaeng dzyh byaeng tsyq"
   },
   "c6-s173": {
-    "source": "全才人也。"
+    "source": "全才人也。",
+    "ipa": "ʣyèn ʣə̀j ɲìn jiáː .",
+    "tupa": "dzwien dzeoj njin jiaeq"
   },
   "c6-s174": {
-    "source": "文有四愁詩。"
+    "source": "文有四愁詩。",
+    "ipa": "mʉ̀n ɦʉúː sǐː ꭦʉùː ɕɨ̀ː .",
+    "tupa": "mun uq sih dzru sjy"
   },
   "c6-s175": {
-    "source": "其詩風流婉轉。"
+    "source": "其詩風流婉轉。",
+    "ipa": "gɨ̀ː ɕɨ̀ː pʉùŋ lʉùː ʔʉón ʈyén .",
+    "tupa": "gy sjy pung lu quonq trwienq"
   },
   "c6-s176": {
-    "source": "上承屈子之遺義。"
+    "source": "上承屈子之遺義。",
+    "ipa": "ʥɨɑ̌ŋ ʥɨ̀ŋ kʉt ʦɨ́ː ʨɨ̀ː jʷìː ŋịěː .",
+    "tupa": "djyangh djyng kut tsyq tjy jwi ngyeh"
   },
   "c6-s177": {
-    "source": "下啟七言之濫觴。"
+    "source": "下啟七言之濫觴。",
+    "ipa": "ɦạ́ː kʰéj ʦʰit ŋɨə̀n ʨɨ̀ː lɑ̌m ɕɨɑ̀ŋ .",
+    "tupa": "ghaeq khejq tshit ngyon tjy lamh sjyang"
   },
   "c6-s178": {
-    "source": "今假其詩以示列之用。"
+    "source": "今假其詩以示列之用。",
+    "ipa": "kị̀m kạ́ː gɨ̀ː ɕɨ̀ː jɨ́ː ʑǐː liet ʨɨ̀ː jʉǒŋ .",
+    "tupa": "kyim kaeq gy sjy jyq zjih liet tjy juongh"
   },
   "c6-s179": {
-    "source": "其詩四章。"
+    "source": "其詩四章。",
+    "ipa": "gɨ̀ː ɕɨ̀ː sǐː ʨɨɑ̀ŋ .",
+    "tupa": "gy sjy sih tjyang"
   },
   "c6-s180": {
-    "source": "句多復沓。"
+    "source": "句多復沓。",
+    "ipa": "kʉǒː tɑ̀ː bʉǔː dəp .",
+    "tupa": "kuoh ta buh deop"
   },
   "c6-s181": {
-    "source": "若「我所思兮在」云云皆同。"
+    "source": "若「我所思兮在」云云皆同。",
+    "ipa": "ɲɨɑk ŋɑ́ː ʂɨə́ː sɨ̀ː ɦèj ʣə́j ɦʉ̀n ɦʉ̀n kẹ̀j dùŋ .",
+    "tupa": "njyak ngaq sryoq sy ghej dzeojq un un keej doung"
   },
   "c6-s182": {
-    "source": "唯「太山」「桂林」。"
+    "source": "唯「太山」「桂林」。",
+    "ipa": "jʷìː tʰɑ̌j ʂẹ̀n kʷěj lìm .",
+    "tupa": "jwi thajh sreen kwejh lim"
   },
   "c6-s183": {
-    "source": "「金錯刀」「琴琅玕」諸辭固異。"
+    "source": "「金錯刀」「琴琅玕」諸辭固異。",
+    "ipa": "kị̀m ʦʰɑk tɑ̀w gị̀m lɑ̀ŋ kɑ̀n ʨɨə̀ː zɨ̀ː kǒː jɨ̌ː .",
+    "tupa": "kyim tshak taw gyim lang kan tjyo zy koh jyh"
   },
   "c6-s184": {
-    "source": "故先入其變辭於列中待用也。"
+    "source": "故先入其變辭於列中待用也。",
+    "ipa": "kǒː sèn ɲip gɨ̀ː pịěn zɨ̀ː ʔɨə̀ː liet ʈʉùŋ də́j jʉǒŋ jiáː .",
+    "tupa": "koh sen njip gy pyenh zy qyo liet trung deojq juongh jiaeq"
   },
   "c6-s185": {
-    "source": "吾有八列。"
+    "source": "吾有八列。",
+    "ipa": "ŋòː ɦʉúː pẹt liet .",
+    "tupa": "ngo uq peet liet"
   },
   "c6-s186": {
-    "source": "名之曰「其所」。"
+    "source": "名之曰「其所」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot gɨ̀ː ʂɨə́ː .",
+    "tupa": "miaeng tjy uot gy sryoq"
   },
   "c6-s187": {
-    "source": "曰「所難」。"
+    "source": "曰「所難」。",
+    "ipa": "ɦʉot ʂɨə́ː nɑ̀n .",
+    "tupa": "uot sryoq nan"
   },
   "c6-s188": {
-    "source": "曰「其方」。"
+    "source": "曰「其方」。",
+    "ipa": "ɦʉot gɨ̀ː pʉɑ̀ŋ .",
+    "tupa": "uot gy puang"
   },
   "c6-s189": {
     "source": "曰「所沾」。"
