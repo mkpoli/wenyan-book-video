@@ -9,16 +9,15 @@ def _():
     import requests
     import regex as re
     from pathlib import Path
+    import os
 
-    return Path, re, requests
+    return Path, os, re, requests
 
 
 @app.cell(hide_code=True)
-def _(requests):
-    import os
+def _(Path, os, requests):
     import time
     from datetime import timedelta
-    from pathlib import Path
 
     CACHE_MAX_AGE = timedelta(days=7)
     cache_root = Path(os.getenv("XDG_CACHE_HOME", Path.home() / ".cache"))
@@ -223,11 +222,10 @@ def _():
 
 
 @app.cell(hide_code=True)
-def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, re, requests):
+def _(CHAR_REPLACEMENTS, Path, SPECIAL_CASES, os, re, requests):
     from functools import lru_cache
     import subprocess
     import json
-    import os
     from shutil import which
 
     def resolve_bun_executable() -> Path | None:
