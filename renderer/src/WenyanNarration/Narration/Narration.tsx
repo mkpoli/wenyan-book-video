@@ -9,12 +9,11 @@ import {
   AbsoluteFill,
   useRemotionEnvironment,
 } from "remotion";
-import { Segment } from "../../generated/segments";
 import { APPROX_SECONDS_PER_CHARACTER } from "../../../constants/narration";
 import { SegmentText } from "./SegmentText";
 
 interface NarrationProps {
-  readonly segments: readonly Segment[];
+  readonly segments: readonly NarrationSegment[];
   readonly startFrame: number;
   readonly delayBetweenSegmentsFrames: number;
   readonly transitionFadeInFrames: number;
@@ -33,6 +32,22 @@ type ApproxDuration = {
   readonly charCount: number;
 };
 
+type NarrationSentence = {
+  readonly chinese: string;
+  readonly english: string | null;
+  readonly transcription: string | null;
+  readonly durationInFrames: number;
+};
+
+type NarrationSegment = {
+  readonly id: string;
+  readonly text: string;
+  readonly sentences?: readonly NarrationSentence[];
+  readonly durationInFrames: number;
+  readonly audioPath?: string | null;
+  readonly isCodeBlock?: boolean;
+};
+
 const countEffectiveChars = (text: string | null | undefined): number => {
   if (!text) {
     return 0;
@@ -41,7 +56,7 @@ const countEffectiveChars = (text: string | null | undefined): number => {
 };
 
 const computeApproxDuration = (
-  segment: Segment,
+  segment: NarrationSegment,
   fps: number,
 ): ApproxDuration => {
   const charsFromSentences =
@@ -68,7 +83,7 @@ export const Narration: React.FC<NarrationProps> = ({
   bgFadeOutFrames,
   tailFadeOutFrames,
   bgVolume = 0.02,
-}) => {
+}: NarrationProps) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const approxDurations = useMemo(() => {
@@ -80,7 +95,7 @@ export const Narration: React.FC<NarrationProps> = ({
   }, [segments, fps]);
   const warnedSegmentsRef = useRef<Set<string>>(new Set());
 
-  const resolveAudioDurationFrames = (segment: Segment): number => {
+  const resolveAudioDurationFrames = (segment: NarrationSegment): number => {
     if (segment.audioPath) {
       return segment.durationInFrames;
     }
