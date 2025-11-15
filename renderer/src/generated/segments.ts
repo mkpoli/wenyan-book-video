@@ -13,13 +13,5 @@ export const segments = [
   ...segments3,
   ...segments4,
   ...segments5,
-  ...segments6,
-  ...segments7,
-  ...segments8,
-  ...segments9,
-  ...segments10,
-  ...segments11,
-  ...segments12,
-  ...segments13,
 ] as const;
 export type Segment = (typeof segments)[number];
