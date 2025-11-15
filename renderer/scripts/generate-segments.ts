@@ -393,6 +393,17 @@ const generateSegments = async () => {
     rows: string[];
   }> = [];
 
+  const missingAudioByChapter = new Map<number, Set<string>>();
+  const recordMissingAudio = (chapter: number, ...paths: string[]) => {
+    const target = missingAudioByChapter.get(chapter) ?? new Set<string>();
+    paths.forEach((path) => {
+      if (path) {
+        target.add(`(!) ${toRendererRelative(path)}`);
+      }
+    });
+    missingAudioByChapter.set(chapter, target);
+  };
+
   const sentenceSegments = loadSentenceSegmentsIndex();
   const segmentsToProcess: readonly SentenceSegment[] = [...sentenceSegments];
 
@@ -419,15 +430,8 @@ const generateSegments = async () => {
             : null;
 
         if (!sourceAudioPath) {
-          lintWarnings.push({
-            chapter: Number(id.split("-")[0]) || 0,
-            segment: segmentIndex,
-            title: `⚠️  Missing narration audio for ${id}`,
-            rows: [
-              `Searched: ${toRendererRelative(maleAudioPath)}`,
-              `Female voice: ${toRendererRelative(femaleAudioPath)}`,
-            ],
-          });
+          const chapterNum = Number(id.split("-")[0]) || 0;
+          recordMissingAudio(chapterNum, maleAudioPath, femaleAudioPath);
         }
 
         const resources = loadChapterResources(chapterId);
@@ -593,6 +597,17 @@ const generateSegments = async () => {
 
       return aSegment - bSegment;
     });
+
+  for (const [chapter, paths] of [...missingAudioByChapter.entries()].sort(
+    (a, b) => a[0] - b[0],
+  )) {
+    lintWarnings.push({
+      chapter,
+      segment: 0,
+      title: `⚠️  Missing narration audio for chapter ${chapter}`,
+      rows: [...paths],
+    });
+  }
 
   lintWarnings
     .sort((a, b) => b.chapter - a.chapter || a.segment - b.segment)
