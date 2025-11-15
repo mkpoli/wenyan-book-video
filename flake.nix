@@ -26,7 +26,7 @@
           runtimeInputs = runtimePackages;
           text = ''
             export UV_PYTHON="${toString python313}/bin/python3"
-            cd processor && uv run marimo edit segment-text.py --watch
+            cd processor && uv run python segment-text.py "$@"
           '';
         };
 
@@ -53,7 +53,7 @@
           runtimeInputs = runtimePackages;
           text = ''
             export UV_PYTHON="${toString python313}/bin/python3"
-            cd processor && uv run marimo edit transcribe.py --watch
+            cd processor && uv run python transcribe.py "$@"
           '';
         };
 
@@ -62,7 +62,25 @@
           runtimeInputs = runtimePackages;
           text = ''
             export UV_PYTHON="${toString python313}/bin/python3"
-            cd processor && uv run marimo edit translate.py --watch
+            cd processor && uv run python translate.py "$@"
+          '';
+        };
+
+        transcribe-titles-cmd = pkgs.writeShellApplication {
+          name = "transcribe-titles";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run marimo edit transcribe-titles.py --watch
+          '';
+        };
+
+        synthesize-titles-cmd = pkgs.writeShellApplication {
+          name = "synthesize-titles";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run marimo edit synthesize-titles.py --watch
           '';
         };
 
@@ -97,6 +115,8 @@
           voice-change-cmd
           synthesize-cmd
           transcribe-cmd
+          transcribe-titles-cmd
+          synthesize-titles-cmd
           translate-cmd
           main-cmd
           remotion-render-cmd
@@ -109,6 +129,8 @@
           voice-change = voice-change-cmd;
           synthesize = synthesize-cmd;
           transcribe = transcribe-cmd;
+          transcribe-titles = transcribe-titles-cmd;
+          synthesize-titles = synthesize-titles-cmd;
           translate = translate-cmd;
           main = main-cmd;
           remotion-render = remotion-render-cmd;
@@ -210,10 +232,12 @@
             # Commands are available via packages in PATH
             echo ""
             echo "Available commands:"
-            echo "  segment-text   - Edit segment-text.py with marimo"
-            echo "  transcribe     - Edit transcribe.py with marimo"
-            echo "  translate      - Edit translate.py with marimo"
-            echo "  synthesize     - Edit synthesize.py with marimo"
+            echo "  segment-text      - Generate/refresh sentence segments"
+            echo "  translate         - Run translation batches (OpenAI API)"
+            echo "  transcribe        - Edit transcribe.py with marimo"
+            echo "  transcribe-titles - Transcribe chapter title IPA"
+            echo "  synthesize        - Edit synthesize.py with marimo"
+            echo "  synthesize-titles - Generate chapter title audio"
             echo "  voice-change   - Edit voice-change.py with marimo"
             echo "  main           - Run main.py"
             echo "  remotion-dev    - Start Remotion dev server"
@@ -239,4 +263,3 @@
         };
       });
 }
-
