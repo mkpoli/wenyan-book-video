@@ -92,3 +92,6 @@ See [README-NIX.md](README-NIX.md) for Nix-based development environment setup.
 - `voice-change` - Edit voice-change.py with marimo
 - `main` - Run main.py
 
+## License
+
+This project is released under the [MIT License](LICENSE).
