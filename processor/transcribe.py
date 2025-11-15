@@ -503,6 +503,7 @@ def transcribe_sentence_files(
         }
 
         try:
+            logged_skip_after_change = False
             for sent_id, entry in data.items():
                 if not isinstance(entry, dict):
                     continue
@@ -512,11 +513,12 @@ def transcribe_sentence_files(
 
                 existing_ipa = entry.get("ipa")
                 if isinstance(existing_ipa, str) and existing_ipa.strip():
-                    if changed:
+                    if changed and not logged_skip_after_change:
                         print(
-                            f"  ↷ Encountered already-transcribed sentence {sent_id}; stopping further transcription."
+                            "  ↷ Encountered already-transcribed sentence "
+                            f"{sent_id}; continuing to the next unfinished sentence."
                         )
-                        break
+                        logged_skip_after_change = True
                     continue
 
                 prev_source = None
