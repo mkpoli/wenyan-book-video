@@ -6,7 +6,7 @@ export const segments = [
     "id": "1-1",
     "text": "編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。",
     "audioPath": "audios/female/audio-1-1-f.mp3",
-    "translation": "What is programming?\nThat by which one commands machines.\nWhat is a machine?\nThat by which human labor is replaced.\nYet the power of machines is vast,\ntheir calculations swift,\nbut their wisdom does not reach that of man.\n\nTherefore, the wise plan with care and foresight.\nThey set down a thousand words,\nas if issuing military orders,\nas if prescribing medicine —\nthis is called a program.\n\nOnce the machine comprehends it,\nit can then be made to serve mankind —\nto chart the movements of the stars,\nor to analyze the patterns of reason.",
+    "translation": "What is programming?\nThat by which one commands machines.\nWhat is a machine?\nThat by which human labor is replaced.\nYet the power of machines is vast,\ntheir calculations swift,\nbut their wisdom does not reach that of man.\nTherefore, the wise plan with care and foresight.\nThey set down a thousand words,\nas if issuing military orders,\nas if prescribing medicine —\nthis is called a program.\nOnce the machine comprehends it,\nit can then be made to serve mankind —\nto chart the movements of the stars,\nor to analyze the patterns of reason.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -112,7 +112,7 @@ export const segments = [
     "id": "1-2",
     "text": "其用豈止萬端。問曰。機器者。物也。銅鐵也。何能為而能識人之語。而為人之使耶。曰。此所以有編程語言也。人之所常言。辭或斐然。典或奧雅。機器故不能解。然機器所解者。則寥寥然二三言也。",
     "audioPath": "audios/female/audio-1-2-f.mp3",
-    "translation": "Its applications are by no means limited in number.\n\nOne asks:\n“The machine is\nbut a thing —\nof bronze and iron.\nHow can it do, and how can it understand the speech of men,\nto serve at their command?”\n\nIt is answered:\n“This is precisely why programming languages exist.\nHuman speech, in its common use —\nits words at times splendidly adorned,\nits allusions at times profound and graceful.\nsuch the machine cannot comprehend.\nYet what the machine can understand\nis but a few sparse and simple expressions.”",
+    "translation": "Its applications are by no means limited in number.\nOne asks:\n“The machine is\nbut a thing —\nof bronze and iron.\nHow can it do, and how can it understand the speech of men,\nto serve at their command?”\nIt is answered:\n“This is precisely why programming languages exist.\nHuman speech, in its common use —\nits words at times splendidly adorned,\nits allusions at times profound and graceful.\nsuch the machine cannot comprehend.\nYet what the machine can understand\nis but a few sparse and simple expressions.”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -212,7 +212,7 @@ export const segments = [
     "id": "1-3",
     "text": "曰與。曰或。曰非。此皆至元之辭。人又未易用之。故取其中庸之道。倣人之所言。取其精煉明要者。點竄典字。嚴定其義。上足觀之而為人之用。下足譯之而為機器所解。是謂編程語言也。古有算經。易有繫辭。其用雖不同。",
     "audioPath": "audios/female/audio-1-3-f.mp3",
-    "translation": "“AND,”\n“OR,”\n“NOT” —\nthese are words of utmost abstraction,\nyet even people do not easily wield them.\n\nTherefore, a balanced way was taken:\nto imitate human speech,\nchoosing from it what is concise and essential;\nto refine the classical diction,\nand to fix their meanings with rigor.\n\nThus, it stands high enough to be read and used by people,\nyet low enough to be translated and understood by machines.\nThis is what is called a programming language.\n\nIn ancient times there were the Classics of Calculation;\nin the Book of Changes there were the Appended Remarks —\nthough their purposes differed,",
+    "translation": "“AND,”\n“OR,”\n“NOT” —\nthese are words of utmost abstraction,\nyet even people do not easily wield them.\nTherefore, a balanced way was taken:\nto imitate human speech,\nchoosing from it what is concise and essential;\nto refine the classical diction,\nand to fix their meanings with rigor.\nThus, it stands high enough to be read and used by people,\nyet low enough to be translated and understood by machines.\nThis is what is called a programming language.\nIn ancient times there were the Classics of Calculation;\nin the _Book of Changes_, there were the Appended Remarks —\nthough their purposes differed,",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -301,7 +301,7 @@ export const segments = [
       },
       {
         "chinese": "易有繫辭。",
-        "english": "in the Book of Changes there were the Appended Remarks —",
+        "english": "in the _Book of Changes_, there were the Appended Remarks —",
         "transcription": "jiak ɦʉúː ɦěj zɨ̀ː",
         "durationInFrames": 51
       },
@@ -430,7 +430,7 @@ export const segments = [
     "id": "1-5",
     "text": "又程式如文章然。如其信筆雜湊者。其義亦必不通。其謬亦必多矣。程式亦一理。脈絡通順。文理了然者。令人讀之而達其意。機器行之而無少失。是謂之工。或問曰。君言編程亦美矣。然吾既不以其為生計。",
     "audioPath": "audios/female/audio-1-5-f.mp3",
-    "translation": "Furthermore, a program is like a piece of writing.\nIf one merely jots down words at random,\nits meaning will surely be incoherent,\nand its errors many.\n\nSo too with programs: they follow the same principle.\nWhen their structure flows smoothly\nand their logic is clear throughout,\na reader may grasp their intent with ease,\nand a machine may execute them without the slightest fault.\nThis is called craftsmanship.\n\nSomeone then asked:\n“You speak of programming as a beautiful art indeed —\nbut I do not make my living by it.”",
+    "translation": "Furthermore, a program is like a piece of writing.\nIf one merely jots down words at random,\nits meaning will surely be incoherent,\nand its errors many.\nSo too with programs: they follow the same principle.\nWhen their structure flows smoothly\nand their logic is clear throughout,\na reader may grasp their intent with ease,\nand a machine may execute them without the slightest fault.\nThis is called craftsmanship.\nSomeone then asked:\n“You speak of programming as a beautiful art indeed —\nbut I do not make my living by it.”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -518,7 +518,7 @@ export const segments = [
     "id": "1-6",
     "text": "好之者自謀之。吾何學為。曰。雖不為用。學之亦有益於思。慎密而遠。明辨而清。此其一。為作者之樂。此其二。又問曰。編程復何樂耶。終日營營然。對字麻麻然。逢謬急急然。何如鬥雞走犬呼盧傳杯之樂歟。",
     "audioPath": "audios/female/audio-1-6-f.mp3",
-    "translation": "“If only those who love it may pursue it,\nwhy should I learn it?”\n\nIt was answered:\n“Even if not for practical use,\nto study it refines the mind —\nmaking one’s thought careful and far-reaching,\none’s judgment precise and clear.\nThat is one benefit.\n\nAnother lies in the joy of creation itself.\nThis is the second benefit.”\n\nThen he asked again:\n“What joy can there be in programming?\nAll day one toils restlessly,\nfacing endless lines of symbols,\nrushing to correct each mistake in haste —\nhow can that compare to the pleasures of cockfighting, dog racing, dice games, or passing cups of wine?”",
+    "translation": "“If only those who love it may pursue it,\nwhy should I learn it?”\nIt was answered:\n“Even if not for practical use,\nto study it refines the mind —\nmaking one’s thought careful and far-reaching,\none’s judgment precise and clear.\nThat is one benefit.\nAnother lies in the joy of creation itself.\nThis is the second benefit.”\nThen he asked again:\n“What joy can there be in programming?\nAll day one toils restlessly,\nfacing endless lines of symbols,\nrushing to correct each mistake in haste —\nhow can that compare to the pleasures of cockfighting, dog racing, dice games, or passing cups of wine?”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -624,7 +624,7 @@ export const segments = [
     "id": "1-7",
     "text": "曰。編程之樂者。在造物也。女媧氏初知之。公輸子復知之。歐冶子三知之。今有是戲。匹夫能為。而其趣蓋同。何言不樂歟。問曰。吾知編程之益也。然無由而學之。曰。嘻嘻哉。觀此書可也。今世之編程。",
     "audioPath": "audios/female/audio-1-7-f.mp3",
-    "translation": "He answered:\n“The joy of programming\nlies in creation itself.\nThe Lady Nüwa first knew this joy;\nMaster Gongshu (Lu Ban) knew it again;\nMaster Ou Yeh-Tzu (Ou Yezi) knew it a third time.\nNow this art exists as a pastime —\nany common person may partake in it,\nyet its delight remains the same.\nHow can one say there is no joy in it?”\n\nThe questioner said:\n“I understand now the value of programming,\nyet I have no way to learn it.”\n\nHe replied with a laugh:\n“Ha!\nSimply read this book — that will do.\n\nFor the programming of the present age",
+    "translation": "He answered:\n“The joy of programming\nlies in creation itself.\nThe Lady Nüwa first knew this joy;\nMaster Gongshu (Lu Ban) knew it again;\nMaster Ou Yeh-Tzu (Ou Yezi) knew it a third time.\nNow this art exists as a pastime —\nany common person may partake in it,\nyet its delight remains the same.\nHow can one say there is no joy in it?”\nThe questioner said:\n“I understand now the value of programming,\nyet I have no way to learn it.”\nHe replied with a laugh:\n“Ha!\nSimply read this book — that will do.\nFor the programming of the present age",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -736,7 +736,7 @@ export const segments = [
     "id": "1-8",
     "text": "實西人草創。故其用字必譯耳。其辭古多未聞。或有其字。意乃不同。故曰未言其編程。先解其用字。昔徐利之譯幾何原本。先解幾何之用字。是理也。必不能效抱朴之河車朱雀。乃使觀者不知所云。計開。",
     "audioPath": "audios/female/audio-1-8-f.mp3",
-    "translation": "was first devised by the people of the West.\nThus, its terms must be translated into our tongue.\nMuch of its diction was unknown in antiquity;\nand even where the characters are the same,\nthe meanings differ.\nTherefore, before speaking of programming itself,\none must first make plain the words it employs.\n\nOnce Paul Siu translated The Elements,\nhe first clarified the terminology of geometry —\nsuch is the proper way.\n\nOne must not, like the ‘river chariots’ and ‘vermillion birds’ in Baopuzi,\nbewilder the learner with arcane words, leaving the reader unsure of what is being said.\n\nLet us, then, begin to unfold our explanation.",
+    "translation": "was first devised by the people of the West.\nThus, its terms must be translated into our tongue.\nMuch of its diction was unknown in antiquity;\nand even where the characters are the same,\nthe meanings differ.\nTherefore, before speaking of programming itself,\none must first make plain the words it employs.\nOnce Paul Siu translated The Elements,\nhe first clarified the terminology of geometry —\nsuch is the proper way.\nOne must not, like the ‘river chariots’ and ‘vermillion birds’ in Baopuzi,\nbewilder the learner with arcane words, leaving the reader unsure of what is being said.\nLet us, then, begin to unfold our explanation.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -824,7 +824,7 @@ export const segments = [
     "id": "1-9",
     "text": "「代碼」者。程式之文字也。或僅數言。或至累牘。視其用也。「編譯器」者。亦一程式也。所以譯編程語言。令其為機器之所解也。「運行」者。其程式既為機器所解。復令彼行之。或算一數。或行一事。",
     "audioPath": "audios/female/audio-1-9-f.mp3",
-    "translation": "“Code” — \nthese are the written words of a program.\nSometimes only a few lines,\nsometimes filling many scrolls —\nit depends on the task.\n\nA “compiler”\nis itself also a program:\nit translates the programming language\ninto a form the machine can understand.\n\nTo “run” a program\nis to cause the machine, having understood it,\nto then carry it out —\nperhaps to compute a number,\nor to perform an action.",
+    "translation": "“Code” —\nthese are the written words of a program.\nSometimes only a few lines,\nsometimes filling many scrolls —\nit depends on the task.\nA “compiler”\nis itself also a program:\nit translates the programming language\ninto a form the machine can understand.\nTo “run” a program\nis to cause the machine, having understood it,\nto then carry it out —\nperhaps to compute a number,\nor to perform an action.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -918,7 +918,7 @@ export const segments = [
     "id": "1-10",
     "text": "亦視其用也。「報錯」者。或以人之誤。或以物之限。機器不能達人所欲。是以其因吿人也。今世之編程語言豈下百種。各爭一日之長。然多西人所製。亦沿西人之語。今有滬上黃生。博考諸書。效古人之雅言。",
     "audioPath": "audios/female/audio-1-10-f.mp3",
-    "translation": "So too does its usage depend on the task.\n\n“Error reporting” means this:\nwhether by human mistake\nor material limitation,\nthe machine cannot fulfill what the user intends —\nthus it gives a message to inform the person of the cause.\n\nIn the world today, there are not fewer than a hundred programming languages,\neach contending to show its excellence for a time.\nMost, however, are creations of Westerners\nand thus follow the patterns of Western speech.\n\nNow there is Scholar Huang of Shanghai,\nwho has studied many texts in depth\nand, imitating the elegant diction of the ancients,",
+    "translation": "So too does its usage depend on the task.\n“Error reporting” means this:\nwhether by human mistake\nor material limitation,\nthe machine cannot fulfill what the user intends —\nthus it gives a message to inform the person of the cause.\nIn the world today, there are not fewer than a hundred programming languages,\neach contending to show its excellence for a time.\nMost, however, are creations of Westerners\nand thus follow the patterns of Western speech.\nNow there is Scholar Huang of Shanghai,\nwho has studied many texts in depth\nand, imitating the elegant diction of the ancients,",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1006,7 +1006,7 @@ export const segments = [
     "id": "1-11",
     "text": "為漢語作編程之計。名其言曰「文言」。此書用之。不亦宜乎。古之啟蒙。無不以最易始。昔龍文三字是也。今亦因之。編程之最易者。曰「問天地好在」。列其代碼如左。吾有一數。曰三。名之曰「甲」。",
     "audioPath": "audios/female/audio-1-11-f.mp3",
-    "translation": "He devised a plan to make programming in the Chinese tongue,\nand named his language “Wenyan” — Literary Speech.\nThe fact that this book employs it,\nis that not fitting indeed?\n\nIn ancient times, all primers\nbegan with what was easiest to learn —\nsuch was The Three-Character Classic.\nLet us likewise begin from what is simplest.\n\nThe most basic example of programming\nis called “Ask Heaven and Earth if They Are Well.”\nIts code is written as follows:\n\nI have a number,\nnamed three,\nand I call it A.",
+    "translation": "He devised a plan to make programming in the Chinese tongue,\nand named his language “Wenyan” — Literary Speech.\nThe fact that this book employs it,\nis that not fitting indeed?\nIn ancient times, all primers\nbegan with what was easiest to learn —\nsuch was The Three-Character Classic.\nLet us likewise begin from what is simplest.\nThe most basic example of programming\nis called “Ask Heaven and Earth if They Are Well.”\nIts code is written as follows:\nI have a number,\nnamed three,\nand I call it A.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1098,100 +1098,100 @@ export const segments = [
   },
   {
     "id": "1-12",
-    "text": "為是「甲」遍。吾有一言。曰『問天地好在。』。書之。云云。運行之。乃得 問天地好在。問天地好在。問天地好在。或問曰。胡曰「問天地好在」耶。曰。蓋機器未編程時。混沌茫昧。不知天地之所在。",
+    "text": "為是「甲」遍。\n\t吾有一言。曰『問天地好在。』。書之。\n云云。運行之。問天地好在。\n問天地好在。\n問天地好在。或問曰。胡曰「問天地好在」耶。曰。蓋機器未編程時。混沌茫昧。不知天地之所在。",
     "audioPath": "audios/female/audio-1-12-f.mp3",
-    "translation": "Then repeat this “A” three times.\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\nWhen it is run,\nthe result is: Ask Heaven and Earth if They Are Well.\nAsk Heaven and Earth if They Are Well.\nAsk Heaven and Earth if They Are Well.\n\nSomeone asked:\n“Why say Ask Heaven and Earth if They Are Well?”\n\nHe replied:\n“Because before programming,\nthe machine dwells in chaos and obscurity,\nknowing not where Heaven and Earth themselves are.”",
+    "translation": "Then repeat this “A” three times.\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\nWhen it is run,\nthe result is: Ask Heaven and Earth if They Are Well.\nAsk Heaven and Earth if They Are Well.\nAsk Heaven and Earth if They Are Well.\nSomeone asked:\n“Why say Ask Heaven and Earth if They Are Well?”\nHe replied:\n“Because before programming,\nthe machine dwells in chaos and obscurity,\nknowing not where Heaven and Earth themselves are.”",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "為是「甲」遍。",
+        "chinese": "\n為是「甲」遍。",
         "english": "Then repeat this “A” three times.",
         "transcription": "ɦỵèː ʥiéː kạp pěn",
-        "durationInFrames": 50
+        "durationInFrames": 51
       },
       {
-        "chinese": "吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a phrase:",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 50
+        "durationInFrames": 51
       },
       {
         "chinese": "曰『問天地好在。』。",
         "english": "“Ask Heaven and Earth if They Are Well.”",
         "transcription": "ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 79
+        "durationInFrames": 82
       },
       {
         "chinese": "書之。",
         "english": "Write it out",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
-        "chinese": "云云。",
+        "chinese": "\n云云。",
         "english": "— and so on.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "運行之。",
         "english": "When it is run,",
         "transcription": "ɦʉ̌n ɦạ̀ŋ ʨɨ̀ː",
-        "durationInFrames": 40
+        "durationInFrames": 41
       },
       {
-        "chinese": "乃得 問天地好在。",
+        "chinese": "問天地好在。",
         "english": "the result is: Ask Heaven and Earth if They Are Well.",
         "transcription": "nə́j tək mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 89
+        "durationInFrames": 62
       },
       {
-        "chinese": "問天地好在。",
+        "chinese": "\n問天地好在。",
         "english": "Ask Heaven and Earth if They Are Well.",
         "transcription": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
-        "chinese": "問天地好在。",
+        "chinese": "\n問天地好在。",
         "english": "Ask Heaven and Earth if They Are Well.",
         "transcription": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
         "chinese": "或問曰。",
         "english": "Someone asked:",
         "transcription": "ɦʷək mʉ̌n ɦʉot",
-        "durationInFrames": 40
+        "durationInFrames": 41
       },
       {
         "chinese": "胡曰「問天地好在」耶。",
         "english": "“Why say Ask Heaven and Earth if They Are Well?”",
         "transcription": "ɦòː ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j jiàː",
-        "durationInFrames": 89
+        "durationInFrames": 93
       },
       {
         "chinese": "曰。",
         "english": "He replied:",
         "transcription": "ɦʉot",
-        "durationInFrames": 20
+        "durationInFrames": 21
       },
       {
         "chinese": "蓋機器未編程時。",
         "english": "“Because before programming,",
         "transcription": "kɑ̌j kɨ̀j kʰị̌ː mʉ̌j pèn ɖiàŋ ʥɨ̀ː",
-        "durationInFrames": 79
+        "durationInFrames": 82
       },
       {
         "chinese": "混沌茫昧。",
         "english": "the machine dwells in chaos and obscurity,",
         "transcription": "ɦón dón mɑ̀ŋ mǒj",
-        "durationInFrames": 50
+        "durationInFrames": 51
       },
       {
         "chinese": "不知天地之所在。",
         "english": "knowing not where Heaven and Earth themselves are.”",
         "transcription": "pʉùː ʈièː tʰèn dǐː ʨɨ̀ː ʂɨə́ː ʣə́j",
-        "durationInFrames": 78
+        "durationInFrames": 83
       }
     ],
     "durationInFrames": 844
@@ -1200,7 +1200,7 @@ export const segments = [
     "id": "1-13",
     "text": "既經編程。頓而明朗。撥雲見日然。故欲問天地之好在也。或問曰。胡問之三遍耶。天地豈聾也哉。君不聞秦宓之辯耶。曰。非也。所以示「循環」之用也。「循環」者。為一事數遍也。如輻輳輪轉然。",
     "audioPath": "audios/female/audio-1-13-f.mp3",
-    "translation": "Once it has been programmed,\nthe machine suddenly becomes clear and bright,\nas though the clouds were parted and the sun revealed —\nthus we ask Heaven and Earth if they are well.\n\nSomeone asked:\n“Why ask three times?\nAre Heaven and Earth deaf?\nHaven't you heard of Qin Mi's debate?”\n\nHe replied:\n“No —\nit is to demonstrate the use of repetition, or looping.\n\n‘Looping’ —\nmeans to perform one action several times,\nlike the spokes of a wheel turning in unison.",
+    "translation": "Once it has been programmed,\nthe machine suddenly becomes clear and bright,\nas though the clouds were parted and the sun revealed —\nthus we ask Heaven and Earth if they are well.\nSomeone asked:\n“Why ask three times?\nAre Heaven and Earth deaf?\nHaven't you heard of Qin Mi's debate?”\nHe replied:\n“No —\nit is to demonstrate the use of repetition, or looping.\n‘Looping’ —\nmeans to perform one action several times,\nlike the spokes of a wheel turning in unison.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1292,9 +1292,9 @@ export const segments = [
   },
   {
     "id": "1-14",
-    "text": "如日月交替然。或問曰。欲行之五遍。可乎。行之千遍。可乎。曰。無不可也。為是五遍。吾有一言。曰『問天地好在。』。書之。云云。為是千遍。吾有一言。曰『問天地好在。』。書之。云云。或問曰。",
+    "text": "如日月交替然。或問曰。欲行之五遍。可乎。行之千遍。可乎。曰。無不可也。為是五遍。\n\t吾有一言。曰『問天地好在。』。書之。\n云云。\n\n為是千遍。\n\t吾有一言。曰『問天地好在。』。書之。\n云云。或問曰。",
     "audioPath": "audios/female/audio-1-14-f.mp3",
-    "translation": "As the sun and moon take turns in the sky.”\n\nSomeone asked:\n“If I wish to run it five times,\nmay I?\nIf a thousand times,\nmay I?”\n\nHe replied:\n“There is no limit that it cannot be done.”\n\nTo run it five times, write:\n\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\n\nTo run it a thousand times, likewise write:\n\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\n\nThen someone asked:",
+    "translation": "As the sun and moon take turns in the sky.”\nSomeone asked:\n“If I wish to run it five times,\nmay I?\nIf a thousand times,\nmay I?”\nHe replied:\n“There is no limit that it cannot be done.”\nTo run it five times, write:\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\nTo run it a thousand times, likewise write:\nI have a phrase:\n“Ask Heaven and Earth if They Are Well.”\nWrite it out\n— and so on.\nThen someone asked:",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1352,7 +1352,7 @@ export const segments = [
         "durationInFrames": 54
       },
       {
-        "chinese": "吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a phrase:",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
         "durationInFrames": 54
@@ -1370,19 +1370,19 @@ export const segments = [
         "durationInFrames": 32
       },
       {
-        "chinese": "云云。",
+        "chinese": "\n云云。",
         "english": "— and so on.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
         "durationInFrames": 32
       },
       {
-        "chinese": "為是千遍。",
+        "chinese": "\n\n為是千遍。",
         "english": "To run it a thousand times, likewise write:",
         "transcription": "ɦỵèː ʥiéː ʦʰèn pěn",
         "durationInFrames": 54
       },
       {
-        "chinese": "吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a phrase:",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
         "durationInFrames": 54
@@ -1400,7 +1400,7 @@ export const segments = [
         "durationInFrames": 32
       },
       {
-        "chinese": "云云。",
+        "chinese": "\n云云。",
         "english": "— and so on.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
         "durationInFrames": 32
@@ -1416,9 +1416,9 @@ export const segments = [
   },
   {
     "id": "1-15",
-    "text": "「甲」者謂何。胡不謂「乙」耶。曰。皆可也。「甲」者。名也。名者。實之賓耶。實者何。悉聽尊便也。欲三則三。欲五則五。是謂「變數」也。復觀此二句。吾有一數。曰三。名之曰「甲」。吾有一言。",
+    "text": "「甲」者謂何。胡不謂「乙」耶。曰。皆可也。「甲」者。名也。名者。實之賓耶。實者何。悉聽尊便也。欲三則三。欲五則五。是謂「變數」也。復觀此二句。吾有一數。曰三。名之曰「甲」。\n吾有一言。",
     "audioPath": "audios/female/audio-1-15-f.mp3",
-    "translation": "“What is this ‘A’?\nWhy not call it ‘B’ instead?”\n\nHe replied:\n“All are acceptable.\n‘A’ is\nmerely a name.\nA name —\nis the guest of a reality —\nand what is that reality?\nWhatever one pleases to assign to it.\n\nIf you wish it to be three, let it be three;\nif you wish it to be five, let it be five.\nThis is called a variable.”\n\nNow observe these two lines again:\n\nI have a number,\nnamed three,\nand I call it A.\nI have a phrase...",
+    "translation": "“What is this ‘A’?\nWhy not call it ‘B’ instead?”\nHe replied:\n“All are acceptable.\n‘A’ is\nmerely a name.\nA name —\nis the guest of a reality —\nand what is that reality?\nWhatever one pleases to assign to it.\nIf you wish it to be three, let it be three;\nif you wish it to be five, let it be five.\nThis is called a variable.”\nNow observe these two lines again:\nI have a number,\nnamed three,\nand I call it A.\nI have a phrase...",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1524,7 +1524,7 @@ export const segments = [
         "durationInFrames": 53
       },
       {
-        "chinese": "吾有一言。",
+        "chinese": "\n吾有一言。",
         "english": "I have a phrase...",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
         "durationInFrames": 53
@@ -1534,16 +1534,16 @@ export const segments = [
   },
   {
     "id": "1-16",
-    "text": "曰『問天地好在。』。書之。吾有一數 吾有一言者。蓋言是變數之類也。數者。所以算也。言者。所以吿人也。物各其類。不宜混同。猶馬之不同於鹿。人之不同於鬼。遂預言之。以明其類。",
+    "text": "曰『問天地好在。』。書之。`吾有一數` `吾有一言`者。蓋言是變數之類也。數者。所以算也。言者。所以吿人也。物各其類。不宜混同。猶馬之不同於鹿。人之不同於鬼。遂預言之。以明其類。",
     "audioPath": "audios/female/audio-1-16-f.mp3",
-    "translation": "…it says: “Ask Heaven and Earth if They Are Well.”\nThen write it out.\n\nThe phrases ‘I have a number’ and ‘I have a phrase’ —\nthese both refer to kinds of variables.\n\nA number —\nis that by which one performs calculations.\nA phrase —\nis that by which one conveys words to people.\nEach thing has its own kind\nand should not be confused —\njust as a horse is not a deer,\nand a human is not a spirit.\n\nThus we declare their types beforehand,\nso that their nature may be made clear.",
+    "translation": "…it says: “Ask Heaven and Earth if They Are Well.”\nThen write it out.\nThe phrases ‘I have a number’ and ‘I have a phrase’ —\nthese both refer to kinds of variables.\nA number —\nis that by which one performs calculations.\nA phrase —\nis that by which one conveys words to people.\nEach thing has its own kind\nand should not be confused —\njust as a horse is not a deer,\nand a human is not a spirit.\nThus we declare their types beforehand,\nso that their nature may be made clear.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "曰『問天地好在。』。",
         "english": "…it says: “Ask Heaven and Earth if They Are Well.”",
         "transcription": "ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 80
+        "durationInFrames": 81
       },
       {
         "chinese": "書之。",
@@ -1552,16 +1552,16 @@ export const segments = [
         "durationInFrames": 30
       },
       {
-        "chinese": "吾有一數 吾有一言者。",
+        "chinese": "`吾有一數` `吾有一言`者。",
         "english": "The phrases ‘I have a number’ and ‘I have a phrase’ —",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː ŋòː ɦʉúː ʔit ŋɨə̀n ʨiáː",
-        "durationInFrames": 110
+        "durationInFrames": 101
       },
       {
         "chinese": "蓋言是變數之類也。",
         "english": "these both refer to kinds of variables.",
         "transcription": "kɑ̌j ŋɨə̀n ʥiéː pịěn ʂʉǒː ʨɨ̀ː lʷǐː jiáː",
-        "durationInFrames": 90
+        "durationInFrames": 91
       },
       {
         "chinese": "數者。",
@@ -1585,7 +1585,7 @@ export const segments = [
         "chinese": "所以吿人也。",
         "english": "is that by which one conveys words to people.",
         "transcription": "ʂɨə́ː jɨ́ː kok ɲìn jiáː",
-        "durationInFrames": 60
+        "durationInFrames": 61
       },
       {
         "chinese": "物各其類。",
@@ -1603,13 +1603,13 @@ export const segments = [
         "chinese": "猶馬之不同於鹿。",
         "english": "just as a horse is not a deer,",
         "transcription": "jʉùː mạ́ː ʨɨ̀ː pʉùː dùŋ ʔɨə̀ː luk",
-        "durationInFrames": 80
+        "durationInFrames": 81
       },
       {
         "chinese": "人之不同於鬼。",
         "english": "and a human is not a spirit.",
         "transcription": "ɲìn ʨɨ̀ː pʉùː dùŋ ʔɨə̀ː kʉ́j",
-        "durationInFrames": 70
+        "durationInFrames": 71
       },
       {
         "chinese": "遂預言之。",
@@ -1621,47 +1621,47 @@ export const segments = [
         "chinese": "以明其類。",
         "english": "so that their nature may be made clear.",
         "transcription": "jɨ́ː mịàŋ gɨ̀ː lʷǐː",
-        "durationInFrames": 48
+        "durationInFrames": 52
       }
     ],
     "durationInFrames": 828
   },
   {
     "id": "1-17",
-    "text": "曰三 曰『問天地好在。』者。所以命其實也。後若有問數幾何者。乃自是知其為三。言亦同。名之曰「甲」者。所以名變數也。如人之名贓獲。劍之名巨闕。後凡曰「贓獲」者。乃知謂「贓獲」其人。",
+    "text": "`曰三` `曰『問天地好在。』`者。所以命其實也。後若有問數幾何者。乃自是知其為三。言亦同。`名之曰「甲」`者。所以名變數也。如人之名贓獲。劍之名巨闕。後凡曰「贓獲」者。乃知謂「贓獲」其人。",
     "audioPath": "audios/female/audio-1-17-f.mp3",
-    "translation": "“To say ‘three’ or ‘Ask Heaven and Earth if They Are Well’\n—\nis to assign a value to a thing.\nThus, when later one asks, ‘What is the number?’\nit will know of itself that it is three.\nThe same holds for words.\n\nTo say ‘call it A’ —\nis to give the variable a name —\njust as a man may be named Zanghuo,\nor a sword may be named Juque.\nHence, whenever one later speaks of Zanghuo,\nall will understand it refers to that very man.”",
+    "translation": "“To say ‘three’ or ‘Ask Heaven and Earth if They Are Well’\n—\nis to assign a value to a thing.\nThus, when later one asks, ‘What is the number?’\nit will know of itself that it is three.\nThe same holds for words.\nTo say ‘call it A’ —\nis to give the variable a name —\njust as a man may be named Zanghuo,\nor a sword may be named Juque.\nHence, whenever one later speaks of Zanghuo,\nall will understand it refers to that very man.”",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "曰三 曰『問天地好在。』",
+        "chinese": "`曰三` `曰『問天地好在。』`",
         "english": "“To say ‘three’ or ‘Ask Heaven and Earth if They Are Well’",
         "transcription": "ɦʉot sɑ̀m ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j",
-        "durationInFrames": 97
+        "durationInFrames": 89
       },
       {
         "chinese": "者。",
         "english": "—",
         "transcription": "ʨiáː",
-        "durationInFrames": 19
+        "durationInFrames": 20
       },
       {
         "chinese": "所以命其實也。",
         "english": "is to assign a value to a thing.",
         "transcription": "ʂɨə́ː jɨ́ː mịǎŋ gɨ̀ː ʑit jiáː",
-        "durationInFrames": 68
+        "durationInFrames": 69
       },
       {
         "chinese": "後若有問數幾何者。",
         "english": "Thus, when later one asks, ‘What is the number?’",
         "transcription": "ɦúː ɲɨɑk ɦʉúː mʉ̌n ʂʉǒː kɨ́j ɦɑ̀ː ʨiáː",
-        "durationInFrames": 87
+        "durationInFrames": 89
       },
       {
         "chinese": "乃自是知其為三。",
         "english": "it will know of itself that it is three.",
         "transcription": "nə́j ʣǐː ʥiéː ʈièː gɨ̀ː ɦỵèː sɑ̀m",
-        "durationInFrames": 78
+        "durationInFrames": 79
       },
       {
         "chinese": "言亦同。",
@@ -1670,49 +1670,49 @@ export const segments = [
         "durationInFrames": 39
       },
       {
-        "chinese": "名之曰「甲」者。",
+        "chinese": "`名之曰「甲」`者。",
         "english": "To say ‘call it A’ —",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kạp ʨiáː",
-        "durationInFrames": 58
+        "durationInFrames": 59
       },
       {
         "chinese": "所以名變數也。",
         "english": "is to give the variable a name —",
         "transcription": "ʂɨə́ː jɨ́ː miàŋ pịěn ʂʉǒː jiáː",
-        "durationInFrames": 68
+        "durationInFrames": 69
       },
       {
         "chinese": "如人之名贓獲。",
         "english": "just as a man may be named Zanghuo,",
         "transcription": "ɲɨə̀ː ɲìn ʨɨ̀ː miàŋ ʦɑ̀ŋ ɦʷẹk",
-        "durationInFrames": 68
+        "durationInFrames": 69
       },
       {
         "chinese": "劍之名巨闕。",
         "english": "or a sword may be named Juque.",
         "transcription": "kɨə̌m ʨɨ̀ː miàŋ gɨə́ː kʰʉot",
-        "durationInFrames": 58
+        "durationInFrames": 59
       },
       {
         "chinese": "後凡曰「贓獲」者。",
         "english": "Hence, whenever one later speaks of Zanghuo,",
         "transcription": "ɦúː bʉòm ɦʉot ʦɑ̀ŋ ɦʷẹk ʨiáː",
-        "durationInFrames": 68
+        "durationInFrames": 69
       },
       {
         "chinese": "乃知謂「贓獲」其人。",
         "english": "all will understand it refers to that very man.”",
         "transcription": "nə́j ʈièː ɦʉ̌j ʦɑ̀ŋ ɦʷẹk gɨ̀ː ɲìn",
-        "durationInFrames": 79
+        "durationInFrames": 77
       }
     ],
     "durationInFrames": 787
   },
   {
     "id": "1-18",
-    "text": "又萬物皆變化之中。如昔人之廣陵。鮑照之蕪城也。今易「甲」為四如是。昔之「甲」者。今四是矣。書之者。蓋彼運行之所得。機器自知之。而人無由而知之。故用此辭令其示人以果也。或問曰。",
+    "text": "又萬物皆變化之中。如昔人之廣陵。鮑照之蕪城也。今易「甲」為四如是。昔之「甲」者。今四是矣。`書之`者。蓋彼運行之所得。機器自知之。而人無由而知之。故用此辭令其示人以果也。或問曰。",
     "audioPath": "audios/female/audio-1-18-f.mp3",
-    "translation": "Moreover, all things are in constant change —\nas once was Guangling in ancient days,\nor the desolate city sung of by Bao Zhao.\n\nNow, if we alter “A” to be four, it is thus:\nwhat was once “A” —\nis now four.\n\nTo write it out means:\nthat is the result obtained when the machine runs.\nThe machine itself knows it,\nbut man has no means to see it directly.\nTherefore, we can use this command to make it display the outcome to us.\n\nSomeone then asked:",
+    "translation": "Moreover, all things are in constant change —\nas once was Guangling in ancient days,\nor the desolate city sung of by Bao Zhao.\nNow, if we alter “A” to be four, it is thus:\nwhat was once “A” —\nis now four.\nTo write it out means:\nthat is the result obtained when the machine runs.\nThe machine itself knows it,\nbut man has no means to see it directly.\nTherefore, we can use this command to make it display the outcome to us.\nSomeone then asked:",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1752,7 +1752,7 @@ export const segments = [
         "durationInFrames": 49
       },
       {
-        "chinese": "書之者。",
+        "chinese": "`書之`者。",
         "english": "To write it out means:",
         "transcription": "ɕɨə̀ː ʨɨ̀ː ʨiáː",
         "durationInFrames": 39
@@ -1794,7 +1794,7 @@ export const segments = [
     "id": "1-19",
     "text": "甲字上下有符如矩尺然者。何焉。今欲省之。可乎。曰。不可。此引號也。「單引號」者。所以別變數於其他也。『雙引號』者。所以別言語於其他也。微是。不能別歧義也。又問曰。句讀。挪抬。無之可乎。",
     "audioPath": "audios/female/audio-1-19-f.mp3",
-    "translation": "“The character A is enclosed above and below by marks like a carpenter’s square —\nwhat are they for?\nMay I omit them\nif I wish?”\n\nHe replied:\n“No, you may not.\nThose are quotation marks.\n\n‘Single quotes’ —\ndistinguish variables from other things.\n‘Double quotes’ —\ndistinguish spoken phrases from other things.\nWithout them,\none could not avoid ambiguity.”\n\nHe asked again:\n“What of punctuation,\nand spacing —\nmay I do without them?”",
+    "translation": "“The character A is enclosed above and below by marks like a carpenter’s square —\nwhat are they for?\nMay I omit them\nif I wish?”\nHe replied:\n“No, you may not.\nThose are quotation marks.\n‘Single quotes’ —\ndistinguish variables from other things.\n‘Double quotes’ —\ndistinguish spoken phrases from other things.\nWithout them,\none could not avoid ambiguity.”\nHe asked again:\n“What of punctuation,\nand spacing —\nmay I do without them?”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1904,9 +1904,9 @@ export const segments = [
   },
   {
     "id": "1-20",
-    "text": "曰。此唯觀者助也。無之無損於義。故前例亦可書若是。吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云。「問天地好在」之例。至此略明矣。",
+    "text": "曰。此唯觀者助也。無之無損於義。故前例亦可書若是。吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云「問天地好在」之例。至此略明矣。",
     "audioPath": "audios/female/audio-1-20-f.mp3",
-    "translation": "He replied:\n“They serve only to aid the reader’s eyes;\ntheir absence does not harm the meaning.\nThus, the earlier example may also be written in this way:\n\nI have a number named three call it A repeat A times I have a phrase ‘Ask Heaven and Earth if They Are Well’ write it out and so on.\n\nThe example of ‘Ask Heaven and Earth if They Are Well’\nshould, by this, now be roughly understood.”",
+    "translation": "He replied:\n“They serve only to aid the reader’s eyes;\ntheir absence does not harm the meaning.\nThus, the earlier example may also be written in this way:\nI have a number named three call it A repeat A times I have a phrase ‘Ask Heaven and Earth if They Are Well’ write it out and so on.\nThe example of ‘Ask Heaven and Earth if They Are Well’\nshould, by this, now be roughly understood.”",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -1919,37 +1919,37 @@ export const segments = [
         "chinese": "此唯觀者助也。",
         "english": "“They serve only to aid the reader’s eyes;",
         "transcription": "ʦʰiéː jʷìː kʷɑ̀n ʨiáː ꭦɨə̌ː jiáː",
-        "durationInFrames": 67
+        "durationInFrames": 68
       },
       {
         "chinese": "無之無損於義。",
         "english": "their absence does not harm the meaning.",
         "transcription": "mʉòː ʨɨ̀ː mʉòː són ʔɨə̀ː ŋịěː",
-        "durationInFrames": 67
+        "durationInFrames": 68
       },
       {
         "chinese": "故前例亦可書若是。",
         "english": "Thus, the earlier example may also be written in this way:",
         "transcription": "kǒː ʣèn liěj jiak kʰɑ́ː ɕɨə̀ː ɲɨɑk ʥiéː",
-        "durationInFrames": 86
+        "durationInFrames": 87
       },
       {
-        "chinese": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云。",
+        "chinese": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云",
         "english": "I have a number named three call it A repeat A times I have a phrase ‘Ask Heaven and Earth if They Are Well’ write it out and so on.",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː ɦʉot sɑ̀m miàŋ ʨɨ̀ː ɦʉot kạp ɦỵèː ʥiéː kạp pěn ŋòː ɦʉúː ʔit ŋɨə̀n ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j ɕɨə̀ː ʨɨ̀ː ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 276
+        "durationInFrames": 270
       },
       {
         "chinese": "「問天地好在」之例。",
         "english": "The example of ‘Ask Heaven and Earth if They Are Well’",
         "transcription": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j ʨɨ̀ː liěj",
-        "durationInFrames": 76
+        "durationInFrames": 77
       },
       {
         "chinese": "至此略明矣。",
         "english": "should, by this, now be roughly understood.”",
         "transcription": "ʨǐː ʦʰiéː lɨɑk mịàŋ ɦɨ́ː",
-        "durationInFrames": 56
+        "durationInFrames": 58
       }
     ],
     "durationInFrames": 647

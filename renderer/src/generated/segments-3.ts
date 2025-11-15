@@ -6,24 +6,24 @@ export const segments = [
     "id": "3-1",
     "text": "古有周髀。海島。九章算經云。後世疇人輯之為十書。古希臘國畢氏曰。萬物皆數。乃知算學者中外所重。今編程之用雖不勝數。究其本原。亦皆算焉。而算之本原。曰加。曰減。曰乘。曰除。加者。求和也。減者。",
     "audioPath": "audios/female/audio-3-1-f.mp3",
-    "translation": "In ancient times there was Zhoubi Suanjing,\nHaidao Suanjing, and\nThe Nine Chapters on the Mathematical Art.\nIn later ages, scholars compiled it into ten books.\nThe ancient Greek Pythagoras said.\nAll things are numbers.\nThereby it is known that arithmeticians, both at home and abroad, prize it.\nNow the uses of programming are innumerable;\nin probing its origin,\nthey are all computations.\nThe origin of computation —\nis called addition,\nsubtraction,\nmultiplication,\nand division.\nTo add —\nis to seek the sum,\nTo subtract —",
+    "translation": "In ancient times there was _Zhoubi Suanjing_,\n_Haidao Suanjing_, and\nThe _Nine Chapters on the Mathematical Art_.\nIn later ages, scholars compiled it into ten books.\nThe ancient Greek Pythagoras said.\nAll things are numbers.\nThereby it is known that arithmeticians, both at home and abroad, prize it.\nNow the uses of programming are innumerable;\nin probing its origin,\nthey are all computations.\nThe origin of computation —\nis called addition,\nsubtraction,\nmultiplication,\nand division.\nTo add —\nis to seek the sum,\nTo subtract —",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "古有周髀。",
-        "english": "In ancient times there was Zhoubi Suanjing,",
+        "english": "In ancient times there was _Zhoubi Suanjing_,",
         "transcription": "kóː ɦʉúː ʨʉùː piéː",
         "durationInFrames": 51
       },
       {
         "chinese": "海島。",
-        "english": "Haidao Suanjing, and",
+        "english": "_Haidao Suanjing_, and",
         "transcription": "hə́j tɑ́w",
         "durationInFrames": 31
       },
       {
         "chinese": "九章算經云。",
-        "english": "The Nine Chapters on the Mathematical Art.",
+        "english": "The _Nine Chapters on the Mathematical Art_.",
         "transcription": "kʉúː ʨɨɑ̀ŋ sʷɑ̌n kèŋ ɦʉ̀n",
         "durationInFrames": 62
       },
@@ -177,49 +177,49 @@ export const segments = [
         "chinese": "加一以二。",
         "english": "Add to one with two.",
         "transcription": "kạ̀ː ʔit jɨ́ː ɲǐː",
-        "durationInFrames": 51
+        "durationInFrames": 56
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 31
+        "durationInFrames": 34
       },
       {
         "chinese": "\n減二以一。",
         "english": "Subtract from two with one.",
         "transcription": "kẹ́m ɲǐː jɨ́ː ʔit",
-        "durationInFrames": 62
+        "durationInFrames": 56
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 31
+        "durationInFrames": 34
       },
       {
         "chinese": "\n乘二以三。",
         "english": "Multiply two with three.",
         "transcription": "ʑɨ̀ŋ ɲǐː jɨ́ː sɑ̀m",
-        "durationInFrames": 62
+        "durationInFrames": 56
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 31
+        "durationInFrames": 34
       },
       {
         "chinese": "\n除八以四。",
         "english": "Divide eight by four.",
         "transcription": "ɖɨə̀ː pẹt jɨ́ː sǐː",
-        "durationInFrames": 62
+        "durationInFrames": 56
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 30
+        "durationInFrames": 34
       }
     ],
     "durationInFrames": 360
@@ -450,7 +450,7 @@ export const segments = [
   },
   {
     "id": "3-12",
-    "text": "又除法者。有除數與被除數之別。是謂除法無交換率也。今言除「甲」以「乙」者。甲者。被除數也。乙者。除數也。亦可書除「乙」於「甲」。無少異耳。減法亦然。而加乘有交換率者。於乃通以。",
+    "text": "又除法者。有除數與被除數之別。是謂除法無交換率也。今言`除「甲」以「乙」`者。甲者。被除數也。乙者。除數也。亦可書`除「乙」於「甲」`。無少異耳。減法亦然。而加乘有交換率者。`於`乃通`以`。",
     "audioPath": "audios/female/audio-3-12-f.mp3",
     "translation": "Moreover, as for division,\nThere is a distinction between the divisor and the dividend.\nThis is to say that division has no commutativity.\nNow, to say divide A by B.\nA —\nis the dividend.\nB —\nis the divisor.\nIt may also be written as dividing with B to A.\nThere is no difference, is there?\nSubtraction is likewise so.\nAnd addition and multiplication have commutativity;\nhence they are generally used.",
     "isCodeBlock": false,
@@ -474,7 +474,7 @@ export const segments = [
         "durationInFrames": 100
       },
       {
-        "chinese": "今言除「甲」以「乙」者。",
+        "chinese": "今言`除「甲」以「乙」`者。",
         "english": "Now, to say divide A by B.",
         "transcription": "kị̀m ŋɨə̀n ɖɨə̀ː kạp jɨ́ː ʔịt ʨiáː",
         "durationInFrames": 80
@@ -504,7 +504,7 @@ export const segments = [
         "durationInFrames": 40
       },
       {
-        "chinese": "亦可書除「乙」於「甲」。",
+        "chinese": "亦可書`除「乙」於「甲」`。",
         "english": "It may also be written as dividing with B to A.",
         "transcription": "jiak kʰɑ́ː ɕɨə̀ː ɖɨə̀ː ʔịt ʔɨə̀ː kạp",
         "durationInFrames": 80
@@ -528,7 +528,7 @@ export const segments = [
         "durationInFrames": 90
       },
       {
-        "chinese": "於乃通以。",
+        "chinese": "`於`乃通`以`。",
         "english": "hence they are generally used.",
         "transcription": "ʔɨə̀ː nə́j tʰùŋ jɨ́ː",
         "durationInFrames": 52
@@ -979,67 +979,67 @@ export const segments = [
         "chinese": "吾有二數。",
         "english": "I have two numbers.",
         "transcription": "ŋòː ɦʉúː ɲǐː ʂʉǒː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "曰三十五。",
         "english": "Named thirty-five.",
         "transcription": "ɦʉot sɑ̀m ʥip ŋóː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "曰九十四。",
         "english": "Named ninety-four.",
         "transcription": "ɦʉot kʉúː ʥip sǐː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "名之曰「頭」",
         "english": "Named them “head”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot dùː",
-        "durationInFrames": 41
+        "durationInFrames": 43
       },
       {
         "chinese": "曰「足」。",
         "english": "and “foot.”",
         "transcription": "ɦʉot ʦʉok",
-        "durationInFrames": 31
+        "durationInFrames": 32
       },
       {
         "chinese": "\n除「足」以二。",
         "english": "Divide the “foot” by two.",
         "transcription": "ɖɨə̀ː ʦʉok jɨ́ː ɲǐː",
-        "durationInFrames": 61
+        "durationInFrames": 54
       },
       {
         "chinese": "減其以「頭」。",
         "english": "Subtract it from the “head.”",
         "transcription": "kẹ́m gɨ̀ː jɨ́ː dùː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "名之曰「兔」。",
         "english": "Named it “rabbit.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot tʰǒː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "\n減「頭」以「兔」。",
         "english": "Subtract the “head” by the “rabbit.”",
         "transcription": "kẹ́m dùː jɨ́ː tʰǒː",
-        "durationInFrames": 61
+        "durationInFrames": 54
       },
       {
         "chinese": "名之曰「雉」。",
         "english": "Named it “pheasant.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɖíː",
-        "durationInFrames": 51
+        "durationInFrames": 54
       },
       {
         "chinese": "\n夫「雉」夫「兔」。",
         "english": "The “pheasant” and the “rabbit.”",
         "transcription": "bʉòː ɖíː bʉòː tʰǒː",
-        "durationInFrames": 61
+        "durationInFrames": 54
       },
       {
         "chinese": "書之。",
@@ -1084,7 +1084,7 @@ export const segments = [
   },
   {
     "id": "3-22",
-    "text": "吾聞有善詼諧者注此解曰。今有能禽獸語者。申其令。雉獨立。兔人立。是時足數為向者之半。故曰除「足」以二。是人又有令曰。雉兔復各舉一足。故曰減其以「頭」。雉雙足皆舉。遂仆於地。兔尚有一足。",
+    "text": "吾聞有善詼諧者注此解曰。今有能禽獸語者。申其令。雉獨立。兔人立。是時足數為向者之半。故曰`除「足」以二`。是人又有令曰。雉兔復各舉一足。故曰`減其以「頭」`。雉雙足皆舉。遂仆於地。兔尚有一足。",
     "audioPath": "audios/female/audio-3-22-f.mp3",
     "translation": "I have heard a witty commentator annotate this interpretation as follows.\nNow there exists one who can speak the language of beasts.\nState his commands.\nThe pheasant stands by itself.\nThe rabbit stands upright.\nThe number of feet is half that of the heads.\nTherefore, divide the feet by two.\nThis person also has an instruction:\nThe pheasant and the rabbit each raise one foot again.\nTherefore, subtract it from the “head.”\nThe pheasant’s two feet are both raised.\nThey fall to the ground.\nThe rabbit still has one foot.",
     "isCodeBlock": false,
@@ -1126,7 +1126,7 @@ export const segments = [
         "durationInFrames": 99
       },
       {
-        "chinese": "故曰除「足」以二。",
+        "chinese": "故曰`除「足」以二`。",
         "english": "Therefore, divide the feet by two.",
         "transcription": "kǒː ɦʉot ɖɨə̀ː ʦʉok jɨ́ː ɲǐː",
         "durationInFrames": 69
@@ -1144,7 +1144,7 @@ export const segments = [
         "durationInFrames": 79
       },
       {
-        "chinese": "故曰減其以「頭」。",
+        "chinese": "故曰`減其以「頭」`。",
         "english": "Therefore, subtract it from the “head.”",
         "transcription": "kǒː ɦʉot kẹ́m gɨ̀ː jɨ́ː dùː",
         "durationInFrames": 69
@@ -1172,7 +1172,7 @@ export const segments = [
   },
   {
     "id": "3-23",
-    "text": "故數是時之足。乃得兔之數。既知兔幾何。則雉易矣。減「頭」以「兔」可得。",
+    "text": "故數是時之足。乃得兔之數。既知兔幾何。則雉易矣。`減「頭」以「兔」`可得。",
     "audioPath": "audios/female/audio-3-23-f.mp3",
     "translation": "Thus the feet are the numbers at this time.\nThereby the rabbit’s number is obtained.\nOnce the rabbit’s measure is known.\nThen the pheasant becomes easy.\nSubtract the “head” by the “rabbit” to obtain.",
     "isCodeBlock": false,
@@ -1202,7 +1202,7 @@ export const segments = [
         "durationInFrames": 50
       },
       {
-        "chinese": "減「頭」以「兔」可得。",
+        "chinese": "`減「頭」以「兔」`可得。",
         "english": "Subtract the “head” by the “rabbit” to obtain.",
         "transcription": "kẹ́m dùː jɨ́ː tʰǒː kʰɑ́ː tək",
         "durationInFrames": 68
@@ -1505,195 +1505,195 @@ export const segments = [
         "chinese": "吾有四數。",
         "english": "I have four numbers.",
         "transcription": "ŋòː ɦʉúː sǐː ʂʉǒː",
-        "durationInFrames": 50
+        "durationInFrames": 52
       },
       {
         "chinese": "曰三百四十。",
         "english": "Each of them are, three hundred forty",
         "transcription": "ɦʉot sɑ̀m pạk sǐː ʥip",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
         "chinese": "曰三十二。",
         "english": "thirty-two,",
         "transcription": "ɦʉot sɑ̀m ʥip ɲǐː",
-        "durationInFrames": 50
+        "durationInFrames": 52
       },
       {
         "chinese": "曰二百十六。",
         "english": "two hundred and sixteen,",
         "transcription": "ɦʉot ɲǐː pạk ʥip lʉuk",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
         "chinese": "曰四百十七。",
         "english": "and four hundred and seventeen.",
         "transcription": "ɦʉot sǐː pạk ʥip ʦʰit",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
         "chinese": "名之曰「頭」",
         "english": "They are named, respectively, “Head,”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot dùː",
-        "durationInFrames": 40
+        "durationInFrames": 41
       },
       {
         "chinese": "曰「臂」",
         "english": "“Arm,”",
         "transcription": "ɦʉot piěː",
-        "durationInFrames": 20
+        "durationInFrames": 21
       },
       {
         "chinese": "曰「足」",
         "english": "“Foot,”",
         "transcription": "ɦʉot ʦʉok",
-        "durationInFrames": 20
+        "durationInFrames": 21
       },
       {
         "chinese": "曰「尾」。",
         "english": "and “Tail.”",
         "transcription": "ɦʉot mʉ́j",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "\n除「臂」以二。",
         "english": "Divide “Arm” by two.",
         "transcription": "ɖɨə̀ː piěː jɨ́ː ɲǐː",
-        "durationInFrames": 60
+        "durationInFrames": 52
       },
       {
         "chinese": "名之曰「刑天」。",
         "english": "Name it “Xing Tian.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɦèŋ tʰèn",
-        "durationInFrames": 60
+        "durationInFrames": 62
       },
       {
         "chinese": "\n乘「刑天」以二。",
         "english": "Multiply “Xing Tian” by two.",
         "transcription": "ʑɨ̀ŋ ɦèŋ tʰèn jɨ́ː ɲǐː",
-        "durationInFrames": 70
+        "durationInFrames": 62
       },
       {
         "chinese": "減其於「足」。",
         "english": "Subtract it from the “Foot.”",
         "transcription": "kẹ́m gɨ̀ː ʔɨə̀ː ʦʉok",
-        "durationInFrames": 50
+        "durationInFrames": 52
       },
       {
         "chinese": "除其以四。",
         "english": "Divide it by four.",
         "transcription": "ɖɨə̀ː gɨ̀ː jɨ́ː sǐː",
-        "durationInFrames": 50
+        "durationInFrames": 52
       },
       {
         "chinese": "名之曰「許狐和」。",
         "english": "Name it “Sum of Hydra and Fox.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot hɨə́ː ɦòː ɦʷɑ̀ː",
-        "durationInFrames": 75
+        "durationInFrames": 71
       }
     ],
     "durationInFrames": 755
   },
   {
     "id": "3-30",
-    "text": "乘「許狐和」以十。名之曰「十倍許狐和」。\n加「頭」以「尾」。減其以「十倍許狐和」。除其以三。名之曰「兩頭蛇」。\n減「尾」以「兩頭蛇」。減其以「許狐和」。除其以八。名之曰「九尾狐」。",
+    "text": "\n乘「許狐和」以十。名之曰「十倍許狐和」。\n加「頭」以「尾」。減其以「十倍許狐和」。除其以三。名之曰「兩頭蛇」。\n減「尾」以「兩頭蛇」。減其以「許狐和」。除其以八。名之曰「九尾狐」。",
     "audioPath": "audios/female/audio-3-30-f.mp3",
     "translation": "Multiply “Sum of Hydra and Fox” by ten.\nName it “Ten-fold Sum of Hydra and Fox.”\nAdd “Head” by “Tail.”\nSubtract the result by “Ten-fold Sum of Hydra and Fox.”\nDivide it by three.\nName it “Two-headed Snake.”\nSubtract “Tail” by “Two-headed Snake.”\nSubtract it by “Sum of Hydra and Fox.”\nDivide it by eight.\nName it “Nine-tailed Fox.”",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": "乘「許狐和」以十。",
+        "chinese": "\n乘「許狐和」以十。",
         "english": "Multiply “Sum of Hydra and Fox” by ten.",
         "transcription": "ʑɨ̀ŋ hɨə́ː ɦòː ɦʷɑ̀ː jɨ́ː ʥip",
-        "durationInFrames": 68
+        "durationInFrames": 70
       },
       {
         "chinese": "名之曰「十倍許狐和」。",
         "english": "Name it “Ten-fold Sum of Hydra and Fox.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ʥip bój hɨə́ː ɦòː ɦʷɑ̀ː",
-        "durationInFrames": 87
+        "durationInFrames": 90
       },
       {
         "chinese": "\n加「頭」以「尾」。",
         "english": "Add “Head” by “Tail.”",
         "transcription": "kạ̀ː dùː jɨ́ː mʉ́j",
-        "durationInFrames": 58
+        "durationInFrames": 50
       },
       {
         "chinese": "減其以「十倍許狐和」。",
         "english": "Subtract the result by “Ten-fold Sum of Hydra and Fox.”",
         "transcription": "kẹ́m gɨ̀ː jɨ́ː ʥip bój hɨə́ː ɦòː ɦʷɑ̀ː",
-        "durationInFrames": 87
+        "durationInFrames": 90
       },
       {
         "chinese": "除其以三。",
         "english": "Divide it by three.",
         "transcription": "ɖɨə̀ː gɨ̀ː jɨ́ː sɑ̀m",
-        "durationInFrames": 49
+        "durationInFrames": 50
       },
       {
         "chinese": "名之曰「兩頭蛇」。",
         "english": "Name it “Two-headed Snake.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot lɨɑ́ŋ dùː ʑiàː",
-        "durationInFrames": 68
+        "durationInFrames": 70
       },
       {
         "chinese": "\n減「尾」以「兩頭蛇」。",
         "english": "Subtract “Tail” by “Two-headed Snake.”",
         "transcription": "kẹ́m mʉ́j jɨ́ː lɨɑ́ŋ dùː ʑiàː",
-        "durationInFrames": 78
+        "durationInFrames": 70
       },
       {
         "chinese": "減其以「許狐和」。",
         "english": "Subtract it by “Sum of Hydra and Fox.”",
         "transcription": "kẹ́m gɨ̀ː jɨ́ː hɨə́ː ɦòː ɦʷɑ̀ː",
-        "durationInFrames": 68
+        "durationInFrames": 70
       },
       {
         "chinese": "除其以八。",
         "english": "Divide it by eight.",
         "transcription": "ɖɨə̀ː gɨ̀ː jɨ́ː pẹt",
-        "durationInFrames": 49
+        "durationInFrames": 50
       },
       {
         "chinese": "名之曰「九尾狐」。",
         "english": "Name it “Nine-tailed Fox.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kʉúː mʉ́j ɦòː",
-        "durationInFrames": 67
+        "durationInFrames": 69
       }
     ],
     "durationInFrames": 679
   },
   {
     "id": "3-31",
-    "text": "減「許狐和」以「九尾狐」。名之曰「許德拉」。\n夫「許德拉」夫「九尾狐」夫「刑天」夫「兩頭蛇」。書之。",
+    "text": "\n減「許狐和」以「九尾狐」。名之曰「許德拉」。\n夫「許德拉」夫「九尾狐」夫「刑天」夫「兩頭蛇」。書之。",
     "audioPath": "audios/female/audio-3-31-f.mp3",
     "translation": "Subtract “Sum of Hydra and Fox” by the “Nine-tailed Fox,”\nName it “Hydra.”\nAs for “Hydra,” “Nine-tailed Fox,” “Xing Tian,” and “Two-headed Snake,”\nwrite them down.",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": "減「許狐和」以「九尾狐」。",
+        "chinese": "\n減「許狐和」以「九尾狐」。",
         "english": "Subtract “Sum of Hydra and Fox” by the “Nine-tailed Fox,”",
         "transcription": "kẹ́m hɨə́ː ɦòː ɦʷɑ̀ː jɨ́ː kʉúː mʉ́j ɦòː",
-        "durationInFrames": 88
+        "durationInFrames": 91
       },
       {
         "chinese": "名之曰「許德拉」。",
         "english": "Name it “Hydra.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot hɨə́ː tək ləp",
-        "durationInFrames": 69
+        "durationInFrames": 71
       },
       {
         "chinese": "\n夫「許德拉」夫「九尾狐」夫「刑天」夫「兩頭蛇」。",
         "english": "As for “Hydra,” “Nine-tailed Fox,” “Xing Tian,” and “Two-headed Snake,”",
         "transcription": "bʉòː hɨə́ː tək ləp bʉòː kʉúː mʉ́j ɦòː bʉòː ɦèŋ tʰèn bʉòː lɨɑ́ŋ dùː ʑiàː",
-        "durationInFrames": 167
+        "durationInFrames": 161
       },
       {
         "chinese": "書之。",
         "english": "write them down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 29
+        "durationInFrames": 30
       }
     ],
     "durationInFrames": 353

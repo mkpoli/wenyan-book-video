@@ -9,12 +9,17 @@ import {
 import { parseFile } from "music-metadata";
 import { join, relative } from "path";
 
+import {
+  segments as sentenceSegments,
+  type SentenceSegment,
+} from "../src/generated/sentence-segments";
+
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
-const SEGMENTS_DIR = join(rendererDir, "public", "segments");
 const AUDIOS_DIR = join(rendererDir, "public", "audios");
 const AUDIOS_FEMALE_DIR = join(AUDIOS_DIR, "female");
+const SENTENCES_JSON_DIR = join(rendererDir, "public", "sentences");
 const TRANSLATIONS_DIR = join(rendererDir, "public", "translations");
-const TRANSCRIPTS_DIR = join(rendererDir, "public", "transcripts");
+const TRANSCRIPTIONS_DIR = join(rendererDir, "public", "transcripts");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const FPS = 30;
@@ -57,193 +62,169 @@ const countCharsExcludingQuotes = (text: string): number => {
   return text.replace(/[「」『』`\n\t 　]/g, "").length;
 };
 
-// Helpers for aligning Chinese text with IPA transcript tokens.
-// `stripInlineCode` removes backtick-delimited code spans (e.g. `code`) from
-// the text so they do not participate in character counts used for alignment.
-const stripInlineCode = (text: string): string => {
-  // Remove inline code spans delimited by backticks (e.g. `code`) so that they
-  // do not participate in transcript alignment character counts, while keeping
-  // the visible text intact elsewhere in the pipeline.
-  return text.replace(/`[^`]*`/g, "");
+type SentenceJsonEntry = {
+  id: string;
+  source: string;
+  isCode: boolean;
 };
 
-// Counts Chinese characters relevant for aligning with IPA tokens.
-// This excludes whitespace, quotes, and common punctuation so that each
-// remaining character should correspond to one IPA token in the transcript.
-const countCharsForTranscriptAlignment = (text: string): number => {
-  return stripInlineCode(text)
-    .replace(/[「」『』]/g, "")
-    .replace(/\s/g, "")
-    .replace(/[。，、！？；：,.!"'“”‘’]/g, "").length;
+type SentencesFile = {
+  sentences: SentenceJsonEntry[];
 };
 
-const splitChineseSentences = (
-  text: string,
-  preserveSpaces = false,
-): string[] => {
-  const sentences: string[] = [];
-  let currentSentence = "";
-  let insideQuotes = false;
+type TranslationEntry = {
+  translation?: string | null;
+};
 
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i];
+type TranscriptionEntry = {
+  ipa?: string | null;
+};
 
-    if (char === "『") {
-      insideQuotes = true;
-      currentSentence += char;
-    } else if (char === "』") {
-      insideQuotes = false;
-      currentSentence += char;
-      // Check if previous character was sentence-ending punctuation
-      if (i > 0) {
-        const prevChar = text[i - 1];
-        if (prevChar === "。" || prevChar === "！" || prevChar === "？") {
-          // Only split at 。』 if NOT immediately followed by another sentence-ending punctuation
-          // (e.g., don't split "。』。" - keep it together)
-          const nextChar = i + 1 < text.length ? text[i + 1] : null;
-          if (nextChar !== "。" && nextChar !== "！" && nextChar !== "？") {
-            // Split at 。』 (period followed by closing quote)
-            const processed = preserveSpaces
-              ? currentSentence
-              : currentSentence.trim();
-            if (processed.length > 0) {
-              sentences.push(processed);
-            }
-            currentSentence = "";
-          }
-        }
-      }
-    } else if (char === "」") {
-      // Always include the closing quote
-      currentSentence += char;
+type ChapterResources = {
+  sentences: Map<string, SentenceJsonEntry>;
+  translations: Map<string, string | null>;
+  transcriptions: Map<string, string | null>;
+};
 
-      // Look ahead for the next non-whitespace character.
-      // If it's 「曰」, we treat this as a sentence boundary so that
-      // patterns like `…耶」曰「…耶」` or `…耶」\n曰「…耶」` are split
-      // between `」` and `曰`.
-      let j = i + 1;
-      let nextNonWhitespace: string | null = null;
-      while (j < text.length) {
-        const lookaheadChar = text[j];
-        if (!/\s/.test(lookaheadChar)) {
-          nextNonWhitespace = lookaheadChar;
-          break;
-        }
-        j++;
-      }
+const chapterResourcesCache = new Map<string, ChapterResources | null>();
 
-      if (nextNonWhitespace === "曰") {
-        const processed = preserveSpaces
-          ? currentSentence
-          : currentSentence.trim();
-        if (processed.length > 0) {
-          sentences.push(processed);
-        }
-        currentSentence = "";
-      }
-    } else if (
-      (char === "。" || char === "！" || char === "？") &&
-      !insideQuotes
-    ) {
-      currentSentence += char;
-      const processed = preserveSpaces
-        ? currentSentence
-        : currentSentence.trim();
-      if (processed.length > 0) {
-        sentences.push(processed);
-      }
-      currentSentence = "";
-    } else {
-      currentSentence += char;
+const readJsonFile = <T>(filePath: string): T | null => {
+  if (!existsSync(filePath)) {
+    return null;
+  }
+  try {
+    const raw = readFileSync(filePath, "utf-8");
+    return JSON.parse(raw) as T;
+  } catch (error) {
+    console.warn(`[segments] Failed to parse ${filePath}:`, error);
+    return null;
+  }
+};
+
+const cleanEnglishLine = (input: string | null | undefined): string | null => {
+  if (!input) {
+    return null;
+  }
+  const trimmed = input.trim();
+  return trimmed.length > 0 ? trimmed : null;
+};
+
+const cleanTranscription = (
+  input: string | null | undefined,
+): string | null => {
+  if (!input) {
+    return null;
+  }
+  const trimmed = input.trim();
+  const withoutTrailingDots = trimmed.replace(/(?:\s*\.)+$/g, "").trim();
+  return withoutTrailingDots.length > 0 ? withoutTrailingDots : null;
+};
+
+const formatChineseSentence = (
+  source: string | undefined,
+  preserveWhitespace: boolean,
+): string => {
+  if (!source) {
+    return "";
+  }
+  return preserveWhitespace ? source : source.trim();
+};
+
+const buildTranslationBlock = (lines: Array<string | null>): string | null => {
+  if (lines.length === 0) {
+    return null;
+  }
+  const joined = lines
+    .map((line) => line ?? "")
+    .join("\n")
+    .trim();
+  return joined.length > 0 ? joined : null;
+};
+
+const resolveTranscriptionPath = (chapterId: string): string | null => {
+  const candidates = [
+    join(TRANSCRIPTIONS_DIR, `${chapterId}.transcriptions.json`),
+    join(TRANSCRIPTIONS_DIR, `${chapterId}.transcripts.json`),
+  ];
+
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) {
+      return candidate;
     }
   }
 
-  // Add any remaining text as the last sentence
-  const processed = preserveSpaces ? currentSentence : currentSentence.trim();
-  if (processed.length > 0) {
-    sentences.push(processed);
-  }
-
-  return sentences;
+  return null;
 };
 
-const splitEnglishSentences = (
-  translation: string | null,
-  preserveSpaces = false,
-): string[] => {
-  if (!translation) {
-    return [];
+const loadChapterResources = (chapterId: string): ChapterResources | null => {
+  const cached = chapterResourcesCache.get(chapterId);
+  if (cached !== undefined) {
+    return cached;
   }
 
-  const sentences = translation
-    .replace(/\r\n/g, "\n")
-    .split(/\n+/)
-    .map((line) => (preserveSpaces ? line : line.trim()))
-    .filter((line) => line.length > 0);
-
-  return sentences;
-};
-
-const splitIPATranscriptions = (
-  transcript: string | null,
-  chineseSentences: string[],
-  preserveSpaces = false,
-): string[] => {
-  if (!transcript) {
-    return [];
-  }
-
-  // Tokenize IPA transcript: tokens are either IPA syllables or "." as a
-  // sentence boundary marker. There should be no other token types.
-  const rawTokens = transcript
-    .split(/\s+/)
-    .map((token) => token.trim())
-    .filter(Boolean);
-
-  const ipaTokens = rawTokens.filter((token) => token !== ".");
-  const totalIpaTokens = ipaTokens.length;
-
-  const charCounts = chineseSentences.map((sentence) =>
-    countCharsForTranscriptAlignment(sentence),
+  const sentencesPath = join(SENTENCES_JSON_DIR, `${chapterId}.sentences.json`);
+  const translationsPath = join(
+    TRANSLATIONS_DIR,
+    `${chapterId}.translations.json`,
   );
-  const totalChars = charCounts.reduce((sum, count) => sum + count, 0);
+  const transcriptionsPath = resolveTranscriptionPath(chapterId);
 
-  // If the expected 1:1 mapping between Chinese characters and IPA tokens
-  // does not hold, fall back to a simpler sentence-based split to avoid
-  // producing obviously wrong alignments.
-  if (
-    totalChars === 0 ||
-    totalIpaTokens === 0 ||
-    totalChars !== totalIpaTokens
-  ) {
-    const normalized = preserveSpaces
-      ? transcript
-      : transcript.trim().replace(/\s+/g, " ");
-    return normalized
-      .split(/\s*[\.,]\s*/)
-      .map((sentence) => (preserveSpaces ? sentence : sentence.trim()))
-      .filter(Boolean);
+  const sentencesJson = readJsonFile<SentencesFile>(sentencesPath);
+  if (!sentencesJson || !Array.isArray(sentencesJson.sentences)) {
+    console.warn(
+      `[segments] Missing or invalid sentences for ${chapterId} at ${toRendererRelative(sentencesPath)}`,
+    );
+    chapterResourcesCache.set(chapterId, null);
+    return null;
   }
 
-  const sentences: string[] = [];
-  let tokenIndex = 0;
-
-  for (const count of charCounts) {
-    if (count <= 0) {
-      sentences.push("");
-      continue;
+  const sentences = new Map<string, SentenceJsonEntry>();
+  sentencesJson.sentences.forEach((entry) => {
+    if (entry?.id) {
+      sentences.set(entry.id, entry);
     }
+  });
 
-    const sentenceTokens = ipaTokens.slice(tokenIndex, tokenIndex + count);
-    tokenIndex += count;
-
-    const sentence = preserveSpaces
-      ? sentenceTokens.join(" ")
-      : sentenceTokens.join(" ").trim();
-    sentences.push(sentence);
+  const translationsRaw =
+    readJsonFile<Record<string, TranslationEntry>>(translationsPath);
+  if (!translationsRaw) {
+    console.warn(
+      `[segments] Missing translations for ${chapterId} at ${toRendererRelative(translationsPath)}`,
+    );
+  }
+  const translations = new Map<string, string | null>();
+  if (translationsRaw) {
+    Object.entries(translationsRaw).forEach(([id, entry]) => {
+      translations.set(id, cleanEnglishLine(entry?.translation ?? null));
+    });
   }
 
-  return sentences;
+  const transcriptions = new Map<string, string | null>();
+  if (transcriptionsPath) {
+    const transcriptionRaw =
+      readJsonFile<Record<string, TranscriptionEntry>>(transcriptionsPath);
+    if (transcriptionRaw) {
+      Object.entries(transcriptionRaw).forEach(([id, entry]) => {
+        transcriptions.set(id, cleanTranscription(entry?.ipa ?? null));
+      });
+    } else {
+      console.warn(
+        `[segments] Failed to parse transcriptions for ${chapterId} at ${toRendererRelative(transcriptionsPath)}`,
+      );
+    }
+  } else {
+    console.warn(
+      `[segments] No transcriptions JSON found for ${chapterId} in ${toRendererRelative(TRANSCRIPTIONS_DIR)}`,
+    );
+  }
+
+  const resources: ChapterResources = {
+    sentences,
+    translations,
+    transcriptions,
+  };
+  chapterResourcesCache.set(chapterId, resources);
+  return resources;
 };
 
 const ansi = (code: number) => (text: string) => `\x1b[${code}m${text}\x1b[0m`;
@@ -311,65 +292,6 @@ const logLintWarning = (title: string, rows: string[]) => {
   console.warn(formatLintBlock(title, rows));
 };
 
-const formatPreviewEntry = (
-  indexLabel: string,
-  label: "zh" | "en",
-  content: string | null | undefined,
-  highlight: boolean,
-): string => {
-  const markerRaw = highlight ? "(!)" : "·";
-  const paddedMarkerRaw = markerRaw.padEnd(3, " ");
-  const baseStyled = highlight ? styles.red("(!)") : styles.gray("·");
-  const styledPadLength = paddedMarkerRaw.length - stripAnsi(baseStyled).length;
-  const markerStyled =
-    styledPadLength > 0
-      ? `${baseStyled}${" ".repeat(styledPadLength)}`
-      : baseStyled;
-  const safeContent =
-    content === null || content === undefined || content.length === 0
-      ? styles.red("(missing)")
-      : content;
-
-  const plainIndex =
-    label === "zh" ? indexLabel : " ".repeat(indexLabel.length);
-  const styledIndex =
-    label === "zh" ? styles.bold(indexLabel) : " ".repeat(indexLabel.length);
-
-  const rawPrefix = `${paddedMarkerRaw} ${plainIndex} ${label}: `;
-  const styledPrefix = `${markerStyled} ${styledIndex} ${styles.dim(label)}: `;
-  const indentedContent = safeContent.replace(
-    /\n/g,
-    `\n${" ".repeat(rawPrefix.length)}`,
-  );
-
-  return `${styledPrefix}${indentedContent}`;
-};
-
-const formatSentenceCount = (
-  count: number,
-  relation: "more" | "fewer" | null,
-) => {
-  const relationText =
-    relation === "more"
-      ? ` ${styles.yellow("(more)")}`
-      : relation === "fewer"
-        ? ` ${styles.red("(fewer)")}`
-        : "";
-  return `${count}${relationText}`;
-};
-
-const formatMetadataRows = (entries: Array<[string, string]>): string[] => {
-  const maxLabelLength = entries.reduce(
-    (max, [label]) => Math.max(max, stripAnsi(label).length),
-    0,
-  );
-
-  return entries.map(([label, value]) => {
-    const paddedLabel = label.padEnd(maxLabelLength, " ");
-    return `${styles.dim(paddedLabel)} : ${value}`;
-  });
-};
-
 const generateSegments = async () => {
   const lintWarnings: Array<{
     chapter: number;
@@ -378,253 +300,188 @@ const generateSegments = async () => {
     rows: string[];
   }> = [];
 
-  let entries: Array<{
-    id: string;
-    text: string;
-    audioPath: string;
-    translation: string | null;
-    isCodeBlock: boolean;
-    sentences: Array<{
-      chinese: string;
-      english: string | null;
-      transcription: string | null;
-      durationInFrames: number;
-    }>;
-    durationInFrames: number;
-  }> = [];
+  const segmentsToProcess: readonly SentenceSegment[] = [...sentenceSegments];
 
-  // Load chapter metadata files
-  const chapterMetadata: Record<
-    string,
-    Record<string, { isCodeBlock: boolean }>
-  > = {};
-  try {
-    const metadataFiles = readdirSync(SEGMENTS_DIR).filter((file) =>
-      file.endsWith(".json"),
-    );
-    for (const metadataFile of metadataFiles) {
-      const metadataPath = join(SEGMENTS_DIR, metadataFile);
-      const metadata = JSON.parse(
-        readFileSync(metadataPath, "utf-8"),
-      ) as Record<string, { isCodeBlock: boolean }>;
-      const chapterNum = metadataFile.replace(".json", "");
-      chapterMetadata[chapterNum] = metadata;
-    }
-  } catch (error) {
-    console.warn("[segments] Failed to load chapter metadata:", error);
-  }
+  const entries = (
+    await Promise.all(
+      segmentsToProcess.map(async (segmentDef) => {
+        const { id, chapterId, sentenceIds, isCodeBlock, segmentIndex } =
+          segmentDef;
+        const audioFile = `audio-${id}.mp3`;
+        const femaleAudioFile = `audio-${id}-f.mp3`;
+        const maleAudioPath = join(AUDIOS_DIR, audioFile);
+        const femaleAudioPath = join(AUDIOS_FEMALE_DIR, femaleAudioFile);
+        const hasFemaleAudio = existsSync(femaleAudioPath);
+        const sourceAudioPath = hasFemaleAudio
+          ? femaleAudioPath
+          : maleAudioPath;
+        const publicAudioFile = hasFemaleAudio
+          ? `female/${femaleAudioFile}`
+          : audioFile;
 
-  try {
-    const files = readdirSync(SEGMENTS_DIR).filter((file) =>
-      file.endsWith(".txt"),
-    );
-
-    entries = (
-      await Promise.all(
-        files.map(async (file) => {
-          const id = file.replace(".txt", "");
-          const audioFile = `audio-${id}.mp3`;
-          const femaleAudioFile = `audio-${id}-f.mp3`;
-          const maleAudioPath = join(AUDIOS_DIR, audioFile);
-          const femaleAudioPath = join(AUDIOS_FEMALE_DIR, femaleAudioFile);
-          const hasFemaleAudio = existsSync(femaleAudioPath);
-          const sourceAudioPath = hasFemaleAudio
-            ? femaleAudioPath
-            : maleAudioPath;
-          const publicAudioFile = hasFemaleAudio
-            ? `female/${femaleAudioFile}`
-            : audioFile;
-
-          if (!existsSync(sourceAudioPath)) {
-            debugLog(`Skipping ${file} (no matching audio).`);
-            return null;
-          }
-
-          // Get chapter number from segment ID (e.g., "3-1" -> "3")
-          const chapterNum = id.split("-")[0];
-          const metadata = chapterMetadata[chapterNum]?.[id];
-          const isCodeBlock = metadata?.isCodeBlock ?? false;
-
-          const segmentPath = join(SEGMENTS_DIR, file);
-          const rawText = readFileSync(segmentPath, "utf-8");
-          const text = isCodeBlock ? rawText : rawText.trim();
-          const translationPath = join(TRANSLATIONS_DIR, `${id}.txt`);
-          const rawTranslation = existsSync(translationPath)
-            ? readFileSync(translationPath, "utf-8")
-            : null;
-          const translation =
-            isCodeBlock && rawTranslation
-              ? rawTranslation
-              : (rawTranslation?.trim() ?? null);
-          const transcriptPath = join(TRANSCRIPTS_DIR, `audio-${id}.txt`);
-          const rawTranscript = existsSync(transcriptPath)
-            ? readFileSync(transcriptPath, "utf-8")
-            : null;
-          const transcript =
-            isCodeBlock && rawTranscript
-              ? rawTranscript
-              : (rawTranscript?.trim() ?? null);
-
-          const chineseSentences = splitChineseSentences(text, isCodeBlock);
-          const englishSentences = splitEnglishSentences(
-            translation,
-            isCodeBlock,
-          );
-          const ipaSentences = splitIPATranscriptions(
-            transcript,
-            chineseSentences,
-            isCodeBlock,
-          );
-
-          // ------------------------------------------------------------------
-          // Translation sanity checks
-          //
-          // Emit a compiler-style warning if:
-          // - There is Chinese text but the overall English translation is
-          //   empty/missing.
-          // - The number of English sentences differs from the number of Chinese
-          //   sentences for this segment (missing or extra lines).
-          // ------------------------------------------------------------------
-          const hasChinese = chineseSentences.length > 0;
-          const trimmedTranslation =
-            translation !== null ? translation.trim() : translation;
-          const englishIsEmpty =
-            hasChinese &&
-            (trimmedTranslation === null || trimmedTranslation.length === 0);
-          const sentenceCountMismatch =
-            englishSentences.length !== chineseSentences.length;
-
-          if (englishIsEmpty || sentenceCountMismatch) {
-            const relation =
-              englishSentences.length > chineseSentences.length
-                ? "more"
-                : "fewer";
-
-            const previews: string[] = [];
-            const maxPairs = Math.max(
-              chineseSentences.length,
-              englishSentences.length,
-            );
-            for (let i = 0; i < maxPairs; i++) {
-              const c = chineseSentences[i];
-              const e = englishSentences[i];
-              if (c === undefined && e === undefined) {
-                break;
-              }
-              const indexLabel = `#${i.toString().padStart(2, "0")}`;
-              const highlight = c === undefined || e === undefined;
-              previews.push(formatPreviewEntry(indexLabel, "zh", c, highlight));
-              previews.push(formatPreviewEntry(indexLabel, "en", e, highlight));
-            }
-
-            const metadataRows = formatMetadataRows([
-              ["Segmented text", toRendererRelative(segmentPath)],
-              [
-                "Eng. Translation",
-                existsSync(translationPath)
-                  ? toRendererRelative(translationPath)
-                  : styles.red("(missing)"),
-              ],
-              [
-                "Chinese sentences",
-                formatSentenceCount(chineseSentences.length, null),
-              ],
-              [
-                "English sentences",
-                formatSentenceCount(englishSentences.length, relation),
-              ],
-            ]);
-
-            const rows = [
-              ...metadataRows,
-              ...(previews.length > 0
-                ? [INNER_DIVIDER_TOKEN, ...previews]
-                : []),
-            ];
-
-            const [chapterStr, segmentStr] = id.split("-");
-            lintWarnings.push({
-              chapter: Number(chapterStr),
-              segment: Number(segmentStr),
-              title: `⚠️  Translation mismatch in ${id}`,
-              rows,
-            });
-          }
-
-          if (hasFemaleAudio) {
-            debugLog(`Using female voice for segment ${id}.`);
-          }
-
-          const durationInSeconds =
-            await getAudioDurationInSeconds(sourceAudioPath);
-          const durationInFrames =
-            Math.ceil(durationInSeconds * FPS) + AUDIO_TAIL_FRAMES;
-
-          let assignedFrames = 0;
-          const totalChars = chineseSentences
-            .map((sentence) => countCharsExcludingQuotes(sentence))
-            .reduce((sum, count) => sum + count, 0);
-
-          const sentences = chineseSentences.map((chSentence, index) => {
-            const charCount = countCharsExcludingQuotes(chSentence);
-            const isLast = index === chineseSentences.length - 1;
-            const proportion =
-              totalChars > 0
-                ? charCount / totalChars
-                : 1 / Math.max(chineseSentences.length, 1);
-
-            let sentenceDuration = isLast
-              ? durationInFrames - assignedFrames
-              : Math.max(Math.round(durationInFrames * proportion), 1);
-
-            if (!isLast) {
-              assignedFrames += sentenceDuration;
-            } else {
-              const remaining = durationInFrames - assignedFrames;
-              if (remaining > 0) {
-                sentenceDuration = remaining;
-                assignedFrames += remaining;
-              }
-            }
-
-            const englishSentence = englishSentences[index] ?? null;
-            const ipaSentence = ipaSentences[index] ?? null;
-
-            return {
-              chinese: chSentence,
-              english: englishSentence,
-              transcription: ipaSentence,
-              durationInFrames: sentenceDuration,
-            };
-          });
-
-          return {
-            id,
-            text,
-            audioPath: `audios/${publicAudioFile}`,
-            translation,
-            isCodeBlock,
-            sentences,
-            durationInFrames,
-          };
-        }),
-      )
-    )
-      .filter((entry): entry is NonNullable<typeof entry> => entry !== null)
-      .sort((a, b) => {
-        const [aChapter, aSegment] = a.id.split("-").map(Number);
-        const [bChapter, bSegment] = b.id.split("-").map(Number);
-
-        if (aChapter !== bChapter) {
-          return aChapter - bChapter;
+        if (!existsSync(sourceAudioPath)) {
+          debugLog(`Skipping ${id} (no matching audio).`);
+          return null;
         }
 
-        return aSegment - bSegment;
-      });
-  } catch (error) {
-    console.error("[segments] Failed to read segments:", error);
-    entries = [];
-  }
+        const resources = loadChapterResources(chapterId);
+        if (!resources) {
+          lintWarnings.push({
+            chapter: Number(id.split("-")[0]) || 0,
+            segment: segmentIndex,
+            title: `⚠️  Missing chapter resources for ${id}`,
+            rows: [
+              `Sentences: ${toRendererRelative(
+                join(SENTENCES_JSON_DIR, `${chapterId}.sentences.json`),
+              )}`,
+              `Translations: ${toRendererRelative(
+                join(TRANSLATIONS_DIR, `${chapterId}.translations.json`),
+              )}`,
+              `Transcriptions dir: ${toRendererRelative(TRANSCRIPTIONS_DIR)}`,
+            ],
+          });
+          return null;
+        }
+
+        if (!sentenceIds || sentenceIds.length === 0) {
+          lintWarnings.push({
+            chapter: Number(id.split("-")[0]) || 0,
+            segment: segmentIndex,
+            title: `⚠️  No sentence mapping for ${id}`,
+            rows: [
+              `Chapter ${chapterId} has no sentenceIds entry in sentence-segments.ts`,
+            ],
+          });
+          return null;
+        }
+
+        const { sentences, translations, transcriptions } = resources;
+        const missingChinese: string[] = [];
+        const missingTranslations: string[] = [];
+        const missingTranscriptions: string[] = [];
+
+        const chineseTexts: string[] = [];
+        const englishLines: Array<string | null> = [];
+        const transcriptionLines: Array<string | null> = [];
+
+        for (const sentenceId of sentenceIds) {
+          const sentenceEntry = sentences.get(sentenceId);
+          if (!sentenceEntry) {
+            missingChinese.push(sentenceId);
+          }
+          const preserveWhitespace =
+            isCodeBlock || Boolean(sentenceEntry?.isCode);
+          const chinese = formatChineseSentence(
+            sentenceEntry?.source,
+            preserveWhitespace,
+          );
+          chineseTexts.push(chinese);
+
+          const hasTranslation = translations.has(sentenceId);
+          const english = translations.get(sentenceId) ?? null;
+          if (!hasTranslation || english === null) {
+            missingTranslations.push(sentenceId);
+          }
+          englishLines.push(english);
+
+          const hasTranscription = transcriptions.has(sentenceId);
+          const ipa = transcriptions.get(sentenceId) ?? null;
+          if (!hasTranscription || ipa === null) {
+            missingTranscriptions.push(sentenceId);
+          }
+          transcriptionLines.push(ipa);
+        }
+
+        const text = isCodeBlock
+          ? chineseTexts.join("")
+          : chineseTexts.join("").trim();
+        const translationBlock = buildTranslationBlock(englishLines);
+
+        if (hasFemaleAudio) {
+          debugLog(`Using female voice for segment ${id}.`);
+        }
+
+        const durationInSeconds =
+          await getAudioDurationInSeconds(sourceAudioPath);
+        const durationInFrames =
+          Math.ceil(durationInSeconds * FPS) + AUDIO_TAIL_FRAMES;
+
+        const totalChars = chineseTexts
+          .map((sentence) => countCharsExcludingQuotes(sentence))
+          .reduce((sum, count) => sum + count, 0);
+
+        let assignedFrames = 0;
+        const sentencesForOutput = chineseTexts.map((chSentence, index) => {
+          const charCount = countCharsExcludingQuotes(chSentence);
+          const isLast = index === chineseTexts.length - 1;
+          const proportion =
+            totalChars > 0
+              ? charCount / totalChars
+              : 1 / Math.max(chineseTexts.length, 1);
+
+          let sentenceDuration = isLast
+            ? durationInFrames - assignedFrames
+            : Math.max(Math.round(durationInFrames * proportion), 1);
+
+          if (!isLast) {
+            assignedFrames += sentenceDuration;
+          } else {
+            const remaining = durationInFrames - assignedFrames;
+            if (remaining > 0) {
+              sentenceDuration = remaining;
+              assignedFrames += remaining;
+            }
+          }
+
+          return {
+            chinese: chSentence,
+            english: englishLines[index],
+            transcription: transcriptionLines[index],
+            durationInFrames: sentenceDuration,
+          };
+        });
+
+        const [chapterStr] = id.split("-");
+        const chapterNum = Number(chapterStr) || 0;
+        const warnRows = (label: string, ids: string[]): void => {
+          if (ids.length === 0) {
+            return;
+          }
+          lintWarnings.push({
+            chapter: chapterNum,
+            segment: segmentIndex,
+            title: `⚠️  Missing ${label} in ${id}`,
+            rows: ids.map((missingId) => `  - ${missingId}`),
+          });
+        };
+
+        warnRows("Chinese sentences", missingChinese);
+        warnRows("translations", missingTranslations);
+        warnRows("transcriptions", missingTranscriptions);
+
+        return {
+          id,
+          text,
+          audioPath: `audios/${publicAudioFile}`,
+          translation: translationBlock,
+          isCodeBlock,
+          sentences: sentencesForOutput,
+          durationInFrames,
+        };
+      }),
+    )
+  )
+    .filter((entry): entry is NonNullable<typeof entry> => entry !== null)
+    .sort((a, b) => {
+      const [aChapter, aSegment] = a.id.split("-").map(Number);
+      const [bChapter, bSegment] = b.id.split("-").map(Number);
+
+      if (aChapter !== bChapter) {
+        return aChapter - bChapter;
+      }
+
+      return aSegment - bSegment;
+    });
 
   lintWarnings
     .sort((a, b) => b.chapter - a.chapter || a.segment - b.segment)

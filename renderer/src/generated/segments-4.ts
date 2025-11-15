@@ -18,7 +18,7 @@ export const segments = [
       {
         "chinese": "萬智之始。",
         "english": "is the beginning of all wisdom.",
-        "transcription": "mʉǒn ʈiěː ʨɨ̀ː ɕɨ́ː",
+        "transcription": null,
         "durationInFrames": 53
       },
       {
@@ -244,7 +244,7 @@ export const segments = [
   },
   {
     "id": "4-4",
-    "text": "吾有一數。曰四十九。名之曰「貯」。\n若「貯」大於五十者。\n 加「貯」以一。昔之「貯」者。今其是矣。\n若非。\n 減「貯」以一。昔之「貯」者。今其是矣。\n也。",
+    "text": "吾有一數。曰四十九。名之曰「貯」。\n若「貯」大於五十者。\n\t加「貯」以一。昔之「貯」者。今其是矣。\n若非。\n\t減「貯」以一。昔之「貯」者。今其是矣。\n也。",
     "audioPath": "audios/female/audio-4-4-f.mp3",
     "translation": "I have a number.\nIt is forty-nine.\nIt is named “Reserve.”\nIf “Reserve” is greater than fifty.\nAdd one to “Reserve.”\nThe former value of “Reserve” is thus.\nNow it is thus.\nIf not.\nSubtract one from “Reserve.”\nThe former value of “Reserve” is thus.\nNow it is thus.\nSo be it.",
     "isCodeBlock": true,
@@ -253,19 +253,19 @@ export const segments = [
         "chinese": "吾有一數。",
         "english": "I have a number.",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "曰四十九。",
         "english": "It is forty-nine.",
         "transcription": "ɦʉot sǐː ʥip kʉúː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "名之曰「貯」。",
         "english": "It is named “Reserve.”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ʈɨə́ː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "\n若「貯」大於五十者。",
@@ -274,65 +274,65 @@ export const segments = [
         "durationInFrames": 81
       },
       {
-        "chinese": "\n 加「貯」以一。",
+        "chinese": "\n\t加「貯」以一。",
         "english": "Add one to “Reserve.”",
         "transcription": "kạ̀ː ʈɨə́ː jɨ́ː ʔit",
-        "durationInFrames": 63
+        "durationInFrames": 51
       },
       {
         "chinese": "昔之「貯」者。",
         "english": "The former value of “Reserve” is thus.",
         "transcription": "siak ʨɨ̀ː ʈɨə́ː ʨiáː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "\n若非。",
         "english": "If not.",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 36
+        "durationInFrames": 30
       },
       {
-        "chinese": "\n 減「貯」以一。",
+        "chinese": "\n\t減「貯」以一。",
         "english": "Subtract one from “Reserve.”",
         "transcription": "kẹ́m ʈɨə́ː jɨ́ː ʔit",
-        "durationInFrames": 63
+        "durationInFrames": 51
       },
       {
         "chinese": "昔之「貯」者。",
         "english": "The former value of “Reserve” is thus.",
         "transcription": "siak ʨɨ̀ː ʈɨə́ː ʨiáː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 45
+        "durationInFrames": 51
       },
       {
         "chinese": "\n也。",
         "english": "So be it.",
         "transcription": "jiáː",
-        "durationInFrames": 30
+        "durationInFrames": 18
       }
     ],
     "durationInFrames": 588
   },
   {
     "id": "4-5",
-    "text": "大於者。比之也。若。若非者。決之也。加「貯」以一云云者。為之也。比之得其真者。必為若云云之次句。必不為若非之次句。否。則反之。今以四十九不大於五十。遂行若非之次句。「貯」竟四十八。",
+    "text": "`大於`者。比之也。`若`。`若非`者。決之也。`加「貯」以一`云云者。為之也。比之得其真者。必為`若`云云之次句。必不為`若非`之次句。否。則反之。今以四十九不大於五十。遂行`若非`之次句。`「貯」`竟四十八。",
     "audioPath": "audios/female/audio-4-5-f.mp3",
     "translation": "“Greater than,” that is,\nto compare it.\n“If,”\n“If not,” that is,\nto decide it.\n“To add one to ‘Reserve,’” and so on,\nis to do it.\nTo compare it yields its true value.\nThis must be the sentence that follows “if …”\nIt must not be the sentence that follows “if not.”\nIf it is “No,”\nthen the reverse.\nNow, since forty-nine is not greater than fifty.\nProceed to the next sentence for the “not” case.\n“Reserve” ends at forty-eight.",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "大於者。",
+        "chinese": "`大於`者。",
         "english": "“Greater than,” that is,",
         "transcription": "dɑ̌j ʔɨə̀ː ʨiáː",
         "durationInFrames": 39
@@ -344,13 +344,13 @@ export const segments = [
         "durationInFrames": 39
       },
       {
-        "chinese": "若。",
+        "chinese": "`若`。",
         "english": "“If,”",
         "transcription": "ɲɨɑk",
         "durationInFrames": 19
       },
       {
-        "chinese": "若非者。",
+        "chinese": "`若非`者。",
         "english": "“If not,” that is,",
         "transcription": "ɲɨɑk pʉ̀j ʨiáː",
         "durationInFrames": 39
@@ -362,7 +362,7 @@ export const segments = [
         "durationInFrames": 39
       },
       {
-        "chinese": "加「貯」以一云云者。",
+        "chinese": "`加「貯」以一`云云者。",
         "english": "“To add one to ‘Reserve,’” and so on,",
         "transcription": "kạ̀ː ʈɨə́ː jɨ́ː ʔit ɦʉ̀n ɦʉ̀n ʨiáː",
         "durationInFrames": 78
@@ -380,13 +380,13 @@ export const segments = [
         "durationInFrames": 68
       },
       {
-        "chinese": "必為若云云之次句。",
+        "chinese": "必為`若`云云之次句。",
         "english": "This must be the sentence that follows “if …”",
         "transcription": "pit ɦỵèː ɲɨɑk ɦʉ̀n ɦʉ̀n ʨɨ̀ː ʦʰǐː kʉǒː",
         "durationInFrames": 88
       },
       {
-        "chinese": "必不為若非之次句。",
+        "chinese": "必不為`若非`之次句。",
         "english": "It must not be the sentence that follows “if not.”",
         "transcription": "pit pʉùː ɦỵèː ɲɨɑk pʉ̀j ʨɨ̀ː ʦʰǐː kʉǒː",
         "durationInFrames": 88
@@ -410,13 +410,13 @@ export const segments = [
         "durationInFrames": 107
       },
       {
-        "chinese": "遂行若非之次句。",
+        "chinese": "遂行`若非`之次句。",
         "english": "Proceed to the next sentence for the “not” case.",
         "transcription": "zʷǐː ɦạ̀ŋ ɲɨɑk pʉ̀j ʨɨ̀ː ʦʰǐː kʉǒː",
         "durationInFrames": 78
       },
       {
-        "chinese": "「貯」竟四十八。",
+        "chinese": "`「貯」`竟四十八。",
         "english": "“Reserve” ends at forty-eight.",
         "transcription": "ʈɨə́ː kịǎŋ sǐː ʥip pẹt",
         "durationInFrames": 59
@@ -426,7 +426,7 @@ export const segments = [
   },
   {
     "id": "4-6",
-    "text": "或問曰。末之也字者。語助耶。無之可乎。曰。不可也。所以別歧義。示一句之終止也。蓋編程之理或有極繁者。或相嵌。或相銜。亡是不能斷。用云云二字亦可。",
+    "text": "或問曰。末之`也`字者。語助耶。無之可乎。曰。不可也。所以別歧義。示一句之終止也。蓋編程之理或有極繁者。或相嵌。或相銜。亡是不能斷。用`云云`二字亦可。",
     "audioPath": "audios/female/audio-4-6-f.mp3",
     "translation": "Some may ask,\n“Is the final word “jiaeq” (也),\na grammatical particle?\nCan it be omitted?”\nIt is answered, “\nNo, it is not permissible.\nIt is used to distinguish the shades of meaning.\nThat marks the end of a sentence.\nIndeed, the theory of programming may have extremes of complexity.\nSome things are nested within others.\nSome things interlock.\nWithout this, one cannot determine.\nThe two graphs un un (云云, ‘and so on’) may also suffice.”",
     "isCodeBlock": false,
@@ -438,7 +438,7 @@ export const segments = [
         "durationInFrames": 41
       },
       {
-        "chinese": "末之也字者。",
+        "chinese": "末之`也`字者。",
         "english": "“Is the final word “jiaeq” (也),",
         "transcription": "mɑt ʨɨ̀ː jiáː ʣɨ̌ː ʨiáː",
         "durationInFrames": 62
@@ -504,7 +504,7 @@ export const segments = [
         "durationInFrames": 62
       },
       {
-        "chinese": "用云云二字亦可。",
+        "chinese": "用`云云`二字亦可。",
         "english": "The two graphs un un (云云, ‘and so on’) may also suffice.”",
         "transcription": "jʉǒŋ ɦʉ̀n ɦʉ̀n ɲǐː ʣɨ̌ː jiak kʰɑ́ː",
         "durationInFrames": 83
@@ -514,7 +514,7 @@ export const segments = [
   },
   {
     "id": "4-7",
-    "text": "又問曰。或雖非亦於我無與者。省若非之句。可乎。曰。可也。例曰今有十斗之器。主人有酒若干。傾諸此器。十斗以上者皆滿盈。問器有酒竟幾何。解曰。",
+    "text": "又問曰。或雖非亦於我無與者。省`若非`之句。可乎。曰。可也。例曰今有十斗之器。主人有酒若干。傾諸此器。十斗以上者皆滿盈。問器有酒竟幾何。解曰。",
     "audioPath": "audios/female/audio-4-7-f.mp3",
     "translation": "And he asked again,\n“Sometimes, there may be a thing that is false but isn't relevant to me.\nIf I omit the negation's clause,\nwill it be permissible?”\nIt is answered, “\nCertainly.\nFor example, there is a vessel of ten dou capacity.\nThe host has a certain quantity of wine.\nHe pours all the wine into this vessel.\nVessels of more than ten dou are all full.\nThe question asks: how much wine does the vessel contain in the end?”\nThe explanation says:",
     "isCodeBlock": false,
@@ -532,7 +532,7 @@ export const segments = [
         "durationInFrames": 100
       },
       {
-        "chinese": "省若非之句。",
+        "chinese": "省`若非`之句。",
         "english": "If I omit the negation's clause,",
         "transcription": "ʂịáŋ ɲɨɑk pʉ̀j ʨɨ̀ː kʉǒː",
         "durationInFrames": 60
@@ -596,7 +596,7 @@ export const segments = [
   },
   {
     "id": "4-8",
-    "text": "吾有二數。曰十。曰九。名之曰「器量」曰「酒量」。\n若「酒量」大於「器量」者。\n 昔之「酒量」者。今「器量」是矣。\n云云。\n夫「酒量」。書之。",
+    "text": "吾有二數。曰十。曰九。名之曰「器量」曰「酒量」。\n若「酒量」大於「器量」者。\n\t昔之「酒量」者。今「器量」是矣。\n云云。\n夫「酒量」。書之。",
     "audioPath": "audios/female/audio-4-8-f.mp3",
     "translation": "I have two numbers.\nOne is called “Ten.”\nThe other is called “Nine.”\nI name it “Vessel Capacity”,\nand “Wine Capacity.”\nIf “Wine Capacity” is greater than “Vessel Capacity.”\nThe former “Wine Capacity” was,\nNow the “Vessel Capacity” is so.\nThus it is.\nFor “Wine Capacity,”\nwrite it down.",
     "isCodeBlock": true,
@@ -605,67 +605,67 @@ export const segments = [
         "chinese": "吾有二數。",
         "english": "I have two numbers.",
         "transcription": "ŋòː ɦʉúː ɲǐː ʂʉǒː",
-        "durationInFrames": 49
+        "durationInFrames": 54
       },
       {
         "chinese": "曰十。",
         "english": "One is called “Ten.”",
         "transcription": "ɦʉot ʥip",
-        "durationInFrames": 30
+        "durationInFrames": 32
       },
       {
         "chinese": "曰九。",
         "english": "The other is called “Nine.”",
         "transcription": "ɦʉot kʉúː",
-        "durationInFrames": 30
+        "durationInFrames": 32
       },
       {
         "chinese": "名之曰「器量」",
         "english": "I name it “Vessel Capacity”,",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kʰị̌ː lɨɑ̌ŋ",
-        "durationInFrames": 49
+        "durationInFrames": 54
       },
       {
         "chinese": "曰「酒量」。",
         "english": "and “Wine Capacity.”",
         "transcription": "ɦʉot ʦʉúː lɨɑ̌ŋ",
-        "durationInFrames": 39
+        "durationInFrames": 43
       },
       {
         "chinese": "\n若「酒量」大於「器量」者。",
         "english": "If “Wine Capacity” is greater than “Vessel Capacity.”",
         "transcription": "ɲɨɑk ʦʉúː lɨɑ̌ŋ dɑ̌j ʔɨə̀ː kʰị̌ː lɨɑ̌ŋ ʨiáː",
-        "durationInFrames": 99
+        "durationInFrames": 97
       },
       {
-        "chinese": "\n 昔之「酒量」者。",
+        "chinese": "\n\t昔之「酒量」者。",
         "english": "The former “Wine Capacity” was,",
         "transcription": "siak ʨɨ̀ː ʦʉúː lɨɑ̌ŋ ʨiáː",
-        "durationInFrames": 79
+        "durationInFrames": 65
       },
       {
         "chinese": "今「器量」是矣。",
         "english": "Now the “Vessel Capacity” is so.",
         "transcription": "kị̀m kʰị̌ː lɨɑ̌ŋ ʥiéː ɦɨ́ː",
-        "durationInFrames": 59
+        "durationInFrames": 65
       },
       {
         "chinese": "\n云云。",
         "english": "Thus it is.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 39
+        "durationInFrames": 32
       },
       {
         "chinese": "\n夫「酒量」。",
         "english": "For “Wine Capacity,”",
         "transcription": "bʉòː ʦʉúː lɨɑ̌ŋ",
-        "durationInFrames": 49
+        "durationInFrames": 43
       },
       {
         "chinese": "書之。",
         "english": "write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 30
+        "durationInFrames": 35
       }
     ],
     "durationInFrames": 552
@@ -742,7 +742,7 @@ export const segments = [
   },
   {
     "id": "4-10",
-    "text": "或問曰。事有千端。非一策能定者。奈何。曰。當用或若。或若者。一若之後。連綿用之。因序而比。遇真輒為之。為之乃止。不更比也。如皆不是者。厥行最末若非之句。老氏有天地不仁。以萬物為芻狗之句。",
+    "text": "或問曰。事有千端。非一策能定者。奈何。曰。當用`或若`。`或若`者。一`若`之後。連綿用之。因序而比。遇真輒為之。為之乃止。不更比也。如皆不是者。厥行最末`若非`之句。老氏有天地不仁。以萬物為芻狗之句。",
     "audioPath": "audios/female/audio-4-10-f.mp3",
     "translation": "Some asked,\n“There are a thousand ends to affairs.\nNot a single plan can determine it.\nWhat then?”\nIt is answered, “\nWe ought to employ “or if.”\n“Or if，” —\nAfter the first “if.”\nContinue to apply it.\nCompare by order.\nWhen truth is met, act upon it.\nThus do, and cease.\nNo further comparison.\nIf all are not so.\nThen, turn to the last line of “if not,”\nLao Tzu says, Heaven and Earth are not benevolent.\nAnd treat all things as straw-dogs.",
     "isCodeBlock": false,
@@ -778,19 +778,19 @@ export const segments = [
         "durationInFrames": 20
       },
       {
-        "chinese": "當用或若。",
+        "chinese": "當用`或若`。",
         "english": "We ought to employ “or if.”",
         "transcription": "tɑ̀ŋ jʉǒŋ ɦʷək ɲɨɑk",
         "durationInFrames": 50
       },
       {
-        "chinese": "或若者。",
+        "chinese": "`或若`者。",
         "english": "“Or if，” —",
         "transcription": "ɦʷək ɲɨɑk ʨiáː",
         "durationInFrames": 40
       },
       {
-        "chinese": "一若之後。",
+        "chinese": "一`若`之後。",
         "english": "After the first “if.”",
         "transcription": "ʔit ɲɨɑk ʨɨ̀ː ɦúː",
         "durationInFrames": 50
@@ -832,7 +832,7 @@ export const segments = [
         "durationInFrames": 60
       },
       {
-        "chinese": "厥行最末若非之句。",
+        "chinese": "厥行最末`若非`之句。",
         "english": "Then, turn to the last line of “if not,”",
         "transcription": "kʉot ɦạ̀ŋ ʦʷɑ̌j mɑt ɲɨɑk pʉ̀j ʨɨ̀ː kʉǒː",
         "durationInFrames": 90
@@ -854,13 +854,13 @@ export const segments = [
   },
   {
     "id": "4-11",
-    "text": "今以或若擬天策如是。",
+    "text": "今以`或若`擬天策如是。",
     "audioPath": "audios/female/audio-4-11-f.mp3",
     "translation": "Now, using the celestial stratagem of the “or-if,” thus it is.",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "今以或若擬天策如是。",
+        "chinese": "今以`或若`擬天策如是。",
         "english": "Now, using the celestial stratagem of the “or-if,” thus it is.",
         "transcription": "kị̀m jɨ́ː ɦʷək ɲɨɑk ŋɨ́ː tʰèn ꭧʰẹk ɲɨə̀ː ʥiéː",
         "durationInFrames": 108
@@ -892,34 +892,34 @@ export const segments = [
   },
   {
     "id": "4-13",
-    "text": "若「物」等於『禽獸』者。\n 吾有一言。曰『爾芻狗也。』書之。\n或若「物」等於『草木』者。\n 吾有一言。曰『爾亦芻狗也。』書之。\n或若「物」等於『人』者。",
+    "text": "\n\n若「物」等於『禽獸』者。\n\t吾有一言。曰『爾芻狗也。』書之。\n或若「物」等於『草木』者。\n\t吾有一言。曰『爾亦芻狗也。』書之。\n或若「物」等於『人』者。",
     "audioPath": "audios/female/audio-4-13-f.mp3",
-    "translation": "If the ‘Thing’ is equal to “Beast,”\nI have a word,\nSay, “You are a straw-dog.”\nWrite it down.\nOr if the ‘Thing’ is equal to “Plants,”\nI have a word,\nSay, “You also are straw-dogs.”\nWrite it down.\nOr if the ‘Thing’ is equal to “Person,”\n",
+    "translation": "If the ‘Thing’ is equal to “Beast,”\nI have a word,\nSay, “You are a straw-dog.”\nWrite it down.\nOr if the ‘Thing’ is equal to “Plants,”\nI have a word,\nSay, “You also are straw-dogs.”\nWrite it down.\nOr if the ‘Thing’ is equal to “Person,”",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": "若「物」等於『禽獸』者。",
+        "chinese": "\n\n若「物」等於『禽獸』者。",
         "english": "If the ‘Thing’ is equal to “Beast,”",
         "transcription": "ɲɨɑk mʉt tə́ŋ ʔɨə̀ː gị̀m ɕʉǔː ʨiáː",
-        "durationInFrames": 75
+        "durationInFrames": 83
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word,",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 65
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『爾芻狗也。』",
         "english": "Say, “You are a straw-dog.”",
         "transcription": "ɦʉot ɲiéː ꭧʰʉòː kúː jiáː",
-        "durationInFrames": 56
+        "durationInFrames": 62
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 31
       },
       {
         "chinese": "\n或若「物」等於『草木』者。",
@@ -928,56 +928,56 @@ export const segments = [
         "durationInFrames": 93
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word,",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 65
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『爾亦芻狗也。』",
         "english": "Say, “You also are straw-dogs.”",
         "transcription": "ɦʉot ɲiéː jiak ꭧʰʉòː kúː jiáː",
-        "durationInFrames": 65
+        "durationInFrames": 73
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 31
       },
       {
         "chinese": "\n或若「物」等於『人』者。",
         "english": "Or if the ‘Thing’ is equal to “Person,”",
         "transcription": "ɦʷək ɲɨɑk mʉt tə́ŋ ʔɨə̀ː ɲìn ʨiáː",
-        "durationInFrames": 85
+        "durationInFrames": 83
       }
     ],
     "durationInFrames": 560
   },
   {
     "id": "4-14",
-    "text": " 吾有一言。曰『爾雖人。於我實芻狗也。』書之。\n或若「物」等於『芻狗』者。\n 吾有一言。曰『更不待言。』書之。\n若非。\n 吾有一言。曰『吾不知爾何物。然爾之為芻狗明也。』書之。\n云云。",
+    "text": "\n\t吾有一言。曰『爾雖人。於我實芻狗也。』書之。\n或若「物」等於『芻狗』者。\n\t吾有一言。曰『更不待言。』書之。\n若非。\n\t吾有一言。曰『吾不知爾何物。然爾之為芻狗明也。』書之。\n云云。",
     "audioPath": "audios/female/audio-4-14-f.mp3",
-    "translation": "I have a word,\nSay, “Though you are human, to me you are indeed straw-dogs.”\nWrite it down.\n\nOr if the ‘Thing’ is equal to “Straw-dogs,”\n\nI have a word.\nSay, “There is no need to speak further”\nWrite it down.\nIf not,\nI have a word.\nSay, “I do not know what you are; yet your being straw-dogs is clear.”\nWrite it down.\nThus do.",
+    "translation": "I have a word,\nSay, “Though you are human, to me you are indeed straw-dogs.”\nWrite it down.\nOr if the ‘Thing’ is equal to “Straw-dogs,”\nI have a word.\nSay, “There is no need to speak further”\nWrite it down.\nIf not,\nI have a word.\nSay, “I do not know what you are; yet your being straw-dogs is clear.”\nWrite it down.\nThus do.",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word,",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 57
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『爾雖人。於我實芻狗也。』",
         "english": "Say, “Though you are human, to me you are indeed straw-dogs.”",
-        "transcription": "ɦʉot ɲiéː sʷìː ɲìn ʔɨə̀ː ŋɑ́ː ʑit ꭧʰʉòː kúː jiáː",
-        "durationInFrames": 113
+        "transcription": "ɦʉot ɲiéː sʷìː ɲìn . ʔɨə̀ː ŋɑ́ː ʑit ꭧʰʉòː kúː jiáː",
+        "durationInFrames": 125
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 31
       },
       {
         "chinese": "\n或若「物」等於『芻狗』者。",
@@ -986,65 +986,65 @@ export const segments = [
         "durationInFrames": 94
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 66
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『更不待言。』",
         "english": "Say, “There is no need to speak further”",
         "transcription": "ɦʉot kạ̌ŋ pʉùː də́j ŋɨə̀n",
-        "durationInFrames": 57
+        "durationInFrames": 63
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 31
       },
       {
         "chinese": "\n若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 38
+        "durationInFrames": 31
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 66
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『吾不知爾何物。然爾之為芻狗明也。』",
         "english": "Say, “I do not know what you are; yet your being straw-dogs is clear.”",
-        "transcription": "ɦʉot ŋòː pʉùː ʈièː ɲiéː ɦɑ̀ː mʉt ɲièn ɲiéː ʨɨ̀ː ɦỵèː ꭧʰʉòː kúː mịàŋ jiáː",
-        "durationInFrames": 160
+        "transcription": "ɦʉot ŋòː pʉùː ʈièː ɲiéː ɦɑ̀ː mʉt . ɲièn ɲiéː ʨɨ̀ː ɦỵèː ꭧʰʉòː kúː mịàŋ jiáː",
+        "durationInFrames": 178
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 31
       },
       {
         "chinese": "\n云云。",
         "english": "Thus do.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 38
+        "durationInFrames": 33
       }
     ],
     "durationInFrames": 773
   },
   {
     "id": "4-15",
-    "text": "昔之「物」者。今『芻狗』是矣。",
+    "text": "\n\n昔之「物」者。今『芻狗』是矣。",
     "audioPath": "audios/female/audio-4-15-f.mp3",
     "translation": "What formerly known as ‘Thing’,\nare now “straw-dogs.”",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": "昔之「物」者。",
+        "chinese": "\n\n昔之「物」者。",
         "english": "What formerly known as ‘Thing’,",
         "transcription": "siak ʨɨ̀ː mʉt ʨiáː",
         "durationInFrames": 55
@@ -1118,7 +1118,7 @@ export const segments = [
   },
   {
     "id": "4-17",
-    "text": "吾有一爻。曰陽。名之曰「甲」。\n若「甲」者。\n 吾有一言。曰『陽者。歲之主也。』書之。\n若非。\n 吾有一言。曰『陰者。陽之助也。』書之。\n也。",
+    "text": "吾有一爻。曰陽。名之曰「甲」。\n若「甲」者。\n\t吾有一言。曰『陽者。歲之主也。』書之。\n若非。\n\t吾有一言。曰『陰者。陽之助也。』書之。\n也。",
     "audioPath": "audios/female/audio-4-17-f.mp3",
     "translation": "I have a Ghaew (boolean).\nIt is Yang.\nCall it “A”.\nIf it be “A”.\nI have a word.\nIt says, “Yang is the master of the year.”\nWrite it down.\nIf not.\nI have a word.\nIt says, “The Yin is the helper of Yang.”\nWrite it down.\nThus.",
     "isCodeBlock": true,
@@ -1127,73 +1127,73 @@ export const segments = [
         "chinese": "吾有一爻。",
         "english": "I have a Ghaew (boolean).",
         "transcription": "ŋòː ɦʉúː ʔit ɦạ̀w",
-        "durationInFrames": 50
+        "durationInFrames": 56
       },
       {
         "chinese": "曰陽。",
         "english": "It is Yang.",
         "transcription": "ɦʉot jɨɑ̀ŋ",
-        "durationInFrames": 30
+        "durationInFrames": 34
       },
       {
         "chinese": "名之曰「甲」。",
         "english": "Call it “A”.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kạp",
-        "durationInFrames": 50
+        "durationInFrames": 56
       },
       {
         "chinese": "\n若「甲」者。",
         "english": "If it be “A”.",
         "transcription": "ɲɨɑk kạp ʨiáː",
-        "durationInFrames": 50
+        "durationInFrames": 45
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 70
+        "durationInFrames": 56
       },
       {
         "chinese": "曰『陽者。歲之主也。』",
         "english": "It says, “Yang is the master of the year.”",
-        "transcription": "ɦʉot jɨɑ̀ŋ ʨiáː syěj ʨɨ̀ː ʨʉóː jiáː",
-        "durationInFrames": 90
+        "transcription": "ɦʉot jɨɑ̀ŋ ʨiáː . syěj ʨɨ̀ː ʨʉóː jiáː",
+        "durationInFrames": 101
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 30
+        "durationInFrames": 34
       },
       {
         "chinese": "\n若非。",
         "english": "If not.",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 40
+        "durationInFrames": 34
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 70
+        "durationInFrames": 56
       },
       {
         "chinese": "曰『陰者。陽之助也。』",
         "english": "It says, “The Yin is the helper of Yang.”",
-        "transcription": "ɦʉot ʔị̀m ʨiáː jɨɑ̀ŋ ʨɨ̀ː ꭦɨə̌ː jiáː",
-        "durationInFrames": 90
+        "transcription": "ɦʉot ʔị̀m ʨiáː . jɨɑ̀ŋ ʨɨ̀ː ꭦɨə̌ː jiáː",
+        "durationInFrames": 101
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 30
+        "durationInFrames": 34
       },
       {
         "chinese": "\n也。",
         "english": "Thus.",
         "transcription": "jiáː",
-        "durationInFrames": 31
+        "durationInFrames": 24
       }
     ],
     "durationInFrames": 631
@@ -1202,12 +1202,12 @@ export const segments = [
     "id": "4-18",
     "text": "易曰。爻者。言乎變者也。今爻之變。其日用者有三。曰與。曰或。曰非。二爻皆陽謂之與。二爻有陽謂之或。陰者陽陽者陰謂之非。各書如是。",
     "audioPath": "audios/female/audio-4-18-f.mp3",
-    "translation": "The Book of Changes says,\nA Ghaew (爻) —\nspeaks of change.\nNow, the Ghaew’s change.\nIts daily use has three forms:\n“AND”,\n“OR”,\n“NOT”.\nTwo Ghaew, both Yang, are called “AND”.\nTwo Ghaew bearing Yang are called “OR”.\nYin to Yang, and Yang to Yin, are called “NOT”.\nThus are they written.",
+    "translation": "The _Book of Changes_ says,\nA Ghaew (爻) —\nspeaks of change.\nNow, the Ghaew’s change.\nIts daily use has three forms:\n“AND”,\n“OR”,\n“NOT”.\nTwo Ghaew, both Yang, are called “AND”.\nTwo Ghaew bearing Yang are called “OR”.\nYin to Yang, and Yang to Yin, are called “NOT”.\nThus are they written.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "易曰。",
-        "english": "The Book of Changes says,",
+        "english": "The _Book of Changes_ says,",
         "transcription": "jiak ɦʉot",
         "durationInFrames": 31
       },
@@ -1291,37 +1291,37 @@ export const segments = [
         "chinese": "夫「甲」「乙」中無陰乎。",
         "english": "In the case of ‘A’ and ‘B’, is there no Yin?",
         "transcription": "bʉòː kạp ʔịt ʈʉùŋ mʉòː ʔị̀m ɦòː",
-        "durationInFrames": 78
+        "durationInFrames": 82
       },
       {
         "chinese": "名之曰「丙」。",
         "english": "Call it ‘C’",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot pịáŋ",
-        "durationInFrames": 48
+        "durationInFrames": 51
       },
       {
         "chinese": "\n夫「甲」「乙」中有陽乎。",
         "english": "In the case of ‘A’ and ‘B’, is there Yang?",
         "transcription": "pʉòː kạp ʔịt ʈʉùŋ ɦʉúː jɨɑ̀ŋ ɦòː",
-        "durationInFrames": 87
+        "durationInFrames": 82
       },
       {
         "chinese": "名之曰「丙」。",
         "english": "Call it ‘C’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot pịáŋ",
-        "durationInFrames": 48
+        "durationInFrames": 51
       },
       {
         "chinese": "\n變「甲」。",
         "english": "Change ‘A’,",
         "transcription": "pịěn kạp",
-        "durationInFrames": 39
+        "durationInFrames": 31
       },
       {
         "chinese": "名之曰「丙」。",
         "english": "Call it ‘C’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot pịáŋ",
-        "durationInFrames": 49
+        "durationInFrames": 52
       }
     ],
     "durationInFrames": 349
@@ -1416,19 +1416,19 @@ export const segments = [
   },
   {
     "id": "4-21",
-    "text": "又有若其然者。若其不然者。以資爻策。故是二句同。",
+    "text": "又有`若其然者`。`若其不然`者。以資爻策。故是二句同。",
     "audioPath": "audios/female/audio-4-21-f.mp3",
     "translation": "Moreover, there are also “if so”\nand “if not so”.\nTo guide the Ghaew’s stratagem.\nThus these two lines are the same.",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "又有若其然者。",
+        "chinese": "又有`若其然者`。",
         "english": "Moreover, there are also “if so”",
         "transcription": "ɦʉǔː ɦʉúː ɲɨɑk gɨ̀ː ɲièn ʨiáː",
         "durationInFrames": 74
       },
       {
-        "chinese": "若其不然者。",
+        "chinese": "`若其不然`者。",
         "english": "and “if not so”.",
         "transcription": "ɲɨɑk gɨ̀ː pʉùː ɲièn ʨiáː",
         "durationInFrames": 63
@@ -1459,67 +1459,67 @@ export const segments = [
         "chinese": "夫「甲」「乙」中無陰乎。",
         "english": "In the case of ‘A’ and ‘B’, is there no Yin?",
         "transcription": "bʉòː kạp ʔịt ʈʉùŋ mʉòː ʔị̀m ɦòː",
-        "durationInFrames": 82
+        "durationInFrames": 83
       },
       {
         "chinese": "名之曰「丙」。",
         "english": "Call it ‘C’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot pịáŋ",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "若「丙」者。",
         "english": "If it is “C”.",
         "transcription": "ɲɨɑk pịáŋ ʨiáː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『古之人誠不我欺。』",
         "english": "It says, “The ancient people were indeed not deceiving me.”",
         "transcription": "ɦʉot kóː ʨɨ̀ː ɲìn ʥiàŋ pʉùː ŋɑ́ː kʰɨ̀ː",
-        "durationInFrames": 92
+        "durationInFrames": 94
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "\n夫「甲」「乙」中無陰乎。",
         "english": "In the case of ‘A’ and ‘B’, is there no Yin?",
         "transcription": "bʉòː kạp ʔịt ʈʉùŋ mʉòː ʔị̀m ɦòː",
-        "durationInFrames": 92
+        "durationInFrames": 83
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "曰『古之人誠不我欺。』",
         "english": "It says, “The ancient people were indeed not deceiving me.”",
         "transcription": "ɦʉot kóː ʨɨ̀ː ɲìn ʥiàŋ pʉùː ŋɑ́ː kʰɨ̀ː",
-        "durationInFrames": 92
+        "durationInFrames": 94
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 44
+        "durationInFrames": 42
       }
     ],
     "durationInFrames": 688
@@ -1544,7 +1544,7 @@ export const segments = [
     "id": "4-24",
     "text": "夫「甲」「乙」中有陽乎。名之曰「丙」。變「丙」。名之曰「丁」。若「丁」者。吾有一言。曰『古之人誠不我欺。』書之也。",
     "audioPath": "audios/female/audio-4-24-f.mp3",
-    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nCall it ‘C’.\nChange ‘C’.\nCall it ‘D’.\nIf it is ‘D’,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.\n",
+    "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nCall it ‘C’.\nChange ‘C’.\nCall it ‘D’.\nIf it is ‘D’,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”\nWrite it down.",
     "isCodeBlock": true,
     "sentences": [
       {
@@ -1600,13 +1600,13 @@ export const segments = [
   },
   {
     "id": "4-25",
-    "text": "夫「甲」「乙」中有陽乎。若其不然者。吾有一言。曰『古之人誠不我欺。』書之也。",
+    "text": "\n夫「甲」「乙」中有陽乎。若其不然者。吾有一言。曰『古之人誠不我欺。』書之也。",
     "audioPath": "audios/female/audio-4-25-f.mp3",
     "translation": "In the case of ‘A’ and ‘B’, is there Yang?\nIf not so,\nI have a word.\nIt says, “The ancient people were indeed not deceiving me.”'\nWrite it down.",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": "夫「甲」「乙」中有陽乎。",
+        "chinese": "\n夫「甲」「乙」中有陽乎。",
         "english": "In the case of ‘A’ and ‘B’, is there Yang?",
         "transcription": "bʉòː kạp ʔịt ʈʉùŋ ɦʉúː jɨɑ̀ŋ ɦòː",
         "durationInFrames": 84
@@ -1746,426 +1746,426 @@ export const segments = [
   },
   {
     "id": "4-27",
-    "text": "夫「魯人耶」。若其然者。\n 夫「德行科耶」。若其然者。\n 夫「未仕耶」。若其然者。\n 夫「蚤死耶」。若其然者。\n 吾有一言。曰『賢哉。回也。人不堪其憂。回也不改其樂。』書之。\n 若非。",
+    "text": "夫「魯人耶」。若其然者。\n\t夫「德行科耶」。若其然者。\n\t\t夫「未仕耶」。若其然者。\n\t\t\t夫「蚤死耶」。若其然者。\n\t\t\t\t吾有一言。曰『賢哉。回也。人不堪其憂。回也不改其樂。』書之。\n\t\t\t若非。",
     "audioPath": "audios/female/audio-4-27-f.mp3",
-    "translation": "That ‘is he the people of the Lu state?’\nIf so,\nThat ‘is his virtue tested?’\nIf so,\nThat ‘is he yet unappointed?’\nIf so,\nThat ‘did he faced early death?’\nIf so,\nI have a word.\nIt says, “Wise indeed is Hui; People cannot bear his sorrows; Hui, as he is, does not alter his joys.”\nWrite it.\nIf not,\n",
+    "translation": "That ‘is he the people of the Lu state?’\nIf so,\nThat ‘is his virtue tested?’\nIf so,\nThat ‘is he yet unappointed?’\nIf so,\nThat ‘did he faced early death?’\nIf so,\nI have a word.\nIt says, “Wise indeed is Hui; People cannot bear his sorrows; Hui, as he is, does not alter his joys.”\nWrite it.\nIf not,",
     "isCodeBlock": true,
     "sentences": [
       {
         "chinese": "夫「魯人耶」。",
         "english": "That ‘is he the people of the Lu state?’",
         "transcription": "bʉòː lóː ɲìn jiàː",
-        "durationInFrames": 49
+        "durationInFrames": 56
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 49
+        "durationInFrames": 56
       },
       {
-        "chinese": "\n 夫「德行科耶」。",
+        "chinese": "\n\t夫「德行科耶」。",
         "english": "That ‘is his virtue tested?’",
         "transcription": "bʉòː tək ɦạ̌ŋ kʰʷɑ̀ː jiàː",
-        "durationInFrames": 78
+        "durationInFrames": 67
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 49
+        "durationInFrames": 56
       },
       {
-        "chinese": "\n 夫「未仕耶」。",
+        "chinese": "\n\t\t夫「未仕耶」。",
         "english": "That ‘is he yet unappointed?’",
         "transcription": "bʉòː mʉ̌j ꭦɨ́ː jiàː",
-        "durationInFrames": 68
+        "durationInFrames": 56
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 49
+        "durationInFrames": 56
       },
       {
-        "chinese": "\n 夫「蚤死耶」。",
+        "chinese": "\n\t\t\t夫「蚤死耶」。",
         "english": "That ‘did he faced early death?’",
         "transcription": "bʉòː ʦɑ́w síː jiàː",
-        "durationInFrames": 68
+        "durationInFrames": 56
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 49
+        "durationInFrames": 56
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 68
+        "durationInFrames": 56
       },
       {
         "chinese": "曰『賢哉。回也。人不堪其憂。回也不改其樂。』",
         "english": "It says, “Wise indeed is Hui; People cannot bear his sorrows; Hui, as he is, does not alter his joys.”",
-        "transcription": "ɦʉot ɦèn ʦə̀j ɦòj jiáː ɲìn pʉùː kʰə̀m gɨ̀ː ʔʉùː ɦòj jiáː pʉùː kə́j gɨ̀ː lɑk",
-        "durationInFrames": 195
+        "transcription": "ɦʉot ɦèn ʦə̀j . ɦòj jiáː . ɲìn pʉùː kʰə̀m gɨ̀ː ʔʉùː . ɦòj jiáː pʉùː kə́j gɨ̀ː lɑk",
+        "durationInFrames": 223
       },
       {
         "chinese": "書之。",
         "english": "Write it.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 29
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 50
+        "durationInFrames": 30
       }
     ],
     "durationInFrames": 801
   },
   {
     "id": "4-28",
-    "text": " 吾有一言。曰『孝哉。閔子騫。人不間於其父母昆弟之間。』書之也。\n 若非。\n 夫「病厲耶」。若其然者。\n 吾有一言。曰『亡之。命也夫。斯人也。而有斯疾也。』書之。\n 若非。",
+    "text": "\n\t\t\t\t吾有一言。曰『孝哉。閔子騫。人不間於其父母昆弟之間。』書之也。\n\t\t若非。\n\t\t\t夫「病厲耶」。若其然者。\n\t\t\t\t吾有一言。曰『亡之。命也夫。斯人也。而有斯疾也。』書之。\n\t\t\t若非。",
     "audioPath": "audios/female/audio-4-28-f.mp3",
     "translation": "I have a word.\nIt says, “Filial indeed. Min Ziqian, A man does not live at odds with his father, mother, and brothers.\nWrite it down.\nIf not,\nThat ‘is he gravely ill?’\nIf so,\nI have a word.\nIt says, “He (Ran Geng, Boniu) is lost — it is fate indeed. That such a man should suffer such an illness…”\nWrite it down.\nIf not,",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 59
+        "durationInFrames": 55
       },
       {
         "chinese": "曰『孝哉。閔子騫。人不間於其父母昆弟之間。』",
         "english": "It says, “Filial indeed. Min Ziqian, A man does not live at odds with his father, mother, and brothers.",
-        "transcription": "ɦʉot hạ̌w ʦə̀j mị́n ʦɨ́ː kʰịèn ɲìn pʉùː kẹ̌n ʔɨə̀ː gɨ̀ː bʉóː múː kòn déj ʨɨ̀ː kẹ̀n",
-        "durationInFrames": 196
+        "transcription": "ɦʉot hạ̌w ʦə̀j . mị́n ʦɨ́ː kʰịèn . ɲìn pʉùː kẹ̌n ʔɨə̀ː gɨ̀ː bʉóː múː kòn déj ʨɨ̀ː kẹ̀n",
+        "durationInFrames": 221
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 39
+        "durationInFrames": 44
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 49
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 夫「病厲耶」。",
+        "chinese": "\n\t\t\t夫「病厲耶」。",
         "english": "That ‘is he gravely ill?’",
         "transcription": "bʉòː bịǎŋ liěj jiàː",
-        "durationInFrames": 69
+        "durationInFrames": 55
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 49
+        "durationInFrames": 55
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 69
+        "durationInFrames": 55
       },
       {
         "chinese": "曰『亡之。命也夫。斯人也。而有斯疾也。』",
         "english": "It says, “He (Ran Geng, Boniu) is lost — it is fate indeed. That such a man should suffer such an illness…”",
-        "transcription": "ɦʉot mʉɑ̀ŋ ʨɨ̀ː mịǎŋ jiáː bʉòː sièː ɲìn jiáː ɲɨ̀ː ɦʉúː sièː ʣit jiáː",
-        "durationInFrames": 176
+        "transcription": "ɦʉot mʉɑ̀ŋ ʨɨ̀ː . mịǎŋ jiáː bʉòː . sièː ɲìn jiáː . ɲɨ̀ː ɦʉúː sièː ʣit jiáː",
+        "durationInFrames": 199
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 29
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 49
+        "durationInFrames": 34
       }
     ],
     "durationInFrames": 784
   },
   {
     "id": "4-29",
-    "text": " 吾有一言。曰『雍也。可使南面。』書之也。\n 云云。\n 若非。\n 夫「政事科耶」。若其然者。\n 夫「戰死耶」。若其然者。\n 吾有一言。曰『若由也。不得其死然。』書之。\n 若非。",
+    "text": "\n\t\t\t\t吾有一言。曰『雍也。可使南面。』書之也。\n\t\t云云。\n\t若非。\n\t\t夫「政事科耶」。若其然者。\n\t\t\t夫「戰死耶」。若其然者。\n\t\t\t\t吾有一言。曰『若由也。不得其死然。』書之。\n\t\t\t若非。",
     "audioPath": "audios/female/audio-4-29-f.mp3",
     "translation": "I have a word.\nIt says, “Yong (Ran Yong, Zhonggong) is fit to sit facing south — fit to govern.”\nWrite it down.\nThus and thus.\nIf not.\nThat ‘is he gifted in matters of governance?’\nIf so,\nThat ‘did he die in battle?’\nIf so,\nI have a word.\nIt says, “Speaking of You (Zhong You, Zilu), he indeed, did not die the death befitting him.”\nWrite it down.\nIf not,",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 56
+        "durationInFrames": 55
       },
       {
         "chinese": "曰『雍也。可使南面。』",
         "english": "It says, “Yong (Ran Yong, Zhonggong) is fit to sit facing south — fit to govern.”",
-        "transcription": "ɦʉot ʔʉòŋ jiáː kʰɑ́ː ʂɨ́ː nə̀m miěn",
-        "durationInFrames": 83
+        "transcription": "ɦʉot ʔʉòŋ jiáː . kʰɑ́ː ʂɨ́ː nə̀m miěn",
+        "durationInFrames": 100
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 37
+        "durationInFrames": 44
       },
       {
-        "chinese": "\n 云云。",
+        "chinese": "\n\t\t云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t若非。",
         "english": "If not.",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 46
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 夫「政事科耶」。",
+        "chinese": "\n\t\t夫「政事科耶」。",
         "english": "That ‘is he gifted in matters of governance?’",
         "transcription": "bʉòː ʨiǎŋ ꭦɨ̌ː kʰʷɑ̀ː jiàː",
-        "durationInFrames": 74
+        "durationInFrames": 66
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 46
+        "durationInFrames": 55
       },
       {
-        "chinese": "\n 夫「戰死耶」。",
+        "chinese": "\n\t\t\t夫「戰死耶」。",
         "english": "That ‘did he die in battle?’",
         "transcription": "bʉòː ʨiěn síː jiàː",
-        "durationInFrames": 65
+        "durationInFrames": 55
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 46
+        "durationInFrames": 55
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 65
+        "durationInFrames": 55
       },
       {
         "chinese": "曰『若由也。不得其死然。』",
         "english": "It says, “Speaking of You (Zhong You, Zilu), he indeed, did not die the death befitting him.”",
-        "transcription": "ɦʉot ɲɨɑk jʉùː jiáː pʉùː tək gɨ̀ː síː ɲièn",
-        "durationInFrames": 102
+        "transcription": "ɦʉot ɲɨɑk jʉùː jiáː . pʉùː tək gɨ̀ː síː ɲièn",
+        "durationInFrames": 122
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 33
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 48
+        "durationInFrames": 36
       }
     ],
     "durationInFrames": 742
   },
   {
     "id": "4-30",
-    "text": " 吾有一言。曰『求。無乃爾是過與。』書之也。\n 若非。\n 吾有一言。曰『朽木不可雕也。糞土之牆不可杇也。於予與何誅。』書之也。\n 云云。\n若非。\n 夫「複姓耶」。若其然者。",
+    "text": "\n\t\t\t\t吾有一言。曰『求。無乃爾是過與。』書之也。\n\t\t若非。\n\t\t\t吾有一言。曰『朽木不可雕也。糞土之牆不可杇也。於予與何誅。』書之也。\n\t云云。\n若非。\n\t夫「複姓耶」。若其然者。",
     "audioPath": "audios/female/audio-4-30-f.mp3",
     "translation": "I have a word.\nIt says, “Qiu (Ran You, Ziyou), is this not your error?”\nWrite it down.\nIf not,\nI have a word.\nIt says, “Rotten wood cannot be carved. The dung-and-earth wall cannot be plastered. What punishment would be due to me?”\nWrite it down.\nThus and thus.\nIf not,\nThat ‘is he of a double surname?’\nIf so,",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 57
+        "durationInFrames": 54
       },
       {
         "chinese": "曰『求。無乃爾是過與。』",
         "english": "It says, “Qiu (Ran You, Ziyou), is this not your error?”",
-        "transcription": "ɦʉot gʉùː mʉòː nə́j ɲiéː ʥiéː kʷɑ̌ː jɨə́ː",
-        "durationInFrames": 94
+        "transcription": "ɦʉot gʉùː . mʉòː nə́j ɲiéː ʥiéː kʷɑ̌ː jɨə́ː",
+        "durationInFrames": 108
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 38
+        "durationInFrames": 43
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 47
+        "durationInFrames": 32
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 66
+        "durationInFrames": 54
       },
       {
         "chinese": "曰『朽木不可雕也。糞土之牆不可杇也。於予與何誅。』",
         "english": "It says, “Rotten wood cannot be carved. The dung-and-earth wall cannot be plastered. What punishment would be due to me?”",
-        "transcription": "ɦʉot hʉúː muk pʉùː kʰɑ́ː tèw jiáː pʉ̌n tʰóː ʨɨ̀ː ʣɨɑ̀ŋ pʉùː kʰɑ́ː ʔòː jiáː ʔɨə̀ː jɨə̀ː jɨə́ː ɦɑ̀ː ʈʉòː",
-        "durationInFrames": 217
+        "transcription": "ɦʉot hʉúː muk pʉùː kʰɑ́ː tèw jiáː . pʉ̌n tʰóː ʨɨ̀ː ʣɨɑ̀ŋ pʉùː kʰɑ́ː ʔòː jiáː . ʔɨə̀ː jɨə̀ː jɨə́ː ɦɑ̀ː ʈʉòː",
+        "durationInFrames": 248
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 38
+        "durationInFrames": 43
       },
       {
-        "chinese": "\n 云云。",
+        "chinese": "\n\t云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 47
+        "durationInFrames": 32
       },
       {
         "chinese": "\n若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 38
+        "durationInFrames": 32
       },
       {
-        "chinese": "\n 夫「複姓耶」。",
+        "chinese": "\n\t夫「複姓耶」。",
         "english": "That ‘is he of a double surname?’",
         "transcription": "bʉòː pʉuk siǎŋ jiàː",
-        "durationInFrames": 66
+        "durationInFrames": 54
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 47
+        "durationInFrames": 55
       }
     ],
     "durationInFrames": 755
   },
   {
     "id": "4-31",
-    "text": " 吾有一言。曰『賜也。始可與言詩已矣。告諸往而知來者。』書之。\n 若非。\n 夫「衛人耶」。若其然者。\n 吾有一言。曰『起予者。商也。始可與言詩已矣。』書之。\n 若非。",
+    "text": "\n\t\t吾有一言。曰『賜也。始可與言詩已矣。告諸往而知來者。』書之。\n\t若非。\n\t\t夫「衛人耶」。若其然者。\n\t\t\t吾有一言。曰『起予者。商也。始可與言詩已矣。』書之。\n\t\t若非。",
     "audioPath": "audios/female/audio-4-31-f.mp3",
     "translation": "I have a word.\nIt says, “Ah, (Duanmu) Ci! Now I may truly discuss poetry with you.”\nWrite it down.\nIf not,\nThat ‘is he a man from Wei?’\nIf so,\nI have a word.\nIt says, “It is Shang, indeed—he is now fit to speak of the Odes with me.”\nWrite it down.\nIf not,",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 56
+        "durationInFrames": 53
       },
       {
         "chinese": "曰『賜也。始可與言詩已矣。告諸往而知來者。』",
         "english": "It says, “Ah, (Duanmu) Ci! Now I may truly discuss poetry with you.”",
-        "transcription": "ɦʉot siěː jiáː ɕɨ́ː kʰɑ́ː jɨə́ː ŋɨə̀n ɕɨ̀ː jɨ́ː ɦɨ́ː kɑ̌w ʨɨə̀ː ɦʉɑ́ŋ ɲɨ̀ː ʈièː lə̀j ʨiáː",
-        "durationInFrames": 187
+        "transcription": "ɦʉot siěː jiáː . ɕɨ́ː kʰɑ́ː jɨə́ː ŋɨə̀n ɕɨ̀ː jɨ́ː ɦɨ́ː . kɑ̌w ʨɨə̀ː ɦʉɑ́ŋ ɲɨ̀ː ʈièː lə̀j ʨiáː",
+        "durationInFrames": 211
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 32
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 47
+        "durationInFrames": 32
       },
       {
-        "chinese": "\n 夫「衛人耶」。",
+        "chinese": "\n\t\t夫「衛人耶」。",
         "english": "That ‘is he a man from Wei?’",
         "transcription": "bʉòː ɦỵěj ɲìn jiàː",
-        "durationInFrames": 65
+        "durationInFrames": 53
       },
       {
         "chinese": "若其然者。",
         "english": "If so,",
         "transcription": "ɲɨɑk gɨ̀ː ɲièn ʨiáː",
-        "durationInFrames": 47
+        "durationInFrames": 53
       },
       {
-        "chinese": "\n 吾有一言。",
+        "chinese": "\n\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 65
+        "durationInFrames": 53
       },
       {
         "chinese": "曰『起予者。商也。始可與言詩已矣。』",
         "english": "It says, “It is Shang, indeed—he is now fit to speak of the Odes with me.”",
-        "transcription": "ɦʉot kʰɨ́ː jɨə́ː ʨiáː ɕɨɑ̀ŋ jiáː ɕɨ́ː kʰɑ́ː jɨə́ː ŋɨə̀n ɕɨ̀ː jɨ́ː ɦɨ́ː",
-        "durationInFrames": 149
+        "transcription": "ɦʉot kʰɨ́ː jɨə́ː ʨiáː . ɕɨɑ̀ŋ jiáː . ɕɨ́ː kʰɑ́ː jɨə́ː ŋɨə̀n ɕɨ̀ː jɨ́ː ɦɨ́ː",
+        "durationInFrames": 169
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 28
+        "durationInFrames": 32
       },
       {
-        "chinese": "\n 若非。",
+        "chinese": "\n\t\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 47
+        "durationInFrames": 31
       }
     ],
     "durationInFrames": 719
   },
   {
     "id": "4-32",
-    "text": " 吾有一言。曰『二三子。偃之言是也。』書之也。\n 云云。\n云云。",
+    "text": "\n\t\t\t吾有一言。曰『二三子。偃之言是也。』書之也。\n\t云云。\n云云。",
     "audioPath": "audios/female/audio-4-32-f.mp3",
     "translation": "I have a word.\nIt says, “My disciples, Yan has spoken truly.”\nWrite it down.\nThus and thus.\nThus and thus.",
     "isCodeBlock": true,
     "sentences": [
       {
-        "chinese": " 吾有一言。",
+        "chinese": "\n\t\t\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 57
+        "durationInFrames": 54
       },
       {
         "chinese": "曰『二三子。偃之言是也。』",
         "english": "It says, “My disciples, Yan has spoken truly.”",
-        "transcription": "ɦʉot ɲǐː sɑ̀m ʦɨ́ː ʔɨə́n ʨɨ̀ː ŋɨə̀n ʥiéː jiáː",
-        "durationInFrames": 104
+        "transcription": "ɦʉot ɲǐː sɑ̀m ʦɨ́ː . ʔɨə́n ʨɨ̀ː ŋɨə̀n ʥiéː jiáː",
+        "durationInFrames": 120
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 38
+        "durationInFrames": 44
       },
       {
-        "chinese": "\n 云云。",
+        "chinese": "\n\t云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 47
+        "durationInFrames": 33
       },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 37
+        "durationInFrames": 32
       }
     ],
     "durationInFrames": 283
@@ -2220,122 +2220,122 @@ export const segments = [
     "id": "4-34",
     "text": "吾有九爻。曰陽。曰陰。曰陰。曰陽。曰陰。曰陰。曰陰。曰陰。曰陽。\n名之曰「魯人耶」曰「衛人耶」曰「德行科耶」曰「政事科耶」\n曰「複姓耶」曰「未仕耶」曰「蚤死耶」曰「病厲耶」曰「戰死耶」",
     "audioPath": "audios/female/audio-4-34-f.mp3",
-    "translation": "I have nine Yáo (booleans).\nIt is Yang.\nIt is Yin.\nIt is Yin.\nIt is Yang.\nIt is Yin.\nIt is Yin.\nIt is Yin.\nIt is Yin.\nIt is Yang. \nName it as “is he a Lu person?”\nName it as “is he a Wei person?”\nName it as “is he gifted in matters of moral conduct?”\nName it as “is he gifted in matters of government affairs?”\nName it as “is he of a double surname?”\nName it as “is he not yet in office?”\nName it as “is he died early?”\nName it as “is he ill and grievous?”\nName it as “is he died in battle?”",
+    "translation": "I have nine Yáo (booleans).\nIt is Yang.\nIt is Yin.\nIt is Yin.\nIt is Yang.\nIt is Yin.\nIt is Yin.\nIt is Yin.\nIt is Yin.\nIt is Yang.\nName it as “is he a Lu person?”\nName it as “is he a Wei person?”\nName it as “is he gifted in matters of moral conduct?”\nName it as “is he gifted in matters of government affairs?”\nName it as “is he of a double surname?”\nName it as “is he not yet in office?”\nName it as “is he died early?”\nName it as “is he ill and grievous?”\nName it as “is he died in battle?”",
     "isCodeBlock": true,
     "sentences": [
       {
         "chinese": "吾有九爻。",
         "english": "I have nine Yáo (booleans).",
         "transcription": "ŋòː ɦʉúː kʉúː ɦạ̀w",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "曰陽。",
         "english": "It is Yang.",
         "transcription": "ɦʉot jɨɑ̀ŋ",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陽。",
         "english": "It is Yang.",
         "transcription": "ɦʉot jɨɑ̀ŋ",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陰。",
         "english": "It is Yin.",
         "transcription": "ɦʉot ʔị̀m",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "曰陽。",
-        "english": "It is Yang. ",
+        "english": "It is Yang.",
         "transcription": "ɦʉot jɨɑ̀ŋ",
-        "durationInFrames": 30
+        "durationInFrames": 31
       },
       {
         "chinese": "\n名之曰「魯人耶」",
         "english": "Name it as “is he a Lu person?”",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot lóː ɲìn jiàː",
-        "durationInFrames": 71
+        "durationInFrames": 63
       },
       {
         "chinese": "曰「衛人耶」",
         "english": "Name it as “is he a Wei person?”",
         "transcription": "ɦʉot ɦỵěj ɲìn jiàː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "曰「德行科耶」",
         "english": "Name it as “is he gifted in matters of moral conduct?”",
         "transcription": "ɦʉot tək ɦạ̌ŋ kʰʷɑ̀ː jiàː",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "曰「政事科耶」",
         "english": "Name it as “is he gifted in matters of government affairs?”",
         "transcription": "ɦʉot ʨiǎŋ ꭦɨ̌ː kʰʷɑ̀ː jiàː",
-        "durationInFrames": 51
+        "durationInFrames": 52
       },
       {
         "chinese": "\n曰「複姓耶」",
         "english": "Name it as “is he of a double surname?”",
         "transcription": "ɦʉot pʉuk siǎŋ jiàː",
-        "durationInFrames": 51
+        "durationInFrames": 42
       },
       {
         "chinese": "曰「未仕耶」",
         "english": "Name it as “is he not yet in office?”",
         "transcription": "ɦʉot mʉ̌j ꭦɨ́ː jiàː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "曰「蚤死耶」",
         "english": "Name it as “is he died early?”",
         "transcription": "ɦʉot ʦɑ́w síː jiàː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "曰「病厲耶」",
         "english": "Name it as “is he ill and grievous?”",
         "transcription": "ɦʉot bịǎŋ liěj jiàː",
-        "durationInFrames": 41
+        "durationInFrames": 42
       },
       {
         "chinese": "曰「戰死耶」",
         "english": "Name it as “is he died in battle?”",
         "transcription": "ɦʉot ʨiěn síː jiàː",
-        "durationInFrames": 43
+        "durationInFrames": 44
       }
     ],
     "durationInFrames": 752

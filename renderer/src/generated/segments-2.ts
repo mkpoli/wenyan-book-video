@@ -6,12 +6,12 @@ export const segments = [
     "id": "2-1",
     "text": "易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。其物或更。而名不易。其名或眾。而物故一也。譬葉之逢秋。虎之離山。物雖改而名未易。又譬張祿之於范睢。相如之於犬子。",
     "audioPath": "audios/female/audio-2-1-f.mp3",
-    "translation": "The Book of Changes says,\n“Transformation —\nis the image of advance and retreat.”\n\nNow, in programming,\nnothing is without variables as its foundation.\n\n“What is a variable?”\n“It is a name assigned to a thing.”\n\nThe thing itself may change,\nyet the name does not.\nOr the names may be many,\nyet the thing remains one.\n\nIt is like leaves meeting autumn,\nor a tiger leaving the mountain —\nthe thing changes, yet the name endures.\n\nOr like Zhang Lu, who became Fan Sui,\nand Sima Xiangru, who called himself Dog’s Son.",
+    "translation": "The _Book of Changes_ says,\n“Transformation —\nis the image of advance and retreat.”\nNow, in programming,\nnothing is without variables as its foundation.\n“What is a variable?”\n“It is a name assigned to a thing.”\nThe thing itself may change,\nyet the name does not.\nOr the names may be many,\nyet the thing remains one.\nIt is like leaves meeting autumn,\nor a tiger leaving the mountain —\nthe thing changes, yet the name endures.\nOr like Zhang Lu, who became Fan Sui,\nand Sima Xiangru, who called himself Dog’s Son.",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "易曰。",
-        "english": "The Book of Changes says,",
+        "english": "The _Book of Changes_ says,",
         "transcription": "jiak ɦʉot",
         "durationInFrames": 31
       },
@@ -112,7 +112,7 @@ export const segments = [
     "id": "2-2",
     "text": "名二而實則一也。夫人物之別。復以類分之。故曰無名無以別所言。無物無以志所得。無類無以知其用。",
     "audioPath": "audios/female/audio-2-2-f.mp3",
-    "translation": "Called by two names, yet in truth one.  \nAs for the distinction between persons and things.  \nThey are further divided according to class.  \nTherefore: without a name there is no means to distinguish what is spoken of.  \nWithout a thing, there is no means by which to indicate what has been obtained.  \nWithout a class there is no means to know its use.",
+    "translation": "Called by two names, yet in truth one.\nAs for the distinction between persons and things.\nThey are further divided according to class.\nTherefore: without a name there is no means to distinguish what is spoken of.\nWithout a thing, there is no means by which to indicate what has been obtained.\nWithout a class there is no means to know its use.",
     "isCodeBlock": false,
     "sentences": [
       {
@@ -430,7 +430,7 @@ export const segments = [
   },
   {
     "id": "2-7",
-    "text": "吾有一數。曰三。名之曰「甲」。吾有一爻。曰陰。名之曰「乙」。吾有一言。曰『噫吁戲』。名之曰「丙」。",
+    "text": "吾有一數。曰三。名之曰「甲」。\n吾有一爻。曰陰。名之曰「乙」。\n吾有一言。曰『噫吁戲』。名之曰「丙」。",
     "audioPath": "audios/female/audio-2-7-f.mp3",
     "translation": "I have a number.\nIt is named “Three”.\nIt is named “A”.\nI have a Yáo.\nIt is called “Yin”.\nIt is named “B”.\nI have a Word.\nIt is named “噫吁戲”.\nIt is named “C”.",
     "isCodeBlock": false,
@@ -454,7 +454,7 @@ export const segments = [
         "durationInFrames": 55
       },
       {
-        "chinese": "吾有一爻。",
+        "chinese": "\n吾有一爻。",
         "english": "I have a Yáo.",
         "transcription": "ŋòː ɦʉúː ʔit ɦạ̀w",
         "durationInFrames": 55
@@ -472,7 +472,7 @@ export const segments = [
         "durationInFrames": 55
       },
       {
-        "chinese": "吾有一言。",
+        "chinese": "\n吾有一言。",
         "english": "I have a Word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
         "durationInFrames": 55
@@ -544,7 +544,7 @@ export const segments = [
   },
   {
     "id": "2-10",
-    "text": "未名之變數。機器聊志之以待其用也。其字者。即謂前未名之變數也。用如左。",
+    "text": "未名之變數。機器聊志之以待其用也。`其`字者。即謂前未名之變數也。用如左。",
     "audioPath": "audios/female/audio-2-10-f.mp3",
     "translation": "An unnamed variable.\nThe machine takes note of it, awaiting its use.\nIts label is,\nThat is to say, the previously unnamed variable.\nUse as follows.",
     "isCodeBlock": false,
@@ -562,7 +562,7 @@ export const segments = [
         "durationInFrames": 108
       },
       {
-        "chinese": "其字者。",
+        "chinese": "`其`字者。",
         "english": "Its label is,",
         "transcription": "gɨ̀ː ʣɨ̌ː ʨiáː",
         "durationInFrames": 39
@@ -624,19 +624,19 @@ export const segments = [
   },
   {
     "id": "2-12",
-    "text": "夫方謂加其以五時。其者。三也。至減其以二時。其者。八也。復減以二。終得六也。",
+    "text": "夫方謂`加其以五`時。`其`者。三也。至`減其以二`時。`其`者。八也。復減以二。終得六也。",
     "audioPath": "audios/female/audio-2-12-f.mp3",
     "translation": "When one says to add five to it,\nthe thing —\nis three.\nWhen one subtracts two from it,\nthe thing —\nis eight.\nAgain, subtract two.\nIn the end, one obtains six.",
     "isCodeBlock": false,
     "sentences": [
       {
-        "chinese": "夫方謂加其以五時。",
+        "chinese": "夫方謂`加其以五`時。",
         "english": "When one says to add five to it,",
         "transcription": "bʉòː pʉɑ̀ŋ ɦʉ̌j kạ̀ː gɨ̀ː jɨ́ː ŋóː ʥɨ̀ː",
         "durationInFrames": 95
       },
       {
-        "chinese": "其者。",
+        "chinese": "`其`者。",
         "english": "the thing —",
         "transcription": "gɨ̀ː ʨiáː",
         "durationInFrames": 32
@@ -648,13 +648,13 @@ export const segments = [
         "durationInFrames": 32
       },
       {
-        "chinese": "至減其以二時。",
+        "chinese": "至`減其以二`時。",
         "english": "When one subtracts two from it,",
         "transcription": "ʨǐː kẹ́m gɨ̀ː jɨ́ː ɲǐː ʥɨ̀ː",
         "durationInFrames": 74
       },
       {
-        "chinese": "其者。",
+        "chinese": "`其`者。",
         "english": "the thing —",
         "transcription": "gɨ̀ː ʨiáː",
         "durationInFrames": 32
@@ -838,7 +838,7 @@ export const segments = [
   },
   {
     "id": "2-16",
-    "text": "又。吾有一數曰 可省為有數。故是二句無少異。",
+    "text": "又。`吾有一數曰` 可省為`有數`。故是二句無少異。",
     "audioPath": "audios/female/audio-2-16-f.mp3",
     "translation": "Moreover.\n“I have a number” can also be omitted as “be a number”.\nThus, the two sentences are not greatly different.",
     "isCodeBlock": false,
@@ -847,26 +847,26 @@ export const segments = [
         "chinese": "又。",
         "english": "Moreover.",
         "transcription": "ɦʉǔː",
-        "durationInFrames": 19
+        "durationInFrames": 20
       },
       {
-        "chinese": "吾有一數曰 可省為有數。",
+        "chinese": "`吾有一數曰` 可省為`有數`。",
         "english": "“I have a number” can also be omitted as “be a number”.",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː ɦʉot kʰɑ́ː ʂịáŋ ɦỵèː ɦʉúː ʂʉǒː",
-        "durationInFrames": 117
+        "durationInFrames": 112
       },
       {
         "chinese": "故是二句無少異。",
         "english": "Thus, the two sentences are not greatly different.",
         "transcription": "kǒː ʥiéː ɲǐː kʉǒː mʉòː ɕiéw jɨ̌ː",
-        "durationInFrames": 78
+        "durationInFrames": 82
       }
     ],
     "durationInFrames": 214
   },
   {
     "id": "2-17",
-    "text": "有數三。名之曰「甲」。吾有一數。曰三。名之曰「甲」。",
+    "text": "有數三。名之曰「甲」。\n吾有一數。曰三。名之曰「甲」。",
     "audioPath": "audios/female/audio-2-17-f.mp3",
     "translation": "There is a numeral three.\nIt is named “A”.\nI have a numeral.\nIt is named three.\nIt is named “A”.",
     "isCodeBlock": false,
@@ -884,7 +884,7 @@ export const segments = [
         "durationInFrames": 56
       },
       {
-        "chinese": "吾有一數。",
+        "chinese": "\n吾有一數。",
         "english": "I have a numeral.",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː",
         "durationInFrames": 56
@@ -952,7 +952,7 @@ export const segments = [
   },
   {
     "id": "2-19",
-    "text": "吾有一數。曰零。名之曰「甲」。吾有一數。名之曰「甲」。有數零。名之曰「甲」。",
+    "text": "吾有一數。曰零。名之曰「甲」。\n吾有一數。名之曰「甲」。\n有數零。名之曰「甲」。",
     "audioPath": "audios/female/audio-2-19-f.mp3",
     "translation": "I have a numeral.\nIt is named zero.\nNamed it “A”.\nI have a numeral.\nIt is named “A”.\nThere exists a numeral zero.\nNamed it “A”.",
     "isCodeBlock": false,
@@ -976,7 +976,7 @@ export const segments = [
         "durationInFrames": 54
       },
       {
-        "chinese": "吾有一數。",
+        "chinese": "\n吾有一數。",
         "english": "I have a numeral.",
         "transcription": "ŋòː ɦʉúː ʔit ʂʉǒː",
         "durationInFrames": 54
@@ -988,7 +988,7 @@ export const segments = [
         "durationInFrames": 54
       },
       {
-        "chinese": "有數零。",
+        "chinese": "\n有數零。",
         "english": "There exists a numeral zero.",
         "transcription": "ɦʉúː ʂʉǒː lèŋ",
         "durationInFrames": 44
@@ -1032,7 +1032,7 @@ export const segments = [
   },
   {
     "id": "2-21",
-    "text": "昔之「甲」者。今四是矣。昔之「乙」者。今「甲」是矣。",
+    "text": "昔之「甲」者。今四是矣。\n昔之「乙」者。今「甲」是矣。",
     "audioPath": "audios/female/audio-2-21-f.mp3",
     "translation": "As for the former “A”.\nNow four it is.\nAs for the former “B”.\nNow “A” is indeed so.",
     "isCodeBlock": false,
@@ -1050,7 +1050,7 @@ export const segments = [
         "durationInFrames": 53
       },
       {
-        "chinese": "昔之「乙」者。",
+        "chinese": "\n昔之「乙」者。",
         "english": "As for the former “B”.",
         "transcription": "siak ʨɨ̀ː ʔịt ʨiáː",
         "durationInFrames": 53
@@ -1248,7 +1248,7 @@ export const segments = [
   },
   {
     "id": "2-27",
-    "text": "客曰。吾知之矣。應作如是觀。凡未名之變數。皆如獺祭然。言其者。取至近之魚而棄其餘。言書之者。盡書之。言名之者。取若干而名之。曰。然也。善哉此比。",
+    "text": "客曰。吾知之矣。應作如是觀。凡未名之變數。皆如獺祭然。言`其`者。取至近之魚而棄其餘。言`書之`者。盡書之。言`名之`者。取若干而名之。曰。然也。善哉此比。",
     "audioPath": "audios/female/audio-2-27-f.mp3",
     "translation": "The guest said.\n“Now I see.\nOne should view it thus.\nAll unnamed variables.\nAll unnamed variables are, as it were, like an otter’s sacrifice.\nThose who speak of it.\nTake the nearest fish and discard the rest.\nThe one who writes it down.\nWrite it all down.\nThe one who names it.\nTake some and name them.”\nHe replies,\n“So be it.\nWell done, nice analogy.”",
     "isCodeBlock": false,
@@ -1284,7 +1284,7 @@ export const segments = [
         "durationInFrames": 63
       },
       {
-        "chinese": "言其者。",
+        "chinese": "言`其`者。",
         "english": "Those who speak of it.",
         "transcription": "ŋɨə̀n gɨ̀ː ʨiáː",
         "durationInFrames": 42
@@ -1296,7 +1296,7 @@ export const segments = [
         "durationInFrames": 105
       },
       {
-        "chinese": "言書之者。",
+        "chinese": "言`書之`者。",
         "english": "The one who writes it down.",
         "transcription": "ŋɨə̀n ɕɨə̀ː ʨɨ̀ː ʨiáː",
         "durationInFrames": 52
@@ -1308,7 +1308,7 @@ export const segments = [
         "durationInFrames": 42
       },
       {
-        "chinese": "言名之者。",
+        "chinese": "言`名之`者。",
         "english": "The one who names it.",
         "transcription": "ŋɨə̀n miàŋ ʨɨ̀ː ʨiáː",
         "durationInFrames": 52
@@ -1342,7 +1342,7 @@ export const segments = [
   },
   {
     "id": "2-28",
-    "text": "問曰。每有未名者。輒祭如是。豈非終累累然焉。今欲盡棄其魚。復當作何書。曰。當書噫。噫者。嘆辭也。所以嘆彼之盡棄也。",
+    "text": "問曰。每有未名者。輒祭如是。豈非終累累然焉。今欲盡棄其魚。復當作何書。曰。當書`噫`。`噫`者。嘆辭也。所以嘆彼之盡棄也。",
     "audioPath": "audios/female/audio-2-28-f.mp3",
     "translation": "The questioner asked,\n“Whenever there is an unnamed one,\nThey are sacrificed thus.\nWould it not, in the end, be a ceaseless, manyfold piling?\nNow I would discard all its fish.\nAnd what should be written?”\nHe said,\n“It should be written as ‘alas.’\n‘Alas’ —\nis a sighing utterance.\nThus one laments its thorough discard.”",
     "isCodeBlock": false,
@@ -1390,13 +1390,13 @@ export const segments = [
         "durationInFrames": 21
       },
       {
-        "chinese": "當書噫。",
+        "chinese": "當書`噫`。",
         "english": "“It should be written as ‘alas.’",
         "transcription": "tɑ̀ŋ ɕɨə̀ː ʔɨ̀ː",
         "durationInFrames": 42
       },
       {
-        "chinese": "噫者。",
+        "chinese": "`噫`者。",
         "english": "‘Alas’ —",
         "transcription": "ʔɨ̀ː ʨiáː",
         "durationInFrames": 31
