@@ -309,7 +309,9 @@ def replace_chars(text: str) -> str:
 
 
 def normalize_text(text: str) -> str:
-    text = re.sub(r"`[^`]*`", "", text)
+    # Inline code markers should not remove the enclosed content; strip only the
+    # backtick characters so transcription still "sees" the underlying text.
+    text = text.replace("`", "")
     normalized = re.sub(r"\s+", "", text)
     normalized = normalized.replace("。", ".")
     normalized = re.sub(r"\.+$", ".", normalized)
@@ -575,4 +577,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
