@@ -1,0 +1,898 @@
+{
+  "c5-s1": {
+    "source": "夫循環者。",
+    "translation": "Speaking of loops,"
+  },
+  "c5-s2": {
+    "source": "日月之週行。",
+    "translation": "the sun and moon's circular motion"
+  },
+  "c5-s3": {
+    "source": "草木之榮枯。",
+    "translation": "the growth and decay of plants"
+  },
+  "c5-s4": {
+    "source": "人事之興替。",
+    "translation": "the rise and fall of human affairs"
+  },
+  "c5-s5": {
+    "source": "其是也。",
+    "translation": "This is so."
+  },
+  "c5-s6": {
+    "source": "毗鶱國王曰。",
+    "translation": "The King of Bihyon (a legendary kingdom in the Classic of Mountains and Seas) said."
+  },
+  "c5-s7": {
+    "source": "天地無始無終。",
+    "translation": "Heaven and earth have no beginning and no end."
+  },
+  "c5-s8": {
+    "source": "十二萬年一盤古。",
+    "translation": "Once every 120,000 years, a Pangu appears."
+  },
+  "c5-s9": {
+    "source": "今雖萬萬古。",
+    "translation": "Even now, after countless ages."
+  },
+  "c5-s10": {
+    "source": "史唯一轍。",
+    "translation": "There is but one path in history."
+  },
+  "c5-s11": {
+    "source": "莫非前定耳。",
+    "translation": "Could it be foreordained?"
+  },
+  "c5-s12": {
+    "source": "吾不知其妄。",
+    "translation": "I do not know its folly."
+  },
+  "c5-s13": {
+    "source": "然「年年歲歲花相似」者。",
+    "translation": "Yet those who say, “Year after year the flowers look the same.”"
+  },
+  "c5-s14": {
+    "source": "人共見焉。",
+    "translation": "People everywhere see it."
+  },
+  "c5-s15": {
+    "source": "又轉轆轤以上百尺之繩。",
+    "translation": "And again, wind a rope more than a hundred feet long about the capstan."
+  },
+  "c5-s16": {
+    "source": "積跬步以作千里之行。",
+    "translation": "A journey of a thousand miles begins with a single step."
+  },
+  "c5-s17": {
+    "source": "累片石以固萬里之城。",
+    "translation": "Pile up stones to fortify a city ten thousand miles in extent."
+  },
+  "c5-s18": {
+    "source": "非循環反覆無以致之也。",
+    "translation": "It cannot be achieved except by looping again and again."
+  },
+  "c5-s19": {
+    "source": "其營營不息者。",
+    "translation": "That ceaseless bustle."
+  },
+  "c5-s20": {
+    "source": "人之所疲。",
+    "translation": "What people tire of."
+  },
+  "c5-s21": {
+    "source": "機器所樂為也。",
+    "translation": "That which machines delight in doing."
+  },
+  "c5-s22": {
+    "source": "循環之法有三。",
+    "translation": "There are three methods of looping."
+  },
+  "c5-s23": {
+    "source": "其一者曰無窮。",
+    "translation": "The first is called Infinite."
+  },
+  "c5-s24": {
+    "source": "蓋行不止也。",
+    "translation": "For it denotes ceaseless motion."
+  },
+  "c5-s25": {
+    "source": "其二者曰若干。",
+    "translation": "The second is called “A number of times.”"
+  },
+  "c5-s26": {
+    "source": "蓋行若干遍也。",
+    "translation": "It denotes performing it several times."
+  },
+  "c5-s27": {
+    "source": "其三者曰歷列。",
+    "translation": "The third is called “Enumeration.”"
+  },
+  "c5-s28": {
+    "source": "蓋視列中物之幾何一一行之也。",
+    "translation": "It concerns the amount of items in the list, placing them one by one."
+  },
+  "c5-s29": {
+    "source": "各書如是。",
+    "translation": "Thus each entry is so."
+  },
+  "c5-s30": {
+    "source": "恆為是。",
+    "translation": "Constantly do this."
+  },
+  "c5-s31": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c5-s32": {
+    "source": "曰『天地長不沒。山川無改時。』",
+    "translation": "It says, “Heaven and earth endure forever; mountains and rivers do not change with time.”"
+  },
+  "c5-s33": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c5-s34": {
+    "source": "\n云云。",
+    "translation": "And so on."
+  },
+  "c5-s35": {
+    "source": "為是百遍。",
+    "translation": ""
+  },
+  "c5-s36": {
+    "source": "\n\t吾有一言。",
+    "translation": ""
+  },
+  "c5-s37": {
+    "source": "曰『讀書百遍。其義自見。』",
+    "translation": ""
+  },
+  "c5-s38": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c5-s39": {
+    "source": "\n云云。",
+    "translation": ""
+  },
+  "c5-s40": {
+    "source": "凡「列」中之「元」\n\t吾有二言。",
+    "translation": ""
+  },
+  "c5-s41": {
+    "source": "曰「元」。",
+    "translation": ""
+  },
+  "c5-s42": {
+    "source": "曰『者。亦列中之物也。』",
+    "translation": ""
+  },
+  "c5-s43": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c5-s44": {
+    "source": "\n云云。",
+    "translation": ""
+  },
+  "c5-s45": {
+    "source": "注曰。",
+    "translation": ""
+  },
+  "c5-s46": {
+    "source": "列之用。",
+    "translation": ""
+  },
+  "c5-s47": {
+    "source": "更見於後章。",
+    "translation": ""
+  },
+  "c5-s48": {
+    "source": "今表歷列之用。",
+    "translation": ""
+  },
+  "c5-s49": {
+    "source": "聊以示循環之全貌。",
+    "translation": ""
+  },
+  "c5-s50": {
+    "source": "不求觀者立解也。",
+    "translation": ""
+  },
+  "c5-s51": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c5-s52": {
+    "source": "`云云`者。",
+    "translation": ""
+  },
+  "c5-s53": {
+    "source": "吾似於前章見之。",
+    "translation": ""
+  },
+  "c5-s54": {
+    "source": "無乃決策亦用此結句耶。",
+    "translation": ""
+  },
+  "c5-s55": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c5-s56": {
+    "source": "然也。",
+    "translation": ""
+  },
+  "c5-s57": {
+    "source": "`也`字亦無以異也。",
+    "translation": ""
+  },
+  "c5-s58": {
+    "source": "九九歌訣者。",
+    "translation": ""
+  },
+  "c5-s59": {
+    "source": "淮南子中已有之。",
+    "translation": ""
+  },
+  "c5-s60": {
+    "source": "至今流傳不廢。",
+    "translation": ""
+  },
+  "c5-s61": {
+    "source": "今以程式書此歌如左。",
+    "translation": ""
+  },
+  "c5-s62": {
+    "source": "有數九。",
+    "translation": ""
+  },
+  "c5-s63": {
+    "source": "名之曰「始」。",
+    "translation": ""
+  },
+  "c5-s64": {
+    "source": "\n有數「始」。",
+    "translation": ""
+  },
+  "c5-s65": {
+    "source": "名之曰「戊」\n為是「始」遍。",
+    "translation": ""
+  },
+  "c5-s66": {
+    "source": "\n\t有數「戊」。",
+    "translation": ""
+  },
+  "c5-s67": {
+    "source": "名之曰「戌」。",
+    "translation": ""
+  },
+  "c5-s68": {
+    "source": "\n\t為是「戊」遍。",
+    "translation": ""
+  },
+  "c5-s69": {
+    "source": "\n\t\t乘「戊」以「戌」。",
+    "translation": ""
+  },
+  "c5-s70": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c5-s71": {
+    "source": "\n\t\t\t若「甲」小於十者。",
+    "translation": ""
+  },
+  "c5-s72": {
+    "source": "\n\t\t\t\t吾有四言。",
+    "translation": ""
+  },
+  "c5-s73": {
+    "source": "曰「戌」",
+    "translation": ""
+  },
+  "c5-s74": {
+    "source": "曰「戊」",
+    "translation": ""
+  },
+  "c5-s75": {
+    "source": "曰『如』曰「甲」。",
+    "translation": ""
+  },
+  "c5-s76": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c5-s77": {
+    "source": "\n\t\t\t若非\n\t\t\t\t吾有三言。",
+    "translation": ""
+  },
+  "c5-s78": {
+    "source": "曰「戌」",
+    "translation": ""
+  },
+  "c5-s79": {
+    "source": "曰「戊」",
+    "translation": ""
+  },
+  "c5-s80": {
+    "source": "曰「甲」。",
+    "translation": ""
+  },
+  "c5-s81": {
+    "source": "書之也。",
+    "translation": ""
+  },
+  "c5-s82": {
+    "source": "\n\t\t\t減「戌」以一。",
+    "translation": ""
+  },
+  "c5-s83": {
+    "source": "昔之「戌」者。",
+    "translation": ""
+  },
+  "c5-s84": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s85": {
+    "source": "\n\t云云。",
+    "translation": ""
+  },
+  "c5-s86": {
+    "source": "\n\t減「戊」以一。",
+    "translation": ""
+  },
+  "c5-s87": {
+    "source": "昔之「戊」者。",
+    "translation": ""
+  },
+  "c5-s88": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s89": {
+    "source": "\n云云。",
+    "translation": ""
+  },
+  "c5-s90": {
+    "source": "乃得`九 九 八十一 八 九 七十二`至`一一如一`諸辭。",
+    "translation": ""
+  },
+  "c5-s91": {
+    "source": "故曰。",
+    "translation": ""
+  },
+  "c5-s92": {
+    "source": "機器之代人力之尤甚。",
+    "translation": ""
+  },
+  "c5-s93": {
+    "source": "書少乃得多。",
+    "translation": ""
+  },
+  "c5-s94": {
+    "source": "事半而功倍者。",
+    "translation": ""
+  },
+  "c5-s95": {
+    "source": "循環也。",
+    "translation": ""
+  },
+  "c5-s96": {
+    "source": "非唯九九歌訣。",
+    "translation": ""
+  },
+  "c5-s97": {
+    "source": "雖千千歌決。",
+    "translation": ""
+  },
+  "c5-s98": {
+    "source": "亦在彈指間耳。",
+    "translation": ""
+  },
+  "c5-s99": {
+    "source": "試易首句如是。",
+    "translation": ""
+  },
+  "c5-s100": {
+    "source": "有數九百九十九。",
+    "translation": ""
+  },
+  "c5-s101": {
+    "source": "名之曰「始」。",
+    "translation": ""
+  },
+  "c5-s102": {
+    "source": "乃得`九百九十九 九百九十九 九十九萬八千零一`至`一一如一`。",
+    "translation": ""
+  },
+  "c5-s103": {
+    "source": "計四十九萬餘行也。",
+    "translation": ""
+  },
+  "c5-s104": {
+    "source": "使人手書之。",
+    "translation": ""
+  },
+  "c5-s105": {
+    "source": "則非累日不能盡矣。",
+    "translation": ""
+  },
+  "c5-s106": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c5-s107": {
+    "source": "世事茫茫難自料。",
+    "translation": ""
+  },
+  "c5-s108": {
+    "source": "今不能預卜其遍數之多少。",
+    "translation": ""
+  },
+  "c5-s109": {
+    "source": "乃於循環之中。",
+    "translation": ""
+  },
+  "c5-s110": {
+    "source": "有非常之境。",
+    "translation": ""
+  },
+  "c5-s111": {
+    "source": "遽然欲止者。",
+    "translation": ""
+  },
+  "c5-s112": {
+    "source": "當若何耶。",
+    "translation": ""
+  },
+  "c5-s113": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c5-s114": {
+    "source": "當用`乃止`。",
+    "translation": ""
+  },
+  "c5-s115": {
+    "source": "又問曰。",
+    "translation": ""
+  },
+  "c5-s116": {
+    "source": "今不欲盡止。",
+    "translation": ""
+  },
+  "c5-s117": {
+    "source": "唯欲直入次遍者。",
+    "translation": ""
+  },
+  "c5-s118": {
+    "source": "當若何耶。",
+    "translation": ""
+  },
+  "c5-s119": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c5-s120": {
+    "source": "當用`乃止是遍`也。",
+    "translation": ""
+  },
+  "c5-s121": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c5-s122": {
+    "source": "九章算術有更相減損術。",
+    "translation": ""
+  },
+  "c5-s123": {
+    "source": "所以求最大等數也。",
+    "translation": ""
+  },
+  "c5-s124": {
+    "source": "等數者。",
+    "translation": ""
+  },
+  "c5-s125": {
+    "source": "猶因數也。",
+    "translation": ""
+  },
+  "c5-s126": {
+    "source": "術曰。",
+    "translation": ""
+  },
+  "c5-s127": {
+    "source": "可半者半之。",
+    "translation": ""
+  },
+  "c5-s128": {
+    "source": "不可半者。",
+    "translation": ""
+  },
+  "c5-s129": {
+    "source": "副置分母。",
+    "translation": ""
+  },
+  "c5-s130": {
+    "source": "子之數。",
+    "translation": ""
+  },
+  "c5-s131": {
+    "source": "以少減多。",
+    "translation": ""
+  },
+  "c5-s132": {
+    "source": "更相減損。",
+    "translation": ""
+  },
+  "c5-s133": {
+    "source": "求其等也。",
+    "translation": ""
+  },
+  "c5-s134": {
+    "source": "以等數約之。",
+    "translation": ""
+  },
+  "c5-s135": {
+    "source": "今取不可半者之例。",
+    "translation": ""
+  },
+  "c5-s136": {
+    "source": "編程如是。",
+    "translation": ""
+  },
+  "c5-s137": {
+    "source": "吾有二數。",
+    "translation": ""
+  },
+  "c5-s138": {
+    "source": "曰九十一。",
+    "translation": ""
+  },
+  "c5-s139": {
+    "source": "曰四十九。",
+    "translation": ""
+  },
+  "c5-s140": {
+    "source": "名之曰「甲」",
+    "translation": ""
+  },
+  "c5-s141": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c5-s142": {
+    "source": "\n恆為是。",
+    "translation": ""
+  },
+  "c5-s143": {
+    "source": "\n\t若「甲」等於「乙」者。",
+    "translation": ""
+  },
+  "c5-s144": {
+    "source": "\n\t\t乃止。",
+    "translation": ""
+  },
+  "c5-s145": {
+    "source": "\n\t或若「甲」大於「乙」者。",
+    "translation": ""
+  },
+  "c5-s146": {
+    "source": "\n\t\t減「甲」以「乙」。",
+    "translation": ""
+  },
+  "c5-s147": {
+    "source": "昔之「甲」者。",
+    "translation": ""
+  },
+  "c5-s148": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s149": {
+    "source": "\n\t若非。",
+    "translation": ""
+  },
+  "c5-s150": {
+    "source": "\n\t\t減「乙」以「甲」。",
+    "translation": ""
+  },
+  "c5-s151": {
+    "source": "昔之「乙」者。",
+    "translation": ""
+  },
+  "c5-s152": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s153": {
+    "source": "\n\t也。",
+    "translation": ""
+  },
+  "c5-s154": {
+    "source": "\n云云。",
+    "translation": ""
+  },
+  "c5-s155": {
+    "source": "\n夫「甲」書之。",
+    "translation": ""
+  },
+  "c5-s156": {
+    "source": "夫更相減損之時。",
+    "translation": ""
+  },
+  "c5-s157": {
+    "source": "茫茫然不知其何時為等焉。",
+    "translation": ""
+  },
+  "c5-s158": {
+    "source": "故聊曰`恆為是`也。",
+    "translation": ""
+  },
+  "c5-s159": {
+    "source": "既等。",
+    "translation": ""
+  },
+  "c5-s160": {
+    "source": "乃毋須更為也。",
+    "translation": ""
+  },
+  "c5-s161": {
+    "source": "是`乃止`之用也。",
+    "translation": ""
+  },
+  "c5-s162": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c5-s163": {
+    "source": "陰數者。",
+    "translation": ""
+  },
+  "c5-s164": {
+    "source": "六八也。",
+    "translation": ""
+  },
+  "c5-s165": {
+    "source": "陽數者。",
+    "translation": ""
+  },
+  "c5-s166": {
+    "source": "七九也。",
+    "translation": ""
+  },
+  "c5-s167": {
+    "source": "今欲求百以內陰數之合。",
+    "translation": ""
+  },
+  "c5-s168": {
+    "source": "作何書。",
+    "translation": ""
+  },
+  "c5-s169": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c5-s170": {
+    "source": "吾有二數。",
+    "translation": ""
+  },
+  "c5-s171": {
+    "source": "名之曰「甲」",
+    "translation": ""
+  },
+  "c5-s172": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c5-s173": {
+    "source": "\n為是百遍。",
+    "translation": ""
+  },
+  "c5-s174": {
+    "source": "\n\t加「甲」以一。",
+    "translation": ""
+  },
+  "c5-s175": {
+    "source": "昔之「甲」者。",
+    "translation": ""
+  },
+  "c5-s176": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s177": {
+    "source": "\n\t除「甲」以二。",
+    "translation": ""
+  },
+  "c5-s178": {
+    "source": "所餘幾何。",
+    "translation": ""
+  },
+  "c5-s179": {
+    "source": "若其等於一者。",
+    "translation": ""
+  },
+  "c5-s180": {
+    "source": "\n\t\t乃止是遍也。",
+    "translation": ""
+  },
+  "c5-s181": {
+    "source": "\n\t加「甲」於「乙」。",
+    "translation": ""
+  },
+  "c5-s182": {
+    "source": "昔之「乙」者。",
+    "translation": ""
+  },
+  "c5-s183": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c5-s184": {
+    "source": "\n云云。",
+    "translation": ""
+  },
+  "c5-s185": {
+    "source": "\n夫「乙」。",
+    "translation": ""
+  },
+  "c5-s186": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c5-s187": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c5-s188": {
+    "source": "不若易`等於一`為`等於零`。",
+    "translation": ""
+  },
+  "c5-s189": {
+    "source": "並移`加「甲」`之句於決策中。",
+    "translation": ""
+  },
+  "c5-s190": {
+    "source": "無用`乃止是遍`矣。",
+    "translation": ""
+  },
+  "c5-s191": {
+    "source": "於吾子之法何異歟。",
+    "translation": ""
+  },
+  "c5-s192": {
+    "source": "曰然。",
+    "translation": ""
+  },
+  "c5-s193": {
+    "source": "於機器者是無異也。",
+    "translation": ""
+  },
+  "c5-s194": {
+    "source": "唯文風之別矣。",
+    "translation": ""
+  },
+  "c5-s195": {
+    "source": "或曰「無暇掩聰」。",
+    "translation": ""
+  },
+  "c5-s196": {
+    "source": "或曰「不及掩耳」。",
+    "translation": ""
+  },
+  "c5-s197": {
+    "source": "皆因作者之喜惡也。",
+    "translation": ""
+  },
+  "c5-s198": {
+    "source": "愚以為。",
+    "translation": ""
+  },
+  "c5-s199": {
+    "source": "凡循環之體冗長者。",
+    "translation": ""
+  },
+  "c5-s200": {
+    "source": "預以`乃止是遍`排其特例。",
+    "translation": ""
+  },
+  "c5-s201": {
+    "source": "可免於決策重層累然之苦。",
+    "translation": ""
+  },
+  "c5-s202": {
+    "source": "人或有不以為然者。",
+    "translation": ""
+  },
+  "c5-s203": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c5-s204": {
+    "source": "去止之方既多。",
+    "translation": ""
+  },
+  "c5-s205": {
+    "source": "蟄伏深隱。",
+    "translation": ""
+  },
+  "c5-s206": {
+    "source": "乃至難以理喻。",
+    "translation": ""
+  },
+  "c5-s207": {
+    "source": "是取亂之道也。",
+    "translation": ""
+  },
+  "c5-s208": {
+    "source": "是亦理也。",
+    "translation": ""
+  },
+  "c5-s209": {
+    "source": "編程之兩難者多如是。",
+    "translation": ""
+  },
+  "c5-s210": {
+    "source": "君子可自取所好焉。",
+    "translation": ""
+  },
+  "c5-s211": {
+    "source": "循環之術。",
+    "translation": ""
+  },
+  "c5-s212": {
+    "source": "至是略備矣。",
+    "translation": ""
+  },
+  "c5-s213": {
+    "source": "總其五章所知。",
+    "translation": ""
+  },
+  "c5-s214": {
+    "source": "亦頗有可為者。",
+    "translation": ""
+  },
+  "c5-s215": {
+    "source": "吾聞之。",
+    "translation": ""
+  },
+  "c5-s216": {
+    "source": "夫欲長於編程者。",
+    "translation": ""
+  },
+  "c5-s217": {
+    "source": "唯學而立用。",
+    "translation": ""
+  },
+  "c5-s218": {
+    "source": "用而不止。",
+    "translation": ""
+  },
+  "c5-s219": {
+    "source": "其勝束其手而觀其書百倍。",
+    "translation": ""
+  },
+  "c5-s220": {
+    "source": "善哉此言。",
+    "translation": ""
+  },
+  "c5-s221": {
+    "source": "學而不思則罔。",
+    "translation": ""
+  },
+  "c5-s222": {
+    "source": "吾聞諸仲尼。",
+    "translation": ""
+  },
+  "c5-s223": {
+    "source": "請試之。",
+    "translation": ""
+  },
+  "c5-s224": {
+    "source": "以為熟習也。",
+    "translation": ""
+  }
+}
