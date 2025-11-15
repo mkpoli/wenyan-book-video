@@ -227,7 +227,8 @@ function renderTextWithQuotes(
     return null;
   }
 
-  const entries = buildQuoteRenderEntries(text);
+  const normalizedText = text.replace(/\t/g, "\u00A0");
+  const entries = buildQuoteRenderEntries(normalizedText);
   if (entries.length === 0) {
     return null;
   }
