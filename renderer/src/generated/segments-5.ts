@@ -5,7 +5,7 @@ export const segments = [
   {
     "id": "5-1",
     "text": "夫循環者。日月之週行。草木之榮枯。人事之興替。其是也。毗鶱國王曰。天地無始無終。十二萬年一盤古。今雖萬萬古。史唯一轍。莫非前定耳。吾不知其妄。然「年年歲歲花相似」者。人共見焉。",
-    "audioPath": null,
+    "audioPath": "audios/audio-5-1.mp3",
     "translation": "Speaking of loops,\nthe sun and moon's circular motion\nthe growth and decay of plants\nthe rise and fall of human affairs\nThis is so.\nThe King of Bihyon (a legendary kingdom in the Classic of Mountains and Seas) said.\nHeaven and earth have no beginning and no end.\nOnce every 120,000 years, a Pangu appears.\nEven now, after countless ages.\nThere is but one path in history.\nCould it be foreordained?\nI do not know its folly.\nYet those who say, “Year after year the flowers look the same.”\nPeople everywhere see it.",
     "isCodeBlock": false,
     "sentences": [
@@ -13,88 +13,88 @@ export const segments = [
         "chinese": "夫循環者。",
         "english": "Speaking of loops,",
         "transcription": "bʉòː zʷìn ɦʷạ̀n ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 53
       },
       {
         "chinese": "日月之週行。",
         "english": "the sun and moon's circular motion",
         "transcription": "ɲit ŋʉot ʨɨ̀ː ʨʉùː ɦạ̀ŋ",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "草木之榮枯。",
         "english": "the growth and decay of plants",
         "transcription": "ʦʰɑ́w muk ʨɨ̀ː ɦỵàŋ kʰòː",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "人事之興替。",
         "english": "the rise and fall of human affairs",
         "transcription": "ɲìn ꭦɨ̌ː ʨɨ̀ː hɨ̀ŋ tʰěj",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "其是也。",
         "english": "This is so.",
         "transcription": "gɨ̀ː ʥiéː jiáː",
-        "durationInFrames": 61
+        "durationInFrames": 42
       },
       {
         "chinese": "毗鶱國王曰。",
         "english": "The King of Bihyon (a legendary kingdom in the Classic of Mountains and Seas) said.",
         "transcription": "bìː hɨə̀n kʷək ɦʉɑ̀ŋ ɦʉot",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "天地無始無終。",
         "english": "Heaven and earth have no beginning and no end.",
         "transcription": "tʰèn dǐː mʉòː ɕɨ́ː mʉòː ʨʉùŋ",
-        "durationInFrames": 106
+        "durationInFrames": 74
       },
       {
         "chinese": "十二萬年一盤古。",
         "english": "Once every 120,000 years, a Pangu appears.",
         "transcription": "ʥip ɲǐː mʉǒn nèn ʔit bɑ̀n kóː",
-        "durationInFrames": 121
+        "durationInFrames": 84
       },
       {
         "chinese": "今雖萬萬古。",
         "english": "Even now, after countless ages.",
         "transcription": "kị̀m sʷìː mʉǒn mʉǒn kóː",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "史唯一轍。",
         "english": "There is but one path in history.",
         "transcription": "ʂɨ́ː jʷìː ʔit ɖiet",
-        "durationInFrames": 76
+        "durationInFrames": 53
       },
       {
         "chinese": "莫非前定耳。",
         "english": "Could it be foreordained?",
         "transcription": "mɑk pʉ̀j ʣèn děŋ ɲɨ́ː",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "吾不知其妄。",
         "english": "I do not know its folly.",
         "transcription": "ŋòː pʉùː ʈièː gɨ̀ː mʉɑ̌ŋ",
-        "durationInFrames": 91
+        "durationInFrames": 63
       },
       {
         "chinese": "然「年年歲歲花相似」者。",
         "english": "Yet those who say, “Year after year the flowers look the same.”",
         "transcription": "ɲièn nèn nèn syěj syěj hʷạ̀ː sɨɑ̀ŋ zɨ́ː ʨiáː",
-        "durationInFrames": 151
+        "durationInFrames": 105
       },
       {
         "chinese": "人共見焉。",
         "english": "People everywhere see it.",
         "transcription": "ɲìn gʉǒŋ kěn ɦịèn",
-        "durationInFrames": 74
+        "durationInFrames": 52
       }
     ],
-    "durationInFrames": 1302
+    "durationInFrames": 904
   },
   {
     "id": "5-2",
@@ -107,46 +107,46 @@ export const segments = [
         "chinese": "又轉轆轤以上百尺之繩。",
         "english": "And again, wind a rope more than a hundred feet long about the capstan.",
         "transcription": "ɦʉǔː ʈyén luk lòː jɨ́ː ʥɨɑ́ŋ pạk ʨʰiak ʨɨ̀ː ʑɨ̀ŋ",
-        "durationInFrames": 167
+        "durationInFrames": 134
       },
       {
         "chinese": "積跬步以作千里之行。",
         "english": "A journey of a thousand miles begins with a single step.",
         "transcription": "ʦiak kʰyéː bǒː jɨ́ː ʦɑk ʦʰèn lɨ́ː ʨɨ̀ː ɦạ̀ŋ",
-        "durationInFrames": 152
+        "durationInFrames": 122
       },
       {
         "chinese": "累片石以固萬里之城。",
         "english": "Pile up stones to fortify a city ten thousand miles in extent.",
         "transcription": "lyéː pʰěn ʥiak jɨ́ː kǒː mʉǒn lɨ́ː ʨɨ̀ː ʥiàŋ",
-        "durationInFrames": 152
+        "durationInFrames": 122
       },
       {
         "chinese": "非循環反覆無以致之也。",
         "english": "It cannot be achieved except by looping again and again.",
         "transcription": "pʉ̀j zʷìn ɦʷạ̀n pʉón pʰʉuk mʉòː jɨ́ː ʈǐː ʨɨ̀ː jiáː",
-        "durationInFrames": 167
+        "durationInFrames": 134
       },
       {
         "chinese": "其營營不息者。",
         "english": "That ceaseless bustle.",
         "transcription": "gɨ̀ː jyàŋ jyàŋ pʉùː sɨk ʨiáː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "人之所疲。",
         "english": "What people tire of.",
         "transcription": "ɲìn ʨɨ̀ː ʂɨə́ː bịèː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "機器所樂為也。",
         "english": "That which machines delight in doing.",
         "transcription": "kɨ̀j kʰị̌ː ʂɨə́ː lɑk ɦỵèː jiáː",
-        "durationInFrames": 107
+        "durationInFrames": 87
       }
     ],
-    "durationInFrames": 927
+    "durationInFrames": 745
   },
   {
     "id": "5-3",
@@ -159,1462 +159,1462 @@ export const segments = [
         "chinese": "循環之法有三。",
         "english": "There are three methods of looping.",
         "transcription": "zʷìn ɦʷạ̀n ʨɨ̀ː pʉop ɦʉúː sɑ̀m",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "其一者曰無窮。",
         "english": "The first is called Infinite.",
         "transcription": "gɨ̀ː ʔit ʨiáː ɦʉot mʉòː gʉùŋ",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "蓋行不止也。",
         "english": "For it denotes ceaseless motion.",
         "transcription": "kɑ̌j ɦạ̀ŋ pʉùː ʨɨ́ː jiáː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "其二者曰若干。",
         "english": "The second is called “A number of times.”",
         "transcription": "gɨ̀ː ɲǐː ʨiáː ɦʉot ɲɨɑk kɑ̀n",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "蓋行若干遍也。",
         "english": "It denotes performing it several times.",
         "transcription": "kɑ̌j ɦạ̀ŋ ɲɨɑk kɑ̀n pěn jiáː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "其三者曰歷列。",
         "english": "The third is called “Enumeration.”",
         "transcription": "gɨ̀ː sɑ̀m ʨiáː ɦʉot lek liet",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "蓋視列中物之幾何一一行之也。",
         "english": "It concerns the amount of items in the list, placing them one by one.",
         "transcription": "kɑ̌j ʥíː liet ʈʉùŋ mʉt ʨɨ̀ː kɨ́j ɦɑ̀ː ʔit ʔit ɦạ̀ŋ ʨɨ̀ː jiáː",
-        "durationInFrames": 213
+        "durationInFrames": 171
       },
       {
         "chinese": "各書如是。",
         "english": "Thus each entry is so.",
         "transcription": "kɑk ɕɨə̀ː ɲɨə̀ː ʥiéː",
-        "durationInFrames": 78
+        "durationInFrames": 63
       }
     ],
-    "durationInFrames": 912
+    "durationInFrames": 732
   },
   {
     "id": "5-4",
-    "text": "恆為是。\n\t吾有一言。曰『天地長不沒。山川無改時。』書之。\n云云。為是百遍。",
+    "text": "恆為是。\n\t吾有一言。曰『天地長不沒。山川無改時。』書之。\n云云。",
     "audioPath": null,
-    "translation": "Constantly do this.\nI have a word.\nIt says, “Heaven and earth endure forever; mountains and rivers do not change with time.”\nWrite it down.\nAnd so on.\nDo this one hundred times.",
+    "translation": "Constantly do this.\nI have a word.\nIt says, “Heaven and earth endure forever; mountains and rivers do not change with time.”\nWrite it down.\nAnd so on.",
     "isCodeBlock": true,
     "sentences": [
       {
         "chinese": "恆為是。",
         "english": "Constantly do this.",
         "transcription": "ɦə̀ŋ ɦỵèː ʥiéː",
-        "durationInFrames": 61
+        "durationInFrames": 50
       },
       {
         "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 77
+        "durationInFrames": 62
       },
       {
         "chinese": "曰『天地長不沒。山川無改時。』",
         "english": "It says, “Heaven and earth endure forever; mountains and rivers do not change with time.”",
         "transcription": "ɦʉot tʰèn dǐː ɖɨɑ̀ŋ pʉùː mot . ʂẹ̀n ʨʰyèn mʉòː kə́j ʥɨ̀ː",
-        "durationInFrames": 200
+        "durationInFrames": 162
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n云云。",
         "english": "And so on.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
-      },
+        "durationInFrames": 38
+      }
+    ],
+    "durationInFrames": 349
+  },
+  {
+    "id": "5-5",
+    "text": "為是百遍。\n\t吾有一言。曰『讀書百遍。其義自見。』書之。\n云云。",
+    "audioPath": null,
+    "translation": "Do this one hundred times.\nI have a word.\nIt says, “Read the book a hundred times; its meaning will reveal itself.”\nWrite it down。\nThus and thus。",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "為是百遍。",
         "english": "Do this one hundred times.",
         "transcription": "ɦỵèː ʥiéː pạk pěn",
-        "durationInFrames": 77
-      }
-    ],
-    "durationInFrames": 507
-  },
-  {
-    "id": "5-5",
-    "text": "\n\t吾有一言。曰『讀書百遍。其義自見。』書之。\n云云。凡「列」中之「元」\n\t吾有二言。曰「元」。",
-    "audioPath": null,
-    "translation": "I have a word.\nIt says, “Read the book a hundred times; its meaning will reveal itself.”\nWrite it down。\nThus and thus。\nConcerning every element within a “List,” I have two words.\nIt says, ‘Element.’",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 62
+      },
       {
         "chinese": "\n\t吾有一言。",
         "english": "I have a word.",
         "transcription": "ŋòː ɦʉúː ʔit ŋɨə̀n",
-        "durationInFrames": 77
+        "durationInFrames": 62
       },
       {
         "chinese": "曰『讀書百遍。其義自見。』",
         "english": "It says, “Read the book a hundred times; its meaning will reveal itself.”",
         "transcription": "ɦʉot duk ɕɨə̀ː pạk pěn . gɨ̀ː ŋịěː ʣǐː kěn",
-        "durationInFrames": 169
+        "durationInFrames": 137
       },
       {
         "chinese": "書之。",
         "english": "Write it down。",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus。",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
-      },
+        "durationInFrames": 38
+      }
+    ],
+    "durationInFrames": 336
+  },
+  {
+    "id": "5-6",
+    "text": "凡「列」中之「元」\n\t吾有二言。曰「元」。曰『者。亦列中之物也。』書之。\n云云。",
+    "audioPath": null,
+    "translation": "Concerning every element within a “List,” I have two words.\nIt says, ‘Element.’\nIt says, “is a thing within the List.”\nWrite it down。\nThus and thus。",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "凡「列」中之「元」\n\t吾有二言。",
         "english": "Concerning every element within a “List,” I have two words.",
         "transcription": "bʉòm liet ʈʉùŋ ʨɨ̀ː ŋʉòn ŋòː ɦʉúː ɲǐː ŋɨə̀n",
-        "durationInFrames": 153
+        "durationInFrames": 124
       },
       {
         "chinese": "曰「元」。",
         "english": "It says, ‘Element.’",
         "transcription": "ɦʉot ŋʉòn",
-        "durationInFrames": 46
-      }
-    ],
-    "durationInFrames": 537
-  },
-  {
-    "id": "5-6",
-    "text": "曰『者。亦列中之物也。』書之。\n云云。注曰。列之用。更見於後章。",
-    "audioPath": null,
-    "translation": "It says, “is a thing within the List.”\nWrite it down。\nThus and thus。\nThe note says。\nThe use of lists。\nIt is further seen in later chapters。",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 37
+      },
       {
         "chinese": "曰『者。亦列中之物也。』",
         "english": "It says, “is a thing within the List.”",
         "transcription": "ɦʉot ʨiáː . jiak liet ʈʉùŋ ʨɨ̀ː mʉt jiáː",
-        "durationInFrames": 154
+        "durationInFrames": 124
       },
       {
         "chinese": "書之。",
         "english": "Write it down。",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus。",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
-      },
+        "durationInFrames": 39
+      }
+    ],
+    "durationInFrames": 361
+  },
+  {
+    "id": "5-7",
+    "text": "注曰。列之用。更見於後章。今表歷列之用。聊以示循環之全貌。不求觀者立解也。",
+    "audioPath": null,
+    "translation": "The note says。\nThe use of lists。\nIt is further seen in later chapters。\nNow present the use for enumeration。\nFor a modest showing, it reveals the full panorama of looping.\nIt does not require the reader to grasp it at once。",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "注曰。",
         "english": "The note says。",
         "transcription": "ʨʉǒː ɦʉot",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "列之用。",
         "english": "The use of lists。",
         "transcription": "liet ʨɨ̀ː jʉǒŋ",
-        "durationInFrames": 62
+        "durationInFrames": 49
       },
       {
         "chinese": "更見於後章。",
         "english": "It is further seen in later chapters。",
         "transcription": "kạ̌ŋ kěn ʔɨə̀ː ɦúː ʨɨɑ̀ŋ",
-        "durationInFrames": 93
-      }
-    ],
-    "durationInFrames": 447
-  },
-  {
-    "id": "5-7",
-    "text": "今表歷列之用。聊以示循環之全貌。不求觀者立解也。或問曰。`云云`者。吾似於前章見之。",
-    "audioPath": null,
-    "translation": "Now present the use for enumeration。\nFor a modest showing, it reveals the full panorama of looping.\nIt does not require the reader to grasp it at once。\nSome may ask,\n“The phrase ‘Thus and thus.’”\nI seem to have seen it in the preceding chapter。",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 74
+      },
       {
         "chinese": "今表歷列之用。",
         "english": "Now present the use for enumeration。",
         "transcription": "kị̀m pịéw lek liet ʨɨ̀ː jʉǒŋ",
-        "durationInFrames": 107
+        "durationInFrames": 86
       },
       {
         "chinese": "聊以示循環之全貌。",
         "english": "For a modest showing, it reveals the full panorama of looping.",
         "transcription": "lèw jɨ́ː ʑǐː zʷìn ɦʷạ̀n ʨɨ̀ː ʣyèn mạ̌w",
-        "durationInFrames": 138
+        "durationInFrames": 111
       },
       {
         "chinese": "不求觀者立解也。",
         "english": "It does not require the reader to grasp it at once。",
         "transcription": "pʉùː gʉùː kʷɑ̀n ʨiáː lip ɦẹ́ː jiáː",
-        "durationInFrames": 122
-      },
+        "durationInFrames": 99
+      }
+    ],
+    "durationInFrames": 456
+  },
+  {
+    "id": "5-8",
+    "text": "或問曰。`云云`者。吾似於前章見之。無乃決策亦用此結句耶。曰。然也。`也`字亦無以異也。",
+    "audioPath": null,
+    "translation": "Some may ask,\n“The phrase ‘Thus and thus.’”\nI seem to have seen it in the preceding chapter。\nIs it not that decision-making also uses this concluding clause。\nIt is answered,\nIndeed。\nThe character Jiaeq (也) bears no difference either。",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "或問曰。",
         "english": "Some may ask,",
         "transcription": "ɦʷək mʉ̌n ɦʉot",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "`云云`者。",
         "english": "“The phrase ‘Thus and thus.’”",
         "transcription": "ʨiáː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "吾似於前章見之。",
         "english": "I seem to have seen it in the preceding chapter。",
         "transcription": "ŋòː zɨ́ː ʔɨə̀ː ʣèn ʨɨɑ̀ŋ kěn ʨɨ̀ː",
-        "durationInFrames": 123
-      }
-    ],
-    "durationInFrames": 612
-  },
-  {
-    "id": "5-8",
-    "text": "無乃決策亦用此結句耶。曰。然也。`也`字亦無以異也。九九歌訣者。淮南子中已有之。至今流傳不廢。",
-    "audioPath": null,
-    "translation": "Is it not that decision-making also uses this concluding clause。\nIt is answered,\nIndeed。\nThe character Jiaeq (也) bears no difference either。\nThe Nine-Nine mnemonic verse。\nIt is already found in the Huainanzi。\nTo this day it has endured without cessation。",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 98
+      },
       {
         "chinese": "無乃決策亦用此結句耶。",
         "english": "Is it not that decision-making also uses this concluding clause。",
         "transcription": "mʉòː nə́j kʷet ꭧʰẹk jiak jʉǒŋ ʦʰiéː ket kʉǒː jiàː",
-        "durationInFrames": 168
+        "durationInFrames": 135
       },
       {
         "chinese": "曰。",
         "english": "It is answered,",
         "transcription": "ɦʉot",
-        "durationInFrames": 31
+        "durationInFrames": 25
       },
       {
         "chinese": "然也。",
         "english": "Indeed。",
         "transcription": "ɲièn jiáː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "`也`字亦無以異也。",
         "english": "The character Jiaeq (也) bears no difference either。",
         "transcription": "ʣɨ̌ː jiak mʉòː jɨ́ː jɨ̌ː jiáː",
-        "durationInFrames": 122
-      },
+        "durationInFrames": 99
+      }
+    ],
+    "durationInFrames": 492
+  },
+  {
+    "id": "5-9",
+    "text": "九九歌訣者。淮南子中已有之。至今流傳不廢。今以程式書此歌如左。",
+    "audioPath": null,
+    "translation": "The Nine-Nine mnemonic verse。\nIt is already found in the Huainanzi。\nTo this day it has endured without cessation。\nNow, using the program, write this song as shown below。",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "九九歌訣者。",
         "english": "The Nine-Nine mnemonic verse。",
         "transcription": "kʉúː kʉúː kɑ̀ː kʷet ʨiáː",
-        "durationInFrames": 92
+        "durationInFrames": 74
       },
       {
         "chinese": "淮南子中已有之。",
         "english": "It is already found in the Huainanzi。",
         "transcription": "ɦʷẹ̀j nə̀m ʦɨ́ː ʈʉùŋ jɨ́ː ɦʉúː ʨɨ̀ː",
-        "durationInFrames": 122
+        "durationInFrames": 99
       },
       {
         "chinese": "至今流傳不廢。",
         "english": "To this day it has endured without cessation。",
         "transcription": "ʨǐː kị̀m lʉùː ɖyèn pʉùː pʉǒj",
-        "durationInFrames": 106
-      }
-    ],
-    "durationInFrames": 687
-  },
-  {
-    "id": "5-9",
-    "text": "今以程式書此歌如左。有數九。名之曰「始」。\n有數「始」。",
-    "audioPath": null,
-    "translation": "Now, using the program, write this song as shown below。\nThere are a number of nine。\nNamed ‘Begin’。\nThere are several ‘Begin’。",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 87
+      },
       {
         "chinese": "今以程式書此歌如左。",
         "english": "Now, using the program, write this song as shown below。",
         "transcription": "kị̀m jɨ́ː ɖiàŋ ɕɨk ɕɨə̀ː ʦʰiéː kɑ̀ː ɲɨə̀ː ʦɑ́ː",
-        "durationInFrames": 155
-      },
+        "durationInFrames": 124
+      }
+    ],
+    "durationInFrames": 384
+  },
+  {
+    "id": "5-10",
+    "text": "有數九。名之曰「始」。\n有數「始」。名之曰「戊」\n為是「始」遍。\n\t有數「戊」。名之曰「戌」。\n\t為是「戊」遍。\n\t\t乘「戊」以「戌」。名之曰「甲」。\n\t\t\t若「甲」小於十者。",
+    "audioPath": null,
+    "translation": "There are a number of nine。\nNamed ‘Begin’。\nThere are several ‘Begin’。\nName it ‘E’; Do this for ‘Begin’ times.\nThere are a number of ‘E’.\nName it ‘K’.\nDo this for ‘K’ times.\nMultiply ‘E’ by ‘K’.\nName it ‘A’.\nIf ‘A’ is less than ten.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "有數九。",
         "english": "There are a number of nine。",
         "transcription": "ɦʉúː ʂʉǒː kʉúː",
-        "durationInFrames": 62
+        "durationInFrames": 49
       },
       {
         "chinese": "名之曰「始」。",
         "english": "Named ‘Begin’。",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɕɨ́ː",
-        "durationInFrames": 78
+        "durationInFrames": 61
       },
       {
         "chinese": "\n有數「始」。",
         "english": "There are several ‘Begin’。",
         "transcription": "ɦʉúː ʂʉǒː ɕɨ́ː",
-        "durationInFrames": 62
-      }
-    ],
-    "durationInFrames": 357
-  },
-  {
-    "id": "5-10",
-    "text": "名之曰「戊」\n為是「始」遍。\n\t有數「戊」。名之曰「戌」。\n\t為是「戊」遍。\n\t\t乘「戊」以「戌」。名之曰「甲」。\n\t\t\t若「甲」小於十者。\n\t\t\t\t吾有四言。曰「戌」曰「戊」",
-    "audioPath": null,
-    "translation": "Name it ‘E’; Do this for ‘Begin’ times.\nThere are a number of ‘E’.\nName it ‘K’.\nDo this for ‘K’ times.\nMultiply ‘E’ by ‘K’.\nName it ‘A’.\nIf ‘A’ is less than ten.\nI have four words.\nSay ‘K’.\nSay ‘E’.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 49
+      },
       {
         "chinese": "名之曰「戊」\n為是「始」遍。",
         "english": "Name it ‘E’; Do this for ‘Begin’ times.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot mǔː ɦỵèː ʥiéː ɕɨ́ː pěn",
-        "durationInFrames": 137
+        "durationInFrames": 110
       },
       {
         "chinese": "\n\t有數「戊」。",
         "english": "There are a number of ‘E’.",
         "transcription": "ɦʉúː ʂʉǒː mǔː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "名之曰「戌」。",
         "english": "Name it ‘K’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot sʷit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t為是「戊」遍。",
         "english": "Do this for ‘K’ times.",
         "transcription": "ɦỵèː ʥiéː mǔː pěn",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t\t乘「戊」以「戌」。",
         "english": "Multiply ‘E’ by ‘K’.",
         "transcription": "ʑɨ̀ŋ mǔː jɨ́ː sʷit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "名之曰「甲」。",
         "english": "Name it ‘A’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kạp",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t\t\t若「甲」小於十者。",
         "english": "If ‘A’ is less than ten.",
         "transcription": "ɲɨɑk kạp siéw ʔɨə̀ː ʥip ʨiáː",
-        "durationInFrames": 107
-      },
+        "durationInFrames": 87
+      }
+    ],
+    "durationInFrames": 649
+  },
+  {
+    "id": "5-11",
+    "text": "\n\t\t\t\t吾有四言。曰「戌」曰「戊」曰『如』曰「甲」。書之。\n\t\t\t若非\n\t\t\t\t吾有三言。曰「戌」曰「戊」曰「甲」。書之也。\n\t\t\t減「戌」以一。昔之「戌」者。今其是矣。\n\t云云。\n\t減「戊」以一。",
+    "audioPath": null,
+    "translation": "I have four words.\nSay ‘K’.\nSay ‘E’.\nSay “is equal to”; say ‘A’.\nWrite it down.\nIf not, I have three words.\nSay ‘K’.\nSay ‘E’.\nSay ‘A’.\nWrite it down.\nSubtract ‘K’ by one.\nThe ‘K’ of old.\nNow it is that way.\nThus and thus.\nSubtract ‘E’ by one.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "\n\t\t\t\t吾有四言。",
         "english": "I have four words.",
         "transcription": "ŋòː ɦʉúː sǐː ŋɨə̀n",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "曰「戌」",
         "english": "Say ‘K’.",
         "transcription": "ɦʉot sʷit",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "曰「戊」",
         "english": "Say ‘E’.",
         "transcription": "ɦʉot mǔː",
-        "durationInFrames": 32
-      }
-    ],
-    "durationInFrames": 747
-  },
-  {
-    "id": "5-11",
-    "text": "曰『如』曰「甲」。書之。\n\t\t\t若非\n\t\t\t\t吾有三言。曰「戌」曰「戊」曰「甲」。書之也。\n\t\t\t減「戌」以一。昔之「戌」者。今其是矣。\n\t云云。\n\t減「戊」以一。昔之「戊」者。今其是矣。\n云云。",
-    "audioPath": null,
-    "translation": "Say “is equal to”; say ‘A’.\nWrite it down.\nIf not, I have three words.\nSay ‘K’.\nSay ‘E’.\nSay ‘A’.\nWrite it down.\nSubtract ‘K’ by one.\nThe ‘K’ of old.\nNow it is that way.\nThus and thus.\nSubtract ‘E’ by one.\nThe ‘E’ of old.\nNow it is that way.\nThus and thus.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 24
+      },
       {
         "chinese": "曰『如』曰「甲」。",
         "english": "Say “is equal to”; say ‘A’.",
         "transcription": "ɦʉot ɲɨə̀ː ɦʉot kạp",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n\t\t\t若非\n\t\t\t\t吾有三言。",
         "english": "If not, I have three words.",
         "transcription": "ɲɨɑk pʉ̀j ŋòː ɦʉúː sɑ̀m ŋɨə̀n",
-        "durationInFrames": 106
+        "durationInFrames": 86
       },
       {
         "chinese": "曰「戌」",
         "english": "Say ‘K’.",
         "transcription": "ɦʉot sʷit",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "曰「戊」",
         "english": "Say ‘E’.",
         "transcription": "ɦʉot mǔː",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "曰「甲」。",
         "english": "Say ‘A’.",
         "transcription": "ɦʉot kạp",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "書之也。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː jiáː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "\n\t\t\t減「戌」以一。",
         "english": "Subtract ‘K’ by one.",
         "transcription": "kẹ́m sʷit jɨ́ː ʔit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "昔之「戌」者。",
         "english": "The ‘K’ of old.",
         "transcription": "siak ʨɨ̀ː sʷit ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is that way.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n\t減「戊」以一。",
         "english": "Subtract ‘E’ by one.",
         "transcription": "kẹ́m mǔː jɨ́ː ʔit",
-        "durationInFrames": 76
-      },
+        "durationInFrames": 62
+      }
+    ],
+    "durationInFrames": 709
+  },
+  {
+    "id": "5-12",
+    "text": "昔之「戊」者。今其是矣。\n云云。",
+    "audioPath": null,
+    "translation": "The ‘E’ of old.\nNow it is that way.\nThus and thus.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "昔之「戊」者。",
         "english": "The ‘E’ of old.",
         "transcription": "siak ʨɨ̀ː mǔː ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 65
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is that way.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 65
       },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 45
+        "durationInFrames": 38
       }
     ],
-    "durationInFrames": 942
+    "durationInFrames": 168
   },
   {
-    "id": "5-12",
-    "text": "乃得`九 九 八十一 八 九 七十二`至`一一如一`諸辭。故曰。機器之代人力之尤甚。書少乃得多。",
+    "id": "5-13",
+    "text": "乃得`九 九 八十一 八 九 七十二`至`一一如一`諸辭。故曰。機器之代人力之尤甚。書少乃得多。事半而功倍者。循環也。非唯九九歌訣。雖千千歌決。亦在彈指間耳。試易首句如是。",
     "audioPath": null,
-    "translation": "Thereafter one obtains the words ‘Nine-Nine, Eighty-One; Eight-Nine, Seventy-Two’ to ‘One-One, is equal to One’ etc.\nTherefore, it is said,\n“Machines surpass human labor greatly.\nA little writing yields much.",
-    "isCodeBlock": true,
+    "translation": "Thereafter one obtains the words ‘Nine-Nine, Eighty-One; Eight-Nine, Seventy-Two’ to ‘One-One, is equal to One’ etc.\nTherefore, it is said,\n“Machines surpass human labor greatly.\nA little writing yields much.\nWork half and reap double the reward.\nThis is looping.\nNot merely the Nine–Nine mnemonic.\nEven a thousandfold chorus of mnemonic verses.\nAre likewise accomplished within the snap of a finger.\nLet us try, then, change the opening line as such:",
+    "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "乃得`九 九 八十一 八 九 七十二`至`一一如一`諸辭。",
         "english": "Thereafter one obtains the words ‘Nine-Nine, Eighty-One; Eight-Nine, Seventy-Two’ to ‘One-One, is equal to One’ etc.",
         "transcription": "nə́j tək ʨǐː ʨɨə̀ː zɨ̀ː",
-        "durationInFrames": 306
+        "durationInFrames": 243
       },
       {
         "chinese": "故曰。",
         "english": "Therefore, it is said,",
         "transcription": "kǒː ɦʉot",
-        "durationInFrames": 46
+        "durationInFrames": 36
       },
       {
         "chinese": "機器之代人力之尤甚。",
         "english": "“Machines surpass human labor greatly.",
         "transcription": "kɨ̀j kʰị̌ː ʨɨ̀ː də̌j ɲìn lɨk ʨɨ̀ː ɦʉùː ʥím",
-        "durationInFrames": 153
+        "durationInFrames": 122
       },
       {
         "chinese": "書少乃得多。",
         "english": "A little writing yields much.",
         "transcription": "ɕɨə̀ː ɕiéw nə́j tək tɑ̀ː",
-        "durationInFrames": 92
-      }
-    ],
-    "durationInFrames": 597
-  },
-  {
-    "id": "5-13",
-    "text": "事半而功倍者。循環也。非唯九九歌訣。雖千千歌決。亦在彈指間耳。試易首句如是。有數九百九十九。名之曰「始」。乃得`九百九十九 九百九十九 九十九萬八千零一`至`一一如一`。計四十九萬餘行也。",
-    "audioPath": null,
-    "translation": "Work half and reap double the reward.\nThis is looping.\nNot merely the Nine–Nine mnemonic.\nEven a thousandfold chorus of mnemonic verses.\nAre likewise accomplished within the snap of a finger.\nLet us try, then, change the opening line as such:\nThere are a number of nine hundred and ninety–nine.\nIt is named ‘Begin’.\nOne thereby obtains ‘Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine Myriad Eight Thousand, and One’ through ‘One-One, is equal to One’.\nThey amount, in sum, to some four hundred and ninety thousand odd lines.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 73
+      },
       {
         "chinese": "事半而功倍者。",
         "english": "Work half and reap double the reward.",
         "transcription": "ꭦɨ̌ː pɑ̌n ɲɨ̀ː kùŋ bój ʨiáː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "循環也。",
         "english": "This is looping.",
         "transcription": "zʷìn ɦʷạ̀n jiáː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "非唯九九歌訣。",
         "english": "Not merely the Nine–Nine mnemonic.",
         "transcription": "pʉ̀j jʷìː kʉúː kʉúː kɑ̀ː kʷet",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "雖千千歌決。",
         "english": "Even a thousandfold chorus of mnemonic verses.",
         "transcription": "sʷìː ʦʰèn ʦʰèn kɑ̀ː kʷet",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "亦在彈指間耳。",
         "english": "Are likewise accomplished within the snap of a finger.",
         "transcription": "jiak ʣə́j dɑ̀n ʨíː kẹ̀n ɲɨ́ː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "試易首句如是。",
         "english": "Let us try, then, change the opening line as such:",
         "transcription": "ɕɨ̌ː jiak ɕʉúː kʉǒː ɲɨə̀ː ʥiéː",
-        "durationInFrames": 106
-      },
+        "durationInFrames": 85
+      }
+    ],
+    "durationInFrames": 936
+  },
+  {
+    "id": "5-14",
+    "text": "有數九百九十九。名之曰「始」。",
+    "audioPath": null,
+    "translation": "There are a number of nine hundred and ninety–nine.\nIt is named ‘Begin’.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "有數九百九十九。",
         "english": "There are a number of nine hundred and ninety–nine.",
         "transcription": "ɦʉúː ʂʉǒː kʉúː pạk kʉúː ʥip kʉúː",
-        "durationInFrames": 121
+        "durationInFrames": 103
       },
       {
         "chinese": "名之曰「始」。",
         "english": "It is named ‘Begin’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot ɕɨ́ː",
-        "durationInFrames": 76
-      },
+        "durationInFrames": 65
+      }
+    ],
+    "durationInFrames": 168
+  },
+  {
+    "id": "5-15",
+    "text": "乃得`九百九十九 九百九十九 九十九萬八千零一`至`一一如一`。計四十九萬餘行也。使人手書之。則非累日不能盡矣。",
+    "audioPath": null,
+    "translation": "One thereby obtains ‘Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine Myriad Eight Thousand, and One’ through ‘One-One, is equal to One’.\nThey amount, in sum, to some four hundred and ninety thousand odd lines.\nTo set men to write them by hand.\nThen, not without many days would they be completed.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "乃得`九百九十九 九百九十九 九十九萬八千零一`至`一一如一`。",
         "english": "One thereby obtains ‘Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine, Nine Hundred and Ninety-Nine Myriad Eight Thousand, and One’ through ‘One-One, is equal to One’.",
         "transcription": "nə́j tək ʨǐː",
-        "durationInFrames": 394
+        "durationInFrames": 318
       },
       {
         "chinese": "計四十九萬餘行也。",
         "english": "They amount, in sum, to some four hundred and ninety thousand odd lines.",
         "transcription": "kěj sǐː ʥip kʉúː mʉǒn jɨə̀ː ɦɑ̀ŋ jiáː",
-        "durationInFrames": 135
-      }
-    ],
-    "durationInFrames": 1302
-  },
-  {
-    "id": "5-14",
-    "text": "使人手書之。則非累日不能盡矣。",
-    "audioPath": null,
-    "translation": "To set men to write them by hand.\nThen, not without many days would they be completed.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 110
+      },
       {
         "chinese": "使人手書之。",
         "english": "To set men to write them by hand.",
         "transcription": "ʂɨ́ː ɲìn ɕʉúː ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 95
+        "durationInFrames": 73
       },
       {
         "chinese": "則非累日不能盡矣。",
         "english": "Then, not without many days would they be completed.",
         "transcription": "ʦək pʉ̀j lyéː ɲit pʉùː nə̀ŋ ʣín ɦɨ́ː",
-        "durationInFrames": 142
+        "durationInFrames": 111
       }
     ],
-    "durationInFrames": 237
+    "durationInFrames": 612
   },
   {
-    "id": "5-15",
-    "text": "或問曰。世事茫茫難自料。今不能預卜其遍數之多少。乃於循環之中。",
+    "id": "5-16",
+    "text": "或問曰。世事茫茫難自料。今不能預卜其遍數之多少。乃於循環之中。有非常之境。遽然欲止者。當若何耶。曰。當用`乃止`。又問曰。今不欲盡止。唯欲直入次遍者。當若何耶。曰。當用`乃止是遍`也。",
     "audioPath": null,
-    "translation": "Someone asks,\nThe affairs of the world are vast and hard to reckon.\nAt present, one cannot foretell how many times they will run.\nYet, within Loops,",
+    "translation": "Someone asks,\nThe affairs of the world are vast and hard to reckon.\nAt present, one cannot foretell how many times they will run.\nYet, within Loops,\nthere may arise an extraordinary condition.\nWhich abruptly would fain stop.\nWhat then shall be done?\nIt is answered,\nOne should employ ‘Stop’.\nAgain, one asks,\nNow, one does not wish to halt completely.\nOne only wishes to proceed straight into the next pass.\nWhat then shall be done?\nIt is answered,\nOne should employ ‘Stop for this pass’ (continue).",
     "isCodeBlock": false,
     "sentences": [
       {
         "chinese": "或問曰。",
         "english": "Someone asks,",
         "transcription": "ɦʷək mʉ̌n ɦʉot",
-        "durationInFrames": 62
+        "durationInFrames": 49
       },
       {
         "chinese": "世事茫茫難自料。",
         "english": "The affairs of the world are vast and hard to reckon.",
         "transcription": "ɕiěj ꭦɨ̌ː mɑ̀ŋ mɑ̀ŋ nɑ̀n ʣǐː lěw",
-        "durationInFrames": 123
+        "durationInFrames": 97
       },
       {
         "chinese": "今不能預卜其遍數之多少。",
         "english": "At present, one cannot foretell how many times they will run.",
         "transcription": "kị̀m pʉùː nə̀ŋ jɨə̌ː puk gɨ̀ː pěn ʂʉǒː ʨɨ̀ː tɑ̀ː ɕiéw",
-        "durationInFrames": 185
+        "durationInFrames": 146
       },
       {
         "chinese": "乃於循環之中。",
         "english": "Yet, within Loops,",
         "transcription": "nə́j ʔɨə̀ː zʷìn ɦʷạ̀n ʨɨ̀ː ʈʉùŋ",
-        "durationInFrames": 107
-      }
-    ],
-    "durationInFrames": 477
-  },
-  {
-    "id": "5-16",
-    "text": "有非常之境。遽然欲止者。當若何耶。曰。當用`乃止`。又問曰。今不欲盡止。唯欲直入次遍者。當若何耶。曰。當用`乃止是遍`也。例曰。九章算術有更相減損術。所以求最大等數也。等數者。",
-    "audioPath": null,
-    "translation": "there may arise an extraordinary condition.\nWhich abruptly would fain stop.\nWhat then shall be done?\nIt is answered,\nOne should employ ‘Stop’.\nAgain, one asks,\nNow, one does not wish to halt completely.\nOne only wishes to proceed straight into the next pass.\nWhat then shall be done?\nIt is answered,\nOne should employ ‘Stop for this pass’ (continue).\nFor example,\nIn the _Nine Chapters on the Mathematical Art_, there is the Art of Mutual Alternating Subtraction.\nIt is used to seek the greatest common measure.\nAs for common measures —",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 85
+      },
       {
         "chinese": "有非常之境。",
         "english": "there may arise an extraordinary condition.",
         "transcription": "ɦʉúː pʉ̀j ʥɨɑ̀ŋ ʨɨ̀ː kịáŋ",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "遽然欲止者。",
         "english": "Which abruptly would fain stop.",
         "transcription": "gɨə̌ː ɲièn jʉok ʨɨ́ː ʨiáː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "當若何耶。",
         "english": "What then shall be done?",
         "transcription": "tɑ̀ŋ ɲɨɑk ɦɑ̀ː jiàː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "曰。",
         "english": "It is answered,",
         "transcription": "ɦʉot",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "當用`乃止`。",
         "english": "One should employ ‘Stop’.",
         "transcription": "tɑ̀ŋ jʉǒŋ",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "又問曰。",
         "english": "Again, one asks,",
         "transcription": "ɦʉǔː mʉ̌n ɦʉot",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "今不欲盡止。",
         "english": "Now, one does not wish to halt completely.",
         "transcription": "kị̀m pʉùː jʉok ʣín ʨɨ́ː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "唯欲直入次遍者。",
         "english": "One only wishes to proceed straight into the next pass.",
         "transcription": "jʷìː jʉok ɖɨk ɲip ʦʰǐː pěn ʨiáː",
-        "durationInFrames": 121
+        "durationInFrames": 97
       },
       {
         "chinese": "當若何耶。",
         "english": "What then shall be done?",
         "transcription": "tɑ̀ŋ ɲɨɑk ɦɑ̀ː jiàː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "曰。",
         "english": "It is answered,",
         "transcription": "ɦʉot",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "當用`乃止是遍`也。",
         "english": "One should employ ‘Stop for this pass’ (continue).",
         "transcription": "tɑ̀ŋ jʉǒŋ jiáː",
-        "durationInFrames": 121
-      },
+        "durationInFrames": 95
+      }
+    ],
+    "durationInFrames": 1068
+  },
+  {
+    "id": "5-17",
+    "text": "例曰。九章算術有更相減損術。所以求最大等數也。等數者。猶因數也。術曰。可半者半之。不可半者。副置分母。子之數。以少減多。更相減損。求其等也。以等數約之。今取不可半者之例。編程如是。",
+    "audioPath": null,
+    "translation": "For example,\nIn the _Nine Chapters on the Mathematical Art_, there is the Art of Mutual Alternating Subtraction.\nIt is used to seek the greatest common measure.\nAs for common measures —\nthey are akin to divisors.\nThe Method declares,\nIf it may be halved, then halve it.\nIf it cannot be halved,\nset aside, as an adjunct, the denominator.\nThe lesser number.\nUse the lesser to reduce the greater.\nSubtract each other alternately.\nSeek when they become equal.\nBy their common number, reduce them.\nNow take the example of those which cannot be halved.\nSuch is the way of programming.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "例曰。",
         "english": "For example,",
         "transcription": "liěj ɦʉot",
-        "durationInFrames": 45
+        "durationInFrames": 36
       },
       {
         "chinese": "九章算術有更相減損術。",
         "english": "In the _Nine Chapters on the Mathematical Art_, there is the Art of Mutual Alternating Subtraction.",
         "transcription": "kʉúː ʨɨɑ̀ŋ sʷɑ̌n ʑʷit ɦʉúː kạ̀ŋ sɨɑ̀ŋ kẹ́m són ʑʷit",
-        "durationInFrames": 167
+        "durationInFrames": 133
       },
       {
         "chinese": "所以求最大等數也。",
         "english": "It is used to seek the greatest common measure.",
         "transcription": "ʂɨə́ː jɨ́ː gʉùː ʦʷɑ̌j dɑ̌j tə́ŋ ʂʉǒː jiáː",
-        "durationInFrames": 136
+        "durationInFrames": 109
       },
       {
         "chinese": "等數者。",
         "english": "As for common measures —",
         "transcription": "tə́ŋ ʂʉǒː ʨiáː",
-        "durationInFrames": 60
-      }
-    ],
-    "durationInFrames": 1272
-  },
-  {
-    "id": "5-17",
-    "text": "猶因數也。術曰。可半者半之。不可半者。副置分母。子之數。以少減多。更相減損。求其等也。以等數約之。今取不可半者之例。編程如是。吾有二數。曰九十一。曰四十九。名之曰「甲」",
-    "audioPath": null,
-    "translation": "they are akin to divisors.\nThe Method declares,\nIf it may be halved, then halve it.\nIf it cannot be halved,\nset aside, as an adjunct, the denominator.\nThe lesser number.\nUse the lesser to reduce the greater.\nSubtract each other alternately.\nSeek when they become equal.\nBy their common number, reduce them.\nNow take the example of those which cannot be halved.\nSuch is the way of programming.\nI possess two numbers.\nOne is ninety-one.\nOne is forty-nine.\nName it ‘A’.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 49
+      },
       {
         "chinese": "猶因數也。",
         "english": "they are akin to divisors.",
         "transcription": "jʉùː ʔìn ʂʉǒː jiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "術曰。",
         "english": "The Method declares,",
         "transcription": "ʑʷit ɦʉot",
-        "durationInFrames": 45
+        "durationInFrames": 36
       },
       {
         "chinese": "可半者半之。",
         "english": "If it may be halved, then halve it.",
         "transcription": "kʰɑ́ː pɑ̌n ʨiáː pɑ̌n ʨɨ̀ː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "不可半者。",
         "english": "If it cannot be halved,",
         "transcription": "pʉùː kʰɑ́ː pɑ̌n ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "副置分母。",
         "english": "set aside, as an adjunct, the denominator.",
         "transcription": "pʰʉǔː ʈɨ̌ː pʉ̀n múː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "子之數。",
         "english": "The lesser number.",
         "transcription": "ʦɨ́ː ʨɨ̀ː ʂʉǒː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "以少減多。",
         "english": "Use the lesser to reduce the greater.",
         "transcription": "jɨ́ː ɕiéw kẹ́m tɑ̀ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "更相減損。",
         "english": "Subtract each other alternately.",
         "transcription": "kạ̀ŋ sɨɑ̀ŋ kẹ́m són",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "求其等也。",
         "english": "Seek when they become equal.",
         "transcription": "gʉùː gɨ̀ː tə́ŋ jiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "以等數約之。",
         "english": "By their common number, reduce them.",
         "transcription": "jɨ́ː tə́ŋ ʂʉǒː ʔɨɑk ʨɨ̀ː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "今取不可半者之例。",
         "english": "Now take the example of those which cannot be halved.",
         "transcription": "kị̀m ʦʰʉóː pʉùː kʰɑ́ː pɑ̌n ʨiáː ʨɨ̀ː liěj",
-        "durationInFrames": 136
+        "durationInFrames": 109
       },
       {
         "chinese": "編程如是。",
         "english": "Such is the way of programming.",
         "transcription": "pèn ɖiàŋ ɲɨə̀ː ʥiéː",
-        "durationInFrames": 76
-      },
+        "durationInFrames": 59
+      }
+    ],
+    "durationInFrames": 1092
+  },
+  {
+    "id": "5-18",
+    "text": "吾有二數。曰九十一。曰四十九。名之曰「甲」曰「乙」。\n恆為是。\n\t若「甲」等於「乙」者。\n\t\t乃止。\n\t或若「甲」大於「乙」者。\n\t\t減「甲」以「乙」。昔之「甲」者。今其是矣。\n\t若非。",
+    "audioPath": null,
+    "translation": "I possess two numbers.\nOne is ninety-one.\nOne is forty-nine.\nName it ‘A’.\nName it ‘B’.\nConstantly do this.\nIf ‘A’ equals ‘B’,\nthen, cease.\nOr, if ‘A’ is greater than ‘B’,\nsubtract ‘B’ from ‘A’.\nThe former ‘A’.\nNow it is thus.\nIf not,",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "吾有二數。",
         "english": "I possess two numbers.",
         "transcription": "ŋòː ɦʉúː ɲǐː ʂʉǒː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "曰九十一。",
         "english": "One is ninety-one.",
         "transcription": "ɦʉot kʉúː ʥip ʔit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "曰四十九。",
         "english": "One is forty-nine.",
         "transcription": "ɦʉot sǐː ʥip kʉúː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "名之曰「甲」",
         "english": "Name it ‘A’.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kạp",
-        "durationInFrames": 58
-      }
-    ],
-    "durationInFrames": 1242
-  },
-  {
-    "id": "5-18",
-    "text": "曰「乙」。\n恆為是。\n\t若「甲」等於「乙」者。\n\t\t乃止。\n\t或若「甲」大於「乙」者。\n\t\t減「甲」以「乙」。昔之「甲」者。今其是矣。\n\t若非。\n\t\t減「乙」以「甲」。昔之「乙」者。今其是矣。\n\t也。",
-    "audioPath": null,
-    "translation": "Name it ‘B’.\nConstantly do this.\nIf ‘A’ equals ‘B’,\nthen, cease.\nOr, if ‘A’ is greater than ‘B’,\nsubtract ‘B’ from ‘A’.\nThe former ‘A’.\nNow it is thus.\nIf not,\nsubtract ‘A’ from ‘B’.\nThe former ‘B’.\nNow it is thus.\nThus.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 49
+      },
       {
         "chinese": "曰「乙」。",
         "english": "Name it ‘B’.",
         "transcription": "ɦʉot ʔịt",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n恆為是。",
         "english": "Constantly do this.",
         "transcription": "ɦə̀ŋ ɦỵèː ʥiéː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "\n\t若「甲」等於「乙」者。",
         "english": "If ‘A’ equals ‘B’,",
         "transcription": "ɲɨɑk kạp tə́ŋ ʔɨə̀ː ʔịt ʨiáː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "\n\t\t乃止。",
         "english": "then, cease.",
         "transcription": "nə́j ʨɨ́ː",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n\t或若「甲」大於「乙」者。",
         "english": "Or, if ‘A’ is greater than ‘B’,",
         "transcription": "ɦʷək ɲɨɑk kạp dɑ̌j ʔɨə̀ː ʔịt ʨiáː",
-        "durationInFrames": 122
+        "durationInFrames": 98
       },
       {
         "chinese": "\n\t\t減「甲」以「乙」。",
         "english": "subtract ‘B’ from ‘A’.",
         "transcription": "kẹ́m kạp jɨ́ː ʔịt",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "昔之「甲」者。",
         "english": "The former ‘A’.",
         "transcription": "siak ʨɨ̀ː kạp ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t若非。",
         "english": "If not,",
         "transcription": "ɲɨɑk pʉ̀j",
-        "durationInFrames": 46
-      },
+        "durationInFrames": 35
+      }
+    ],
+    "durationInFrames": 756
+  },
+  {
+    "id": "5-19",
+    "text": "\n\t\t減「乙」以「甲」。昔之「乙」者。今其是矣。\n\t也。\n云云。\n夫「甲」書之。",
+    "audioPath": null,
+    "translation": "subtract ‘A’ from ‘B’.\nThe former ‘B’.\nNow it is thus.\nThus.\nThus and thus.\nAs for ‘A,’ write it down.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "\n\t\t減「乙」以「甲」。",
         "english": "subtract ‘A’ from ‘B’.",
         "transcription": "kẹ́m ʔịt jɨ́ː kạp",
-        "durationInFrames": 76
+        "durationInFrames": 62
       },
       {
         "chinese": "昔之「乙」者。",
         "english": "The former ‘B’.",
         "transcription": "siak ʨɨ̀ː ʔịt ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 62
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 62
       },
       {
         "chinese": "\n\t也。",
         "english": "Thus.",
         "transcription": "jiáː",
-        "durationInFrames": 29
-      }
-    ],
-    "durationInFrames": 912
-  },
-  {
-    "id": "5-19",
-    "text": "\n云云。\n夫「甲」書之。夫更相減損之時。茫茫然不知其何時為等焉。故聊曰`恆為是`也。既等。",
-    "audioPath": null,
-    "translation": "Thus and thus.\nAs for ‘A,’ write it down.\nRegarding the time of mutual alternation subtraction —\nOne stands bewildered, not knowing when they shall be equal.\nTherefore, briefly say, 'Constantly do this'.\nOnce equal.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 25
+      },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n夫「甲」書之。",
         "english": "As for ‘A,’ write it down.",
         "transcription": "bʉòː kạp ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 77
-      },
+        "durationInFrames": 64
+      }
+    ],
+    "durationInFrames": 312
+  },
+  {
+    "id": "5-20",
+    "text": "夫更相減損之時。茫茫然不知其何時為等焉。故聊曰`恆為是`也。既等。乃毋須更為也。是`乃止`之用也。",
+    "audioPath": null,
+    "translation": "Regarding the time of mutual alternation subtraction —\nOne stands bewildered, not knowing when they shall be equal.\nTherefore, briefly say, 'Constantly do this'.\nOnce equal.\nThen there is no need to proceed further.\nThis is the use of 'Stop'.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "夫更相減損之時。",
         "english": "Regarding the time of mutual alternation subtraction —",
         "transcription": "bʉòː kạ̀ŋ sɨɑ̀ŋ kẹ́m són ʨɨ̀ː ʥɨ̀ː",
-        "durationInFrames": 122
+        "durationInFrames": 98
       },
       {
         "chinese": "茫茫然不知其何時為等焉。",
         "english": "One stands bewildered, not knowing when they shall be equal.",
         "transcription": "mɑ̀ŋ mɑ̀ŋ ɲièn pʉùː ʈièː gɨ̀ː ɦɑ̀ː ʥɨ̀ː ɦỵèː tə́ŋ ɦịèn",
-        "durationInFrames": 184
+        "durationInFrames": 147
       },
       {
         "chinese": "故聊曰`恆為是`也。",
         "english": "Therefore, briefly say, 'Constantly do this'.",
         "transcription": "kǒː lèw ɦʉot jiáː",
-        "durationInFrames": 122
+        "durationInFrames": 98
       },
       {
         "chinese": "既等。",
         "english": "Once equal.",
         "transcription": "kɨ̌j tə́ŋ",
-        "durationInFrames": 46
-      }
-    ],
-    "durationInFrames": 597
-  },
-  {
-    "id": "5-20",
-    "text": "乃毋須更為也。是`乃止`之用也。例曰。陰數者。六八也。陽數者。",
-    "audioPath": null,
-    "translation": "Then there is no need to proceed further.\nThis is the use of 'Stop'.\nFor example,\nAs for Yin (even) numbers —\nThey are six and eight.\nAs for Yang (odd) numbers —",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 37
+      },
       {
         "chinese": "乃毋須更為也。",
         "english": "Then there is no need to proceed further.",
         "transcription": "nə́j mʉòː sʉòː kạ̌ŋ ɦỵèː jiáː",
-        "durationInFrames": 108
+        "durationInFrames": 86
       },
       {
         "chinese": "是`乃止`之用也。",
         "english": "This is the use of 'Stop'.",
         "transcription": "ʥiéː ʨɨ̀ː jʉǒŋ jiáː",
-        "durationInFrames": 108
-      },
+        "durationInFrames": 86
+      }
+    ],
+    "durationInFrames": 552
+  },
+  {
+    "id": "5-21",
+    "text": "例曰。陰數者。六八也。陽數者。七九也。今欲求百以內陰數之合。作何書。曰。",
+    "audioPath": null,
+    "translation": "For example,\nAs for Yin (even) numbers —\nThey are six and eight.\nAs for Yang (odd) numbers —\nThey are seven and nine.\nNow one wishes to seek the sum of the yin numbers within a hundred.\nWhat program shall be written?\nIt is said,",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "例曰。",
         "english": "For example,",
         "transcription": "liěj ɦʉot",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "陰數者。",
         "english": "As for Yin (even) numbers —",
         "transcription": "ʔị̀m ʂʉǒː ʨiáː",
-        "durationInFrames": 62
+        "durationInFrames": 49
       },
       {
         "chinese": "六八也。",
         "english": "They are six and eight.",
         "transcription": "lʉuk pẹt jiáː",
-        "durationInFrames": 62
+        "durationInFrames": 49
       },
       {
         "chinese": "陽數者。",
         "english": "As for Yang (odd) numbers —",
         "transcription": "jɨɑ̀ŋ ʂʉǒː ʨiáː",
-        "durationInFrames": 61
-      }
-    ],
-    "durationInFrames": 447
-  },
-  {
-    "id": "5-21",
-    "text": "七九也。今欲求百以內陰數之合。作何書。曰。吾有二數。名之曰「甲」曰「乙」。\n為是百遍。",
-    "audioPath": null,
-    "translation": "They are seven and nine.\nNow one wishes to seek the sum of the yin numbers within a hundred.\nWhat program shall be written?\nIt is said,\nI have two numbers.\nName one it 'A'.\nName one 'B'.\nDo this one hundred times.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 49
+      },
       {
         "chinese": "七九也。",
         "english": "They are seven and nine.",
         "transcription": "ʦʰit kʉúː jiáː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "今欲求百以內陰數之合。",
         "english": "Now one wishes to seek the sum of the yin numbers within a hundred.",
         "transcription": "kị̀m jʉok gʉùː pạk jɨ́ː nǒj ʔị̀m ʂʉǒː ʨɨ̀ː ɦəp",
-        "durationInFrames": 168
+        "durationInFrames": 136
       },
       {
         "chinese": "作何書。",
         "english": "What program shall be written?",
         "transcription": "ʦɑk ɦɑ̀ː ɕɨə̀ː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "曰。",
         "english": "It is said,",
         "transcription": "ɦʉot",
-        "durationInFrames": 31
-      },
+        "durationInFrames": 26
+      }
+    ],
+    "durationInFrames": 444
+  },
+  {
+    "id": "5-22",
+    "text": "吾有二數。名之曰「甲」曰「乙」。\n為是百遍。\n\t加「甲」以一。昔之「甲」者。今其是矣。\n\t除「甲」以二。所餘幾何。若其等於一者。\n\t\t乃止是遍也。",
+    "audioPath": null,
+    "translation": "I have two numbers.\nName one it 'A'.\nName one 'B'.\nDo this one hundred times.\nAdd one to 'A'.\nThe former 'A'.\nNow it is thus.\nDivide 'A' by two.\nWhat is the remainder?\nIf it equals one.\nStop for this pass.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "吾有二數。",
         "english": "I have two numbers.",
         "transcription": "ŋòː ɦʉúː ɲǐː ʂʉǒː",
-        "durationInFrames": 77
+        "durationInFrames": 61
       },
       {
         "chinese": "名之曰「甲」",
         "english": "Name one it 'A'.",
         "transcription": "miàŋ ʨɨ̀ː ɦʉot kạp",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "曰「乙」。",
         "english": "Name one 'B'.",
         "transcription": "ɦʉot ʔịt",
-        "durationInFrames": 46
+        "durationInFrames": 37
       },
       {
         "chinese": "\n為是百遍。",
         "english": "Do this one hundred times.",
         "transcription": "ɦỵèː ʥiéː pạk pěn",
-        "durationInFrames": 77
-      }
-    ],
-    "durationInFrames": 582
-  },
-  {
-    "id": "5-22",
-    "text": "\n\t加「甲」以一。昔之「甲」者。今其是矣。\n\t除「甲」以二。所餘幾何。若其等於一者。\n\t\t乃止是遍也。\n\t加「甲」於「乙」。昔之「乙」者。今其是矣。\n云云。",
-    "audioPath": null,
-    "translation": "Add one to 'A'.\nThe former 'A'.\nNow it is thus.\nDivide 'A' by two.\nWhat is the remainder?\nIf it equals one.\nStop for this pass.\nAdd 'A' to 'B'.\nThe former 'B'.\nNow it is thus.\nThus and thus.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 61
+      },
       {
         "chinese": "\n\t加「甲」以一。",
         "english": "Add one to 'A'.",
         "transcription": "kạ̀ː kạp jɨ́ː ʔit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "昔之「甲」者。",
         "english": "The former 'A'.",
         "transcription": "siak ʨɨ̀ː kạp ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "\n\t除「甲」以二。",
         "english": "Divide 'A' by two.",
         "transcription": "ɖɨə̀ː kạp jɨ́ː ɲǐː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "所餘幾何。",
         "english": "What is the remainder?",
         "transcription": "ʂɨə́ː jɨə̀ː kɨ́j ɦɑ̀ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "若其等於一者。",
         "english": "If it equals one.",
         "transcription": "ɲɨɑk gɨ̀ː tə́ŋ ʔɨə̀ː ʔit ʨiáː",
-        "durationInFrames": 107
+        "durationInFrames": 86
       },
       {
         "chinese": "\n\t\t乃止是遍也。",
         "english": "Stop for this pass.",
         "transcription": "nə́j ʨɨ́ː ʥiéː pěn jiáː",
-        "durationInFrames": 91
-      },
+        "durationInFrames": 73
+      }
+    ],
+    "durationInFrames": 672
+  },
+  {
+    "id": "5-23",
+    "text": "\n\t加「甲」於「乙」。昔之「乙」者。今其是矣。\n云云。\n夫「乙」。書之。",
+    "audioPath": null,
+    "translation": "Add 'A' to 'B'.\nThe former 'B'.\nNow it is thus.\nThus and thus.\nAs for 'B,'\nWrite it down.",
+    "isCodeBlock": true,
+    "sentences": [
       {
         "chinese": "\n\t加「甲」於「乙」。",
         "english": "Add 'A' to 'B'.",
         "transcription": "kạ̀ː kạp ʔɨə̀ː ʔịt",
-        "durationInFrames": 76
+        "durationInFrames": 63
       },
       {
         "chinese": "昔之「乙」者。",
         "english": "The former 'B'.",
         "transcription": "siak ʨɨ̀ː ʔịt ʨiáː",
-        "durationInFrames": 76
+        "durationInFrames": 63
       },
       {
         "chinese": "今其是矣。",
         "english": "Now it is thus.",
         "transcription": "kị̀m gɨ̀ː ʥiéː ɦɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 63
       },
       {
         "chinese": "\n云云。",
         "english": "Thus and thus.",
         "transcription": "ɦʉ̀n ɦʉ̀n",
-        "durationInFrames": 46
-      }
-    ],
-    "durationInFrames": 852
-  },
-  {
-    "id": "5-23",
-    "text": "\n夫「乙」。書之。或問曰。不若易`等於一`為`等於零`。並移`加「甲」`之句於決策中。無用`乃止是遍`矣。",
-    "audioPath": null,
-    "translation": "As for 'B,'\nWrite it down.\nSome ask,\n“Would it not be better to change ‘equals one’ to ‘equals zero’?\nAlso, move the clause ‘add ‘A’’ into the decision.\nThus, the clause ‘Stop for this pass’ is rendered unnecessary.",
-    "isCodeBlock": true,
-    "sentences": [
+        "durationInFrames": 38
+      },
       {
         "chinese": "\n夫「乙」。",
         "english": "As for 'B,'",
         "transcription": "bʉòː ʔịt",
-        "durationInFrames": 46
+        "durationInFrames": 38
       },
       {
         "chinese": "書之。",
         "english": "Write it down.",
         "transcription": "ɕɨə̀ː ʨɨ̀ː",
-        "durationInFrames": 46
-      },
+        "durationInFrames": 36
+      }
+    ],
+    "durationInFrames": 301
+  },
+  {
+    "id": "5-24",
+    "text": "或問曰。不若易`等於一`為`等於零`。並移`加「甲」`之句於決策中。無用`乃止是遍`矣。於吾子之法何異歟。曰然。於機器者是無異也。唯文風之別矣。或曰「無暇掩聰」。或曰「不及掩耳」。",
+    "audioPath": null,
+    "translation": "Some ask,\n“Would it not be better to change ‘equals one’ to ‘equals zero’?\nAlso, move the clause ‘add ‘A’’ into the decision.\nThus, the clause ‘Stop for this pass’ is rendered unnecessary.\nHow, then, does it differ from thy method?”\nIt is answered, “Yes.\nTo the machine, it is no different.\nOnly the literary style differs.”\nSome say, “No leisure to conceal one’s wit.”\nSome say, “It is too late to cover one’s ears.”",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "或問曰。",
         "english": "Some ask,",
         "transcription": "ɦʷək mʉ̌n ɦʉot",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "不若易`等於一`為`等於零`。",
         "english": "“Would it not be better to change ‘equals one’ to ‘equals zero’?",
         "transcription": "pʉùː ɲɨɑk jiak ɦỵèː",
-        "durationInFrames": 168
+        "durationInFrames": 134
       },
       {
         "chinese": "並移`加「甲」`之句於決策中。",
         "english": "Also, move the clause ‘add ‘A’’ into the decision.",
         "transcription": "béŋ jièː ʨɨ̀ː kʉǒː ʔɨə̀ː kʷet ꭧʰẹk ʈʉùŋ",
-        "durationInFrames": 168
+        "durationInFrames": 134
       },
       {
         "chinese": "無用`乃止是遍`矣。",
         "english": "Thus, the clause ‘Stop for this pass’ is rendered unnecessary.",
         "transcription": "mʉòː jʉǒŋ ɦɨ́ː",
-        "durationInFrames": 123
-      }
-    ],
-    "durationInFrames": 612
-  },
-  {
-    "id": "5-24",
-    "text": "於吾子之法何異歟。曰然。於機器者是無異也。唯文風之別矣。或曰「無暇掩聰」。或曰「不及掩耳」。皆因作者之喜惡也。愚以為。凡循環之體冗長者。預以`乃止是遍`排其特例。",
-    "audioPath": null,
-    "translation": "How, then, does it differ from thy method?”\nIt is answered, “Yes.\nTo the machine, it is no different.\nOnly the literary style differs.”\nSome say, “No leisure to conceal one’s wit.”\nSome say, “It is too late to cover one’s ears.”\nAll spring from the author's preferences.\nI, in my humble judgment,\nWhenever the body of a loop is long-winded,\nPreemptively, use “Stop for this pass” to account for its special cases.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 97
+      },
       {
         "chinese": "於吾子之法何異歟。",
         "english": "How, then, does it differ from thy method?”",
         "transcription": "ʔɨə̀ː ŋòː ʦɨ́ː ʨɨ̀ː pʉop ɦɑ̀ː jɨ̌ː jɨə̀ː",
-        "durationInFrames": 136
+        "durationInFrames": 110
       },
       {
         "chinese": "曰然。",
         "english": "It is answered, “Yes.",
         "transcription": "ɦʉot ɲièn",
-        "durationInFrames": 45
+        "durationInFrames": 37
       },
       {
         "chinese": "於機器者是無異也。",
         "english": "To the machine, it is no different.",
         "transcription": "ʔɨə̀ː kɨ̀j kʰị̌ː ʨiáː ʥiéː mʉòː jɨ̌ː jiáː",
-        "durationInFrames": 136
+        "durationInFrames": 110
       },
       {
         "chinese": "唯文風之別矣。",
         "english": "Only the literary style differs.”",
         "transcription": "jʷìː mʉ̀n pʉùŋ ʨɨ̀ː pịet ɦɨ́ː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "或曰「無暇掩聰」。",
         "english": "Some say, “No leisure to conceal one’s wit.”",
         "transcription": "ɦʷək ɦʉot mʉòː ɦạ̌ː ʔịém ʦʰùŋ",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "或曰「不及掩耳」。",
         "english": "Some say, “It is too late to cover one’s ears.”",
         "transcription": "ɦʷək ɦʉot pʉùː gịp ʔịém ɲɨ́ː",
-        "durationInFrames": 106
-      },
+        "durationInFrames": 84
+      }
+    ],
+    "durationInFrames": 925
+  },
+  {
+    "id": "5-25",
+    "text": "皆因作者之喜惡也。愚以為。凡循環之體冗長者。預以`乃止是遍`排其特例。可免於決策重層累然之苦。人或有不以為然者。曰。去止之方既多。蟄伏深隱。乃至難以理喻。是取亂之道也。是亦理也。",
+    "audioPath": null,
+    "translation": "All spring from the author's preferences.\nI, in my humble judgment,\nWhenever the body of a loop is long-winded,\nPreemptively, use “Stop for this pass” to account for its special cases.\nThus one may be spared the burden of nested, cumbersome decision-making.\nSome may dissent.\nThey say,\n“There are many ways to remove the stop.\nThey lie in deep concealment.\nSo much so as to be difficult to explain.\nThis is a way of inviting disorder.”\nThat, likewise, has its reason.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "皆因作者之喜惡也。",
         "english": "All spring from the author's preferences.",
         "transcription": "kẹ̀j ʔìn ʦɑk ʨiáː ʨɨ̀ː hɨ́ː ʔǒː jiáː",
-        "durationInFrames": 136
+        "durationInFrames": 109
       },
       {
         "chinese": "愚以為。",
         "english": "I, in my humble judgment,",
         "transcription": "ŋʉòː jɨ́ː ɦỵèː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "凡循環之體冗長者。",
         "english": "Whenever the body of a loop is long-winded,",
         "transcription": "bʉòm zʷìn ɦʷạ̀n ʨɨ̀ː tʰéj ɲʉóŋ ɖɨɑ̀ŋ ʨiáː",
-        "durationInFrames": 136
+        "durationInFrames": 109
       },
       {
         "chinese": "預以`乃止是遍`排其特例。",
         "english": "Preemptively, use “Stop for this pass” to account for its special cases.",
         "transcription": "jɨə̌ː jɨ́ː bẹ̀j gɨ̀ː dək liěj",
-        "durationInFrames": 169
-      }
-    ],
-    "durationInFrames": 1137
-  },
-  {
-    "id": "5-25",
-    "text": "可免於決策重層累然之苦。人或有不以為然者。曰。去止之方既多。蟄伏深隱。乃至難以理喻。是取亂之道也。是亦理也。編程之兩難者多如是。君子可自取所好焉。循環之術。至是略備矣。",
-    "audioPath": null,
-    "translation": "Thus one may be spared the burden of nested, cumbersome decision-making.\nSome may dissent.\nThey say,\n“There are many ways to remove the stop.\nThey lie in deep concealment.\nSo much so as to be difficult to explain.\nThis is a way of inviting disorder.”\nThat, likewise, has its reason.\nMany of the quandaries in programming are of this sort.\nThe gentleman may adopt his preference.\nThe art of loops.\nThus, it is now briefly complete.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 134
+      },
       {
         "chinese": "可免於決策重層累然之苦。",
         "english": "Thus one may be spared the burden of nested, cumbersome decision-making.",
         "transcription": "kʰɑ́ː mịén ʔɨə̀ː kʷet ꭧʰẹk ɖʉòŋ ʣə̀ŋ lyéː ɲièn ʨɨ̀ː kʰóː",
-        "durationInFrames": 182
+        "durationInFrames": 146
       },
       {
         "chinese": "人或有不以為然者。",
         "english": "Some may dissent.",
         "transcription": "ɲìn ɦʷək ɦʉúː pʉùː jɨ́ː ɦỵèː ɲièn ʨiáː",
-        "durationInFrames": 136
+        "durationInFrames": 109
       },
       {
         "chinese": "曰。",
         "english": "They say,",
         "transcription": "ɦʉot",
-        "durationInFrames": 30
+        "durationInFrames": 24
       },
       {
         "chinese": "去止之方既多。",
         "english": "“There are many ways to remove the stop.",
         "transcription": "kʰɨə̌ː ʨɨ́ː ʨɨ̀ː pʉɑ̀ŋ kɨ̌j tɑ̀ː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "蟄伏深隱。",
         "english": "They lie in deep concealment.",
         "transcription": "ɖip bʉuk ɕìm ʔɨ́n",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "乃至難以理喻。",
         "english": "So much so as to be difficult to explain.",
         "transcription": "nə́j ʨǐː nɑ̀n jɨ́ː lɨ́ː jʉǒː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "是取亂之道也。",
         "english": "This is a way of inviting disorder.”",
         "transcription": "ʥiéː ʦʰʉóː lʷɑ̌n ʨɨ̀ː dɑ́w jiáː",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "是亦理也。",
         "english": "That, likewise, has its reason.",
         "transcription": "ʥiéː jiak lɨ́ː jiáː",
-        "durationInFrames": 76
-      },
+        "durationInFrames": 61
+      }
+    ],
+    "durationInFrames": 1057
+  },
+  {
+    "id": "5-26",
+    "text": "編程之兩難者多如是。君子可自取所好焉。",
+    "audioPath": null,
+    "translation": "Many of the quandaries in programming are of this sort.\nThe gentleman may adopt his preference.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "編程之兩難者多如是。",
         "english": "Many of the quandaries in programming are of this sort.",
         "transcription": "pèn ɖiàŋ ʨɨ̀ː lɨɑ́ŋ nɑ̀n ʨiáː tɑ̀ː ɲɨə̀ː ʥiéː",
-        "durationInFrames": 151
+        "durationInFrames": 127
       },
       {
         "chinese": "君子可自取所好焉。",
         "english": "The gentleman may adopt his preference.",
         "transcription": "kʉ̀n ʦɨ́ː kʰɑ́ː ʣǐː ʦʰʉóː ʂɨə́ː hɑ̌w ɦịèn",
-        "durationInFrames": 136
-      },
+        "durationInFrames": 114
+      }
+    ],
+    "durationInFrames": 241
+  },
+  {
+    "id": "5-27",
+    "text": "循環之術。至是略備矣。總其五章所知。亦頗有可為者。吾聞之。夫欲長於編程者。唯學而立用。用而不止。其勝束其手而觀其書百倍。善哉此言。學而不思則罔。吾聞諸仲尼。請試之。以為熟習也。",
+    "audioPath": null,
+    "translation": "The art of loops.\nThus, it is now briefly complete.\nTo sum up what the five chapters have taught.\nThere remains much that may yet be undertaken.\nI have heard that,\nAs for those who would excel in programming —\nThey must, above all, learn, and set their learning to use.\nApply it, and cease not.\nIt exceeds the sloth of sitting hand-bound, absorbed only in books by a hundredfold.\nGood indeed, these words.\nTo learn without reflection, is to be bewildered.\nI have heard it from Confucius,\nPray, let us put it to the test.\nIt is, that one may thereby become proficient.",
+    "isCodeBlock": false,
+    "sentences": [
       {
         "chinese": "循環之術。",
         "english": "The art of loops.",
         "transcription": "zʷìn ɦʷạ̀n ʨɨ̀ː ʑʷit",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "至是略備矣。",
         "english": "Thus, it is now briefly complete.",
         "transcription": "ʨǐː ʥiéː lɨɑk bị̌ː ɦɨ́ː",
-        "durationInFrames": 91
-      }
-    ],
-    "durationInFrames": 1272
-  },
-  {
-    "id": "5-26",
-    "text": "總其五章所知。亦頗有可為者。",
-    "audioPath": null,
-    "translation": "To sum up what the five chapters have taught.\nThere remains much that may yet be undertaken.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 73
+      },
       {
         "chinese": "總其五章所知。",
         "english": "To sum up what the five chapters have taught.",
         "transcription": "ʦúŋ gɨ̀ː ŋóː ʨɨɑ̀ŋ ʂɨə́ː ʈièː",
-        "durationInFrames": 111
+        "durationInFrames": 85
       },
       {
         "chinese": "亦頗有可為者。",
         "english": "There remains much that may yet be undertaken.",
         "transcription": "jiak pʰɑ̀ː ɦʉúː kʰɑ́ː ɦỵèː ʨiáː",
-        "durationInFrames": 111
-      }
-    ],
-    "durationInFrames": 222
-  },
-  {
-    "id": "5-27",
-    "text": "吾聞之。夫欲長於編程者。唯學而立用。用而不止。其勝束其手而觀其書百倍。善哉此言。學而不思則罔。吾聞諸仲尼。請試之。以為熟習也。",
-    "audioPath": null,
-    "translation": "I have heard that,\nAs for those who would excel in programming —\nThey must, above all, learn, and set their learning to use.\nApply it, and cease not.\nIt exceeds the sloth of sitting hand-bound, absorbed only in books by a hundredfold.\nGood indeed, these words.\nTo learn without reflection, is to be bewildered.\nI have heard it from Confucius,\nPray, let us put it to the test.\nIt is, that one may thereby become proficient.",
-    "isCodeBlock": false,
-    "sentences": [
+        "durationInFrames": 85
+      },
       {
         "chinese": "吾聞之。",
         "english": "I have heard that,",
         "transcription": "ŋòː mʉ̀n ʨɨ̀ː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "夫欲長於編程者。",
         "english": "As for those who would excel in programming —",
         "transcription": "bʉòː jʉok ʈɨɑ́ŋ ʔɨə̀ː pèn ɖiàŋ ʨiáː",
-        "durationInFrames": 122
+        "durationInFrames": 97
       },
       {
         "chinese": "唯學而立用。",
         "english": "They must, above all, learn, and set their learning to use.",
         "transcription": "jʷìː ɦọk ɲɨ̀ː lip jʉǒŋ",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "用而不止。",
         "english": "Apply it, and cease not.",
         "transcription": "jʉǒŋ ɲɨ̀ː pʉùː ʨɨ́ː",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "其勝束其手而觀其書百倍。",
         "english": "It exceeds the sloth of sitting hand-bound, absorbed only in books by a hundredfold.",
         "transcription": "gɨ̀ː ɕɨ̌ŋ ɕʉok gɨ̀ː ɕʉúː ɲɨ̀ː kʷɑ̀n gɨ̀ː ɕɨə̀ː pạk bój",
-        "durationInFrames": 182
+        "durationInFrames": 146
       },
       {
         "chinese": "善哉此言。",
         "english": "Good indeed, these words.",
         "transcription": "ʥién ʦə̀j ʦʰiéː ŋɨə̀n",
-        "durationInFrames": 76
+        "durationInFrames": 61
       },
       {
         "chinese": "學而不思則罔。",
         "english": "To learn without reflection, is to be bewildered.",
         "transcription": "ɦọk ɲɨ̀ː pʉùː sɨ̀ː ʦək mʉɑ́ŋ",
-        "durationInFrames": 106
+        "durationInFrames": 85
       },
       {
         "chinese": "吾聞諸仲尼。",
         "english": "I have heard it from Confucius,",
         "transcription": "ŋòː mʉ̀n ʨɨə̀ː ɖʉǔŋ ɳìː",
-        "durationInFrames": 91
+        "durationInFrames": 73
       },
       {
         "chinese": "請試之。",
         "english": "Pray, let us put it to the test.",
         "transcription": "ʦʰiáŋ ɕɨ̌ː ʨɨ̀ː",
-        "durationInFrames": 61
+        "durationInFrames": 49
       },
       {
         "chinese": "以為熟習也。",
         "english": "It is, that one may thereby become proficient.",
         "transcription": "jɨ́ː ɦỵèː ʥʉuk zip jiáː",
-        "durationInFrames": 91
+        "durationInFrames": 70
       }
     ],
-    "durationInFrames": 957
+    "durationInFrames": 1068
   }
 ] as const;
 export type Segment = typeof segments[number];
