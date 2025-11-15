@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Dict, List
@@ -10,10 +9,10 @@ from typing import Any, Dict, List
 Reconstruct segment-level IPA transcript files `audio-{c}-{s}.txt` under
 `renderer/public/transcripts` from:
 
-  - `renderer/src/generated/sentence-segments.ts`
+  - `renderer/public/segments/c{n}.segments.json`
   - `renderer/public/transcripts/c{n}.sentences.json`
 
-Each entry in `sentence-segments.ts` describes a segment (e.g. "1-17") and the
+Each entry in `c{n}.segments.json` describes a segment (e.g. "1-17") and the
 ordered list of sentence IDs (e.g. ["c1-s245", "c1-s246", ...]) which belong to
 that segment. For each such segment, we concatenate the sentence-level IPA
 strings for those sentence IDs and write the result to:
@@ -25,43 +24,59 @@ sentence-level transcription data.
 """
 
 
+def _segments_file_sort_key(path: Path) -> int:
+    stem = path.stem
+    chapter_part = stem.split(".")[0]
+    try:
+        return int(chapter_part.lstrip("c"))
+    except ValueError:
+        return 0
+
+
 def load_sentence_segments(root: Path) -> List[Dict[str, Any]]:
     """
-    Parse `renderer/src/generated/sentence-segments.ts` and return the
-    `segments` array as a list of dicts.
-
-    The file is a small subset of TypeScript/JS; we convert the `segments`
-    array literal into JSON and load it.
+    Load chapter segment JSON files from renderer/public/segments.
     """
-    ts_path = root / "renderer" / "src" / "generated" / "sentence-segments.ts"
-    if not ts_path.exists():
-        raise SystemExit(f"Sentence segments file not found: {ts_path}")
+    segments_dir = root / "renderer" / "public" / "segments"
+    if not segments_dir.exists():
+        raise SystemExit(f"Segments directory not found: {segments_dir}")
 
-    text = ts_path.read_text(encoding="utf-8")
-
-    # Extract the array literal between "export const segments = [" and "] as const;"
-    m = re.search(
-        r"export const segments\s*=\s*\[(.*)\]\s*as const;",
-        text,
-        flags=re.DOTALL,
+    json_files = sorted(
+        segments_dir.glob("c*.segments.json"),
+        key=_segments_file_sort_key,
     )
-    if not m:
-        raise SystemExit("Could not locate `export const segments = [...] as const;`")
+    if not json_files:
+        raise SystemExit(f"No segment JSON files found in {segments_dir}")
 
-    array_text = "[" + m.group(1) + "]"
+    segments: List[Dict[str, Any]] = []
+    for json_path in json_files:
+        try:
+            data = json.loads(json_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"Failed to parse {json_path}: {exc}") from exc
 
-    # Quote object keys: id: "1-1" -> "id": "1-1"
-    array_text = re.sub(r"(\s*)(\w+):", r'\1"\2":', array_text)
+        file_segments = data.get("segments")
+        if not isinstance(file_segments, list):
+            print(
+                f"  ⚠ Segments file {json_path} did not contain a 'segments' array; skipping."
+            )
+            continue
 
-    # Remove trailing commas before } or ]
-    array_text = re.sub(r",(\s*[}\]])", r"\1", array_text)
+        chapter_id = str(data.get("chapterId") or json_path.stem.split(".")[0])
+        for entry in file_segments:
+            if not isinstance(entry, dict):
+                continue
+            normalized = {
+                "id": entry.get("id"),
+                "chapterId": entry.get("chapterId", chapter_id),
+                "segmentIndex": entry.get("segmentIndex"),
+                "sentenceIds": entry.get("sentenceIds", []),
+                "isCodeBlock": bool(entry.get("isCodeBlock", False)),
+            }
+            segments.append(normalized)
 
-    try:
-        segments: List[Dict[str, Any]] = json.loads(array_text)
-    except json.JSONDecodeError as exc:
-        raise SystemExit(
-            f"Failed to parse sentence segments TS as JSON: {exc}"
-        ) from exc
+    if not segments:
+        raise SystemExit("No valid segments loaded from JSON files.")
 
     return segments
 

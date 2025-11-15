@@ -9,14 +9,10 @@ import {
 import { parseFile } from "music-metadata";
 import { join, relative } from "path";
 
-import {
-  segments as sentenceSegments,
-  type SentenceSegment,
-} from "../src/generated/sentence-segments";
-
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
 const AUDIOS_DIR = join(rendererDir, "public", "audios");
 const AUDIOS_FEMALE_DIR = join(AUDIOS_DIR, "female");
+const SEGMENTS_JSON_DIR = join(rendererDir, "public", "segments");
 const SENTENCES_JSON_DIR = join(rendererDir, "public", "sentences");
 const TRANSLATIONS_DIR = join(rendererDir, "public", "translations");
 const TRANSCRIPTIONS_DIR = join(rendererDir, "public", "transcripts");
@@ -62,6 +58,20 @@ const countCharsExcludingQuotes = (text: string): number => {
   return text.replace(/[「」『』`\n\t 　]/g, "").length;
 };
 
+type SentenceSegment = {
+  id: string;
+  chapterId: string;
+  segmentIndex: number;
+  sentenceIds: string[];
+  isCodeBlock: boolean;
+};
+
+type ChapterSegmentsFile = {
+  chapterId?: string;
+  chapterNumber?: number;
+  segments?: SentenceSegment[];
+};
+
 type SentenceJsonEntry = {
   id: string;
   source: string;
@@ -99,6 +109,82 @@ const readJsonFile = <T>(filePath: string): T | null => {
     console.warn(`[segments] Failed to parse ${filePath}:`, error);
     return null;
   }
+};
+
+const parseChapterNumber = (fileName: string): number => {
+  const match = fileName.match(/^c(\d+)/i);
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+};
+
+const loadSentenceSegmentsIndex = (): SentenceSegment[] => {
+  if (!existsSync(SEGMENTS_JSON_DIR)) {
+    throw new Error(
+      `[segments] Segments directory not found: ${SEGMENTS_JSON_DIR}`,
+    );
+  }
+
+  const files = readdirSync(SEGMENTS_JSON_DIR)
+    .filter((file) => file.endsWith(".segments.json"))
+    .sort((a, b) => parseChapterNumber(a) - parseChapterNumber(b));
+
+  if (files.length === 0) {
+    throw new Error(
+      `[segments] No *.segments.json files found in ${SEGMENTS_JSON_DIR}`,
+    );
+  }
+
+  const records: SentenceSegment[] = [];
+  for (const file of files) {
+    const filePath = join(SEGMENTS_JSON_DIR, file);
+    const parsed = readJsonFile<ChapterSegmentsFile>(filePath);
+    if (!parsed || !Array.isArray(parsed.segments)) {
+      console.warn(
+        `[segments] Skipping ${toRendererRelative(filePath)} (missing segments array)`,
+      );
+      continue;
+    }
+
+    const fallbackChapterId =
+      parsed.chapterId ?? file.replace(/\.segments\.json$/, "");
+
+    parsed.segments.forEach((segment, index) => {
+      if (!segment || typeof segment !== "object") {
+        return;
+      }
+      const sentenceIds = Array.isArray(segment.sentenceIds)
+        ? segment.sentenceIds.filter((value): value is string => {
+            return typeof value === "string";
+          })
+        : [];
+
+      if (!segment.id) {
+        console.warn(
+          `[segments] Segment entry ${index} in ${toRendererRelative(filePath)} is missing an id; skipping.`,
+        );
+        return;
+      }
+
+      const segmentIndex = Number(segment.segmentIndex);
+
+      records.push({
+        id: segment.id,
+        chapterId: segment.chapterId ?? fallbackChapterId,
+        segmentIndex: Number.isFinite(segmentIndex)
+          ? segmentIndex
+          : index + 1,
+        sentenceIds,
+        isCodeBlock: Boolean(segment.isCodeBlock),
+      });
+    });
+  }
+
+  if (records.length === 0) {
+    throw new Error(
+      "[segments] No valid segments loaded from chapter segment JSON files.",
+    );
+  }
+
+  return records;
 };
 
 const cleanEnglishLine = (input: string | null | undefined): string | null => {
@@ -300,6 +386,7 @@ const generateSegments = async () => {
     rows: string[];
   }> = [];
 
+  const sentenceSegments = loadSentenceSegmentsIndex();
   const segmentsToProcess: readonly SentenceSegment[] = [...sentenceSegments];
 
   const entries = (
@@ -349,7 +436,7 @@ const generateSegments = async () => {
             segment: segmentIndex,
             title: `⚠️  No sentence mapping for ${id}`,
             rows: [
-              `Chapter ${chapterId} has no sentenceIds entry in sentence-segments.ts`,
+              `Chapter ${chapterId} has no sentenceIds entry in ${chapterId}.segments.json`,
             ],
           });
           return null;
