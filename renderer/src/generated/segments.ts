@@ -5,6 +5,21 @@ import { segments as segments1 } from "./segments-1";
 import { segments as segments2 } from "./segments-2";
 import { segments as segments3 } from "./segments-3";
 import { segments as segments4 } from "./segments-4";
+import { segments as segments5 } from "./segments-5";
 
-export const segments = [...segments1, ...segments2, ...segments3, ...segments4] as const;
+export const segments = [
+  ...segments1,
+  ...segments2,
+  ...segments3,
+  ...segments4,
+  ...segments5,
+  ...segments6,
+  ...segments7,
+  ...segments8,
+  ...segments9,
+  ...segments10,
+  ...segments11,
+  ...segments12,
+  ...segments13,
+] as const;
 export type Segment = (typeof segments)[number];
