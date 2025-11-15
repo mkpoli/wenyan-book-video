@@ -311,6 +311,10 @@ function renderTextWithQuotes(
       }
     }
 
+    if (entry.char === "\n") {
+      return <br key={`char-${index}-break`} />;
+    }
+
     const displayChar =
       entry.char === " " || entry.char === "\u00A0" ? "\u00A0" : entry.char;
     const isKeyword = Boolean(keywordMask?.[index]);
