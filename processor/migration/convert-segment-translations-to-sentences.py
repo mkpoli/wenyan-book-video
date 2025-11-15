@@ -2,7 +2,14 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Union, cast
+
+from processor.utils.cli_style import (
+    INNER_DIVIDER,
+    format_metadata_rows,
+    format_preview_entry,
+    print_warning,
+)
 
 
 def split_chinese_sentences(text: str) -> List[str]:
@@ -162,25 +169,57 @@ def convert_chapter(
     # Canonical sentences are stored as `c{n}.sentences.json`.
     sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
-        print(f"  ⚠ No sentences file found for {chapter_id}, skipping.")
+        print_warning(
+            "Missing sentences file",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return
 
     chapter_sentences = load_chapter_sentences(sentences_path)
     if not chapter_sentences:
-        print(f"  ⚠ No sentences entries in {sentences_path}, skipping.")
+        print_warning(
+            "No sentences entries",
+            format_metadata_rows(
+                [
+                    ("Sentences path", sentences_path.as_posix()),
+                    ("Chapter ID", chapter_id),
+                ]
+            ),
+        )
         return
 
     # Determine numeric chapter number from chapter_id like "c1"
     try:
         chapter_num = int(chapter_id.lstrip("c"))
     except ValueError:
-        print(f"  ⚠ Invalid chapter id format: {chapter_id}, skipping.")
+        print_warning(
+            "Invalid chapter identifier",
+            format_metadata_rows(
+                [
+                    ("Chapter ID", chapter_id),
+                    ("Sentences path", sentences_path.as_posix()),
+                ]
+            ),
+        )
         return
 
     # Check if any translation files exist for this chapter
     translation_files = list(translations_dir.glob(f"{chapter_num}-*.txt"))
     if not translation_files:
-        print(f"  ⚠ No translation files found for chapter {chapter_num}, skipping.")
+        print_warning(
+            "No translation files found",
+            format_metadata_rows(
+                [
+                    ("Chapter", str(chapter_num)),
+                    ("Translations dir", translations_dir.as_posix()),
+                ]
+            ),
+        )
         return
 
     # Find all segments for this chapter
@@ -189,7 +228,15 @@ def convert_chapter(
         key=natural_segment_sort_key,
     )
     if not segment_files:
-        print(f"  ⚠ No segment files found for chapter {chapter_num}, skipping.")
+        print_warning(
+            "No segments available",
+            format_metadata_rows(
+                [
+                    ("Chapter", str(chapter_num)),
+                    ("Segments dir", segments_dir.as_posix()),
+                ]
+            ),
+        )
         return
 
     result: Dict[str, Dict[str, str]] = {}
@@ -217,35 +264,68 @@ def convert_chapter(
                 if en_sentences and len(en_sentences) == 1:
                     # Use the same translation for all sentences in this segment.
                     en_sentences = en_sentences * len(cn_sentences)
-                    print(
-                        f"  ⚠ Segment {seg_path.name}: "
-                        f"1 English sentence vs {len(cn_sentences)} Chinese sentences, "
-                        f"duplicating translation."
+                    print_warning(
+                        "Duplicating English sentence",
+                        format_metadata_rows(
+                            [
+                                ("Segment", seg_path.name),
+                                ("Chinese sentences", str(len(cn_sentences))),
+                                ("English sentences", str(len(en_sentences))),
+                            ]
+                        ),
                     )
                 else:
-                    print(
-                        f"  ⚠ Segment {seg_path.name}: "
-                        f"{len(en_sentences)} English sentences vs {len(cn_sentences)} Chinese sentences, "
-                        f"will pair up to min length and discard extras."
-                    )
-
-                    # Detailed debug dump to help inspect mismatches, but only
-                    # for shorter segments to avoid flooding the logs.
+                    preview_rows: List[str] = []
                     if len(cn_sentences) <= 20 and len(en_sentences) <= 20:
-                        print("    Chinese sentences:")
-                        for idx, s in enumerate(cn_sentences):
-                            print(f"      CN[{idx}]: {s}")
-                        print("    English sentences:")
-                        for idx, s in enumerate(en_sentences):
-                            print(f"      EN[{idx}]: {s}")
+                        for idx in range(max(len(cn_sentences), len(en_sentences))):
+                            zh_sentence = (
+                                cn_sentences[idx] if idx < len(cn_sentences) else None
+                            )
+                            en_sentence = (
+                                en_sentences[idx] if idx < len(en_sentences) else None
+                            )
+                            preview_rows.append(
+                                format_preview_entry(
+                                    f"#{idx:02}", "zh", zh_sentence, zh_sentence is None
+                                ),
+                            )
+                            preview_rows.append(
+                                format_preview_entry(
+                                    f"#{idx:02}",
+                                    "en",
+                                    en_sentence,
+                                    en_sentence is None or zh_sentence is None,
+                                )
+                            )
+
+                    rows: List[Union[str, object]] = cast(
+                        List[Union[str, object]],
+                        format_metadata_rows(
+                            [
+                                ("Segment", seg_path.name),
+                                ("Chinese sentences", str(len(cn_sentences))),
+                                ("English sentences", str(len(en_sentences))),
+                            ]
+                        ),
+                    )
+                    if preview_rows:
+                        rows.extend([INNER_DIVIDER, *preview_rows])
+
+                    print_warning("Sentence count mismatch", rows)
 
         # Map this segment's sentences onto chapter sentences
         en_index = 0  # index into en_sentences for this segment
         for local_idx, cn_sentence in enumerate(cn_sentences):
             if sent_index >= len(chapter_sentences):
-                print(
-                    f"  ⚠ Ran out of chapter sentences while processing {seg_path.name}; "
-                    f"remaining segment content will be ignored."
+                print_warning(
+                    "Ran out of canonical sentences",
+                    format_metadata_rows(
+                        [
+                            ("Segment", seg_path.name),
+                            ("Chapter index", str(sent_index)),
+                            ("Chapter ID", chapter_id),
+                        ]
+                    ),
                 )
                 break
 
@@ -270,11 +350,24 @@ def convert_chapter(
                     canonical_normalized not in cn_normalized
                     and cn_normalized not in canonical_normalized
                 ):
-                    print(
-                        f"  ⚠ Sentence mismatch in {seg_path.name} at chapter index {sent_index}:"
-                        f"\n     canonical: {canonical_source}"
-                        f"\n     segment:   {cn_sentence}"
+                    mismatch_rows: List[Union[str, object]] = cast(
+                        List[Union[str, object]],
+                        format_metadata_rows(
+                            [
+                                ("Segment", seg_path.name),
+                                ("Chapter index", str(sent_index)),
+                                ("Sentence ID", str(sent_id)),
+                            ]
+                        ),
                     )
+                    mismatch_rows.extend(
+                        [
+                            INNER_DIVIDER,
+                            f"canonical: {canonical_source}",
+                            f"segment:   {cn_sentence}",
+                        ]
+                    )
+                    print_warning("Sentence mismatch detected", mismatch_rows)
 
             translation_value = ""
             if en_sentences and en_index < len(en_sentences):
@@ -293,7 +386,10 @@ def convert_chapter(
                 en_index += 1
 
     if not result:
-        print(f"  ⚠ No sentence-level translations produced for {chapter_id}.")
+        print_warning(
+            "No sentence-level translations produced",
+            format_metadata_rows([("Chapter ID", chapter_id)]),
+        )
         return
 
     output_path = output_dir / f"{chapter_id}.translations.json"
