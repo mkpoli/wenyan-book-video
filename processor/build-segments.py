@@ -75,7 +75,8 @@ def load_sentence_transcripts_for_chapter(
     Load sentence-level transcripts for a chapter, keyed by sentence id
     (e.g. "c1-s245").
     """
-    path = transcripts_dir / f"{chapter_id}.sentences.json"
+    # Sentence-level transcripts are stored as `c{n}.transcripts.json`.
+    path = transcripts_dir / f"{chapter_id}.transcripts.json"
     if not path.exists():
         raise SystemExit(f"Sentence transcripts file not found: {path}")
 

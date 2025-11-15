@@ -377,7 +377,9 @@ def build_sentences_for_chapter(chapter_path: Path, output_dir: Path) -> None:
         "sentences": [asdict(s) for s in sentences],
     }
 
-    output_path = output_dir / f"{chapter_id}.json"
+    # Store canonical sentences as `c{n}.sentences.json` to avoid confusion
+    # with chapter JSON (`c{n}.json`).
+    output_path = output_dir / f"{chapter_id}.sentences.json"
     output_path.write_text(
         json.dumps(output_data, ensure_ascii=False, indent=2),
         encoding="utf-8",

@@ -119,19 +119,23 @@ def _(Path):
 def _(transcripts_dir, sentences_dir):
     import json as _json_init
 
-    # Prepare sentence transcript files (c1.sentences.json, c2.sentences.json, ...)
-    # for all chapters that have canonical sentences (c1.json, c2.json, ...).
+    # Prepare sentence transcript files (c1.transcripts.json, c2.transcripts.json, ...)
+    # for all chapters that have canonical sentences (c1.sentences.json, c2.sentences.json, ...).
     def sort_key(path):
-        # Extract chapter number from filename like "c1.json" -> 1
-        name = path.stem  # "c1"
+        # Extract chapter number from filename like "c1.sentences.json" -> 1
+        name = path.stem.split(".")[0]  # "c1"
         num_str = name.lstrip("c")
         return int(num_str) if num_str.isdigit() else 0
 
     sentence_files = []
 
-    for sentences_path in sorted(sentences_dir.glob("c*.json"), key=sort_key):
-        chapter_id = sentences_path.stem  # e.g. "c5"
-        transcript_path = transcripts_dir / f"{chapter_id}.sentences.json"
+    for sentences_path in sorted(
+        sentences_dir.glob("c*.sentences.json"), key=sort_key
+    ):
+        # Derive chapter id like "c5" from "c5.sentences"
+        chapter_id = sentences_path.stem.split(".")[0]
+        # Sentence-level transcripts live as `c{n}.transcripts.json`.
+        transcript_path = transcripts_dir / f"{chapter_id}.transcripts.json"
 
         if not transcript_path.exists():
             # Initialize a sentence transcript file from canonical sentences.

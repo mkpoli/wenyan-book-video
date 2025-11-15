@@ -289,11 +289,10 @@ def generate_sentence_segments_ts(root: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "sentence-segments.ts"
 
-    # Sort chapters in numeric order by chapter number (c1, c2, ..., c10)
-    chapter_files = list(sentences_dir.glob("c*.json"))
-    chapter_files.sort(
-        key=lambda p: int(p.stem.lstrip("c")) if p.stem.lstrip("c").isdigit() else 0
-    )
+    # Sort chapters in numeric order by chapter number (c1, c2, ..., c10),
+    # using the canonical sentence files `c{n}.sentences.json`.
+    chapter_files = list(sentences_dir.glob("c*.sentences.json"))
+    chapter_files.sort(key=lambda p: int(p.stem.split(".")[0].lstrip("c")) if p.stem.split(".")[0].lstrip("c").isdigit() else 0)
     if not chapter_files:
         raise SystemExit(f"No sentence JSON files found in {sentences_dir}")
 
@@ -301,7 +300,8 @@ def generate_sentence_segments_ts(root: Path) -> None:
 
     print("Building sentence segments from existing segments and sentences...")
     for sentences_path in chapter_files:
-        chapter_id = sentences_path.stem  # e.g. "c1"
+        # Derive chapter id like "c1" from "c1.sentences"
+        chapter_id = sentences_path.stem.split(".")[0]
         print(f"- Chapter {chapter_id}")
         chapter_segments = build_sentence_segments_for_chapter(
             chapter_id, sentences_dir, segments_dir

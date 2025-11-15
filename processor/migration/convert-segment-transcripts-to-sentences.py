@@ -492,7 +492,8 @@ def convert_chapter(
     Convert existing segment-based transcripts for one chapter into
     sentence-based transcripts.
     """
-    sentences_path = sentences_dir / f"{chapter_id}.json"
+    # Canonical sentences are stored as `c{n}.sentences.json`.
+    sentences_path = sentences_dir / f"{chapter_id}.sentences.json"
     if not sentences_path.exists():
         print(f"  ⚠ No sentences file found for {chapter_id}, skipping.")
         return
