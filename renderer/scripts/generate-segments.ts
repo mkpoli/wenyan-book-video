@@ -9,6 +9,8 @@ import {
 import { parseFile } from "music-metadata";
 import { join, relative } from "path";
 
+import { APPROX_SECONDS_PER_CHARACTER } from "../constants/narration";
+
 const rendererDir = process.env.RENDERER_DIR ?? process.cwd();
 const AUDIOS_DIR = join(rendererDir, "public", "audios");
 const AUDIOS_FEMALE_DIR = join(AUDIOS_DIR, "female");
@@ -21,7 +23,6 @@ const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const FPS = 30;
 const AUDIO_TAIL_FRAMES = 12;
 const DEFAULT_AUDIO_DURATION_SECONDS = 3;
-const APPROX_SECONDS_PER_CHARACTER = 0.5;
 
 const isDebug = process.env.DEBUG_SEGMENTS === "1";
 const debugLog = (...args: unknown[]) => {
@@ -177,9 +178,7 @@ const loadSentenceSegmentsIndex = (): SentenceSegment[] => {
       records.push({
         id: segment.id,
         chapterId: segment.chapterId ?? fallbackChapterId,
-        segmentIndex: Number.isFinite(segmentIndex)
-          ? segmentIndex
-          : index + 1,
+        segmentIndex: Number.isFinite(segmentIndex) ? segmentIndex : index + 1,
         sentenceIds,
         isCodeBlock: Boolean(segment.isCodeBlock),
       });

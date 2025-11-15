@@ -10,6 +10,7 @@ import {
   useRemotionEnvironment,
 } from "remotion";
 import { Segment } from "../../generated/segments";
+import { APPROX_SECONDS_PER_CHARACTER } from "../../../constants/narration";
 import { SegmentText } from "./SegmentText";
 
 interface NarrationProps {
@@ -24,7 +25,6 @@ interface NarrationProps {
 }
 
 const CLEAN_CHAR_PATTERN = /[「」『』`\s]/g;
-const APPROX_SECONDS_PER_CHARACTER = 0.5;
 const FALLBACK_TAIL_FRAMES = 12;
 
 type ApproxDuration = {
@@ -40,14 +40,19 @@ const countEffectiveChars = (text: string | null | undefined): number => {
   return text.replace(CLEAN_CHAR_PATTERN, "").length;
 };
 
-const computeApproxDuration = (segment: Segment, fps: number): ApproxDuration => {
-  const charsFromSentences = segment.sentences?.reduce((sum, sentence) => {
-    return sum + countEffectiveChars(sentence.chinese);
-  }, 0) ?? 0;
+const computeApproxDuration = (
+  segment: Segment,
+  fps: number,
+): ApproxDuration => {
+  const charsFromSentences =
+    segment.sentences?.reduce((sum, sentence) => {
+      return sum + countEffectiveChars(sentence.chinese);
+    }, 0) ?? 0;
 
-  const fallbackChars = charsFromSentences > 0
-    ? charsFromSentences
-    : countEffectiveChars(segment.text);
+  const fallbackChars =
+    charsFromSentences > 0
+      ? charsFromSentences
+      : countEffectiveChars(segment.text);
   const charCount = Math.max(fallbackChars, 1);
   const seconds = charCount * APPROX_SECONDS_PER_CHARACTER;
   const frames = Math.max(1, Math.ceil(seconds * fps) + FALLBACK_TAIL_FRAMES);
@@ -95,7 +100,7 @@ export const Narration: React.FC<NarrationProps> = ({
       console.warn(
         `[Narration] Audio missing for segment ${segment.id}; using ~${approxSeconds.toFixed(
           1,
-        )} seconds at 0.5s/character.`,
+        )} seconds at ${APPROX_SECONDS_PER_CHARACTER.toFixed(1)}s/character.`,
       );
     });
   }, [segments, approxDurations]);

@@ -1,0 +1,1 @@
+export const APPROX_SECONDS_PER_CHARACTER = 0.4;
