@@ -15,51 +15,58 @@ MAX_SENTENCES_PER_BATCH = 30
 MAX_CHARS_PER_BATCH = 2000
 
 
-TRANSLATION_PROMPT = """You are to translate Classical Chinese prose (especially technical or literary works such as guides for the Wenyan programming language) into refined, natural English without omitting classical nuance.
+TRANSLATION_PROMPT = """The following is requirements for a translation task. Follow these rules carefully and operate accordingly.
 
-Follow these formatting and stylistic rules carefully.
+## Target
 
-## Translation Rules
+From: Traditional Classical Chinese (文言文/漢文) written in modern era.
+To: Modern or Contemporary English
+Subject: Modern technical text (a introductory handbook)
+Topic: Programming basics and a programming language called Wenyan (world's first Classical Chinese-styled programming language) 
 
-### Preserve Original Structure
-- Each 。 (full stop) in the original Chinese already marks one canonical sentence.
-- For this task, **each input Chinese sentence must map to exactly one English line**.
-- Do NOT merge or split sentences; keep 1:1 mapping between input sentences and output lines.
-- Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
-- Add proper English punctuation (period, comma, semicolon, colon, dash etc.) to the translation according to the context.
+## English Style
+- Use dignified, reflective, refined, natural, antique-feeling, recondite, rhythmic, and occasionally poetic and philosophical phrasing suitable for a didactic text with full classical nuance.
+- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry, phonetic harmony and balance of Classical Chinese.
+- Add proper and old-style, typographical English punctuations (period, comma, semicolon, colon, dash, quotation marks: 「」→“”, 『』→‘’, etc.) inside the same line only according to the context.
+- Output plain text only available in Unicode.
 
-### Maintain Classical Tone
-- Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
-- Avoid modern or casual diction.
-- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
+## Consistency
+- Each Chinese sentence ends with 。 -> one English line (no line-breaking). Keep strict 1:1 mapping: no merging, no splitting, no reordering, no omission, authentic and faithful as possible without hurting the natural flow and clarity.
+- Equivalent of comma and period in English are all marked with “。”, so potentially two or more Chinese sentences may be mapped to one English line.
+    - X者。 = topic (“As for X—”, “‘X,’ —”, etc.)
+    - X者。Y也。 = two lines: topic → explanation. (["A者。", "B也。"] -> ["A —", "is B"] etc.) h
+    - 夫X者。……。 = “Speaking of/Regarding/About X,…”
+- Keep all nested quotations and rhetorical questions, metaphors intact if possible.
+- Use typographical punctuation (— , ; … “” ‘ ’) where natural.
 
-### No Omission or Summarization
-- Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
-- Preserve original meaning and sentence order exactly.
-
-### English Formatting
-- Each sentence begins on a new line.
-- Output plain text only inside the JSON values (no Markdown).
-- Keep all nested quotations and rhetorical questions intact.
-- Use typographical punctuation (— … “” ‘ ’) where natural.
-
-## Glossary (for meaning consistency, not literal word-for-word mapping)
-- “計開” → “Table of Contents”, “Let us unfold our explanation.”, “As follows,”, or “Let us begin.” depending on context.
+## Glossary
+Use below for meaning consistency, but be flexible and accommdating, not literal word-for-word mapping, adjust depending on context.
+- “計開” → means “Table of Contents”, used as “As follows,”, or “Let us begin.”, can be translated as  “Let us unfold our explanation.”, .
 - “至此畧備矣” → “Thus it is now briefly complete.”
+- After a question, “耶。” or “乎。”, usually there will be a follow-up answer witf “曰。”, translate it as “It is answered,” or a like.
+
+### Code
+- “甲” → “A”, “乙” → “B”, “丙” → “C”, “丁” → “D”, “戊” → “E”, “己” → “F”, “庚” → “G”, “辛” → “H”, “壬” → “I”, “癸” → “J”, etc.
 - “書之” → “Write it down.”
-- “數” → “Numbers (numerals)”.
-- “言” → “Words (strings)”.
-- “爻” → “Yáo (booleans)”.
-- “列” → “Lists (arrays)”.
-- “物” → “Things (objects)”.
-- “術” → “Means (methods)”.
-- “甲” → “A”, “乙” → “B”, “丙” → “C”, etc.
+- “云云。” → “Thus and thus.” (“……云云。” → “And alike”, “like ……”, “beginning with ……”, etc.)
+- Classes:
+    - “數” → “Numbers (numerals)”.
+    - “言” → “Words (strings)”.
+    - “爻” → “Yáo (booleans)”.
+    - “列” → “Lists (arrays)”.
+    - “物” → “Things (objects)”.
+    - “術” → “Means (methods)”.
+    - “吾有一言。曰『……』。名之曰……。” → “I have a word.” “It says, ‘……’.”; Name it ‘……’.”
+    - “有數九。名之曰「……」” -> “There are a number of nine.” “It is named ‘……’.”
+- Loops
+    - “循環” → “Loops”, “Looping”
+    - “恆為是。” → “Constantly do this.”
+    - “為是百遍。” → “Do this one hundred times.”
 
-## Your Task
 
-You will receive multiple short Chinese sentences, each with a unique `id`.
+## Output
 
-Return ONLY valid JSON of the form:
+You will receive multiple short Chinese sentences, each with a unique `id`. Return ONLY valid JSON of the form no extra text, comments, trailing commas, etc.
 
   {{
     "translations": [
@@ -68,11 +75,48 @@ Return ONLY valid JSON of the form:
     ]
   }}
 
-Rules for the JSON:
-- The `translations` array must contain one entry for every input sentence.
-- Each `translation` value must be a single line of English text for that sentence.
-- Do NOT include any comments or text outside the JSON.
-- Do NOT include trailing commas.
+## Examples
+
+易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
+
+{{
+  "translations": 
+    [
+        {{"id": "c2-s1", "translation":"The Book of Changes says,"}},
+        {{"id": "c2-s2", "translation":""Transformation —"}},
+        {{"id": "c2-s3"," translation":""is the image of advance and retreat.""}},
+        {{"id": "c2-s4", "translation":"Now, in programming,"}},
+        {{"id": "c2-s5", "translation":"nothing is without variables as its foundation."}},
+        {{"id": "c2-s6", "translation":""What is a variable?""}},
+        {{"id": "c2-s7", "translation":""It is a name assigned to a thing.""}}
+    ]
+}}
+
+編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
+
+{{
+  "translations": 
+    [
+        {{"id": "c1-s1", "translation":"What is programming?"}},
+        {{"id": "c1-s2", "translation":"That by which one commands machines."}},
+        {{"id": "c1-s3", "translation":"What is a machine?"}},
+        {{"id": "c1-s4", "translation":"That by which human labor is replaced."}},
+        {{"id": "c1-s5", "translation":"Yet the power of machines is vast,"}},
+        {{"id": "c1-s6", "translation":"their calculations swift,"}},
+        {{"id": "c1-s7", "translation":"but their wisdom does not reach that of man."}},
+        {{"id": "c1-s8", "translation":"Therefore, the wise plan with care and foresight."}},
+        {{"id": "c1-s9", "translation":"They set down a thousand words,"}},
+        {{"id": "c1-s10", "translation":"as if issuing military orders,"}},
+        {{"id": "c1-s11", "translation":"as if prescribing medicine —"}},
+        {{"id": "c1-s12", "translation":"this is called a program."}},
+        {{"id": "c1-s13", "translation":"Once the machine comprehends it,"}},
+        {{"id": "c1-s14", "translation":"it can then be made to serve mankind —"}},
+        {{"id": "c1-s15", "translation":"to chart the movements of the stars,"}},
+        {{"id": "c1-s16", "translation":"or to analyze the patterns of reason."}}
+    ]
+}}
+
+## Your Task
 
 Now translate the following sentences:
 
@@ -206,7 +250,7 @@ def _build_text_block_for_batch(
     for idx, sid in enumerate(batch_ids, start=1):
         source = translations_data[sid].get("source", "")
         lines.append(f"SENTENCE {idx}: {sid}")
-        lines.append(source)
+        lines.append(source.strip())
         lines.append("")  # blank line between sentences
     return "\n".join(lines).strip()
 
@@ -222,19 +266,28 @@ def _call_translation_api(
     """
     text_block = _build_text_block_for_batch(translations_data, batch_ids)
     prompt = TRANSLATION_PROMPT.format(text=text_block)
+    system_content = (
+        "You are an expert translator specializing in Classical Chinese "
+        "to English translation, particularly for technical and literary works."
+    )
+
+    # Debug: print exact prompt with separators
+    print("\n" + "=" * 80)
+    print("DEBUG: System Message")
+    print("=" * 80)
+    print(system_content)
+    print("\n" + "=" * 80)
+    print("DEBUG: User Prompt (Exact)")
+    print("=" * 80)
+    print(prompt)
+    print("=" * 80 + "\n")
 
     print(f"  🤖 Translating {len(batch_ids)} sentence(s)...")
 
     response = client.chat.completions.create(
         model=MODEL_NAME,
         messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are an expert translator specializing in Classical Chinese "
-                    "to English translation, particularly for technical and literary works."
-                ),
-            },
+            {"role": "system", "content": system_content},
             {"role": "user", "content": prompt},
         ],
     )
