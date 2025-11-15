@@ -411,6 +411,56 @@ def split_ipa_sentences(ipa: str) -> List[str]:
     return sentences
 
 
+def rebalance_ipa_sentences_for_segment(
+    cn_sentences: List[str],
+    ipa_sentences: List[str],
+) -> List[str]:
+    """
+    When a segment's Chinese sentences and IPA sentences don't match in count,
+    but the *total* number of written sentence endings matches, we can often
+    recover alignment by merging adjacent IPA sentences.
+
+    Heuristic:
+      - For each Chinese sentence, count occurrences of '。'.
+      - If the sum of these counts equals len(ipa_sentences), we treat each
+        '。' as one prosodic unit and assign that many IPA sentences to the
+        corresponding Chinese sentence, merging them when there are multiple.
+
+    Example (segment 4-14.txt):
+      CN[1]: 曰『爾雖人。於我實芻狗也。』  -> 2 x '。'
+      IPA[1]: ... .   IPA[2]: ... .
+      => merged IPA for CN[1]: IPA[1] + IPA[2]
+    """
+
+    if not cn_sentences or not ipa_sentences:
+        return ipa_sentences
+
+    # Count sentence-ending marks in each Chinese sentence
+    endings_per_cn: List[int] = []
+    for s in cn_sentences:
+        count = s.count("。")
+        # Fallback: if there is no '。' but the sentence is non-empty, treat as 1
+        if count == 0 and s.strip():
+            count = 1
+        endings_per_cn.append(count)
+
+    total_endings = sum(endings_per_cn)
+    if total_endings != len(ipa_sentences):
+        # Can't rebalance safely; keep original IPA sentences.
+        return ipa_sentences
+
+    rebalanced: List[str] = []
+    ipa_index = 0
+
+    for count in endings_per_cn:
+        # Merge `count` IPA sentences for this Chinese sentence.
+        merged = " ".join(ipa_sentences[ipa_index : ipa_index + count]).strip()
+        rebalanced.append(merged)
+        ipa_index += count
+
+    return rebalanced
+
+
 def natural_segment_sort_key(path: Path) -> Tuple[int, int]:
     """
     Sort key for segment files like '1-2.txt' -> (1, 2).
@@ -496,31 +546,43 @@ def convert_chapter(
             ipa_sentences = split_ipa_sentences(ipa_text)
 
             if len(ipa_sentences) != len(cn_sentences):
-                # Fallbacks:
-                if ipa_sentences and len(ipa_sentences) == 1:
-                    # Use the same IPA for all sentences in this segment.
-                    ipa_sentences = ipa_sentences * len(cn_sentences)
+                # Try to rebalance by merging adjacent IPA sentences based on
+                # how many '。' appear in each Chinese sentence.
+                rebalanced = rebalance_ipa_sentences_for_segment(
+                    cn_sentences, ipa_sentences
+                )
+                if len(rebalanced) == len(cn_sentences):
                     print(
-                        f"  ⚠ Segment {seg_path.name}: "
-                        f"1 IPA sentence vs {len(cn_sentences)} Chinese sentences, "
-                        f"duplicating IPA."
+                        f"  ℹ Rebalanced IPA sentences for {seg_path.name}: "
+                        f"{len(ipa_sentences)} -> {len(rebalanced)}"
                     )
+                    ipa_sentences = rebalanced
                 else:
-                    print(
-                        f"  ⚠ Segment {seg_path.name}: "
-                        f"{len(ipa_sentences)} IPA sentences vs {len(cn_sentences)} Chinese sentences, "
-                        f"will pair up to min length and discard extras."
-                    )
+                    # Fallbacks:
+                    if ipa_sentences and len(ipa_sentences) == 1:
+                        # Use the same IPA for all sentences in this segment.
+                        ipa_sentences = ipa_sentences * len(cn_sentences)
+                        print(
+                            f"  ⚠ Segment {seg_path.name}: "
+                            f"1 IPA sentence vs {len(cn_sentences)} Chinese sentences, "
+                            f"duplicating IPA."
+                        )
+                    else:
+                        print(
+                            f"  ⚠ Segment {seg_path.name}: "
+                            f"{len(ipa_sentences)} IPA sentences vs {len(cn_sentences)} Chinese sentences, "
+                            f"will pair up to min length and discard extras."
+                        )
 
-                    # Detailed debug dump to help inspect mismatches, but only
-                    # for shorter segments to avoid flooding the logs.
-                    if len(cn_sentences) <= 20 and len(ipa_sentences) <= 20:
-                        print("    Chinese sentences:")
-                        for idx, s in enumerate(cn_sentences):
-                            print(f"      CN[{idx}]: {s}")
-                        print("    IPA sentences:")
-                        for idx, s in enumerate(ipa_sentences):
-                            print(f"      IPA[{idx}]: {s}")
+                        # Detailed debug dump to help inspect mismatches, but only
+                        # for shorter segments to avoid flooding the logs.
+                        if len(cn_sentences) <= 20 and len(ipa_sentences) <= 20:
+                            print("    Chinese sentences:")
+                            for idx, s in enumerate(cn_sentences):
+                                print(f"      CN[{idx}]: {s}")
+                            print("    IPA sentences:")
+                            for idx, s in enumerate(ipa_sentences):
+                                print(f"      IPA[{idx}]: {s}")
 
         # Map this segment's sentences onto chapter sentences
         ipa_index = 0  # index into ipa_sentences for this segment
