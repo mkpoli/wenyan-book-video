@@ -628,8 +628,6 @@ def convert_chapter(
             ipa_sentences = split_ipa_sentences(ipa_text)
 
             if len(ipa_sentences) != len(cn_sentences):
-                # Try to rebalance by merging adjacent IPA sentences based on
-                # how many '。' appear in each Chinese sentence.
                 rebalanced = rebalance_ipa_sentences_for_segment(
                     cn_sentences, ipa_sentences
                 )
@@ -640,39 +638,75 @@ def convert_chapter(
                     )
                     ipa_sentences = rebalanced
                 else:
-                    # Fallbacks:
                     if ipa_sentences and len(ipa_sentences) == 1:
-                        # Use the same IPA for all sentences in this segment.
                         ipa_sentences = ipa_sentences * len(cn_sentences)
-                        print(
-                            f"  ⚠ Segment {seg_path.name}: "
-                            f"1 IPA sentence vs {len(cn_sentences)} Chinese sentences, "
-                            f"duplicating IPA."
+                        print_warning(
+                            "Duplicating IPA sentence",
+                            format_metadata_rows(
+                                [
+                                    ("Segment", seg_path.name),
+                                    ("Chinese sentences", str(len(cn_sentences))),
+                                    ("IPA sentences", "1"),
+                                ]
+                            ),
                         )
                     else:
-                        print(
-                            f"  ⚠ Segment {seg_path.name}: "
-                            f"{len(ipa_sentences)} IPA sentences vs {len(cn_sentences)} Chinese sentences, "
-                            f"will pair up to min length and discard extras."
-                        )
-
-                        # Detailed debug dump to help inspect mismatches, but only
-                        # for shorter segments to avoid flooding the logs.
+                        preview_rows: List[str | object] = []
                         if len(cn_sentences) <= 20 and len(ipa_sentences) <= 20:
-                            print("    Chinese sentences:")
-                            for idx, s in enumerate(cn_sentences):
-                                print(f"      CN[{idx}]: {s}")
-                            print("    IPA sentences:")
-                            for idx, s in enumerate(ipa_sentences):
-                                print(f"      IPA[{idx}]: {s}")
+                            for idx in range(max(len(cn_sentences), len(ipa_sentences))):
+                                zh_sentence = (
+                                    cn_sentences[idx] if idx < len(cn_sentences) else None
+                                )
+                                ipa_sentence = (
+                                    ipa_sentences[idx] if idx < len(ipa_sentences) else None
+                                )
+                                preview_rows.append(
+                                    format_preview_entry(
+                                        f"#{idx:02}",
+                                        "zh",
+                                        zh_sentence,
+                                        zh_sentence is None,
+                                    )
+                                )
+                                preview_rows.append(
+                                    format_preview_entry(
+                                        f"#{idx:02}",
+                                        "en",
+                                        ipa_sentence,
+                                        ipa_sentence is None or zh_sentence is None,
+                                    )
+                                )
+
+                        rows: List[str | object] = list(
+                            format_metadata_rows(
+                                [
+                                    ("Segment", seg_path.name),
+                                    ("Chinese sentences", str(len(cn_sentences))),
+                                    ("IPA sentences", str(len(ipa_sentences))),
+                                    (
+                                        "Action",
+                                        "Pairing to min length and discarding extras",
+                                    ),
+                                ]
+                            )
+                        )
+                        if preview_rows:
+                            rows.extend([INNER_DIVIDER, *preview_rows])
+                        print_warning("IPA sentence count mismatch", rows)
 
         # Map this segment's sentences onto chapter sentences
         ipa_index = 0  # index into ipa_sentences for this segment
         for local_idx, cn_sentence in enumerate(cn_sentences):
             if sent_index >= len(chapter_sentences):
-                print(
-                    f"  ⚠ Ran out of chapter sentences while processing {seg_path.name}; "
-                    f"remaining segment content will be ignored."
+                print_warning(
+                    "Ran out of canonical sentences",
+                    format_metadata_rows(
+                        [
+                            ("Segment", seg_path.name),
+                            ("Chapter ID", chapter_id),
+                            ("Sentence index", str(sent_index)),
+                        ]
+                    ),
                 )
                 break
 
@@ -726,11 +760,23 @@ def convert_chapter(
                     canonical_normalized not in cn_normalized
                     and cn_normalized not in canonical_normalized
                 ):
-                    print(
-                        f"  ⚠ Sentence mismatch in {seg_path.name} at chapter index {sent_index}:"
-                        f"\n     canonical: {canonical_source}"
-                        f"\n     segment:   {cn_sentence}"
+                    mismatch_rows: List[str | object] = list(
+                        format_metadata_rows(
+                            [
+                                ("Segment", seg_path.name),
+                                ("Chapter index", str(sent_index)),
+                                ("Sentence ID", str(sent_id)),
+                            ]
+                        )
                     )
+                    mismatch_rows.extend(
+                        [
+                            INNER_DIVIDER,
+                            f"canonical: {canonical_source}",
+                            f"segment:   {cn_sentence}",
+                        ]
+                    )
+                    print_warning("Sentence mismatch detected", mismatch_rows)
 
             if spans_multiple and ipa_sentences and ipa_index + 1 < len(ipa_sentences):
                 # Segment sentence spans two canonical sentences - consume two IPA sentences
@@ -805,7 +851,10 @@ def convert_chapter(
                 ipa_index += 1
 
     if not result:
-        print(f"  ⚠ No sentence-level transcripts produced for {chapter_id}.")
+        print_warning(
+            "No sentence-level transcripts produced",
+            format_metadata_rows([( "Chapter ID", chapter_id )]),
+        )
         return
 
     output_path = output_dir / f"{chapter_id}.sentences.json"
