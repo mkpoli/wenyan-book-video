@@ -2,9 +2,7 @@ import React from "react";
 import {
   AbsoluteFill,
   interpolate,
-  Sequence,
   useCurrentFrame,
-  useRemotionEnvironment,
 } from "remotion";
 import { convertCinixToTUPA } from "transcription-utils";
 

@@ -21,6 +21,7 @@ const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const FPS = 30;
 const AUDIO_TAIL_FRAMES = 12;
 const DEFAULT_AUDIO_DURATION_SECONDS = 3;
+const APPROX_SECONDS_PER_CHARACTER = 0.5;
 
 const isDebug = process.env.DEBUG_SEGMENTS === "1";
 const debugLog = (...args: unknown[]) => {
@@ -56,6 +57,13 @@ const getAudioDurationInSeconds = async (audioPath: string) => {
 // is not actually spoken.
 const countCharsExcludingQuotes = (text: string): number => {
   return text.replace(/[「」『』`\n\t 　]/g, "").length;
+};
+
+const estimateDurationFromCharCount = (charCount: number): number => {
+  if (!Number.isFinite(charCount) || charCount <= 0) {
+    return DEFAULT_AUDIO_DURATION_SECONDS;
+  }
+  return charCount * APPROX_SECONDS_PER_CHARACTER;
 };
 
 type SentenceSegment = {
@@ -398,17 +406,29 @@ const generateSegments = async () => {
         const femaleAudioFile = `audio-${id}-f.mp3`;
         const maleAudioPath = join(AUDIOS_DIR, audioFile);
         const femaleAudioPath = join(AUDIOS_FEMALE_DIR, femaleAudioFile);
+        const hasMaleAudio = existsSync(maleAudioPath);
         const hasFemaleAudio = existsSync(femaleAudioPath);
         const sourceAudioPath = hasFemaleAudio
           ? femaleAudioPath
-          : maleAudioPath;
+          : hasMaleAudio
+            ? maleAudioPath
+            : null;
         const publicAudioFile = hasFemaleAudio
           ? `female/${femaleAudioFile}`
-          : audioFile;
+          : hasMaleAudio
+            ? audioFile
+            : null;
 
-        if (!existsSync(sourceAudioPath)) {
-          debugLog(`Skipping ${id} (no matching audio).`);
-          return null;
+        if (!sourceAudioPath) {
+          lintWarnings.push({
+            chapter: Number(id.split("-")[0]) || 0,
+            segment: segmentIndex,
+            title: `⚠️  Missing narration audio for ${id}`,
+            rows: [
+              `Searched: ${toRendererRelative(maleAudioPath)}`,
+              `Female voice: ${toRendererRelative(femaleAudioPath)}`,
+            ],
+          });
         }
 
         const resources = loadChapterResources(chapterId);
@@ -479,6 +499,14 @@ const generateSegments = async () => {
           transcriptionLines.push(ipa);
         }
 
+        const perSentenceCharCounts = chineseTexts.map((sentence) => {
+          return countCharsExcludingQuotes(sentence);
+        });
+        const totalChars = perSentenceCharCounts.reduce(
+          (sum, count) => sum + count,
+          0,
+        );
+
         const text = isCodeBlock
           ? chineseTexts.join("")
           : chineseTexts.join("").trim();
@@ -488,18 +516,15 @@ const generateSegments = async () => {
           debugLog(`Using female voice for segment ${id}.`);
         }
 
-        const durationInSeconds =
-          await getAudioDurationInSeconds(sourceAudioPath);
+        const durationInSeconds = sourceAudioPath
+          ? await getAudioDurationInSeconds(sourceAudioPath)
+          : estimateDurationFromCharCount(totalChars);
         const durationInFrames =
           Math.ceil(durationInSeconds * FPS) + AUDIO_TAIL_FRAMES;
 
-        const totalChars = chineseTexts
-          .map((sentence) => countCharsExcludingQuotes(sentence))
-          .reduce((sum, count) => sum + count, 0);
-
         let assignedFrames = 0;
         const sentencesForOutput = chineseTexts.map((chSentence, index) => {
-          const charCount = countCharsExcludingQuotes(chSentence);
+          const charCount = perSentenceCharCounts[index];
           const isLast = index === chineseTexts.length - 1;
           const proportion =
             totalChars > 0
@@ -549,7 +574,7 @@ const generateSegments = async () => {
         return {
           id,
           text,
-          audioPath: `audios/${publicAudioFile}`,
+          audioPath: publicAudioFile ? `audios/${publicAudioFile}` : null,
           translation: translationBlock,
           isCodeBlock,
           sentences: sentencesForOutput,
