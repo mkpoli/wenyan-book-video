@@ -1,132 +1,123 @@
-import marimo
+from __future__ import annotations
 
-__generated_with = "0.17.7"
-app = marimo.App(width="medium")
+import time
+from pathlib import Path
+from typing import Dict
 
+import requests
 
-@app.cell
-def _():
-    import requests
-    import time
-    import json
-    from pathlib import Path
-
-    return Path, json, requests, time
+from processor.utils.cli_style import format_metadata_rows, print_warning
 
 
-@app.cell
-def _(Path):
-    transcripts_dir = Path("../renderer/public/transcripts")
-    audios_dir = Path("../renderer/public/audios")
+SYNTHESIZE_URL = "https://qieyun-tts.com/synthesize"
+MODEL_NAME = "廌言v1.1.1494"
+API_DELAY_SECONDS = 60
 
-    # Ensure audios directory exists
+CHAPTER_TITLES: Dict[int, str] = {
+    1: "明義第一",
+    2: "變數第二",
+    3: "算術第三",
+    4: "決策第四",
+    5: "循環第五",
+    6: "行列第六",
+    7: "言語第七",
+    8: "方術第八",
+    9: "府庫第九",
+    10: "格物第十",
+    11: "克禍第十一",
+    12: "圖畫第十二",
+    13: "宏略第十三",
+}
+
+
+def synthesize_titles(root: Path) -> None:
+    transcripts_dir = root / "renderer" / "public" / "transcripts"
+    audios_dir = root / "renderer" / "public" / "audios"
     audios_dir.mkdir(exist_ok=True)
 
-    # API settings
-    SYNTHESIZE_URL = "https://qieyun-tts.com/synthesize"
-    MODEL_NAME = "廌言v1.1.1494"
-    API_DELAY_SECONDS = 60  # Wait 1 minute between API calls
-
-    return (
-        API_DELAY_SECONDS,
-        MODEL_NAME,
-        SYNTHESIZE_URL,
-        audios_dir,
-        transcripts_dir,
-    )
-
-
-@app.cell
-def _(
-    API_DELAY_SECONDS,
-    MODEL_NAME,
-    SYNTHESIZE_URL,
-    audios_dir,
-    transcripts_dir,
-    time,
-    requests,
-    json,
-):
-    # Chapter titles mapping
-    CHAPTER_TITLES = {
-        1: "明義第一",
-        2: "變數第二",
-        3: "算術第三",
-        4: "決策第四",
-        5: "循環第五",
-        6: "行列第六",
-        7: "言語第七",
-        8: "方術第八",
-        9: "府庫第九",
-        10: "格物第十",
-        11: "克禍第十一",
-        12: "圖畫第十二",
-        13: "宏略第十三",
-    }
-
-    # Find all title transcript files (audio-{chapterNumber}.txt)
     transcript_files = []
-    for chapter_num in sorted(CHAPTER_TITLES.keys()):
-        transcript_filename = f"audio-{chapter_num}.txt"
-        transcript_path = transcripts_dir / transcript_filename
+    for chapter_num in sorted(CHAPTER_TITLES):
+        transcript_path = transcripts_dir / f"audio-{chapter_num}.txt"
         if transcript_path.exists():
             transcript_files.append((chapter_num, transcript_path))
         else:
-            print(f"⚠ Transcript not found: {transcript_filename}")
+            print_warning(
+                "Title transcript missing",
+                format_metadata_rows(
+                    [
+                        ("Chapter", str(chapter_num)),
+                        ("Transcript", transcript_path.as_posix()),
+                    ]
+                ),
+            )
+
+    if not transcript_files:
+        print_warning(
+            "No title transcripts found",
+            format_metadata_rows([("Directory", transcripts_dir.as_posix())]),
+        )
+        return
 
     print(f"Found {len(transcript_files)} title transcript files")
 
-    # Process each transcript
-    for chapter_num, transcript_file in transcript_files:
-        # Check if audio already exists
+    for idx, (chapter_num, transcript_file) in enumerate(transcript_files):
         audio_filename = f"audio-{chapter_num}.mp3"
         audio_path = audios_dir / audio_filename
-
         if audio_path.exists():
             print(f"✓ Audio already exists: {audio_filename}")
             continue
 
-        # Read IPA transcript
-        with open(transcript_file, "r", encoding="utf-8") as f:
-            ipa_text = f.read().strip()
-
+        ipa_text = transcript_file.read_text(encoding="utf-8").strip()
         title_text = CHAPTER_TITLES.get(chapter_num, "")
         print(f"Processing chapter {chapter_num} title: {title_text}")
-        print(f"  IPA: {ipa_text[:100]}...")
+        if not ipa_text:
+            print_warning(
+                "Empty IPA transcript",
+                format_metadata_rows(
+                    [
+                        ("Chapter", str(chapter_num)),
+                        ("Transcript", transcript_file.as_posix()),
+                    ]
+                ),
+            )
+            continue
 
-        # Call synthesis API
+        payload = {"text": ipa_text, "model_name": MODEL_NAME}
         headers = {
             "Content-Type": "application/json",
             "Referer": "https://qieyun-tts.com/home",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+            " AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
         }
 
-        payload = {"text": ipa_text, "model_name": MODEL_NAME}
-
         try:
-            api_response = requests.post(
+            response = requests.post(
                 SYNTHESIZE_URL, json=payload, headers=headers, timeout=120
             )
-            api_response.raise_for_status()
-
-            # Save audio file
-            with open(audio_path, "wb") as f:
-                f.write(api_response.content)
-
+            response.raise_for_status()
+            audio_path.write_bytes(response.content)
             print(f"✓ Successfully generated {audio_filename}")
-
-            # Wait before next API call (except for the last one)
-            if (chapter_num, transcript_file) != transcript_files[-1]:
+        except Exception as exc:  # noqa: BLE001
+            print_warning(
+                "Title synthesis failed",
+                format_metadata_rows(
+                    [
+                        ("Chapter", str(chapter_num)),
+                        ("Transcript", transcript_file.as_posix()),
+                        ("Error", str(exc)),
+                    ]
+                ),
+            )
+        finally:
+            if idx < len(transcript_files) - 1:
                 print(f"  Waiting {API_DELAY_SECONDS} seconds before next request...")
                 time.sleep(API_DELAY_SECONDS)
 
-        except Exception as e:
-            print(f"✗ Error processing {transcript_file.name}: {e}")
-            # Still wait to avoid rapid retries
-            if (chapter_num, transcript_file) != transcript_files[-1]:
-                time.sleep(API_DELAY_SECONDS)
-    return
+
+def main() -> None:
+    root = Path(__file__).resolve().parents[1]
+    synthesize_titles(root)
 
 
 if __name__ == "__main__":
-    app.run()
+    main()
