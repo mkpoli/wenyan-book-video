@@ -1,526 +1,383 @@
-import marimo
+import json
+import os
+import sys
+import time
+from pathlib import Path
+from typing import Dict, List, Tuple
 
-__generated_with = "0.17.7"
-app = marimo.App(width="medium")
+from dotenv import load_dotenv
+from openai import OpenAI
 
 
-@app.cell
-def _():
-    import json
-    import marimo as mo
-    import os
-    import time
-    import traceback
-    from pathlib import Path
-    from openai import OpenAI
-    from dotenv import load_dotenv
+MODEL_NAME = "gpt-5-nano"
+API_DELAY_SECONDS = 1.0  # Small delay between batches
+MAX_SENTENCES_PER_BATCH = 30
+MAX_CHARS_PER_BATCH = 2000
 
-    # Load environment variables
+
+TRANSLATION_PROMPT = """You are to translate Classical Chinese prose (especially technical or literary works such as guides for the Wenyan programming language) into refined, natural English without omitting classical nuance.
+
+Follow these formatting and stylistic rules carefully.
+
+## Translation Rules
+
+### Preserve Original Structure
+- Each 。 (full stop) in the original Chinese already marks one canonical sentence.
+- For this task, **each input Chinese sentence must map to exactly one English line**.
+- Do NOT merge or split sentences; keep 1:1 mapping between input sentences and output lines.
+- Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
+- Add proper English punctuation (period, comma, semicolon, colon, dash etc.) to the translation according to the context.
+
+### Maintain Classical Tone
+- Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
+- Avoid modern or casual diction.
+- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
+
+### No Omission or Summarization
+- Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
+- Preserve original meaning and sentence order exactly.
+
+### English Formatting
+- Each sentence begins on a new line.
+- Output plain text only inside the JSON values (no Markdown).
+- Keep all nested quotations and rhetorical questions intact.
+- Use typographical punctuation (— … “” ‘ ’) where natural.
+
+## Glossary (for meaning consistency, not literal word-for-word mapping)
+- “計開” → “Table of Contents”, “Let us unfold our explanation.”, “As follows,”, or “Let us begin.” depending on context.
+- “至此畧備矣” → “Thus it is now briefly complete.”
+- “書之” → “Write it down.”
+- “數” → “Numbers (numerals)”.
+- “言” → “Words (strings)”.
+- “爻” → “Yáo (booleans)”.
+- “列” → “Lists (arrays)”.
+- “物” → “Things (objects)”.
+- “術” → “Means (methods)”.
+- “甲” → “A”, “乙” → “B”, “丙” → “C”, etc.
+
+## Your Task
+
+You will receive multiple short Chinese sentences, each with a unique `id`.
+
+Return ONLY valid JSON of the form:
+
+  {{
+    "translations": [
+      {{"id": "<sentence-id>", "translation": "<English line>"}},
+      ...
+    ]
+  }}
+
+Rules for the JSON:
+- The `translations` array must contain one entry for every input sentence.
+- Each `translation` value must be a single line of English text for that sentence.
+- Do NOT include any comments or text outside the JSON.
+- Do NOT include trailing commas.
+
+Now translate the following sentences:
+
+{text}
+"""
+
+
+def _sort_chapter_sentences_file(path: Path) -> int:
+    """
+    Sort key for 'c1.sentences.json' -> 1, etc.
+    """
+    name = path.stem.split(".")[0]  # "c1"
+    num_str = name.lstrip("c")
+    return int(num_str) if num_str.isdigit() else 0
+
+
+def _sentence_sort_key(sent_id: str) -> int:
+    """
+    Sort key for sentence ids like 'c1-s245' -> 245.
+    """
+    if "-s" in sent_id:
+        try:
+            return int(sent_id.split("-s", 1)[1])
+        except ValueError:
+            return 0
+    return 0
+
+
+def _load_client() -> OpenAI:
     load_dotenv()
-    return OpenAI, Path, json, mo, os, time, traceback
-
-
-@app.cell
-def _(OpenAI, os):
-    # Initialize OpenAI client
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise ValueError(
-            "OPENAI_API_KEY environment variable not set. Please set it in your .env file or environment."
+            "OPENAI_API_KEY environment variable not set. "
+            "Please set it in your .env file or environment."
+        )
+    return OpenAI(api_key=api_key)
+
+
+def _prepare_translation_files(
+    sentences_dir: Path,
+    translations_dir: Path,
+) -> List[Tuple[Path, Path]]:
+    """
+    For each `cN.sentences.json`, ensure a corresponding
+    `cN.translations.json` exists, initialized with:
+
+      { "cN-sK": { "source": "...", "translation": "" }, ... }
+
+    Returns a list of (sentences_path, translations_path) pairs.
+    """
+    translations_dir.mkdir(exist_ok=True, parents=True)
+
+    chapter_pairs: List[Tuple[Path, Path]] = []
+
+    for sentences_path in sorted(
+        sentences_dir.glob("c*.sentences.json"), key=_sort_chapter_sentences_file
+    ):
+        chapter_id = sentences_path.stem.split(".")[0]  # "c1"
+        translations_path = translations_dir / f"{chapter_id}.translations.json"
+
+        if not translations_path.exists():
+            canon = json.loads(sentences_path.read_text(encoding="utf-8"))
+            init_data: Dict[str, Dict[str, str]] = {}
+
+            for s in canon.get("sentences", []):
+                sid = s.get("id")
+                src = s.get("source", "")
+                if not isinstance(sid, str) or not isinstance(src, str):
+                    continue
+                init_data[sid] = {"source": src, "translation": ""}
+
+            translations_path.write_text(
+                json.dumps(init_data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print(f"Created {translations_path}")
+
+        chapter_pairs.append((sentences_path, translations_path))
+
+    print(f"Prepared {len(chapter_pairs)} sentence translation files")
+    return chapter_pairs
+
+
+def _build_batches_for_chapter(
+    translations_data: Dict[str, Dict[str, str]],
+) -> List[List[str]]:
+    """
+    Build batches of sentence ids that are missing translation.
+    Batches are constrained by MAX_SENTENCES_PER_BATCH and MAX_CHARS_PER_BATCH.
+    """
+    missing_ids = [
+        sid
+        for sid in sorted(translations_data.keys(), key=_sentence_sort_key)
+        if not translations_data.get(sid, {}).get("translation", "").strip()
+    ]
+
+    batches: List[List[str]] = []
+    current: List[str] = []
+    current_chars = 0
+
+    for sid in missing_ids:
+        source = translations_data[sid].get("source", "")
+        length = len(source)
+
+        if current and (
+            len(current) >= MAX_SENTENCES_PER_BATCH
+            or current_chars + length > MAX_CHARS_PER_BATCH
+        ):
+            batches.append(current)
+            current = []
+            current_chars = 0
+
+        current.append(sid)
+        current_chars += length
+
+    if current:
+        batches.append(current)
+
+    return batches
+
+
+def _build_text_block_for_batch(
+    translations_data: Dict[str, Dict[str, str]],
+    batch_ids: List[str],
+) -> str:
+    """
+    Build the `{text}` payload inserted into TRANSLATION_PROMPT for one batch.
+    """
+    lines: List[str] = []
+    for idx, sid in enumerate(batch_ids, start=1):
+        source = translations_data[sid].get("source", "")
+        lines.append(f"SENTENCE {idx}: {sid}")
+        lines.append(source)
+        lines.append("")  # blank line between sentences
+    return "\n".join(lines).strip()
+
+
+def _call_translation_api(
+    client: OpenAI,
+    batch_ids: List[str],
+    translations_data: Dict[str, Dict[str, str]],
+) -> Dict[str, str]:
+    """
+    Call the model for one batch of sentence ids.
+    Returns a mapping {sent_id: translated_line}.
+    """
+    text_block = _build_text_block_for_batch(translations_data, batch_ids)
+    prompt = TRANSLATION_PROMPT.format(text=text_block)
+
+    print(f"  🤖 Translating {len(batch_ids)} sentence(s)...")
+
+    response = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are an expert translator specializing in Classical Chinese "
+                    "to English translation, particularly for technical and literary works."
+                ),
+            },
+            {"role": "user", "content": prompt},
+        ],
+    )
+
+    raw = (response.choices[0].message.content or "").strip()
+    print("  📦 Raw response preview:")
+    print(f"     {raw[:200]}..." if len(raw) > 200 else f"     {raw}")
+
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Failed to parse JSON from model response: {exc}") from exc
+
+    translations_list = payload.get("translations")
+    if not isinstance(translations_list, list):
+        raise RuntimeError(
+            "Model response JSON does not contain a 'translations' list."
         )
 
-    client = OpenAI(api_key=api_key)
-    MODEL_NAME = "gpt-5-nano"  # Using GPT-5 as requested
-    API_DELAY_SECONDS = 1  # Small delay to avoid rate limits
-    return API_DELAY_SECONDS, MODEL_NAME, client
+    result: Dict[str, str] = {}
+    for entry in translations_list:
+        if not isinstance(entry, dict):
+            continue
+        sid = entry.get("id")
+        t = entry.get("translation")
+        if isinstance(sid, str) and isinstance(t, str):
+            result[sid] = t.strip()
+
+    missing = [sid for sid in batch_ids if sid not in result]
+    if missing:
+        raise RuntimeError(
+            f"Missing translations for sentence(s): {', '.join(missing)}"
+        )
+
+    return result
 
 
-@app.cell
-def _():
-    # Translation prompt template
-    TRANSLATION_PROMPT = """You are to translate Classical Chinese prose (especially technical or literary works such as guides for the Wenyan programming language) into refined, natural English without omitting classical nuance.
-
-    Follow these formatting and stylistic rules carefully.
-
-    ## Translation Rules
-
-    ### Preserve Original Format
-    - Each 。 (full stop) in the original Chinese marks a new line in the translation, including "A者。B也。" (A is B, translate it as "A —\nB"). 
-    - Keep the line structure exactly; DO NOT merge sentences into paragraphs.
-    - Retain quotation marks (「」『』) and render them faithfully using English typographical quotes (“”).
-    - Add proper English punctuation (period, comma, semicolon, colon, dash etc.) to the translation according to the context.
-
-    ### Maintain Classical Tone
-    - Use dignified, reflective, and occasionally poetic phrasing suitable for a didactic text.
-    - Avoid modern or casual diction.
-    - Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry of Classical Chinese.
-
-    ### No Omission or Summarization
-    - Every clause and metaphor must appear in the translation, even if slightly paraphrased for clarity.
-    - Preserve original meaning and sentence order exactly.
-
-    ### English Formatting
-    - Each sentence begins on a new line.
-    - Output plain text only (no Markdown, no formatting symbols).
-    - Keep all nested quotations and rhetorical questions intact.
-    - Use typographical punctuation (— … “” ‘ ’) to evoke a classical style.
-
-    ## Glossary
-    - “計開” means “Table of Contents”, is used as a marker to start a list of contents, can be translated as “Let’s unfold our explanation.” or "As follows," or "Let's begin." by context.
-    - “至此畧備矣” means “Thus it is now briefly complete.”.
-    ### Classes
-    - “書之” means “Write it down.”.
-
-    - “數” -> “Numbers (numerals)”.
-    - “言” -> “Words (strings)”.
-    - “爻” -> “Yáo (booleans)”.
-    - “列” -> “Lists (arrays)”.
-    - “物” -> “Things (objects)”.
-    - “術” -> “Means (methods)”.
-
-    ### Variable Names
-    - “甲” -> “A”.
-    - “乙” -> “B”.
-    - “丙” -> “C”.
-    - etc.
-
-    ## Examples
-
-    ### Example 1
-    Input:
-    易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
-
-    Output:
-    The Book of Changes says,
-    “Transformation —
-    is the image of advance and retreat.”
-
-    Now, in programming,
-    nothing is without variables as its foundation.
-
-    “What is a variable?”
-    “It is a name assigned to a thing.”
-
-    ### Example 2
-    Input:
-    編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
-
-    Output:
-    What is programming? That by which one commands machines.
-    What is a machine? That by which human labor is replaced.
-    Yet the power of machines is vast,
-    their calculations swift,
-    but their wisdom does not reach that of man.
-
-    Therefore, the wise plan with care and foresight.
-    They set down a thousand words,
-    as if issuing military orders,
-    as if prescribing medicine —
-    this is called a program.
-
-    Once the machine comprehends it,
-    it can then be made to serve mankind —
-    to chart the movements of the stars,
-    or to analyze the patterns of reason.
-
-    ## Your Turn
-    Now translate the following Classical Chinese text:
-
-    {text}
-
-    With the following context:
-
-    Before:
-    {before_context}
-
-    After:
-    {after_context}
+def _translate_chapter(
+    client: OpenAI,
+    sentences_path: Path,
+    translations_path: Path,
+) -> None:
     """
-    return (TRANSLATION_PROMPT,)
+    Translate all missing sentences in one chapter's translations file.
+    """
+    chapter_id = sentences_path.stem.split(".")[0]  # "c1"
+    print("\n" + "=" * 80)
+    print(f"Translating sentence file: {chapter_id}")
+    print("=" * 80)
 
+    translations_data: Dict[str, Dict[str, str]] = json.loads(
+        translations_path.read_text(encoding="utf-8")
+    )
 
-@app.cell
-def _(Path):
-    segments_dir = Path("../renderer/public/segments").resolve()
-    translations_dir = Path("../renderer/public/translations").resolve()
+    batches = _build_batches_for_chapter(translations_data)
+    if not batches:
+        print("  ✓ No missing translations; nothing to do.")
+        return
 
-    # Ensure translations directory exists
-    translations_dir.mkdir(exist_ok=True)
+    print(
+        f"  Found {sum(len(b) for b in batches)} missing sentence(s) "
+        f"in {len(batches)} batch(es)."
+    )
 
-    # Debug: print resolved paths
-    print(f"Segments directory: {segments_dir}")
-    print(f"Translations directory: {translations_dir}")
-    print(f"Translations directory exists: {translations_dir.exists()}")
-    return segments_dir, translations_dir
+    changed = False
 
-
-@app.cell
-def _(segments_dir, translations_dir):
-    # Maximum number of files to process per run (safety limit)
-    # Can be overridden via command-line argument:
-    #   python translate.py 5
-    # will process at most 5 files in this run.
-    import sys
-
-    MAX_FILES_PER_RUN = 10
-    if len(sys.argv) > 1:
-        try:
-            MAX_FILES_PER_RUN = int(sys.argv[1])
-        except ValueError:
-            print(
-                f"Invalid MAX_FILES_PER_RUN value '{sys.argv[1]}'; "
-                "falling back to default of 10."
-            )
-
-    # Find all segment files
-    # Sort naturally by extracting chapter and segment numbers
-    def sort_key(path):
-        # Extract numbers from filename like "1-2.txt" -> (1, 2)
-        name = path.stem  # "1-2"
-        parts = name.split("-")  # ["1", "2"]
-        return (int(parts[0]), int(parts[1]))  # (chapter, segment)
-
-    all_segment_files = sorted(segments_dir.glob("*.txt"), key=sort_key)
-
-    # Filter to only files that don't have translations yet
-    segment_files_to_process = []
-    for segment_file in all_segment_files:
-        translation_filename = f"{segment_file.stem}.txt"
-        translation_path = translations_dir / translation_filename
-        if not translation_path.exists():
-            segment_files_to_process.append(segment_file)
-
-    # Limit to MAX_FILES_PER_RUN
-    segment_files = segment_files_to_process[:MAX_FILES_PER_RUN]
-
-    print(f"Found {len(all_segment_files)} total segment files")
-    print(f"Found {len(segment_files_to_process)} files without translations")
-    print(f"Processing {len(segment_files)} files (limit: {MAX_FILES_PER_RUN} per run)")
-    if segment_files:
-        print(f"Files to process (in order): {[f.name for f in segment_files]}")
-    return all_segment_files, segment_files
-
-
-@app.cell
-def _(
-    API_DELAY_SECONDS,
-    MODEL_NAME,
-    TRANSLATION_PROMPT,
-    all_segment_files,
-    client,
-    json,
-    mo,
-    segments_dir,
-    time,
-    traceback,
-    translations_dir,
-):
-    def get_context(seg_file, all_segment_files, segments_dir, translations_dir):
-        """Get context from previous and next segment files."""
-        # Find current segment index
-        current_idx = None
-        for idx, f in enumerate(all_segment_files):
-            if f.stem == seg_file.stem:
-                current_idx = idx
+    try:
+        for batch_idx, batch_ids in enumerate(batches, start=1):
+            print(f"\n  Batch {batch_idx}/{len(batches)}: {len(batch_ids)} sentence(s)")
+            try:
+                batch_translations = _call_translation_api(
+                    client, batch_ids, translations_data
+                )
+            except Exception as exc:
+                print(f"  ❌ Error translating batch {batch_idx}: {exc}")
+                # Save partial progress before breaking
+                if changed:
+                    translations_path.write_text(
+                        json.dumps(translations_data, ensure_ascii=False, indent=2)
+                        + "\n",
+                        encoding="utf-8",
+                    )
+                    print(f"  ✓ Saved partial progress: {translations_path.name}")
                 break
 
-        before_context = ""
-        after_context = ""
+            for sid, eng in batch_translations.items():
+                entry = translations_data.get(sid) or {}
+                entry["translation"] = eng
+                translations_data[sid] = entry
+                preview = eng[:60] + ("..." if len(eng) > 60 else "")
+                print(f"    💾 {sid}: {preview}")
+                changed = True
 
-        # Get previous segment context
-        if current_idx is not None and current_idx > 0:
-            prev_file = all_segment_files[current_idx - 1]
-            prev_trans_path = translations_dir / f"{prev_file.stem}.txt"
-
-            if prev_trans_path.exists():
-                # Use translation if available
-                with open(prev_trans_path, "r", encoding="utf-8") as f:
-                    before_context = f.read().strip()
-                print(f"  📖 Context (before): Using translation from {prev_file.name}")
-                print(
-                    f"     Preview: {before_context[:80]}..."
-                    if len(before_context) > 80
-                    else f"     Content: {before_context}"
+            # Save after each batch so progress isn't lost on interruption
+            if changed:
+                translations_path.write_text(
+                    json.dumps(translations_data, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
                 )
-            else:
-                # Fall back to Chinese text
-                with open(prev_file, "r", encoding="utf-8") as f:
-                    before_context = f.read().strip()
-                print(
-                    f"  📖 Context (before): Using Chinese text from {prev_file.name}"
-                )
-                print(
-                    f"     Preview: {before_context[:80]}..."
-                    if len(before_context) > 80
-                    else f"     Content: {before_context}"
-                )
-        else:
-            print("  📖 Context (before): No previous segment (first segment)")
+                print(f"  ✓ Saved progress after batch {batch_idx}")
 
-        # Get next segment context
-        if current_idx is not None and current_idx < len(all_segment_files) - 1:
-            next_file = all_segment_files[current_idx + 1]
-            next_trans_path = translations_dir / f"{next_file.stem}.txt"
-
-            if next_trans_path.exists():
-                # Use translation if available
-                with open(next_trans_path, "r", encoding="utf-8") as f:
-                    after_context = f.read().strip()
-                print(f"  📖 Context (after): Using translation from {next_file.name}")
-                print(
-                    f"     Preview: {after_context[:80]}..."
-                    if len(after_context) > 80
-                    else f"     Content: {after_context}"
-                )
-            else:
-                # Fall back to Chinese text
-                with open(next_file, "r", encoding="utf-8") as f:
-                    after_context = f.read().strip()
-                print(f"  📖 Context (after): Using Chinese text from {next_file.name}")
-                print(
-                    f"     Preview: {after_context[:80]}..."
-                    if len(after_context) > 80
-                    else f"     Content: {after_context}"
-                )
-        else:
-            print("  📖 Context (after): No next segment (last segment)")
-
-        return before_context, after_context
-
-    def process_segments(segment_files):
-        """Process segment files and generate translations."""
-        if not segment_files:
-            print("No files to process. All segments already have translations.")
-            return
-
-        batch_items = []
-
-        for idx, seg_file in enumerate(
-            mo.status.progress_bar(
-                segment_files,
-                title="Preparing segments",
-                subtitle=f"Gathering {len(segment_files)} file(s)",
-                show_rate=True,
-                show_eta=True,
-            ),
-            1,
-        ):
-            trans_filename = f"{seg_file.stem}.txt"
-            trans_path = translations_dir / trans_filename
-
-            if trans_path.exists():
-                print(f"⏭ Skipping {seg_file.name}: translation already exists")
-                continue
-
-            with open(seg_file, "r", encoding="utf-8") as f:
-                chinese_text = f.read().strip()
-
-            if not chinese_text:
-                print(f"⚠ Skipping {seg_file.name}: empty file")
-                continue
-
-            print(f"\n{'='*70}")
-            print(f"[{idx}/{len(segment_files)}] Preparing {seg_file.name}...")
-            print(f"{'='*70}")
-            print(f"  📝 Chinese text ({len(chinese_text)} chars):")
-            print(
-                f"     {chinese_text[:100]}..."
-                if len(chinese_text) > 100
-                else f"     {chinese_text}"
-            )
-
-            before_context, after_context = get_context(
-                seg_file, all_segment_files, segments_dir, translations_dir
-            )
-
-            before_ctx_display = (
-                before_context if before_context else "(This is the first segment.)"
-            )
-            after_ctx_display = (
-                after_context if after_context else "(This is the last segment.)"
-            )
-
-            batch_items.append(
-                {
-                    "seg_file": seg_file,
-                    "trans_filename": trans_filename,
-                    "trans_path": trans_path,
-                    "chinese_text": chinese_text,
-                    "before_ctx_display": before_ctx_display,
-                    "after_ctx_display": after_ctx_display,
-                }
-            )
-
-        if not batch_items:
-            print("No eligible segment files to process in this batch.")
-            return
-
-        combined_chinese_chars = sum(len(item["chinese_text"]) for item in batch_items)
-
-        intro_instructions = (
-            "You will now translate multiple Classical Chinese segments in a single response. "
-            "Apply all translation rules above to each segment independently. "
-            "Return ONLY valid JSON of the form "
-            '{"translations":[{"segment":"<segment-stem>","lines":["Line 1","Line 2",...]}, ...]}. '
-            "Each entry in `lines` must be one sentence per line in the correct order. "
-            "Do not include any commentary outside the JSON."
-        )
-
-        segment_blocks = []
-        for position, item in enumerate(batch_items, 1):
-            segment_blocks.append(
-                f"""SEGMENT {position}: {item['seg_file'].stem}
-    Chinese Text:
-    {item['chinese_text']}
-
-    Before Context:
-    {item['before_ctx_display']}
-
-    After Context:
-    {item['after_ctx_display']}"""
-            )
-
-        text_block = "\n\n".join([intro_instructions, *segment_blocks])
-
-        prompt = TRANSLATION_PROMPT.format(
-            text=text_block,
-            before_context="(Context provided for each segment below.)",
-            after_context="(Context provided for each segment below.)",
-        )
-
-        print(f"\n{'='*70}")
-        print(
-            "Translating batch: "
-            + ", ".join(item["seg_file"].name for item in batch_items)
-        )
-        print(f"{'='*70}")
-        print("  📊 Prompt statistics:")
-        print(f"     - Combined Chinese text: {combined_chinese_chars} chars")
-        print(f"     - Intro/context block: {len(intro_instructions)} chars")
-        print(f"     - Total prompt: {len(prompt)} chars")
-        print(f"  🤖 Calling API ({MODEL_NAME}) for batch of {len(batch_items)}...")
-
-        try:
-            api_start_time = time.time()
-            response = client.chat.completions.create(
-                model=MODEL_NAME,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are an expert translator specializing in Classical Chinese "
-                            "to English translation, particularly for technical and literary works."
-                        ),
-                    },
-                    {"role": "user", "content": prompt},
-                ],
-            )
-            api_duration = time.time() - api_start_time
-
-            raw_translation_payload = response.choices[0].message.content.strip()
-
-            usage_info = ""
-            if hasattr(response, "usage"):
-                usage = response.usage
-                usage_info = (
-                    f" (tokens: {usage.total_tokens} total, "
-                    f"{usage.prompt_tokens} prompt, {usage.completion_tokens} completion)"
-                )
-
-            print(f"  ✅ API response received in {api_duration:.2f}s{usage_info}")
-            print("  📦 Raw response preview:")
-            print(
-                f"     {raw_translation_payload[:200]}..."
-                if len(raw_translation_payload) > 200
-                else f"     {raw_translation_payload}"
-            )
-
-            try:
-                parsed_payload = json.loads(raw_translation_payload)
-            except json.JSONDecodeError as json_error:
-                print("  ❌ Failed to parse JSON from model response.")
-                print(f"     Error: {json_error}")
-                raise
-
-            translations_list = parsed_payload.get("translations")
-            if not isinstance(translations_list, list):
-                raise ValueError(
-                    "Model response JSON does not contain a 'translations' list."
-                )
-
-            translations_by_segment = {}
-            for entry in translations_list:
-                if not isinstance(entry, dict):
-                    continue
-                segment_id = entry.get("segment")
-                lines = entry.get("lines")
-                if isinstance(segment_id, str):
-                    translations_by_segment[segment_id] = lines
-
-            missing_segments = [
-                item["seg_file"].stem
-                for item in batch_items
-                if item["seg_file"].stem not in translations_by_segment
-            ]
-            if missing_segments:
-                raise ValueError(
-                    f"Missing translations for segment(s): {', '.join(missing_segments)}"
-                )
-
-            for item in batch_items:
-                segment_id = item["seg_file"].stem
-                lines = translations_by_segment[segment_id]
-
-                if isinstance(lines, list):
-                    normalized_lines = [
-                        str(line).strip() for line in lines if str(line).strip()
-                    ]
-                    translation_text = "\n".join(normalized_lines)
-                elif isinstance(lines, str):
-                    translation_text = lines.strip()
-                else:
-                    raise ValueError(
-                        f"Unexpected format for translation lines in segment {segment_id}"
-                    )
-
-                if not translation_text:
-                    raise ValueError(
-                        f"Empty translation received for segment {segment_id}"
-                    )
-
-                with open(item["trans_path"], "w", encoding="utf-8") as f:
-                    f.write(translation_text)
-
-                print(f"  💾 Saved translation to: {item['trans_filename']}")
-                print(
-                    f"     File size: {len(translation_text)} chars, "
-                    f"{len(translation_text.splitlines())} lines"
-                )
-
-            print(f"  ⏳ Waiting {API_DELAY_SECONDS}s before finishing batch...")
+            print(f"  ⏳ Waiting {API_DELAY_SECONDS:.1f}s before next batch...")
             time.sleep(API_DELAY_SECONDS)
+    except KeyboardInterrupt:
+        # User interrupted (Ctrl+C); save what we have
+        if changed:
+            translations_path.write_text(
+                json.dumps(translations_data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print(f"\n  ✓ Saved partial progress before exit: {translations_path.name}")
+        print("\n  ↯ Interrupted by user; stopping translation.")
+        raise SystemExit(0)
 
-        except Exception as e:
-            print("  ❌ Error translating batch:")
-            print(f"     {e}")
-            print("  📋 Error details:")
-            traceback.print_exc()
-            return
-
-        print(f"\n{'='*70}")
-        print(f"✅ Completed processing {len(batch_items)} file(s) in batch")
-        print(f"{'='*70}")
-        print("💡 Tip: Run again to process more segments if any remain.")
-
-    return (process_segments,)
+    if changed:
+        print(f"\n  ✓ Completed all batches for {translations_path.name}")
+    else:
+        print("\n  ✓ No changes made for this chapter.")
 
 
-@app.cell
-def _(process_segments, segment_files):
-    # Process each segment (already limited to MAX_FILES_PER_RUN)
-    process_segments(segment_files)
-    return
+def main() -> None:
+    root = Path(__file__).resolve().parents[1]  # processor/ -> project root
+    sentences_dir = (root / "renderer" / "public" / "sentences").resolve()
+    translations_dir = (root / "renderer" / "public" / "translations").resolve()
+
+    if not sentences_dir.exists():
+        raise SystemExit(f"Sentences directory not found: {sentences_dir}")
+
+    client = _load_client()
+    chapter_pairs = _prepare_translation_files(sentences_dir, translations_dir)
+
+    wanted: List[str] = []
+    if len(sys.argv) > 1:
+        wanted = list(sys.argv[1:])
+
+    for sentences_path, translations_path in chapter_pairs:
+        chapter_id = sentences_path.stem.split(".")[0]  # "c1"
+        if wanted and chapter_id not in wanted:
+            continue
+        _translate_chapter(client, sentences_path, translations_path)
+
+    print("\nAll done.")
 
 
 if __name__ == "__main__":
-    app.run()
+    main()
