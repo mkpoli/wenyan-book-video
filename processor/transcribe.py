@@ -484,21 +484,27 @@ def _(CHAR_REPLACEMENTS, Path, os, re, requests):
         if CURRENT_SENTENCE_CONTEXT is not None:
             prev_source, next_source = CURRENT_SENTENCE_CONTEXT
 
-        before_parts: list[str] = []
-        after_parts: list[str] = []
+        # Convert normalized sentence delimiters back to fullwidth Chinese
+        # stops for display.
+        before_core = before_core.replace(".", "。")
+        after_core = after_core.replace(".", "。")
 
-        if prev_source:
-            before_parts.append(prev_source.rstrip("。").strip())
+        # Build before_context: <prev_sentence>。<before_core>
+        before_context = ""
+        prev_trimmed = prev_source.rstrip("。").strip() if prev_source else ""
+        if prev_trimmed:
+            before_context += prev_trimmed
         if before_core:
-            before_parts.append(before_core)
+            if prev_trimmed:
+                before_context += "。"
+            before_context += before_core
 
+        # Build after_context: <after_core><next_sentence>
+        after_context = ""
         if after_core:
-            after_parts.append(after_core)
+            after_context += after_core
         if next_source:
-            after_parts.append(next_source.lstrip("。").strip())
-
-        before_context = "。".join(p for p in before_parts if p)
-        after_context = "。".join(p for p in after_parts if p)
+            after_context += next_source
 
         # Fallback for the very first/last sentences where we may have no
         # surrounding context and very short local text.
