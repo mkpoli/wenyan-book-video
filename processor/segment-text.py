@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import argparse
 import json
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -475,7 +477,21 @@ def write_chapter_segments_json(
     return output_path
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    if argv is None:
+        argv = sys.argv[1:]
+
+    parser = argparse.ArgumentParser(description="Generate renderer segments JSON.")
+    parser.add_argument(
+        "chapter_number",
+        nargs="?",
+        type=int,
+        help="Only process the specified chapter number (e.g., 5 for c5).",
+    )
+    args = parser.parse_args(argv)
+
+    target_chapter = args.chapter_number
+
     root = Path(__file__).resolve().parents[1]
     chapters_dir = root / "renderer" / "public" / "chapters"
     sentences_dir = root / "renderer" / "public" / "sentences"
@@ -486,6 +502,15 @@ def main() -> None:
     )
     if not chapter_files:
         raise SystemExit(f"No chapter JSON files found in {chapters_dir}")
+
+    if target_chapter is not None:
+        chapter_files = [
+            p for p in chapter_files if int(p.stem.lstrip("c")) == target_chapter
+        ]
+        if not chapter_files:
+            raise SystemExit(
+                f"Could not find chapter JSON for chapter {target_chapter} in {chapters_dir}"
+            )
 
     total_segments = 0
 
