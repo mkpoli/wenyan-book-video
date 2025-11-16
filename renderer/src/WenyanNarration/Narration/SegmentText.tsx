@@ -156,7 +156,11 @@ function renderUnderscoreItalics(text: string): React.ReactNode {
     if (match.index > lastIndex) {
       segments.push(text.slice(lastIndex, match.index));
     }
-    segments.push(<em key={`italic-${match.index}`}>{match[1]}</em>);
+    segments.push(
+      <em key={`italic-${match.index}`} className="ml-4">
+        {match[1]}
+      </em>,
+    );
     lastIndex = italicPattern.lastIndex;
   }
 
