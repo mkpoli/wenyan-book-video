@@ -18,6 +18,7 @@ const SEGMENTS_JSON_DIR = join(rendererDir, "public", "segments");
 const SENTENCES_JSON_DIR = join(rendererDir, "public", "sentences");
 const TRANSLATIONS_DIR = join(rendererDir, "public", "translations");
 const TRANSCRIPTIONS_DIR = join(rendererDir, "public", "transcripts");
+const CHAPTERS_DIR = join(rendererDir, "public", "chapters");
 const GENERATED_DIR = join(rendererDir, "src", "generated");
 const GENERATED_SEGMENTS_FILE = join(GENERATED_DIR, "segments.ts");
 const FPS = 30;
@@ -73,6 +74,7 @@ type SentenceSegment = {
   segmentIndex: number;
   sentenceIds: string[];
   isCodeBlock: boolean;
+  isListItem?: boolean;
 };
 
 type ChapterSegmentsFile = {
@@ -83,8 +85,11 @@ type ChapterSegmentsFile = {
 
 type SentenceJsonEntry = {
   id: string;
+  chapterId?: string;
+  blockId?: string | null;
   source: string;
   isCode: boolean;
+  isListItem?: boolean;
 };
 
 type SentencesFile = {
@@ -99,13 +104,28 @@ type TranscriptionEntry = {
   ipa?: string | null;
 };
 
+type ChapterBlockEntry = {
+  id?: string | null;
+  type?: string | null;
+};
+
+type ChapterJson = {
+  id?: string;
+  number?: number;
+  blocks?: ChapterBlockEntry[];
+};
+
 type ChapterResources = {
   sentences: Map<string, SentenceJsonEntry>;
   translations: Map<string, string | null>;
   transcriptions: Map<string, string | null>;
+  blockTypes: Map<string, string | null>;
 };
 
-const chapterResourcesCache = new Map<string, ChapterResources | null>();
+const chapterResourcesCache = new Map<
+  string,
+  ChapterResources | null
+>();
 
 const readJsonFile = <T>(filePath: string): T | null => {
   if (!existsSync(filePath)) {
@@ -174,6 +194,10 @@ const loadSentenceSegmentsIndex = (): SentenceSegment[] => {
       }
 
       const segmentIndex = Number(segment.segmentIndex);
+      const listFlag =
+        typeof segment.isListItem === "boolean"
+          ? segment.isListItem
+          : undefined;
 
       records.push({
         id: segment.id,
@@ -181,6 +205,7 @@ const loadSentenceSegmentsIndex = (): SentenceSegment[] => {
         segmentIndex: Number.isFinite(segmentIndex) ? segmentIndex : index + 1,
         sentenceIds,
         isCodeBlock: Boolean(segment.isCodeBlock),
+        isListItem: listFlag,
       });
     });
   }
@@ -311,10 +336,26 @@ const loadChapterResources = (chapterId: string): ChapterResources | null => {
     );
   }
 
+  const blockTypes = new Map<string, string | null>();
+  const chapterMetaPath = join(CHAPTERS_DIR, `${chapterId}.json`);
+  const chapterMeta = readJsonFile<ChapterJson>(chapterMetaPath);
+  if (chapterMeta?.blocks && Array.isArray(chapterMeta.blocks)) {
+    chapterMeta.blocks.forEach((block) => {
+      if (block?.id) {
+        blockTypes.set(block.id, block.type ?? null);
+      }
+    });
+  } else {
+    console.warn(
+      `[segments] Missing chapter metadata or blocks for ${chapterId} at ${toRendererRelative(chapterMetaPath)}`,
+    );
+  }
+
   const resources: ChapterResources = {
     sentences,
     translations,
     transcriptions,
+    blockTypes,
   };
   chapterResourcesCache.set(chapterId, resources);
   return resources;
@@ -385,6 +426,36 @@ const logLintWarning = (title: string, rows: string[]) => {
   console.warn(formatLintBlock(title, rows));
 };
 
+const resolveIsListItemFlag = (
+  segmentDef: SentenceSegment,
+  sentenceIds: readonly string[],
+  sentences: Map<string, SentenceJsonEntry>,
+  blockTypes: Map<string, string | null>,
+): boolean => {
+  if (typeof segmentDef.isListItem === "boolean") {
+    return segmentDef.isListItem;
+  }
+
+  for (const sentenceId of sentenceIds) {
+    const sentenceEntry = sentences.get(sentenceId);
+    if (typeof sentenceEntry?.isListItem === "boolean") {
+      return sentenceEntry.isListItem;
+    }
+  }
+
+  for (const sentenceId of sentenceIds) {
+    const sentenceEntry = sentences.get(sentenceId);
+    if (!sentenceEntry?.blockId) {
+      continue;
+    }
+    if (blockTypes.get(sentenceEntry.blockId) === "list") {
+      return true;
+    }
+  }
+
+  return false;
+};
+
 const generateSegments = async () => {
   const lintWarnings: Array<{
     chapter: number;
@@ -410,8 +481,13 @@ const generateSegments = async () => {
   const entries = (
     await Promise.all(
       segmentsToProcess.map(async (segmentDef) => {
-        const { id, chapterId, sentenceIds, isCodeBlock, segmentIndex } =
-          segmentDef;
+        const {
+          id,
+          chapterId,
+          sentenceIds,
+          isCodeBlock,
+          segmentIndex,
+        } = segmentDef;
         const audioFile = `audio-${id}.mp3`;
         const femaleAudioFile = `audio-${id}-f.mp3`;
         const maleAudioPath = join(AUDIOS_DIR, audioFile);
@@ -465,7 +541,8 @@ const generateSegments = async () => {
           return null;
         }
 
-        const { sentences, translations, transcriptions } = resources;
+        const { sentences, translations, transcriptions, blockTypes } =
+          resources;
         const missingChinese: string[] = [];
         const missingTranslations: string[] = [];
         const missingTranscriptions: string[] = [];
@@ -574,12 +651,20 @@ const generateSegments = async () => {
         warnRows("translations", missingTranslations);
         warnRows("transcriptions", missingTranscriptions);
 
+        const isListItem = resolveIsListItemFlag(
+          segmentDef,
+          sentenceIds,
+          sentences,
+          blockTypes,
+        );
+
         return {
           id,
           text,
           audioPath: publicAudioFile ? `audios/${publicAudioFile}` : null,
           translation: translationBlock,
           isCodeBlock,
+          isListItem,
           sentences: sentencesForOutput,
           durationInFrames,
         };
