@@ -145,8 +145,9 @@ def split_sentences(text: str) -> List[str]:
     """
     Split text into sentences ending with '。'.
 
-    This matches the logic in `segment-text.py` so that segmentation
-    stays compatible.
+    Sentences ending with '。' are included with the period appended.
+    Trailing fragments that don't end with '。' are also included
+    (e.g., "運行之。乃得" -> ["運行之。", "乃得"]).
     """
     # Fast path: no backticks, use simple splitting to preserve legacy behavior.
     if "`" not in text:
@@ -162,10 +163,13 @@ def split_sentences(text: str) -> List[str]:
                 sentences.append(part + "。")
             elif text.endswith("。"):
                 sentences.append(part + "。")
-            # If text doesn't end with '。', skip the trailing fragment.
+            else:
+                # Include trailing fragment even if it doesn't end with '。'
+                # (e.g., "運行之。乃得" -> ["運行之。", "乃得"])
+                sentences.append(part)
 
-        # Ensure only sentences that actually end with '。'
-        return [s for s in sentences if s and s.endswith("。")]
+        # Return all sentences (those ending with '。' and any trailing fragment)
+        return [s for s in sentences if s]
 
     # Backtick-aware path: never break *inside* paired backticks.
     # We treat inline code spans as atomic units, but allow them to
@@ -235,10 +239,11 @@ def split_sentences(text: str) -> List[str]:
             if buf:
                 current_parts.append("".join(buf))
 
-    # Add any remaining text as the last sentence, but only if it ends
-    # with '。' to stay consistent with previous behavior for tails.
+    # Add any remaining text as the last sentence.
+    # Include trailing fragments even if they don't end with '。'
+    # (e.g., "運行之。乃得" -> ["運行之。", "乃得"])
     tail = "".join(current_parts).strip()
-    if tail and tail.endswith("。"):
+    if tail:
         sentences.append(tail)
 
     # For the backtick-aware path, we've already enforced sentence
