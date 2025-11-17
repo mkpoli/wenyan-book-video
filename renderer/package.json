@@ -35,7 +35,7 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "generate-segments": "bun run scripts/generate-segments.ts",
-    "watch:segments": "chokidar \"public/sentences/**/*.json\" \"public/translations/**/*.json\" \"public/transcripts/**/*.json\" \"public/audios/**/*.mp3\" \"public/segments/**/*.segments.json\" -c \"bun run scripts/generate-segments.ts\"",
+    "watch:segments": "bun run generate-segments && chokidar \"public/sentences/**/*.json\" \"public/translations/**/*.json\" \"public/transcripts/**/*.json\" \"public/audios/**/*.mp3\" \"public/segments/**/*.segments.json\" -c \"bun run scripts/generate-segments.ts\"",
     "render:chapter": "bun run scripts/render-chapter.ts",
     "render:outro": "remotion render Outro --props '{ \"chapterNumber\": 1 }' out/outro.mp4",
     "render:chapter1": "bun run render:chapter -- 1",
