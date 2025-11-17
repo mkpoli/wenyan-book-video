@@ -3166,9 +3166,14 @@
     ]
   },
   "c1-s171": {
+    "source": "乃得",
+    "ipa": "nə́j tək .",
+    "tupa": "neojq teok"
+  },
+  "c1-s172": {
     "source": "問天地好在。",
-    "ipa": "nə́j tək mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
-    "tupa": "neojq teok munh then dih hawq dzeojq",
+    "ipa": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
+    "tupa": "munh then dih hawq dzeojq",
     "choices": [
       {
         "char": "好",
@@ -3185,29 +3190,6 @@
         "sameCharIndex": 0,
         "ipa": "dǐː",
         "tupa": "dih"
-      }
-    ]
-  },
-  "c1-s172": {
-    "source": "\n問天地好在。",
-    "ipa": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
-    "tupa": "munh then dih hawq dzeojq",
-    "choices": [
-      {
-        "char": "好",
-        "indexInSource": 4,
-        "indexAmongChinese": 3,
-        "sameCharIndex": 0,
-        "ipa": "hɑ́w",
-        "tupa": "hawq"
-      },
-      {
-        "char": "在",
-        "indexInSource": 5,
-        "indexAmongChinese": 4,
-        "sameCharIndex": 0,
-        "ipa": "ʣə́j",
-        "tupa": "dzeojq"
       }
     ]
   },
@@ -3235,11 +3217,34 @@
     ]
   },
   "c1-s174": {
+    "source": "\n問天地好在。",
+    "ipa": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
+    "tupa": "munh then dih hawq dzeojq",
+    "choices": [
+      {
+        "char": "好",
+        "indexInSource": 4,
+        "indexAmongChinese": 3,
+        "sameCharIndex": 0,
+        "ipa": "hɑ́w",
+        "tupa": "hawq"
+      },
+      {
+        "char": "在",
+        "indexInSource": 5,
+        "indexAmongChinese": 4,
+        "sameCharIndex": 0,
+        "ipa": "ʣə́j",
+        "tupa": "dzeojq"
+      }
+    ]
+  },
+  "c1-s175": {
     "source": "或問曰。",
     "ipa": "ɦʷək mʉ̌n ɦʉot .",
     "tupa": "ghweok munh uot"
   },
-  "c1-s175": {
+  "c1-s176": {
     "source": "胡曰「問天地好在」耶。",
     "ipa": "ɦòː ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j jiàː .",
     "tupa": "gho uot munh then dih hawq dzeojq jiae",
@@ -3262,12 +3267,12 @@
       }
     ]
   },
-  "c1-s176": {
+  "c1-s177": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s177": {
+  "c1-s178": {
     "source": "蓋機器未編程時。",
     "ipa": "kɑ̌j kɨ̀j kʰị̌ː mʉ̌j pèn ɖiàŋ ʥɨ̀ː .",
     "tupa": "kajh kyj khyih mujh pen driaeng djy",
@@ -3290,7 +3295,7 @@
       }
     ]
   },
-  "c1-s178": {
+  "c1-s179": {
     "source": "混沌茫昧。",
     "ipa": "ɦón dón mɑ̀ŋ mǒj .",
     "tupa": "ghonq donq mang mojh",
@@ -3305,7 +3310,7 @@
       }
     ]
   },
-  "c1-s179": {
+  "c1-s180": {
     "source": "不知天地之所在。",
     "ipa": "pʉùː ʈièː tʰèn dǐː ʨɨ̀ː ʂɨə́ː ʣə́j .",
     "tupa": "pu trie then dih tjy sryoq dzeojq",
@@ -3336,7 +3341,7 @@
       }
     ]
   },
-  "c1-s180": {
+  "c1-s181": {
     "source": "既經編程。",
     "ipa": "kɨ̌j kèŋ pèn ɖiàŋ .",
     "tupa": "kyjh keng pen driaeng",
@@ -3359,12 +3364,12 @@
       }
     ]
   },
-  "c1-s181": {
+  "c1-s182": {
     "source": "頓而明朗。",
     "ipa": "tǒn ɲɨ̀ː mịàŋ lɑ́ŋ .",
     "tupa": "tonh njy myaeng langq"
   },
-  "c1-s182": {
+  "c1-s183": {
     "source": "撥雲見日然。",
     "ipa": "pɑt ɦʉ̀n kěn ɲit ɲièn .",
     "tupa": "pat un kenh njit njien",
@@ -3379,7 +3384,7 @@
       }
     ]
   },
-  "c1-s183": {
+  "c1-s184": {
     "source": "故欲問天地之好在也。",
     "ipa": "kǒː jʉok mʉ̌n tʰèn dǐː ʨɨ̀ː hɑ́w ʣə́j jiáː .",
     "tupa": "koh juok munh then dih tjy hawq dzeojq jiaeq",
@@ -3402,12 +3407,12 @@
       }
     ]
   },
-  "c1-s184": {
+  "c1-s185": {
     "source": "或問曰。",
     "ipa": "ɦʷək mʉ̌n ɦʉot .",
     "tupa": "ghweok munh uot"
   },
-  "c1-s185": {
+  "c1-s186": {
     "source": "胡問之三遍耶。",
     "ipa": "ɦòː mʉ̌n ʨɨ̀ː sɑ̀m pěn jiàː .",
     "tupa": "gho munh tjy sam penh jiae",
@@ -3422,12 +3427,12 @@
       }
     ]
   },
-  "c1-s186": {
+  "c1-s187": {
     "source": "天地豈聾也哉。",
     "ipa": "tʰèn dǐː kʰɨ́j lùŋ jiáː ʦə̀j .",
     "tupa": "then dih khyjq loung jiaeq tseoj"
   },
-  "c1-s187": {
+  "c1-s188": {
     "source": "君不聞秦宓之辯耶。",
     "ipa": "kʉ̀n pʉùː mʉ̀n ʣìn mit ʨɨ̀ː bịén jiàː .",
     "tupa": "kun pu mun dzin mit tjy byenq jiae",
@@ -3458,17 +3463,17 @@
       }
     ]
   },
-  "c1-s188": {
+  "c1-s189": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s189": {
+  "c1-s190": {
     "source": "非也。",
     "ipa": "pʉ̀j jiáː .",
     "tupa": "puj jiaeq"
   },
-  "c1-s190": {
+  "c1-s191": {
     "source": "所以示「循環」之用也。",
     "ipa": "ʂɨə́ː jɨ́ː ʑǐː zʷìn ɦʷạ̀n ʨɨ̀ː jʉǒŋ jiáː .",
     "tupa": "sryoq jyq zjih zwin ghwaen tjy juongh jiaeq",
@@ -3483,12 +3488,12 @@
       }
     ]
   },
-  "c1-s191": {
+  "c1-s192": {
     "source": "「循環」者。",
     "ipa": "zʷìn ɦʷạ̀n ʨiáː .",
     "tupa": "zwin ghwaen tjiaeq"
   },
-  "c1-s192": {
+  "c1-s193": {
     "source": "為一事數遍也。",
     "ipa": "ɦỵèː ʔit ꭦɨ̌ː ʂọk pěn jiáː .",
     "tupa": "ue qit dzryh sroeuk penh jiaeq",
@@ -3519,7 +3524,7 @@
       }
     ]
   },
-  "c1-s193": {
+  "c1-s194": {
     "source": "如輻輳輪轉然。",
     "ipa": "ɲɨə̀ː pʉuk ʦʰǔː lʷìn ʈyěn ɲièn .",
     "tupa": "njyo puk tshouh lwin trwienh njien",
@@ -3550,7 +3555,7 @@
       }
     ]
   },
-  "c1-s194": {
+  "c1-s195": {
     "source": "如日月交替然。",
     "ipa": "ɲɨə̀ː ɲit ŋʉot kạ̀w tʰěj ɲièn .",
     "tupa": "njyo njit nguot kaew thejh njien",
@@ -3565,12 +3570,12 @@
       }
     ]
   },
-  "c1-s195": {
+  "c1-s196": {
     "source": "或問曰。",
     "ipa": "ɦʷək mʉ̌n ɦʉot .",
     "tupa": "ghweok munh uot"
   },
-  "c1-s196": {
+  "c1-s197": {
     "source": "欲行之五遍。",
     "ipa": "jʉok ɦạ̀ŋ ʨɨ̀ː ŋóː pěn .",
     "tupa": "juok ghaeng tjy ngoq penh",
@@ -3585,12 +3590,12 @@
       }
     ]
   },
-  "c1-s197": {
+  "c1-s198": {
     "source": "可乎。",
     "ipa": "kʰɑ́ː ɦòː .",
     "tupa": "khaq gho"
   },
-  "c1-s198": {
+  "c1-s199": {
     "source": "行之千遍。",
     "ipa": "ɦạ̀ŋ ʨɨ̀ː ʦʰèn pěn .",
     "tupa": "ghaeng tjy tshen penh",
@@ -3605,17 +3610,17 @@
       }
     ]
   },
-  "c1-s199": {
+  "c1-s200": {
     "source": "可乎。",
     "ipa": "kʰɑ́ː ɦòː .",
     "tupa": "khaq gho"
   },
-  "c1-s200": {
+  "c1-s201": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s201": {
+  "c1-s202": {
     "source": "無不可也。",
     "ipa": "mʉòː pʉùː kʰɑ́ː jiáː .",
     "tupa": "muo pu khaq jiaeq",
@@ -3630,7 +3635,7 @@
       }
     ]
   },
-  "c1-s202": {
+  "c1-s203": {
     "source": "為是五遍。",
     "ipa": "ɦỵèː ʥiéː ŋóː pěn .",
     "tupa": "ue djieq ngoq penh",
@@ -3645,7 +3650,7 @@
       }
     ]
   },
-  "c1-s203": {
+  "c1-s204": {
     "source": "\n\t吾有一言。",
     "ipa": "ŋòː ɦʉúː ʔit ŋɨə̀n .",
     "tupa": "ngo uq qit ngyon",
@@ -3668,7 +3673,7 @@
       }
     ]
   },
-  "c1-s204": {
+  "c1-s205": {
     "source": "曰『問天地好在。』。",
     "ipa": "ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
     "tupa": "uot munh then dih hawq dzeojq",
@@ -3691,17 +3696,17 @@
       }
     ]
   },
-  "c1-s205": {
+  "c1-s206": {
     "source": "書之。",
     "ipa": "ɕɨə̀ː ʨɨ̀ː .",
     "tupa": "sjyo tjy"
   },
-  "c1-s206": {
+  "c1-s207": {
     "source": "\n云云。",
     "ipa": "ɦʉ̀n ɦʉ̀n .",
     "tupa": "un un"
   },
-  "c1-s207": {
+  "c1-s208": {
     "source": "\n\n為是千遍。",
     "ipa": "ɦỵèː ʥiéː ʦʰèn pěn .",
     "tupa": "ue djieq tshen penh",
@@ -3716,7 +3721,7 @@
       }
     ]
   },
-  "c1-s208": {
+  "c1-s209": {
     "source": "\n\t吾有一言。",
     "ipa": "ŋòː ɦʉúː ʔit ŋɨə̀n .",
     "tupa": "ngo uq qit ngyon",
@@ -3739,7 +3744,7 @@
       }
     ]
   },
-  "c1-s209": {
+  "c1-s210": {
     "source": "曰『問天地好在。』。",
     "ipa": "ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
     "tupa": "uot munh then dih hawq dzeojq",
@@ -3762,22 +3767,22 @@
       }
     ]
   },
-  "c1-s210": {
+  "c1-s211": {
     "source": "書之。",
     "ipa": "ɕɨə̀ː ʨɨ̀ː .",
     "tupa": "sjyo tjy"
   },
-  "c1-s211": {
+  "c1-s212": {
     "source": "\n云云。",
     "ipa": "ɦʉ̀n ɦʉ̀n .",
     "tupa": "un un"
   },
-  "c1-s212": {
+  "c1-s213": {
     "source": "或問曰。",
     "ipa": "ɦʷək mʉ̌n ɦʉot .",
     "tupa": "ghweok munh uot"
   },
-  "c1-s213": {
+  "c1-s214": {
     "source": "「甲」者謂何。",
     "ipa": "kạp ʨiáː ɦʉ̌j ɦɑ̀ː .",
     "tupa": "kaep tjiaeq ujh gha",
@@ -3792,7 +3797,7 @@
       }
     ]
   },
-  "c1-s214": {
+  "c1-s215": {
     "source": "胡不謂「乙」耶。",
     "ipa": "ɦòː pʉùː ɦʉ̌j ʔịt jiàː .",
     "tupa": "gho pu ujh qyit jiae",
@@ -3807,37 +3812,37 @@
       }
     ]
   },
-  "c1-s215": {
+  "c1-s216": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s216": {
+  "c1-s217": {
     "source": "皆可也。",
     "ipa": "kẹ̀j kʰɑ́ː jiáː .",
     "tupa": "keej khaq jiaeq"
   },
-  "c1-s217": {
+  "c1-s218": {
     "source": "「甲」者。",
     "ipa": "kạp ʨiáː .",
     "tupa": "kaep tjiaeq"
   },
-  "c1-s218": {
+  "c1-s219": {
     "source": "名也。",
     "ipa": "miàŋ jiáː .",
     "tupa": "miaeng jiaeq"
   },
-  "c1-s219": {
+  "c1-s220": {
     "source": "名者。",
     "ipa": "miàŋ ʨiáː .",
     "tupa": "miaeng tjiaeq"
   },
-  "c1-s220": {
+  "c1-s221": {
     "source": "實之賓耶。",
     "ipa": "ʑit ʨɨ̀ː pìn jiàː .",
     "tupa": "zjit tjy pin jiae"
   },
-  "c1-s221": {
+  "c1-s222": {
     "source": "實者何。",
     "ipa": "ʑit ʨiáː ɦɑ̀ː .",
     "tupa": "zjit tjiaeq gha",
@@ -3852,7 +3857,7 @@
       }
     ]
   },
-  "c1-s222": {
+  "c1-s223": {
     "source": "悉聽尊便也。",
     "ipa": "sit tʰèŋ ʦòn biěn jiáː .",
     "tupa": "sit theng tson bienh jiaeq",
@@ -3875,7 +3880,7 @@
       }
     ]
   },
-  "c1-s223": {
+  "c1-s224": {
     "source": "欲三則三。",
     "ipa": "jʉok sɑ̀m ʦək sɑ̀m .",
     "tupa": "juok sam tseok sam",
@@ -3898,12 +3903,12 @@
       }
     ]
   },
-  "c1-s224": {
+  "c1-s225": {
     "source": "欲五則五。",
     "ipa": "jʉok ŋóː ʦək ŋóː .",
     "tupa": "juok ngoq tseok ngoq"
   },
-  "c1-s225": {
+  "c1-s226": {
     "source": "是謂「變數」也。",
     "ipa": "ʥiéː ɦʉ̌j pịěn ʂʉǒː jiáː .",
     "tupa": "djieq ujh pyenh sruoh jiaeq",
@@ -3918,7 +3923,7 @@
       }
     ]
   },
-  "c1-s226": {
+  "c1-s227": {
     "source": "復觀此二句。",
     "ipa": "bʉǔː kʷɑ̀n ʦʰiéː ɲǐː kʉǒː .",
     "tupa": "buh kwan tshieq njih kuoh",
@@ -3949,7 +3954,7 @@
       }
     ]
   },
-  "c1-s227": {
+  "c1-s228": {
     "source": "吾有一數。",
     "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː .",
     "tupa": "ngo uq qit sruoh",
@@ -3980,7 +3985,7 @@
       }
     ]
   },
-  "c1-s228": {
+  "c1-s229": {
     "source": "曰三。",
     "ipa": "ɦʉot sɑ̀m .",
     "tupa": "uot sam",
@@ -3995,12 +4000,12 @@
       }
     ]
   },
-  "c1-s229": {
+  "c1-s230": {
     "source": "名之曰「甲」。",
     "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp .",
     "tupa": "miaeng tjy uot kaep"
   },
-  "c1-s230": {
+  "c1-s231": {
     "source": "\n吾有一言。",
     "ipa": "ŋòː ɦʉúː ʔit ŋɨə̀n .",
     "tupa": "ngo uq qit ngyon",
@@ -4023,7 +4028,7 @@
       }
     ]
   },
-  "c1-s231": {
+  "c1-s232": {
     "source": "曰『問天地好在。』。",
     "ipa": "ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
     "tupa": "uot munh then dih hawq dzeojq",
@@ -4046,12 +4051,12 @@
       }
     ]
   },
-  "c1-s232": {
+  "c1-s233": {
     "source": "書之。",
     "ipa": "ɕɨə̀ː ʨɨ̀ː .",
     "tupa": "sjyo tjy"
   },
-  "c1-s233": {
+  "c1-s234": {
     "source": "`吾有一數` `吾有一言`者。",
     "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː ŋòː ɦʉúː ʔit ŋɨə̀n ʨiáː .",
     "tupa": "ngo uq qit sruoh ngo uq qit ngyon tjiaeq",
@@ -4098,7 +4103,7 @@
       }
     ]
   },
-  "c1-s234": {
+  "c1-s235": {
     "source": "蓋言是變數之類也。",
     "ipa": "kɑ̌j ŋɨə̀n ʥiéː pịěn ʂʉǒː ʨɨ̀ː lʷǐː jiáː .",
     "tupa": "kajh ngyon djieq pyenh sruoh tjy lwih jiaeq",
@@ -4121,7 +4126,7 @@
       }
     ]
   },
-  "c1-s235": {
+  "c1-s236": {
     "source": "數者。",
     "ipa": "ʂʉǒː ʨiáː .",
     "tupa": "sruoh tjiaeq",
@@ -4136,7 +4141,7 @@
       }
     ]
   },
-  "c1-s236": {
+  "c1-s237": {
     "source": "所以算也。",
     "ipa": "ʂɨə́ː jɨ́ː sʷɑ̌n jiáː .",
     "tupa": "sryoq jyq swanh jiaeq",
@@ -4151,12 +4156,12 @@
       }
     ]
   },
-  "c1-s237": {
+  "c1-s238": {
     "source": "言者。",
     "ipa": "ŋɨə̀n ʨiáː .",
     "tupa": "ngyon tjiaeq"
   },
-  "c1-s238": {
+  "c1-s239": {
     "source": "所以吿人也。",
     "ipa": "ʂɨə́ː jɨ́ː kok ɲìn jiáː .",
     "tupa": "sryoq jyq kok njin jiaeq",
@@ -4171,7 +4176,7 @@
       }
     ]
   },
-  "c1-s239": {
+  "c1-s240": {
     "source": "物各其類。",
     "ipa": "mʉt kɑk gɨ̀ː lʷǐː .",
     "tupa": "mut kak gy lwih",
@@ -4186,7 +4191,7 @@
       }
     ]
   },
-  "c1-s240": {
+  "c1-s241": {
     "source": "不宜混同。",
     "ipa": "pʉùː ŋịèː ɦón dùŋ .",
     "tupa": "pu ngye ghonq doung",
@@ -4201,7 +4206,7 @@
       }
     ]
   },
-  "c1-s241": {
+  "c1-s242": {
     "source": "猶馬之不同於鹿。",
     "ipa": "jʉùː mạ́ː ʨɨ̀ː pʉùː dùŋ ʔɨə̀ː luk .",
     "tupa": "ju maeq tjy pu doung qyo louk",
@@ -4232,7 +4237,7 @@
       }
     ]
   },
-  "c1-s242": {
+  "c1-s243": {
     "source": "人之不同於鬼。",
     "ipa": "ɲìn ʨɨ̀ː pʉùː dùŋ ʔɨə̀ː kʉ́j .",
     "tupa": "njin tjy pu doung qyo kujq",
@@ -4255,12 +4260,12 @@
       }
     ]
   },
-  "c1-s243": {
+  "c1-s244": {
     "source": "遂預言之。",
     "ipa": "zʷǐː jɨə̌ː ŋɨə̀n ʨɨ̀ː .",
     "tupa": "zwih jyoh ngyon tjy"
   },
-  "c1-s244": {
+  "c1-s245": {
     "source": "以明其類。",
     "ipa": "jɨ́ː mịàŋ gɨ̀ː lʷǐː .",
     "tupa": "jyq myaeng gy lwih",
@@ -4275,7 +4280,7 @@
       }
     ]
   },
-  "c1-s245": {
+  "c1-s246": {
     "source": "`曰三` `曰『問天地好在。』`",
     "ipa": "ɦʉot sɑ̀m ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j .",
     "tupa": "uot sam uot munh then dih hawq dzeojq",
@@ -4306,12 +4311,12 @@
       }
     ]
   },
-  "c1-s246": {
+  "c1-s247": {
     "source": "者。",
     "ipa": "ʨiáː .",
     "tupa": "tjiaeq"
   },
-  "c1-s247": {
+  "c1-s248": {
     "source": "所以命其實也。",
     "ipa": "ʂɨə́ː jɨ́ː mịǎŋ gɨ̀ː ʑit jiáː .",
     "tupa": "sryoq jyq myaengh gy zjit jiaeq",
@@ -4326,7 +4331,7 @@
       }
     ]
   },
-  "c1-s248": {
+  "c1-s249": {
     "source": "後若有問數幾何者。",
     "ipa": "ɦúː ɲɨɑk ɦʉúː mʉ̌n ʂʉǒː kɨ́j ɦɑ̀ː ʨiáː .",
     "tupa": "ghouq njyak uq munh sruoh kyjq gha tjiaeq",
@@ -4381,7 +4386,7 @@
       }
     ]
   },
-  "c1-s249": {
+  "c1-s250": {
     "source": "乃自是知其為三。",
     "ipa": "nə́j ʣǐː ʥiéː ʈièː gɨ̀ː ɦỵèː sɑ̀m .",
     "tupa": "neojq dzih djieq trie gy ue sam",
@@ -4420,17 +4425,17 @@
       }
     ]
   },
-  "c1-s250": {
+  "c1-s251": {
     "source": "言亦同。",
     "ipa": "ŋɨə̀n jiak dùŋ .",
     "tupa": "ngyon jiaek doung"
   },
-  "c1-s251": {
+  "c1-s252": {
     "source": "`名之曰「甲」`者。",
     "ipa": "miàŋ ʨɨ̀ː ɦʉot kạp ʨiáː .",
     "tupa": "miaeng tjy uot kaep tjiaeq"
   },
-  "c1-s252": {
+  "c1-s253": {
     "source": "所以名變數也。",
     "ipa": "ʂɨə́ː jɨ́ː miàŋ pịěn ʂʉǒː jiáː .",
     "tupa": "sryoq jyq miaeng pyenh sruoh jiaeq",
@@ -4445,7 +4450,7 @@
       }
     ]
   },
-  "c1-s253": {
+  "c1-s254": {
     "source": "如人之名贓獲。",
     "ipa": "ɲɨə̀ː ɲìn ʨɨ̀ː miàŋ ʦɑ̀ŋ ɦʷẹk .",
     "tupa": "njyo njin tjy miaeng tsang ghweek",
@@ -4460,12 +4465,12 @@
       }
     ]
   },
-  "c1-s254": {
+  "c1-s255": {
     "source": "劍之名巨闕。",
     "ipa": "kɨə̌m ʨɨ̀ː miàŋ gɨə́ː kʰʉot .",
     "tupa": "kyomh tjy miaeng gyoq khuot"
   },
-  "c1-s255": {
+  "c1-s256": {
     "source": "後凡曰「贓獲」者。",
     "ipa": "ɦúː bʉòm ɦʉot ʦɑ̀ŋ ɦʷẹk ʨiáː .",
     "tupa": "ghouq buom uot tsang ghweek tjiaeq",
@@ -4480,7 +4485,7 @@
       }
     ]
   },
-  "c1-s256": {
+  "c1-s257": {
     "source": "乃知謂「贓獲」其人。",
     "ipa": "nə́j ʈièː ɦʉ̌j ʦɑ̀ŋ ɦʷẹk gɨ̀ː ɲìn .",
     "tupa": "neojq trie ujh tsang ghweek gy njin",
@@ -4503,7 +4508,7 @@
       }
     ]
   },
-  "c1-s257": {
+  "c1-s258": {
     "source": "又萬物皆變化之中。",
     "ipa": "ɦʉǔː mʉǒn mʉt kẹ̀j pịěn hʷạ̌ː ʨɨ̀ː ʈʉùŋ .",
     "tupa": "uh muonh mut keej pyenh hwaeh tjy trung",
@@ -4518,7 +4523,7 @@
       }
     ]
   },
-  "c1-s258": {
+  "c1-s259": {
     "source": "如昔人之廣陵。",
     "ipa": "ɲɨə̀ː siak ɲìn ʨɨ̀ː kʷɑ́ŋ lɨ̀ŋ .",
     "tupa": "njyo siaek njin tjy kwangq lyng",
@@ -4533,12 +4538,12 @@
       }
     ]
   },
-  "c1-s259": {
+  "c1-s260": {
     "source": "鮑照之蕪城也。",
     "ipa": "bạ́w ʨiěw ʨɨ̀ː mʉòː ʥiàŋ jiáː .",
     "tupa": "baewq tjiewh tjy muo djiaeng jiaeq"
   },
-  "c1-s260": {
+  "c1-s261": {
     "source": "今易「甲」為四如是。",
     "ipa": "kị̀m jiak kạp ɦỵèː sǐː ɲɨə̀ː ʥiéː .",
     "tupa": "kyim jiaek kaep ue sih njyo djieq",
@@ -4569,22 +4574,22 @@
       }
     ]
   },
-  "c1-s261": {
+  "c1-s262": {
     "source": "昔之「甲」者。",
     "ipa": "siak ʨɨ̀ː kạp ʨiáː .",
     "tupa": "siaek tjy kaep tjiaeq"
   },
-  "c1-s262": {
+  "c1-s263": {
     "source": "今四是矣。",
     "ipa": "kị̀m sǐː ʥiéː ɦɨ́ː .",
     "tupa": "kyim sih djieq yq"
   },
-  "c1-s263": {
+  "c1-s264": {
     "source": "`書之`者。",
     "ipa": "ɕɨə̀ː ʨɨ̀ː ʨiáː .",
     "tupa": "sjyo tjy tjiaeq"
   },
-  "c1-s264": {
+  "c1-s265": {
     "source": "蓋彼運行之所得。",
     "ipa": "kɑ̌j pịéː ɦʉ̌n ɦạ̀ŋ ʨɨ̀ː ʂɨə́ː tək .",
     "tupa": "kajh pyeq unh ghaeng tjy sryoq teok",
@@ -4607,7 +4612,7 @@
       }
     ]
   },
-  "c1-s265": {
+  "c1-s266": {
     "source": "機器自知之。",
     "ipa": "kɨ̀j kʰị̌ː ʣǐː ʈièː ʨɨ̀ː .",
     "tupa": "kyj khyih dzih trie tjy",
@@ -4622,7 +4627,7 @@
       }
     ]
   },
-  "c1-s266": {
+  "c1-s267": {
     "source": "而人無由而知之。",
     "ipa": "ɲɨ̀ː ɲìn mʉòː jʉùː ɲɨ̀ː ʈièː ʨɨ̀ː .",
     "tupa": "njy njin muo ju njy trie tjy",
@@ -4637,7 +4642,7 @@
       }
     ]
   },
-  "c1-s267": {
+  "c1-s268": {
     "source": "故用此辭令其示人以果也。",
     "ipa": "kǒː jʉǒŋ ʦʰiéː zɨ̀ː liàŋ gɨ̀ː ʑǐː ɲìn jɨ́ː kʷɑ́ː jiáː .",
     "tupa": "koh juongh tshieq zy liaeng gy zjih njin jyq kwaq jiaeq",
@@ -4668,12 +4673,12 @@
       }
     ]
   },
-  "c1-s268": {
+  "c1-s269": {
     "source": "或問曰。",
     "ipa": "ɦʷək mʉ̌n ɦʉot .",
     "tupa": "ghweok munh uot"
   },
-  "c1-s269": {
+  "c1-s270": {
     "source": "甲字上下有符如矩尺然者。",
     "ipa": "kạp ʣɨ̌ː ʥɨɑ̌ŋ ɦạ́ː ɦʉúː bʉòː ɲɨə̀ː kʉóː ʨʰiak ɲièn ʨiáː .",
     "tupa": "kaep dzyh djyangh ghaeq uq buo njyo kuoq tjhiaek njien tjiaeq",
@@ -4712,7 +4717,7 @@
       }
     ]
   },
-  "c1-s270": {
+  "c1-s271": {
     "source": "何焉。",
     "ipa": "ɦɑ̀ː ɦịèn .",
     "tupa": "gha yen",
@@ -4735,7 +4740,7 @@
       }
     ]
   },
-  "c1-s271": {
+  "c1-s272": {
     "source": "今欲省之。",
     "ipa": "kị̀m jʉok ʂịáŋ ʨɨ̀ː .",
     "tupa": "kyim juok sryaengq tjy",
@@ -4750,17 +4755,17 @@
       }
     ]
   },
-  "c1-s272": {
+  "c1-s273": {
     "source": "可乎。",
     "ipa": "kʰɑ́ː ɦòː .",
     "tupa": "khaq gho"
   },
-  "c1-s273": {
+  "c1-s274": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s274": {
+  "c1-s275": {
     "source": "不可。",
     "ipa": "pʉùː kʰɑ́ː .",
     "tupa": "pu khaq",
@@ -4775,7 +4780,7 @@
       }
     ]
   },
-  "c1-s275": {
+  "c1-s276": {
     "source": "此引號也。",
     "ipa": "ʦʰiéː jín ɦɑ̌w jiáː .",
     "tupa": "tshieq jinq ghawh jiaeq",
@@ -4798,7 +4803,7 @@
       }
     ]
   },
-  "c1-s276": {
+  "c1-s277": {
     "source": "「單引號」者。",
     "ipa": "tɑ̀n jín ɦɑ̌w ʨiáː .",
     "tupa": "tan jinq ghawh tjiaeq",
@@ -4829,7 +4834,7 @@
       }
     ]
   },
-  "c1-s277": {
+  "c1-s278": {
     "source": "所以別變數於其他也。",
     "ipa": "ʂɨə́ː jɨ́ː pịet pịěn ʂʉǒː ʔɨə̀ː gɨ̀ː tʰɑ̀ː jiáː .",
     "tupa": "sryoq jyq pyet pyenh sruoh qyo gy tha jiaeq",
@@ -4868,7 +4873,7 @@
       }
     ]
   },
-  "c1-s278": {
+  "c1-s279": {
     "source": "『雙引號』者。",
     "ipa": "ʂọ̀ŋ jín ɦɑ̌w ʨiáː .",
     "tupa": "sroeung jinq ghawh tjiaeq",
@@ -4891,7 +4896,7 @@
       }
     ]
   },
-  "c1-s279": {
+  "c1-s280": {
     "source": "所以別言語於其他也。",
     "ipa": "ʂɨə́ː jɨ́ː pịet ŋɨə̀n ŋɨə́ː ʔɨə̀ː gɨ̀ː tʰɑ̀ː jiáː .",
     "tupa": "sryoq jyq pyet ngyon ngyoq qyo gy tha jiaeq",
@@ -4930,12 +4935,12 @@
       }
     ]
   },
-  "c1-s280": {
+  "c1-s281": {
     "source": "微是。",
     "ipa": "mʉ̀j ʥiéː .",
     "tupa": "muj djieq"
   },
-  "c1-s281": {
+  "c1-s282": {
     "source": "不能別歧義也。",
     "ipa": "pʉùː nə̀ŋ pịet gièː ŋịěː jiáː .",
     "tupa": "pu neong pyet gie ngyeh jiaeq",
@@ -4966,12 +4971,12 @@
       }
     ]
   },
-  "c1-s282": {
+  "c1-s283": {
     "source": "又問曰。",
     "ipa": "ɦʉǔː mʉ̌n ɦʉot .",
     "tupa": "uh munh uot"
   },
-  "c1-s283": {
+  "c1-s284": {
     "source": "句讀。",
     "ipa": "kʉǒː duk .",
     "tupa": "kuoh douk",
@@ -4986,22 +4991,22 @@
       }
     ]
   },
-  "c1-s284": {
+  "c1-s285": {
     "source": "挪抬。",
     "ipa": "nɑ̀ː də̀j .",
     "tupa": "na deoj"
   },
-  "c1-s285": {
+  "c1-s286": {
     "source": "無之可乎。",
     "ipa": "mʉòː ʨɨ̀ː kʰɑ́ː ɦòː .",
     "tupa": "muo tjy khaq gho"
   },
-  "c1-s286": {
+  "c1-s287": {
     "source": "曰。",
     "ipa": "ɦʉot .",
     "tupa": "uot"
   },
-  "c1-s287": {
+  "c1-s288": {
     "source": "此唯觀者助也。",
     "ipa": "ʦʰiéː jʷìː kʷɑ̀n ʨiáː ꭦɨə̌ː jiáː .",
     "tupa": "tshieq jwi kwan tjiaeq dzryoh jiaeq",
@@ -5024,7 +5029,7 @@
       }
     ]
   },
-  "c1-s288": {
+  "c1-s289": {
     "source": "無之無損於義。",
     "ipa": "mʉòː ʨɨ̀ː mʉòː són ʔɨə̀ː ŋịěː .",
     "tupa": "muo tjy muo sonq qyo ngyeh",
@@ -5039,7 +5044,7 @@
       }
     ]
   },
-  "c1-s289": {
+  "c1-s290": {
     "source": "故前例亦可書若是。",
     "ipa": "kǒː ʣèn liěj jiak kʰɑ́ː ɕɨə̀ː ɲɨɑk ʥiéː .",
     "tupa": "koh dzen liejh jiaek khaq sjyo njyak djieq",
@@ -5054,7 +5059,7 @@
       }
     ]
   },
-  "c1-s290": {
+  "c1-s291": {
     "source": "吾有一數曰三名之曰「甲」為是「甲」遍吾有一言曰『問天地好在』書之云云",
     "ipa": "ŋòː ɦʉúː ʔit ʂʉǒː ɦʉot sɑ̀m miàŋ ʨɨ̀ː ɦʉot kạp ɦỵèː ʥiéː kạp pěn ŋòː ɦʉúː ʔit ŋɨə̀n ɦʉot mʉ̌n tʰèn dǐː hɑ́w ʣə́j ɕɨə̀ː ʨɨ̀ː ɦʉ̀n ɦʉ̀n .",
     "tupa": "ngo uq qit sruoh uot sam miaeng tjy uot kaep ue djieq kaep penh ngo uq qit ngyon uot munh then dih hawq dzeojq sjyo tjy un un",
@@ -5133,7 +5138,7 @@
       }
     ]
   },
-  "c1-s291": {
+  "c1-s292": {
     "source": "「問天地好在」之例。",
     "ipa": "mʉ̌n tʰèn dǐː hɑ́w ʣə́j ʨɨ̀ː liěj .",
     "tupa": "munh then dih hawq dzeojq tjy liejh",
@@ -5156,7 +5161,7 @@
       }
     ]
   },
-  "c1-s292": {
+  "c1-s293": {
     "source": "至此略明矣。",
     "ipa": "ʨǐː ʦʰiéː lɨɑk mịàŋ ɦɨ́ː .",
     "tupa": "tjih tshieq lyak myaeng yq"
