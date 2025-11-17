@@ -12,6 +12,13 @@
 6.  Use `synthesize.py` to generate the audio for each chunk and save into `renderer/public/audios/`
 7.  Use `voice-change.py` to change the voice of the audio into `renderer/public/audios/female/`
 
+## Real-time Segment Preview
+
+While iterating on segmentation logic (for example when tweaking `segment-text.py`), run the renderer watcher so the video preview stays current with every processor change:
+
+- From the repo root, run `bun run watch:segments` inside `renderer/`. This watches sentence, translation, transcript, audio, and segment artifacts produced by the processor. Whenever those files change, it automatically re-runs `scripts/generate-segments.ts`, keeping `renderer/src/generated/segments-*.ts` and the Remotion preview in sync.
+- Keep this watcher running while you edit processor outputs so you can immediately scrub through Remotion Studio and confirm how regenerated segments will appear in the final narration.
+
 ## Chapter Titles Pipeline
 
 1. Use `transcribe-titles.py` to transcribe chapter titles to IPA and save to `renderer/public/transcripts/audio-{chapterNumber}.txt`
