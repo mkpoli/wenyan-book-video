@@ -42,10 +42,12 @@ type NarrationSentence = {
 type NarrationSegment = {
   readonly id: string;
   readonly text: string;
+  readonly translation?: string | null;
   readonly sentences?: readonly NarrationSentence[];
   readonly durationInFrames: number;
   readonly audioPath?: string | null;
   readonly isCodeBlock?: boolean;
+  readonly isListItem?: boolean;
 };
 
 const countEffectiveChars = (text: string | null | undefined): number => {
@@ -211,6 +213,7 @@ export const Narration: React.FC<NarrationProps> = ({
               sentences={segment.sentences ?? []}
               fadeInDuration={index === 0 ? transitionFadeInFrames : undefined}
               isCodeBlock={segment.isCodeBlock}
+              isListItem={segment.isListItem}
             />
           </Sequence>
         );
