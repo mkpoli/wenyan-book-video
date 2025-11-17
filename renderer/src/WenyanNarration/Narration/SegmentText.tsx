@@ -22,6 +22,7 @@ interface SegmentTextProps {
   readonly totalDuration?: number; // Total duration in frames (needed for fade-out calculation)
   readonly isCodeBlock?: boolean;
   readonly showAllCompleted?: boolean; // If true, show all sentences as non-highlighted (completed state)
+  readonly isListItem?: boolean;
 }
 
 type QuoteRenderEntry = {
@@ -336,6 +337,11 @@ function renderTextWithQuotes(
     if (target >= 0) {
       perCharTrailingMarkers[target] =
         (perCharTrailingMarkers[target] ?? "") + char;
+      // Transfer any suffixes from the "。" entry to the target entry
+      // (e.g., if "。" has a "』" suffix, it should be preserved)
+      if (entries[i].suffixes.length > 0) {
+        entries[target].suffixes.push(...entries[i].suffixes);
+      }
       hideChar[i] = true;
     }
   }
@@ -556,6 +562,7 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
   totalDuration,
   isCodeBlock = false,
   showAllCompleted = false,
+  isListItem = false,
 }) => {
   const frame = useCurrentFrame();
   const hasSentenceData = sentences.length > 0;
@@ -636,9 +643,56 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
     ? renderUnderscoreItalics(formattedEnglishLine)
     : null;
 
+  const textColumn = (
+    <div
+      className="font-[QijiCombo,serif] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9 h-[600px] min-h-[600px] max-h-[600px]"
+      style={
+        isCodeBlock
+          ? {
+              outline: "4px solid #000",
+              outlineOffset: "16px",
+              fontSize: "60px",
+            }
+          : {
+              fontSize: "72px",
+            }
+      }
+    >
+      <div style={{ transform: isCodeBlock ? undefined : "translateY(0.1em)" }}>
+        {sentenceLines
+          ? sentenceLines.map((lineFragments, lineIndex) => (
+              <div key={`line-${lineIndex}`} className="block">
+                {lineFragments.map((fragment, fragmentIndex) => (
+                  <Sentence
+                    key={`line-${lineIndex}-${fragmentIndex}`}
+                    text={fragment.text}
+                    highlight={fragment.sentenceIndex === currentSentenceIndex}
+                    isCodeBlock={isCodeBlock}
+                  />
+                ))}
+              </div>
+            ))
+          : hasSentenceData
+            ? sentences.map((sentence, index) => (
+                <Sentence
+                  key={`${index}-${sentence.chinese}`}
+                  text={sentence.chinese}
+                  highlight={index === currentSentenceIndex}
+                  isCodeBlock={isCodeBlock}
+                  trimLeadingLineBreak
+                />
+              ))
+            : renderTextWithQuotes(text, {
+                isCodeBlock,
+                keywordMask: isCodeBlock ? computeKeywordMask(text) : undefined,
+              })}
+      </div>
+    </div>
+  );
+
   return (
     <AbsoluteFill style={{ opacity }}>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full px-[40px] py-20 items-center justify-between">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col h-full px-[40px] py-20 items-center justify-between w-full">
         {transcriptionLine ? (
           <p
             className={`font-ipa tracking-wide font-normal mb-8 text-center w-full text-slate-500 leading-[1.8] m-0 whitespace-pre-line text-balance ${transcriptionLine.length > 100 ? "text-3xl" : "text-4xl"}`}
@@ -646,55 +700,19 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             [{transcriptionLine}]
           </p>
         ) : null}
-        <div
-          className="font-[QijiCombo,serif] leading-[1.2] text-start w-max max-w-[1400px] text-black whitespace-pre-line [writing-mode:vertical-rl] [text-orientation:upright] align-middle flex-1 pr-9 h-[600px] min-h-[600px] max-h-[600px]"
-          style={
-            isCodeBlock
-              ? {
-                  outline: "4px solid #000",
-                  outlineOffset: "16px",
-                  fontSize: "60px",
-                }
-              : {
-                  fontSize: "72px",
-                }
-          }
-        >
-          <div
-            style={{ transform: isCodeBlock ? undefined : "translateY(0.1em)" }}
-          >
-            {sentenceLines
-              ? sentenceLines.map((lineFragments, lineIndex) => (
-                  <div key={`line-${lineIndex}`} className="block">
-                    {lineFragments.map((fragment, fragmentIndex) => (
-                      <Sentence
-                        key={`line-${lineIndex}-${fragmentIndex}`}
-                        text={fragment.text}
-                        highlight={
-                          fragment.sentenceIndex === currentSentenceIndex
-                        }
-                        isCodeBlock={isCodeBlock}
-                      />
-                    ))}
-                  </div>
-                ))
-              : hasSentenceData
-                ? sentences.map((sentence, index) => (
-                    <Sentence
-                      key={`${index}-${sentence.chinese}`}
-                      text={sentence.chinese}
-                      highlight={index === currentSentenceIndex}
-                      isCodeBlock={isCodeBlock}
-                      trimLeadingLineBreak
-                    />
-                  ))
-                : renderTextWithQuotes(text, {
-                    isCodeBlock,
-                    keywordMask: isCodeBlock
-                      ? computeKeywordMask(text)
-                      : undefined,
-                  })}
-          </div>
+        <div className="flex items-start justify-center w-fit">
+          {isListItem ? (
+            <ul className="list-disc list-outside m-0 flex w-full max-w-6xl justify-center pl-24 text-6xl text-slate-800">
+              <li className="flex flex-row-reverse w-full justify-center relative marker:absolute marker:right-0 marker:top-0">
+                <span className="font-qiji absolute -right-35 top-0 pr-9 text-[72px]">
+                  一
+                </span>
+                {textColumn}
+              </li>
+            </ul>
+          ) : (
+            textColumn
+          )}
         </div>
         {transcriptionLine || englishLine ? (
           <div className="w-3/4 text-center text-slate-900 mt-4">
