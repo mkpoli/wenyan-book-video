@@ -249,13 +249,22 @@ def build_sentence_segments_for_chapter(
 
         for cn_sentence in cn_sentences:
             if sent_index >= len(chapter_sentences):
+                total_canonical = len(chapter_sentences)
+                preview = (
+                    cn_sentence.strip()
+                    if len(cn_sentence) <= 60
+                    else cn_sentence.strip()[:57] + "..."
+                )
                 print_warning(
                     "Ran out of canonical sentences",
                     format_metadata_rows(
                         [
                             ("Segment", seg_path.name),
                             ("Chapter ID", chapter_id),
-                            ("Chapter index", str(sent_index)),
+                            ("Segment sentence #", str(len(sentence_ids_for_segment) + 1)),
+                            ("Segment sentence preview", preview or "<empty>"),
+                            ("Canonical sentences in chapter", str(total_canonical)),
+                            ("Sentences already matched", str(sent_index)),
                         ]
                     ),
                 )
