@@ -141,7 +141,12 @@ export default function Home() {
       <main className="flex-1 flex flex-col overflow-hidden">
         {/* Preview panel at top */}
         <div className="h-120 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black flex flex-col shrink-0">
-          <SegmentPreview sentences={sentences} segments={segments} selectedSegmentId={selectedSegmentId} />
+          <SegmentPreview
+            sentences={sentences}
+            segments={segments}
+            selectedSegmentId={selectedSegmentId}
+            onSegmentClick={handleSegmentClick}
+          />
         </div>
 
         {/* Text editing panel below */}

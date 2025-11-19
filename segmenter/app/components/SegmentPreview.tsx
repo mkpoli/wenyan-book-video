@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { Icon } from '@iconify/react';
 import type { Sentence, ChapterSentences } from '../api/sentences/[chapterId]/route';
 import type { Segment, ChapterSegments } from './SegmentsLoader';
 
@@ -8,6 +9,7 @@ interface SegmentPreviewProps {
   sentences: ChapterSentences | null;
   segments: ChapterSegments | null;
   selectedSegmentId: string | null;
+  onSegmentClick?: (segmentId: string) => void;
 }
 
 type QuoteRenderEntry = {
@@ -314,11 +316,32 @@ function renderTextWithQuotes(
   });
 }
 
-export default function SegmentPreview({ sentences, segments, selectedSegmentId }: SegmentPreviewProps) {
+export default function SegmentPreview({
+  sentences,
+  segments,
+  selectedSegmentId,
+  onSegmentClick,
+}: SegmentPreviewProps) {
   const selectedSegment = useMemo(() => {
     if (!segments || !selectedSegmentId) return null;
     return segments.segments.find((s) => s.id === selectedSegmentId) || null;
   }, [segments, selectedSegmentId]);
+
+  // Calculate previous and next segment IDs
+  const { previousSegmentId, nextSegmentId } = useMemo(() => {
+    if (!segments || !selectedSegment) {
+      return { previousSegmentId: null, nextSegmentId: null };
+    }
+
+    const currentIndex = segments.segments.findIndex((s) => s.id === selectedSegmentId);
+    const previousSegment = currentIndex > 0 ? segments.segments[currentIndex - 1] : null;
+    const nextSegment = currentIndex < segments.segments.length - 1 ? segments.segments[currentIndex + 1] : null;
+
+    return {
+      previousSegmentId: previousSegment?.id || null,
+      nextSegmentId: nextSegment?.id || null,
+    };
+  }, [segments, selectedSegment, selectedSegmentId]);
 
   const segmentSentences = useMemo(() => {
     if (!selectedSegment || !sentences) return [];
@@ -370,12 +393,50 @@ export default function SegmentPreview({ sentences, segments, selectedSegmentId 
       <div className="flex flex-col h-full">
         {/* Segment header */}
         <div className="p-4 border-b border-gray-200 dark:border-gray-800 shrink-0">
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Segment {selectedSegment.id}</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            {segmentSentences.length} sentence{segmentSentences.length !== 1 ? 's' : ''}
-            {selectedSegment.isCodeBlock && ' • Code block'}
-            {selectedSegment.isListItem && ' • List item'}
-          </p>
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Segment {selectedSegment.id}</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                {segmentSentences.length} sentence{segmentSentences.length !== 1 ? 's' : ''}
+                {selectedSegment.isCodeBlock && ' • Code block'}
+                {selectedSegment.isListItem && ' • List item'}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={() => {
+                  if (previousSegmentId && onSegmentClick) {
+                    onSegmentClick(previousSegmentId);
+                  }
+                }}
+                disabled={!previousSegmentId}
+                className={`p-2 rounded border transition-colors flex items-center justify-center ${
+                  previousSegmentId
+                    ? 'border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-300'
+                    : 'border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-600 cursor-not-allowed bg-gray-50 dark:bg-gray-900'
+                }`}
+                title="Previous segment"
+              >
+                <Icon icon="mdi:chevron-left" className="w-5 h-5" />
+              </button>
+              <button
+                onClick={() => {
+                  if (nextSegmentId && onSegmentClick) {
+                    onSegmentClick(nextSegmentId);
+                  }
+                }}
+                disabled={!nextSegmentId}
+                className={`p-2 rounded border transition-colors flex items-center justify-center ${
+                  nextSegmentId
+                    ? 'border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-900 text-gray-700 dark:text-gray-300'
+                    : 'border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-600 cursor-not-allowed bg-gray-50 dark:bg-gray-900'
+                }`}
+                title="Next segment"
+              >
+                <Icon icon="mdi:chevron-right" className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Preview - rendered Chinese text */}
