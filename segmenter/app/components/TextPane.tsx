@@ -336,8 +336,8 @@ export default function TextPane({
               {/* Block boundary indicator (reference) */}
               {isBlockStart && currentBlockId && (
                 <div className="relative h-2 mb-0.5">
-                  <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-300 dark:border-gray-700 opacity-40">
-                    <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-400 dark:text-gray-600 bg-white dark:bg-black px-1">
+                  <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-400 dark:border-gray-600 opacity-70">
+                    <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-500 dark:text-gray-500 bg-white dark:bg-black px-1">
                       {currentBlockId}
                     </span>
                   </div>
@@ -446,8 +446,8 @@ export default function TextPane({
                       )}
                       {/* Block boundary indicator (reference) - between sentences */}
                       {hasBlockChangeAfter && index < sentences.sentences.length - 1 && (
-                        <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-300 dark:border-gray-700 opacity-30 pointer-events-none">
-                          <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-400 dark:text-gray-600 bg-white dark:bg-black px-1">
+                        <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-400 dark:border-gray-600 opacity-70 pointer-events-none">
+                          <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-500 dark:text-gray-500 bg-white dark:bg-black px-1">
                             {sentences.sentences[index + 1]?.blockId || ''}
                           </span>
                         </div>
