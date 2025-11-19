@@ -1,0 +1,577 @@
+{
+  "chapterId": "c7",
+  "chapterNumber": 7,
+  "segments": [
+    {
+      "id": "7-1",
+      "chapterId": "c7",
+      "segmentIndex": 1,
+      "sentenceIds": [
+        "c7-s1",
+        "c7-s2",
+        "c7-s3",
+        "c7-s4",
+        "c7-s5",
+        "c7-s6",
+        "c7-s7",
+        "c7-s8",
+        "c7-s9",
+        "c7-s10",
+        "c7-s11",
+        "c7-s12",
+        "c7-s13"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-2",
+      "chapterId": "c7",
+      "segmentIndex": 2,
+      "sentenceIds": [
+        "c7-s14",
+        "c7-s15",
+        "c7-s16",
+        "c7-s17",
+        "c7-s18",
+        "c7-s19",
+        "c7-s20",
+        "c7-s21",
+        "c7-s22",
+        "c7-s23",
+        "c7-s24",
+        "c7-s25",
+        "c7-s26",
+        "c7-s27",
+        "c7-s28",
+        "c7-s29"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-3",
+      "chapterId": "c7",
+      "segmentIndex": 3,
+      "sentenceIds": [
+        "c7-s30",
+        "c7-s31",
+        "c7-s32",
+        "c7-s33",
+        "c7-s34",
+        "c7-s35",
+        "c7-s36",
+        "c7-s37",
+        "c7-s38",
+        "c7-s39",
+        "c7-s40",
+        "c7-s41",
+        "c7-s42",
+        "c7-s43"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-4",
+      "chapterId": "c7",
+      "segmentIndex": 4,
+      "sentenceIds": [
+        "c7-s44",
+        "c7-s45",
+        "c7-s46",
+        "c7-s47"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-5",
+      "chapterId": "c7",
+      "segmentIndex": 5,
+      "sentenceIds": [
+        "c7-s48",
+        "c7-s49",
+        "c7-s50",
+        "c7-s51",
+        "c7-s52",
+        "c7-s53",
+        "c7-s54",
+        "c7-s55",
+        "c7-s56",
+        "c7-s57",
+        "c7-s58",
+        "c7-s59",
+        "c7-s60"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-6",
+      "chapterId": "c7",
+      "segmentIndex": 6,
+      "sentenceIds": [
+        "c7-s61",
+        "c7-s62",
+        "c7-s63",
+        "c7-s64",
+        "c7-s65",
+        "c7-s66"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-7",
+      "chapterId": "c7",
+      "segmentIndex": 7,
+      "sentenceIds": [
+        "c7-s67",
+        "c7-s68",
+        "c7-s69",
+        "c7-s70"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-8",
+      "chapterId": "c7",
+      "segmentIndex": 8,
+      "sentenceIds": [
+        "c7-s71",
+        "c7-s72",
+        "c7-s73",
+        "c7-s74",
+        "c7-s75",
+        "c7-s76",
+        "c7-s77"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-9",
+      "chapterId": "c7",
+      "segmentIndex": 9,
+      "sentenceIds": [
+        "c7-s78",
+        "c7-s79",
+        "c7-s80",
+        "c7-s81"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-10",
+      "chapterId": "c7",
+      "segmentIndex": 10,
+      "sentenceIds": [
+        "c7-s82",
+        "c7-s83"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-11",
+      "chapterId": "c7",
+      "segmentIndex": 11,
+      "sentenceIds": [
+        "c7-s84",
+        "c7-s85",
+        "c7-s86",
+        "c7-s87",
+        "c7-s88",
+        "c7-s89",
+        "c7-s90"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-12",
+      "chapterId": "c7",
+      "segmentIndex": 12,
+      "sentenceIds": [
+        "c7-s91",
+        "c7-s92",
+        "c7-s93",
+        "c7-s94",
+        "c7-s95",
+        "c7-s96",
+        "c7-s97",
+        "c7-s98",
+        "c7-s99",
+        "c7-s100"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-13",
+      "chapterId": "c7",
+      "segmentIndex": 13,
+      "sentenceIds": [
+        "c7-s101",
+        "c7-s102",
+        "c7-s103",
+        "c7-s104",
+        "c7-s105",
+        "c7-s106",
+        "c7-s107",
+        "c7-s108",
+        "c7-s109",
+        "c7-s110",
+        "c7-s111"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-14",
+      "chapterId": "c7",
+      "segmentIndex": 14,
+      "sentenceIds": [
+        "c7-s112",
+        "c7-s113",
+        "c7-s114",
+        "c7-s115",
+        "c7-s116",
+        "c7-s117",
+        "c7-s118",
+        "c7-s119",
+        "c7-s120"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-15",
+      "chapterId": "c7",
+      "segmentIndex": 15,
+      "sentenceIds": [
+        "c7-s121"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-16",
+      "chapterId": "c7",
+      "segmentIndex": 16,
+      "sentenceIds": [
+        "c7-s122",
+        "c7-s123",
+        "c7-s124",
+        "c7-s125",
+        "c7-s126",
+        "c7-s127",
+        "c7-s128"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-17",
+      "chapterId": "c7",
+      "segmentIndex": 17,
+      "sentenceIds": [
+        "c7-s129",
+        "c7-s130",
+        "c7-s131",
+        "c7-s132",
+        "c7-s133",
+        "c7-s134",
+        "c7-s135",
+        "c7-s136",
+        "c7-s137",
+        "c7-s138",
+        "c7-s139",
+        "c7-s140",
+        "c7-s141"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-18",
+      "chapterId": "c7",
+      "segmentIndex": 18,
+      "sentenceIds": [
+        "c7-s142",
+        "c7-s143",
+        "c7-s144",
+        "c7-s145",
+        "c7-s146"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-19",
+      "chapterId": "c7",
+      "segmentIndex": 19,
+      "sentenceIds": [
+        "c7-s147",
+        "c7-s148",
+        "c7-s149",
+        "c7-s150",
+        "c7-s151",
+        "c7-s152",
+        "c7-s153",
+        "c7-s154",
+        "c7-s155",
+        "c7-s156",
+        "c7-s157",
+        "c7-s158"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-20",
+      "chapterId": "c7",
+      "segmentIndex": 20,
+      "sentenceIds": [
+        "c7-s159",
+        "c7-s160",
+        "c7-s161",
+        "c7-s162",
+        "c7-s163",
+        "c7-s164",
+        "c7-s165",
+        "c7-s166",
+        "c7-s167"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-21",
+      "chapterId": "c7",
+      "segmentIndex": 21,
+      "sentenceIds": [
+        "c7-s168",
+        "c7-s169",
+        "c7-s170",
+        "c7-s171",
+        "c7-s172",
+        "c7-s173",
+        "c7-s174",
+        "c7-s175"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-22",
+      "chapterId": "c7",
+      "segmentIndex": 22,
+      "sentenceIds": [
+        "c7-s176",
+        "c7-s177",
+        "c7-s178",
+        "c7-s179",
+        "c7-s180",
+        "c7-s181",
+        "c7-s182",
+        "c7-s183",
+        "c7-s184"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-23",
+      "chapterId": "c7",
+      "segmentIndex": 23,
+      "sentenceIds": [
+        "c7-s185",
+        "c7-s186",
+        "c7-s187",
+        "c7-s188",
+        "c7-s189",
+        "c7-s190",
+        "c7-s191",
+        "c7-s192",
+        "c7-s193"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-24",
+      "chapterId": "c7",
+      "segmentIndex": 24,
+      "sentenceIds": [
+        "c7-s194",
+        "c7-s195",
+        "c7-s196",
+        "c7-s197",
+        "c7-s198",
+        "c7-s199",
+        "c7-s200",
+        "c7-s201",
+        "c7-s202",
+        "c7-s203",
+        "c7-s204"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-25",
+      "chapterId": "c7",
+      "segmentIndex": 25,
+      "sentenceIds": [
+        "c7-s205",
+        "c7-s206",
+        "c7-s207",
+        "c7-s208",
+        "c7-s209",
+        "c7-s210",
+        "c7-s211",
+        "c7-s212",
+        "c7-s213"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-26",
+      "chapterId": "c7",
+      "segmentIndex": 26,
+      "sentenceIds": [
+        "c7-s214"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-27",
+      "chapterId": "c7",
+      "segmentIndex": 27,
+      "sentenceIds": [
+        "c7-s215"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-28",
+      "chapterId": "c7",
+      "segmentIndex": 28,
+      "sentenceIds": [
+        "c7-s216",
+        "c7-s217",
+        "c7-s218",
+        "c7-s219",
+        "c7-s220",
+        "c7-s221",
+        "c7-s222"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-29",
+      "chapterId": "c7",
+      "segmentIndex": 29,
+      "sentenceIds": [
+        "c7-s223",
+        "c7-s224",
+        "c7-s225",
+        "c7-s226",
+        "c7-s227",
+        "c7-s228",
+        "c7-s229",
+        "c7-s230",
+        "c7-s231",
+        "c7-s232",
+        "c7-s233",
+        "c7-s234",
+        "c7-s235",
+        "c7-s236"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-30",
+      "chapterId": "c7",
+      "segmentIndex": 30,
+      "sentenceIds": [
+        "c7-s237",
+        "c7-s238",
+        "c7-s239",
+        "c7-s240",
+        "c7-s241",
+        "c7-s242"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-31",
+      "chapterId": "c7",
+      "segmentIndex": 31,
+      "sentenceIds": [
+        "c7-s243",
+        "c7-s244",
+        "c7-s245",
+        "c7-s246",
+        "c7-s247",
+        "c7-s248",
+        "c7-s249",
+        "c7-s250",
+        "c7-s251",
+        "c7-s252",
+        "c7-s253",
+        "c7-s254",
+        "c7-s255",
+        "c7-s256"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-32",
+      "chapterId": "c7",
+      "segmentIndex": 32,
+      "sentenceIds": [
+        "c7-s257",
+        "c7-s258",
+        "c7-s259",
+        "c7-s260",
+        "c7-s261",
+        "c7-s262",
+        "c7-s263",
+        "c7-s264",
+        "c7-s265",
+        "c7-s266",
+        "c7-s267"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-33",
+      "chapterId": "c7",
+      "segmentIndex": 33,
+      "sentenceIds": [
+        "c7-s268"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-34",
+      "chapterId": "c7",
+      "segmentIndex": 34,
+      "sentenceIds": [
+        "c7-s269",
+        "c7-s270",
+        "c7-s271",
+        "c7-s272",
+        "c7-s273",
+        "c7-s274",
+        "c7-s275",
+        "c7-s276"
+      ],
+      "isCodeBlock": false
+    },
+    {
+      "id": "7-35",
+      "chapterId": "c7",
+      "segmentIndex": 35,
+      "sentenceIds": [
+        "c7-s277",
+        "c7-s278",
+        "c7-s279",
+        "c7-s280"
+      ],
+      "isCodeBlock": true
+    },
+    {
+      "id": "7-36",
+      "chapterId": "c7",
+      "segmentIndex": 36,
+      "sentenceIds": [
+        "c7-s281",
+        "c7-s282",
+        "c7-s283"
+      ],
+      "isCodeBlock": false
+    }
+  ]
+}
