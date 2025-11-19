@@ -431,16 +431,41 @@ def map_segments_to_sentence_ids(
                 sentence_ids_for_segment.append(sent_id)
             sent_index += 1
 
-        results.append(
-            SentenceSegmentRecord(
-                id=segment.id,
-                chapter_id=chapter_segments.chapter_id,
-                chapter_num=chapter_segments.chapter_num,
-                segment_index=segment.segment_index,
-                sentence_ids=sentence_ids_for_segment,
-                is_code_block=segment.is_code_block,
+        # Only include segments that have at least one sentence ID
+        if sentence_ids_for_segment:
+            results.append(
+                SentenceSegmentRecord(
+                    id=segment.id,
+                    chapter_id=chapter_segments.chapter_id,
+                    chapter_num=chapter_segments.chapter_num,
+                    segment_index=segment.segment_index,
+                    sentence_ids=sentence_ids_for_segment,
+                    is_code_block=segment.is_code_block,
+                )
             )
-        )
+        else:
+            print_warning(
+                "Skipping segment with no sentence IDs",
+                format_metadata_rows(
+                    [
+                        ("Segment ID", segment.id),
+                        ("Chapter ID", chapter_segments.chapter_id),
+                        (
+                            "Segment text preview",
+                            (
+                                segment_text[:50] + "..."
+                                if len(segment_text) > 50
+                                else segment_text
+                            ),
+                        ),
+                    ]
+                ),
+            )
+
+    # Renumber segments to have sequential indices
+    for idx, record in enumerate(results, start=1):
+        record.segment_index = idx
+        record.id = f"{chapter_segments.chapter_num}-{idx}"
 
     return results
 
