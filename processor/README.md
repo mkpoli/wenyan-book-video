@@ -6,11 +6,12 @@
 2. Use `build-sentences.py` to build canonical sentence JSON files in `renderer/public/sentences/{chapter}.sentences.json`
 3. Generate required artifacts and adjust them if necessary.
    - Use `segment-text.py` to segment the text from chapter JSON files into smaller chunks to `renderer/public/segments/{chapter}.segments.json`. Check segments if they are appropriate and correct, if not, update the code to regenerate.
+   - **Edit segments interactively** using the segmenter web UI: run `bun run dev` in `segmenter/`, select a chapter, hover between sentences to split/merge, then save changes.
    - Use `translate.py` to generate English translations using OpenAI GPT-5 and save to `renderer/public/translations/{chapter}.translations.json`
    - Use `transcribe.py` to interactively transcribe sentences to IPA/TUPA and save into `renderer/public/transcripts/c{chapter}.transcripts.json`
 4.  Use `build-segments.py` to (re)build segment-level IPA transcript files `renderer/public/transcripts/audio-{chapter}-{segment}.txt` from the sentence-level IPA data and the chapter `segments` JSON files. This prepares pronunciation text (with required leading/trailing spaces) for the TTS engine.
-6.  Use `synthesize.py` to generate the audio for each chunk and save into `renderer/public/audios/`
-7.  Use `voice-change.py` to change the voice of the audio into `renderer/public/audios/female/`
+5.  Use `synthesize.py` to generate the audio for each chunk and save into `renderer/public/audios/`
+6.  Use `voice-change.py` to change the voice of the audio into `renderer/public/audios/female/`
 
 ## Real-time Segment Preview
 
