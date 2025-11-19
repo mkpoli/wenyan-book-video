@@ -381,7 +381,7 @@ export default function SegmentPreview({ sentences, segments, selectedSegmentId 
         {/* Preview - rendered Chinese text */}
         <div className="flex-1 flex items-center justify-center p-4 min-h-0">
           <div
-            className={`font-[QijiCombo,serif] h-80 leading-[1.2] text-start text-white whitespace-pre-line overflow-hidden [writing-mode:vertical-rl] [text-orientation:upright] flex items-center justify-center ${
+            className={`font-[QijiCombo,serif] h-80 leading-[1.2] text-start text-white whitespace-pre-line overflow-visible [writing-mode:vertical-rl] [text-orientation:upright] flex items-center justify-center ${
               selectedSegment.isCodeBlock ? 'text-3xl outline-2 outline-black outline-offset-4 p-4' : 'text-4xl'
             }`}
             style={{
