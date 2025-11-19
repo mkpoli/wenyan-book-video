@@ -346,7 +346,7 @@ export default function TextPane({
 
               {/* Sentence content */}
               <div
-                className={`group relative py-2 px-3 transition-colors ${
+                className={`group relative py-1 px-3 transition-colors items-center ${
                   sentence.isCode
                     ? 'bg-gray-50 dark:bg-gray-900 font-mono text-sm border-l-2 border-gray-300 dark:border-gray-700'
                     : ''
@@ -369,7 +369,7 @@ export default function TextPane({
                   // Don't clear currentSegmentId immediately to keep highlight visible
                 }}
               >
-                <div className="flex items-start gap-3">
+                <div className="flex gap-3 items-center">
                   <span
                     className={`text-xs font-mono text-gray-400 dark:text-gray-500 shrink-0 ${
                       sentence.isCode ? 'mt-0.5' : ''
@@ -392,7 +392,8 @@ export default function TextPane({
               {/* Boundary area */}
               {index < sentences.sentences.length - 1 && (
                 <div
-                  className="relative h-4 -mt-1 cursor-pointer z-10"
+                  className={`relative cursor-pointer z-10"
+                    ${hasBoundaryAfter ? 'h-4' : 'h-1'}`}
                   onMouseEnter={() => setHoveredBoundary(index)}
                   onMouseLeave={() => setHoveredBoundary(null)}
                 >
