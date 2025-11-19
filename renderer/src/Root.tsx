@@ -68,7 +68,7 @@ const calculateChapterDuration = (chapterNumber: number): number => {
 };
 
 export const RemotionRoot: React.FC = () => {
-  const currentChapterNumber = 1;
+  const currentChapterNumber = 6;
   return (
     <>
       <Folder name="Elements">
