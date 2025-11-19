@@ -67,12 +67,14 @@ export default function TextPane({
   }, [selectedSegmentId, segments, sentences]);
 
   // Build maps for efficient lookup
-  const { sentenceIndexMap, segmentBoundaries, sentenceToSegment } = useMemo(() => {
+  const { sentenceIndexMap, segmentBoundaries, sentenceToSegment, blockBoundaries, blockIdMap } = useMemo(() => {
     if (!sentences || !segments) {
       return {
         sentenceIndexMap: new Map<string, number>(),
         segmentBoundaries: new Set<number>(),
         sentenceToSegment: new Map<string, string>(),
+        blockBoundaries: new Set<number>(),
+        blockIdMap: new Map<string, string>(),
       };
     }
 
@@ -100,11 +102,28 @@ export default function TextPane({
       }
     });
 
+    // Calculate block boundaries from blockId
+    const blockBoundariesSet = new Set<number>();
+    const blockIdMapLocal = new Map<string, string>();
+    let prevBlockId: string | null = null;
+
+    sentences.sentences.forEach((sentence, idx) => {
+      const blockId = sentence.blockId || '';
+      blockIdMapLocal.set(sentence.id, blockId);
+
+      if (idx === 0 || (blockId && blockId !== prevBlockId)) {
+        blockBoundariesSet.add(idx);
+      }
+      prevBlockId = blockId;
+    });
+
     return {
       sentenceIndexMap: indexMap,
       segmentBoundaries: boundaries,
       sentenceToSegment: sentToSeg,
       segmentIdMap,
+      blockBoundaries: blockBoundariesSet,
+      blockIdMap: blockIdMapLocal,
     };
   }, [sentences, segments]);
 
@@ -258,6 +277,12 @@ export default function TextPane({
             segment?.id && Array.from(segmentIdChanges.entries()).find(([_, newId]) => newId === segment.id)?.[0];
           const firstSegmentLabel = index === 0 && segment ? `¶ ${segment.id}` : null;
 
+          // Check for block boundary
+          const isBlockStart = blockBoundaries.has(index);
+          const hasBlockChangeAfter =
+            index < sentences.sentences.length - 1 && sentence.blockId !== sentences.sentences[index + 1]?.blockId;
+          const currentBlockId = sentence.blockId;
+
           return (
             <div
               key={sentence.id}
@@ -301,6 +326,17 @@ export default function TextPane({
                           )}
                         </>
                       )}
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* Block boundary indicator (reference) */}
+              {isBlockStart && currentBlockId && (
+                <div className="relative h-2 mb-0.5">
+                  <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-300 dark:border-gray-700 opacity-40">
+                    <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-400 dark:text-gray-600 bg-white dark:bg-black px-1">
+                      {currentBlockId}
                     </span>
                   </div>
                 </div>
@@ -400,6 +436,14 @@ export default function TextPane({
                               : 'opacity-50 border-gray-300 dark:border-gray-600'
                           }`}
                         />
+                      )}
+                      {/* Block boundary indicator (reference) - between sentences */}
+                      {hasBlockChangeAfter && index < sentences.sentences.length - 1 && (
+                        <div className="absolute inset-x-0 top-0.5 border-t border-dashed border-gray-300 dark:border-gray-700 opacity-30 pointer-events-none">
+                          <span className="absolute right-0 -top-1.5 text-[10px] font-mono text-gray-400 dark:text-gray-600 bg-white dark:bg-black px-1">
+                            {sentences.sentences[index + 1]?.blockId || ''}
+                          </span>
+                        </div>
                       )}
                     </>
                   )}
