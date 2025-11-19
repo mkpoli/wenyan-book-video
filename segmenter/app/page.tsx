@@ -13,6 +13,8 @@ import {
   getInitialBoundaries,
 } from './utils/segmentOperations';
 
+import SegmentPreview from './components/SegmentPreview';
+
 export default function Home() {
   const [sentences, setSentences] = useState<ChapterSentences | null>(null);
   const [originalSegments, setOriginalSegments] = useState<ChapterSegments | null>(null);
@@ -135,14 +137,21 @@ export default function Home() {
         />
       </aside>
 
-      {/* Center pane - Text with boundaries */}
-      <main className="flex-1 overflow-hidden">
-        <div className="h-full border-r border-gray-200 dark:border-gray-800">
+      {/* Main content area - Preview on top, editing below */}
+      <main className="flex-1 flex flex-col overflow-hidden">
+        {/* Preview panel at top */}
+        <div className="h-120 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black flex flex-col shrink-0">
+          <SegmentPreview sentences={sentences} segments={segments} selectedSegmentId={selectedSegmentId} />
+        </div>
+
+        {/* Text editing panel below */}
+        <div className="flex-1 overflow-hidden custom-scrollbar">
           <TextPane
             sentences={sentences}
             segments={segments}
             selectedSegmentId={selectedSegmentId}
             onBoundaryToggle={handleBoundaryToggle}
+            onSegmentClick={handleSegmentClick}
             originalSegments={originalSegments}
             segmentIdChanges={segmentIdChanges}
             modifiedSegmentIds={modifiedSegmentIds}

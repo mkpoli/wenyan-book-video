@@ -10,6 +10,7 @@ interface TextPaneProps {
   segments: ChapterSegments | null;
   selectedSegmentId?: string | null;
   onBoundaryToggle?: (sentenceIndex: number, hasBoundary: boolean) => void;
+  onSegmentClick?: (segmentId: string) => void;
   originalSegments?: ChapterSegments | null;
   segmentIdChanges?: Map<string, string>;
   modifiedSegmentIds?: Set<string>;
@@ -26,6 +27,7 @@ export default function TextPane({
   segments,
   selectedSegmentId,
   onBoundaryToggle,
+  onSegmentClick,
   originalSegments,
   segmentIdChanges = new Map(),
   modifiedSegmentIds = new Set(),
@@ -354,7 +356,12 @@ export default function TextPane({
                     : sentence.isCode
                       ? ''
                       : 'hover:bg-gray-50/50 dark:hover:bg-gray-900/30'
-                }`}
+                } ${segment?.id ? 'cursor-pointer' : ''}`}
+                onClick={() => {
+                  if (segment?.id && onSegmentClick) {
+                    onSegmentClick(segment.id);
+                  }
+                }}
                 onMouseEnter={() => {
                   if (segment?.id) setCurrentSegmentId(segment.id);
                 }}
