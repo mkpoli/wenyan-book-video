@@ -4,6 +4,7 @@
   "workspaces": [
     "renderer",
     "transcription-utils",
-    "processor"
+    "processor",
+    "segmenter"
   ]
 }
