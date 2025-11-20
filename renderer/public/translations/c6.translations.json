@@ -1,0 +1,2178 @@
+{
+  "c6-s1": {
+    "source": "森森矛戟。",
+    "translation": "Stern-ranked — the spears and halberds."
+  },
+  "c6-s2": {
+    "source": "洸洸武夫。",
+    "translation": "Gleaming-valiant — the martial men."
+  },
+  "c6-s3": {
+    "source": "陣者兵之列也。",
+    "translation": "A formation — is the array of soldiers."
+  },
+  "c6-s4": {
+    "source": "鱗鱗孔方。",
+    "translation": "Scale-layered — the hole-coins."
+  },
+  "c6-s5": {
+    "source": "穰穰青蚨。",
+    "translation": "Abundant - the blue-copper cash."
+  },
+  "c6-s6": {
+    "source": "吊者錢之列也。",
+    "translation": "A money-string — is a row of coins."
+  },
+  "c6-s7": {
+    "source": "靡靡鄭聲。",
+    "translation": "Soft-swaying — the melodies of Zheng."
+  },
+  "c6-s8": {
+    "source": "丁丁清響。",
+    "translation": "Tinkling and crystalline — the clear tones."
+  },
+  "c6-s9": {
+    "source": "曲者音之列也。",
+    "translation": "A melody — is a series of sounds."
+  },
+  "c6-s10": {
+    "source": "浩浩汪洋。",
+    "translation": "Vast, boundless — the wide waters."
+  },
+  "c6-s11": {
+    "source": "揚揚義氣。",
+    "translation": "Lofty and uplifted — the spirit of righteousness."
+  },
+  "c6-s12": {
+    "source": "文章者字之列也。",
+    "translation": "A writing — is the array of characters."
+  },
+  "c6-s13": {
+    "source": "天下之物既眾。",
+    "translation": "The myriad things under Heaven are already numerous."
+  },
+  "c6-s14": {
+    "source": "或不知幾何。",
+    "translation": "Some know not how many there are."
+  },
+  "c6-s15": {
+    "source": "或不可勝數。",
+    "translation": "Some are well beyond counting."
+  },
+  "c6-s16": {
+    "source": "皆以列法法之。",
+    "translation": "All are governed by the method of lists."
+  },
+  "c6-s17": {
+    "source": "數列列數。",
+    "translation": "Number‑lists list numbers."
+  },
+  "c6-s18": {
+    "source": "言列列言。",
+    "translation": "Word‑lists list words."
+  },
+  "c6-s19": {
+    "source": "爻列列爻。",
+    "translation": "Ghaew‑lists list Ghaews."
+  },
+  "c6-s20": {
+    "source": "列列列列。",
+    "translation": "Lists-lists list lists."
+  },
+  "c6-s21": {
+    "source": "罔不裁物而器。",
+    "translation": "There is none that does not fashion things into implements."
+  },
+  "c6-s22": {
+    "source": "序物而次。",
+    "translation": "They order things and set them in due sequence."
+  },
+  "c6-s23": {
+    "source": "載物而厚。",
+    "translation": "They load things and preserve them in fullness."
+  },
+  "c6-s24": {
+    "source": "是謂之列。",
+    "translation": "This is called a List."
+  },
+  "c6-s25": {
+    "source": "維編程用列之法。",
+    "translation": "In programming, one employs the method of lists."
+  },
+  "c6-s26": {
+    "source": "或入之。",
+    "translation": "Some insert into it."
+  },
+  "c6-s27": {
+    "source": "或取之。",
+    "translation": "Some take from it."
+  },
+  "c6-s28": {
+    "source": "入法二。",
+    "translation": "There are two methods of insertion."
+  },
+  "c6-s29": {
+    "source": "曰`充`。",
+    "translation": "It is called ‘fill’."
+  },
+  "c6-s30": {
+    "source": "曰`銜`。",
+    "translation": "It is called ‘concat’."
+  },
+  "c6-s31": {
+    "source": "取法三。",
+    "translation": "There are three methods of extraction."
+  },
+  "c6-s32": {
+    "source": "曰`其一`。",
+    "translation": "It is called ‘first’."
+  },
+  "c6-s33": {
+    "source": "曰`其餘`。",
+    "translation": "It is called ‘rest’."
+  },
+  "c6-s34": {
+    "source": "曰`之長`。",
+    "translation": "It is called ‘length’."
+  },
+  "c6-s35": {
+    "source": "列之初創。",
+    "translation": "Upon a list's first creation."
+  },
+  "c6-s36": {
+    "source": "空無一物。",
+    "translation": "It is empty; not a single thing is within."
+  },
+  "c6-s37": {
+    "source": "`充`者。",
+    "translation": "As for ‘fill’ —"
+  },
+  "c6-s38": {
+    "source": "一一添於其後也。",
+    "translation": "It appends, one by one, to its rear."
+  },
+  "c6-s39": {
+    "source": "吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s40": {
+    "source": "名之曰「甲」。",
+    "translation": "Name it ‘A’."
+  },
+  "c6-s41": {
+    "source": "充「甲」以三。",
+    "translation": "Fill ‘A’ with three."
+  },
+  "c6-s42": {
+    "source": "充「甲」以五。",
+    "translation": "Fill ‘A’ with five."
+  },
+  "c6-s43": {
+    "source": "當是時。",
+    "translation": "At that time,"
+  },
+  "c6-s44": {
+    "source": "「甲」之列乃有二數。",
+    "translation": "The list ‘A’ then contained two numbers."
+  },
+  "c6-s45": {
+    "source": "曰三。",
+    "translation": "It is three."
+  },
+  "c6-s46": {
+    "source": "曰五。",
+    "translation": "It is five."
+  },
+  "c6-s47": {
+    "source": "或問曰。",
+    "translation": "Someone asked,"
+  },
+  "c6-s48": {
+    "source": "欲一舉而充之。",
+    "translation": "Would one, in a single stroke, append them all?"
+  },
+  "c6-s49": {
+    "source": "可乎。",
+    "translation": "Is it possible?"
+  },
+  "c6-s50": {
+    "source": "曰。",
+    "translation": "It is answered:,"
+  },
+  "c6-s51": {
+    "source": "可也。",
+    "translation": "“It is possible.”"
+  },
+  "c6-s52": {
+    "source": "吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s53": {
+    "source": "名之曰「乙」。",
+    "translation": "Name it ‘B’."
+  },
+  "c6-s54": {
+    "source": "充「乙」以二。",
+    "translation": "Fill ‘B’ with two."
+  },
+  "c6-s55": {
+    "source": "以九。",
+    "translation": "With nine."
+  },
+  "c6-s56": {
+    "source": "以四。",
+    "translation": "With four."
+  },
+  "c6-s57": {
+    "source": "以二十二。",
+    "translation": "With twenty-two."
+  },
+  "c6-s58": {
+    "source": "故是「甲」有二數。",
+    "translation": "Therefore, the list ‘A’ has two numbers."
+  },
+  "c6-s59": {
+    "source": "「乙」有四數。",
+    "translation": "The list ‘B’ has four numbers."
+  },
+  "c6-s60": {
+    "source": "今欲聯合甲乙。",
+    "translation": "Now one desires to unite ‘A’ and ‘B’."
+  },
+  "c6-s61": {
+    "source": "令甲之後為乙。",
+    "translation": "Make that which follows ‘A’ be ‘B’."
+  },
+  "c6-s62": {
+    "source": "乙之前為甲。",
+    "translation": "Make that which precedes ‘B’ be ‘A’."
+  },
+  "c6-s63": {
+    "source": "併兩列成一列。",
+    "translation": "Combine the two lists into a single list."
+  },
+  "c6-s64": {
+    "source": "乃用`銜`句。",
+    "translation": "Then employ the ‘concat’ clause."
+  },
+  "c6-s65": {
+    "source": "銜「甲」以「乙」。",
+    "translation": "Concatenate ‘A’ with ‘B’."
+  },
+  "c6-s66": {
+    "source": "名之曰「丙」。",
+    "translation": "Name it ‘C’."
+  },
+  "c6-s67": {
+    "source": "遑論列之若干。",
+    "translation": "Need we speak of how many a list may contain?"
+  },
+  "c6-s68": {
+    "source": "亦可一舉而銜之如是。",
+    "translation": "It is likewise possible, in one stroke, to concatenate them so."
+  },
+  "c6-s69": {
+    "source": "銜「甲」以「乙」。",
+    "translation": "Concatenate ‘A’ with ‘B’."
+  },
+  "c6-s70": {
+    "source": "以「丙」。",
+    "translation": "With ‘C’."
+  },
+  "c6-s71": {
+    "source": "以「丁」。",
+    "translation": "With ‘D’."
+  },
+  "c6-s72": {
+    "source": "名之曰「戊」。",
+    "translation": "Name it ‘E’."
+  },
+  "c6-s73": {
+    "source": "既見入法。",
+    "translation": "Having now seen the methods of insertion."
+  },
+  "c6-s74": {
+    "source": "復聞取法。",
+    "translation": "Again, we consider the methods of extraction."
+  },
+  "c6-s75": {
+    "source": "今取其列之首物。",
+    "translation": "Now, take the list's first item."
+  },
+  "c6-s76": {
+    "source": "次物。",
+    "translation": "Next, the subsequent item."
+  },
+  "c6-s77": {
+    "source": "觀之用之。",
+    "translation": "Observe it; employ it."
+  },
+  "c6-s78": {
+    "source": "書之如是。",
+    "translation": "Write it thus."
+  },
+  "c6-s79": {
+    "source": "夫「甲」之一。",
+    "translation": "As for the first of ‘A’."
+  },
+  "c6-s80": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s81": {
+    "source": "\n夫「甲」之二。",
+    "translation": "As for the second of ‘A’."
+  },
+  "c6-s82": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s83": {
+    "source": "\n夫「乙」之四。",
+    "translation": "As for the fourth of ‘B’."
+  },
+  "c6-s84": {
+    "source": "加其以四十五。",
+    "translation": "Add to it forty‑five."
+  },
+  "c6-s85": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s86": {
+    "source": "欲易列中之物。",
+    "translation": "If one desires to alter an item within a list."
+  },
+  "c6-s87": {
+    "source": "乃稍變前章`昔之`句。",
+    "translation": "Then slightly alter the previous chapter's “Formerly” sentence."
+  },
+  "c6-s88": {
+    "source": "書如是。",
+    "translation": "Write thus."
+  },
+  "c6-s89": {
+    "source": "昔之「甲」之一者。",
+    "translation": "Formerly, the first of ‘A’."
+  },
+  "c6-s90": {
+    "source": "今五是矣。",
+    "translation": "Now, it is five."
+  },
+  "c6-s91": {
+    "source": "\n昔之「乙」之三者。",
+    "translation": "Formerly, the third of ‘B’."
+  },
+  "c6-s92": {
+    "source": "今「丙」之四是矣。",
+    "translation": "Now, it is the fourth of ‘C’."
+  },
+  "c6-s93": {
+    "source": "列之長短無定。",
+    "translation": "A list's length is of no fixed measure."
+  },
+  "c6-s94": {
+    "source": "或寥寥二三物。",
+    "translation": "Some are scant, containing but two or three things."
+  },
+  "c6-s95": {
+    "source": "乃至成千上萬。",
+    "translation": "They may even extend to thousands and myriads."
+  },
+  "c6-s96": {
+    "source": "然亦毋須另記。",
+    "translation": "Yet, there is no need to record them elsewhere."
+  },
+  "c6-s97": {
+    "source": "時可以`之長`句得之也。",
+    "translation": "Then, one may obtain it by the ‘length’ clause."
+  },
+  "c6-s98": {
+    "source": "既知其長。",
+    "translation": "Once its length is known."
+  },
+  "c6-s99": {
+    "source": "以循環次第觀一列之物。",
+    "translation": "By looping through successive positions, observe the items of a list."
+  },
+  "c6-s100": {
+    "source": "易矣。",
+    "translation": "It is easy."
+  },
+  "c6-s101": {
+    "source": "夫「甲」之長。",
+    "translation": "As for the length of ‘A’."
+  },
+  "c6-s102": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s103": {
+    "source": "\n\n有數一。",
+    "translation": "There is a number one."
+  },
+  "c6-s104": {
+    "source": "名之曰「乙」。",
+    "translation": "Name it ‘B’."
+  },
+  "c6-s105": {
+    "source": "\n恆為是。",
+    "translation": "Constantly do this."
+  },
+  "c6-s106": {
+    "source": "若「乙」大於「甲」之長者。",
+    "translation": "If ‘B’ be greater than the length of ‘A’."
+  },
+  "c6-s107": {
+    "source": "乃止也。",
+    "translation": "Then, stop."
+  },
+  "c6-s108": {
+    "source": "\n\t夫「甲」之「乙」。",
+    "translation": "As for the ‘B’ of ‘A’."
+  },
+  "c6-s109": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s110": {
+    "source": "\n加「乙」以一。",
+    "translation": "Add one to ‘B’."
+  },
+  "c6-s111": {
+    "source": "昔之「乙」者。",
+    "translation": "Formerly, the ‘B’."
+  },
+  "c6-s112": {
+    "source": "今其是矣。",
+    "translation": "Now, it is so."
+  },
+  "c6-s113": {
+    "source": "云云。",
+    "translation": "And so on."
+  },
+  "c6-s114": {
+    "source": "列既能增而長之。",
+    "translation": "Since a list may be increased and thereby lengthened."
+  },
+  "c6-s115": {
+    "source": "亦可分以短之。",
+    "translation": "It may likewise be shortened by division."
+  },
+  "c6-s116": {
+    "source": "`其餘`者。",
+    "translation": "As for the ‘rest’ clause."
+  },
+  "c6-s117": {
+    "source": "棄其第一而留其他也。",
+    "translation": "It discards the first and retains the others."
+  },
+  "c6-s118": {
+    "source": "夫「甲」之其餘。",
+    "translation": "As for the ‘rest’ of ‘A’."
+  },
+  "c6-s119": {
+    "source": "名之曰「乙」。",
+    "translation": "Name it ‘B’."
+  },
+  "c6-s120": {
+    "source": "使「甲」有一二三者。",
+    "translation": "Let ‘A’ have one, two, three."
+  },
+  "c6-s121": {
+    "source": "「乙」乃有二三。",
+    "translation": "Thus, ‘B’ contains two and three."
+  },
+  "c6-s122": {
+    "source": "使「甲」有二四六八者。",
+    "translation": "Let ‘A’ have two, four, six, eight."
+  },
+  "c6-s123": {
+    "source": "「乙」乃有四六八。",
+    "translation": "Thus, ‘B’ contains four, six, eight."
+  },
+  "c6-s124": {
+    "source": "是謂`其餘`也。",
+    "translation": "This is called the ‘rest’."
+  },
+  "c6-s125": {
+    "source": "或問曰。",
+    "translation": "Someone asked,"
+  },
+  "c6-s126": {
+    "source": "先充之以數。",
+    "translation": "First, supply it with numbers."
+  },
+  "c6-s127": {
+    "source": "後充之以言。",
+    "translation": "Afterward, supply it with words."
+  },
+  "c6-s128": {
+    "source": "或復充之以爻。",
+    "translation": "Or, again, supply it with Ghaews."
+  },
+  "c6-s129": {
+    "source": "可乎。",
+    "translation": "Is that permitted?"
+  },
+  "c6-s130": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c6-s131": {
+    "source": "不可也。",
+    "translation": "It is not permitted."
+  },
+  "c6-s132": {
+    "source": "列初創。",
+    "translation": "When a list is first created,"
+  },
+  "c6-s133": {
+    "source": "其類無定。",
+    "translation": "its type is not fixed."
+  },
+  "c6-s134": {
+    "source": "然既充輒知。",
+    "translation": "Yet, once it is filled, its nature is at once known."
+  },
+  "c6-s135": {
+    "source": "自是不得混淆耳。",
+    "translation": "Henceforth, they must not be mixed."
+  },
+  "c6-s136": {
+    "source": "又列有異名者。",
+    "translation": "Moreover, a list may bear different names."
+  },
+  "c6-s137": {
+    "source": "其實或同。",
+    "translation": "In truth, however, their substance may be the same."
+  },
+  "c6-s138": {
+    "source": "牽一而二動。",
+    "translation": "Draw one, and the other is set in motion."
+  },
+  "c6-s139": {
+    "source": "例曰。",
+    "translation": "For instance, say,"
+  },
+  "c6-s140": {
+    "source": "吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s141": {
+    "source": "名之曰「甲」。",
+    "translation": "Name it ‘A’."
+  },
+  "c6-s142": {
+    "source": "充「甲」以一。",
+    "translation": "Fill ‘A’ with one."
+  },
+  "c6-s143": {
+    "source": "以二。",
+    "translation": "Then, with two."
+  },
+  "c6-s144": {
+    "source": "以三。",
+    "translation": "Then, with three."
+  },
+  "c6-s145": {
+    "source": "\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s146": {
+    "source": "曰「甲」。",
+    "translation": "It is called ‘A’."
+  },
+  "c6-s147": {
+    "source": "名之曰「乙」。",
+    "translation": "Name it ‘B’."
+  },
+  "c6-s148": {
+    "source": "\n昔之「乙」之一者。",
+    "translation": "Formerly, the first of ‘B’."
+  },
+  "c6-s149": {
+    "source": "今四是矣。",
+    "translation": "Now, it is four."
+  },
+  "c6-s150": {
+    "source": "\n夫「甲」。",
+    "translation": "As for ‘A’ —"
+  },
+  "c6-s151": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s152": {
+    "source": "乃得「甲」者。",
+    "translation": "Thus, one obtains ‘A’."
+  },
+  "c6-s153": {
+    "source": "`四。二。三。`",
+    "translation": "Four. Two. Three."
+  },
+  "c6-s154": {
+    "source": "也。",
+    "translation": "Thus it is."
+  },
+  "c6-s155": {
+    "source": "唯易「乙」而殃及「甲」。",
+    "translation": "Yet, by changing ‘B’ alone, the mischief extends to ‘A’."
+  },
+  "c6-s156": {
+    "source": "不亦謬乎。",
+    "translation": "Is it not an error?"
+  },
+  "c6-s157": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c6-s158": {
+    "source": "非也。",
+    "translation": "It is not so."
+  },
+  "c6-s159": {
+    "source": "蓋「甲」「乙」所指。",
+    "translation": "As for what ‘A’ and ‘B’ signify —"
+  },
+  "c6-s160": {
+    "source": "同一列也。",
+    "translation": "they are but one and the same list."
+  },
+  "c6-s161": {
+    "source": "名雖二則實一也。",
+    "translation": "Though two in name, in truth they are one."
+  },
+  "c6-s162": {
+    "source": "問曰。",
+    "translation": "It is asked,"
+  },
+  "c6-s163": {
+    "source": "欲令其實亦二。",
+    "translation": "Desiring that their substance likewise be two,"
+  },
+  "c6-s164": {
+    "source": "互不相干。",
+    "translation": "and that they have no bearing upon one another."
+  },
+  "c6-s165": {
+    "source": "當如何。",
+    "translation": "How then shall one proceed?"
+  },
+  "c6-s166": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c6-s167": {
+    "source": "當如是。",
+    "translation": "Thus shall it be."
+  },
+  "c6-s168": {
+    "source": "吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s169": {
+    "source": "名之曰「乙」。",
+    "translation": "Name it ‘B’."
+  },
+  "c6-s170": {
+    "source": "\n凡「甲」中之「元」。",
+    "translation": "For each element within ‘A’ —"
+  },
+  "c6-s171": {
+    "source": "充「乙」以「元」也。",
+    "translation": "fill ‘B’ with that element."
+  },
+  "c6-s172": {
+    "source": "漢張衡字平子。",
+    "translation": "Zhang Heng of the Han; his courtesy name was Pingzi."
+  },
+  "c6-s173": {
+    "source": "全才人也。",
+    "translation": "He was a man of consummate talents."
+  },
+  "c6-s174": {
+    "source": "文有四愁詩。",
+    "translation": "Among his writings is the set of poems called “Four Sorrows”."
+  },
+  "c6-s175": {
+    "source": "其詩風流婉轉。",
+    "translation": "The poems are elegant, flowing, and finely turned."
+  },
+  "c6-s176": {
+    "source": "上承屈子之遺義。",
+    "translation": "They take up, above, the inherited sense bequeathed by Qu Yuan."
+  },
+  "c6-s177": {
+    "source": "下啟七言之濫觴。",
+    "translation": "They, below, open the fountainhead of the seven-character line."
+  },
+  "c6-s178": {
+    "source": "今假其詩以示列之用。",
+    "translation": "Now, borrowing his poems, I shall illustrate the uses of lists."
+  },
+  "c6-s179": {
+    "source": "其詩四章。",
+    "translation": "The poems consist of four chapters."
+  },
+  "c6-s180": {
+    "source": "句多復沓。",
+    "translation": "Many lines recur again and again."
+  },
+  "c6-s181": {
+    "source": "若「我所思兮在」云云皆同。",
+    "translation": "Phrases such as “My thoughts dwell at,” and the like, are all alike."
+  },
+  "c6-s182": {
+    "source": "唯「太山」「桂林」。",
+    "translation": "Only “Mount Tai” and “Guilin.”"
+  },
+  "c6-s183": {
+    "source": "「金錯刀」「琴琅玕」諸辭固異。",
+    "translation": "Words such as “Golden-inlaid knife” and “Jade-lustrous zither” are indeed distinct."
+  },
+  "c6-s184": {
+    "source": "故先入其變辭於列中待用也。",
+    "translation": "Therefore, first insert these variant phrases into the list, to await use."
+  },
+  "c6-s185": {
+    "source": "吾有八列。",
+    "translation": "I have eight lists."
+  },
+  "c6-s186": {
+    "source": "名之曰「其所」。",
+    "translation": "Name it ‘its places’."
+  },
+  "c6-s187": {
+    "source": "曰「所難」。",
+    "translation": "Name it ‘the hardships’."
+  },
+  "c6-s188": {
+    "source": "曰「其方」。",
+    "translation": "Name it ‘its directions’."
+  },
+  "c6-s189": {
+    "source": "曰「所沾」。",
+    "translation": "Name it ‘the wetted’."
+  },
+  "c6-s190": {
+    "source": "曰「所贈」。",
+    "translation": "Name it ‘the gifts’."
+  },
+  "c6-s191": {
+    "source": "曰「所報」。",
+    "translation": "Name it ‘the returns’."
+  },
+  "c6-s192": {
+    "source": "曰「所感」。",
+    "translation": "Name it ‘the feelings’."
+  },
+  "c6-s193": {
+    "source": "曰「所傷」。",
+    "translation": "Name it ‘the sorrows’."
+  },
+  "c6-s194": {
+    "source": "\n充「其所」以『太山』以『桂林』以『漢陽』以『雁門』。",
+    "translation": "Fill ‘its places’ with “Mount Tai”, with “Guilin”, with “Hanyang”, with “Yanmen”."
+  },
+  "c6-s195": {
+    "source": "\n充「所難」以『樑父艱』以『湘水深』以『隴阪長』以『雪雰雰』。",
+    "translation": "Fill ‘the hardships’ with “the Arduous Ascent of Liangfu”, with “the Deep Water of Xiang”, with “the Long Slopes of Long”, with “the Thickly Drifting Snow”."
+  },
+  "c6-s196": {
+    "source": "\n充「其方」以『東』以『南』以『西』以『北』。",
+    "translation": "Fill ‘its directions’ with “East”, with “South”, with “West”, with “North”."
+  },
+  "c6-s197": {
+    "source": "\n充「所沾」以『翰』以『襟』以『裳』以『巾』。",
+    "translation": "Fill ‘the wetted’ with “the Sleeve”, with “the Lapel”, with “the Skirt”, with “the Kerchief”."
+  },
+  "c6-s198": {
+    "source": "\n充「所贈」以『金錯刀』以『琴琅玕』以『貂襜褕』以『錦繡段』。",
+    "translation": "Fill ‘the gifts’ with “Golden-inlaid Knife”, with “Jade-lustrous Zither”, with “Sable-trimmed Robe”, with “Silk-brocaded Piece”."
+  },
+  "c6-s199": {
+    "source": "\n充「所報」以『英瓊瑤』以『雙玉盤』以『明月珠』以『青玉案』。",
+    "translation": "Fill ‘the returns’ with “Fine Jasper Jewels”, with “Twin Jade Platters”, with “Moon-bright Pearl”, with “Green-Jade Stand”."
+  },
+  "c6-s200": {
+    "source": "\n充「所感」以『逍遙』以『惆悵』以『踟躕』以『增嘆』。",
+    "translation": "Fill ‘the feelings’ with “Carefree”, with “Melancholy”, with “Hesitation”, with “Deepened Sighs”."
+  },
+  "c6-s201": {
+    "source": "\n充「所傷」以『勞』以『傷』以『紆』以『惋』。",
+    "translation": "Fill ‘the sorrows’ with “Toil”, with “Pain”, with “Distress”, with “Regret”."
+  },
+  "c6-s202": {
+    "source": "未示其詩。",
+    "translation": "I have not yet shown the poems."
+  },
+  "c6-s203": {
+    "source": "請先以一觀諸列。",
+    "translation": "Pray, first, behold the lists at one glance."
+  },
+  "c6-s204": {
+    "source": "`凡「列」中之「元」`者。",
+    "translation": "As for the ‘elements’ within ‘Lists’ —"
+  },
+  "c6-s205": {
+    "source": "亦循環也。",
+    "translation": "They are, likewise, loops."
+  },
+  "c6-s206": {
+    "source": "是句見於前章。",
+    "translation": "This phrase appears in the preceding chapter."
+  },
+  "c6-s207": {
+    "source": "斯人所居。",
+    "translation": "The place where this man dwelt."
+  },
+  "c6-s208": {
+    "source": "斯人所遺。",
+    "translation": "That which he left behind."
+  },
+  "c6-s209": {
+    "source": "藉此以列之。",
+    "translation": "By this, arrange them into lists."
+  },
+  "c6-s210": {
+    "source": "凡「其所」中之「地」。",
+    "translation": "All the ‘locations’ within ‘its places’ —"
+  },
+  "c6-s211": {
+    "source": "\n\t夫「地」。",
+    "translation": "As for ‘locations’ —"
+  },
+  "c6-s212": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s213": {
+    "source": "\n云云。",
+    "translation": "Thus and thus."
+  },
+  "c6-s214": {
+    "source": "\n吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s215": {
+    "source": "曰『此皆有所思之地也』。",
+    "translation": "It says, ‘These are all places that are thought of.’"
+  },
+  "c6-s216": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s217": {
+    "source": "\n\n凡「所贈」中之「寶」。",
+    "translation": "As for all the ‘treasures’ within ‘the gifts’ —"
+  },
+  "c6-s218": {
+    "source": "\n\t夫「寶」。",
+    "translation": "As for ‘treasures’ —"
+  },
+  "c6-s219": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s220": {
+    "source": "\n云云。",
+    "translation": "Thus and thus."
+  },
+  "c6-s221": {
+    "source": "\n吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s222": {
+    "source": "曰『此皆美人之所贈也』。",
+    "translation": "It says, ‘These are all gifts bestowed by the fair one.’"
+  },
+  "c6-s223": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c6-s224": {
+    "source": "乃以左書張子之詩。",
+    "translation": "Then, on the left, write Master Zhang’s poem."
+  },
+  "c6-s225": {
+    "source": "其循環之體。",
+    "translation": "Its cyclic form."
+  },
+  "c6-s226": {
+    "source": "或言復沓。",
+    "translation": "Some say it is repetitious."
+  },
+  "c6-s227": {
+    "source": "或取變辭於諸列。",
+    "translation": "Some take altered phrases from the several lists."
+  },
+  "c6-s228": {
+    "source": "終一章一併書之。",
+    "translation": "Finally, write an entire chapter all together."
+  },
+  "c6-s229": {
+    "source": "有數一。",
+    "translation": "There is a number, one."
+  },
+  "c6-s230": {
+    "source": "名之曰「章」。",
+    "translation": "Name it ‘i’."
+  },
+  "c6-s231": {
+    "source": "\n夫「其所」之長。",
+    "translation": "As for the length of ‘its places’ —"
+  },
+  "c6-s232": {
+    "source": "為是其遍。",
+    "translation": "Do this that many times."
+  },
+  "c6-s233": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s234": {
+    "source": "曰『我所思兮在』。",
+    "translation": "It says, ‘My thoughts dwell at,’"
+  },
+  "c6-s235": {
+    "source": "夫「其所」之「章」。",
+    "translation": "As for the ‘i’ of ‘its places’ —"
+  },
+  "c6-s236": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s237": {
+    "source": "曰『。欲往從之』。",
+    "translation": "It says, ‘I desire to go and follow her.’"
+  },
+  "c6-s238": {
+    "source": "夫「所難」之「章」。",
+    "translation": "As for the ‘i’ of ‘the hardships’ —"
+  },
+  "c6-s239": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s240": {
+    "source": "曰『。側身』。",
+    "translation": "It says, ‘Turn aside.’"
+  },
+  "c6-s241": {
+    "source": "夫「其方」之「章」。",
+    "translation": "As for the ‘i’ of ‘its directions’ —"
+  },
+  "c6-s242": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s243": {
+    "source": "曰『望涕沾』。",
+    "translation": "It says, ‘I gaze — tears wet me.’"
+  },
+  "c6-s244": {
+    "source": "夫「所沾」之「章」。",
+    "translation": "As for the ‘i’ of ‘the wetted’ —"
+  },
+  "c6-s245": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s246": {
+    "source": "曰『。美人贈我』。",
+    "translation": "It says, ‘The fair one bestowed upon me.’"
+  },
+  "c6-s247": {
+    "source": "夫「所贈」之「章」。",
+    "translation": "As for the ‘i’ of “the gifts” —"
+  },
+  "c6-s248": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s249": {
+    "source": "曰『。何以報之』。",
+    "translation": "It says, ‘How shall I repay it?’"
+  },
+  "c6-s250": {
+    "source": "夫「所報」之「章」。",
+    "translation": "As for the ‘i’ of “repayment” —"
+  },
+  "c6-s251": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s252": {
+    "source": "曰『。路遠莫致倚』。",
+    "translation": "It says, ‘The road is long — none may bring a leaning.’"
+  },
+  "c6-s253": {
+    "source": "夫「所感」之「章」。",
+    "translation": "As for the ‘i’ of “feelings” —"
+  },
+  "c6-s254": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c6-s255": {
+    "source": "曰『。何爲懷憂心煩』。",
+    "translation": "It says, ‘Why harbor anxious cares, my heart vexed?’"
+  },
+  "c6-s256": {
+    "source": "夫「所傷」之「章」。",
+    "translation": "As for the ‘i’ of “sorrows” —"
+  },
+  "c6-s257": {
+    "source": "\n\t書之。",
+    "translation": "Write it down."
+  },
+  "c6-s258": {
+    "source": "\n\t加「章」以一。",
+    "translation": "Add one to the ‘i’."
+  },
+  "c6-s259": {
+    "source": "昔之「章」者。",
+    "translation": "As for the ‘i’ of old —"
+  },
+  "c6-s260": {
+    "source": "今其是矣。",
+    "translation": "Now, it is thus."
+  },
+  "c6-s261": {
+    "source": "\n云云。",
+    "translation": "Thus and thus."
+  },
+  "c6-s262": {
+    "source": "乃得原詩如是。",
+    "translation": "Thus is the original poem obtained."
+  },
+  "c6-s263": {
+    "source": "我所思兮在太山。",
+    "translation": "My thoughts dwell at Mount Tai."
+  },
+  "c6-s264": {
+    "source": "欲往從之樑父艱。",
+    "translation": "I yearn to go and follow her; yet the ascent of Mount Liangfu is steep and hard."
+  },
+  "c6-s265": {
+    "source": "側身東望涕沾翰。",
+    "translation": "Turning aside, I gaze eastward — tears wet my sleeve."
+  },
+  "c6-s266": {
+    "source": "美人贈我金錯刀。",
+    "translation": "The fair one bestowed upon me a gold-inlaid blade."
+  },
+  "c6-s267": {
+    "source": "何以報之英瓊瑤。",
+    "translation": "How shall I repay it with fine jasper jewels?"
+  },
+  "c6-s268": {
+    "source": "路遠莫致倚逍遙。",
+    "translation": "The road runs far; none may deliver it — ah, carefree repose."
+  },
+  "c6-s269": {
+    "source": "何爲懷憂心煩勞\n我所思兮在桂林。",
+    "translation": "Why must I harbor care and let my heart grow weary?.\n My thoughts dwell at Guilin,"
+  },
+  "c6-s270": {
+    "source": "欲往從之湘水深。",
+    "translation": "I yearn to go and follow her; yet the deep waters of the Xiang forbid the way."
+  },
+  "c6-s271": {
+    "source": "側身南望涕沾襟。",
+    "translation": "Turning aside, I gaze southward — tears wet my lapel."
+  },
+  "c6-s272": {
+    "source": "美人贈我琴琅玕。",
+    "translation": "The fair one bestowed upon me a jade-bright zither."
+  },
+  "c6-s273": {
+    "source": "何以報之雙玉盤。",
+    "translation": "How shall I repay it with a pair of jade-white plates?"
+  },
+  "c6-s274": {
+    "source": "路遠莫致倚惆悵。",
+    "translation": "The road runs far; none may deliver it — ah, lingering sorrow."
+  },
+  "c6-s275": {
+    "source": "何爲懷憂心煩傷\n我所思兮在漢陽。",
+    "translation": "Why must I harbor care and let my heart grow hurt?\nMy thoughts dwell in Hanyang."
+  },
+  "c6-s276": {
+    "source": "欲往從之隴阪長。",
+    "translation": "I yearn to go and follow her; yet the long ascent of Long Slope winds endlessly."
+  },
+  "c6-s277": {
+    "source": "側身西望涕沾裳。",
+    "translation": "Turning aside, I gaze westward — tears wet my skirt."
+  },
+  "c6-s278": {
+    "source": "美人贈我貂襜褕。",
+    "translation": "The fair one bestowed upon me a sable-trimmed robe."
+  },
+  "c6-s279": {
+    "source": "何以報之明月珠。",
+    "translation": "How shall I repay it with a moon-bright pearl?"
+  },
+  "c6-s280": {
+    "source": "路遠莫致倚踟躕。",
+    "translation": "The road runs far; none may deliver it — ah, hesitant pause."
+  },
+  "c6-s281": {
+    "source": "何爲懷憂心煩紆\n我所思兮在雁門。",
+    "translation": "Why must I harbor care and let my heart grow distressed?\nMy thoughts dwell at Yanmen."
+  },
+  "c6-s282": {
+    "source": "欲往從之雪雰雰。",
+    "translation": "I yearn to go and follow her; yet snow falls thick and swirling."
+  },
+  "c6-s283": {
+    "source": "側身北望涕沾巾。",
+    "translation": "Turning aside, I gaze northward — tears wet my kerchief."
+  },
+  "c6-s284": {
+    "source": "美人贈我錦繡段。",
+    "translation": "The fair one bestowed upon me a bolt of brocade."
+  },
+  "c6-s285": {
+    "source": "何以報之青玉案。",
+    "translation": "How shall I repay it with a tray of greenest jade?"
+  },
+  "c6-s286": {
+    "source": "路遠莫致倚增嘆。",
+    "translation": "The road runs far; none may deliver it — ah, rising sighs."
+  },
+  "c6-s287": {
+    "source": "何爲懷憂心煩惋",
+    "translation": "Why must I harbor care and let my heart grow regretful?"
+  },
+  "c6-s288": {
+    "source": "其詩晉人傅玄。",
+    "translation": "Speaking of the poem, by Fu Xuan of the Jin."
+  },
+  "c6-s289": {
+    "source": "宋人張載。",
+    "translation": "by Zhang Zai of the Song."
+  },
+  "c6-s290": {
+    "source": "近人魯迅皆嘗為擬作。",
+    "translation": "and by Lu Xun of more recent times, they likewise essayed to compose imitations."
+  },
+  "c6-s291": {
+    "source": "請吾子擇己所好。",
+    "translation": "I entreat thee, choose according to your own liking."
+  },
+  "c6-s292": {
+    "source": "試易前文諸列以得其詩。",
+    "translation": "Try rearranging the foregoing rows and columns, that thou mayest thereby obtain the poem."
+  },
+  "c6-s293": {
+    "source": "列列者。",
+    "translation": "As for lists of lists —"
+  },
+  "c6-s294": {
+    "source": "載列之列也。",
+    "translation": "they are the lists which bear lists."
+  },
+  "c6-s295": {
+    "source": "縱橫如方陣然。",
+    "translation": "They extend, vertically and horizontally, like a square phalanx."
+  },
+  "c6-s296": {
+    "source": "如棋局然。",
+    "translation": "As if a chessboard."
+  },
+  "c6-s297": {
+    "source": "如田壠然。",
+    "translation": "As if furrowed fields."
+  },
+  "c6-s298": {
+    "source": "尚書正義曰。",
+    "translation": "_The Correct Meaning of the Book of Documents_ states,"
+  },
+  "c6-s299": {
+    "source": "天與禹洛出書。",
+    "translation": "Heaven and the River Luo issued forth a writing for Yu."
+  },
+  "c6-s300": {
+    "source": "神龜負文而出。",
+    "translation": "A sacred tortoise bore the characters upon its back and emerged."
+  },
+  "c6-s301": {
+    "source": "列於背。",
+    "translation": "They were arrayed upon its back."
+  },
+  "c6-s302": {
+    "source": "有數至於九。",
+    "translation": "There were numbers reaching unto nine."
+  },
+  "c6-s303": {
+    "source": "禹遂因而第之。",
+    "translation": "Yu thereupon used them to assign order."
+  },
+  "c6-s304": {
+    "source": "以成九類。",
+    "translation": "Thus were nine categories formed."
+  },
+  "c6-s305": {
+    "source": "朱熹以之為九宮數。",
+    "translation": "Chu Hsi regarded these as the “Nine‑Palace Numbers.”"
+  },
+  "c6-s306": {
+    "source": "奇者合縱橫斜皆十五。",
+    "translation": "The unusual, when so arranged, the sums of each column, each row, and each diagonal amount to fifteen."
+  },
+  "c6-s307": {
+    "source": "其術見於楊輝續古摘奇算法。",
+    "translation": "This art is to be found in Yang Hui’s _A Continuation of Ancient Algorithms for Extracting the Unusual_."
+  },
+  "c6-s308": {
+    "source": "曰九子斜排。",
+    "translation": "It says, “Arrange the nine cells in a slanting order.”"
+  },
+  "c6-s309": {
+    "source": "上下對易。",
+    "translation": "Top and bottom stand in reciprocal exchange."
+  },
+  "c6-s310": {
+    "source": "左右相更。",
+    "translation": "Left and right alternate in turn."
+  },
+  "c6-s311": {
+    "source": "四維挺出。",
+    "translation": "The four corners thrust forth."
+  },
+  "c6-s312": {
+    "source": "戴九履一。",
+    "translation": "Crown with nine, and place one beneath."
+  },
+  "c6-s313": {
+    "source": "左三右七。",
+    "translation": "Three on the left, seven on the right."
+  },
+  "c6-s314": {
+    "source": "二四為肩。",
+    "translation": "Two and four form the shoulders."
+  },
+  "c6-s315": {
+    "source": "六八為足。",
+    "translation": "Six and eight form the feet."
+  },
+  "c6-s316": {
+    "source": "五居中央。",
+    "translation": "Five dwells at the center."
+  },
+  "c6-s317": {
+    "source": "今入九宮數於列列如下。",
+    "translation": "Now, enter the Nine‑Palace Numbers into the arrays as follows."
+  },
+  "c6-s318": {
+    "source": "吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s319": {
+    "source": "名之曰「行一」。",
+    "translation": "Name it ‘the first line’."
+  },
+  "c6-s320": {
+    "source": "充「行一」以四。",
+    "translation": "Fill ‘the first line’ with four."
+  },
+  "c6-s321": {
+    "source": "以九。",
+    "translation": "With nine."
+  },
+  "c6-s322": {
+    "source": "以二。",
+    "translation": "With two."
+  },
+  "c6-s323": {
+    "source": "\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s324": {
+    "source": "名之曰「行二」。",
+    "translation": "Name it ‘the second line’."
+  },
+  "c6-s325": {
+    "source": "充「行二」以三。",
+    "translation": "Fill ‘the second line’ with three."
+  },
+  "c6-s326": {
+    "source": "以五。",
+    "translation": "With five."
+  },
+  "c6-s327": {
+    "source": "以七。",
+    "translation": "With seven."
+  },
+  "c6-s328": {
+    "source": "\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s329": {
+    "source": "名之曰「行三」。",
+    "translation": "Name it ‘the third line’."
+  },
+  "c6-s330": {
+    "source": "充「行三」以八。",
+    "translation": "Fill ‘the third line’ with eight."
+  },
+  "c6-s331": {
+    "source": "以一。",
+    "translation": "With one."
+  },
+  "c6-s332": {
+    "source": "以六。",
+    "translation": "With six."
+  },
+  "c6-s333": {
+    "source": "\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s334": {
+    "source": "名之曰「九宮」。",
+    "translation": "Name it ‘the Nine‑Palace Numbers’."
+  },
+  "c6-s335": {
+    "source": "充「九宮」以「行一」以「行二」以「行三」。",
+    "translation": "Fill ‘the Nine‑Palace Numbers’ with ‘the first line’, with ‘the second line’, with ‘the third line’."
+  },
+  "c6-s336": {
+    "source": "\n\n凡「九宮」中之「行」。",
+    "translation": "All the ‘line’ within ‘the Nine‑Palace Numbers’."
+  },
+  "c6-s337": {
+    "source": "夫「行」。",
+    "translation": "As for ‘line’ —"
+  },
+  "c6-s338": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c6-s339": {
+    "source": "然是但列其數。",
+    "translation": "Yet this merely enumerates their numbers."
+  },
+  "c6-s340": {
+    "source": "未嘗以術算之。",
+    "translation": "They have not yet been computed by any method."
+  },
+  "c6-s341": {
+    "source": "假楊氏妙術。",
+    "translation": "Let Yang's ingenious art be borrowed."
+  },
+  "c6-s342": {
+    "source": "三三圖。",
+    "translation": "A three‑by‑three diagram."
+  },
+  "c6-s343": {
+    "source": "五五圖。",
+    "translation": "A five‑by‑five diagram."
+  },
+  "c6-s344": {
+    "source": "七七圖。",
+    "translation": "A seven‑by‑seven diagram."
+  },
+  "c6-s345": {
+    "source": "九九圖。",
+    "translation": "A nine‑by‑nine diagram."
+  },
+  "c6-s346": {
+    "source": "凡其橫縱為陽數者。",
+    "translation": "Wherever its horizontals and verticals are Yang numbers."
+  },
+  "c6-s347": {
+    "source": "皆一法可得。",
+    "translation": "All may be obtained by a single method."
+  },
+  "c6-s348": {
+    "source": "然楊氏固不自知。",
+    "translation": "Yet Yang, in truth, did not himself know it."
+  },
+  "c6-s349": {
+    "source": "猶以他法為之。",
+    "translation": "He nevertheless employed other methods to accomplish it."
+  },
+  "c6-s350": {
+    "source": "今從其洛書簡法。",
+    "translation": "Now, we follow his simplification method for Luoshu (matrix),"
+  },
+  "c6-s351": {
+    "source": "編程如是。",
+    "translation": "Program as such."
+  },
+  "c6-s352": {
+    "source": "注曰。",
+    "translation": "Notes:"
+  },
+  "c6-s353": {
+    "source": "圖之創。",
+    "translation": "On the creation of the diagram."
+  },
+  "c6-s354": {
+    "source": "苟以循環。",
+    "translation": "If one were to employ loops."
+  },
+  "c6-s355": {
+    "source": "盡充以零。",
+    "translation": "Fill them entirely with zeros."
+  },
+  "c6-s356": {
+    "source": "蓋待後算也。",
+    "translation": "For they are to be computed later."
+  },
+  "c6-s357": {
+    "source": "夫「廣」者。",
+    "translation": "As for ‘width’ —"
+  },
+  "c6-s358": {
+    "source": "縱橫之數也。",
+    "translation": "It is the number of verticals and horizontals."
+  },
+  "c6-s359": {
+    "source": "聊曰九。",
+    "translation": "Let us say, nine."
+  },
+  "c6-s360": {
+    "source": "以為九九圖。",
+    "translation": "We regard it as a nine‑by‑nine diagram."
+  },
+  "c6-s361": {
+    "source": "有數九。",
+    "translation": "There is the number nine."
+  },
+  "c6-s362": {
+    "source": "名之曰「廣」。",
+    "translation": "Name it ‘width’."
+  },
+  "c6-s363": {
+    "source": "\n\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s364": {
+    "source": "名之曰「縱橫圖」。",
+    "translation": "Name it ‘vertical and horizontal diagram’."
+  },
+  "c6-s365": {
+    "source": "\n為是「廣」遍。",
+    "translation": "Let it extend for ‘width’ iterations."
+  },
+  "c6-s366": {
+    "source": "\n\t吾有一列。",
+    "translation": "I have a list."
+  },
+  "c6-s367": {
+    "source": "名之曰「行」。",
+    "translation": "Name it ‘line’."
+  },
+  "c6-s368": {
+    "source": "\n\t為是「廣」遍。",
+    "translation": "Let it extend for ‘width’ iterations."
+  },
+  "c6-s369": {
+    "source": "充「行」以零也。",
+    "translation": "Fill ‘line’ with zeros."
+  },
+  "c6-s370": {
+    "source": "\n  充「縱橫圖」以「行」也。",
+    "translation": "Fill ‘vertical and horizontal diagram’ with ‘line’."
+  },
+  "c6-s371": {
+    "source": "既創其圖。",
+    "translation": "Once the diagram has been created."
+  },
+  "c6-s372": {
+    "source": "乃以楊氏之術遍算其數。",
+    "translation": "Then, by Yang’s art, compute all its numbers."
+  },
+  "c6-s373": {
+    "source": "注曰。",
+    "translation": "A note says,"
+  },
+  "c6-s374": {
+    "source": "「磔」者。",
+    "translation": "As for ‘to rip’ —"
+  },
+  "c6-s375": {
+    "source": "捺筆也。",
+    "translation": "It denotes the right‑falling brush‑stroke."
+  },
+  "c6-s376": {
+    "source": "自左上而右下。",
+    "translation": "It runs from the upper‑left to the lower‑right."
+  },
+  "c6-s377": {
+    "source": "「掠」者。",
+    "translation": "As for ‘to sweep’ —"
+  },
+  "c6-s378": {
+    "source": "撇筆也。",
+    "translation": "It denotes the left‑falling brush‑stroke."
+  },
+  "c6-s379": {
+    "source": "自右上而左下。",
+    "translation": "It runs from the upper‑right to the lower‑left."
+  },
+  "c6-s380": {
+    "source": "此二子者。",
+    "translation": "These two terms—"
+  },
+  "c6-s381": {
+    "source": "假書家語。",
+    "translation": "are borrowings from the lexicon of the calligraphers."
+  },
+  "c6-s382": {
+    "source": "所以定九子斜排之方位也。",
+    "translation": "They serve to fix the diagonal positions of the nine cells."
+  },
+  "c6-s383": {
+    "source": "「勒」者。",
+    "translation": "As for “to tighten”—"
+  },
+  "c6-s384": {
+    "source": "橫筆也。",
+    "translation": "It denotes the horizontal brush‑stroke."
+  },
+  "c6-s385": {
+    "source": "「努」者。",
+    "translation": "As for “to exert”—"
+  },
+  "c6-s386": {
+    "source": "縱筆也。",
+    "translation": "It denotes the vertical brush‑stroke."
+  },
+  "c6-s387": {
+    "source": "此二子者。",
+    "translation": "These two terms—"
+  },
+  "c6-s388": {
+    "source": "所以化斜排之方位於正排之方位也。",
+    "translation": "are the means by which diagonal positions are transformed into orthogonal positions."
+  },
+  "c6-s389": {
+    "source": "然「勒」「努」之位。",
+    "translation": "Now, the positions of “to tighten” and “to exert”—"
+  },
+  "c6-s390": {
+    "source": "或出於其圖之界。",
+    "translation": "sometimes lie beyond the bounds of the diagram."
+  },
+  "c6-s391": {
+    "source": "遂以求餘法。",
+    "translation": "Thereupon, the method of seeking the remainder is employed."
+  },
+  "c6-s392": {
+    "source": "令出上者下。",
+    "translation": "Those that exit above, let them reappear below."
+  },
+  "c6-s393": {
+    "source": "出下者上。",
+    "translation": "Those that exit below, let them reappear above."
+  },
+  "c6-s394": {
+    "source": "出左者右。",
+    "translation": "Those that exit left, let them reappear on the right."
+  },
+  "c6-s395": {
+    "source": "出右者左。",
+    "translation": "Those that exit right, let them reappear on the left."
+  },
+  "c6-s396": {
+    "source": "是所謂上下對易。",
+    "translation": "This is the so‑called up‑and‑down interchange."
+  },
+  "c6-s397": {
+    "source": "左右相更者也。",
+    "translation": "It is the reciprocal exchange of left and right."
+  },
+  "c6-s398": {
+    "source": "乃得「縱」「橫」。",
+    "translation": "Thus are obtained “vertical” and “horizontal”."
+  },
+  "c6-s399": {
+    "source": "於是填以「數」。",
+    "translation": "Thereupon, fill them with ‘numbers’."
+  },
+  "c6-s400": {
+    "source": "終得其圖矣。",
+    "translation": "At last, the diagram is obtained."
+  },
+  "c6-s401": {
+    "source": "減「廣」以一。",
+    "translation": "Subtract one from ‘width’."
+  },
+  "c6-s402": {
+    "source": "除其以二。",
+    "translation": "Divide it by two."
+  },
+  "c6-s403": {
+    "source": "名之曰「半」。",
+    "translation": "Name it ‘half’."
+  },
+  "c6-s404": {
+    "source": "\n\n有數一。",
+    "translation": "There is the number one."
+  },
+  "c6-s405": {
+    "source": "名之曰「數」。",
+    "translation": "Name it ‘number’."
+  },
+  "c6-s406": {
+    "source": "\n乘「廣」以「廣」。",
+    "translation": "Multiply ‘width’ by ‘width’."
+  },
+  "c6-s407": {
+    "source": "為是其遍。",
+    "translation": "Do this that many times."
+  },
+  "c6-s408": {
+    "source": "\n\t減「數」以一。",
+    "translation": "Subtract one from ‘number’."
+  },
+  "c6-s409": {
+    "source": "除其以「廣」。",
+    "translation": "Divide it by ‘width’."
+  },
+  "c6-s410": {
+    "source": "所餘幾何。",
+    "translation": "What, then, is the remainder."
+  },
+  "c6-s411": {
+    "source": "名之曰「磔」。",
+    "translation": "Name it ‘rip’."
+  },
+  "c6-s412": {
+    "source": "\n\t減「數」以「磔」。",
+    "translation": "Subtract ‘rip’ from ‘number’."
+  },
+  "c6-s413": {
+    "source": "減其以一。",
+    "translation": "Subtract one from it."
+  },
+  "c6-s414": {
+    "source": "除其以「廣」。",
+    "translation": "Divide it by ‘width’."
+  },
+  "c6-s415": {
+    "source": "名之曰「掠」。",
+    "translation": "Name it ‘sweep’."
+  },
+  "c6-s416": {
+    "source": "\n\t加「半」於「磔」。",
+    "translation": "Add ‘half’ to ‘rip’."
+  },
+  "c6-s417": {
+    "source": "減其以「掠」。",
+    "translation": "Subtract from it ‘sweep’."
+  },
+  "c6-s418": {
+    "source": "名之曰「勒」。",
+    "translation": "Name it ‘tighten’."
+  },
+  "c6-s419": {
+    "source": "\n\t減「半」於「磔」。",
+    "translation": "Subtract ‘half’ from ‘rip’."
+  },
+  "c6-s420": {
+    "source": "加其以「掠」。",
+    "translation": "Add to it ‘sweep’."
+  },
+  "c6-s421": {
+    "source": "名之曰「努」。",
+    "translation": "Name it ‘exert’."
+  },
+  "c6-s422": {
+    "source": "\n\t加「勒」以「廣」。",
+    "translation": "Add ‘tighten’ to ‘width’."
+  },
+  "c6-s423": {
+    "source": "除其以「廣」。",
+    "translation": "Divide it by ‘width’."
+  },
+  "c6-s424": {
+    "source": "所餘幾何。",
+    "translation": "What is the remainder."
+  },
+  "c6-s425": {
+    "source": "加其以一。",
+    "translation": "Add one to it."
+  },
+  "c6-s426": {
+    "source": "名之曰「橫」。",
+    "translation": "Name it ‘horizontal’."
+  },
+  "c6-s427": {
+    "source": "\n\t加「努」以「廣」。",
+    "translation": "Add ‘exert’ to ‘width’."
+  },
+  "c6-s428": {
+    "source": "除其以「廣」。",
+    "translation": "Divide it by ‘width’."
+  },
+  "c6-s429": {
+    "source": "所餘幾何。",
+    "translation": "What is the remainder."
+  },
+  "c6-s430": {
+    "source": "加其以一。",
+    "translation": "Add one to it."
+  },
+  "c6-s431": {
+    "source": "名之曰「縱」。",
+    "translation": "Name it ‘vertical’."
+  },
+  "c6-s432": {
+    "source": "\n\t夫「縱橫圖」之「縱」。",
+    "translation": "As for the ‘vertical’ of the ‘vertical-and-horizontal diagram’ —."
+  },
+  "c6-s433": {
+    "source": "名之曰「行」。",
+    "translation": "Name it ‘line’."
+  },
+  "c6-s434": {
+    "source": "\n\t昔之「行」之「橫」者。",
+    "translation": "The ancient ‘line’'s ‘horizontal’."
+  },
+  "c6-s435": {
+    "source": "今「數」是矣。",
+    "translation": "Now, it is ‘number’."
+  },
+  "c6-s436": {
+    "source": "\n加「數」以一。",
+    "translation": "Add one to ‘number’."
+  },
+  "c6-s437": {
+    "source": "昔之「數」者。",
+    "translation": "The former ‘number’ was."
+  },
+  "c6-s438": {
+    "source": "今其是矣。",
+    "translation": "Now, it is thus."
+  },
+  "c6-s439": {
+    "source": "云云。",
+    "translation": "Thus and thus."
+  },
+  "c6-s440": {
+    "source": "\n\n凡「縱橫圖」中之「行」。",
+    "translation": "All the ‘lines’ within the ‘vertical-and-horizontal diagram’."
+  },
+  "c6-s441": {
+    "source": "夫「行」。",
+    "translation": "As for the ‘line’."
+  },
+  "c6-s442": {
+    "source": "書之也。",
+    "translation": "Write it down."
+  },
+  "c6-s443": {
+    "source": "乃得九九圖如是。",
+    "translation": "Thus is the ‘nine-by-nine’ diagram obtained."
+  },
+  "c6-s444": {
+    "source": "其與楊氏書中所載不同者。",
+    "translation": "As for that which differs from what is recorded in Yang's treatise."
+  },
+  "c6-s445": {
+    "source": "蓋作其圖之法甚眾。",
+    "translation": "For the methods of constructing the diagram are manifold."
+  },
+  "c6-s446": {
+    "source": "所得亦各有異。",
+    "translation": "The results obtained likewise differ one from another."
+  },
+  "c6-s447": {
+    "source": "然其之為縱橫圖者一也。",
+    "translation": "Yet, as to their being vertical-and-horizontal diagrams, they are one."
+  },
+  "c6-s448": {
+    "source": "一者何耶。",
+    "translation": "What, then, is this ‘one’?"
+  },
+  "c6-s449": {
+    "source": "縱橫斜皆三百六十九也。",
+    "translation": "Verticals, horizontals, and diagonals alike number three hundred and sixty-nine."
+  },
+  "c6-s450": {
+    "source": "或問曰。",
+    "translation": "Some ask,"
+  },
+  "c6-s451": {
+    "source": "何以知之。",
+    "translation": "“How is this known?”"
+  },
+  "c6-s452": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c6-s453": {
+    "source": "請吾子試作一術。",
+    "translation": "“Pray, my pupil, attempt to devise a method."
+  },
+  "c6-s454": {
+    "source": "循環遍歷其圖。",
+    "translation": "Loop through, traversing the diagram."
+  },
+  "c6-s455": {
+    "source": "以驗吾言之不謬也。",
+    "translation": "So as to verify that my words are not in error.”"
+  },
+  "c6-s456": {
+    "source": "三十七。",
+    "translation": "Thirty-seven."
+  },
+  "c6-s457": {
+    "source": "七十八。",
+    "translation": "Seventy-eight."
+  },
+  "c6-s458": {
+    "source": "二十九。",
+    "translation": "Twenty-nine."
+  },
+  "c6-s459": {
+    "source": "　七十。",
+    "translation": "Seventy."
+  },
+  "c6-s460": {
+    "source": "二十一。",
+    "translation": "Twenty-one."
+  },
+  "c6-s461": {
+    "source": "六十二。",
+    "translation": "Sixty-two."
+  },
+  "c6-s462": {
+    "source": "一十三。",
+    "translation": "Thirteen."
+  },
+  "c6-s463": {
+    "source": "五十四。",
+    "translation": "Fifty-four."
+  },
+  "c6-s464": {
+    "source": "　五\n　六　。",
+    "translation": "Fifty-six."
+  },
+  "c6-s465": {
+    "source": "三十八。",
+    "translation": "Thirty-eight."
+  },
+  "c6-s466": {
+    "source": "七十九。",
+    "translation": "Seventy-nine."
+  },
+  "c6-s467": {
+    "source": "　三十。",
+    "translation": "Thirty."
+  },
+  "c6-s468": {
+    "source": "七十一。",
+    "translation": "Seventy-one."
+  },
+  "c6-s469": {
+    "source": "二十二。",
+    "translation": "Twenty-two."
+  },
+  "c6-s470": {
+    "source": "六十三。",
+    "translation": "Sixty-three."
+  },
+  "c6-s471": {
+    "source": "一十四。",
+    "translation": "Fourteen."
+  },
+  "c6-s472": {
+    "source": "四十六\n四十七。",
+    "translation": "Forty-six. Forty-seven."
+  },
+  "c6-s473": {
+    "source": "　七　。",
+    "translation": "Seven."
+  },
+  "c6-s474": {
+    "source": "三十九。",
+    "translation": "Thirty-nine."
+  },
+  "c6-s475": {
+    "source": "　八十。",
+    "translation": "Eighty."
+  },
+  "c6-s476": {
+    "source": "三十一。",
+    "translation": "Thirty-one."
+  },
+  "c6-s477": {
+    "source": "七十二。",
+    "translation": "Seventy-two."
+  },
+  "c6-s478": {
+    "source": "二十三。",
+    "translation": "Twenty-three."
+  },
+  "c6-s479": {
+    "source": "五十五。",
+    "translation": "Fifty-five."
+  },
+  "c6-s480": {
+    "source": "一十五\n一十六。",
+    "translation": "Fifteen. Sixteen."
+  },
+  "c6-s481": {
+    "source": "四十八。",
+    "translation": "Forty-eight."
+  },
+  "c6-s482": {
+    "source": "　八　。",
+    "translation": "Eight."
+  },
+  "c6-s483": {
+    "source": "　四十。",
+    "translation": "Forty."
+  },
+  "c6-s484": {
+    "source": "八十一。",
+    "translation": "Eighty-one."
+  },
+  "c6-s485": {
+    "source": "三十二。",
+    "translation": "Thirty-two."
+  },
+  "c6-s486": {
+    "source": "六十四。",
+    "translation": "Sixty-four."
+  },
+  "c6-s487": {
+    "source": "二十四。",
+    "translation": "Twenty-four."
+  },
+  "c6-s488": {
+    "source": "五十六\n五十七。",
+    "translation": "Fifty-six. Fifty-seven."
+  },
+  "c6-s489": {
+    "source": "一十七。",
+    "translation": "Seventeen."
+  },
+  "c6-s490": {
+    "source": "四十九。",
+    "translation": "Forty-nine."
+  },
+  "c6-s491": {
+    "source": "　九　。",
+    "translation": "Nine."
+  },
+  "c6-s492": {
+    "source": "四十一。",
+    "translation": "Forty-one."
+  },
+  "c6-s493": {
+    "source": "七十三。",
+    "translation": "Seventy-three."
+  },
+  "c6-s494": {
+    "source": "三十三。",
+    "translation": "Thirty-three."
+  },
+  "c6-s495": {
+    "source": "六十五。",
+    "translation": "Sixty-five."
+  },
+  "c6-s496": {
+    "source": "二十五\n二十六。",
+    "translation": "Twenty-five. Twenty-six."
+  },
+  "c6-s497": {
+    "source": "五十八。",
+    "translation": "Fifty-eight."
+  },
+  "c6-s498": {
+    "source": "一十八。",
+    "translation": "Eighteen."
+  },
+  "c6-s499": {
+    "source": "　五十。",
+    "translation": "Fifty."
+  },
+  "c6-s500": {
+    "source": "　一　。",
+    "translation": "One."
+  },
+  "c6-s501": {
+    "source": "四十二。",
+    "translation": "Forty-two."
+  },
+  "c6-s502": {
+    "source": "七十四。",
+    "translation": "Seventy-four."
+  },
+  "c6-s503": {
+    "source": "三十四。",
+    "translation": "Thirty-four."
+  },
+  "c6-s504": {
+    "source": "六十六\n六十七。",
+    "translation": "Sixty-six; Sixty-seven."
+  },
+  "c6-s505": {
+    "source": "二十七。",
+    "translation": "Twenty-seven."
+  },
+  "c6-s506": {
+    "source": "五十九。",
+    "translation": "Fifty-nine."
+  },
+  "c6-s507": {
+    "source": "　一十。",
+    "translation": "Ten."
+  },
+  "c6-s508": {
+    "source": "五十一。",
+    "translation": "Fifty-one."
+  },
+  "c6-s509": {
+    "source": "　二　。",
+    "translation": "Two."
+  },
+  "c6-s510": {
+    "source": "四十三。",
+    "translation": "Forty-three."
+  },
+  "c6-s511": {
+    "source": "七十五。",
+    "translation": "Seventy-five."
+  },
+  "c6-s512": {
+    "source": "三十五\n三十六。",
+    "translation": "Thirty-five; Thirty-six."
+  },
+  "c6-s513": {
+    "source": "六十八。",
+    "translation": "Sixty-eight."
+  },
+  "c6-s514": {
+    "source": "一十九。",
+    "translation": "Nineteen."
+  },
+  "c6-s515": {
+    "source": "　六十。",
+    "translation": "Sixty."
+  },
+  "c6-s516": {
+    "source": "一十一。",
+    "translation": "Eleven."
+  },
+  "c6-s517": {
+    "source": "五十二。",
+    "translation": "Fifty-two."
+  },
+  "c6-s518": {
+    "source": "　三　。",
+    "translation": "Three."
+  },
+  "c6-s519": {
+    "source": "四十四。",
+    "translation": "Forty-four."
+  },
+  "c6-s520": {
+    "source": "七十六\n七十七。",
+    "translation": "Seventy-six; Seventy-seven."
+  },
+  "c6-s521": {
+    "source": "二十八。",
+    "translation": "Twenty-eight."
+  },
+  "c6-s522": {
+    "source": "六十九。",
+    "translation": "Sixty-nine."
+  },
+  "c6-s523": {
+    "source": "　二十。",
+    "translation": "Twenty."
+  },
+  "c6-s524": {
+    "source": "六十一。",
+    "translation": "Sixty-one."
+  },
+  "c6-s525": {
+    "source": "一十二。",
+    "translation": "Twelve."
+  },
+  "c6-s526": {
+    "source": "五十三。",
+    "translation": "Fifty-three."
+  },
+  "c6-s527": {
+    "source": "　四　。",
+    "translation": "Four."
+  },
+  "c6-s528": {
+    "source": "四十五",
+    "translation": "Forty-five."
+  },
+  "c6-s529": {
+    "source": "又有傳暹羅法作陽數縱橫圖。",
+    "translation": "Again, there is a method, transmitted from Siam, for composing the Yang-numbers' vertical-and-horizontal diagram."
+  },
+  "c6-s530": {
+    "source": "其決曰。",
+    "translation": "Its rule says,"
+  },
+  "c6-s531": {
+    "source": "一起於正北。",
+    "translation": "Begin at due North."
+  },
+  "c6-s532": {
+    "source": "東北向次第填之。",
+    "translation": "Fill them in, in successive order, toward the northeast."
+  },
+  "c6-s533": {
+    "source": "出北入南。",
+    "translation": "Go out to the north; come in from the south."
+  },
+  "c6-s534": {
+    "source": "出東入西。",
+    "translation": "Go out to the east; come in from the west."
+  },
+  "c6-s535": {
+    "source": "道有礙者。",
+    "translation": "If the way be obstructed,"
+  },
+  "c6-s536": {
+    "source": "先南退而後進。",
+    "translation": "first withdraw to the south, then advance."
+  },
+  "c6-s537": {
+    "source": "其較楊輝法猶稍易也。",
+    "translation": "It is, compared with Yang Hui's method, somewhat easier."
+  },
+  "c6-s538": {
+    "source": "君胡不一試之。",
+    "translation": "Why, sir, do you not once put it to the trial?”"
+  },
+  "c6-s539": {
+    "source": "列之道。",
+    "translation": "The method of one column."
+  },
+  "c6-s540": {
+    "source": "列列之道。",
+    "translation": "The method of double columns."
+  },
+  "c6-s541": {
+    "source": "至是略備矣。",
+    "translation": "Thus it is now briefly complete."
+  },
+  "c6-s542": {
+    "source": "更有列列列。",
+    "translation": "Moreover, there are lists of lists of lists."
+  },
+  "c6-s543": {
+    "source": "列列列列者。",
+    "translation": "As for lists of lists of lists of lists —"
+  },
+  "c6-s544": {
+    "source": "皆一理也。",
+    "translation": "All are of the same principle."
+  }
+}
