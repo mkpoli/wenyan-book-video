@@ -141,13 +141,13 @@
   },
   "c6-s29": {
     "source": "曰`充`。",
-    "ipa": "ɦʉot .",
-    "tupa": "uot"
+    "ipa": "ɦʉot ʨʰʉùŋ .",
+    "tupa": "uot tjhung"
   },
   "c6-s30": {
     "source": "曰`銜`。",
-    "ipa": "ɦʉot .",
-    "tupa": "uot"
+    "ipa": "ɦʉot ɦạ̀m .",
+    "tupa": "uot ghaem"
   },
   "c6-s31": {
     "source": "取法三。",
@@ -156,18 +156,18 @@
   },
   "c6-s32": {
     "source": "曰`其一`。",
-    "ipa": "ɦʉot .",
-    "tupa": "uot"
+    "ipa": "ɦʉot gɨ̀ː ʔit .",
+    "tupa": "uot gy qit"
   },
   "c6-s33": {
     "source": "曰`其餘`。",
-    "ipa": "ɦʉot .",
-    "tupa": "uot"
+    "ipa": "ɦʉot gɨ̀ː jɨə̀ː .",
+    "tupa": "uot gy jyo"
   },
   "c6-s34": {
     "source": "曰`之長`。",
-    "ipa": "ɦʉot .",
-    "tupa": "uot"
+    "ipa": "ɦʉot ʨɨ̀ː ɖɨɑ̀ŋ .",
+    "tupa": "uot tjy dryang"
   },
   "c6-s35": {
     "source": "列之初創。",
@@ -181,8 +181,8 @@
   },
   "c6-s37": {
     "source": "`充`者。",
-    "ipa": "ʨiáː .",
-    "tupa": "tjiaeq"
+    "ipa": "ʨʰʉùŋ ʨiáː .",
+    "tupa": "tjhung tjiaeq"
   },
   "c6-s38": {
     "source": "一一添於其後也。",
@@ -316,8 +316,8 @@
   },
   "c6-s64": {
     "source": "乃用`銜`句。",
-    "ipa": "nə́j jʉǒŋ kʉǒː .",
-    "tupa": "neojq juongh kuoh"
+    "ipa": "nə́j jʉǒŋ ɦạ̀m kʉǒː .",
+    "tupa": "neojq juongh ghaem kuoh"
   },
   "c6-s65": {
     "source": "銜「甲」以「乙」。",
@@ -431,8 +431,8 @@
   },
   "c6-s87": {
     "source": "乃稍變前章`昔之`句。",
-    "ipa": "nə́j ʂạ̌w pịěn ʣèn ʨɨɑ̀ŋ kʉǒː .",
-    "tupa": "neojq sraewh pyenh dzen tjyang kuoh"
+    "ipa": "nə́j ʂạ̌w pịěn ʣèn ʨɨɑ̀ŋ siak ʨɨ̀ː kʉǒː .",
+    "tupa": "neojq sraewh pyenh dzen tjyang siaek tjy kuoh"
   },
   "c6-s88": {
     "source": "書如是。",
@@ -481,8 +481,8 @@
   },
   "c6-s97": {
     "source": "時可以`之長`句得之也。",
-    "ipa": "ʥɨ̀ː kʰɑ́ː jɨ́ː kʉǒː tək ʨɨ̀ː jiáː .",
-    "tupa": "djy khaq jyq kuoh teok tjy jiaeq"
+    "ipa": "ʥɨ̀ː kʰɑ́ː jɨ́ː ʨɨ̀ː ɖɨɑ̀ŋ kʉǒː tək ʨɨ̀ː jiáː .",
+    "tupa": "djy khaq jyq tjy dryang kuoh teok tjy jiaeq"
   },
   "c6-s98": {
     "source": "既知其長。",
@@ -576,8 +576,8 @@
   },
   "c6-s116": {
     "source": "`其餘`者。",
-    "ipa": "ʨiáː .",
-    "tupa": "tjiaeq"
+    "ipa": "gɨ̀ː jɨə̀ː ʨiáː .",
+    "tupa": "gy jyo tjiaeq"
   },
   "c6-s117": {
     "source": "棄其第一而留其他也。",
@@ -616,8 +616,8 @@
   },
   "c6-s124": {
     "source": "是謂`其餘`也。",
-    "ipa": "ʥiéː ɦʉ̌j jiáː .",
-    "tupa": "djieq ujh jiaeq"
+    "ipa": "ʥiéː ɦʉ̌j gɨ̀ː jɨə̀ː jiáː .",
+    "tupa": "djieq ujh gy jyo jiaeq"
   },
   "c6-s125": {
     "source": "或問曰。",
