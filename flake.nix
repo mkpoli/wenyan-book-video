@@ -109,32 +109,65 @@
           '';
         };
 
+        build-sentences-cmd = pkgs.writeShellApplication {
+          name = "build-sentences";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run python build-sentences.py "$@"
+          '';
+        };
+
+        build-segmented-transcripts-cmd = pkgs.writeShellApplication {
+          name = "build-segmented-transcripts";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run python build-segmented-transcripts.py "$@"
+          '';
+        };
+
+        migrate-sentences-cmd = pkgs.writeShellApplication {
+          name = "migrate-sentences";
+          runtimeInputs = runtimePackages;
+          text = ''
+            export UV_PYTHON="${toString python313}/bin/python3"
+            cd processor && uv run python migration/migrate_sentences.py "$@"
+          '';
+        };
+
         # Collect all command packages
         commandPackages = [
+          build-sentences-cmd
           segment-text-cmd
-          voice-change-cmd
-          synthesize-cmd
-          transcribe-cmd
-          transcribe-titles-cmd
-          synthesize-titles-cmd
           translate-cmd
+          transcribe-cmd
+          build-segmented-transcripts-cmd
+          transcribe-titles-cmd
+          synthesize-cmd
+          synthesize-titles-cmd
+          voice-change-cmd
           main-cmd
-          remotion-render-cmd
           remotion-dev-cmd
+          remotion-render-cmd
+          migrate-sentences-cmd
         ];
       in {
         # Expose commands as packages
         packages = {
+          build-sentences = build-sentences-cmd;
           segment-text = segment-text-cmd;
-          voice-change = voice-change-cmd;
-          synthesize = synthesize-cmd;
-          transcribe = transcribe-cmd;
-          transcribe-titles = transcribe-titles-cmd;
-          synthesize-titles = synthesize-titles-cmd;
           translate = translate-cmd;
+          transcribe = transcribe-cmd;
+          build-segmented-transcripts = build-segmented-transcripts-cmd;
+          transcribe-titles = transcribe-titles-cmd;
+          synthesize = synthesize-cmd;
+          synthesize-titles = synthesize-titles-cmd;
+          voice-change = voice-change-cmd;
           main = main-cmd;
-          remotion-render = remotion-render-cmd;
           remotion-dev = remotion-dev-cmd;
+          remotion-render = remotion-render-cmd;
+          migrate-sentences = migrate-sentences-cmd;
         };
 
         devShells.default = pkgs.mkShell {
@@ -232,16 +265,19 @@
             # Commands are available via packages in PATH
             echo ""
             echo "Available commands:"
-            echo "  segment-text      - Generate/refresh sentence segments"
-            echo "  translate         - Run translation batches (OpenAI API)"
-            echo "  transcribe        - Edit transcribe.py with marimo"
-            echo "  transcribe-titles - Transcribe chapter title IPA"
-            echo "  synthesize        - Edit synthesize.py with marimo"
-            echo "  synthesize-titles - Generate chapter title audio"
-            echo "  voice-change   - Edit voice-change.py with marimo"
-            echo "  main           - Run main.py"
-            echo "  remotion-dev    - Start Remotion dev server"
-            echo "  remotion-render - Render video with Remotion"
+            echo "  build-sentences      - Build sentences from markdown"
+            echo "  segment-text         - Generate/refresh sentence segments"
+            echo "  translate            - Run translation batches (OpenAI API)"
+            echo "  transcribe           - Edit transcribe.py with marimo"
+            echo "  build-segmented-transcripts - Build segmented transcripts"
+            echo "  transcribe-titles    - Transcribe chapter title IPA"
+            echo "  synthesize           - Edit synthesize.py with marimo"
+            echo "  synthesize-titles    - Generate chapter title audio"
+            echo "  voice-change         - Edit voice-change.py with marimo"
+            echo "  main                 - Run main.py"
+            echo "  remotion-dev         - Start Remotion dev server"
+            echo "  remotion-render      - Render video with Remotion"
+            echo "  migrate-sentences    - Run sentence migration script"
             echo ""
             echo "To activate the Python virtual environment:"
             echo "  cd processor && source .venv/bin/activate"
