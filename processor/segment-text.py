@@ -62,7 +62,7 @@ def remove_markdown(text: str, preserve_newlines: bool = False) -> str:
         return text
 
     text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"\n+", " ", text)
+    text = re.sub(r"\n+", "\n", text)
     return text.strip()
 
 
@@ -278,6 +278,20 @@ def split_chinese_sentences(text: str) -> list[str]:
                 if processed:
                     sentences.append(processed)
                 current_sentence = []
+        elif char == "\n" and not inside_quotes:
+            # Treat consecutive newlines as a single delimiter.
+            # Collect all consecutive newlines.
+            newlines = [char]
+            j = i + 1
+            while j < length and text[j] == "\n":
+                newlines.append(text[j])
+                j += 1
+            
+            processed = "".join(current_sentence).strip()
+            if processed:
+                sentences.append(processed)
+            current_sentence = newlines
+            i = j - 1  # Will be incremented at end of loop
         elif char in ("。", "！", "？") and not inside_quotes:
             current_sentence.append(char)
             processed = "".join(current_sentence).strip()
