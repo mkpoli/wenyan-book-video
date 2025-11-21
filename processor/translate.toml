@@ -1,0 +1,128 @@
+# Translation configuration for `translate.py`.
+#
+# This file contains the model name and translation prompt template
+# used for translating Classical Chinese to English.
+
+[translation]
+# OpenAI model name to use for translation
+model_name = "gpt-5-mini"
+
+# Translation prompt template
+# Use {text} as a placeholder for the text to be translated
+translation_prompt = """The following is requirements for a translation task. Follow these rules carefully and operate accordingly.
+
+## Target
+
+From: Traditional Classical Chinese (文言文/漢文) written in modern era.
+To: Modern or Contemporary English
+Subject: Modern technical text (a introductory handbook)
+Topic: Programming basics and a programming language called Wenyan (world's first Classical Chinese-styled programming language) 
+
+## English Style
+- Use dignified, reflective, refined, natural, antique-feeling, recondite, rhythmic, and occasionally poetic and philosophical phrasing suitable for a didactic text with full classical nuance.
+- Strive for clarity while maintaining the philosophical rhythm and rhetorical symmetry, phonetic harmony and balance of Classical Chinese.
+- Add proper and old-style, typographical English punctuations (period, comma, semicolon, colon, dash, quotation marks: 「」→"", 『』→'', etc.) (Always use ' or ' instead of ', " or " instead of ") inside the same line only according to the context.
+- Output plain text only available in Unicode.
+
+## Consistency
+- Each Chinese sentence ends with 。 -> one English line (no line-breaking). Keep strict 1:1 mapping: no merging, no splitting, no reordering, no omission, authentic and faithful as possible without hurting the natural flow and clarity.
+- Equivalent of comma and period in English are all marked with "。", so potentially two or more Chinese sentences may be mapped to one English line.
+    - X者。 = topic ("As for X —", "'X,' —", etc.)
+    - X者。Y也。 = two lines: topic → explanation. (["A者。", "B也。"] -> ["A —", "is B"] etc.)
+    - 夫X者。……。 = "Speaking of/Regarding/About X,…"
+- Keep all nested quotations and rhetorical questions, metaphors intact if possible.
+- Use typographical punctuation (— , ; … "" ' ') where natural. For quotations of speech, try to add quotation marks and make it across:
+    - ["曰然。", "「醫者」不可乎。", "可矣。"] → ["It is answered, "Yes,", "isn't it possible for 'a doctor'?", "It is possible."]
+
+## Glossary
+Use below for meaning consistency, but be flexible and accommdating, not literal word-for-word mapping, adjust depending on context.
+- "計開" → means "Table of Contents", used as "As follows,", or "Let us begin.", can be translated as  "Let us unfold our explanation.", .
+- "至此畧備矣" → "Thus it is now briefly complete."
+- After a question, "耶。" or "乎。", usually there will be a follow-up answer witf "曰。", translate it as "It is answered," or a like.
+- 易 has three meanings:
+    - "易曰", "周易" → "The Book of Changes"
+    - "易矣", "易乎" → "Easy"
+    - "易首句" → "Modify the first line"
+
+### Code
+- "甲" → "A", "乙" → "B", "丙" → "C", "丁" → "D", "戊" → "E", "己" → "F", "庚" → "G", "辛" → "H", "壬" → "I", "癸" → "J", etc.
+- "書之" → "Write it down."
+- "云云。" → "Thus and thus." ("……云云。" → "And alike", "like ……", "beginning with ……", etc.)
+- Translate variable names if applicable, e.g. "「始」" → "'Begin',"
+- Classes:
+    - "數" → "Numbers (numerals)".
+    - "言" → "Words (strings)".
+    - "爻" → "Ghaews (booleans)".
+    - "列" → "Lists (arrays)".
+    - "物" → "Things (objects)".
+    - "術" → "Means (methods)".
+- Variables: Variable names are always in single quotes. String literals are always in double quotes. Don't mix them up.
+    - "吾有一言。曰『……』。名之曰「……」。" → "I have a word." "It says, '……'."; Name it '……'."
+    - "有數九。名之曰「……」" -> "There are a number of nine." "It is named '……'." 
+    - "吾有二數。名之曰「甲」曰「乙」。" -> "I have two numbers." "Name one 'A'." "Name one 'B'."
+- Loops
+    - "循環" → "Loops", "Looping"
+    - "恆為是。" → "Constantly do this."
+    - "為是百遍。" → "Do this one hundred times."
+    - "為是其遍。" → "Do this that many times."
+- Algorithms:
+    - "更相減損術" → "Method of aAlternating mutual subtraction"
+
+## Output
+
+You will receive multiple short Chinese sentences, each with a unique `id`. Return ONLY valid JSON of the form no extra text, comments, trailing commas, etc.
+
+  {{
+    "translations": [
+      {{"id": "<sentence-id>", "translation": "<English line>"}},
+      ...
+    ]
+  }}
+
+## Examples
+
+易曰。變化者。進退之象也。今編程者。罔不以變數為本。變數者何。一名命一物也。
+
+{{
+  "translations": 
+    [
+        {{"id": "c2-s1", "translation":"The Book of Changes says,"}},
+        {{"id": "c2-s2", "translation":""Transformation —"}},
+        {{"id": "c2-s3"," translation":""is the image of advance and retreat.""}},
+        {{"id": "c2-s4", "translation":"Now, in programming,"}},
+        {{"id": "c2-s5", "translation":"nothing is without variables as its foundation."}},
+        {{"id": "c2-s6", "translation":""What is a variable?""}},
+        {{"id": "c2-s7", "translation":""It is a name assigned to a thing.""}}
+    ]
+}}
+
+編程者何。所以役機器也。機器者何。所以代人力也。然機器之力也廣。其算也速。唯智不逮也。故有智者慎謀遠慮。下筆千言。如軍令然。如藥方然。謂之程式。機器既明之。乃能為人所使。或演星文。或析事理。
+
+{{
+  "translations": 
+    [
+        {{"id": "c1-s1", "translation":"What is programming?"}},
+        {{"id": "c1-s2", "translation":"That by which one commands machines."}},
+        {{"id": "c1-s3", "translation":"What is a machine?"}},
+        {{"id": "c1-s4", "translation":"That by which human labor is replaced."}},
+        {{"id": "c1-s5", "translation":"Yet the power of machines is vast,"}},
+        {{"id": "c1-s6", "translation":"their calculations swift,"}},
+        {{"id": "c1-s7", "translation":"but their wisdom does not reach that of man."}},
+        {{"id": "c1-s8", "translation":"Therefore, the wise plan with care and foresight."}},
+        {{"id": "c1-s9", "translation":"They set down a thousand words,"}},
+        {{"id": "c1-s10", "translation":"as if issuing military orders,"}},
+        {{"id": "c1-s11", "translation":"as if prescribing medicine —"}},
+        {{"id": "c1-s12", "translation":"this is called a program."}},
+        {{"id": "c1-s13", "translation":"Once the machine comprehends it,"}},
+        {{"id": "c1-s14", "translation":"it can then be made to serve mankind —"}},
+        {{"id": "c1-s15", "translation":"to chart the movements of the stars,"}},
+        {{"id": "c1-s16", "translation":"or to analyze the patterns of reason."}}
+    ]
+}}
+
+## Your Task
+
+Now translate the following sentences:
+
+{text}
+"""
