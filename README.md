@@ -29,7 +29,7 @@ flowchart LR
         SG[segment-text.py → renderer/public/segments]
         TR[translate.py → renderer/public/translations]
         TS[transcribe.py → renderer/public/transcripts]
-        BS2[build-segments.py → renderer/public/transcripts/build]
+        BS2[build-segmented-transcripts.py → renderer/public/transcripts/build]
         SY[synthesize.py → renderer/public/audios]
         VC[voice-change.py → renderer/public/audios/female]
         TT[transcribe-titles.py → renderer/public/transcripts/audio-n.txt]
@@ -80,7 +80,7 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
 ## Working the Pipeline
 
 1. **Prepare chapter data**
-   - Run processor scripts in order (`parse-markdown.py`, `build-sentences.py`, `segment-text.py`, `translate.py`, `transcribe.py`, `build-segments.py`). Use `uv run` for each, e.g. `cd processor && uv run python segment-text.py`.
+   - Run processor scripts in order (`parse-markdown.py`, `build-sentences.py`, `segment-text.py`, `translate.py`, `transcribe.py`, `build-segmented-transcripts.py`). Use `uv run` for each, e.g. `cd processor && uv run python segment-text.py`.
    - Titles follow `transcribe-titles.py` → `synthesize-titles.py`.
 
 2. **Synthesize audio**
