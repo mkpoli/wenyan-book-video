@@ -1000,7 +1000,7 @@
       "chapterId": "c7",
       "blockId": "b11",
       "index": 125,
-      "source": "分橋上戲人\n人戲上橋分。",
+      "source": "分橋上戲人",
       "isCode": true
     },
     {
@@ -1008,7 +1008,7 @@
       "chapterId": "c7",
       "blockId": "b11",
       "index": 126,
-      "source": "鷺浴留池滿。",
+      "source": "\n人戲上橋分。",
       "isCode": true
     },
     {
@@ -1016,7 +1016,7 @@
       "chapterId": "c7",
       "blockId": "b11",
       "index": 127,
-      "source": "潾秋養菊嫩。",
+      "source": "鷺浴留池滿。",
       "isCode": true
     },
     {
@@ -1024,23 +1024,23 @@
       "chapterId": "c7",
       "blockId": "b11",
       "index": 128,
-      "source": "鑊竭生蓮旱",
+      "source": "潾秋養菊嫩。",
       "isCode": true
     },
     {
       "id": "c7-s129",
       "chapterId": "c7",
-      "blockId": "b12",
+      "blockId": "b11",
       "index": 129,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "鑊竭生蓮旱",
+      "isCode": true
     },
     {
       "id": "c7-s130",
       "chapterId": "c7",
       "blockId": "b12",
       "index": 130,
-      "source": "今有一言。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -1048,7 +1048,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 131,
-      "source": "或恐藏回文。",
+      "source": "今有一言。",
       "isCode": false
     },
     {
@@ -1056,7 +1056,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 132,
-      "source": "故欲求其中至長之回文句。",
+      "source": "或恐藏回文。",
       "isCode": false
     },
     {
@@ -1064,7 +1064,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 133,
-      "source": "當作何書。",
+      "source": "故欲求其中至長之回文句。",
       "isCode": false
     },
     {
@@ -1072,7 +1072,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 134,
-      "source": "曰。",
+      "source": "當作何書。",
       "isCode": false
     },
     {
@@ -1080,7 +1080,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 135,
-      "source": "或有拙法。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -1088,7 +1088,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 136,
-      "source": "作也易。",
+      "source": "或有拙法。",
       "isCode": false
     },
     {
@@ -1096,7 +1096,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 137,
-      "source": "然機器行也緩。",
+      "source": "作也易。",
       "isCode": false
     },
     {
@@ -1104,7 +1104,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 138,
-      "source": "或有巧法。",
+      "source": "然機器行也緩。",
       "isCode": false
     },
     {
@@ -1112,7 +1112,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 139,
-      "source": "作也難。",
+      "source": "或有巧法。",
       "isCode": false
     },
     {
@@ -1120,7 +1120,7 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 140,
-      "source": "然機器行也速。",
+      "source": "作也難。",
       "isCode": false
     },
     {
@@ -1128,23 +1128,23 @@
       "chapterId": "c7",
       "blockId": "b12",
       "index": 141,
-      "source": "先書其拙法如是。",
+      "source": "然機器行也速。",
       "isCode": false
     },
     {
       "id": "c7-s142",
       "chapterId": "c7",
-      "blockId": "b13",
+      "blockId": "b12",
       "index": 142,
-      "source": "吾有一言。",
-      "isCode": true
+      "source": "先書其拙法如是。",
+      "isCode": false
     },
     {
       "id": "c7-s143",
       "chapterId": "c7",
       "blockId": "b13",
       "index": 143,
-      "source": "曰『晚紅飛盡春寒淺淺寒春盡飛紅晚尊酒綠陰繁繁陰綠酒尊老仙詩句好好句詩仙老長恨送年芳芳年送恨長』名之曰「文」。",
+      "source": "吾有一言。",
       "isCode": true
     },
     {
@@ -1152,7 +1152,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 144,
-      "source": "\n\n吾有二數。",
+      "source": "曰『晚紅飛盡春寒淺淺寒春盡飛紅晚尊酒綠陰繁繁陰綠酒尊老仙詩句好好句詩仙老長恨送年芳芳年送恨長』名之曰「文」。",
       "isCode": true
     },
     {
@@ -1160,7 +1160,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 145,
-      "source": "名之曰「至長中」",
+      "source": "\n\n吾有二數。",
       "isCode": true
     },
     {
@@ -1168,7 +1168,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 146,
-      "source": "曰「至長長」。",
+      "source": "名之曰「至長中」",
       "isCode": true
     },
     {
@@ -1176,7 +1176,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 147,
-      "source": "\n有數一。",
+      "source": "曰「至長長」。",
       "isCode": true
     },
     {
@@ -1184,7 +1184,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 148,
-      "source": "名之曰「中」。",
+      "source": "\n有數一。",
       "isCode": true
     },
     {
@@ -1192,7 +1192,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 149,
-      "source": "夫「文」之長。",
+      "source": "名之曰「中」。",
       "isCode": true
     },
     {
@@ -1200,7 +1200,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 150,
-      "source": "為是其遍。",
+      "source": "夫「文」之長。",
       "isCode": true
     },
     {
@@ -1208,7 +1208,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 151,
-      "source": "\n\t有數零。",
+      "source": "為是其遍。",
       "isCode": true
     },
     {
@@ -1216,7 +1216,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 152,
-      "source": "名之曰「奇」。",
+      "source": "\n\t有數零。",
       "isCode": true
     },
     {
@@ -1224,7 +1224,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 153,
-      "source": "為是二遍。",
+      "source": "名之曰「奇」。",
       "isCode": true
     },
     {
@@ -1232,7 +1232,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 154,
-      "source": "\n\t\t減「中」以「奇」。",
+      "source": "為是二遍。",
       "isCode": true
     },
     {
@@ -1240,7 +1240,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 155,
-      "source": "名之曰「左」。",
+      "source": "\n\t\t減「中」以「奇」。",
       "isCode": true
     },
     {
@@ -1248,7 +1248,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 156,
-      "source": "\n\t\t加「中」以一。",
+      "source": "名之曰「左」。",
       "isCode": true
     },
     {
@@ -1256,7 +1256,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 157,
-      "source": "名之曰「右」。",
+      "source": "\n\t\t加「中」以一。",
       "isCode": true
     },
     {
@@ -1264,7 +1264,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 158,
-      "source": "\n    為是「中」遍。",
+      "source": "名之曰「右」。",
       "isCode": true
     },
     {
@@ -1272,7 +1272,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 159,
-      "source": "\n      若「文」之「左」不等於「文」之「右」者。",
+      "source": "\n    為是「中」遍。",
       "isCode": true
     },
     {
@@ -1280,7 +1280,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 160,
-      "source": "乃止也。",
+      "source": "\n      若「文」之「左」不等於「文」之「右」者。",
       "isCode": true
     },
     {
@@ -1288,7 +1288,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 161,
-      "source": "\n      減「左」以一。",
+      "source": "乃止也。",
       "isCode": true
     },
     {
@@ -1296,7 +1296,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 162,
-      "source": "昔之「左」者。",
+      "source": "\n      減「左」以一。",
       "isCode": true
     },
     {
@@ -1304,7 +1304,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 163,
-      "source": "今其是矣。",
+      "source": "昔之「左」者。",
       "isCode": true
     },
     {
@@ -1312,7 +1312,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 164,
-      "source": "\n      加「右」以一。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -1320,7 +1320,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 165,
-      "source": "昔之「右」者。",
+      "source": "\n      加「右」以一。",
       "isCode": true
     },
     {
@@ -1328,7 +1328,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 166,
-      "source": "今其是矣。",
+      "source": "昔之「右」者。",
       "isCode": true
     },
     {
@@ -1336,7 +1336,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 167,
-      "source": "\n    云云。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -1344,7 +1344,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 168,
-      "source": "\n    減「右」以「左」。",
+      "source": "\n    云云。",
       "isCode": true
     },
     {
@@ -1352,7 +1352,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 169,
-      "source": "減其以一。",
+      "source": "\n    減「右」以「左」。",
       "isCode": true
     },
     {
@@ -1360,7 +1360,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 170,
-      "source": "名之曰「長」。",
+      "source": "減其以一。",
       "isCode": true
     },
     {
@@ -1368,7 +1368,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 171,
-      "source": "\n    若「長」大於「至長長」者。",
+      "source": "名之曰「長」。",
       "isCode": true
     },
     {
@@ -1376,7 +1376,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 172,
-      "source": "\n    \t昔之「至長長」者。",
+      "source": "\n    若「長」大於「至長長」者。",
       "isCode": true
     },
     {
@@ -1384,7 +1384,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 173,
-      "source": "今「長」是矣。",
+      "source": "\n    \t昔之「至長長」者。",
       "isCode": true
     },
     {
@@ -1392,7 +1392,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 174,
-      "source": "\n    \t昔之「至長中」者。",
+      "source": "今「長」是矣。",
       "isCode": true
     },
     {
@@ -1400,7 +1400,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 175,
-      "source": "今「中」是矣。",
+      "source": "\n    \t昔之「至長中」者。",
       "isCode": true
     },
     {
@@ -1408,7 +1408,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 176,
-      "source": "\n    云云。",
+      "source": "今「中」是矣。",
       "isCode": true
     },
     {
@@ -1416,7 +1416,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 177,
-      "source": "\n  加「奇」以一。",
+      "source": "\n    云云。",
       "isCode": true
     },
     {
@@ -1424,7 +1424,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 178,
-      "source": "昔之「奇」者。",
+      "source": "\n  加「奇」以一。",
       "isCode": true
     },
     {
@@ -1432,7 +1432,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 179,
-      "source": "今其是矣。",
+      "source": "昔之「奇」者。",
       "isCode": true
     },
     {
@@ -1440,7 +1440,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 180,
-      "source": "云云。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -1448,7 +1448,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 181,
-      "source": "\n加「中」以一。",
+      "source": "云云。",
       "isCode": true
     },
     {
@@ -1456,7 +1456,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 182,
-      "source": "昔之「中」者。",
+      "source": "\n加「中」以一。",
       "isCode": true
     },
     {
@@ -1464,7 +1464,7 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 183,
-      "source": "今其是矣。",
+      "source": "昔之「中」者。",
       "isCode": true
     },
     {
@@ -1472,23 +1472,23 @@
       "chapterId": "c7",
       "blockId": "b13",
       "index": 184,
-      "source": "云云。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
       "id": "c7-s185",
       "chapterId": "c7",
-      "blockId": "b14",
+      "blockId": "b13",
       "index": 185,
-      "source": "術曰。",
-      "isCode": false
+      "source": "云云。",
+      "isCode": true
     },
     {
       "id": "c7-s186",
       "chapterId": "c7",
       "blockId": "b14",
       "index": 186,
-      "source": "每歷一字。",
+      "source": "術曰。",
       "isCode": false
     },
     {
@@ -1496,7 +1496,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 187,
-      "source": "或奇或偶。",
+      "source": "每歷一字。",
       "isCode": false
     },
     {
@@ -1504,7 +1504,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 188,
-      "source": "左右張之。",
+      "source": "或奇或偶。",
       "isCode": false
     },
     {
@@ -1512,7 +1512,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 189,
-      "source": "同則復張異輒止。",
+      "source": "左右張之。",
       "isCode": false
     },
     {
@@ -1520,7 +1520,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 190,
-      "source": "遍觀其文。",
+      "source": "同則復張異輒止。",
       "isCode": false
     },
     {
@@ -1528,7 +1528,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 191,
-      "source": "厥得其最長者。",
+      "source": "遍觀其文。",
       "isCode": false
     },
     {
@@ -1536,7 +1536,7 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 192,
-      "source": "持回文之「至長中」「至長長」。",
+      "source": "厥得其最長者。",
       "isCode": false
     },
     {
@@ -1544,23 +1544,23 @@
       "chapterId": "c7",
       "blockId": "b14",
       "index": 193,
-      "source": "乃書「至長句」如是。",
+      "source": "持回文之「至長中」「至長長」。",
       "isCode": false
     },
     {
       "id": "c7-s194",
       "chapterId": "c7",
-      "blockId": "b15",
+      "blockId": "b14",
       "index": 194,
-      "source": "除「至長長」以二。",
-      "isCode": true
+      "source": "乃書「至長句」如是。",
+      "isCode": false
     },
     {
       "id": "c7-s195",
       "chapterId": "c7",
       "blockId": "b15",
       "index": 195,
-      "source": "所餘幾何。",
+      "source": "除「至長長」以二。",
       "isCode": true
     },
     {
@@ -1568,7 +1568,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 196,
-      "source": "名之曰「奇」。",
+      "source": "所餘幾何。",
       "isCode": true
     },
     {
@@ -1576,7 +1576,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 197,
-      "source": "\n減「至長長」以「奇」。",
+      "source": "名之曰「奇」。",
       "isCode": true
     },
     {
@@ -1584,7 +1584,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 198,
-      "source": "除其以二。",
+      "source": "\n減「至長長」以「奇」。",
       "isCode": true
     },
     {
@@ -1592,7 +1592,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 199,
-      "source": "減其於「至長中」。",
+      "source": "除其以二。",
       "isCode": true
     },
     {
@@ -1600,7 +1600,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 200,
-      "source": "加其以一。",
+      "source": "減其於「至長中」。",
       "isCode": true
     },
     {
@@ -1608,7 +1608,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 201,
-      "source": "減其以「奇」。",
+      "source": "加其以一。",
       "isCode": true
     },
     {
@@ -1616,7 +1616,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 202,
-      "source": "名之曰「字」。",
+      "source": "減其以「奇」。",
       "isCode": true
     },
     {
@@ -1624,7 +1624,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 203,
-      "source": "\n\n吾有一言。",
+      "source": "名之曰「字」。",
       "isCode": true
     },
     {
@@ -1632,7 +1632,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 204,
-      "source": "名之曰「至長句」\n為是「至長長」遍。",
+      "source": "\n\n吾有一言。",
       "isCode": true
     },
     {
@@ -1640,7 +1640,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 205,
-      "source": "\n\t夫「文」之「字」。",
+      "source": "名之曰「至長句」",
       "isCode": true
     },
     {
@@ -1648,7 +1648,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 206,
-      "source": "加其於「至長句」。",
+      "source": "\n為是「至長長」遍。",
       "isCode": true
     },
     {
@@ -1656,7 +1656,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 207,
-      "source": "昔之「至長句」者。",
+      "source": "\n\t夫「文」之「字」。",
       "isCode": true
     },
     {
@@ -1664,7 +1664,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 208,
-      "source": "今其是矣。",
+      "source": "加其於「至長句」。",
       "isCode": true
     },
     {
@@ -1672,7 +1672,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 209,
-      "source": "\n加「字」以一。",
+      "source": "昔之「至長句」者。",
       "isCode": true
     },
     {
@@ -1680,7 +1680,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 210,
-      "source": "昔之「字」者。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -1688,7 +1688,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 211,
-      "source": "今其是矣。",
+      "source": "\n加「字」以一。",
       "isCode": true
     },
     {
@@ -1696,7 +1696,7 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 212,
-      "source": "云云。",
+      "source": "昔之「字」者。",
       "isCode": true
     },
     {
@@ -1704,47 +1704,47 @@
       "chapterId": "c7",
       "blockId": "b15",
       "index": 213,
-      "source": "\n夫「至長句」書之。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
       "id": "c7-s214",
       "chapterId": "c7",
-      "blockId": "b16",
+      "blockId": "b15",
       "index": 214,
-      "source": "遂得朱子菩薩蠻首聯。",
-      "isCode": false
+      "source": "云云。",
+      "isCode": true
     },
     {
       "id": "c7-s215",
       "chapterId": "c7",
-      "blockId": "b17",
+      "blockId": "b15",
       "index": 215,
-      "source": "晚紅飛盡春寒淺淺寒春盡飛紅晚",
+      "source": "\n夫「至長句」書之。",
       "isCode": true
     },
     {
       "id": "c7-s216",
       "chapterId": "c7",
-      "blockId": "b18",
+      "blockId": "b16",
       "index": 216,
-      "source": "其巧法者。",
+      "source": "遂得朱子菩薩蠻首聯。",
       "isCode": false
     },
     {
       "id": "c7-s217",
       "chapterId": "c7",
-      "blockId": "b18",
+      "blockId": "b17",
       "index": 217,
-      "source": "蓋列既得之回文之長。",
-      "isCode": false
+      "source": "晚紅飛盡春寒淺淺寒春盡飛紅晚",
+      "isCode": true
     },
     {
       "id": "c7-s218",
       "chapterId": "c7",
       "blockId": "b18",
       "index": 218,
-      "source": "以資後來之算。",
+      "source": "其巧法者。",
       "isCode": false
     },
     {
@@ -1752,7 +1752,7 @@
       "chapterId": "c7",
       "blockId": "b18",
       "index": 219,
-      "source": "或名之曰馬拉車法。",
+      "source": "蓋列既得之回文之長。",
       "isCode": false
     },
     {
@@ -1760,7 +1760,7 @@
       "chapterId": "c7",
       "blockId": "b18",
       "index": 220,
-      "source": "以其術稍繁。",
+      "source": "以資後來之算。",
       "isCode": false
     },
     {
@@ -1768,7 +1768,7 @@
       "chapterId": "c7",
       "blockId": "b18",
       "index": 221,
-      "source": "亦非初學易知。",
+      "source": "或名之曰馬拉車法。",
       "isCode": false
     },
     {
@@ -1776,23 +1776,23 @@
       "chapterId": "c7",
       "blockId": "b18",
       "index": 222,
-      "source": "故留待好事君子自思焉。",
+      "source": "以其術稍繁。",
       "isCode": false
     },
     {
       "id": "c7-s223",
       "chapterId": "c7",
-      "blockId": "b19",
+      "blockId": "b18",
       "index": 223,
-      "source": "說文曰。",
+      "source": "亦非初學易知。",
       "isCode": false
     },
     {
       "id": "c7-s224",
       "chapterId": "c7",
-      "blockId": "b19",
+      "blockId": "b18",
       "index": 224,
-      "source": "釋經以明其義曰注。",
+      "source": "故留待好事君子自思焉。",
       "isCode": false
     },
     {
@@ -1800,7 +1800,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 225,
-      "source": "批注之法有三。",
+      "source": "說文曰。",
       "isCode": false
     },
     {
@@ -1808,7 +1808,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 226,
-      "source": "一曰注。",
+      "source": "釋經以明其義曰注。",
       "isCode": false
     },
     {
@@ -1816,7 +1816,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 227,
-      "source": "二曰疏。",
+      "source": "批注之法有三。",
       "isCode": false
     },
     {
@@ -1824,7 +1824,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 228,
-      "source": "三曰批。",
+      "source": "一曰注。",
       "isCode": false
     },
     {
@@ -1832,7 +1832,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 229,
-      "source": "批者。",
+      "source": "二曰疏。",
       "isCode": false
     },
     {
@@ -1840,7 +1840,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 230,
-      "source": "評也。",
+      "source": "三曰批。",
       "isCode": false
     },
     {
@@ -1848,7 +1848,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 231,
-      "source": "疏者。",
+      "source": "批者。",
       "isCode": false
     },
     {
@@ -1856,7 +1856,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 232,
-      "source": "注其注也。",
+      "source": "評也。",
       "isCode": false
     },
     {
@@ -1864,7 +1864,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 233,
-      "source": "此三者既非正文。",
+      "source": "疏者。",
       "isCode": false
     },
     {
@@ -1872,7 +1872,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 234,
-      "source": "唯人觀之。",
+      "source": "注其注也。",
       "isCode": false
     },
     {
@@ -1880,7 +1880,7 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 235,
-      "source": "機器盡棄之若無睹。",
+      "source": "此三者既非正文。",
       "isCode": false
     },
     {
@@ -1888,31 +1888,31 @@
       "chapterId": "c7",
       "blockId": "b19",
       "index": 236,
-      "source": "書如是。",
+      "source": "唯人觀之。",
       "isCode": false
     },
     {
       "id": "c7-s237",
       "chapterId": "c7",
-      "blockId": "b20",
+      "blockId": "b19",
       "index": 237,
-      "source": "注曰。",
-      "isCode": true
+      "source": "機器盡棄之若無睹。",
+      "isCode": false
     },
     {
       "id": "c7-s238",
       "chapterId": "c7",
-      "blockId": "b20",
+      "blockId": "b19",
       "index": 238,
-      "source": "『文言備矣』。",
-      "isCode": true
+      "source": "書如是。",
+      "isCode": false
     },
     {
       "id": "c7-s239",
       "chapterId": "c7",
       "blockId": "b20",
       "index": 239,
-      "source": "\n疏曰。",
+      "source": "注曰。",
       "isCode": true
     },
     {
@@ -1920,7 +1920,7 @@
       "chapterId": "c7",
       "blockId": "b20",
       "index": 240,
-      "source": "『居第一之位故稱初。以其陽爻故稱九』。",
+      "source": "『文言備矣』。",
       "isCode": true
     },
     {
@@ -1928,7 +1928,7 @@
       "chapterId": "c7",
       "blockId": "b20",
       "index": 241,
-      "source": "\n批曰。",
+      "source": "\n疏曰。",
       "isCode": true
     },
     {
@@ -1936,31 +1936,31 @@
       "chapterId": "c7",
       "blockId": "b20",
       "index": 242,
-      "source": "『文氣淋灕。字句切實』。",
+      "source": "『居第一之位故稱初。以其陽爻故稱九』。",
       "isCode": true
     },
     {
       "id": "c7-s243",
       "chapterId": "c7",
-      "blockId": "b21",
+      "blockId": "b20",
       "index": 243,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "\n批曰。",
+      "isCode": true
     },
     {
       "id": "c7-s244",
       "chapterId": "c7",
-      "blockId": "b21",
+      "blockId": "b20",
       "index": 244,
-      "source": "既無少益於程式之運行。",
-      "isCode": false
+      "source": "『文氣淋灕。字句切實』。",
+      "isCode": true
     },
     {
       "id": "c7-s245",
       "chapterId": "c7",
       "blockId": "b21",
       "index": 245,
-      "source": "吾法吾自知之。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -1968,7 +1968,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 246,
-      "source": "奚注為。",
+      "source": "既無少益於程式之運行。",
       "isCode": false
     },
     {
@@ -1976,7 +1976,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 247,
-      "source": "曰。",
+      "source": "吾法吾自知之。",
       "isCode": false
     },
     {
@@ -1984,7 +1984,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 248,
-      "source": "所以資同事者後人之觀也。",
+      "source": "奚注為。",
       "isCode": false
     },
     {
@@ -1992,7 +1992,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 249,
-      "source": "蓋程式之欲大有所為者。",
+      "source": "曰。",
       "isCode": false
     },
     {
@@ -2000,7 +2000,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 250,
-      "source": "多非一時之力。",
+      "source": "所以資同事者後人之觀也。",
       "isCode": false
     },
     {
@@ -2008,7 +2008,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 251,
-      "source": "一人之功。",
+      "source": "蓋程式之欲大有所為者。",
       "isCode": false
     },
     {
@@ -2016,7 +2016,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 252,
-      "source": "他人得觀其注。",
+      "source": "多非一時之力。",
       "isCode": false
     },
     {
@@ -2024,7 +2024,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 253,
-      "source": "立明其義。",
+      "source": "一人之功。",
       "isCode": false
     },
     {
@@ -2032,7 +2032,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 254,
-      "source": "刪補增修。",
+      "source": "他人得觀其注。",
       "isCode": false
     },
     {
@@ -2040,7 +2040,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 255,
-      "source": "得於心而應於手。",
+      "source": "立明其義。",
       "isCode": false
     },
     {
@@ -2048,7 +2048,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 256,
-      "source": "余少時。",
+      "source": "刪補增修。",
       "isCode": false
     },
     {
@@ -2056,7 +2056,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 257,
-      "source": "下筆了不容思。",
+      "source": "得於心而應於手。",
       "isCode": false
     },
     {
@@ -2064,7 +2064,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 258,
-      "source": "乃以批注為累。",
+      "source": "余少時。",
       "isCode": false
     },
     {
@@ -2072,7 +2072,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 259,
-      "source": "灑灑千言。",
+      "source": "下筆了不容思。",
       "isCode": false
     },
     {
@@ -2080,7 +2080,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 260,
-      "source": "卒無一注。",
+      "source": "乃以批注為累。",
       "isCode": false
     },
     {
@@ -2088,7 +2088,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 261,
-      "source": "故至今為時人所病。",
+      "source": "灑灑千言。",
       "isCode": false
     },
     {
@@ -2096,7 +2096,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 262,
-      "source": "不亦悲夫。",
+      "source": "卒無一注。",
       "isCode": false
     },
     {
@@ -2104,7 +2104,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 263,
-      "source": "故聰明君子。",
+      "source": "故至今為時人所病。",
       "isCode": false
     },
     {
@@ -2112,7 +2112,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 264,
-      "source": "莫我效焉。",
+      "source": "不亦悲夫。",
       "isCode": false
     },
     {
@@ -2120,7 +2120,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 265,
-      "source": "注有二必注。",
+      "source": "故聰明君子。",
       "isCode": false
     },
     {
@@ -2128,7 +2128,7 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 266,
-      "source": "有二不注。",
+      "source": "莫我效焉。",
       "isCode": false
     },
     {
@@ -2136,55 +2136,55 @@
       "chapterId": "c7",
       "blockId": "b21",
       "index": 267,
-      "source": "曰。",
+      "source": "注有二必注。",
       "isCode": false
     },
     {
       "id": "c7-s268",
       "chapterId": "c7",
-      "blockId": "b22",
+      "blockId": "b21",
       "index": 268,
-      "source": "開宗明義者必注 奇技淫巧者必注 用意自明者不注 為注而注者不注",
+      "source": "有二不注。",
       "isCode": false
     },
     {
       "id": "c7-s269",
       "chapterId": "c7",
-      "blockId": "b23",
+      "blockId": "b21",
       "index": 269,
-      "source": "除是外。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c7-s270",
       "chapterId": "c7",
-      "blockId": "b23",
+      "blockId": "b22",
       "index": 270,
-      "source": "復有一妙用。",
+      "source": "開宗明義者必注",
       "isCode": false
     },
     {
       "id": "c7-s271",
       "chapterId": "c7",
-      "blockId": "b23",
+      "blockId": "b22",
       "index": 271,
-      "source": "作程式之時。",
+      "source": "奇技淫巧者必注",
       "isCode": false
     },
     {
       "id": "c7-s272",
       "chapterId": "c7",
-      "blockId": "b23",
+      "blockId": "b22",
       "index": 272,
-      "source": "往往調試無已。",
+      "source": "用意自明者不注",
       "isCode": false
     },
     {
       "id": "c7-s273",
       "chapterId": "c7",
-      "blockId": "b23",
+      "blockId": "b22",
       "index": 273,
-      "source": "夫置一句乎注釋之內。",
+      "source": "為注而注者不注",
       "isCode": false
     },
     {
@@ -2192,7 +2192,7 @@
       "chapterId": "c7",
       "blockId": "b23",
       "index": 274,
-      "source": "可聊止其運行。",
+      "source": "除是外。",
       "isCode": false
     },
     {
@@ -2200,7 +2200,7 @@
       "chapterId": "c7",
       "blockId": "b23",
       "index": 275,
-      "source": "然或曰程式既成乃當去之。",
+      "source": "復有一妙用。",
       "isCode": false
     },
     {
@@ -2208,62 +2208,102 @@
       "chapterId": "c7",
       "blockId": "b23",
       "index": 276,
-      "source": "蓋以其醜陋云耳。",
+      "source": "作程式之時。",
       "isCode": false
     },
     {
       "id": "c7-s277",
       "chapterId": "c7",
-      "blockId": "b24",
+      "blockId": "b23",
       "index": 277,
-      "source": "注曰。",
-      "isCode": true
+      "source": "往往調試無已。",
+      "isCode": false
     },
     {
       "id": "c7-s278",
       "chapterId": "c7",
-      "blockId": "b24",
+      "blockId": "b23",
       "index": 278,
-      "source": "『吾有一言。曰『是語處批注之中。故終不得行』。",
-      "isCode": true
+      "source": "夫置一句乎注釋之內。",
+      "isCode": false
     },
     {
       "id": "c7-s279",
       "chapterId": "c7",
-      "blockId": "b24",
+      "blockId": "b23",
       "index": 279,
-      "source": "書之。",
-      "isCode": true
+      "source": "可聊止其運行。",
+      "isCode": false
     },
     {
       "id": "c7-s280",
       "chapterId": "c7",
-      "blockId": "b24",
+      "blockId": "b23",
       "index": 280,
-      "source": "』",
-      "isCode": true
+      "source": "然或曰程式既成乃當去之。",
+      "isCode": false
     },
     {
       "id": "c7-s281",
       "chapterId": "c7",
-      "blockId": "b25",
+      "blockId": "b23",
       "index": 281,
-      "source": "注釋之方既備。",
+      "source": "蓋以其醜陋云耳。",
       "isCode": false
     },
     {
       "id": "c7-s282",
       "chapterId": "c7",
-      "blockId": "b25",
+      "blockId": "b24",
       "index": 282,
-      "source": "後章之範例。",
-      "isCode": false
+      "source": "注曰。",
+      "isCode": true
     },
     {
       "id": "c7-s283",
       "chapterId": "c7",
-      "blockId": "b25",
+      "blockId": "b24",
       "index": 283,
+      "source": "『吾有一言。曰『是語處批注之中。故終不得行』。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s284",
+      "chapterId": "c7",
+      "blockId": "b24",
+      "index": 284,
+      "source": "書之。",
+      "isCode": true
+    },
+    {
+      "id": "c7-s285",
+      "chapterId": "c7",
+      "blockId": "b24",
+      "index": 285,
+      "source": "』",
+      "isCode": true
+    },
+    {
+      "id": "c7-s286",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 286,
+      "source": "注釋之方既備。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s287",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 287,
+      "source": "後章之範例。",
+      "isCode": false
+    },
+    {
+      "id": "c7-s288",
+      "chapterId": "c7",
+      "blockId": "b25",
+      "index": 288,
       "source": "皆以為剖析。",
       "isCode": false
     }

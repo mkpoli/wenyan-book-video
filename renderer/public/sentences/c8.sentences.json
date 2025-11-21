@@ -3496,63 +3496,63 @@
       "chapterId": "c8",
       "blockId": "b34",
       "index": 437,
-      "source": "　一　\n　一　　一　\n　一　　二　　一　\n　一　　三　　三　　一　\n　一　　四　　六　　四　　一　\n　一　　五　　十　　十　　五　　一　\n　一　　六　　十五　　二十　　十五　　六　　一　",
+      "source": "　一　",
       "isCode": true
     },
     {
       "id": "c8-s438",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 438,
-      "source": "或問曰。",
-      "isCode": false
+      "source": "\n　一　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s439",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 439,
-      "source": "於術之體。",
-      "isCode": false
+      "source": "\n　一　　二　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s440",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 440,
-      "source": "復敘一術。",
-      "isCode": false
+      "source": "\n　一　　三　　三　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s441",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 441,
-      "source": "可乎。",
-      "isCode": false
+      "source": "\n　一　　四　　六　　四　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s442",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 442,
-      "source": "曰。",
-      "isCode": false
+      "source": "\n　一　　五　　十　　十　　五　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s443",
       "chapterId": "c8",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 443,
-      "source": "可也。",
-      "isCode": false
+      "source": "\n　一　　六　　十五　　二十　　十五　　六　　一　",
+      "isCode": true
     },
     {
       "id": "c8-s444",
       "chapterId": "c8",
       "blockId": "b35",
       "index": 444,
-      "source": "是以明內術之所以隸於外術。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -3560,63 +3560,63 @@
       "chapterId": "c8",
       "blockId": "b35",
       "index": 445,
-      "source": "易前賈憲三角術如是。",
+      "source": "於術之體。",
       "isCode": false
     },
     {
       "id": "c8-s446",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 446,
-      "source": "吾有一術。",
-      "isCode": true
+      "source": "復敘一術。",
+      "isCode": false
     },
     {
       "id": "c8-s447",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 447,
-      "source": "名之曰「畫賈憲三角」。",
-      "isCode": true
+      "source": "可乎。",
+      "isCode": false
     },
     {
       "id": "c8-s448",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 448,
-      "source": "欲行是術。",
-      "isCode": true
+      "source": "曰。",
+      "isCode": false
     },
     {
       "id": "c8-s449",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 449,
-      "source": "必先得一數。",
-      "isCode": true
+      "source": "可也。",
+      "isCode": false
     },
     {
       "id": "c8-s450",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 450,
-      "source": "曰「層數」。",
-      "isCode": true
+      "source": "是以明內術之所以隸於外術。",
+      "isCode": false
     },
     {
       "id": "c8-s451",
       "chapterId": "c8",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 451,
-      "source": "是術曰。",
-      "isCode": true
+      "source": "易前賈憲三角術如是。",
+      "isCode": false
     },
     {
       "id": "c8-s452",
       "chapterId": "c8",
       "blockId": "b36",
       "index": 452,
-      "source": "\n\t吾有一術。",
+      "source": "吾有一術。",
       "isCode": true
     },
     {
@@ -3624,7 +3624,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 453,
-      "source": "名之曰「求」。",
+      "source": "名之曰「畫賈憲三角」。",
       "isCode": true
     },
     {
@@ -3640,7 +3640,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 455,
-      "source": "必先得二數。",
+      "source": "必先得一數。",
       "isCode": true
     },
     {
@@ -3648,7 +3648,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 456,
-      "source": "曰「層」",
+      "source": "曰「層數」。",
       "isCode": true
     },
     {
@@ -3656,7 +3656,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 457,
-      "source": "曰「位」。",
+      "source": "是術曰。",
       "isCode": true
     },
     {
@@ -3664,7 +3664,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 458,
-      "source": "乃行是術曰。",
+      "source": "\n\t吾有一術。",
       "isCode": true
     },
     {
@@ -3672,7 +3672,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 459,
-      "source": "\n\t\t若「層」等於一者。",
+      "source": "名之曰「求」。",
       "isCode": true
     },
     {
@@ -3680,7 +3680,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 460,
-      "source": "乃得一也。",
+      "source": "欲行是術。",
       "isCode": true
     },
     {
@@ -3688,7 +3688,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 461,
-      "source": "\n\t\t若「位」等於一者。",
+      "source": "必先得二數。",
       "isCode": true
     },
     {
@@ -3696,7 +3696,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 462,
-      "source": "乃得一也。",
+      "source": "曰「層」",
       "isCode": true
     },
     {
@@ -3704,7 +3704,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 463,
-      "source": "\n\t\t若「位」等於「層」者。",
+      "source": "曰「位」。",
       "isCode": true
     },
     {
@@ -3712,7 +3712,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 464,
-      "source": "乃得一也。",
+      "source": "乃行是術曰。",
       "isCode": true
     },
     {
@@ -3720,7 +3720,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 465,
-      "source": "\n\t\t減「層」以一。",
+      "source": "\n\t\t若「層」等於一者。",
       "isCode": true
     },
     {
@@ -3728,7 +3728,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 466,
-      "source": "名之曰「上層」。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -3736,7 +3736,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 467,
-      "source": "\n\t\t減「位」以一。",
+      "source": "\n\t\t若「位」等於一者。",
       "isCode": true
     },
     {
@@ -3744,7 +3744,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 468,
-      "source": "名之曰「左位」。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -3752,7 +3752,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 469,
-      "source": "\n\t\t施「求」於「上層」。",
+      "source": "\n\t\t若「位」等於「層」者。",
       "isCode": true
     },
     {
@@ -3760,7 +3760,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 470,
-      "source": "於「位」。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -3768,7 +3768,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 471,
-      "source": "名之曰「甲」。",
+      "source": "\n\t\t減「層」以一。",
       "isCode": true
     },
     {
@@ -3776,7 +3776,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 472,
-      "source": "\n\t\t施「求」於「上層」。",
+      "source": "名之曰「上層」。",
       "isCode": true
     },
     {
@@ -3784,7 +3784,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 473,
-      "source": "於「左位」。",
+      "source": "\n\t\t減「位」以一。",
       "isCode": true
     },
     {
@@ -3792,7 +3792,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 474,
-      "source": "名之曰「乙」。",
+      "source": "名之曰「左位」。",
       "isCode": true
     },
     {
@@ -3800,7 +3800,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 475,
-      "source": "\n\t\t加「甲」以「乙」。",
+      "source": "\n\t\t施「求」於「上層」。",
       "isCode": true
     },
     {
@@ -3808,7 +3808,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 476,
-      "source": "乃得矣。",
+      "source": "於「位」。",
       "isCode": true
     },
     {
@@ -3816,7 +3816,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 477,
-      "source": "\n\t是謂「求」之術也。",
+      "source": "名之曰「甲」。",
       "isCode": true
     },
     {
@@ -3824,7 +3824,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 478,
-      "source": "\n\t有數一。",
+      "source": "\n\t\t施「求」於「上層」。",
       "isCode": true
     },
     {
@@ -3832,7 +3832,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 479,
-      "source": "名之曰「層」。",
+      "source": "於「左位」。",
       "isCode": true
     },
     {
@@ -3840,7 +3840,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 480,
-      "source": "為是「層數」遍。",
+      "source": "名之曰「乙」。",
       "isCode": true
     },
     {
@@ -3848,7 +3848,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 481,
-      "source": " \n\t\t吾有一言。",
+      "source": "\n\t\t加「甲」以「乙」。",
       "isCode": true
     },
     {
@@ -3856,7 +3856,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 482,
-      "source": "名之曰「圖」。",
+      "source": "乃得矣。",
       "isCode": true
     },
     {
@@ -3864,7 +3864,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 483,
-      "source": "\n\t\t有數一。",
+      "source": "\n\t是謂「求」之術也。",
       "isCode": true
     },
     {
@@ -3872,7 +3872,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 484,
-      "source": "名之曰「位」。",
+      "source": "\n\t有數一。",
       "isCode": true
     },
     {
@@ -3880,7 +3880,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 485,
-      "source": "為是「層」遍。",
+      "source": "名之曰「層」。",
       "isCode": true
     },
     {
@@ -3888,7 +3888,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 486,
-      "source": "\n\t\t\t施「求」於「層」。",
+      "source": "為是「層數」遍。",
       "isCode": true
     },
     {
@@ -3896,7 +3896,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 487,
-      "source": "於「位」。",
+      "source": " ",
       "isCode": true
     },
     {
@@ -3904,7 +3904,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 488,
-      "source": "名之曰「甲」。",
+      "source": "\n\t\t吾有一言。",
       "isCode": true
     },
     {
@@ -3912,7 +3912,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 489,
-      "source": "\n\t\t\t加『　』於「圖」。",
+      "source": "名之曰「圖」。",
       "isCode": true
     },
     {
@@ -3920,7 +3920,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 490,
-      "source": "加「甲」於其。",
+      "source": "\n\t\t有數一。",
       "isCode": true
     },
     {
@@ -3928,7 +3928,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 491,
-      "source": "加『　』於其。",
+      "source": "名之曰「位」。",
       "isCode": true
     },
     {
@@ -3936,7 +3936,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 492,
-      "source": "昔之「圖」者。",
+      "source": "為是「層」遍。",
       "isCode": true
     },
     {
@@ -3944,7 +3944,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 493,
-      "source": "今其是矣。",
+      "source": "\n\t\t\t施「求」於「層」。",
       "isCode": true
     },
     {
@@ -3952,7 +3952,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 494,
-      "source": "\n\t\t加「位」以一。",
+      "source": "於「位」。",
       "isCode": true
     },
     {
@@ -3960,7 +3960,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 495,
-      "source": "昔之「位」者。",
+      "source": "名之曰「甲」。",
       "isCode": true
     },
     {
@@ -3968,7 +3968,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 496,
-      "source": "今其是矣。",
+      "source": "\n\t\t\t加『　』於「圖」。",
       "isCode": true
     },
     {
@@ -3976,7 +3976,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 497,
-      "source": "云云。",
+      "source": "加「甲」於其。",
       "isCode": true
     },
     {
@@ -3984,7 +3984,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 498,
-      "source": "\n\t\t夫「圖」。",
+      "source": "加『　』於其。",
       "isCode": true
     },
     {
@@ -3992,7 +3992,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 499,
-      "source": "書之。",
+      "source": "昔之「圖」者。",
       "isCode": true
     },
     {
@@ -4000,7 +4000,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 500,
-      "source": "\n\t加「層」以一。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -4008,7 +4008,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 501,
-      "source": "昔之「層」者。",
+      "source": "\n\t\t加「位」以一。",
       "isCode": true
     },
     {
@@ -4016,7 +4016,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 502,
-      "source": "今其是矣。",
+      "source": "昔之「位」者。",
       "isCode": true
     },
     {
@@ -4024,7 +4024,7 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 503,
-      "source": "云云。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -4032,71 +4032,71 @@
       "chapterId": "c8",
       "blockId": "b36",
       "index": 504,
-      "source": "\n是謂「畫賈憲三角」之術也。",
+      "source": "云云。",
       "isCode": true
     },
     {
       "id": "c8-s505",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 505,
-      "source": "「求」者。",
-      "isCode": false
+      "source": "\n\t\t夫「圖」。",
+      "isCode": true
     },
     {
       "id": "c8-s506",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 506,
-      "source": "內術也。",
-      "isCode": false
+      "source": "書之。",
+      "isCode": true
     },
     {
       "id": "c8-s507",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 507,
-      "source": "「畫」者。",
-      "isCode": false
+      "source": "\n\t加「層」以一。",
+      "isCode": true
     },
     {
       "id": "c8-s508",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 508,
-      "source": "外術也。",
-      "isCode": false
+      "source": "昔之「層」者。",
+      "isCode": true
     },
     {
       "id": "c8-s509",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 509,
-      "source": "為是。",
-      "isCode": false
+      "source": "今其是矣。",
+      "isCode": true
     },
     {
       "id": "c8-s510",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 510,
-      "source": "則內術不得用於外術之外。",
-      "isCode": false
+      "source": "云云。",
+      "isCode": true
     },
     {
       "id": "c8-s511",
       "chapterId": "c8",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 511,
-      "source": "此「域」也。",
-      "isCode": false
+      "source": "\n是謂「畫賈憲三角」之術也。",
+      "isCode": true
     },
     {
       "id": "c8-s512",
       "chapterId": "c8",
       "blockId": "b37",
       "index": 512,
-      "source": "「域」者。",
+      "source": "「求」者。",
       "isCode": false
     },
     {
@@ -4104,7 +4104,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 513,
-      "source": "所以限變數之語境也。",
+      "source": "內術也。",
       "isCode": false
     },
     {
@@ -4112,7 +4112,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 514,
-      "source": "譬唐人語李密。",
+      "source": "「畫」者。",
       "isCode": false
     },
     {
@@ -4120,7 +4120,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 515,
-      "source": "謂牛角掛書之李密也。",
+      "source": "外術也。",
       "isCode": false
     },
     {
@@ -4128,7 +4128,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 516,
-      "source": "晉人語李密。",
+      "source": "為是。",
       "isCode": false
     },
     {
@@ -4136,7 +4136,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 517,
-      "source": "謂舅奪母志之李密也。",
+      "source": "則內術不得用於外術之外。",
       "isCode": false
     },
     {
@@ -4144,7 +4144,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 518,
-      "source": "有域。",
+      "source": "此「域」也。",
       "isCode": false
     },
     {
@@ -4152,7 +4152,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 519,
-      "source": "則名不致混淆也。",
+      "source": "「域」者。",
       "isCode": false
     },
     {
@@ -4160,7 +4160,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 520,
-      "source": "術之體一域也。",
+      "source": "所以限變數之語境也。",
       "isCode": false
     },
     {
@@ -4168,7 +4168,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 521,
-      "source": "決策循環之體。",
+      "source": "譬唐人語李密。",
       "isCode": false
     },
     {
@@ -4176,7 +4176,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 522,
-      "source": "亦一域也。",
+      "source": "謂牛角掛書之李密也。",
       "isCode": false
     },
     {
@@ -4184,7 +4184,7 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 523,
-      "source": "術之參者。",
+      "source": "晉人語李密。",
       "isCode": false
     },
     {
@@ -4192,63 +4192,63 @@
       "chapterId": "c8",
       "blockId": "b37",
       "index": 524,
-      "source": "域與術體同。",
+      "source": "謂舅奪母志之李密也。",
       "isCode": false
     },
     {
       "id": "c8-s525",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 525,
-      "source": "又凡云一名。",
+      "source": "有域。",
       "isCode": false
     },
     {
       "id": "c8-s526",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 526,
-      "source": "其域有之者則得其謂。",
+      "source": "則名不致混淆也。",
       "isCode": false
     },
     {
       "id": "c8-s527",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 527,
-      "source": "無之則外一域而得之。",
+      "source": "術之體一域也。",
       "isCode": false
     },
     {
       "id": "c8-s528",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 528,
-      "source": "更無乃次第而外。",
+      "source": "決策循環之體。",
       "isCode": false
     },
     {
       "id": "c8-s529",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 529,
-      "source": "竟無。",
+      "source": "亦一域也。",
       "isCode": false
     },
     {
       "id": "c8-s530",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 530,
-      "source": "法不行。",
+      "source": "術之參者。",
       "isCode": false
     },
     {
       "id": "c8-s531",
       "chapterId": "c8",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 531,
-      "source": "譬有李氏生子而命之曰白者。",
+      "source": "域與術體同。",
       "isCode": false
     },
     {
@@ -4256,7 +4256,7 @@
       "chapterId": "c8",
       "blockId": "b38",
       "index": 532,
-      "source": "於家中呼其名。",
+      "source": "又凡云一名。",
       "isCode": false
     },
     {
@@ -4264,7 +4264,7 @@
       "chapterId": "c8",
       "blockId": "b38",
       "index": 533,
-      "source": "謂子也。",
+      "source": "其域有之者則得其謂。",
       "isCode": false
     },
     {
@@ -4272,7 +4272,7 @@
       "chapterId": "c8",
       "blockId": "b38",
       "index": 534,
-      "source": "出其門。",
+      "source": "無之則外一域而得之。",
       "isCode": false
     },
     {
@@ -4280,7 +4280,7 @@
       "chapterId": "c8",
       "blockId": "b38",
       "index": 535,
-      "source": "乃謂詩人也。",
+      "source": "更無乃次第而外。",
       "isCode": false
     },
     {
@@ -4288,71 +4288,71 @@
       "chapterId": "c8",
       "blockId": "b38",
       "index": 536,
-      "source": "例曰。",
+      "source": "竟無。",
       "isCode": false
     },
     {
       "id": "c8-s537",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 537,
-      "source": "有數四。",
-      "isCode": true
+      "source": "法不行。",
+      "isCode": false
     },
     {
       "id": "c8-s538",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 538,
-      "source": "名之曰「丙」。",
-      "isCode": true
+      "source": "譬有李氏生子而命之曰白者。",
+      "isCode": false
     },
     {
       "id": "c8-s539",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 539,
-      "source": "\n有數三。",
-      "isCode": true
+      "source": "於家中呼其名。",
+      "isCode": false
     },
     {
       "id": "c8-s540",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 540,
-      "source": "名之曰「丁」。",
-      "isCode": true
+      "source": "謂子也。",
+      "isCode": false
     },
     {
       "id": "c8-s541",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 541,
-      "source": "\n有數五。",
-      "isCode": true
+      "source": "出其門。",
+      "isCode": false
     },
     {
       "id": "c8-s542",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 542,
-      "source": "名之曰「戊」。",
-      "isCode": true
+      "source": "乃謂詩人也。",
+      "isCode": false
     },
     {
       "id": "c8-s543",
       "chapterId": "c8",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 543,
-      "source": "\n\n吾有一術。",
-      "isCode": true
+      "source": "例曰。",
+      "isCode": false
     },
     {
       "id": "c8-s544",
       "chapterId": "c8",
       "blockId": "b39",
       "index": 544,
-      "source": "名之曰「甲」。",
+      "source": "有數四。",
       "isCode": true
     },
     {
@@ -4360,7 +4360,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 545,
-      "source": "欲行是術。",
+      "source": "名之曰「丙」。",
       "isCode": true
     },
     {
@@ -4368,7 +4368,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 546,
-      "source": "必先得二數。",
+      "source": "\n有數三。",
       "isCode": true
     },
     {
@@ -4376,7 +4376,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 547,
-      "source": "曰「乙」。",
+      "source": "名之曰「丁」。",
       "isCode": true
     },
     {
@@ -4384,7 +4384,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 548,
-      "source": "曰「丙」。",
+      "source": "\n有數五。",
       "isCode": true
     },
     {
@@ -4392,7 +4392,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 549,
-      "source": "是術曰。",
+      "source": "名之曰「戊」。",
       "isCode": true
     },
     {
@@ -4400,7 +4400,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 550,
-      "source": "\n\t注曰。",
+      "source": "\n\n吾有一術。",
       "isCode": true
     },
     {
@@ -4408,7 +4408,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 551,
-      "source": "『此之丙丁。非外之丙丁也。而內無戊。遂得之於外』\n\t有數七。",
+      "source": "名之曰「甲」。",
       "isCode": true
     },
     {
@@ -4416,7 +4416,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 552,
-      "source": "名之曰「丁」。",
+      "source": "欲行是術。",
       "isCode": true
     },
     {
@@ -4424,7 +4424,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 553,
-      "source": "\n\t加「乙」以「丁」。",
+      "source": "必先得二數。",
       "isCode": true
     },
     {
@@ -4432,7 +4432,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 554,
-      "source": "加其於「戊」。",
+      "source": "曰「乙」。",
       "isCode": true
     },
     {
@@ -4440,7 +4440,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 555,
-      "source": "乃得矣。",
+      "source": "曰「丙」。",
       "isCode": true
     },
     {
@@ -4448,7 +4448,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 556,
-      "source": "\n是謂「甲」之術也。",
+      "source": "是術曰。",
       "isCode": true
     },
     {
@@ -4456,7 +4456,7 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 557,
-      "source": "\n\n施「甲」於「丙」「丁」。",
+      "source": "\n\t注曰。",
       "isCode": true
     },
     {
@@ -4464,79 +4464,79 @@
       "chapterId": "c8",
       "blockId": "b39",
       "index": 558,
-      "source": "\n注曰『此之丙。內之乙。此之丁。內之丙。似此逆行倒施者。自非佳法。唯示域之用耳』",
+      "source": "『此之丙丁。非外之丙丁也。而內無戊。遂得之於外』",
       "isCode": true
     },
     {
       "id": "c8-s559",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 559,
-      "source": "一術既定。",
-      "isCode": false
+      "source": "\n\t有數七。",
+      "isCode": true
     },
     {
       "id": "c8-s560",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 560,
-      "source": "其域乃與其術恆共存。",
-      "isCode": false
+      "source": "名之曰「丁」。",
+      "isCode": true
     },
     {
       "id": "c8-s561",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 561,
-      "source": "於他處施是術。",
-      "isCode": false
+      "source": "\n\t加「乙」以「丁」。",
+      "isCode": true
     },
     {
       "id": "c8-s562",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 562,
-      "source": "是術亦得其域之變數而用之。",
-      "isCode": false
+      "source": "加其於「戊」。",
+      "isCode": true
     },
     {
       "id": "c8-s563",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 563,
-      "source": "是謂「閉包」也。",
-      "isCode": false
+      "source": "乃得矣。",
+      "isCode": true
     },
     {
       "id": "c8-s564",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 564,
-      "source": "夫前者賈憲三角術。",
-      "isCode": false
+      "source": "\n是謂「甲」之術也。",
+      "isCode": true
     },
     {
       "id": "c8-s565",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 565,
-      "source": "行甚緩。",
-      "isCode": false
+      "source": "\n\n施「甲」於「丙」「丁」。",
+      "isCode": true
     },
     {
       "id": "c8-s566",
       "chapterId": "c8",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 566,
-      "source": "蓋其循環之中。",
-      "isCode": false
+      "source": "\n注曰『此之丙。內之乙。此之丁。內之丙。似此逆行倒施者。自非佳法。唯示域之用耳』",
+      "isCode": true
     },
     {
       "id": "c8-s567",
       "chapterId": "c8",
       "blockId": "b40",
       "index": 567,
-      "source": "每每復求既得之數。",
+      "source": "一術既定。",
       "isCode": false
     },
     {
@@ -4544,7 +4544,7 @@
       "chapterId": "c8",
       "blockId": "b40",
       "index": 568,
-      "source": "實屬揮霍。",
+      "source": "其域乃與其術恆共存。",
       "isCode": false
     },
     {
@@ -4552,7 +4552,7 @@
       "chapterId": "c8",
       "blockId": "b40",
       "index": 569,
-      "source": "今以閉包。",
+      "source": "於他處施是術。",
       "isCode": false
     },
     {
@@ -4560,7 +4560,7 @@
       "chapterId": "c8",
       "blockId": "b40",
       "index": 570,
-      "source": "存既得之數於域中一列。",
+      "source": "是術亦得其域之變數而用之。",
       "isCode": false
     },
     {
@@ -4568,7 +4568,7 @@
       "chapterId": "c8",
       "blockId": "b40",
       "index": 571,
-      "source": "以資後算。",
+      "source": "是謂「閉包」也。",
       "isCode": false
     },
     {
@@ -4576,135 +4576,135 @@
       "chapterId": "c8",
       "blockId": "b40",
       "index": 572,
-      "source": "不令作無用之功也。",
+      "source": "夫前者賈憲三角術。",
       "isCode": false
     },
     {
       "id": "c8-s573",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 573,
-      "source": "是術也。",
+      "source": "行甚緩。",
       "isCode": false
     },
     {
       "id": "c8-s574",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 574,
-      "source": "以術得術。",
+      "source": "蓋其循環之中。",
       "isCode": false
     },
     {
       "id": "c8-s575",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 575,
-      "source": "所得「求」術。",
+      "source": "每每復求既得之數。",
       "isCode": false
     },
     {
       "id": "c8-s576",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 576,
-      "source": "「藏」列存焉。",
+      "source": "實屬揮霍。",
       "isCode": false
     },
     {
       "id": "c8-s577",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 577,
-      "source": "以此「求」替前之「求」。",
+      "source": "今以閉包。",
       "isCode": false
     },
     {
       "id": "c8-s578",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 578,
-      "source": "用「畫」中。",
+      "source": "存既得之數於域中一列。",
       "isCode": false
     },
     {
       "id": "c8-s579",
       "chapterId": "c8",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 579,
-      "source": "大速之焉。",
+      "source": "以資後算。",
       "isCode": false
     },
     {
       "id": "c8-s580",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b40",
       "index": 580,
-      "source": "吾有一術。",
-      "isCode": true
+      "source": "不令作無用之功也。",
+      "isCode": false
     },
     {
       "id": "c8-s581",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 581,
-      "source": "名之曰「賈憲三角術」。",
-      "isCode": true
+      "source": "是術也。",
+      "isCode": false
     },
     {
       "id": "c8-s582",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 582,
-      "source": "是術曰。",
-      "isCode": true
+      "source": "以術得術。",
+      "isCode": false
     },
     {
       "id": "c8-s583",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 583,
-      "source": "\n\t吾有一列。",
-      "isCode": true
+      "source": "所得「求」術。",
+      "isCode": false
     },
     {
       "id": "c8-s584",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 584,
-      "source": "名之曰「藏」。",
-      "isCode": true
+      "source": "「藏」列存焉。",
+      "isCode": false
     },
     {
       "id": "c8-s585",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 585,
-      "source": "\n\n\t吾有一術。",
-      "isCode": true
+      "source": "以此「求」替前之「求」。",
+      "isCode": false
     },
     {
       "id": "c8-s586",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 586,
-      "source": "名之曰「求」。",
-      "isCode": true
+      "source": "用「畫」中。",
+      "isCode": false
     },
     {
       "id": "c8-s587",
       "chapterId": "c8",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 587,
-      "source": "欲行是術。",
-      "isCode": true
+      "source": "大速之焉。",
+      "isCode": false
     },
     {
       "id": "c8-s588",
       "chapterId": "c8",
       "blockId": "b42",
       "index": 588,
-      "source": "必先得二數。",
+      "source": "吾有一術。",
       "isCode": true
     },
     {
@@ -4712,7 +4712,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 589,
-      "source": "曰「層」",
+      "source": "名之曰「賈憲三角術」。",
       "isCode": true
     },
     {
@@ -4720,7 +4720,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 590,
-      "source": "曰「位」。",
+      "source": "是術曰。",
       "isCode": true
     },
     {
@@ -4728,7 +4728,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 591,
-      "source": "乃行是術曰。",
+      "source": "\n\t吾有一列。",
       "isCode": true
     },
     {
@@ -4736,7 +4736,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 592,
-      "source": "\n\t\t若「層」等於一者。",
+      "source": "名之曰「藏」。",
       "isCode": true
     },
     {
@@ -4744,7 +4744,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 593,
-      "source": "乃得一也。",
+      "source": "\n\n\t吾有一術。",
       "isCode": true
     },
     {
@@ -4752,7 +4752,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 594,
-      "source": "\n\t\t若「位」等於一者。",
+      "source": "名之曰「求」。",
       "isCode": true
     },
     {
@@ -4760,7 +4760,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 595,
-      "source": "乃得一也。",
+      "source": "欲行是術。",
       "isCode": true
     },
     {
@@ -4768,7 +4768,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 596,
-      "source": "\n\t\t若「位」等於「層」者。",
+      "source": "必先得二數。",
       "isCode": true
     },
     {
@@ -4776,7 +4776,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 597,
-      "source": "乃得一也。",
+      "source": "曰「層」",
       "isCode": true
     },
     {
@@ -4784,7 +4784,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 598,
-      "source": "\n\t\t減「層」以一。",
+      "source": "曰「位」。",
       "isCode": true
     },
     {
@@ -4792,7 +4792,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 599,
-      "source": "名之曰「上層」。",
+      "source": "乃行是術曰。",
       "isCode": true
     },
     {
@@ -4800,7 +4800,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 600,
-      "source": "\n\t\t減「位」以一。",
+      "source": "\n\t\t若「層」等於一者。",
       "isCode": true
     },
     {
@@ -4808,7 +4808,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 601,
-      "source": "名之曰「左位」。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -4816,7 +4816,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 602,
-      "source": "\n\n\t\t恆為是。",
+      "source": "\n\t\t若「位」等於一者。",
       "isCode": true
     },
     {
@@ -4824,7 +4824,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 603,
-      "source": "若「藏」之長大於「層」者。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -4832,7 +4832,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 604,
-      "source": "乃止也。",
+      "source": "\n\t\t若「位」等於「層」者。",
       "isCode": true
     },
     {
@@ -4840,7 +4840,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 605,
-      "source": "\n\t\t\t吾有一列。",
+      "source": "乃得一也。",
       "isCode": true
     },
     {
@@ -4848,7 +4848,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 606,
-      "source": "充「藏」以其也。",
+      "source": "\n\t\t減「層」以一。",
       "isCode": true
     },
     {
@@ -4856,7 +4856,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 607,
-      "source": "\n\n\t\t吾有二數。",
+      "source": "名之曰「上層」。",
       "isCode": true
     },
     {
@@ -4864,7 +4864,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 608,
-      "source": "名之曰「甲」。",
+      "source": "\n\t\t減「位」以一。",
       "isCode": true
     },
     {
@@ -4872,7 +4872,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 609,
-      "source": "曰「乙」。",
+      "source": "名之曰「左位」。",
       "isCode": true
     },
     {
@@ -4880,7 +4880,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 610,
-      "source": "\n\n\t\t夫「藏」之「上層」。",
+      "source": "\n\n\t\t恆為是。",
       "isCode": true
     },
     {
@@ -4888,7 +4888,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 611,
-      "source": "夫其之「位」。",
+      "source": "若「藏」之長大於「層」者。",
       "isCode": true
     },
     {
@@ -4896,7 +4896,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 612,
-      "source": "名之曰「知甲」。",
+      "source": "乃止也。",
       "isCode": true
     },
     {
@@ -4904,7 +4904,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 613,
-      "source": "\n\t\t若「知甲」者。",
+      "source": "\n\t\t\t吾有一列。",
       "isCode": true
     },
     {
@@ -4912,7 +4912,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 614,
-      "source": "\n\t\t\t昔之「甲」者。",
+      "source": "充「藏」以其也。",
       "isCode": true
     },
     {
@@ -4920,7 +4920,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 615,
-      "source": "今「知甲」是矣。",
+      "source": "\n\n\t\t吾有二數。",
       "isCode": true
     },
     {
@@ -4928,7 +4928,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 616,
-      "source": "\n\t\t若非。",
+      "source": "名之曰「甲」。",
       "isCode": true
     },
     {
@@ -4936,7 +4936,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 617,
-      "source": "\n\t\t\t施「求」於「上層」。",
+      "source": "曰「乙」。",
       "isCode": true
     },
     {
@@ -4944,7 +4944,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 618,
-      "source": "於「位」。",
+      "source": "\n\n\t\t夫「藏」之「上層」。",
       "isCode": true
     },
     {
@@ -4952,7 +4952,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 619,
-      "source": "昔之「甲」者。",
+      "source": "夫其之「位」。",
       "isCode": true
     },
     {
@@ -4960,7 +4960,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 620,
-      "source": "今其是矣。",
+      "source": "名之曰「知甲」。",
       "isCode": true
     },
     {
@@ -4968,7 +4968,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 621,
-      "source": "\n\t\t云云。",
+      "source": "\n\t\t若「知甲」者。",
       "isCode": true
     },
     {
@@ -4976,7 +4976,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 622,
-      "source": "\n\n\t\t夫「藏」之「上層」。",
+      "source": "\n\t\t\t昔之「甲」者。",
       "isCode": true
     },
     {
@@ -4984,7 +4984,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 623,
-      "source": "夫其之「左位」。",
+      "source": "今「知甲」是矣。",
       "isCode": true
     },
     {
@@ -4992,7 +4992,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 624,
-      "source": "名之曰「知乙」。",
+      "source": "\n\t\t若非。",
       "isCode": true
     },
     {
@@ -5000,7 +5000,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 625,
-      "source": "\n\t\t若「知乙」者。",
+      "source": "\n\t\t\t施「求」於「上層」。",
       "isCode": true
     },
     {
@@ -5008,7 +5008,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 626,
-      "source": "\n\t\t\t昔之「乙」者。",
+      "source": "於「位」。",
       "isCode": true
     },
     {
@@ -5016,7 +5016,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 627,
-      "source": "今「知乙」是矣。",
+      "source": "昔之「甲」者。",
       "isCode": true
     },
     {
@@ -5024,7 +5024,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 628,
-      "source": "\n\t\t若非。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -5032,7 +5032,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 629,
-      "source": "\n\t\t\t施「求」於「上層」。",
+      "source": "\n\t\t云云。",
       "isCode": true
     },
     {
@@ -5040,7 +5040,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 630,
-      "source": "於「左位」。",
+      "source": "\n\n\t\t夫「藏」之「上層」。",
       "isCode": true
     },
     {
@@ -5048,7 +5048,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 631,
-      "source": "昔之「乙」者。",
+      "source": "夫其之「左位」。",
       "isCode": true
     },
     {
@@ -5056,7 +5056,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 632,
-      "source": "今其是矣。",
+      "source": "名之曰「知乙」。",
       "isCode": true
     },
     {
@@ -5064,7 +5064,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 633,
-      "source": "\n\t\t云云。",
+      "source": "\n\t\t若「知乙」者。",
       "isCode": true
     },
     {
@@ -5072,7 +5072,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 634,
-      "source": "\n\n\t\t加「甲」以「乙」。",
+      "source": "\n\t\t\t昔之「乙」者。",
       "isCode": true
     },
     {
@@ -5080,7 +5080,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 635,
-      "source": "名之曰「丙」。",
+      "source": "今「知乙」是矣。",
       "isCode": true
     },
     {
@@ -5088,7 +5088,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 636,
-      "source": "\n\t\t夫「藏」之「層」。",
+      "source": "\n\t\t若非。",
       "isCode": true
     },
     {
@@ -5096,7 +5096,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 637,
-      "source": "昔之其之「位」者。",
+      "source": "\n\t\t\t施「求」於「上層」。",
       "isCode": true
     },
     {
@@ -5104,7 +5104,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 638,
-      "source": "今「丙」是矣。",
+      "source": "於「左位」。",
       "isCode": true
     },
     {
@@ -5112,7 +5112,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 639,
-      "source": "\n\t\t乃得「丙」。",
+      "source": "昔之「乙」者。",
       "isCode": true
     },
     {
@@ -5120,7 +5120,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 640,
-      "source": "\n\t是謂「求」之術也。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -5128,7 +5128,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 641,
-      "source": "\n\t乃得「求」。",
+      "source": "\n\t\t云云。",
       "isCode": true
     },
     {
@@ -5136,7 +5136,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 642,
-      "source": "\n是謂「賈憲三角術」之術也。",
+      "source": "\n\n\t\t加「甲」以「乙」。",
       "isCode": true
     },
     {
@@ -5144,7 +5144,7 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 643,
-      "source": "\n\n施「賈憲三角術」。",
+      "source": "名之曰「丙」。",
       "isCode": true
     },
     {
@@ -5152,143 +5152,143 @@
       "chapterId": "c8",
       "blockId": "b42",
       "index": 644,
-      "source": "名之曰「求賈憲三角數」。",
+      "source": "\n\t\t夫「藏」之「層」。",
       "isCode": true
     },
     {
       "id": "c8-s645",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 645,
-      "source": "又術之施也。",
-      "isCode": false
+      "source": "昔之其之「位」者。",
+      "isCode": true
     },
     {
       "id": "c8-s646",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 646,
-      "source": "除前法之外。",
-      "isCode": false
+      "source": "今「丙」是矣。",
+      "isCode": true
     },
     {
       "id": "c8-s647",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 647,
-      "source": "亦可取即算而未名之變數作參也。",
-      "isCode": false
+      "source": "\n\t\t乃得「丙」。",
+      "isCode": true
     },
     {
       "id": "c8-s648",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 648,
-      "source": "其法曰「取若干以施某術」。",
-      "isCode": false
+      "source": "\n\t是謂「求」之術也。",
+      "isCode": true
     },
     {
       "id": "c8-s649",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 649,
-      "source": "若干者。",
-      "isCode": false
+      "source": "\n\t乃得「求」。",
+      "isCode": true
     },
     {
       "id": "c8-s650",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 650,
-      "source": "參之多少也。",
-      "isCode": false
+      "source": "\n是謂「賈憲三角術」之術也。",
+      "isCode": true
     },
     {
       "id": "c8-s651",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 651,
-      "source": "其理蓋於「書之」略同。",
-      "isCode": false
+      "source": "\n\n施「賈憲三角術」。",
+      "isCode": true
     },
     {
       "id": "c8-s652",
       "chapterId": "c8",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 652,
-      "source": "易前莊子棰術為例。",
-      "isCode": false
+      "source": "名之曰「求賈憲三角數」。",
+      "isCode": true
     },
     {
       "id": "c8-s653",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 653,
-      "source": "吾有一術。",
-      "isCode": true
+      "source": "又術之施也。",
+      "isCode": false
     },
     {
       "id": "c8-s654",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 654,
-      "source": "名之曰「量棰」。",
-      "isCode": true
+      "source": "除前法之外。",
+      "isCode": false
     },
     {
       "id": "c8-s655",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 655,
-      "source": "欲行是術。",
-      "isCode": true
+      "source": "亦可取即算而未名之變數作參也。",
+      "isCode": false
     },
     {
       "id": "c8-s656",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 656,
-      "source": "必先得二數。",
-      "isCode": true
+      "source": "其法曰「取若干以施某術」。",
+      "isCode": false
     },
     {
       "id": "c8-s657",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 657,
-      "source": "曰「今長」。",
-      "isCode": true
+      "source": "若干者。",
+      "isCode": false
     },
     {
       "id": "c8-s658",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 658,
-      "source": "曰「餘日」。",
-      "isCode": true
+      "source": "參之多少也。",
+      "isCode": false
     },
     {
       "id": "c8-s659",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 659,
-      "source": "乃行是術曰。",
-      "isCode": true
+      "source": "其理蓋於「書之」略同。",
+      "isCode": false
     },
     {
       "id": "c8-s660",
       "chapterId": "c8",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 660,
-      "source": "\n\t若「餘日」等於零者。",
-      "isCode": true
+      "source": "易前莊子棰術為例。",
+      "isCode": false
     },
     {
       "id": "c8-s661",
       "chapterId": "c8",
       "blockId": "b44",
       "index": 661,
-      "source": "乃得「今長」也。",
+      "source": "吾有一術。",
       "isCode": true
     },
     {
@@ -5296,7 +5296,7 @@
       "chapterId": "c8",
       "blockId": "b44",
       "index": 662,
-      "source": "\n\t除「今長」以二。",
+      "source": "名之曰「量棰」。",
       "isCode": true
     },
     {
@@ -5304,7 +5304,7 @@
       "chapterId": "c8",
       "blockId": "b44",
       "index": 663,
-      "source": "減「餘日」以一。",
+      "source": "欲行是術。",
       "isCode": true
     },
     {
@@ -5312,7 +5312,7 @@
       "chapterId": "c8",
       "blockId": "b44",
       "index": 664,
-      "source": "取二以施「量棰」。",
+      "source": "必先得二數。",
       "isCode": true
     },
     {
@@ -5320,7 +5320,7 @@
       "chapterId": "c8",
       "blockId": "b44",
       "index": 665,
-      "source": "乃得矣。",
+      "source": "曰「今長」。",
       "isCode": true
     },
     {
@@ -5328,62 +5328,126 @@
       "chapterId": "c8",
       "blockId": "b44",
       "index": 666,
-      "source": "\n是謂「量棰」之術也。",
+      "source": "曰「餘日」。",
       "isCode": true
     },
     {
       "id": "c8-s667",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 667,
-      "source": "術之道。",
-      "isCode": false
+      "source": "乃行是術曰。",
+      "isCode": true
     },
     {
       "id": "c8-s668",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 668,
-      "source": "至是略備矣。",
-      "isCode": false
+      "source": "\n\t若「餘日」等於零者。",
+      "isCode": true
     },
     {
       "id": "c8-s669",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 669,
-      "source": "比其前章諸法。",
-      "isCode": false
+      "source": "乃得「今長」也。",
+      "isCode": true
     },
     {
       "id": "c8-s670",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 670,
-      "source": "愈增玄妙。",
-      "isCode": false
+      "source": "\n\t除「今長」以二。",
+      "isCode": true
     },
     {
       "id": "c8-s671",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 671,
-      "source": "請吾子細審其例。",
-      "isCode": false
+      "source": "減「餘日」以一。",
+      "isCode": true
     },
     {
       "id": "c8-s672",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 672,
-      "source": "更以自試。",
-      "isCode": false
+      "source": "取二以施「量棰」。",
+      "isCode": true
     },
     {
       "id": "c8-s673",
       "chapterId": "c8",
-      "blockId": "b45",
+      "blockId": "b44",
       "index": 673,
+      "source": "乃得矣。",
+      "isCode": true
+    },
+    {
+      "id": "c8-s674",
+      "chapterId": "c8",
+      "blockId": "b44",
+      "index": 674,
+      "source": "\n是謂「量棰」之術也。",
+      "isCode": true
+    },
+    {
+      "id": "c8-s675",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 675,
+      "source": "術之道。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s676",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 676,
+      "source": "至是略備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s677",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 677,
+      "source": "比其前章諸法。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s678",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 678,
+      "source": "愈增玄妙。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s679",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 679,
+      "source": "請吾子細審其例。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s680",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 680,
+      "source": "更以自試。",
+      "isCode": false
+    },
+    {
+      "id": "c8-s681",
+      "chapterId": "c8",
+      "blockId": "b45",
+      "index": 681,
       "source": "方達自如云耳。",
       "isCode": false
     }

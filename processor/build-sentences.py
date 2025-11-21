@@ -50,8 +50,8 @@ def remove_markdown(text: str, preserve_newlines: bool = False) -> str:
     else:
         # Replace multiple spaces/tabs with single space
         text = re.sub(r"[ \t]+", " ", text)
-        # Replace multiple newlines with single space
-        text = re.sub(r"\n+", " ", text)
+        # Replace multiple newlines with single newline
+        text = re.sub(r"\n+", "\n", text)
         return text.strip()
 
 
@@ -118,6 +118,28 @@ def split_chinese_sentences(text: str, preserve_spaces: bool = False) -> List[st
                 if processed:
                     sentences.append(processed)
                 current_sentence = []
+        elif char == "\n" and not inside_quotes:
+            # Treat consecutive newlines as a single delimiter.
+            # Collect all consecutive newlines.
+            newlines = [char]
+            j = i + 1
+            while j < length and text[j] == "\n":
+                newlines.append(text[j])
+                j += 1
+
+            # Flush the current sentence (without the newlines).
+            processed = "".join(current_sentence)
+            if not preserve_spaces:
+                processed = processed.strip()
+            if processed:
+                sentences.append(processed)
+
+            # Start the next sentence with all consecutive newlines so that spacing is preserved
+            # in code blocks (where preserve_spaces=True).
+            # For prose (preserve_spaces=False), the newlines will be stripped
+            # from the start of the next sentence.
+            current_sentence = newlines
+            i = j - 1  # Will be incremented at end of loop
         elif char in ("。", "！", "？") and not inside_quotes:
             current_sentence.append(char)
             processed = "".join(current_sentence)
@@ -143,7 +165,7 @@ def split_chinese_sentences(text: str, preserve_spaces: bool = False) -> List[st
 
 def split_sentences(text: str) -> List[str]:
     """
-    Split text into sentences ending with '。'.
+    Split text into sentences ending with '。' or separated by newlines.
 
     Sentences ending with '。' are included with the period appended.
     Trailing fragments that don't end with '。' are also included
@@ -152,21 +174,28 @@ def split_sentences(text: str) -> List[str]:
     # Fast path: no backticks, use simple splitting to preserve legacy behavior.
     if "`" not in text:
         sentences: List[str] = []
-        parts = text.split("。")
+        # Split by 。 or sequences of \n, keeping the delimiters
+        # Use regex to match 。 or one or more consecutive \n
+        tokens = re.split(r"([。]|\n+)", text)
 
-        for i, part in enumerate(parts):
-            part = part.strip()
-            if not part:
-                continue
-
-            if i < len(parts) - 1:
-                sentences.append(part + "。")
-            elif text.endswith("。"):
-                sentences.append(part + "。")
+        current_parts: List[str] = []
+        for token in tokens:
+            if token == "。":
+                current_parts.append(token)
+                sentences.append("".join(current_parts).strip())
+                current_parts = []
+            elif token and token.startswith("\n"):
+                # Treat consecutive newlines as a single delimiter
+                if current_parts:
+                    sentences.append("".join(current_parts).strip())
+                    current_parts = []
+                # Note: In prose (no backticks), we drop the newlines as a separator
             else:
-                # Include trailing fragment even if it doesn't end with '。'
-                # (e.g., "運行之。乃得" -> ["運行之。", "乃得"])
-                sentences.append(part)
+                if token:
+                    current_parts.append(token)
+
+        if current_parts:
+            sentences.append("".join(current_parts).strip())
 
         # Return all sentences (those ending with '。' and any trailing fragment)
         return [s for s in sentences if s]
@@ -216,26 +245,44 @@ def split_sentences(text: str) -> List[str]:
         if is_code:
             # Always keep code spans intact.
             current_parts.append(segment)
-            # If the code span contains '。', treat it as sentence-final
+            # If the code span contains '。' or '\n', treat it as sentence-final
             # punctuation and end the sentence *after* this code span.
+            # Note: We currently assume newlines inside backticks don't split the sentence
+            # (as per "never break *inside* paired backticks").
+            # But if the code span contains '。', we split.
             if "。" in segment:
                 sentence = "".join(current_parts).strip()
                 if sentence:
                     sentences.append(sentence)
                 current_parts = []
         else:
-            # Plain text may contain multiple '。' characters; we split
+            # Plain text may contain multiple '。' or '\n' characters; we split
             # on them, but never cross into code spans.
             buf: List[str] = []
-            for ch in segment:
-                buf.append(ch)
-                if ch == "。":
+            # Regex split for plain text segment - treat consecutive newlines as one
+            parts = re.split(r"([。]|\n+)", segment)
+            for part in parts:
+                if part == "。":
+                    buf.append(part)
                     current_parts.append("".join(buf))
                     sentence = "".join(current_parts).strip()
                     if sentence:
                         sentences.append(sentence)
                     current_parts = []
                     buf = []
+                elif part and part.startswith("\n"):
+                    # Split on consecutive newlines (treated as single delimiter)
+                    if buf:
+                        current_parts.append("".join(buf))
+                        buf = []
+                    if current_parts:
+                        sentence = "".join(current_parts).strip()
+                        if sentence:
+                            sentences.append(sentence)
+                        current_parts = []
+                else:
+                    if part:
+                        buf.append(part)
             if buf:
                 current_parts.append("".join(buf))
 

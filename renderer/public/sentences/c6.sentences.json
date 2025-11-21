@@ -2152,7 +2152,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 269,
-      "source": "何爲懷憂心煩勞\n我所思兮在桂林。",
+      "source": "何爲懷憂心煩勞",
       "isCode": true
     },
     {
@@ -2160,7 +2160,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 270,
-      "source": "欲往從之湘水深。",
+      "source": "\n我所思兮在桂林。",
       "isCode": true
     },
     {
@@ -2168,7 +2168,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 271,
-      "source": "側身南望涕沾襟。",
+      "source": "欲往從之湘水深。",
       "isCode": true
     },
     {
@@ -2176,7 +2176,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 272,
-      "source": "美人贈我琴琅玕。",
+      "source": "側身南望涕沾襟。",
       "isCode": true
     },
     {
@@ -2184,7 +2184,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 273,
-      "source": "何以報之雙玉盤。",
+      "source": "美人贈我琴琅玕。",
       "isCode": true
     },
     {
@@ -2192,7 +2192,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 274,
-      "source": "路遠莫致倚惆悵。",
+      "source": "何以報之雙玉盤。",
       "isCode": true
     },
     {
@@ -2200,7 +2200,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 275,
-      "source": "何爲懷憂心煩傷\n我所思兮在漢陽。",
+      "source": "路遠莫致倚惆悵。",
       "isCode": true
     },
     {
@@ -2208,7 +2208,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 276,
-      "source": "欲往從之隴阪長。",
+      "source": "何爲懷憂心煩傷",
       "isCode": true
     },
     {
@@ -2216,7 +2216,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 277,
-      "source": "側身西望涕沾裳。",
+      "source": "\n我所思兮在漢陽。",
       "isCode": true
     },
     {
@@ -2224,7 +2224,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 278,
-      "source": "美人贈我貂襜褕。",
+      "source": "欲往從之隴阪長。",
       "isCode": true
     },
     {
@@ -2232,7 +2232,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 279,
-      "source": "何以報之明月珠。",
+      "source": "側身西望涕沾裳。",
       "isCode": true
     },
     {
@@ -2240,7 +2240,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 280,
-      "source": "路遠莫致倚踟躕。",
+      "source": "美人贈我貂襜褕。",
       "isCode": true
     },
     {
@@ -2248,7 +2248,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 281,
-      "source": "何爲懷憂心煩紆\n我所思兮在雁門。",
+      "source": "何以報之明月珠。",
       "isCode": true
     },
     {
@@ -2256,7 +2256,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 282,
-      "source": "欲往從之雪雰雰。",
+      "source": "路遠莫致倚踟躕。",
       "isCode": true
     },
     {
@@ -2264,7 +2264,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 283,
-      "source": "側身北望涕沾巾。",
+      "source": "何爲懷憂心煩紆",
       "isCode": true
     },
     {
@@ -2272,7 +2272,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 284,
-      "source": "美人贈我錦繡段。",
+      "source": "\n我所思兮在雁門。",
       "isCode": true
     },
     {
@@ -2280,7 +2280,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 285,
-      "source": "何以報之青玉案。",
+      "source": "欲往從之雪雰雰。",
       "isCode": true
     },
     {
@@ -2288,7 +2288,7 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 286,
-      "source": "路遠莫致倚增嘆。",
+      "source": "側身北望涕沾巾。",
       "isCode": true
     },
     {
@@ -2296,39 +2296,39 @@
       "chapterId": "c6",
       "blockId": "b33",
       "index": 287,
-      "source": "何爲懷憂心煩惋",
+      "source": "美人贈我錦繡段。",
       "isCode": true
     },
     {
       "id": "c6-s288",
       "chapterId": "c6",
-      "blockId": "b34",
+      "blockId": "b33",
       "index": 288,
-      "source": "其詩晉人傅玄。",
-      "isCode": false
+      "source": "何以報之青玉案。",
+      "isCode": true
     },
     {
       "id": "c6-s289",
       "chapterId": "c6",
-      "blockId": "b34",
+      "blockId": "b33",
       "index": 289,
-      "source": "宋人張載。",
-      "isCode": false
+      "source": "路遠莫致倚增嘆。",
+      "isCode": true
     },
     {
       "id": "c6-s290",
       "chapterId": "c6",
-      "blockId": "b34",
+      "blockId": "b33",
       "index": 290,
-      "source": "近人魯迅皆嘗為擬作。",
-      "isCode": false
+      "source": "何爲懷憂心煩惋",
+      "isCode": true
     },
     {
       "id": "c6-s291",
       "chapterId": "c6",
       "blockId": "b34",
       "index": 291,
-      "source": "請吾子擇己所好。",
+      "source": "其詩晉人傅玄。",
       "isCode": false
     },
     {
@@ -2336,31 +2336,31 @@
       "chapterId": "c6",
       "blockId": "b34",
       "index": 292,
-      "source": "試易前文諸列以得其詩。",
+      "source": "宋人張載。",
       "isCode": false
     },
     {
       "id": "c6-s293",
       "chapterId": "c6",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 293,
-      "source": "列列者。",
+      "source": "近人魯迅皆嘗為擬作。",
       "isCode": false
     },
     {
       "id": "c6-s294",
       "chapterId": "c6",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 294,
-      "source": "載列之列也。",
+      "source": "請吾子擇己所好。",
       "isCode": false
     },
     {
       "id": "c6-s295",
       "chapterId": "c6",
-      "blockId": "b35",
+      "blockId": "b34",
       "index": 295,
-      "source": "縱橫如方陣然。",
+      "source": "試易前文諸列以得其詩。",
       "isCode": false
     },
     {
@@ -2368,7 +2368,7 @@
       "chapterId": "c6",
       "blockId": "b35",
       "index": 296,
-      "source": "如棋局然。",
+      "source": "列列者。",
       "isCode": false
     },
     {
@@ -2376,31 +2376,31 @@
       "chapterId": "c6",
       "blockId": "b35",
       "index": 297,
-      "source": "如田壠然。",
+      "source": "載列之列也。",
       "isCode": false
     },
     {
       "id": "c6-s298",
       "chapterId": "c6",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 298,
-      "source": "尚書正義曰。",
+      "source": "縱橫如方陣然。",
       "isCode": false
     },
     {
       "id": "c6-s299",
       "chapterId": "c6",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 299,
-      "source": "天與禹洛出書。",
+      "source": "如棋局然。",
       "isCode": false
     },
     {
       "id": "c6-s300",
       "chapterId": "c6",
-      "blockId": "b36",
+      "blockId": "b35",
       "index": 300,
-      "source": "神龜負文而出。",
+      "source": "如田壠然。",
       "isCode": false
     },
     {
@@ -2408,7 +2408,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 301,
-      "source": "列於背。",
+      "source": "尚書正義曰。",
       "isCode": false
     },
     {
@@ -2416,7 +2416,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 302,
-      "source": "有數至於九。",
+      "source": "天與禹洛出書。",
       "isCode": false
     },
     {
@@ -2424,7 +2424,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 303,
-      "source": "禹遂因而第之。",
+      "source": "神龜負文而出。",
       "isCode": false
     },
     {
@@ -2432,7 +2432,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 304,
-      "source": "以成九類。",
+      "source": "列於背。",
       "isCode": false
     },
     {
@@ -2440,7 +2440,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 305,
-      "source": "朱熹以之為九宮數。",
+      "source": "有數至於九。",
       "isCode": false
     },
     {
@@ -2448,7 +2448,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 306,
-      "source": "奇者合縱橫斜皆十五。",
+      "source": "禹遂因而第之。",
       "isCode": false
     },
     {
@@ -2456,7 +2456,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 307,
-      "source": "其術見於楊輝續古摘奇算法。",
+      "source": "以成九類。",
       "isCode": false
     },
     {
@@ -2464,7 +2464,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 308,
-      "source": "曰九子斜排。",
+      "source": "朱熹以之為九宮數。",
       "isCode": false
     },
     {
@@ -2472,7 +2472,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 309,
-      "source": "上下對易。",
+      "source": "奇者合縱橫斜皆十五。",
       "isCode": false
     },
     {
@@ -2480,7 +2480,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 310,
-      "source": "左右相更。",
+      "source": "其術見於楊輝續古摘奇算法。",
       "isCode": false
     },
     {
@@ -2488,7 +2488,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 311,
-      "source": "四維挺出。",
+      "source": "曰九子斜排。",
       "isCode": false
     },
     {
@@ -2496,7 +2496,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 312,
-      "source": "戴九履一。",
+      "source": "上下對易。",
       "isCode": false
     },
     {
@@ -2504,7 +2504,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 313,
-      "source": "左三右七。",
+      "source": "左右相更。",
       "isCode": false
     },
     {
@@ -2512,7 +2512,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 314,
-      "source": "二四為肩。",
+      "source": "四維挺出。",
       "isCode": false
     },
     {
@@ -2520,7 +2520,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 315,
-      "source": "六八為足。",
+      "source": "戴九履一。",
       "isCode": false
     },
     {
@@ -2528,7 +2528,7 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 316,
-      "source": "五居中央。",
+      "source": "左三右七。",
       "isCode": false
     },
     {
@@ -2536,39 +2536,39 @@
       "chapterId": "c6",
       "blockId": "b36",
       "index": 317,
-      "source": "今入九宮數於列列如下。",
+      "source": "二四為肩。",
       "isCode": false
     },
     {
       "id": "c6-s318",
       "chapterId": "c6",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 318,
-      "source": "吾有一列。",
-      "isCode": true
+      "source": "六八為足。",
+      "isCode": false
     },
     {
       "id": "c6-s319",
       "chapterId": "c6",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 319,
-      "source": "名之曰「行一」。",
-      "isCode": true
+      "source": "五居中央。",
+      "isCode": false
     },
     {
       "id": "c6-s320",
       "chapterId": "c6",
-      "blockId": "b37",
+      "blockId": "b36",
       "index": 320,
-      "source": "充「行一」以四。",
-      "isCode": true
+      "source": "今入九宮數於列列如下。",
+      "isCode": false
     },
     {
       "id": "c6-s321",
       "chapterId": "c6",
       "blockId": "b37",
       "index": 321,
-      "source": "以九。",
+      "source": "吾有一列。",
       "isCode": true
     },
     {
@@ -2576,7 +2576,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 322,
-      "source": "以二。",
+      "source": "名之曰「行一」。",
       "isCode": true
     },
     {
@@ -2584,7 +2584,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 323,
-      "source": "\n吾有一列。",
+      "source": "充「行一」以四。",
       "isCode": true
     },
     {
@@ -2592,7 +2592,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 324,
-      "source": "名之曰「行二」。",
+      "source": "以九。",
       "isCode": true
     },
     {
@@ -2600,7 +2600,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 325,
-      "source": "充「行二」以三。",
+      "source": "以二。",
       "isCode": true
     },
     {
@@ -2608,7 +2608,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 326,
-      "source": "以五。",
+      "source": "\n吾有一列。",
       "isCode": true
     },
     {
@@ -2616,7 +2616,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 327,
-      "source": "以七。",
+      "source": "名之曰「行二」。",
       "isCode": true
     },
     {
@@ -2624,7 +2624,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 328,
-      "source": "\n吾有一列。",
+      "source": "充「行二」以三。",
       "isCode": true
     },
     {
@@ -2632,7 +2632,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 329,
-      "source": "名之曰「行三」。",
+      "source": "以五。",
       "isCode": true
     },
     {
@@ -2640,7 +2640,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 330,
-      "source": "充「行三」以八。",
+      "source": "以七。",
       "isCode": true
     },
     {
@@ -2648,7 +2648,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 331,
-      "source": "以一。",
+      "source": "\n吾有一列。",
       "isCode": true
     },
     {
@@ -2656,7 +2656,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 332,
-      "source": "以六。",
+      "source": "名之曰「行三」。",
       "isCode": true
     },
     {
@@ -2664,7 +2664,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 333,
-      "source": "\n吾有一列。",
+      "source": "充「行三」以八。",
       "isCode": true
     },
     {
@@ -2672,7 +2672,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 334,
-      "source": "名之曰「九宮」。",
+      "source": "以一。",
       "isCode": true
     },
     {
@@ -2680,7 +2680,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 335,
-      "source": "充「九宮」以「行一」以「行二」以「行三」。",
+      "source": "以六。",
       "isCode": true
     },
     {
@@ -2688,7 +2688,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 336,
-      "source": "\n\n凡「九宮」中之「行」。",
+      "source": "\n吾有一列。",
       "isCode": true
     },
     {
@@ -2696,7 +2696,7 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 337,
-      "source": "夫「行」。",
+      "source": "名之曰「九宮」。",
       "isCode": true
     },
     {
@@ -2704,39 +2704,39 @@
       "chapterId": "c6",
       "blockId": "b37",
       "index": 338,
-      "source": "書之也。",
+      "source": "充「九宮」以「行一」以「行二」以「行三」。",
       "isCode": true
     },
     {
       "id": "c6-s339",
       "chapterId": "c6",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 339,
-      "source": "然是但列其數。",
-      "isCode": false
+      "source": "\n\n凡「九宮」中之「行」。",
+      "isCode": true
     },
     {
       "id": "c6-s340",
       "chapterId": "c6",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 340,
-      "source": "未嘗以術算之。",
-      "isCode": false
+      "source": "夫「行」。",
+      "isCode": true
     },
     {
       "id": "c6-s341",
       "chapterId": "c6",
-      "blockId": "b38",
+      "blockId": "b37",
       "index": 341,
-      "source": "假楊氏妙術。",
-      "isCode": false
+      "source": "書之也。",
+      "isCode": true
     },
     {
       "id": "c6-s342",
       "chapterId": "c6",
       "blockId": "b38",
       "index": 342,
-      "source": "三三圖。",
+      "source": "然是但列其數。",
       "isCode": false
     },
     {
@@ -2744,7 +2744,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 343,
-      "source": "五五圖。",
+      "source": "未嘗以術算之。",
       "isCode": false
     },
     {
@@ -2752,7 +2752,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 344,
-      "source": "七七圖。",
+      "source": "假楊氏妙術。",
       "isCode": false
     },
     {
@@ -2760,7 +2760,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 345,
-      "source": "九九圖。",
+      "source": "三三圖。",
       "isCode": false
     },
     {
@@ -2768,7 +2768,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 346,
-      "source": "凡其橫縱為陽數者。",
+      "source": "五五圖。",
       "isCode": false
     },
     {
@@ -2776,7 +2776,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 347,
-      "source": "皆一法可得。",
+      "source": "七七圖。",
       "isCode": false
     },
     {
@@ -2784,7 +2784,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 348,
-      "source": "然楊氏固不自知。",
+      "source": "九九圖。",
       "isCode": false
     },
     {
@@ -2792,7 +2792,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 349,
-      "source": "猶以他法為之。",
+      "source": "凡其橫縱為陽數者。",
       "isCode": false
     },
     {
@@ -2800,7 +2800,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 350,
-      "source": "今從其洛書簡法。",
+      "source": "皆一法可得。",
       "isCode": false
     },
     {
@@ -2808,7 +2808,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 351,
-      "source": "編程如是。",
+      "source": "然楊氏固不自知。",
       "isCode": false
     },
     {
@@ -2816,7 +2816,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 352,
-      "source": "注曰。",
+      "source": "猶以他法為之。",
       "isCode": false
     },
     {
@@ -2824,7 +2824,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 353,
-      "source": "圖之創。",
+      "source": "今從其洛書簡法。",
       "isCode": false
     },
     {
@@ -2832,7 +2832,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 354,
-      "source": "苟以循環。",
+      "source": "編程如是。",
       "isCode": false
     },
     {
@@ -2840,7 +2840,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 355,
-      "source": "盡充以零。",
+      "source": "注曰。",
       "isCode": false
     },
     {
@@ -2848,7 +2848,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 356,
-      "source": "蓋待後算也。",
+      "source": "圖之創。",
       "isCode": false
     },
     {
@@ -2856,7 +2856,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 357,
-      "source": "夫「廣」者。",
+      "source": "苟以循環。",
       "isCode": false
     },
     {
@@ -2864,7 +2864,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 358,
-      "source": "縱橫之數也。",
+      "source": "盡充以零。",
       "isCode": false
     },
     {
@@ -2872,7 +2872,7 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 359,
-      "source": "聊曰九。",
+      "source": "蓋待後算也。",
       "isCode": false
     },
     {
@@ -2880,39 +2880,39 @@
       "chapterId": "c6",
       "blockId": "b38",
       "index": 360,
-      "source": "以為九九圖。",
+      "source": "夫「廣」者。",
       "isCode": false
     },
     {
       "id": "c6-s361",
       "chapterId": "c6",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 361,
-      "source": "有數九。",
-      "isCode": true
+      "source": "縱橫之數也。",
+      "isCode": false
     },
     {
       "id": "c6-s362",
       "chapterId": "c6",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 362,
-      "source": "名之曰「廣」。",
-      "isCode": true
+      "source": "聊曰九。",
+      "isCode": false
     },
     {
       "id": "c6-s363",
       "chapterId": "c6",
-      "blockId": "b39",
+      "blockId": "b38",
       "index": 363,
-      "source": "\n\n吾有一列。",
-      "isCode": true
+      "source": "以為九九圖。",
+      "isCode": false
     },
     {
       "id": "c6-s364",
       "chapterId": "c6",
       "blockId": "b39",
       "index": 364,
-      "source": "名之曰「縱橫圖」。",
+      "source": "有數九。",
       "isCode": true
     },
     {
@@ -2920,7 +2920,7 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 365,
-      "source": "\n為是「廣」遍。",
+      "source": "名之曰「廣」。",
       "isCode": true
     },
     {
@@ -2928,7 +2928,7 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 366,
-      "source": "\n\t吾有一列。",
+      "source": "\n\n吾有一列。",
       "isCode": true
     },
     {
@@ -2936,7 +2936,7 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 367,
-      "source": "名之曰「行」。",
+      "source": "名之曰「縱橫圖」。",
       "isCode": true
     },
     {
@@ -2944,7 +2944,7 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 368,
-      "source": "\n\t為是「廣」遍。",
+      "source": "\n為是「廣」遍。",
       "isCode": true
     },
     {
@@ -2952,7 +2952,7 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 369,
-      "source": "充「行」以零也。",
+      "source": "\n\t吾有一列。",
       "isCode": true
     },
     {
@@ -2960,39 +2960,39 @@
       "chapterId": "c6",
       "blockId": "b39",
       "index": 370,
-      "source": "\n  充「縱橫圖」以「行」也。",
+      "source": "名之曰「行」。",
       "isCode": true
     },
     {
       "id": "c6-s371",
       "chapterId": "c6",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 371,
-      "source": "既創其圖。",
-      "isCode": false
+      "source": "\n\t為是「廣」遍。",
+      "isCode": true
     },
     {
       "id": "c6-s372",
       "chapterId": "c6",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 372,
-      "source": "乃以楊氏之術遍算其數。",
-      "isCode": false
+      "source": "充「行」以零也。",
+      "isCode": true
     },
     {
       "id": "c6-s373",
       "chapterId": "c6",
-      "blockId": "b40",
+      "blockId": "b39",
       "index": 373,
-      "source": "注曰。",
-      "isCode": false
+      "source": "\n  充「縱橫圖」以「行」也。",
+      "isCode": true
     },
     {
       "id": "c6-s374",
       "chapterId": "c6",
       "blockId": "b40",
       "index": 374,
-      "source": "「磔」者。",
+      "source": "既創其圖。",
       "isCode": false
     },
     {
@@ -3000,7 +3000,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 375,
-      "source": "捺筆也。",
+      "source": "乃以楊氏之術遍算其數。",
       "isCode": false
     },
     {
@@ -3008,7 +3008,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 376,
-      "source": "自左上而右下。",
+      "source": "注曰。",
       "isCode": false
     },
     {
@@ -3016,7 +3016,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 377,
-      "source": "「掠」者。",
+      "source": "「磔」者。",
       "isCode": false
     },
     {
@@ -3024,7 +3024,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 378,
-      "source": "撇筆也。",
+      "source": "捺筆也。",
       "isCode": false
     },
     {
@@ -3032,7 +3032,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 379,
-      "source": "自右上而左下。",
+      "source": "自左上而右下。",
       "isCode": false
     },
     {
@@ -3040,7 +3040,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 380,
-      "source": "此二子者。",
+      "source": "「掠」者。",
       "isCode": false
     },
     {
@@ -3048,7 +3048,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 381,
-      "source": "假書家語。",
+      "source": "撇筆也。",
       "isCode": false
     },
     {
@@ -3056,7 +3056,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 382,
-      "source": "所以定九子斜排之方位也。",
+      "source": "自右上而左下。",
       "isCode": false
     },
     {
@@ -3064,7 +3064,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 383,
-      "source": "「勒」者。",
+      "source": "此二子者。",
       "isCode": false
     },
     {
@@ -3072,7 +3072,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 384,
-      "source": "橫筆也。",
+      "source": "假書家語。",
       "isCode": false
     },
     {
@@ -3080,7 +3080,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 385,
-      "source": "「努」者。",
+      "source": "所以定九子斜排之方位也。",
       "isCode": false
     },
     {
@@ -3088,7 +3088,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 386,
-      "source": "縱筆也。",
+      "source": "「勒」者。",
       "isCode": false
     },
     {
@@ -3096,7 +3096,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 387,
-      "source": "此二子者。",
+      "source": "橫筆也。",
       "isCode": false
     },
     {
@@ -3104,7 +3104,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 388,
-      "source": "所以化斜排之方位於正排之方位也。",
+      "source": "「努」者。",
       "isCode": false
     },
     {
@@ -3112,7 +3112,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 389,
-      "source": "然「勒」「努」之位。",
+      "source": "縱筆也。",
       "isCode": false
     },
     {
@@ -3120,7 +3120,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 390,
-      "source": "或出於其圖之界。",
+      "source": "此二子者。",
       "isCode": false
     },
     {
@@ -3128,7 +3128,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 391,
-      "source": "遂以求餘法。",
+      "source": "所以化斜排之方位於正排之方位也。",
       "isCode": false
     },
     {
@@ -3136,7 +3136,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 392,
-      "source": "令出上者下。",
+      "source": "然「勒」「努」之位。",
       "isCode": false
     },
     {
@@ -3144,7 +3144,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 393,
-      "source": "出下者上。",
+      "source": "或出於其圖之界。",
       "isCode": false
     },
     {
@@ -3152,7 +3152,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 394,
-      "source": "出左者右。",
+      "source": "遂以求餘法。",
       "isCode": false
     },
     {
@@ -3160,7 +3160,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 395,
-      "source": "出右者左。",
+      "source": "令出上者下。",
       "isCode": false
     },
     {
@@ -3168,7 +3168,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 396,
-      "source": "是所謂上下對易。",
+      "source": "出下者上。",
       "isCode": false
     },
     {
@@ -3176,7 +3176,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 397,
-      "source": "左右相更者也。",
+      "source": "出左者右。",
       "isCode": false
     },
     {
@@ -3184,7 +3184,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 398,
-      "source": "乃得「縱」「橫」。",
+      "source": "出右者左。",
       "isCode": false
     },
     {
@@ -3192,7 +3192,7 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 399,
-      "source": "於是填以「數」。",
+      "source": "是所謂上下對易。",
       "isCode": false
     },
     {
@@ -3200,39 +3200,39 @@
       "chapterId": "c6",
       "blockId": "b40",
       "index": 400,
-      "source": "終得其圖矣。",
+      "source": "左右相更者也。",
       "isCode": false
     },
     {
       "id": "c6-s401",
       "chapterId": "c6",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 401,
-      "source": "減「廣」以一。",
-      "isCode": true
+      "source": "乃得「縱」「橫」。",
+      "isCode": false
     },
     {
       "id": "c6-s402",
       "chapterId": "c6",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 402,
-      "source": "除其以二。",
-      "isCode": true
+      "source": "於是填以「數」。",
+      "isCode": false
     },
     {
       "id": "c6-s403",
       "chapterId": "c6",
-      "blockId": "b41",
+      "blockId": "b40",
       "index": 403,
-      "source": "名之曰「半」。",
-      "isCode": true
+      "source": "終得其圖矣。",
+      "isCode": false
     },
     {
       "id": "c6-s404",
       "chapterId": "c6",
       "blockId": "b41",
       "index": 404,
-      "source": "\n\n有數一。",
+      "source": "減「廣」以一。",
       "isCode": true
     },
     {
@@ -3240,7 +3240,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 405,
-      "source": "名之曰「數」。",
+      "source": "除其以二。",
       "isCode": true
     },
     {
@@ -3248,7 +3248,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 406,
-      "source": "\n乘「廣」以「廣」。",
+      "source": "名之曰「半」。",
       "isCode": true
     },
     {
@@ -3256,7 +3256,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 407,
-      "source": "為是其遍。",
+      "source": "\n\n有數一。",
       "isCode": true
     },
     {
@@ -3264,7 +3264,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 408,
-      "source": "\n\t減「數」以一。",
+      "source": "名之曰「數」。",
       "isCode": true
     },
     {
@@ -3272,7 +3272,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 409,
-      "source": "除其以「廣」。",
+      "source": "\n乘「廣」以「廣」。",
       "isCode": true
     },
     {
@@ -3280,7 +3280,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 410,
-      "source": "所餘幾何。",
+      "source": "為是其遍。",
       "isCode": true
     },
     {
@@ -3288,7 +3288,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 411,
-      "source": "名之曰「磔」。",
+      "source": "\n\t減「數」以一。",
       "isCode": true
     },
     {
@@ -3296,7 +3296,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 412,
-      "source": "\n\t減「數」以「磔」。",
+      "source": "除其以「廣」。",
       "isCode": true
     },
     {
@@ -3304,7 +3304,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 413,
-      "source": "減其以一。",
+      "source": "所餘幾何。",
       "isCode": true
     },
     {
@@ -3312,7 +3312,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 414,
-      "source": "除其以「廣」。",
+      "source": "名之曰「磔」。",
       "isCode": true
     },
     {
@@ -3320,7 +3320,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 415,
-      "source": "名之曰「掠」。",
+      "source": "\n\t減「數」以「磔」。",
       "isCode": true
     },
     {
@@ -3328,7 +3328,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 416,
-      "source": "\n\t加「半」於「磔」。",
+      "source": "減其以一。",
       "isCode": true
     },
     {
@@ -3336,7 +3336,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 417,
-      "source": "減其以「掠」。",
+      "source": "除其以「廣」。",
       "isCode": true
     },
     {
@@ -3344,7 +3344,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 418,
-      "source": "名之曰「勒」。",
+      "source": "名之曰「掠」。",
       "isCode": true
     },
     {
@@ -3352,7 +3352,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 419,
-      "source": "\n\t減「半」於「磔」。",
+      "source": "\n\t加「半」於「磔」。",
       "isCode": true
     },
     {
@@ -3360,7 +3360,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 420,
-      "source": "加其以「掠」。",
+      "source": "減其以「掠」。",
       "isCode": true
     },
     {
@@ -3368,7 +3368,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 421,
-      "source": "名之曰「努」。",
+      "source": "名之曰「勒」。",
       "isCode": true
     },
     {
@@ -3376,7 +3376,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 422,
-      "source": "\n\t加「勒」以「廣」。",
+      "source": "\n\t減「半」於「磔」。",
       "isCode": true
     },
     {
@@ -3384,7 +3384,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 423,
-      "source": "除其以「廣」。",
+      "source": "加其以「掠」。",
       "isCode": true
     },
     {
@@ -3392,7 +3392,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 424,
-      "source": "所餘幾何。",
+      "source": "名之曰「努」。",
       "isCode": true
     },
     {
@@ -3400,7 +3400,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 425,
-      "source": "加其以一。",
+      "source": "\n\t加「勒」以「廣」。",
       "isCode": true
     },
     {
@@ -3408,7 +3408,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 426,
-      "source": "名之曰「橫」。",
+      "source": "除其以「廣」。",
       "isCode": true
     },
     {
@@ -3416,7 +3416,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 427,
-      "source": "\n\t加「努」以「廣」。",
+      "source": "所餘幾何。",
       "isCode": true
     },
     {
@@ -3424,7 +3424,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 428,
-      "source": "除其以「廣」。",
+      "source": "加其以一。",
       "isCode": true
     },
     {
@@ -3432,7 +3432,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 429,
-      "source": "所餘幾何。",
+      "source": "名之曰「橫」。",
       "isCode": true
     },
     {
@@ -3440,7 +3440,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 430,
-      "source": "加其以一。",
+      "source": "\n\t加「努」以「廣」。",
       "isCode": true
     },
     {
@@ -3448,7 +3448,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 431,
-      "source": "名之曰「縱」。",
+      "source": "除其以「廣」。",
       "isCode": true
     },
     {
@@ -3456,7 +3456,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 432,
-      "source": "\n\t夫「縱橫圖」之「縱」。",
+      "source": "所餘幾何。",
       "isCode": true
     },
     {
@@ -3464,7 +3464,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 433,
-      "source": "名之曰「行」。",
+      "source": "加其以一。",
       "isCode": true
     },
     {
@@ -3472,7 +3472,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 434,
-      "source": "\n\t昔之「行」之「橫」者。",
+      "source": "名之曰「縱」。",
       "isCode": true
     },
     {
@@ -3480,7 +3480,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 435,
-      "source": "今「數」是矣。",
+      "source": "\n\t夫「縱橫圖」之「縱」。",
       "isCode": true
     },
     {
@@ -3488,7 +3488,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 436,
-      "source": "\n加「數」以一。",
+      "source": "名之曰「行」。",
       "isCode": true
     },
     {
@@ -3496,7 +3496,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 437,
-      "source": "昔之「數」者。",
+      "source": "\n\t昔之「行」之「橫」者。",
       "isCode": true
     },
     {
@@ -3504,7 +3504,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 438,
-      "source": "今其是矣。",
+      "source": "今「數」是矣。",
       "isCode": true
     },
     {
@@ -3512,7 +3512,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 439,
-      "source": "云云。",
+      "source": "\n加「數」以一。",
       "isCode": true
     },
     {
@@ -3520,7 +3520,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 440,
-      "source": "\n\n凡「縱橫圖」中之「行」。",
+      "source": "昔之「數」者。",
       "isCode": true
     },
     {
@@ -3528,7 +3528,7 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 441,
-      "source": "夫「行」。",
+      "source": "今其是矣。",
       "isCode": true
     },
     {
@@ -3536,39 +3536,39 @@
       "chapterId": "c6",
       "blockId": "b41",
       "index": 442,
-      "source": "書之也。",
+      "source": "云云。",
       "isCode": true
     },
     {
       "id": "c6-s443",
       "chapterId": "c6",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 443,
-      "source": "乃得九九圖如是。",
-      "isCode": false
+      "source": "\n\n凡「縱橫圖」中之「行」。",
+      "isCode": true
     },
     {
       "id": "c6-s444",
       "chapterId": "c6",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 444,
-      "source": "其與楊氏書中所載不同者。",
-      "isCode": false
+      "source": "夫「行」。",
+      "isCode": true
     },
     {
       "id": "c6-s445",
       "chapterId": "c6",
-      "blockId": "b42",
+      "blockId": "b41",
       "index": 445,
-      "source": "蓋作其圖之法甚眾。",
-      "isCode": false
+      "source": "書之也。",
+      "isCode": true
     },
     {
       "id": "c6-s446",
       "chapterId": "c6",
       "blockId": "b42",
       "index": 446,
-      "source": "所得亦各有異。",
+      "source": "乃得九九圖如是。",
       "isCode": false
     },
     {
@@ -3576,7 +3576,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 447,
-      "source": "然其之為縱橫圖者一也。",
+      "source": "其與楊氏書中所載不同者。",
       "isCode": false
     },
     {
@@ -3584,7 +3584,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 448,
-      "source": "一者何耶。",
+      "source": "蓋作其圖之法甚眾。",
       "isCode": false
     },
     {
@@ -3592,7 +3592,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 449,
-      "source": "縱橫斜皆三百六十九也。",
+      "source": "所得亦各有異。",
       "isCode": false
     },
     {
@@ -3600,7 +3600,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 450,
-      "source": "或問曰。",
+      "source": "然其之為縱橫圖者一也。",
       "isCode": false
     },
     {
@@ -3608,7 +3608,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 451,
-      "source": "何以知之。",
+      "source": "一者何耶。",
       "isCode": false
     },
     {
@@ -3616,7 +3616,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 452,
-      "source": "曰。",
+      "source": "縱橫斜皆三百六十九也。",
       "isCode": false
     },
     {
@@ -3624,7 +3624,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 453,
-      "source": "請吾子試作一術。",
+      "source": "或問曰。",
       "isCode": false
     },
     {
@@ -3632,7 +3632,7 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 454,
-      "source": "循環遍歷其圖。",
+      "source": "何以知之。",
       "isCode": false
     },
     {
@@ -3640,39 +3640,39 @@
       "chapterId": "c6",
       "blockId": "b42",
       "index": 455,
-      "source": "以驗吾言之不謬也。",
+      "source": "曰。",
       "isCode": false
     },
     {
       "id": "c6-s456",
       "chapterId": "c6",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 456,
-      "source": "三十七。",
-      "isCode": true
+      "source": "請吾子試作一術。",
+      "isCode": false
     },
     {
       "id": "c6-s457",
       "chapterId": "c6",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 457,
-      "source": "七十八。",
-      "isCode": true
+      "source": "循環遍歷其圖。",
+      "isCode": false
     },
     {
       "id": "c6-s458",
       "chapterId": "c6",
-      "blockId": "b43",
+      "blockId": "b42",
       "index": 458,
-      "source": "二十九。",
-      "isCode": true
+      "source": "以驗吾言之不謬也。",
+      "isCode": false
     },
     {
       "id": "c6-s459",
       "chapterId": "c6",
       "blockId": "b43",
       "index": 459,
-      "source": "　七十。",
+      "source": "三十七。",
       "isCode": true
     },
     {
@@ -3680,7 +3680,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 460,
-      "source": "二十一。",
+      "source": "七十八。",
       "isCode": true
     },
     {
@@ -3688,7 +3688,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 461,
-      "source": "六十二。",
+      "source": "二十九。",
       "isCode": true
     },
     {
@@ -3696,7 +3696,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 462,
-      "source": "一十三。",
+      "source": "　七十。",
       "isCode": true
     },
     {
@@ -3704,7 +3704,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 463,
-      "source": "五十四。",
+      "source": "二十一。",
       "isCode": true
     },
     {
@@ -3712,7 +3712,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 464,
-      "source": "　五\n　六　。",
+      "source": "六十二。",
       "isCode": true
     },
     {
@@ -3720,7 +3720,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 465,
-      "source": "三十八。",
+      "source": "一十三。",
       "isCode": true
     },
     {
@@ -3728,7 +3728,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 466,
-      "source": "七十九。",
+      "source": "五十四。",
       "isCode": true
     },
     {
@@ -3736,7 +3736,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 467,
-      "source": "　三十。",
+      "source": "　五",
       "isCode": true
     },
     {
@@ -3744,7 +3744,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 468,
-      "source": "七十一。",
+      "source": "\n　六　。",
       "isCode": true
     },
     {
@@ -3752,7 +3752,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 469,
-      "source": "二十二。",
+      "source": "三十八。",
       "isCode": true
     },
     {
@@ -3760,7 +3760,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 470,
-      "source": "六十三。",
+      "source": "七十九。",
       "isCode": true
     },
     {
@@ -3768,7 +3768,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 471,
-      "source": "一十四。",
+      "source": "　三十。",
       "isCode": true
     },
     {
@@ -3776,7 +3776,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 472,
-      "source": "四十六\n四十七。",
+      "source": "七十一。",
       "isCode": true
     },
     {
@@ -3784,7 +3784,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 473,
-      "source": "　七　。",
+      "source": "二十二。",
       "isCode": true
     },
     {
@@ -3792,7 +3792,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 474,
-      "source": "三十九。",
+      "source": "六十三。",
       "isCode": true
     },
     {
@@ -3800,7 +3800,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 475,
-      "source": "　八十。",
+      "source": "一十四。",
       "isCode": true
     },
     {
@@ -3808,7 +3808,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 476,
-      "source": "三十一。",
+      "source": "四十六",
       "isCode": true
     },
     {
@@ -3816,7 +3816,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 477,
-      "source": "七十二。",
+      "source": "\n四十七。",
       "isCode": true
     },
     {
@@ -3824,7 +3824,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 478,
-      "source": "二十三。",
+      "source": "　七　。",
       "isCode": true
     },
     {
@@ -3832,7 +3832,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 479,
-      "source": "五十五。",
+      "source": "三十九。",
       "isCode": true
     },
     {
@@ -3840,7 +3840,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 480,
-      "source": "一十五\n一十六。",
+      "source": "　八十。",
       "isCode": true
     },
     {
@@ -3848,7 +3848,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 481,
-      "source": "四十八。",
+      "source": "三十一。",
       "isCode": true
     },
     {
@@ -3856,7 +3856,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 482,
-      "source": "　八　。",
+      "source": "七十二。",
       "isCode": true
     },
     {
@@ -3864,7 +3864,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 483,
-      "source": "　四十。",
+      "source": "二十三。",
       "isCode": true
     },
     {
@@ -3872,7 +3872,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 484,
-      "source": "八十一。",
+      "source": "五十五。",
       "isCode": true
     },
     {
@@ -3880,7 +3880,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 485,
-      "source": "三十二。",
+      "source": "一十五",
       "isCode": true
     },
     {
@@ -3888,7 +3888,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 486,
-      "source": "六十四。",
+      "source": "\n一十六。",
       "isCode": true
     },
     {
@@ -3896,7 +3896,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 487,
-      "source": "二十四。",
+      "source": "四十八。",
       "isCode": true
     },
     {
@@ -3904,7 +3904,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 488,
-      "source": "五十六\n五十七。",
+      "source": "　八　。",
       "isCode": true
     },
     {
@@ -3912,7 +3912,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 489,
-      "source": "一十七。",
+      "source": "　四十。",
       "isCode": true
     },
     {
@@ -3920,7 +3920,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 490,
-      "source": "四十九。",
+      "source": "八十一。",
       "isCode": true
     },
     {
@@ -3928,7 +3928,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 491,
-      "source": "　九　。",
+      "source": "三十二。",
       "isCode": true
     },
     {
@@ -3936,7 +3936,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 492,
-      "source": "四十一。",
+      "source": "六十四。",
       "isCode": true
     },
     {
@@ -3944,7 +3944,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 493,
-      "source": "七十三。",
+      "source": "二十四。",
       "isCode": true
     },
     {
@@ -3952,7 +3952,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 494,
-      "source": "三十三。",
+      "source": "五十六",
       "isCode": true
     },
     {
@@ -3960,7 +3960,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 495,
-      "source": "六十五。",
+      "source": "\n五十七。",
       "isCode": true
     },
     {
@@ -3968,7 +3968,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 496,
-      "source": "二十五\n二十六。",
+      "source": "一十七。",
       "isCode": true
     },
     {
@@ -3976,7 +3976,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 497,
-      "source": "五十八。",
+      "source": "四十九。",
       "isCode": true
     },
     {
@@ -3984,7 +3984,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 498,
-      "source": "一十八。",
+      "source": "　九　。",
       "isCode": true
     },
     {
@@ -3992,7 +3992,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 499,
-      "source": "　五十。",
+      "source": "四十一。",
       "isCode": true
     },
     {
@@ -4000,7 +4000,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 500,
-      "source": "　一　。",
+      "source": "七十三。",
       "isCode": true
     },
     {
@@ -4008,7 +4008,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 501,
-      "source": "四十二。",
+      "source": "三十三。",
       "isCode": true
     },
     {
@@ -4016,7 +4016,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 502,
-      "source": "七十四。",
+      "source": "六十五。",
       "isCode": true
     },
     {
@@ -4024,7 +4024,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 503,
-      "source": "三十四。",
+      "source": "二十五",
       "isCode": true
     },
     {
@@ -4032,7 +4032,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 504,
-      "source": "六十六\n六十七。",
+      "source": "\n二十六。",
       "isCode": true
     },
     {
@@ -4040,7 +4040,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 505,
-      "source": "二十七。",
+      "source": "五十八。",
       "isCode": true
     },
     {
@@ -4048,7 +4048,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 506,
-      "source": "五十九。",
+      "source": "一十八。",
       "isCode": true
     },
     {
@@ -4056,7 +4056,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 507,
-      "source": "　一十。",
+      "source": "　五十。",
       "isCode": true
     },
     {
@@ -4064,7 +4064,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 508,
-      "source": "五十一。",
+      "source": "　一　。",
       "isCode": true
     },
     {
@@ -4072,7 +4072,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 509,
-      "source": "　二　。",
+      "source": "四十二。",
       "isCode": true
     },
     {
@@ -4080,7 +4080,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 510,
-      "source": "四十三。",
+      "source": "七十四。",
       "isCode": true
     },
     {
@@ -4088,7 +4088,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 511,
-      "source": "七十五。",
+      "source": "三十四。",
       "isCode": true
     },
     {
@@ -4096,7 +4096,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 512,
-      "source": "三十五\n三十六。",
+      "source": "六十六",
       "isCode": true
     },
     {
@@ -4104,7 +4104,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 513,
-      "source": "六十八。",
+      "source": "\n六十七。",
       "isCode": true
     },
     {
@@ -4112,7 +4112,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 514,
-      "source": "一十九。",
+      "source": "二十七。",
       "isCode": true
     },
     {
@@ -4120,7 +4120,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 515,
-      "source": "　六十。",
+      "source": "五十九。",
       "isCode": true
     },
     {
@@ -4128,7 +4128,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 516,
-      "source": "一十一。",
+      "source": "　一十。",
       "isCode": true
     },
     {
@@ -4136,7 +4136,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 517,
-      "source": "五十二。",
+      "source": "五十一。",
       "isCode": true
     },
     {
@@ -4144,7 +4144,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 518,
-      "source": "　三　。",
+      "source": "　二　。",
       "isCode": true
     },
     {
@@ -4152,7 +4152,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 519,
-      "source": "四十四。",
+      "source": "四十三。",
       "isCode": true
     },
     {
@@ -4160,7 +4160,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 520,
-      "source": "七十六\n七十七。",
+      "source": "七十五。",
       "isCode": true
     },
     {
@@ -4168,7 +4168,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 521,
-      "source": "二十八。",
+      "source": "三十五",
       "isCode": true
     },
     {
@@ -4176,7 +4176,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 522,
-      "source": "六十九。",
+      "source": "\n三十六。",
       "isCode": true
     },
     {
@@ -4184,7 +4184,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 523,
-      "source": "　二十。",
+      "source": "六十八。",
       "isCode": true
     },
     {
@@ -4192,7 +4192,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 524,
-      "source": "六十一。",
+      "source": "一十九。",
       "isCode": true
     },
     {
@@ -4200,7 +4200,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 525,
-      "source": "一十二。",
+      "source": "　六十。",
       "isCode": true
     },
     {
@@ -4208,7 +4208,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 526,
-      "source": "五十三。",
+      "source": "一十一。",
       "isCode": true
     },
     {
@@ -4216,7 +4216,7 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 527,
-      "source": "　四　。",
+      "source": "五十二。",
       "isCode": true
     },
     {
@@ -4224,103 +4224,103 @@
       "chapterId": "c6",
       "blockId": "b43",
       "index": 528,
-      "source": "四十五",
+      "source": "　三　。",
       "isCode": true
     },
     {
       "id": "c6-s529",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 529,
-      "source": "又有傳暹羅法作陽數縱橫圖。",
-      "isCode": false
+      "source": "四十四。",
+      "isCode": true
     },
     {
       "id": "c6-s530",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 530,
-      "source": "其決曰。",
-      "isCode": false
+      "source": "七十六",
+      "isCode": true
     },
     {
       "id": "c6-s531",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 531,
-      "source": "一起於正北。",
-      "isCode": false
+      "source": "\n七十七。",
+      "isCode": true
     },
     {
       "id": "c6-s532",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 532,
-      "source": "東北向次第填之。",
-      "isCode": false
+      "source": "二十八。",
+      "isCode": true
     },
     {
       "id": "c6-s533",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 533,
-      "source": "出北入南。",
-      "isCode": false
+      "source": "六十九。",
+      "isCode": true
     },
     {
       "id": "c6-s534",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 534,
-      "source": "出東入西。",
-      "isCode": false
+      "source": "　二十。",
+      "isCode": true
     },
     {
       "id": "c6-s535",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 535,
-      "source": "道有礙者。",
-      "isCode": false
+      "source": "六十一。",
+      "isCode": true
     },
     {
       "id": "c6-s536",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 536,
-      "source": "先南退而後進。",
-      "isCode": false
+      "source": "一十二。",
+      "isCode": true
     },
     {
       "id": "c6-s537",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 537,
-      "source": "其較楊輝法猶稍易也。",
-      "isCode": false
+      "source": "五十三。",
+      "isCode": true
     },
     {
       "id": "c6-s538",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 538,
-      "source": "君胡不一試之。",
-      "isCode": false
+      "source": "　四　。",
+      "isCode": true
     },
     {
       "id": "c6-s539",
       "chapterId": "c6",
-      "blockId": "b44",
+      "blockId": "b43",
       "index": 539,
-      "source": "列之道。",
-      "isCode": false
+      "source": "四十五",
+      "isCode": true
     },
     {
       "id": "c6-s540",
       "chapterId": "c6",
       "blockId": "b44",
       "index": 540,
-      "source": "列列之道。",
+      "source": "又有傳暹羅法作陽數縱橫圖。",
       "isCode": false
     },
     {
@@ -4328,7 +4328,7 @@
       "chapterId": "c6",
       "blockId": "b44",
       "index": 541,
-      "source": "至是略備矣。",
+      "source": "其決曰。",
       "isCode": false
     },
     {
@@ -4336,7 +4336,7 @@
       "chapterId": "c6",
       "blockId": "b44",
       "index": 542,
-      "source": "更有列列列。",
+      "source": "一起於正北。",
       "isCode": false
     },
     {
@@ -4344,7 +4344,7 @@
       "chapterId": "c6",
       "blockId": "b44",
       "index": 543,
-      "source": "列列列列者。",
+      "source": "東北向次第填之。",
       "isCode": false
     },
     {
@@ -4352,6 +4352,94 @@
       "chapterId": "c6",
       "blockId": "b44",
       "index": 544,
+      "source": "出北入南。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s545",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 545,
+      "source": "出東入西。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s546",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 546,
+      "source": "道有礙者。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s547",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 547,
+      "source": "先南退而後進。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s548",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 548,
+      "source": "其較楊輝法猶稍易也。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s549",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 549,
+      "source": "君胡不一試之。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s550",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 550,
+      "source": "列之道。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s551",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 551,
+      "source": "列列之道。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s552",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 552,
+      "source": "至是略備矣。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s553",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 553,
+      "source": "更有列列列。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s554",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 554,
+      "source": "列列列列者。",
+      "isCode": false
+    },
+    {
+      "id": "c6-s555",
+      "chapterId": "c6",
+      "blockId": "b44",
+      "index": 555,
       "source": "皆一理也。",
       "isCode": false
     }
