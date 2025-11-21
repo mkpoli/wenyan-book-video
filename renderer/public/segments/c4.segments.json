@@ -211,19 +211,14 @@
       "id": "4-11",
       "chapterId": "c4",
       "segmentIndex": 11,
-      "sentenceIds": [
-        "c4-s126"
-      ],
+      "sentenceIds": ["c4-s126"],
       "isCodeBlock": false
     },
     {
       "id": "4-12",
       "chapterId": "c4",
       "segmentIndex": 12,
-      "sentenceIds": [
-        "c4-s127",
-        "c4-s128"
-      ],
+      "sentenceIds": ["c4-s127", "c4-s128"],
       "isCodeBlock": true
     },
     {
@@ -267,10 +262,7 @@
       "id": "4-15",
       "chapterId": "c4",
       "segmentIndex": 15,
-      "sentenceIds": [
-        "c4-s150",
-        "c4-s151"
-      ],
+      "sentenceIds": ["c4-s150", "c4-s151"],
       "isCodeBlock": true
     },
     {
@@ -368,12 +360,7 @@
       "id": "4-21",
       "chapterId": "c4",
       "segmentIndex": 21,
-      "sentenceIds": [
-        "c4-s203",
-        "c4-s204",
-        "c4-s205",
-        "c4-s206"
-      ],
+      "sentenceIds": ["c4-s203", "c4-s204", "c4-s205", "c4-s206"],
       "isCodeBlock": false
     },
     {
@@ -399,9 +386,7 @@
       "id": "4-23",
       "chapterId": "c4",
       "segmentIndex": 23,
-      "sentenceIds": [
-        "c4-s218"
-      ],
+      "sentenceIds": ["c4-s218"],
       "isCodeBlock": false
     },
     {
@@ -424,13 +409,7 @@
       "id": "4-25",
       "chapterId": "c4",
       "segmentIndex": 25,
-      "sentenceIds": [
-        "c4-s227",
-        "c4-s228",
-        "c4-s229",
-        "c4-s230",
-        "c4-s231"
-      ],
+      "sentenceIds": ["c4-s227", "c4-s228", "c4-s229", "c4-s230", "c4-s231"],
       "isCodeBlock": true
     },
     {
@@ -557,13 +536,7 @@
       "id": "4-32",
       "chapterId": "c4",
       "segmentIndex": 32,
-      "sentenceIds": [
-        "c4-s304",
-        "c4-s305",
-        "c4-s306",
-        "c4-s307",
-        "c4-s308"
-      ],
+      "sentenceIds": ["c4-s304", "c4-s305", "c4-s306", "c4-s307", "c4-s308"],
       "isCodeBlock": true
     },
     {
@@ -611,31 +584,21 @@
       "id": "4-35",
       "chapterId": "c4",
       "segmentIndex": 35,
-      "sentenceIds": [
-        "c4-s334"
-      ],
+      "sentenceIds": ["c4-s334"],
       "isCodeBlock": false
     },
     {
       "id": "4-36",
       "chapterId": "c4",
       "segmentIndex": 36,
-      "sentenceIds": [
-        "c4-s335",
-        "c4-s336"
-      ],
+      "sentenceIds": ["c4-s335", "c4-s336"],
       "isCodeBlock": true
     },
     {
       "id": "4-37",
       "chapterId": "c4",
       "segmentIndex": 37,
-      "sentenceIds": [
-        "c4-s337",
-        "c4-s338",
-        "c4-s339",
-        "c4-s340"
-      ],
+      "sentenceIds": ["c4-s337", "c4-s338", "c4-s339", "c4-s340"],
       "isCodeBlock": false
     }
   ]

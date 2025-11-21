@@ -73,12 +73,7 @@
       "id": "7-4",
       "chapterId": "c7",
       "segmentIndex": 4,
-      "sentenceIds": [
-        "c7-s44",
-        "c7-s45",
-        "c7-s46",
-        "c7-s47"
-      ],
+      "sentenceIds": ["c7-s44", "c7-s45", "c7-s46", "c7-s47"],
       "isCodeBlock": false
     },
     {
@@ -120,12 +115,7 @@
       "id": "7-7",
       "chapterId": "c7",
       "segmentIndex": 7,
-      "sentenceIds": [
-        "c7-s67",
-        "c7-s68",
-        "c7-s69",
-        "c7-s70"
-      ],
+      "sentenceIds": ["c7-s67", "c7-s68", "c7-s69", "c7-s70"],
       "isCodeBlock": false
     },
     {
@@ -147,22 +137,14 @@
       "id": "7-9",
       "chapterId": "c7",
       "segmentIndex": 9,
-      "sentenceIds": [
-        "c7-s78",
-        "c7-s79",
-        "c7-s80",
-        "c7-s81"
-      ],
+      "sentenceIds": ["c7-s78", "c7-s79", "c7-s80", "c7-s81"],
       "isCodeBlock": false
     },
     {
       "id": "7-10",
       "chapterId": "c7",
       "segmentIndex": 10,
-      "sentenceIds": [
-        "c7-s82",
-        "c7-s83"
-      ],
+      "sentenceIds": ["c7-s82", "c7-s83"],
       "isCodeBlock": true
     },
     {
@@ -238,9 +220,7 @@
       "id": "7-15",
       "chapterId": "c7",
       "segmentIndex": 15,
-      "sentenceIds": [
-        "c7-s121"
-      ],
+      "sentenceIds": ["c7-s121"],
       "isCodeBlock": false
     },
     {
@@ -254,7 +234,8 @@
         "c7-s125",
         "c7-s126",
         "c7-s127",
-        "c7-s128"
+        "c7-s128",
+        "c7-s129"
       ],
       "isCodeBlock": true
     },
@@ -263,7 +244,6 @@
       "chapterId": "c7",
       "segmentIndex": 17,
       "sentenceIds": [
-        "c7-s129",
         "c7-s130",
         "c7-s131",
         "c7-s132",
@@ -275,7 +255,8 @@
         "c7-s138",
         "c7-s139",
         "c7-s140",
-        "c7-s141"
+        "c7-s141",
+        "c7-s142"
       ],
       "isCodeBlock": false
     },
@@ -283,13 +264,7 @@
       "id": "7-18",
       "chapterId": "c7",
       "segmentIndex": 18,
-      "sentenceIds": [
-        "c7-s142",
-        "c7-s143",
-        "c7-s144",
-        "c7-s145",
-        "c7-s146"
-      ],
+      "sentenceIds": ["c7-s143", "c7-s144", "c7-s145", "c7-s146", "c7-s147"],
       "isCodeBlock": true
     },
     {
@@ -297,7 +272,6 @@
       "chapterId": "c7",
       "segmentIndex": 19,
       "sentenceIds": [
-        "c7-s147",
         "c7-s148",
         "c7-s149",
         "c7-s150",
@@ -308,7 +282,8 @@
         "c7-s155",
         "c7-s156",
         "c7-s157",
-        "c7-s158"
+        "c7-s158",
+        "c7-s159"
       ],
       "isCodeBlock": true
     },
@@ -317,7 +292,6 @@
       "chapterId": "c7",
       "segmentIndex": 20,
       "sentenceIds": [
-        "c7-s159",
         "c7-s160",
         "c7-s161",
         "c7-s162",
@@ -325,7 +299,8 @@
         "c7-s164",
         "c7-s165",
         "c7-s166",
-        "c7-s167"
+        "c7-s167",
+        "c7-s168"
       ],
       "isCodeBlock": true
     },
@@ -334,14 +309,14 @@
       "chapterId": "c7",
       "segmentIndex": 21,
       "sentenceIds": [
-        "c7-s168",
         "c7-s169",
         "c7-s170",
         "c7-s171",
         "c7-s172",
         "c7-s173",
         "c7-s174",
-        "c7-s175"
+        "c7-s175",
+        "c7-s176"
       ],
       "isCodeBlock": true
     },
@@ -350,7 +325,6 @@
       "chapterId": "c7",
       "segmentIndex": 22,
       "sentenceIds": [
-        "c7-s176",
         "c7-s177",
         "c7-s178",
         "c7-s179",
@@ -358,7 +332,8 @@
         "c7-s181",
         "c7-s182",
         "c7-s183",
-        "c7-s184"
+        "c7-s184",
+        "c7-s185"
       ],
       "isCodeBlock": true
     },
@@ -367,7 +342,6 @@
       "chapterId": "c7",
       "segmentIndex": 23,
       "sentenceIds": [
-        "c7-s185",
         "c7-s186",
         "c7-s187",
         "c7-s188",
@@ -375,7 +349,8 @@
         "c7-s190",
         "c7-s191",
         "c7-s192",
-        "c7-s193"
+        "c7-s193",
+        "c7-s194"
       ],
       "isCodeBlock": false
     },
@@ -384,7 +359,6 @@
       "chapterId": "c7",
       "segmentIndex": 24,
       "sentenceIds": [
-        "c7-s194",
         "c7-s195",
         "c7-s196",
         "c7-s197",
@@ -394,7 +368,9 @@
         "c7-s201",
         "c7-s202",
         "c7-s203",
-        "c7-s204"
+        "c7-s204",
+        "c7-s205",
+        "c7-s206"
       ],
       "isCodeBlock": true
     },
@@ -403,15 +379,15 @@
       "chapterId": "c7",
       "segmentIndex": 25,
       "sentenceIds": [
-        "c7-s205",
-        "c7-s206",
         "c7-s207",
         "c7-s208",
         "c7-s209",
         "c7-s210",
         "c7-s211",
         "c7-s212",
-        "c7-s213"
+        "c7-s213",
+        "c7-s214",
+        "c7-s215"
       ],
       "isCodeBlock": true
     },
@@ -419,18 +395,14 @@
       "id": "7-26",
       "chapterId": "c7",
       "segmentIndex": 26,
-      "sentenceIds": [
-        "c7-s214"
-      ],
+      "sentenceIds": ["c7-s216"],
       "isCodeBlock": false
     },
     {
       "id": "7-27",
       "chapterId": "c7",
       "segmentIndex": 27,
-      "sentenceIds": [
-        "c7-s215"
-      ],
+      "sentenceIds": ["c7-s217"],
       "isCodeBlock": true
     },
     {
@@ -438,13 +410,13 @@
       "chapterId": "c7",
       "segmentIndex": 28,
       "sentenceIds": [
-        "c7-s216",
-        "c7-s217",
         "c7-s218",
         "c7-s219",
         "c7-s220",
         "c7-s221",
-        "c7-s222"
+        "c7-s222",
+        "c7-s223",
+        "c7-s224"
       ],
       "isCodeBlock": false
     },
@@ -453,8 +425,6 @@
       "chapterId": "c7",
       "segmentIndex": 29,
       "sentenceIds": [
-        "c7-s223",
-        "c7-s224",
         "c7-s225",
         "c7-s226",
         "c7-s227",
@@ -466,7 +436,9 @@
         "c7-s233",
         "c7-s234",
         "c7-s235",
-        "c7-s236"
+        "c7-s236",
+        "c7-s237",
+        "c7-s238"
       ],
       "isCodeBlock": false
     },
@@ -475,12 +447,12 @@
       "chapterId": "c7",
       "segmentIndex": 30,
       "sentenceIds": [
-        "c7-s237",
-        "c7-s238",
         "c7-s239",
         "c7-s240",
         "c7-s241",
-        "c7-s242"
+        "c7-s242",
+        "c7-s243",
+        "c7-s244"
       ],
       "isCodeBlock": true
     },
@@ -489,8 +461,6 @@
       "chapterId": "c7",
       "segmentIndex": 31,
       "sentenceIds": [
-        "c7-s243",
-        "c7-s244",
         "c7-s245",
         "c7-s246",
         "c7-s247",
@@ -502,7 +472,9 @@
         "c7-s253",
         "c7-s254",
         "c7-s255",
-        "c7-s256"
+        "c7-s256",
+        "c7-s257",
+        "c7-s258"
       ],
       "isCodeBlock": false
     },
@@ -511,8 +483,6 @@
       "chapterId": "c7",
       "segmentIndex": 32,
       "sentenceIds": [
-        "c7-s257",
-        "c7-s258",
         "c7-s259",
         "c7-s260",
         "c7-s261",
@@ -521,7 +491,9 @@
         "c7-s264",
         "c7-s265",
         "c7-s266",
-        "c7-s267"
+        "c7-s267",
+        "c7-s268",
+        "c7-s269"
       ],
       "isCodeBlock": false
     },
@@ -529,9 +501,7 @@
       "id": "7-33",
       "chapterId": "c7",
       "segmentIndex": 33,
-      "sentenceIds": [
-        "c7-s268"
-      ],
+      "sentenceIds": ["c7-s270", "c7-s271", "c7-s272", "c7-s273"],
       "isCodeBlock": false
     },
     {
@@ -539,14 +509,14 @@
       "chapterId": "c7",
       "segmentIndex": 34,
       "sentenceIds": [
-        "c7-s269",
-        "c7-s270",
-        "c7-s271",
-        "c7-s272",
-        "c7-s273",
         "c7-s274",
         "c7-s275",
-        "c7-s276"
+        "c7-s276",
+        "c7-s277",
+        "c7-s278",
+        "c7-s279",
+        "c7-s280",
+        "c7-s281"
       ],
       "isCodeBlock": false
     },
@@ -554,23 +524,14 @@
       "id": "7-35",
       "chapterId": "c7",
       "segmentIndex": 35,
-      "sentenceIds": [
-        "c7-s277",
-        "c7-s278",
-        "c7-s279",
-        "c7-s280"
-      ],
+      "sentenceIds": ["c7-s282", "c7-s283", "c7-s284", "c7-s285"],
       "isCodeBlock": true
     },
     {
       "id": "7-36",
       "chapterId": "c7",
       "segmentIndex": 36,
-      "sentenceIds": [
-        "c7-s281",
-        "c7-s282",
-        "c7-s283"
-      ],
+      "sentenceIds": ["c7-s286", "c7-s287", "c7-s288"],
       "isCodeBlock": false
     }
   ]
