@@ -84,7 +84,7 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
    - Titles follow `transcribe-titles.py` → `synthesize-titles.py`.
 
 2. **Synthesize audio**
-   - `uv run python synthesize.py` produces raw TTS chunks under `renderer/public/audios/`.
+   - `uv run python synthesize.py` produces raw TTS chunks under `renderer/public/audios/`. Use `-c <chapter>` to limit to one chapter.
    - `uv run python voice-change.py` transforms them (e.g., female timbre) into `renderer/public/audios/female/`.
 
 3. **Generate renderer segments**

@@ -9,8 +9,10 @@ def _():
     import requests
     import time
     import json
+    import sys
+    import argparse
     from pathlib import Path
-    return Path, requests, time
+    return Path, argparse, json, requests, sys, time
 
 
 @app.cell
@@ -41,11 +43,25 @@ def _(
     API_DELAY_SECONDS,
     MODEL_NAME,
     SYNTHESIZE_URL,
+    argparse,
     audios_dir,
     requests,
-    time,
     segment_transcripts_dir,
+    sys,
+    time,
 ):
+    # Parse arguments
+    # Use parse_known_args to avoid conflicts if marimo adds its own args
+    parser = argparse.ArgumentParser(description="Synthesize audio from transcripts.")
+    parser.add_argument("-c", "--chapter", type=int, help="Chapter number to synthesize")
+    
+    # Only parse args if running as main script (not inside marimo editor logic which might differ)
+    # But marimo runs cells as functions. 
+    # We can check sys.argv.
+    
+    args, _ = parser.parse_known_args()
+    target_chapter = args.chapter
+
     # Find all transcript files
     # Sort naturally by extracting chapter and segment numbers
     def sort_key(path):
@@ -54,10 +70,19 @@ def _(
         parts = name.split("-")  # ["audio", "1", "2"]
         return (int(parts[1]), int(parts[2]))  # (chapter, segment)
 
-    transcript_files = sorted(
+    all_files = sorted(
         segment_transcripts_dir.glob("audio-*-*.txt"),
         key=sort_key,
     )
+    
+    if target_chapter is not None:
+        print(f"Filtering for chapter {target_chapter}...")
+        transcript_files = [
+            f for f in all_files 
+            if sort_key(f)[0] == target_chapter
+        ]
+    else:
+        transcript_files = all_files
 
     print(f"Found {len(transcript_files)} transcript files")
 
