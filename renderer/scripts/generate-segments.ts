@@ -122,10 +122,7 @@ type ChapterResources = {
   blockTypes: Map<string, string | null>;
 };
 
-const chapterResourcesCache = new Map<
-  string,
-  ChapterResources | null
->();
+const chapterResourcesCache = new Map<string, ChapterResources | null>();
 
 const readJsonFile = <T>(filePath: string): T | null => {
   if (!existsSync(filePath)) {
@@ -481,13 +478,8 @@ const generateSegments = async () => {
   const entries = (
     await Promise.all(
       segmentsToProcess.map(async (segmentDef) => {
-        const {
-          id,
-          chapterId,
-          sentenceIds,
-          isCodeBlock,
-          segmentIndex,
-        } = segmentDef;
+        const { id, chapterId, sentenceIds, isCodeBlock, segmentIndex } =
+          segmentDef;
         const audioFile = `audio-${id}.mp3`;
         const femaleAudioFile = `audio-${id}-f.mp3`;
         const maleAudioPath = join(AUDIOS_DIR, audioFile);
