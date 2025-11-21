@@ -156,742 +156,754 @@
     "translation": "Thus and thus。"
   },
   "c5-s40": {
-    "source": "凡「列」中之「元」\n\t吾有二言。",
-    "translation": "Concerning every element within a “List,” I have two words."
+    "source": "凡「列」中之「元」",
+    "translation": "Concerning every ‘element’ within a ‘List,’"
   },
   "c5-s41": {
+    "source": "\n\t吾有二言。",
+    "translation": "I have two words."
+  },
+  "c5-s42": {
     "source": "曰「元」。",
     "translation": "It says, ‘Element.’"
   },
-  "c5-s42": {
+  "c5-s43": {
     "source": "曰『者。亦列中之物也。』",
     "translation": "It says, “is a thing within the List.”"
   },
-  "c5-s43": {
+  "c5-s44": {
     "source": "書之。",
     "translation": "Write it down。"
   },
-  "c5-s44": {
+  "c5-s45": {
     "source": "\n云云。",
     "translation": "Thus and thus。"
   },
-  "c5-s45": {
+  "c5-s46": {
     "source": "注曰。",
     "translation": "The note says。"
   },
-  "c5-s46": {
+  "c5-s47": {
     "source": "列之用。",
     "translation": "The use of lists。"
   },
-  "c5-s47": {
+  "c5-s48": {
     "source": "更見於後章。",
     "translation": "It is further seen in later chapters。"
   },
-  "c5-s48": {
+  "c5-s49": {
     "source": "今表歷列之用。",
     "translation": "Now present the use for enumeration。"
   },
-  "c5-s49": {
+  "c5-s50": {
     "source": "聊以示循環之全貌。",
     "translation": "For a modest showing, it reveals the full panorama of looping."
   },
-  "c5-s50": {
+  "c5-s51": {
     "source": "不求觀者立解也。",
     "translation": "It does not require the reader to grasp it at once。"
   },
-  "c5-s51": {
+  "c5-s52": {
     "source": "或問曰。",
     "translation": "Some may ask,"
   },
-  "c5-s52": {
+  "c5-s53": {
     "source": "`云云`者。",
     "translation": "“The phrase ‘Thus and thus.’”"
   },
-  "c5-s53": {
+  "c5-s54": {
     "source": "吾似於前章見之。",
     "translation": "I seem to have seen it in the preceding chapter。"
   },
-  "c5-s54": {
+  "c5-s55": {
     "source": "無乃決策亦用此結句耶。",
     "translation": "Is it not that decision-making also uses this concluding clause。"
   },
-  "c5-s55": {
+  "c5-s56": {
     "source": "曰。",
     "translation": "It is answered,"
   },
-  "c5-s56": {
+  "c5-s57": {
     "source": "然也。",
     "translation": "Indeed。"
   },
-  "c5-s57": {
+  "c5-s58": {
     "source": "`也`字亦無以異也。",
     "translation": "The character Jiaeq (也) bears no difference either。"
   },
-  "c5-s58": {
+  "c5-s59": {
     "source": "九九歌訣者。",
     "translation": "The Nine-Nine mnemonic verse。"
   },
-  "c5-s59": {
+  "c5-s60": {
     "source": "淮南子中已有之。",
     "translation": "It is already found in the Huainanzi。"
   },
-  "c5-s60": {
+  "c5-s61": {
     "source": "至今流傳不廢。",
     "translation": "To this day it has endured without cessation。"
   },
-  "c5-s61": {
+  "c5-s62": {
     "source": "今以程式書此歌如左。",
     "translation": "Now, using the program, write this song as shown below。"
   },
-  "c5-s62": {
+  "c5-s63": {
     "source": "有數九。",
     "translation": "There are a number of nine。"
   },
-  "c5-s63": {
+  "c5-s64": {
     "source": "名之曰「始」。",
     "translation": "Named ‘Begin’。"
   },
-  "c5-s64": {
+  "c5-s65": {
     "source": "\n有數「始」。",
     "translation": "There are several ‘Begin’。"
   },
-  "c5-s65": {
-    "source": "名之曰「戊」\n為是「始」遍。",
-    "translation": "Name it ‘E’; Do this for ‘Begin’ times."
-  },
   "c5-s66": {
+    "source": "名之曰「戊」",
+    "translation": "Name it ‘E’"
+  },
+  "c5-s67": {
+    "source": "\n為是「始」遍。",
+    "translation": "Do this for ‘Begin’ times."
+  },
+  "c5-s68": {
     "source": "\n\t有數「戊」。",
     "translation": "There are a number of ‘E’."
   },
-  "c5-s67": {
+  "c5-s69": {
     "source": "名之曰「戌」。",
     "translation": "Name it ‘K’."
   },
-  "c5-s68": {
+  "c5-s70": {
     "source": "\n\t為是「戊」遍。",
     "translation": "Do this for ‘K’ times."
   },
-  "c5-s69": {
+  "c5-s71": {
     "source": "\n\t\t乘「戊」以「戌」。",
     "translation": "Multiply ‘E’ by ‘K’."
   },
-  "c5-s70": {
+  "c5-s72": {
     "source": "名之曰「甲」。",
     "translation": "Name it ‘A’."
   },
-  "c5-s71": {
+  "c5-s73": {
     "source": "\n\t\t\t若「甲」小於十者。",
     "translation": "If ‘A’ is less than ten."
   },
-  "c5-s72": {
+  "c5-s74": {
     "source": "\n\t\t\t\t吾有四言。",
     "translation": "I have four words."
   },
-  "c5-s73": {
+  "c5-s75": {
     "source": "曰「戌」",
     "translation": "Say ‘K’."
   },
-  "c5-s74": {
+  "c5-s76": {
     "source": "曰「戊」",
     "translation": "Say ‘E’."
   },
-  "c5-s75": {
+  "c5-s77": {
     "source": "曰『如』曰「甲」。",
     "translation": "Say “is equal to”; say ‘A’."
   },
-  "c5-s76": {
+  "c5-s78": {
     "source": "書之。",
     "translation": "Write it down."
   },
-  "c5-s77": {
-    "source": "\n\t\t\t若非\n\t\t\t\t吾有三言。",
-    "translation": "If not, I have three words."
+  "c5-s79": {
+    "source": "\n\t\t\t若非",
+    "translation": "If not,"
   },
-  "c5-s78": {
+  "c5-s80": {
+    "source": "\n\t\t\t\t吾有三言。",
+    "translation": "I have three words."
+  },
+  "c5-s81": {
     "source": "曰「戌」",
     "translation": "Say ‘K’."
   },
-  "c5-s79": {
+  "c5-s82": {
     "source": "曰「戊」",
     "translation": "Say ‘E’."
   },
-  "c5-s80": {
+  "c5-s83": {
     "source": "曰「甲」。",
     "translation": "Say ‘A’."
   },
-  "c5-s81": {
+  "c5-s84": {
     "source": "書之也。",
     "translation": "Write it down."
   },
-  "c5-s82": {
+  "c5-s85": {
     "source": "\n\t\t\t減「戌」以一。",
     "translation": "Subtract ‘K’ by one."
   },
-  "c5-s83": {
+  "c5-s86": {
     "source": "昔之「戌」者。",
     "translation": "The ‘K’ of old."
   },
-  "c5-s84": {
+  "c5-s87": {
     "source": "今其是矣。",
     "translation": "Now it is that way."
   },
-  "c5-s85": {
+  "c5-s88": {
     "source": "\n\t云云。",
     "translation": "Thus and thus."
   },
-  "c5-s86": {
+  "c5-s89": {
     "source": "\n\t減「戊」以一。",
     "translation": "Subtract ‘E’ by one."
   },
-  "c5-s87": {
+  "c5-s90": {
     "source": "昔之「戊」者。",
     "translation": "The ‘E’ of old."
   },
-  "c5-s88": {
+  "c5-s91": {
     "source": "今其是矣。",
     "translation": "Now it is that way."
   },
-  "c5-s89": {
+  "c5-s92": {
     "source": "\n云云。",
     "translation": "Thus and thus."
   },
-  "c5-s90": {
+  "c5-s93": {
     "source": "乃得`九 九 八十一 八 九 七十二`至`一一如一`諸辭。",
     "translation": "Thereafter one obtains the words ‘9 x 9, Eighty-One; 8 x 9, Seventy-Two’ to ‘1 x 1, is equal to one’ etc."
   },
-  "c5-s91": {
+  "c5-s94": {
     "source": "故曰。",
     "translation": "Therefore, it is said,"
   },
-  "c5-s92": {
+  "c5-s95": {
     "source": "機器之代人力之尤甚。",
     "translation": "“Machines surpass human labor greatly."
   },
-  "c5-s93": {
+  "c5-s96": {
     "source": "書少乃得多。",
     "translation": "A little writing yields much."
   },
-  "c5-s94": {
+  "c5-s97": {
     "source": "事半而功倍者。",
     "translation": "Work half and reap double the reward."
   },
-  "c5-s95": {
+  "c5-s98": {
     "source": "循環也。",
     "translation": "This is looping."
   },
-  "c5-s96": {
+  "c5-s99": {
     "source": "非唯九九歌訣。",
     "translation": "Not merely the Nine–Nine mnemonic."
   },
-  "c5-s97": {
+  "c5-s100": {
     "source": "雖千千歌決。",
     "translation": "Even a thousandfold chorus of mnemonic verses."
   },
-  "c5-s98": {
+  "c5-s101": {
     "source": "亦在彈指間耳。",
     "translation": "Are likewise accomplished within the snap of a finger."
   },
-  "c5-s99": {
+  "c5-s102": {
     "source": "試易首句如是。",
     "translation": "Let us try, then, change the opening line as such:"
   },
-  "c5-s100": {
+  "c5-s103": {
     "source": "有數九百九十九。",
     "translation": "There are a number of nine hundred and ninety–nine."
   },
-  "c5-s101": {
+  "c5-s104": {
     "source": "名之曰「始」。",
     "translation": "It is named ‘Begin’."
   },
-  "c5-s102": {
+  "c5-s105": {
     "source": "乃得`九百九十九 九百九十九 九十九萬八千零一`至`一一如一`。",
     "translation": "One thereby obtains ‘999 999 998,001’ through ‘1 x 1, is equal to 1’."
   },
-  "c5-s103": {
+  "c5-s106": {
     "source": "計四十九萬餘行也。",
     "translation": "They amount, in sum, to some four hundred and ninety thousand odd lines."
   },
-  "c5-s104": {
+  "c5-s107": {
     "source": "使人手書之。",
     "translation": "To set men to write them by hand."
   },
-  "c5-s105": {
+  "c5-s108": {
     "source": "則非累日不能盡矣。",
     "translation": "Then, not without many days would they be completed."
   },
-  "c5-s106": {
+  "c5-s109": {
     "source": "或問曰。",
     "translation": "Someone asks,"
   },
-  "c5-s107": {
+  "c5-s110": {
     "source": "世事茫茫難自料。",
     "translation": "The affairs of the world are vast and hard to reckon."
   },
-  "c5-s108": {
+  "c5-s111": {
     "source": "今不能預卜其遍數之多少。",
     "translation": "At present, one cannot foretell how many times they will run."
   },
-  "c5-s109": {
+  "c5-s112": {
     "source": "乃於循環之中。",
     "translation": "Yet, within Loops,"
   },
-  "c5-s110": {
+  "c5-s113": {
     "source": "有非常之境。",
     "translation": "there may arise an extraordinary condition."
   },
-  "c5-s111": {
+  "c5-s114": {
     "source": "遽然欲止者。",
     "translation": "Which abruptly would fain stop."
   },
-  "c5-s112": {
+  "c5-s115": {
     "source": "當若何耶。",
     "translation": "What then shall be done?"
   },
-  "c5-s113": {
+  "c5-s116": {
     "source": "曰。",
     "translation": "It is answered,"
   },
-  "c5-s114": {
+  "c5-s117": {
     "source": "當用`乃止`。",
     "translation": "One should employ ‘Stop’."
   },
-  "c5-s115": {
+  "c5-s118": {
     "source": "又問曰。",
     "translation": "Again, one asks,"
   },
-  "c5-s116": {
+  "c5-s119": {
     "source": "今不欲盡止。",
     "translation": "Now, one does not wish to halt completely."
   },
-  "c5-s117": {
+  "c5-s120": {
     "source": "唯欲直入次遍者。",
     "translation": "One only wishes to proceed straight into the next pass."
   },
-  "c5-s118": {
+  "c5-s121": {
     "source": "當若何耶。",
     "translation": "What then shall be done?"
   },
-  "c5-s119": {
+  "c5-s122": {
     "source": "曰。",
     "translation": "It is answered,"
   },
-  "c5-s120": {
+  "c5-s123": {
     "source": "當用`乃止是遍`也。",
     "translation": "One should employ ‘Stop for this pass’ (continue)."
   },
-  "c5-s121": {
+  "c5-s124": {
     "source": "例曰。",
     "translation": "For example,"
   },
-  "c5-s122": {
+  "c5-s125": {
     "source": "九章算術有更相減損術。",
     "translation": "In the _Nine Chapters on the Mathematical Art_, there is the Art of Mutual Alternating Subtraction."
   },
-  "c5-s123": {
+  "c5-s126": {
     "source": "所以求最大等數也。",
     "translation": "It is used to seek the greatest common measure."
   },
-  "c5-s124": {
+  "c5-s127": {
     "source": "等數者。",
     "translation": "As for common measures —"
   },
-  "c5-s125": {
+  "c5-s128": {
     "source": "猶因數也。",
     "translation": "they are akin to divisors."
   },
-  "c5-s126": {
+  "c5-s129": {
     "source": "術曰。",
     "translation": "The Method declares,"
   },
-  "c5-s127": {
+  "c5-s130": {
     "source": "可半者半之。",
     "translation": "If it may be halved, then halve it."
   },
-  "c5-s128": {
+  "c5-s131": {
     "source": "不可半者。",
     "translation": "If it cannot be halved,"
   },
-  "c5-s129": {
+  "c5-s132": {
     "source": "副置分母。",
     "translation": "set aside, as an adjunct, the denominator."
   },
-  "c5-s130": {
+  "c5-s133": {
     "source": "子之數。",
     "translation": "The lesser number."
   },
-  "c5-s131": {
+  "c5-s134": {
     "source": "以少減多。",
     "translation": "Use the lesser to reduce the greater."
   },
-  "c5-s132": {
+  "c5-s135": {
     "source": "更相減損。",
     "translation": "Subtract each other alternately."
   },
-  "c5-s133": {
+  "c5-s136": {
     "source": "求其等也。",
     "translation": "Seek when they become equal."
   },
-  "c5-s134": {
+  "c5-s137": {
     "source": "以等數約之。",
     "translation": "By their common number, reduce them."
   },
-  "c5-s135": {
+  "c5-s138": {
     "source": "今取不可半者之例。",
     "translation": "Now take the example of those which cannot be halved."
   },
-  "c5-s136": {
+  "c5-s139": {
     "source": "編程如是。",
     "translation": "Such is the way of programming."
   },
-  "c5-s137": {
+  "c5-s140": {
     "source": "吾有二數。",
     "translation": "I possess two numbers."
   },
-  "c5-s138": {
+  "c5-s141": {
     "source": "曰九十一。",
     "translation": "One is ninety-one."
   },
-  "c5-s139": {
+  "c5-s142": {
     "source": "曰四十九。",
     "translation": "One is forty-nine."
   },
-  "c5-s140": {
+  "c5-s143": {
     "source": "名之曰「甲」",
     "translation": "Name it ‘A’."
   },
-  "c5-s141": {
+  "c5-s144": {
     "source": "曰「乙」。",
     "translation": "Name it ‘B’."
   },
-  "c5-s142": {
+  "c5-s145": {
     "source": "\n恆為是。",
     "translation": "Constantly do this."
   },
-  "c5-s143": {
+  "c5-s146": {
     "source": "\n\t若「甲」等於「乙」者。",
     "translation": "If ‘A’ equals ‘B’,"
   },
-  "c5-s144": {
+  "c5-s147": {
     "source": "\n\t\t乃止。",
     "translation": "then, cease."
   },
-  "c5-s145": {
+  "c5-s148": {
     "source": "\n\t或若「甲」大於「乙」者。",
     "translation": "Or, if ‘A’ is greater than ‘B’,"
   },
-  "c5-s146": {
+  "c5-s149": {
     "source": "\n\t\t減「甲」以「乙」。",
     "translation": "subtract ‘B’ from ‘A’."
   },
-  "c5-s147": {
+  "c5-s150": {
     "source": "昔之「甲」者。",
     "translation": "The former ‘A’."
   },
-  "c5-s148": {
+  "c5-s151": {
     "source": "今其是矣。",
     "translation": "Now it is thus."
   },
-  "c5-s149": {
+  "c5-s152": {
     "source": "\n\t若非。",
     "translation": "If not,"
   },
-  "c5-s150": {
+  "c5-s153": {
     "source": "\n\t\t減「乙」以「甲」。",
     "translation": "subtract ‘A’ from ‘B’."
   },
-  "c5-s151": {
+  "c5-s154": {
     "source": "昔之「乙」者。",
     "translation": "The former ‘B’."
   },
-  "c5-s152": {
+  "c5-s155": {
     "source": "今其是矣。",
     "translation": "Now it is thus."
   },
-  "c5-s153": {
+  "c5-s156": {
     "source": "\n\t也。",
     "translation": "Thus."
   },
-  "c5-s154": {
+  "c5-s157": {
     "source": "\n云云。",
     "translation": "Thus and thus."
   },
-  "c5-s155": {
+  "c5-s158": {
     "source": "\n夫「甲」書之。",
     "translation": "As for ‘A,’ write it down."
   },
-  "c5-s156": {
+  "c5-s159": {
     "source": "夫更相減損之時。",
     "translation": "Regarding the time of mutual alternation subtraction —"
   },
-  "c5-s157": {
+  "c5-s160": {
     "source": "茫茫然不知其何時為等焉。",
     "translation": "One stands bewildered, not knowing when they shall be equal."
   },
-  "c5-s158": {
+  "c5-s161": {
     "source": "故聊曰`恆為是`也。",
     "translation": "Therefore, briefly say, 'Constantly do this'."
   },
-  "c5-s159": {
+  "c5-s162": {
     "source": "既等。",
     "translation": "Once equal."
   },
-  "c5-s160": {
+  "c5-s163": {
     "source": "乃毋須更為也。",
     "translation": "Then there is no need to proceed further."
   },
-  "c5-s161": {
+  "c5-s164": {
     "source": "是`乃止`之用也。",
     "translation": "This is the use of 'Stop'."
   },
-  "c5-s162": {
+  "c5-s165": {
     "source": "例曰。",
     "translation": "For example,"
   },
-  "c5-s163": {
+  "c5-s166": {
     "source": "陰數者。",
     "translation": "As for Yin (even) numbers —"
   },
-  "c5-s164": {
+  "c5-s167": {
     "source": "六八也。",
     "translation": "They are six and eight."
   },
-  "c5-s165": {
+  "c5-s168": {
     "source": "陽數者。",
     "translation": "As for Yang (odd) numbers —"
   },
-  "c5-s166": {
+  "c5-s169": {
     "source": "七九也。",
     "translation": "They are seven and nine."
   },
-  "c5-s167": {
+  "c5-s170": {
     "source": "今欲求百以內陰數之合。",
     "translation": "Now one wishes to seek the sum of the yin numbers within a hundred."
   },
-  "c5-s168": {
+  "c5-s171": {
     "source": "作何書。",
     "translation": "What program shall be written?"
   },
-  "c5-s169": {
+  "c5-s172": {
     "source": "曰。",
     "translation": "It is said,"
   },
-  "c5-s170": {
+  "c5-s173": {
     "source": "吾有二數。",
     "translation": "I have two numbers."
   },
-  "c5-s171": {
+  "c5-s174": {
     "source": "名之曰「甲」",
     "translation": "Name one it 'A'."
   },
-  "c5-s172": {
+  "c5-s175": {
     "source": "曰「乙」。",
     "translation": "Name one 'B'."
   },
-  "c5-s173": {
+  "c5-s176": {
     "source": "\n為是百遍。",
     "translation": "Do this one hundred times."
   },
-  "c5-s174": {
+  "c5-s177": {
     "source": "\n\t加「甲」以一。",
     "translation": "Add one to 'A'."
   },
-  "c5-s175": {
+  "c5-s178": {
     "source": "昔之「甲」者。",
     "translation": "The former 'A'."
   },
-  "c5-s176": {
+  "c5-s179": {
     "source": "今其是矣。",
     "translation": "Now it is thus."
   },
-  "c5-s177": {
+  "c5-s180": {
     "source": "\n\t除「甲」以二。",
     "translation": "Divide 'A' by two."
   },
-  "c5-s178": {
+  "c5-s181": {
     "source": "所餘幾何。",
     "translation": "What is the remainder?"
   },
-  "c5-s179": {
+  "c5-s182": {
     "source": "若其等於一者。",
     "translation": "If it equals one."
   },
-  "c5-s180": {
+  "c5-s183": {
     "source": "\n\t\t乃止是遍也。",
     "translation": "Stop for this pass."
   },
-  "c5-s181": {
+  "c5-s184": {
     "source": "\n\t加「甲」於「乙」。",
     "translation": "Add 'A' to 'B'."
   },
-  "c5-s182": {
+  "c5-s185": {
     "source": "昔之「乙」者。",
     "translation": "The former 'B'."
   },
-  "c5-s183": {
+  "c5-s186": {
     "source": "今其是矣。",
     "translation": "Now it is thus."
   },
-  "c5-s184": {
+  "c5-s187": {
     "source": "\n云云。",
     "translation": "Thus and thus."
   },
-  "c5-s185": {
+  "c5-s188": {
     "source": "\n夫「乙」。",
     "translation": "As for 'B,' "
   },
-  "c5-s186": {
+  "c5-s189": {
     "source": "書之。",
     "translation": "Write it down."
   },
-  "c5-s187": {
+  "c5-s190": {
     "source": "或問曰。",
     "translation": "Some ask,"
   },
-  "c5-s188": {
+  "c5-s191": {
     "source": "不若易`等於一`為`等於零`。",
     "translation": "“Would it not be better to change ‘equals one’ to ‘equals zero’?"
   },
-  "c5-s189": {
+  "c5-s192": {
     "source": "並移`加「甲」`之句於決策中。",
     "translation": "Also, move the clause ‘add ‘A’’ into the decision."
   },
-  "c5-s190": {
+  "c5-s193": {
     "source": "無用`乃止是遍`矣。",
     "translation": "Thus, the clause ‘Stop for this pass’ is rendered unnecessary."
   },
-  "c5-s191": {
+  "c5-s194": {
     "source": "於吾子之法何異歟。",
     "translation": "How, then, does it differ from thy method?”"
   },
-  "c5-s192": {
+  "c5-s195": {
     "source": "曰然。",
     "translation": "It is answered, “Yes."
   },
-  "c5-s193": {
+  "c5-s196": {
     "source": "於機器者是無異也。",
     "translation": "To the machine, it is no different."
   },
-  "c5-s194": {
+  "c5-s197": {
     "source": "唯文風之別矣。",
     "translation": "Only the literary style differs.”"
   },
-  "c5-s195": {
+  "c5-s198": {
     "source": "或曰「無暇掩聰」。",
     "translation": "Some say, “No leisure to conceal one’s wit.”"
   },
-  "c5-s196": {
+  "c5-s199": {
     "source": "或曰「不及掩耳」。",
     "translation": "Some say, “It is too late to cover one’s ears.”"
   },
-  "c5-s197": {
+  "c5-s200": {
     "source": "皆因作者之喜惡也。",
     "translation": "All spring from the author's preferences."
   },
-  "c5-s198": {
+  "c5-s201": {
     "source": "愚以為。",
     "translation": "I, in my humble judgment,"
   },
-  "c5-s199": {
+  "c5-s202": {
     "source": "凡循環之體冗長者。",
     "translation": "Whenever the body of a loop is long-winded,"
   },
-  "c5-s200": {
+  "c5-s203": {
     "source": "預以`乃止是遍`排其特例。",
     "translation": "Preemptively, use “Stop for this pass” to account for its special cases."
   },
-  "c5-s201": {
+  "c5-s204": {
     "source": "可免於決策重層累然之苦。",
     "translation": "Thus one may be spared the burden of nested, cumbersome decision-making."
   },
-  "c5-s202": {
+  "c5-s205": {
     "source": "人或有不以為然者。",
     "translation": "Some may dissent."
   },
-  "c5-s203": {
+  "c5-s206": {
     "source": "曰。",
     "translation": "They say,"
   },
-  "c5-s204": {
+  "c5-s207": {
     "source": "去止之方既多。",
     "translation": "“There are many ways to remove the stop."
   },
-  "c5-s205": {
+  "c5-s208": {
     "source": "蟄伏深隱。",
     "translation": "They lie in deep concealment."
   },
-  "c5-s206": {
+  "c5-s209": {
     "source": "乃至難以理喻。",
     "translation": "So much so as to be difficult to explain."
   },
-  "c5-s207": {
+  "c5-s210": {
     "source": "是取亂之道也。",
     "translation": "This is a way of inviting disorder.”"
   },
-  "c5-s208": {
+  "c5-s211": {
     "source": "是亦理也。",
     "translation": "That, likewise, has its reason."
   },
-  "c5-s209": {
+  "c5-s212": {
     "source": "編程之兩難者多如是。",
     "translation": "Many of the quandaries in programming are of this sort."
   },
-  "c5-s210": {
+  "c5-s213": {
     "source": "君子可自取所好焉。",
     "translation": "The gentleman may adopt his preference."
   },
-  "c5-s211": {
+  "c5-s214": {
     "source": "循環之術。",
     "translation": "The art of loops."
   },
-  "c5-s212": {
+  "c5-s215": {
     "source": "至是略備矣。",
     "translation": "Thus, it is now briefly complete."
   },
-  "c5-s213": {
+  "c5-s216": {
     "source": "總其五章所知。",
     "translation": "To sum up what the five chapters have taught."
   },
-  "c5-s214": {
+  "c5-s217": {
     "source": "亦頗有可為者。",
     "translation": "There remains much that may yet be undertaken."
   },
-  "c5-s215": {
+  "c5-s218": {
     "source": "吾聞之。",
     "translation": "I have heard that,"
   },
-  "c5-s216": {
+  "c5-s219": {
     "source": "夫欲長於編程者。",
     "translation": "As for those who would excel in programming —"
   },
-  "c5-s217": {
+  "c5-s220": {
     "source": "唯學而立用。",
     "translation": "They must, above all, learn, and set their learning to use."
   },
-  "c5-s218": {
+  "c5-s221": {
     "source": "用而不止。",
     "translation": "Apply it, and cease not."
   },
-  "c5-s219": {
+  "c5-s222": {
     "source": "其勝束其手而觀其書百倍。",
     "translation": "It exceeds the sloth of sitting hand-bound, absorbed only in books by a hundredfold."
   },
-  "c5-s220": {
+  "c5-s223": {
     "source": "善哉此言。",
     "translation": "Good indeed, these words."
   },
-  "c5-s221": {
+  "c5-s224": {
     "source": "學而不思則罔。",
     "translation": "To learn without reflection, is to be bewildered."
   },
-  "c5-s222": {
+  "c5-s225": {
     "source": "吾聞諸仲尼。",
     "translation": "I have heard it from Confucius,"
   },
-  "c5-s223": {
+  "c5-s226": {
     "source": "請試之。",
     "translation": "Pray, let us put it to the test."
   },
-  "c5-s224": {
+  "c5-s227": {
     "source": "以為熟習也。",
     "translation": "It is, that one may thereby become proficient."
   }
