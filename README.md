@@ -80,7 +80,7 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
 ## Working the Pipeline
 
 1. **Prepare chapter data**
-   - Run processor scripts in order (`parse-markdown.py`, `build-sentences.py`, `segment-text.py`, `translate.py`, `transcribe.py`, `build-segmented-transcripts.py`). Use `uv run` for each, e.g. `cd processor && uv run python segment-text.py`.
+   - Run processor scripts in order (`parse-markdown.py`, `build-sentences.py`, `segment-text.py`, `translate.py`, `transcribe.py`, `build-segmented-transcripts.py`). Use `uv run` for each, e.g. `cd processor && uv run python segment-text.py`. Use `-c <chapter>` for `build-segmented-transcripts.py` to limit scope.
    - Titles follow `transcribe-titles.py` → `synthesize-titles.py`.
 
 2. **Synthesize audio**

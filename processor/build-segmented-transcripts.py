@@ -204,7 +204,7 @@ def build_segment_ipa(
     return " ".join(ipa_chunks).strip()
 
 
-def reconstruct_segment_transcripts(root: Path) -> None:
+def reconstruct_segment_transcripts(root: Path, chapter_filter: int | None = None) -> None:
     transcripts_dir = root / "renderer" / "public" / "transcripts"
     build_dir = transcripts_dir / "build"
 
@@ -227,6 +227,14 @@ def reconstruct_segment_transcripts(root: Path) -> None:
         if not isinstance(chapter_id, str):
             continue
         segments_by_chapter[chapter_id].append(seg)
+
+    if chapter_filter is not None:
+        target_id = f"c{chapter_filter}"
+        if target_id in segments_by_chapter:
+            segments_by_chapter = {target_id: segments_by_chapter[target_id]}
+        else:
+            print(f"Chapter {chapter_filter} not found in segments.")
+            return
 
     print("Building segment-level IPA transcripts from sentence data...")
 
@@ -279,8 +287,14 @@ def reconstruct_segment_transcripts(root: Path) -> None:
 
 
 def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Build segmented transcripts.")
+    parser.add_argument("-c", "--chapter", type=int, help="Chapter number to build")
+    args = parser.parse_args()
+
     root = Path(__file__).resolve().parents[1]
-    reconstruct_segment_transcripts(root)
+    reconstruct_segment_transcripts(root, chapter_filter=args.chapter)
 
 
 if __name__ == "__main__":
