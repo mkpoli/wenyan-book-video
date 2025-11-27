@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 from any_llm import completion
 
 
-def _load_translation_config() -> tuple[str, str]:
+def _load_translation_config() -> tuple[str, str, str]:
     """
     Load translation configuration from translate.toml.
-    Returns (model_name, translation_prompt) tuple.
+    Returns (model_name, system_prompt, translation_prompt) tuple.
     Raises ValueError if config file is missing, invalid, or required fields are missing.
     """
     config_path = Path(__file__).resolve().parent / "translate.toml"
@@ -38,6 +38,7 @@ def _load_translation_config() -> tuple[str, str]:
         )
 
     model_name = table.get("model_name")
+    system_prompt = table.get("system_prompt")
     translation_prompt = table.get("translation_prompt")
 
     if not isinstance(model_name, str):
@@ -50,16 +51,21 @@ def _load_translation_config() -> tuple[str, str]:
             f"Config file {config_path} must have 'translation_prompt' as a string in [translation] section"
         )
 
+    if not isinstance(system_prompt, str):
+        raise ValueError(
+            f"Config file {config_path} must have 'system_prompt' as a string in [translation] section"
+        )
+
     if "{text}" not in translation_prompt:
         raise ValueError(
             f"Config file {config_path} translation_prompt must contain {{text}} placeholder"
         )
 
-    return model_name, translation_prompt
+    return model_name, system_prompt, translation_prompt
 
 
 # Load configuration from file (required)
-MODEL_NAME, TRANSLATION_PROMPT = _load_translation_config()
+MODEL_NAME, SYSTEM_PROMPT, TRANSLATION_PROMPT = _load_translation_config()
 
 API_DELAY_SECONDS = 1.0  # Small delay between batches
 MAX_SENTENCES_PER_BATCH = 30
@@ -283,10 +289,7 @@ def _call_translation_api(
     """
     text_block = _build_text_block_for_batch(translations_data, batch_ids)
     prompt = TRANSLATION_PROMPT.format(text=text_block)
-    system_content = (
-        "You are an expert translator specializing in Classical Chinese "
-        "to English translation, particularly for technical and literary works."
-    )
+    system_content = SYSTEM_PROMPT
 
     # Debug: print exact prompt with separators
     print("\n" + "=" * 80)

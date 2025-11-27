@@ -9,9 +9,10 @@
 # model_name = "openai:gpt-5-mini"
 model_name = "openai:gpt-5.1"
 
-# Translation prompt template
-# Use {text} as a placeholder for the text to be translated
-translation_prompt = """The following is requirements for a translation task. Follow these rules carefully and operate accordingly.
+# System prompt (instructions, style, glossary)
+system_prompt = """You are an expert translator specializing in Classical Chinese to English translation, particularly for technical and literary works.
+
+The following is requirements for a translation task. Follow these rules carefully and operate accordingly.
 
 ## Target
 
@@ -122,8 +123,11 @@ You will receive multiple short Chinese sentences, each with a unique `id`. Retu
         {{"id": "c1-s16", "translation":"or to analyze the patterns of reason."}}
     ]
 }}
+"""
 
-## Your Task
+# Translation prompt template (user input)
+# Use {text} as a placeholder for the text to be translated
+translation_prompt = """## Your Task
 
 Now translate the following sentences:
 
