@@ -46,6 +46,7 @@ Use below for meaning consistency, but be flexible and accommdating, not literal
     - "易曰", "周易" → "The Book of Changes"
     - "易矣", "易乎" → "Easy"
     - "易首句" → "Modify the first line"
+- For book names, if it has English translated title, such as _the Book of Changes_, use them, if not, use Pinyin transcription. Quote book names with "_", such as "_The Book of Changes_".
 
 ### Code
 - "甲" → "A", "乙" → "B", "丙" → "C", "丁" → "D", "戊" → "E", "己" → "F", "庚" → "G", "辛" → "H", "壬" → "I", "癸" → "J", etc.
