@@ -5,15 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "dotenv>=0.9.9",
+    "python-dotenv>=1.0.0",
     "elevenlabs>=2.22.0",
     "marimo>=0.17.7",
     "openai>=1.0.0",
     "regex>=2025.11.3",
     "requests>=2.31.0",
+    "any-llm-sdk[all]>=0.1.0",
+    "nest-asyncio>=1.6.0",
 ]
 
 [dependency-groups]
-dev = [
-    "ruff>=0.14.5",
-]
+dev = ["ruff>=0.14.5"]

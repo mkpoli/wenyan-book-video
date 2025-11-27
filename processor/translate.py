@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from any_llm import completion
 
 
 def _load_translation_config() -> tuple[str, str]:
@@ -88,15 +88,18 @@ def _sentence_sort_key(sent_id: str) -> int:
     return 0
 
 
-def _load_client() -> OpenAI:
+def _setup_any_llm() -> None:
     load_dotenv()
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError(
-            "OPENAI_API_KEY environment variable not set. "
-            "Please set it in your .env file or environment."
-        )
-    return OpenAI(api_key=api_key)
+    # any-llm will automatically pick up API keys from environment variables
+    # e.g. OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.
+    # api_key = os.getenv("OPENAI_API_KEY")
+    # if not api_key:
+    #     raise ValueError(
+    #         "OPENAI_API_KEY environment variable not set. "
+    #         "Please set it in your .env file or environment."
+    #     )
+    # return OpenAI(api_key=api_key)
+    pass
 
 
 def _prepare_translation_files(
@@ -271,7 +274,6 @@ def _build_text_block_for_batch(
 
 
 def _call_translation_api(
-    client: OpenAI,
     batch_ids: List[str],
     translations_data: Dict[str, Dict[str, str]],
 ) -> Dict[str, str]:
@@ -299,13 +301,26 @@ def _call_translation_api(
 
     print(f"  🤖 Translating {len(batch_ids)} sentence(s)...")
 
-    response = client.chat.completions.create(
-        model=MODEL_NAME,
-        messages=[
+    # Parse provider and model from MODEL_NAME if possible
+    # e.g. "openai:gpt-4o" -> provider="openai", model="gpt-4o"
+    provider = None
+    model = MODEL_NAME
+    if ":" in MODEL_NAME:
+        parts = MODEL_NAME.split(":", 1)
+        if len(parts) == 2:
+            provider, model = parts
+
+    kwargs = {
+        "model": model,
+        "messages": [
             {"role": "system", "content": system_content},
             {"role": "user", "content": prompt},
         ],
-    )
+    }
+    if provider:
+        kwargs["provider"] = provider
+
+    response = completion(**kwargs)
 
     raw = (response.choices[0].message.content or "").strip()
     print("  📦 Raw response preview:")
@@ -341,7 +356,6 @@ def _call_translation_api(
 
 
 def _translate_chapter(
-    client: OpenAI,
     sentences_path: Path,
     translations_path: Path,
 ) -> bool:
@@ -377,7 +391,7 @@ def _translate_chapter(
             print(f"\n  Batch {batch_idx}/{len(batches)}: {len(batch_ids)} sentence(s)")
             try:
                 batch_translations = _call_translation_api(
-                    client, batch_ids, translations_data
+                    batch_ids, translations_data
                 )
             except Exception as exc:
                 print(f"  ❌ Error translating batch {batch_idx}: {exc}")
@@ -437,7 +451,7 @@ def main() -> None:
     if not sentences_dir.exists():
         raise SystemExit(f"Sentences directory not found: {sentences_dir}")
 
-    client = _load_client()
+    _setup_any_llm()
     chapter_pairs = _prepare_translation_files(sentences_dir, translations_dir)
 
     wanted: List[str] = []
@@ -450,7 +464,7 @@ def main() -> None:
         chapter_id = sentences_path.stem.split(".")[0]  # "c1"
         if wanted and chapter_id not in wanted:
             continue
-        did_process = _translate_chapter(client, sentences_path, translations_path)
+        did_process = _translate_chapter(sentences_path, translations_path)
         if did_process:
             processed_any = True
             break
