@@ -393,10 +393,7 @@
         "c7-s200",
         "c7-s201",
         "c7-s202",
-        "c7-s203",
-        "c7-s204",
-        "c7-s205",
-        "c7-s206"
+        "c7-s203"
       ],
       "isCodeBlock": true
     },
@@ -405,6 +402,9 @@
       "chapterId": "c7",
       "segmentIndex": 25,
       "sentenceIds": [
+        "c7-s204",
+        "c7-s205",
+        "c7-s206",
         "c7-s207",
         "c7-s208",
         "c7-s209",
@@ -503,8 +503,7 @@
         "c7-s254",
         "c7-s255",
         "c7-s256",
-        "c7-s257",
-        "c7-s258"
+        "c7-s257"
       ],
       "isCodeBlock": false
     },
@@ -513,6 +512,7 @@
       "chapterId": "c7",
       "segmentIndex": 32,
       "sentenceIds": [
+        "c7-s258",
         "c7-s259",
         "c7-s260",
         "c7-s261",
