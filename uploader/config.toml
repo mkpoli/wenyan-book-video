@@ -1,0 +1,29 @@
+[templates]
+title = "The Wenyan Book | Chapter {idx}: {english_title}"
+description = """
+This video presents Chapter {idx}: 「{chinese_title}」 {english_title} from 《文言陰符》 (An Introduction to Programming in Wenyan Language), a book by Huang Lingdong, read aloud in reconstructed Middle Chinese using a text-to-speech synthesis trained on the linguistically reconstructed Qieyun (切韻, Tshet-uinh) phonological system by cinix.
+
+The IPA transcription follows cinix’s reconstruction, while the romanization adopts TUPA (切韵拼音, Tshet-Uinh Phonetic Alphabet), a system used by contemporary scholars of Chinese historical phonology. English translations are included in the video, verified and aligned by me for accuracy.
+
+The Wenyan Language (文言) is a programming language written entirely in the style of Classical Chinese, merging modern computing logic with ancient literary form. This reading project aims to provide authentic experience at understanding the work.
+
+The fonts used include Qiji Font (by Huang), IM Fell DW Pica, and Charis SIL, among others.
+
+Project Repository: https://github.com/mkpoli/wenyan-book-video
+Wenyan Language: https://wy-lang.org
+"""
+
+[chapters]
+1 = { chinese = "明義第一", english = "Clarifying Meaning" }
+2 = { chinese = "變數第二", english = "Variables" }
+3 = { chinese = "算術第三", english = "Arithmetic" }
+4 = { chinese = "決策第四", english = "Decision-Making" }
+5 = { chinese = "循環第五", english = "Loops" }
+6 = { chinese = "行列第六", english = "Arrays" }
+7 = { chinese = "言語第七", english = "Language" }
+8 = { chinese = "方術第八", english = "Functions" }
+9 = { chinese = "府庫第九", english = "Memory" }
+10 = { chinese = "格物第十", english = "Objects" }
+11 = { chinese = "克禍第十一", english = "Exceptions" }
+12 = { chinese = "圖畫第十二", english = "Plotting" }
+13 = { chinese = "宏略第十三", english = "Planning" }
