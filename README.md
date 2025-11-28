@@ -12,6 +12,7 @@ Pipeline that converts the Wenyan Book (《文言陰符》) into narrated video 
 | `renderer/public/**` | Generated JSON, transcripts, and audio assets that the renderer consumes. |
 | `renderer/src/generated/` | Segment metadata emitted by `bun run scripts/generate-segments.ts`. |
 | `transcription-utils/` | Helpers shared by multiple processor scripts. |
+| `uploader/` | Python tools to upload generated videos to YouTube with metadata and thumbnails. |
 
 Large media trees such as `renderer/public/audios/`, `renderer/public/transcripts/build/`, and `renderer/src/generated/segments-*.ts` are reproducible—regenerate them via the pipeline instead of editing by hand.
 
@@ -34,6 +35,11 @@ flowchart LR
         VC[voice-change.py → renderer/public/audios/female]
         TT[transcribe-titles.py → renderer/public/transcripts/audio-n.txt]
         TA[synthesize-titles.py → renderer/public/audios/audio-n.mp3]
+        
+        subgraph Utils
+            FG[fill-segment-gaps.py]
+            RS[reconstruct_segment_transcripts.py]
+        end
     end
 
     subgraph Renderer
@@ -41,8 +47,14 @@ flowchart LR
         RV[bun run remotion render → final videos]
     end
 
-    BMD --> PM --> BS --> SG --> TR --> TS --> BS2 --> SY --> VC --> GS --> RV
+    subgraph Uploader
+        UP[python uploader/upload.py → YouTube]
+    end
+
+    BMD --> PM --> BS --> SG --> TR --> TS --> BS2 --> SY --> VC --> GS --> RV --> UP
     PM --> TT --> TA --> GS
+    TS -.-> RS -.-> BS2
+    SG -.-> FG -.-> SG
 ```
 
 Consult [processor/README.md](processor/README.md) for script-by-script details.
@@ -59,7 +71,7 @@ bun install
 ```
 
 - Always use `bun` (`bun install`, `bun run …`) for JavaScript/TypeScript workspaces.
-- Python tooling inside `processor/` is managed by [uv](https://github.com/astral-sh/uv). Run scripts with `uv run …` so imports resolve against the package.
+- Python tooling inside `processor/` and `uploader/` is managed by [uv](https://github.com/astral-sh/uv). Run scripts with `uv run …` so imports resolve against the package.
 
 ### Development Environments
 
@@ -74,7 +86,7 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
 **Manual setup**
 
 1. Install [Bun](https://bun.sh) and run `bun install` at the repo root.
-2. Install uv (`pip install uv` or via package manager) and run `uv sync` inside `processor/`.
+2. Install uv (`pip install uv` or via package manager) and run `uv sync` inside `processor/` and `uploader/`.
 3. Ensure system packages `ffmpeg`, `sox`, and `espeak-ng` are available for the audio pipeline.
 
 ## Working the Pipeline
@@ -82,6 +94,7 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
 1. **Prepare chapter data**
    - Run processor scripts in order (`parse-markdown.py`, `build-sentences.py`, `segment-text.py`, `translate.py`, `transcribe.py`, `build-segmented-transcripts.py`). Use `uv run` for each, e.g. `cd processor && uv run python segment-text.py`. Use `-c <chapter>` for `build-segmented-transcripts.py` to limit scope.
    - Titles follow `transcribe-titles.py` → `synthesize-titles.py`.
+   - Helper scripts: `fill-segment-gaps.py` to fill missing segments, `reconstruct_segment_transcripts.py` to rebuild transcripts from segments.
 
 2. **Synthesize audio**
    - `uv run python synthesize.py` produces raw TTS chunks under `renderer/public/audios/`. Use `-c <chapter>` to limit to one chapter.
@@ -92,6 +105,11 @@ The flake provides Python 3.13, uv, Bun, Node 20, ffmpeg, sox, espeak-ng, git, a
 
 4. **Render videos**
    - Still in `renderer/`, execute `bun run remotion render`. Confirm that the `renderer/src/generated/segments-*.ts` files and audio/transcript assets exist beforehand.
+
+5. **Upload to YouTube**
+   - Configure `uploader/config.toml` and `uploader/client_secrets.json`.
+   - Run `uv run uploader/upload.py <chapter_id>` to upload the rendered video.
+   - Supports thumbnails (`uploader/thumbnails/{id}.png`) and auto-playlist addition.
 
 ### Handy Commands
 
@@ -113,7 +131,7 @@ git commit -m "Update Wenyan book submodule"
 
 ## Troubleshooting
 
-- **Missing Python deps** – `cd processor && uv sync` rehydrates from `uv.lock`.
+- **Missing Python deps** – `cd processor && uv sync` (or `cd uploader && uv sync`) rehydrates from `uv.lock`.
 - **C library/FFmpeg issues** – make sure you are inside `nix develop` or have the binaries installed locally.
 - **Regenerating assets** – delete problematic items under `renderer/public/audios/`, `renderer/public/transcripts/build/`, or `renderer/src/generated/` and rerun the relevant scripts instead of editing the outputs.
 
