@@ -60,7 +60,7 @@ def get_authenticated_service(secrets_file: Path):
     return build("youtube", "v3", credentials=creds)
 
 
-def upload_video(youtube, file_path: Path, title: str, description: str, category_id: str = "27", privacy_status: str = "private", thumbnail_path: Optional[Path] = None):
+def upload_video(youtube, file_path: Path, title: str, description: str, category_id: str = "27", privacy_status: str = "private", thumbnail_path: Optional[Path] = None, playlist_id: Optional[str] = None):
     body = {
         "snippet": {
             "title": title,
@@ -107,6 +107,26 @@ def upload_video(youtube, file_path: Path, title: str, description: str, categor
             print("Thumbnail uploaded!")
         except Exception as e:
             print(f"Error uploading thumbnail: {e}")
+
+    # Add to Playlist
+    if playlist_id:
+        print(f"Adding to playlist: {playlist_id}")
+        try:
+            youtube.playlistItems().insert(
+                part="snippet",
+                body={
+                    "snippet": {
+                        "playlistId": playlist_id,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": video_id
+                        }
+                    }
+                }
+            ).execute()
+            print("Added to playlist!")
+        except Exception as e:
+            print(f"Error adding to playlist: {e}")
             
     return response
 
@@ -127,6 +147,9 @@ def main():
     
     # Load Config
     config = load_config(config_path)
+    
+    # Get Playlist ID
+    playlist_id = config.get("youtube", {}).get("playlist_id")
     
     # Get Chapter Metadata
     chapter_str = str(args.chapter_id)
@@ -176,6 +199,7 @@ def main():
     print(f"Description: (First 3 lines)\n{LINE_DELIMITER.join(description.splitlines()[:3])}...")
     print(f"Privacy:     {args.privacy}")
     print(f"MadeForKids: False")
+    print(f"Playlist:    {playlist_id if playlist_id else 'None'}")
     print("="*40 + "\n")
     
     if args.dry_run:
@@ -190,7 +214,7 @@ def main():
     # Authenticate and Upload
     try:
         youtube = get_authenticated_service(secrets_path)
-        upload_video(youtube, video_path, title, description, privacy_status=args.privacy, thumbnail_path=thumbnail_path)
+        upload_video(youtube, video_path, title, description, privacy_status=args.privacy, thumbnail_path=thumbnail_path, playlist_id=playlist_id)
     except Exception as e:
         print(f"An error occurred: {e}")
         sys.exit(1)

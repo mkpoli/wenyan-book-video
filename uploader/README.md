@@ -46,6 +46,7 @@ After the upload has finished, you can find the video at your YouTube channel as
 -   The script will look for the video file at `renderer/out/chapter{id}.mp4` with given chapter ID.
 -   **Thumbnails**: The script will look for a thumbnail at `uploader/thumbnails/{id}.png`. If found, it will be uploaded.
 -   **Made for Kids**: The video will be explicitly set as "Not Made for Kids" (`selfDeclaredMadeForKids: False`).
+-   **Playlist**: If a `playlist_id` is configured in `config.toml`, the video will be automatically added to that playlist after upload.
 -   You will be asked to confirm the metadata before the upload starts.
 -   On the first run, a browser window (or a link in the console) will open for you to authenticate with your Google account. A `token.json` file will be created to store the credentials for future runs.
 

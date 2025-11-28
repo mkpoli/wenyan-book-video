@@ -13,6 +13,9 @@ Project Repository: https://github.com/mkpoli/wenyan-book-video
 Wenyan Language: https://wy-lang.org
 """
 
+[youtube]
+playlist_id = "PL6iDDw1zodkVc3fV2yUTZ-mV9KqBIxiXq"
+
 [chapters]
 1 = { chinese = "明義第一", english = "Clarifying Meaning" }
 2 = { chinese = "變數第二", english = "Variables" }
