@@ -725,12 +725,14 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             ) : null}
             {englishLineWithItalics ? (
               <p
-                className={`font-serif font-bold leading-[1.8] m-0 whitespace-nowrap min-h-27 flex items-center justify-center ${
+                className={`font-serif font-bold leading-[1.2] m-0 min-h-27 flex items-center justify-center ${
                   formattedEnglishLine && formattedEnglishLine.length > 70
-                    ? formattedEnglishLine.length > 100
-                      ? "text-4xl"
-                      : "text-5xl"
-                    : "text-6xl"
+                    ? `whitespace-pre-line text-balance ${
+                        formattedEnglishLine.length > 100
+                          ? "text-4xl"
+                          : "text-5xl"
+                      }`
+                    : "whitespace-nowrap text-6xl"
                 }`}
               >
                 {englishLineWithItalics}
