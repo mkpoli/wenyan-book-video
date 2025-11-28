@@ -2272,23 +2272,23 @@
       "chapterId": "c7",
       "blockId": "b24",
       "index": 284,
-      "source": "書之。",
+      "source": "書之。』",
       "isCode": true
     },
     {
       "id": "c7-s285",
       "chapterId": "c7",
-      "blockId": "b24",
+      "blockId": "b25",
       "index": 285,
-      "source": "』",
-      "isCode": true
+      "source": "注釋之方既備。",
+      "isCode": false
     },
     {
       "id": "c7-s286",
       "chapterId": "c7",
       "blockId": "b25",
       "index": 286,
-      "source": "注釋之方既備。",
+      "source": "後章之範例。",
       "isCode": false
     },
     {
@@ -2296,14 +2296,6 @@
       "chapterId": "c7",
       "blockId": "b25",
       "index": 287,
-      "source": "後章之範例。",
-      "isCode": false
-    },
-    {
-      "id": "c7-s288",
-      "chapterId": "c7",
-      "blockId": "b25",
-      "index": 288,
       "source": "皆以為剖析。",
       "isCode": false
     }

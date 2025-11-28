@@ -1132,22 +1132,18 @@
     "translation": "“I have a word. It says, ‘This utterance resides within a comment; therefore it shall never come to execution.’”"
   },
   "c7-s284": {
-    "source": "書之。",
-    "translation": "Write it down."
+    "source": "書之。』",
+    "translation": "Write it down.”"
   },
   "c7-s285": {
-    "source": "』",
-    "translation": "”"
-  },
-  "c7-s286": {
     "source": "注釋之方既備。",
     "translation": "Now that the methods of annotation are complete,"
   },
-  "c7-s287": {
+  "c7-s286": {
     "source": "後章之範例。",
     "translation": "the examples in the later chapters"
   },
-  "c7-s288": {
+  "c7-s287": {
     "source": "皆以為剖析。",
     "translation": "will use it for analysis."
   }

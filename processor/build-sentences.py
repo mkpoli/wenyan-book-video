@@ -142,12 +142,19 @@ def split_chinese_sentences(text: str, preserve_spaces: bool = False) -> List[st
             i = j - 1  # Will be incremented at end of loop
         elif char in ("。", "！", "？") and not inside_quotes:
             current_sentence.append(char)
-            processed = "".join(current_sentence)
-            if not preserve_spaces:
-                processed = processed.strip()
-            if processed:
-                sentences.append(processed)
-            current_sentence = []
+            
+            # Check if next char is closing quote
+            next_char = text[i + 1] if i + 1 < length else None
+            if next_char == "』" or next_char == "」":
+                # Don't split here, let the closing quote handler deal with it
+                pass
+            else:
+                processed = "".join(current_sentence)
+                if not preserve_spaces:
+                    processed = processed.strip()
+                if processed:
+                    sentences.append(processed)
+                current_sentence = []
         else:
             current_sentence.append(char)
 
