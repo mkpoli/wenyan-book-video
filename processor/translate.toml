@@ -41,6 +41,8 @@ Topic: Programming basics and a programming language called Wenyan (world's firs
 Use below for meaning consistency, but be flexible and accommdating, not literal word-for-word mapping, adjust depending on context.
 - "計開" → means "Table of Contents", used as "As follows,", or "Let us begin.", can be translated as  "Let us unfold our explanation.", .
 - "至此畧備矣" → "Thus it is now briefly complete."
+- "所以" → "is what is used to [verb/noun]", "is to be utilized for [noun]", "is the means by which...". (Avoid modern "therefore/thus" unless it truly fits the context of logical consequence. In this technical context, it often denotes function/purpose).
+  - e.g. "所以名參數也。" → "is what is used to name the parameters."
 - After a question, "耶。" or "乎。", usually there will be a follow-up answer witf "曰。", translate it as "It is answered," or a like.
 - 易 has three meanings:
     - "易曰", "周易" → "The Book of Changes"
@@ -61,6 +63,13 @@ Use below for meaning consistency, but be flexible and accommdating, not literal
     - "列" → "Lists (arrays)".
     - "物" → "Things (objects)".
     - "術" → "Means (methods)".
+    - Method Declaration Idiom:
+        - "欲行是術。" → "To execute this method,"
+        - "必先得二數。" -> "One must first obtain two numbers."
+        - "曰「甲」" -> "Called 'A'." / "曰「乙」。" -> "Called 'B'."
+    - Variable Assignment/Update Idiom:
+        - "昔之「甲」者。" -> "What was formerly 'A',"
+        - "今其是矣。" -> "now let this be it."
 - Variables: Variable names are always in single quotes. String literals are always in double quotes. Don't mix them up.
     - "吾有一言。曰『……』。名之曰「……」。" → "I have a word." "It says, '……'."; Name it '……'."
     - "有數九。名之曰「……」" -> "There are a number of nine." "It is named '……'." 
