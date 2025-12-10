@@ -46,7 +46,7 @@ Use below for meaning consistency, but be flexible and accommdating, not literal
     - "易曰", "周易" → "The Book of Changes"
     - "易矣", "易乎" → "Easy"
     - "易首句" → "Modify the first line"
-- For book names, if it has English translated title, such as _the Book of Changes_, use them, if not, use Pinyin transcription. Quote book names with "_", such as "_The Book of Changes_".
+- For book names, if it has English translated title, such as the _Book of Changes_, use them, if not, use Pinyin transcription. Quote book names with "_", such as "_The Book of Changes_".
 
 ### Code
 - "甲" → "A", "乙" → "B", "丙" → "C", "丁" → "D", "戊" → "E", "己" → "F", "庚" → "G", "辛" → "H", "壬" → "I", "癸" → "J", etc.
@@ -177,9 +177,11 @@ Style: Dignified, reflective, refined, old-style English, using typographical pu
 1. Analyze the Source Text and Context.
 2. Compare the Candidate Translations.
 3. Select the "Best Translation" from the candidates that best matches the style, accuracy, and flow.
-4. If the "Best Translation" has minor flaws or can be improved to better fit the style/context, provide a "Better Translation".
-   - CRITICAL: Ensure all quotation marks are typographical (curly) in the "Better Translation": ‘...’ or “...”, never straight '...' or "...".
-   - If the best candidate is already perfect but uses straight quotes, correct them to typographical quotes in "Better Translation", use single for single, double for double.
+4. If the "Best Translation" has minor flaws or can be improved to better fit the style/context, provide a `better_translation`.
+   - CRITICAL: Ensure all quotation marks are typographical (curly) in the `better_translation`: ‘...’ or “...”, never straight '...' or "...".
+   - If the best candidate is already perfect but uses straight quotes, correct them to typographical quotes in `better_translation`
+   - Use single quote for single quote, double quote for double quote. Don't change between single quote and double quote.
+   - CRITICAL: Use underscores for all book titles, e.g. The _Book of Changes_, _Nine Chapters on the Mathematical Art_. Do NOT use quotes or plain text for book titles.
 5. Provide a brief "Reasoning" for your choice.
 
 ## Output Format
