@@ -1,0 +1,2774 @@
+{
+  "c10-s1": {
+    "source": "老子云。",
+    "translation": "Laozi says,"
+  },
+  "c10-s2": {
+    "source": "道生一。",
+    "translation": "“The Way gives birth to the One.”",
+    "candidates": {
+      "openai:gpt-5.1": "'The Way gives birth to the One.'",
+      "deepseek:deepseek-chat": "The Way gives birth to the One."
+    }
+  },
+  "c10-s3": {
+    "source": "一生二。",
+    "translation": "“The One gives birth to the Two.”",
+    "candidates": {
+      "openai:gpt-5.1": "'The One gives birth to the Two.'",
+      "deepseek:deepseek-chat": "The One gives birth to the Two."
+    }
+  },
+  "c10-s4": {
+    "source": "二生三。",
+    "translation": "“The Two give birth to the Three.”",
+    "candidates": {
+      "openai:gpt-5.1": "'The Two give birth to the Three.'",
+      "deepseek:deepseek-chat": "The Two gives birth to the Three."
+    }
+  },
+  "c10-s5": {
+    "source": "三生萬物。",
+    "translation": "“The Three give birth to the ten thousand things.”",
+    "candidates": {
+      "openai:gpt-5.1": "'The Three give birth to the ten thousand things.'",
+      "deepseek:deepseek-chat": "The Three gives birth to the myriad things."
+    }
+  },
+  "c10-s6": {
+    "source": "列子云。",
+    "translation": "Liezi says,"
+  },
+  "c10-s7": {
+    "source": "凡有貌象聲色者。",
+    "translation": "“Whatever possesses form, image, sound, or color,”",
+    "candidates": {
+      "openai:gpt-5.1": "Whatever possesses form, image, sound, or color,",
+      "deepseek:deepseek-chat": "All that possesses form, appearance, sound, or color —"
+    }
+  },
+  "c10-s8": {
+    "source": "皆物也。",
+    "translation": "“all these are Things.”",
+    "candidates": {
+      "openai:gpt-5.1": "all these are Things.",
+      "deepseek:deepseek-chat": "are things."
+    }
+  },
+  "c10-s9": {
+    "source": "物之既有此眾端者。",
+    "translation": "Now, when a thing already possesses this multitude of aspects,",
+    "candidates": {
+      "openai:gpt-5.1": "Now, when a thing already possesses this multitude of aspects,",
+      "deepseek:deepseek-chat": "Since things already possess these manifold aspects,"
+    }
+  },
+  "c10-s10": {
+    "source": "數言爻列術或不足表。",
+    "translation": "Numbers, Words, Ghaews, Lists, or Means may each be insufficient to express it.",
+    "candidates": {
+      "openai:gpt-5.1": "Numbers, Words, Ghaews, Lists, or Means may each be insufficient to express it.",
+      "deepseek:deepseek-chat": "numbers, words, ghaews, lists, or methods may be insufficient to represent them."
+    }
+  },
+  "c10-s11": {
+    "source": "故作一類。",
+    "translation": "Therefore we compose a single class,",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore we compose a single class,",
+      "deepseek:deepseek-chat": "Therefore, we create a class."
+    }
+  },
+  "c10-s12": {
+    "source": "特名之曰物。",
+    "translation": "and specially name it ‘Thing’.",
+    "candidates": {
+      "openai:gpt-5.1": "and specially name it 'Things'.",
+      "deepseek:deepseek-chat": "Specifically naming it 'Thing'."
+    }
+  },
+  "c10-s13": {
+    "source": "是物者。",
+    "translation": "As for this ‘Thing’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for these Things,",
+      "deepseek:deepseek-chat": "This 'Thing' —"
+    }
+  },
+  "c10-s14": {
+    "source": "所以合他類以狀一物之諸端者也。",
+    "translation": "it is what is used to join together other classes so as to describe the various aspects of a single object.",
+    "candidates": {
+      "openai:gpt-5.1": "they are what is used to join together other classes so as to describe the various aspects of a single thing.",
+      "deepseek:deepseek-chat": "is what is used to combine other classes to describe the various aspects of a single object."
+    }
+  },
+  "c10-s15": {
+    "source": "譬人之姓字者。",
+    "translation": "For example, a man’s surname and given name—",
+    "candidates": {
+      "openai:gpt-5.1": "For example, a man's surname and given name—",
+      "deepseek:deepseek-chat": "Take, for example, a person's surname and given name —"
+    }
+  },
+  "c10-s16": {
+    "source": "言也。",
+    "translation": "these are Words.",
+    "candidates": {
+      "openai:gpt-5.1": "these are Words.",
+      "deepseek:deepseek-chat": "these are words."
+    }
+  },
+  "c10-s17": {
+    "source": "人之年齒者。",
+    "translation": "A man’s years and age—",
+    "candidates": {
+      "openai:gpt-5.1": "A man's years and age—",
+      "deepseek:deepseek-chat": "A person's age —"
+    }
+  },
+  "c10-s18": {
+    "source": "數也。",
+    "translation": "these are Numbers.",
+    "candidates": {
+      "openai:gpt-5.1": "these are Numbers.",
+      "deepseek:deepseek-chat": "is a number."
+    }
+  },
+  "c10-s19": {
+    "source": "人有男女。",
+    "translation": "A man has male and female,",
+    "candidates": {
+      "openai:gpt-5.1": "A man has male and female,",
+      "deepseek:deepseek-chat": "A person has male or female gender —"
+    }
+  },
+  "c10-s20": {
+    "source": "陰陽也。",
+    "translation": "these are Yin and Yang, that is, Ghaews.",
+    "candidates": {
+      "openai:gpt-5.1": "these are Yin and Yang, that is, Ghaews.",
+      "deepseek:deepseek-chat": "yin or yang."
+    }
+  },
+  "c10-s21": {
+    "source": "或有所蓄。",
+    "translation": "He may have possessions in store,",
+    "candidates": {
+      "openai:gpt-5.1": "He may have possessions in store,",
+      "deepseek:deepseek-chat": "One may possess belongings —"
+    }
+  },
+  "c10-s22": {
+    "source": "列也。",
+    "translation": "these are Lists.",
+    "candidates": {
+      "openai:gpt-5.1": "these are Lists.",
+      "deepseek:deepseek-chat": "a list."
+    }
+  },
+  "c10-s23": {
+    "source": "或傍一技。",
+    "translation": "He may be skilled in some craft beside,",
+    "candidates": {
+      "openai:gpt-5.1": "He may be skilled in some craft beside,",
+      "deepseek:deepseek-chat": "Or be skilled in an art —"
+    }
+  },
+  "c10-s24": {
+    "source": "術也。",
+    "translation": "this is a Means.",
+    "candidates": {
+      "openai:gpt-5.1": "this is a Means.",
+      "deepseek:deepseek-chat": "a method."
+    }
+  },
+  "c10-s25": {
+    "source": "合而謂之人。",
+    "translation": "Taken together we call him ‘a man’.",
+    "candidates": {
+      "openai:gpt-5.1": "Taken together we call him 'a man'.",
+      "deepseek:deepseek-chat": "Combine these, and we call it a 'person'."
+    }
+  },
+  "c10-s26": {
+    "source": "譬石之白。",
+    "translation": "For example, the whiteness of a stone—",
+    "candidates": {
+      "openai:gpt-5.1": "For example, the whiteness of a stone—",
+      "deepseek:deepseek-chat": "Take, for example, a stone's whiteness —"
+    }
+  },
+  "c10-s27": {
+    "source": "色也。",
+    "translation": "this is Color.",
+    "candidates": {
+      "openai:gpt-5.1": "this is Color.",
+      "deepseek:deepseek-chat": "its color."
+    }
+  },
+  "c10-s28": {
+    "source": "石之堅。",
+    "translation": "The hardness of a stone—",
+    "candidates": {
+      "openai:gpt-5.1": "The hardness of a stone—",
+      "deepseek:deepseek-chat": "A stone's hardness —"
+    }
+  },
+  "c10-s29": {
+    "source": "質也。",
+    "translation": "this is Quality.",
+    "candidates": {
+      "openai:gpt-5.1": "this is Quality.",
+      "deepseek:deepseek-chat": "its quality."
+    }
+  },
+  "c10-s30": {
+    "source": "色質者。",
+    "translation": "Color and Quality—",
+    "candidates": {
+      "openai:gpt-5.1": "Color and Quality—",
+      "deepseek:deepseek-chat": "Color and quality —"
+    }
+  },
+  "c10-s31": {
+    "source": "數也。",
+    "translation": "these are Numbers.",
+    "candidates": {
+      "openai:gpt-5.1": "these are Numbers.",
+      "deepseek:deepseek-chat": "are numbers."
+    }
+  },
+  "c10-s32": {
+    "source": "合而謂之石。",
+    "translation": "Joined together we call it ‘a stone’.",
+    "candidates": {
+      "openai:gpt-5.1": "Joined together we call it 'a stone'.",
+      "deepseek:deepseek-chat": "Combine these, and we call it a 'stone'."
+    }
+  },
+  "c10-s33": {
+    "source": "離合萬物。",
+    "translation": "The separating and combining of the ten thousand things—",
+    "candidates": {
+      "openai:gpt-5.1": "The separating and combining of the ten thousand things—",
+      "deepseek:deepseek-chat": "To combine and separate the myriad things —"
+    }
+  },
+  "c10-s34": {
+    "source": "物物之道也。",
+    "translation": "this is the Way by which each thing becomes itself.",
+    "candidates": {
+      "openai:gpt-5.1": "this is the Way by which each thing becomes itself.",
+      "deepseek:deepseek-chat": "is the Way of objectifying objects."
+    }
+  },
+  "c10-s35": {
+    "source": "禮曰。",
+    "translation": "The _Book of Rites_ says,",
+    "candidates": {
+      "openai:gpt-5.1": "The _Book of Rites_ says,",
+      "deepseek:deepseek-chat": "The Book of Rites says,"
+    }
+  },
+  "c10-s36": {
+    "source": "致知在格物。",
+    "translation": "“To extend knowledge lies in investigating things.”",
+    "candidates": {
+      "openai:gpt-5.1": "'To extend knowledge lies in investigating things.'",
+      "deepseek:deepseek-chat": "The extension of knowledge lies in the investigation of things."
+    }
+  },
+  "c10-s37": {
+    "source": "物格而後知致。",
+    "translation": "“When things are investigated, then knowledge is extended.”",
+    "candidates": {
+      "openai:gpt-5.1": "When things are investigated, then knowledge is extended.",
+      "deepseek:deepseek-chat": "When things are investigated, knowledge is extended."
+    }
+  },
+  "c10-s38": {
+    "source": "今且以白馬為例。",
+    "translation": "Now let us, for the moment, take a white horse as an example,",
+    "candidates": {
+      "openai:gpt-5.1": "Now let us, for the moment, take a white horse as an example,",
+      "deepseek:deepseek-chat": "Now, let us take a white horse as an example,"
+    }
+  },
+  "c10-s39": {
+    "source": "示物之叙也。",
+    "translation": "to manifest the ordering of a Thing.",
+    "candidates": {
+      "openai:gpt-5.1": "to manifest the ordering of a Thing.",
+      "deepseek:deepseek-chat": "to demonstrate the description of an object."
+    }
+  },
+  "c10-s40": {
+    "source": "吾有一物。",
+    "translation": "I have a Thing.",
+    "candidates": {
+      "openai:gpt-5.1": "I have a Thing.",
+      "deepseek:deepseek-chat": "I have a thing."
+    }
+  },
+  "c10-s41": {
+    "source": "名之曰「白馬」。",
+    "translation": "It is named “White Horse”.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'White Horse'.",
+      "deepseek:deepseek-chat": "Name it 'White Horse'."
+    }
+  },
+  "c10-s42": {
+    "source": "其物如是。",
+    "translation": "This Thing is as follows:",
+    "candidates": {
+      "openai:gpt-5.1": "Its Thing is thus:",
+      "deepseek:deepseek-chat": "This thing is as follows."
+    }
+  },
+  "c10-s43": {
+    "source": "\n\t物之『色』者。",
+    "translation": "As for the ‘color’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'color' of the Thing,",
+      "deepseek:deepseek-chat": "The thing's 'color' —"
+    }
+  },
+  "c10-s44": {
+    "source": "言曰『白』。",
+    "translation": "it is a Word, saying ‘white’.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Word, saying 'white'.",
+      "deepseek:deepseek-chat": "is a word, saying 'white'."
+    }
+  },
+  "c10-s45": {
+    "source": "\n\t物之『名』者。",
+    "translation": "As for the ‘name’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'name' of the Thing,",
+      "deepseek:deepseek-chat": "The thing's 'name' —"
+    }
+  },
+  "c10-s46": {
+    "source": "言曰『白義』。",
+    "translation": "it is a Word, saying ‘Baiyi’.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Word, saying 'Virtuous in White'.",
+      "deepseek:deepseek-chat": "is a word, saying 'Baiyi'."
+    }
+  },
+  "c10-s47": {
+    "source": "\n\t物之『日行里數』者。",
+    "translation": "As for the ‘miles traveled per day’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'number of miles walked by day' of the Thing,",
+      "deepseek:deepseek-chat": "The thing's 'miles traveled per day' —"
+    }
+  },
+  "c10-s48": {
+    "source": "數曰千。",
+    "translation": "it is a Number, saying one thousand.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Number, saying one thousand.",
+      "deepseek:deepseek-chat": "is a number, one thousand."
+    }
+  },
+  "c10-s49": {
+    "source": "\n\t物之『夜行里數』者。",
+    "translation": "As for the ‘miles traveled per night’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'number of miles walked by night' of the Thing,",
+      "deepseek:deepseek-chat": "The thing's 'miles traveled per night' —"
+    }
+  },
+  "c10-s50": {
+    "source": "數曰八百。",
+    "translation": "it is a Number, saying eight hundred.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Number, saying eight hundred.",
+      "deepseek:deepseek-chat": "is a number, eight hundred."
+    }
+  },
+  "c10-s51": {
+    "source": "\n\t物之『良耶』者。",
+    "translation": "As for the ‘is it excellent?’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'Is it fine?' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘is it excellent?’ of the Thing,"
+    }
+  },
+  "c10-s52": {
+    "source": "爻曰陽。",
+    "translation": "it is a Ghaew, saying Yang."
+  },
+  "c10-s53": {
+    "source": "\n\t物之『足數』者。",
+    "translation": "As for the ‘number of legs’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'number of feet' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘number of legs’ of the Thing,"
+    }
+  },
+  "c10-s54": {
+    "source": "數曰四。",
+    "translation": "it is a Number, saying four."
+  },
+  "c10-s55": {
+    "source": "\n是謂「白馬」之物也。",
+    "translation": "This is called the Thing ‘White Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the Thing of 'White Horse'.",
+      "deepseek:deepseek-chat": "This is called the Thing ‘White Horse’."
+    }
+  },
+  "c10-s56": {
+    "source": "其物既敘。",
+    "translation": "This Thing, being now described,",
+    "candidates": {
+      "openai:gpt-5.1": "Now that its Thing has been set forth,",
+      "deepseek:deepseek-chat": "This Thing, being now described,"
+    }
+  },
+  "c10-s57": {
+    "source": "復得取其端書如是。",
+    "translation": "one may again take its aspects and write them thus.",
+    "candidates": {
+      "openai:gpt-5.1": "we may again take its aspects and write them down in this way.",
+      "deepseek:deepseek-chat": "one may again take its aspects and write them thus."
+    }
+  },
+  "c10-s58": {
+    "source": "夫「白馬」之『名』。",
+    "translation": "As for the ‘name’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'name' of 'White Horse',",
+      "deepseek:deepseek-chat": "As for the ‘name’ of ‘White Horse’,"
+    }
+  },
+  "c10-s59": {
+    "source": "書之。",
+    "translation": "Write it down.",
+    "candidates": {
+      "openai:gpt-5.1": "write it down.",
+      "deepseek:deepseek-chat": "Write it down."
+    }
+  },
+  "c10-s60": {
+    "source": "\n夫「白馬」之『日行里數』。",
+    "translation": "As for the ‘miles traveled per day’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'miles traveled per day' of 'White Horse',",
+      "deepseek:deepseek-chat": "As for the ‘miles traveled per day’ of ‘White Horse’,"
+    }
+  },
+  "c10-s61": {
+    "source": "書之。",
+    "translation": "Write it down.",
+    "candidates": {
+      "openai:gpt-5.1": "write it down.",
+      "deepseek:deepseek-chat": "Write it down."
+    }
+  },
+  "c10-s62": {
+    "source": "易之用之。",
+    "translation": "In using and applying it,",
+    "candidates": {
+      "openai:gpt-5.1": "Modify it and make use of it,",
+      "deepseek:deepseek-chat": "In using and applying it,"
+    }
+  },
+  "c10-s63": {
+    "source": "無少異於諸變數。",
+    "translation": "there is no slight difference from the various variables.",
+    "candidates": {
+      "openai:gpt-5.1": "and it in no way differs from the various variables.",
+      "deepseek:deepseek-chat": "there is no slight difference from the various variables."
+    }
+  },
+  "c10-s64": {
+    "source": "夫「白馬」之『日行里數』。",
+    "translation": "As for the ‘miles traveled per day’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'miles traveled per day' of 'White Horse',",
+      "deepseek:deepseek-chat": "As for the ‘miles traveled per day’ of ‘White Horse’,"
+    }
+  },
+  "c10-s65": {
+    "source": "除其以二。",
+    "translation": "divide it by two."
+  },
+  "c10-s66": {
+    "source": "昔之「白馬」之『日行里數』者。",
+    "translation": "What was formerly the ‘miles traveled per day’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "What was formerly the 'miles traveled per day' of 'White Horse',",
+      "deepseek:deepseek-chat": "What was formerly the ‘miles traveled per day’ of ‘White Horse’,"
+    }
+  },
+  "c10-s67": {
+    "source": "今其是矣。",
+    "translation": "now let this be it."
+  },
+  "c10-s68": {
+    "source": "\n夫「白馬」之『夜行里數』。",
+    "translation": "As for the ‘miles traveled per night’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'miles traveled per night' of 'White Horse',",
+      "deepseek:deepseek-chat": "As for the ‘miles traveled per night’ of ‘White Horse’,"
+    }
+  },
+  "c10-s69": {
+    "source": "減其以五百。",
+    "translation": "subtract five hundred from it."
+  },
+  "c10-s70": {
+    "source": "昔之「白馬」之『夜行里數』者。",
+    "translation": "What was formerly the ‘miles traveled per night’ of ‘White Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "What was formerly the 'miles traveled per night' of 'White Horse',",
+      "deepseek:deepseek-chat": "What was formerly the ‘miles traveled per night’ of ‘White Horse’,"
+    }
+  },
+  "c10-s71": {
+    "source": "今其是矣。",
+    "translation": "now let this be it."
+  },
+  "c10-s72": {
+    "source": "\n注曰。",
+    "translation": "A note says,",
+    "candidates": {
+      "openai:gpt-5.1": "Comment says,",
+      "deepseek:deepseek-chat": "A note says,"
+    }
+  },
+  "c10-s73": {
+    "source": "『斯馬老矣』。",
+    "translation": "‘This horse has grown old’.",
+    "candidates": {
+      "openai:gpt-5.1": "'This horse has grown old.'",
+      "deepseek:deepseek-chat": "‘This horse has grown old’."
+    }
+  },
+  "c10-s74": {
+    "source": "或問曰。",
+    "translation": "Someone asks, saying,"
+  },
+  "c10-s75": {
+    "source": "今有駿馬千匹。",
+    "translation": "Now suppose there are a thousand fine steeds,",
+    "candidates": {
+      "openai:gpt-5.1": "Now suppose there are a thousand fine horses;",
+      "deepseek:deepseek-chat": "Now suppose there are a thousand fine steeds,"
+    }
+  },
+  "c10-s76": {
+    "source": "似此一一敘之者。",
+    "translation": "and one were to describe each one thus,",
+    "candidates": {
+      "openai:gpt-5.1": "if we were to set them forth one by one in this fashion,",
+      "deepseek:deepseek-chat": "and one were to describe each one thus,"
+    }
+  },
+  "c10-s77": {
+    "source": "不亦煩乎。",
+    "translation": "would that not be troublesome?",
+    "candidates": {
+      "openai:gpt-5.1": "would it not be wearisome?",
+      "deepseek:deepseek-chat": "would that not be troublesome?"
+    }
+  },
+  "c10-s78": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c10-s79": {
+    "source": "以術生之。",
+    "translation": "Generate them by means of a method.",
+    "candidates": {
+      "openai:gpt-5.1": "Generate them by a method.",
+      "deepseek:deepseek-chat": "Generate them by means of a method."
+    }
+  },
+  "c10-s80": {
+    "source": "或謂造物之術。",
+    "translation": "Or one may call it a method for creating things.",
+    "candidates": {
+      "openai:gpt-5.1": "Some call this the Method of Creating Things.",
+      "deepseek:deepseek-chat": "Or one may call it a method for creating things."
+    }
+  },
+  "c10-s81": {
+    "source": "吾有一術。",
+    "translation": "I have a method."
+  },
+  "c10-s82": {
+    "source": "名之曰「生馬」。",
+    "translation": "Name it ‘Generate Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Give-Birth-to-Horse'.",
+      "deepseek:deepseek-chat": "Name it ‘Generate Horse’."
+    }
+  },
+  "c10-s83": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c10-s84": {
+    "source": "必先得二言。",
+    "translation": "one must first obtain two words.",
+    "candidates": {
+      "openai:gpt-5.1": "one must first obtain two Words.",
+      "deepseek:deepseek-chat": "one must first obtain two words."
+    }
+  },
+  "c10-s85": {
+    "source": "曰「馬名」。",
+    "translation": "Called ‘Horse Name’.",
+    "candidates": {
+      "openai:gpt-5.1": "One is called 'horse-name',",
+      "deepseek:deepseek-chat": "Called ‘Horse Name’."
+    }
+  },
+  "c10-s86": {
+    "source": "曰「毛色」。",
+    "translation": "Called ‘Coat Color’.",
+    "candidates": {
+      "openai:gpt-5.1": "one is called 'coat-color'.",
+      "deepseek:deepseek-chat": "Called ‘Coat Color’."
+    }
+  },
+  "c10-s87": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c10-s88": {
+    "source": "\n  吾有一物。",
+    "translation": "I have a Thing."
+  },
+  "c10-s89": {
+    "source": "名之曰「馬」。",
+    "translation": "Name it ‘Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Horse'.",
+      "deepseek:deepseek-chat": "Name it ‘Horse’."
+    }
+  },
+  "c10-s90": {
+    "source": "其物如是。",
+    "translation": "This Thing is as follows:"
+  },
+  "c10-s91": {
+    "source": "\n    物之『色』者。",
+    "translation": "As for the ‘color’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'color' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘color’ of the Thing,"
+    }
+  },
+  "c10-s92": {
+    "source": "言曰「毛色」。",
+    "translation": "it is a Word, saying ‘Coat Color’.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Word, saying 'coat-color'.",
+      "deepseek:deepseek-chat": "it is a Word, saying ‘Coat Color’."
+    }
+  },
+  "c10-s93": {
+    "source": "\n    物之『名』者。",
+    "translation": "As for the ‘name’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'name' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘name’ of the Thing,"
+    }
+  },
+  "c10-s94": {
+    "source": "言曰「馬名」。",
+    "translation": "it is a Word, saying ‘Horse Name’.",
+    "candidates": {
+      "openai:gpt-5.1": "it is a Word, saying 'horse-name'.",
+      "deepseek:deepseek-chat": "it is a Word, saying ‘Horse Name’."
+    }
+  },
+  "c10-s95": {
+    "source": "\n    物之『日行里數』者。",
+    "translation": "As for the ‘miles traveled per day’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'miles traveled per day' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘miles traveled per day’ of the Thing,"
+    }
+  },
+  "c10-s96": {
+    "source": "數曰千。",
+    "translation": "it is a Number, saying one thousand."
+  },
+  "c10-s97": {
+    "source": "\n    物之『夜行里數』者。",
+    "translation": "As for the ‘miles traveled per night’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'miles traveled per night' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘miles traveled per night’ of the Thing,"
+    }
+  },
+  "c10-s98": {
+    "source": "數曰八百。",
+    "translation": "it is a Number, saying eight hundred."
+  },
+  "c10-s99": {
+    "source": "\n    物之『良耶』者。",
+    "translation": "As for the ‘is it excellent?’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'Is it fine?' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘is it excellent?’ of the Thing,"
+    }
+  },
+  "c10-s100": {
+    "source": "爻曰陽。",
+    "translation": "it is a Ghaew, saying Yang."
+  },
+  "c10-s101": {
+    "source": "\n    物之『足數』者。",
+    "translation": "As for the ‘number of legs’ of the Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'number of feet' of the Thing,",
+      "deepseek:deepseek-chat": "As for the ‘number of legs’ of the Thing,"
+    }
+  },
+  "c10-s102": {
+    "source": "數曰四。",
+    "translation": "it is a Number, saying four."
+  },
+  "c10-s103": {
+    "source": "\n  是謂「馬」之物也。",
+    "translation": "This is called the Thing ‘Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the Thing of 'Horse'.",
+      "deepseek:deepseek-chat": "This is called the Thing ‘Horse’."
+    }
+  },
+  "c10-s104": {
+    "source": "\n  乃得「馬」。",
+    "translation": "Then one obtains ‘Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "Then we obtain 'Horse'.",
+      "deepseek:deepseek-chat": "Then one obtains ‘Horse’."
+    }
+  },
+  "c10-s105": {
+    "source": "\n是謂「生馬」之術也。",
+    "translation": "This is called the method ‘Generate Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the method 'Give-Birth-to-Horse'.",
+      "deepseek:deepseek-chat": "This is called the method ‘Generate Horse’."
+    }
+  },
+  "c10-s106": {
+    "source": "八駿者。",
+    "translation": "The Eight Steeds —",
+    "candidates": {
+      "openai:gpt-5.1": "As for the Eight Chargers,",
+      "deepseek:deepseek-chat": "The Eight Steeds —"
+    }
+  },
+  "c10-s107": {
+    "source": "同為穆天子良馬。",
+    "translation": "were all fine horses of King Mu of Zhou.",
+    "candidates": {
+      "openai:gpt-5.1": "all alike are the fine horses of King Mu of Heaven,",
+      "deepseek:deepseek-chat": "were all fine horses of King Mu of Zhou."
+    }
+  },
+  "c10-s108": {
+    "source": "唯毛色不同。",
+    "translation": "Only their coat colors differed.",
+    "candidates": {
+      "openai:gpt-5.1": "only their coat-colors differ.",
+      "deepseek:deepseek-chat": "Only their coat colors differed."
+    }
+  },
+  "c10-s109": {
+    "source": "故其術唯參馬名毛色二者。",
+    "translation": "Therefore the method only requires the two parameters, horse name and coat color.",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore this method consults only the two, horse-name and coat-color.",
+      "deepseek:deepseek-chat": "Therefore the method only requires the two parameters, horse name and coat color."
+    }
+  },
+  "c10-s110": {
+    "source": "或欲增其參數。",
+    "translation": "If one wishes to increase its parameters,",
+    "candidates": {
+      "openai:gpt-5.1": "If one would increase its parameters,",
+      "deepseek:deepseek-chat": "If one wishes to increase its parameters,"
+    }
+  },
+  "c10-s111": {
+    "source": "亦無不可也。",
+    "translation": "there is also nothing impossible.",
+    "candidates": {
+      "openai:gpt-5.1": "there is also no harm in doing so.",
+      "deepseek:deepseek-chat": "there is also nothing impossible."
+    }
+  },
+  "c10-s112": {
+    "source": "施之乃聚八駿於一列。",
+    "translation": "Applying it, one gathers the Eight Steeds into one list.",
+    "candidates": {
+      "openai:gpt-5.1": "Applying it, we then gather the Eight Chargers into a single List.",
+      "deepseek:deepseek-chat": "Applying it, one gathers the Eight Steeds into one list."
+    }
+  },
+  "c10-s113": {
+    "source": "注。",
+    "translation": "Note.",
+    "candidates": {
+      "openai:gpt-5.1": "Comment:",
+      "deepseek:deepseek-chat": "Note."
+    }
+  },
+  "c10-s114": {
+    "source": "郭璞曰。",
+    "translation": "Guo Pu says,"
+  },
+  "c10-s115": {
+    "source": "八駿皆因其毛色以為名號耳。",
+    "translation": "‘The Eight Steeds were all named according to their coat colors.’",
+    "candidates": {
+      "openai:gpt-5.1": "The Eight Chargers each take their coat-color as their appellation, that is all.",
+      "deepseek:deepseek-chat": "‘The Eight Steeds were all named according to their coat colors.’"
+    }
+  },
+  "c10-s116": {
+    "source": "然踰輪山子綠耳之色不見載。",
+    "translation": "However, the colors of Yulun, Shanzi, and Lü’er are not recorded.",
+    "candidates": {
+      "openai:gpt-5.1": "Yet 'Crossing Wheel-Mountain', the colt Green-Ears— its color is nowhere recorded.",
+      "deepseek:deepseek-chat": "However, the colors of Yulun, Shanzi, and Lü’er are not recorded."
+    }
+  },
+  "c10-s117": {
+    "source": "世為圖畫者亦多。",
+    "translation": "And though there are many paintings of them in the world,",
+    "candidates": {
+      "openai:gpt-5.1": "There are also many in later ages who paint pictures of them,",
+      "deepseek:deepseek-chat": "And though there are many paintings of them in the world,"
+    }
+  },
+  "c10-s118": {
+    "source": "然皆不知所據。",
+    "translation": "none know upon what they are based.",
+    "candidates": {
+      "openai:gpt-5.1": "yet none know on what authority they rely.",
+      "deepseek:deepseek-chat": "none know upon what they are based."
+    }
+  },
+  "c10-s119": {
+    "source": "余既不能考。",
+    "translation": "Since I cannot investigate it,",
+    "candidates": {
+      "openai:gpt-5.1": "I myself am unable to verify it,",
+      "deepseek:deepseek-chat": "Since I cannot investigate it,"
+    }
+  },
+  "c10-s120": {
+    "source": "而學又淺。",
+    "translation": "and my learning is shallow,",
+    "candidates": {
+      "openai:gpt-5.1": "and moreover my learning is shallow;",
+      "deepseek:deepseek-chat": "and my learning is shallow,"
+    }
+  },
+  "c10-s121": {
+    "source": "故從闕耳。",
+    "translation": "I therefore leave it as a lacuna.",
+    "candidates": {
+      "openai:gpt-5.1": "therefore I leave a blank here, that is all.",
+      "deepseek:deepseek-chat": "I therefore leave it as a lacuna."
+    }
+  },
+  "c10-s122": {
+    "source": "吾有一列。",
+    "translation": "I have a list.",
+    "candidates": {
+      "openai:gpt-5.1": "I have a List.",
+      "deepseek:deepseek-chat": "I have a list."
+    }
+  },
+  "c10-s123": {
+    "source": "名之曰「八駿」。",
+    "translation": "Name it ‘Eight Steeds’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Eight Chargers'.",
+      "deepseek:deepseek-chat": "Name it ‘Eight Steeds’."
+    }
+  },
+  "c10-s124": {
+    "source": "\n施「生馬」於『赤驥』於『赤』。",
+    "translation": "Apply ‘Generate Horse’ to ‘Red Steed’ and to ‘Red’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Give-Birth-to-Horse' to 'Red Ji' and to 'red';",
+      "deepseek:deepseek-chat": "Apply ‘Generate Horse’ to ‘Red Steed’ and to ‘Red’."
+    }
+  },
+  "c10-s125": {
+    "source": "充「八駿」以其。",
+    "translation": "Fill ‘Eight Steeds’ with it.",
+    "candidates": {
+      "openai:gpt-5.1": "fill 'Eight Chargers' with that.",
+      "deepseek:deepseek-chat": "Fill ‘Eight Steeds’ with it."
+    }
+  },
+  "c10-s126": {
+    "source": "\n施「生馬」於『盜驪』於『黑』。",
+    "translation": "Apply ‘Generate Horse’ to ‘Black Steed’ and to ‘Black’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Give-Birth-to-Horse' to 'Thief-Li' and to 'black';",
+      "deepseek:deepseek-chat": "Apply ‘Generate Horse’ to ‘Black Steed’ and to ‘Black’."
+    }
+  },
+  "c10-s127": {
+    "source": "充「八駿」以其。",
+    "translation": "Fill ‘Eight Steeds’ with it.",
+    "candidates": {
+      "openai:gpt-5.1": "fill 'Eight Chargers' with that.",
+      "deepseek:deepseek-chat": "Fill ‘Eight Steeds’ with it."
+    }
+  },
+  "c10-s128": {
+    "source": "\n施「生馬」於『白義』於『白』。",
+    "translation": "Apply ‘Generate Horse’ to ‘Baiyi’ and to ‘White’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Give-Birth-to-Horse' to 'Baiyi' and to 'white';",
+      "deepseek:deepseek-chat": "Apply ‘Generate Horse’ to ‘Baiyi’ and to ‘White’."
+    }
+  },
+  "c10-s129": {
+    "source": "充「八駿」以其。",
+    "translation": "Fill ‘Eight Steeds’ with it.",
+    "candidates": {
+      "openai:gpt-5.1": "fill 'Eight Chargers' with that.",
+      "deepseek:deepseek-chat": "Fill ‘Eight Steeds’ with it."
+    }
+  },
+  "c10-s130": {
+    "source": "\n施「生馬」於『渠黃』於『黃』。",
+    "translation": "Apply ‘Generate Horse’ to ‘Yellow Steed’ and to ‘Yellow’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Give-Birth-to-Horse' to 'Quhuang' and to 'yellow';",
+      "deepseek:deepseek-chat": "Apply ‘Generate Horse’ to ‘Yellow Steed’ and to ‘Yellow’."
+    }
+  },
+  "c10-s131": {
+    "source": "充「八駿」以其。",
+    "translation": "Fill ‘Eight Steeds’ with it.",
+    "candidates": {
+      "openai:gpt-5.1": "fill 'Eight Chargers' with that.",
+      "deepseek:deepseek-chat": "Fill ‘Eight Steeds’ with it."
+    }
+  },
+  "c10-s132": {
+    "source": "\n施「生馬」於『華騮』於『赤』。",
+    "translation": "Apply ‘Generate Horse’ to ‘Red Steed’ and to ‘Red’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Give-Birth-to-Horse' to 'Hualiu' and to 'red';",
+      "deepseek:deepseek-chat": "Apply ‘Generate Horse’ to ‘Red Steed’ and to ‘Red’."
+    }
+  },
+  "c10-s133": {
+    "source": "充「八駿」以其。",
+    "translation": "Fill ‘Eight Steeds’ with it.",
+    "candidates": {
+      "openai:gpt-5.1": "fill 'Eight Chargers' with that.",
+      "deepseek:deepseek-chat": "Fill ‘Eight Steeds’ with it."
+    }
+  },
+  "c10-s134": {
+    "source": "\n\t",
+    "translation": "<missing>"
+  },
+  "c10-s135": {
+    "source": "\n夫「八駿」之一。",
+    "translation": "As for the first of ‘Eight Steeds’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for one among the 'Eight Chargers',",
+      "deepseek:deepseek-chat": "As for the first of ‘Eight Steeds’,"
+    }
+  },
+  "c10-s136": {
+    "source": "昔之其之『名』者。",
+    "translation": "what was formerly its ‘name’,",
+    "candidates": {
+      "openai:gpt-5.1": "what was formerly its 'name',",
+      "deepseek:deepseek-chat": "what was formerly its ‘name’,"
+    }
+  },
+  "c10-s137": {
+    "source": "今『騏驥』是矣。",
+    "translation": "now let ‘Qiji’ be it.",
+    "candidates": {
+      "openai:gpt-5.1": "now let it be 'Qiji'.",
+      "deepseek:deepseek-chat": "now let ‘Qiji’ be it."
+    }
+  },
+  "c10-s138": {
+    "source": "\n\n凡「八駿」中之「馬」。",
+    "translation": "For every ‘Horse’ within ‘Eight Steeds’,",
+    "candidates": {
+      "openai:gpt-5.1": "For every 'Horse' within the 'Eight Chargers',",
+      "deepseek:deepseek-chat": "For every ‘Horse’ within ‘Eight Steeds’,"
+    }
+  },
+  "c10-s139": {
+    "source": "\n\t夫「馬」之『名』。",
+    "translation": "as for the ‘name’ of ‘Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "as for the 'name' of the 'Horse',",
+      "deepseek:deepseek-chat": "as for the ‘name’ of ‘Horse’,"
+    }
+  },
+  "c10-s140": {
+    "source": "書之也。",
+    "translation": "write it down."
+  },
+  "c10-s141": {
+    "source": "或問曰。",
+    "translation": "Someone asks, saying,"
+  },
+  "c10-s142": {
+    "source": "既有一物。",
+    "translation": "Having obtained a Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "When there is already a Thing,",
+      "deepseek:deepseek-chat": "Having obtained a Thing,"
+    }
+  },
+  "c10-s143": {
+    "source": "欲知其諸端之名。",
+    "translation": "if one wishes to know the names of its various aspects,",
+    "candidates": {
+      "openai:gpt-5.1": "and one wishes to know the names of its various aspects,",
+      "deepseek:deepseek-chat": "if one wishes to know the names of its various aspects,"
+    }
+  },
+  "c10-s144": {
+    "source": "奈何。",
+    "translation": "how is it done?",
+    "candidates": {
+      "openai:gpt-5.1": "what is to be done?",
+      "deepseek:deepseek-chat": "how is it done?"
+    }
+  },
+  "c10-s145": {
+    "source": "或問曰。",
+    "translation": "Someone asks, saying,"
+  },
+  "c10-s146": {
+    "source": "今欲取物之一端。",
+    "translation": "Now one wishes to take one aspect of a Thing,",
+    "candidates": {
+      "openai:gpt-5.1": "Now one wishes to take a single aspect of a Thing,",
+      "deepseek:deepseek-chat": "Now one wishes to take one aspect of a Thing,"
+    }
+  },
+  "c10-s147": {
+    "source": "然其名未遽知。",
+    "translation": "yet its name is not immediately known,"
+  },
+  "c10-s148": {
+    "source": "唯於運算中得之。",
+    "translation": "but is only obtained during computation.",
+    "candidates": {
+      "openai:gpt-5.1": "but only obtained in the midst of computation;",
+      "deepseek:deepseek-chat": "but is only obtained during computation."
+    }
+  },
+  "c10-s149": {
+    "source": "奈何。",
+    "translation": "How is it done?",
+    "candidates": {
+      "openai:gpt-5.1": "what is to be done?",
+      "deepseek:deepseek-chat": "How is it done?"
+    }
+  },
+  "c10-s150": {
+    "source": "或問曰。",
+    "translation": "Someone asks, saying,"
+  },
+  "c10-s151": {
+    "source": "偶得一物。",
+    "translation": "By chance, one obtains a thing.",
+    "candidates": {
+      "openai:gpt-5.1": "By chance one obtains a Thing.",
+      "deepseek:deepseek-chat": "One happens to obtain a Thing."
+    }
+  },
+  "c10-s152": {
+    "source": "不知其為物耶。",
+    "translation": "One does not know whether it is a thing.",
+    "candidates": {
+      "openai:gpt-5.1": "One does not yet know what manner of Thing it is.",
+      "deepseek:deepseek-chat": "One does not know whether it is a Thing."
+    }
+  },
+  "c10-s153": {
+    "source": "其為數為言為爻為術為列耶。",
+    "translation": "Is it a number, a word, a ghaew, a method, or a list?",
+    "candidates": {
+      "openai:gpt-5.1": "Is it Numbers, Words, Ghaews, a Means, or a List?",
+      "deepseek:deepseek-chat": "Is it a number, a word, a ghaew, a method, or a list?"
+    }
+  },
+  "c10-s154": {
+    "source": "奈何。",
+    "translation": "How is this to be done?",
+    "candidates": {
+      "openai:gpt-5.1": "How is this to be dealt with?",
+      "deepseek:deepseek-chat": "How is it done?"
+    }
+  },
+  "c10-s155": {
+    "source": "曰引「格物」。",
+    "translation": "It is answered: invoke ‘Investigate Things’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is answered, invoke 'Investigate Thing'.",
+      "deepseek:deepseek-chat": "It is answered, invoke 'Investigate Things'."
+    }
+  },
+  "c10-s156": {
+    "source": "吾嘗觀『格物』之書。",
+    "translation": "I once perused the book _Investigate Things_.",
+    "candidates": {
+      "openai:gpt-5.1": "I have once perused the book 'Investigate Thing'.",
+      "deepseek:deepseek-chat": "I once perused the book of 'Investigate Things'."
+    }
+  },
+  "c10-s157": {
+    "source": "方悟「取物」「置物」「列物之端」「識類」之義。",
+    "translation": "Only then did I comprehend the meaning of ‘Take Thing’, ‘Set Thing’, ‘List Thing’s Aspects’, and ‘Identify Type’.",
+    "candidates": {
+      "openai:gpt-5.1": "Only then did I awaken to the meanings of 'Take from Thing', 'Set into Thing', 'List an aspect of a Thing', and 'Discern Class'.",
+      "deepseek:deepseek-chat": "Only then did I comprehend the meaning of 'Take Thing', 'Set Thing', 'List Thing's Aspects', and 'Identify Type'."
+    }
+  },
+  "c10-s158": {
+    "source": "\n\n吾有一言。",
+    "translation": "I have a word."
+  },
+  "c10-s159": {
+    "source": "曰『日』。",
+    "translation": "It says, ‘day’.",
+    "candidates": {
+      "openai:gpt-5.1": "It says, 'day'.",
+      "deepseek:deepseek-chat": "It says, 'Day'."
+    }
+  },
+  "c10-s160": {
+    "source": "注曰『或曰「夜』」。",
+    "translation": "A note says, ‘or “night”’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'or \"night\".'",
+      "deepseek:deepseek-chat": "A note says, 'Or one says \"Night\"'."
+    }
+  },
+  "c10-s161": {
+    "source": "\n名之曰「時」。",
+    "translation": "Name it “Time”."
+  },
+  "c10-s162": {
+    "source": "\n夫「白馬」。",
+    "translation": "As for “White Horse”,"
+  },
+  "c10-s163": {
+    "source": "加「時」以『行里數』。",
+    "translation": "add to “Time” the aspect ‘distance traveled in li’.",
+    "candidates": {
+      "openai:gpt-5.1": "add to it 'Time' and 'distance traveled in li'.",
+      "deepseek:deepseek-chat": "add to 'Time' the aspect 'Distance Traveled in Li'."
+    }
+  },
+  "c10-s164": {
+    "source": "取二以施「取物」。",
+    "translation": "Take these two and apply ‘Take Thing’.",
+    "candidates": {
+      "openai:gpt-5.1": "Take these two and apply 'Take from Thing'.",
+      "deepseek:deepseek-chat": "Take these two and apply 'Take Thing'."
+    }
+  },
+  "c10-s165": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s166": {
+    "source": "\n\n吾有一數。",
+    "translation": "I have a number."
+  },
+  "c10-s167": {
+    "source": "曰三萬。",
+    "translation": "It is thirty thousand."
+  },
+  "c10-s168": {
+    "source": "名之曰「新數」。",
+    "translation": "Name it “New Number”."
+  },
+  "c10-s169": {
+    "source": "注曰。",
+    "translation": "A note says:",
+    "candidates": {
+      "openai:gpt-5.1": "A note says:",
+      "deepseek:deepseek-chat": "A note says,"
+    }
+  },
+  "c10-s170": {
+    "source": "『義山詩曰。八俊日行三萬里』",
+    "translation": "‘Li Shangyin’s poem says: “The eight steeds travel thirty thousand li a day.”’",
+    "candidates": {
+      "openai:gpt-5.1": "'Yishan's poem says, The Eight Steeds each day travel thirty thousand li.'",
+      "deepseek:deepseek-chat": "'Li Shangyin's poem says, \"The eight steeds travel thirty thousand li a day.\"'"
+    }
+  },
+  "c10-s171": {
+    "source": "\n夫「白馬」。",
+    "translation": "As for “White Horse”,"
+  },
+  "c10-s172": {
+    "source": "加「時」以『行里數』。",
+    "translation": "add to “Time” the aspect ‘distance traveled in li’.",
+    "candidates": {
+      "openai:gpt-5.1": "add to it 'Time' and 'distance traveled in li'.",
+      "deepseek:deepseek-chat": "add to 'Time' the aspect 'Distance Traveled in Li'."
+    }
+  },
+  "c10-s173": {
+    "source": "夫「新數」。",
+    "translation": "As for “New Number”,"
+  },
+  "c10-s174": {
+    "source": "取三以施「置物」。",
+    "translation": "take these three and apply ‘Set Thing’.",
+    "candidates": {
+      "openai:gpt-5.1": "take these three and apply 'Set into Thing'.",
+      "deepseek:deepseek-chat": "take these three and apply 'Set Thing'."
+    }
+  },
+  "c10-s175": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s176": {
+    "source": "\n\n施「列物之端」於「白馬」。",
+    "translation": "Apply ‘List Thing’s Aspects’ to “White Horse”.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'List an aspect of a Thing' to 'White Horse'.",
+      "deepseek:deepseek-chat": "Apply 'List Thing's Aspects' to 'White Horse'."
+    }
+  },
+  "c10-s177": {
+    "source": "注曰『得言之列也』",
+    "translation": "A note says, ‘obtains a list of words’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'What is obtained is a list of words.'",
+      "deepseek:deepseek-chat": "A note says, 'Obtains a list of words'."
+    }
+  },
+  "c10-s178": {
+    "source": "\n書之。",
+    "translation": "Write it down."
+  },
+  "c10-s179": {
+    "source": "\n\n施「識類」於三。",
+    "translation": "Apply ‘Identify Type’ to three.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Discern Class' to three.",
+      "deepseek:deepseek-chat": "Apply 'Identify Type' to three."
+    }
+  },
+  "c10-s180": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s181": {
+    "source": "注曰『得數』",
+    "translation": "A note says, ‘obtains number’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'One obtains Numbers.'",
+      "deepseek:deepseek-chat": "A note says, 'Obtains number'."
+    }
+  },
+  "c10-s182": {
+    "source": "\n施「識類」於陰。",
+    "translation": "Apply ‘Identify Type’ to yin.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Discern Class' to Yin.",
+      "deepseek:deepseek-chat": "Apply 'Identify Type' to yin."
+    }
+  },
+  "c10-s183": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s184": {
+    "source": "注曰『得爻』",
+    "translation": "A note says, ‘obtains ghaew’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'One obtains Ghaews.'",
+      "deepseek:deepseek-chat": "A note says, 'Obtains ghaew'."
+    }
+  },
+  "c10-s185": {
+    "source": "\n施「識類」於「白馬」。",
+    "translation": "Apply ‘Identify Type’ to “White Horse”.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Discern Class' to 'White Horse'.",
+      "deepseek:deepseek-chat": "Apply 'Identify Type' to 'White Horse'."
+    }
+  },
+  "c10-s186": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s187": {
+    "source": "注曰『得物』",
+    "translation": "A note says, ‘obtains thing’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'One obtains Things.'",
+      "deepseek:deepseek-chat": "A note says, 'Obtains thing'."
+    }
+  },
+  "c10-s188": {
+    "source": "\n施「識類」於『善哉斯言』。",
+    "translation": "Apply ‘Identify Type’ to ‘Well said indeed’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Discern Class' to 'Well spoken indeed'.",
+      "deepseek:deepseek-chat": "Apply 'Identify Type' to 'Well said indeed'."
+    }
+  },
+  "c10-s189": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s190": {
+    "source": "注曰『得言』",
+    "translation": "A note says, ‘obtains word’.",
+    "candidates": {
+      "openai:gpt-5.1": "A note says, 'One obtains Words.'",
+      "deepseek:deepseek-chat": "A note says, 'Obtains word'."
+    }
+  },
+  "c10-s191": {
+    "source": "又物者。",
+    "translation": "Furthermore, as for things,",
+    "candidates": {
+      "openai:gpt-5.1": "Moreover, as for Things,",
+      "deepseek:deepseek-chat": "Furthermore, as for Things,"
+    }
+  },
+  "c10-s192": {
+    "source": "雖貌盡同而其實或非一也。",
+    "translation": "though their appearances may be entirely alike, their reality may not be one and the same.",
+    "candidates": {
+      "openai:gpt-5.1": "though their appearance be entirely the same, in actuality they may not be one.",
+      "deepseek:deepseek-chat": "though their appearances may be entirely alike, their reality may not be one and the same."
+    }
+  },
+  "c10-s193": {
+    "source": "如玉刻雙璋。",
+    "translation": "Like a pair of jade tablets carved from the same stone,",
+    "candidates": {
+      "openai:gpt-5.1": "Like a pair of jade-notched ritual plaques,",
+      "deepseek:deepseek-chat": "Like a pair of jade tablets carved from the same stone,"
+    }
+  },
+  "c10-s194": {
+    "source": "錦挑對褓。",
+    "translation": "or twin swaddling clothes embroidered from the same brocade.",
+    "candidates": {
+      "openai:gpt-5.1": "or brocade-embroidered matched swaddling cloths.",
+      "deepseek:deepseek-chat": "or twin swaddling clothes embroidered from the same brocade."
+    }
+  },
+  "c10-s195": {
+    "source": "故以「等於」法比之。",
+    "translation": "Therefore, compare them using the ‘Equals’ method.",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore we compare them by the method 'Equal To'.",
+      "deepseek:deepseek-chat": "Therefore, compare them using the 'Equals' method."
+    }
+  },
+  "c10-s196": {
+    "source": "唯實一物二名方得陽。",
+    "translation": "Only if they are truly one thing with two names does one obtain yang.",
+    "candidates": {
+      "openai:gpt-5.1": "Only when in truth there is one Thing with two names does one obtain Yang.",
+      "deepseek:deepseek-chat": "Only if they are truly one Thing with two names does one obtain yang."
+    }
+  },
+  "c10-s197": {
+    "source": "非是。",
+    "translation": "If not so,",
+    "candidates": {
+      "openai:gpt-5.1": "If it is not so,",
+      "deepseek:deepseek-chat": "If not so,"
+    }
+  },
+  "c10-s198": {
+    "source": "皆得陰。",
+    "translation": "one obtains yin.",
+    "candidates": {
+      "openai:gpt-5.1": "in every case one obtains Yin.",
+      "deepseek:deepseek-chat": "one obtains yin."
+    }
+  },
+  "c10-s199": {
+    "source": "欲以諸端同而同之者。",
+    "translation": "If one wishes to deem them equal because their various aspects are identical,",
+    "candidates": {
+      "openai:gpt-5.1": "If one wishes to deem them the same because all their aspects are alike,",
+      "deepseek:deepseek-chat": "If one wishes to deem them equal because their various aspects are identical,"
+    }
+  },
+  "c10-s200": {
+    "source": "必一一校而後可。",
+    "translation": "one must compare them one by one before it is permissible.",
+    "candidates": {
+      "openai:gpt-5.1": "one must examine them one by one, and only then is it possible.",
+      "deepseek:deepseek-chat": "one must compare them one by one before it is permissible."
+    }
+  },
+  "c10-s201": {
+    "source": "非唯物然。",
+    "translation": "Not only things are thus,",
+    "candidates": {
+      "openai:gpt-5.1": "This is not so only for Things.",
+      "deepseek:deepseek-chat": "Not only Things are thus,"
+    }
+  },
+  "c10-s202": {
+    "source": "列亦如是也。",
+    "translation": "lists are also like this.",
+    "candidates": {
+      "openai:gpt-5.1": "Lists are likewise thus.",
+      "deepseek:deepseek-chat": "Lists are also like this."
+    }
+  },
+  "c10-s203": {
+    "source": "吾有一物。",
+    "translation": "I have a thing."
+  },
+  "c10-s204": {
+    "source": "名之曰「戊」。",
+    "translation": "Name it “E”."
+  },
+  "c10-s205": {
+    "source": "其物如是。",
+    "translation": "This thing is as follows.",
+    "candidates": {
+      "openai:gpt-5.1": "Its content as a Thing is thus.",
+      "deepseek:deepseek-chat": "This Thing is as follows."
+    }
+  },
+  "c10-s206": {
+    "source": "\n\t物之『甲』者。",
+    "translation": "The thing’s aspect ‘A’ —",
+    "candidates": {
+      "openai:gpt-5.1": "That which is the 'A' of the Thing,",
+      "deepseek:deepseek-chat": "The Thing's aspect 'A' —"
+    }
+  },
+  "c10-s207": {
+    "source": "數曰一。",
+    "translation": "its number is one.",
+    "candidates": {
+      "openai:gpt-5.1": "is a number, saying one.",
+      "deepseek:deepseek-chat": "its number is one."
+    }
+  },
+  "c10-s208": {
+    "source": "\n\t物之『乙』者。",
+    "translation": "The thing’s aspect ‘B’ —",
+    "candidates": {
+      "openai:gpt-5.1": "That which is the 'B' of the Thing,",
+      "deepseek:deepseek-chat": "The Thing's aspect 'B' —"
+    }
+  },
+  "c10-s209": {
+    "source": "數曰二。",
+    "translation": "its number is two.",
+    "candidates": {
+      "openai:gpt-5.1": "is a number, saying two.",
+      "deepseek:deepseek-chat": "its number is two."
+    }
+  },
+  "c10-s210": {
+    "source": "\n是謂「戊」之物也。",
+    "translation": "This is called the thing “E”.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the content of the Thing 'E'.",
+      "deepseek:deepseek-chat": "This is called the Thing 'E'."
+    }
+  },
+  "c10-s211": {
+    "source": "\n\n吾有一物。",
+    "translation": "I have a thing."
+  },
+  "c10-s212": {
+    "source": "名之曰「戌」。",
+    "translation": "Name it “Xu”.",
+    "candidates": {
+      "openai:gpt-5.1": "Name it 'I'.",
+      "deepseek:deepseek-chat": "Name it 'Xu'."
+    }
+  },
+  "c10-s213": {
+    "source": "其物如是。",
+    "translation": "This thing is as follows.",
+    "candidates": {
+      "openai:gpt-5.1": "Its content as a Thing is thus.",
+      "deepseek:deepseek-chat": "This Thing is as follows."
+    }
+  },
+  "c10-s214": {
+    "source": "\n\t物之『甲』者。",
+    "translation": "The thing’s aspect ‘A’ —",
+    "candidates": {
+      "openai:gpt-5.1": "That which is the 'A' of the Thing,",
+      "deepseek:deepseek-chat": "The Thing's aspect 'A' —"
+    }
+  },
+  "c10-s215": {
+    "source": "數曰一。",
+    "translation": "its number is one.",
+    "candidates": {
+      "openai:gpt-5.1": "is a number, saying one.",
+      "deepseek:deepseek-chat": "its number is one."
+    }
+  },
+  "c10-s216": {
+    "source": "\n\t物之『乙』者。",
+    "translation": "The thing’s aspect ‘B’ —",
+    "candidates": {
+      "openai:gpt-5.1": "That which is the 'B' of the Thing,",
+      "deepseek:deepseek-chat": "The Thing's aspect 'B' —"
+    }
+  },
+  "c10-s217": {
+    "source": "數曰二。",
+    "translation": "its number is two.",
+    "candidates": {
+      "openai:gpt-5.1": "is a number, saying two.",
+      "deepseek:deepseek-chat": "its number is two."
+    }
+  },
+  "c10-s218": {
+    "source": "\n是謂「戌」之物也。",
+    "translation": "This is called the thing “Xu”.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the content of the Thing 'I'.",
+      "deepseek:deepseek-chat": "This is called the Thing 'Xu'."
+    }
+  },
+  "c10-s219": {
+    "source": "\n\n若「戊」不等於「戌」者。",
+    "translation": "If “E” does not equal “Xu”,",
+    "candidates": {
+      "openai:gpt-5.1": "If 'E' is not equal to 'I', then",
+      "deepseek:deepseek-chat": "If 'E' does not equal 'Xu',"
+    }
+  },
+  "c10-s220": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c10-s221": {
+    "source": "曰『然也』。",
+    "translation": "It says, ‘Indeed’.",
+    "candidates": {
+      "openai:gpt-5.1": "It says, 'So it is.'",
+      "deepseek:deepseek-chat": "It says, 'Indeed'."
+    }
+  },
+  "c10-s222": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s223": {
+    "source": "\n也。",
+    "translation": "So it is.",
+    "candidates": {
+      "openai:gpt-5.1": "Indeed.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s224": {
+    "source": "\n若「戊」之『甲』等於「戌」之『甲』者。",
+    "translation": "If the ‘A’ of “E” equals the ‘A’ of “Xu”,",
+    "candidates": {
+      "openai:gpt-5.1": "If the 'A' of 'E' is equal to the 'A' of 'I', then",
+      "deepseek:deepseek-chat": "If the 'A' of 'E' equals the 'A' of 'Xu',"
+    }
+  },
+  "c10-s225": {
+    "source": "\n\t若「戊」之『乙』等於「戌」之『乙』者。",
+    "translation": "if the ‘B’ of “E” equals the ‘B’ of “Xu”,",
+    "candidates": {
+      "openai:gpt-5.1": "if the 'B' of 'E' is equal to the 'B' of 'I', then",
+      "deepseek:deepseek-chat": "if the 'B' of 'E' equals the 'B' of 'Xu',"
+    }
+  },
+  "c10-s226": {
+    "source": "\n\t\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c10-s227": {
+    "source": "曰『然也』。",
+    "translation": "It says, ‘Indeed’.",
+    "candidates": {
+      "openai:gpt-5.1": "It says, 'So it is.'",
+      "deepseek:deepseek-chat": "It says, 'Indeed'."
+    }
+  },
+  "c10-s228": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s229": {
+    "source": "\n\t也。",
+    "translation": "So it is.",
+    "candidates": {
+      "openai:gpt-5.1": "Indeed.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s230": {
+    "source": "\n也。",
+    "translation": "So it is.",
+    "candidates": {
+      "openai:gpt-5.1": "Indeed.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s231": {
+    "source": "\n\n夫「戊」。",
+    "translation": "As for “E”,"
+  },
+  "c10-s232": {
+    "source": "名之曰「戍」。",
+    "translation": "name it “Shu”.",
+    "candidates": {
+      "openai:gpt-5.1": "name it 'H'.",
+      "deepseek:deepseek-chat": "name it 'Shu'."
+    }
+  },
+  "c10-s233": {
+    "source": "\n\n若「戊」等於「戍」者。",
+    "translation": "If “E” equals “Shu”,",
+    "candidates": {
+      "openai:gpt-5.1": "If 'E' is equal to 'H', then",
+      "deepseek:deepseek-chat": "If 'E' equals 'Shu',"
+    }
+  },
+  "c10-s234": {
+    "source": "\n\t吾有一言。",
+    "translation": "I have a word."
+  },
+  "c10-s235": {
+    "source": "曰『然也』。",
+    "translation": "It says, ‘Indeed’.",
+    "candidates": {
+      "openai:gpt-5.1": "It says, 'So it is.'",
+      "deepseek:deepseek-chat": "It says, 'Indeed'."
+    }
+  },
+  "c10-s236": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s237": {
+    "source": "\n也。",
+    "translation": "So it is.",
+    "candidates": {
+      "openai:gpt-5.1": "Indeed.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s238": {
+    "source": "又以物包羅諸象。",
+    "translation": "Moreover, because things encompass all phenomena,",
+    "candidates": {
+      "openai:gpt-5.1": "Furthermore, by means of Things we encompass the myriad phenomena.",
+      "deepseek:deepseek-chat": "Moreover, because Things encompass all phenomena,"
+    }
+  },
+  "c10-s239": {
+    "source": "或令機器寫之以存運算之所得。",
+    "translation": "one may command the machine to write them down to preserve the results of computation,",
+    "candidates": {
+      "openai:gpt-5.1": "At times we cause the machine to write them out, that it may store what has been obtained by computation;",
+      "deepseek:deepseek-chat": "one may command the machine to write them down to preserve the results of computation,"
+    }
+  },
+  "c10-s240": {
+    "source": "或使讀之以為運算之所參。",
+    "translation": "or have them read to serve as parameters for computation.",
+    "candidates": {
+      "openai:gpt-5.1": "or we cause it to read them in, that they may serve as references for computation.",
+      "deepseek:deepseek-chat": "or have them read to serve as parameters for computation."
+    }
+  },
+  "c10-s241": {
+    "source": "罔不嘉焉。",
+    "translation": "There is nothing not excellent in this.",
+    "candidates": {
+      "openai:gpt-5.1": "In all such uses there is nothing that is not to be admired.",
+      "deepseek:deepseek-chat": "There is nothing not excellent in this."
+    }
+  },
+  "c10-s242": {
+    "source": "然以其辭稍煩。",
+    "translation": "However, because their expression is somewhat cumbersome,",
+    "candidates": {
+      "openai:gpt-5.1": "Yet because its wording is somewhat cumbersome,",
+      "deepseek:deepseek-chat": "However, because their expression is somewhat cumbersome,"
+    }
+  },
+  "c10-s243": {
+    "source": "以所函略廣。",
+    "translation": "and because what they contain is rather broad,",
+    "candidates": {
+      "openai:gpt-5.1": "and what it can contain is rather broad,",
+      "deepseek:deepseek-chat": "and because what they contain is rather broad,"
+    }
+  },
+  "c10-s244": {
+    "source": "故另為渾沌之辭。",
+    "translation": "one therefore creates separate Hun-tun expressions.",
+    "candidates": {
+      "openai:gpt-5.1": "a separate diction of 'Chaos' was therefore devised,",
+      "deepseek:deepseek-chat": "one therefore creates separate Hun-tun expressions."
+    }
+  },
+  "c10-s245": {
+    "source": "精煉其字。",
+    "translation": "Refine their characters,",
+    "candidates": {
+      "openai:gpt-5.1": "to refine its characters,",
+      "deepseek:deepseek-chat": "Refine their characters,"
+    }
+  },
+  "c10-s246": {
+    "source": "簡易其法。",
+    "translation": "simplify their method,",
+    "candidates": {
+      "openai:gpt-5.1": "and to simplify its methods,",
+      "deepseek:deepseek-chat": "simplify their method,"
+    }
+  },
+  "c10-s247": {
+    "source": "以資讀寫之便也。",
+    "translation": "to facilitate reading and writing.",
+    "candidates": {
+      "openai:gpt-5.1": "thereby aiding the ease of reading and writing.",
+      "deepseek:deepseek-chat": "to facilitate reading and writing."
+    }
+  },
+  "c10-s248": {
+    "source": "復作渾沌之術。",
+    "translation": "Again, create the Hun-tun method.",
+    "candidates": {
+      "openai:gpt-5.1": "Once again was made the method of Chaos,",
+      "deepseek:deepseek-chat": "Again, create the Hun-tun method."
+    }
+  },
+  "c10-s249": {
+    "source": "得其言而化之為物。",
+    "translation": "Obtain its words and transform them into a thing.",
+    "candidates": {
+      "openai:gpt-5.1": "which, receiving Words, transmutes them into Things;",
+      "deepseek:deepseek-chat": "Obtain its words and transform them into a Thing."
+    }
+  },
+  "c10-s250": {
+    "source": "得其物而以其言載之。",
+    "translation": "Obtain its thing and record it with its words.",
+    "candidates": {
+      "openai:gpt-5.1": "and, receiving Things, records them by means of Words.",
+      "deepseek:deepseek-chat": "Obtain its Thing and record it with its words."
+    }
+  },
+  "c10-s251": {
+    "source": "渾沌者。",
+    "translation": "Hun-tun —"
+  },
+  "c10-s252": {
+    "source": "食也。",
+    "translation": "is food."
+  },
+  "c10-s253": {
+    "source": "揚雄曰。",
+    "translation": "Yang Xiong says,",
+    "candidates": {
+      "openai:gpt-5.1": "Yang Xiong says,",
+      "deepseek:deepseek-chat": "Yang Xiong said,"
+    }
+  },
+  "c10-s254": {
+    "source": "餅謂之飩。",
+    "translation": "“Dumplings are called ‘tun’.”",
+    "candidates": {
+      "openai:gpt-5.1": "“Dumplings are called 'tun'.”",
+      "deepseek:deepseek-chat": "\"Dumplings are called 'tun'.\""
+    }
+  },
+  "c10-s255": {
+    "source": "今薄麵夾餡入湯者也。",
+    "translation": "Nowadays it is that which is a thin dough wrapped about a filling and cast into broth.",
+    "candidates": {
+      "openai:gpt-5.1": "Nowadays it is that which is a thin dough wrapped about a filling and cast into broth.",
+      "deepseek:deepseek-chat": "Nowadays, they are thin dough wrapped around filling and dropped into broth."
+    }
+  },
+  "c10-s256": {
+    "source": "取其包物之義。",
+    "translation": "We take from it the sense of encasing things within.",
+    "candidates": {
+      "openai:gpt-5.1": "We take from it the sense of encasing things within.",
+      "deepseek:deepseek-chat": "We take its meaning of 'enveloping things'."
+    }
+  },
+  "c10-s257": {
+    "source": "故名。",
+    "translation": "Thus we name it so.",
+    "candidates": {
+      "openai:gpt-5.1": "Thus we name it so.",
+      "deepseek:deepseek-chat": "Hence the name."
+    }
+  },
+  "c10-s258": {
+    "source": "吾嘗觀「渾沌經」之書。",
+    "translation": "I once gazed upon the book _Hun-tun Classic_,",
+    "candidates": {
+      "openai:gpt-5.1": "I once gazed upon the book _Hun-tun Classic_,",
+      "deepseek:deepseek-chat": "I once read the book of the \"Hun-tun Scripture\","
+    }
+  },
+  "c10-s259": {
+    "source": "方悟「包渾沌」之義。",
+    "translation": "and only then did I awaken to the meaning of “wrapping into Hun-tun”.",
+    "candidates": {
+      "openai:gpt-5.1": "and only then did I awaken to the meaning of “wrapping into Hun-tun”.",
+      "deepseek:deepseek-chat": "and only then understood the meaning of 'wrap hun-tun'."
+    }
+  },
+  "c10-s260": {
+    "source": "\n\n施「包渾沌」於「白馬」。",
+    "translation": "Apply “Wrap into Hun-tun” to “White Horse”,",
+    "candidates": {
+      "openai:gpt-5.1": "Apply “Wrap into Hun-tun” to “White Horse”,",
+      "deepseek:deepseek-chat": "Apply 'wrap hun-tun' to 'White Horse'."
+    }
+  },
+  "c10-s261": {
+    "source": "書之。",
+    "translation": "and write it down.",
+    "candidates": {
+      "openai:gpt-5.1": "and write it down.",
+      "deepseek:deepseek-chat": "Write it down."
+    }
+  },
+  "c10-s262": {
+    "source": "得如左。",
+    "translation": "One obtains what is as follows.",
+    "candidates": {
+      "openai:gpt-5.1": "One obtains what is as follows.",
+      "deepseek:deepseek-chat": "The result is as follows."
+    }
+  },
+  "c10-s263": {
+    "source": "渾沌凡言數者。",
+    "translation": "In Hun-tun, whenever words speak of numbers,",
+    "candidates": {
+      "openai:gpt-5.1": "In Hun-tun, whenever words speak of numbers,",
+      "deepseek:deepseek-chat": "In Hun-tun, whenever numbers are spoken of,"
+    }
+  },
+  "c10-s264": {
+    "source": "唯列其位。",
+    "translation": "only their places are listed.",
+    "candidates": {
+      "openai:gpt-5.1": "only their places are listed.",
+      "deepseek:deepseek-chat": "only their digits are listed."
+    }
+  },
+  "c10-s265": {
+    "source": "譬不謂三千八百七十。",
+    "translation": "For example, one does not say three thousand eight hundred and seventy;",
+    "candidates": {
+      "openai:gpt-5.1": "For example, one does not say three thousand eight hundred and seventy;",
+      "deepseek:deepseek-chat": "For example, one does not say 'three thousand eight hundred seventy',"
+    }
+  },
+  "c10-s266": {
+    "source": "但謂三八七〇耳。",
+    "translation": "one only says three-eight-seven-zero.",
+    "candidates": {
+      "openai:gpt-5.1": "one only says three-eight-seven-zero.",
+      "deepseek:deepseek-chat": "but only 'three eight seven zero'."
+    }
+  },
+  "c10-s267": {
+    "source": "物",
+    "translation": "A thing",
+    "candidates": {
+      "openai:gpt-5.1": "A thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s268": {
+    "source": "\n　之「色」言「白」",
+    "translation": "— its ‘color’ is the word “white”,",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'color' is the word \"white\",",
+      "deepseek:deepseek-chat": "its 'color' says \"white\""
+    }
+  },
+  "c10-s269": {
+    "source": "\n　之「名」言「白義」",
+    "translation": "its ‘name’ is the word “White Righteousness”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'name' is the word \"White Righteousness\",",
+      "deepseek:deepseek-chat": "its 'name' says \"Bai Yi\""
+    }
+  },
+  "c10-s270": {
+    "source": "\n　之「日行里數」數「一〇〇〇」",
+    "translation": "its ‘miles traveled by day’ is the number “1 0 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by day' is the number \"1 0 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by day' number \"1000\""
+    }
+  },
+  "c10-s271": {
+    "source": "\n　之「夜行里數」數「八〇〇」",
+    "translation": "its ‘miles traveled by night’ is the number “8 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by night' is the number \"8 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by night' number \"800\""
+    }
+  },
+  "c10-s272": {
+    "source": "\n　之「良耶」爻「陽」",
+    "translation": "its ‘Is it good?’ is the Ghaew “yang”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'Is it good?' is the Ghaew \"yang\",",
+      "deepseek:deepseek-chat": "its 'good or not' ghaew \"yang\""
+    }
+  },
+  "c10-s273": {
+    "source": "\n　之「足數」數「四」",
+    "translation": "its ‘number of feet’ is the number “4”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'number of feet' is the number \"4\",",
+      "deepseek:deepseek-chat": "its 'number of legs' number \"four\""
+    }
+  },
+  "c10-s274": {
+    "source": "\n也",
+    "translation": "so it is.",
+    "candidates": {
+      "openai:gpt-5.1": "so it is.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s275": {
+    "source": "或列諸物而具包。",
+    "translation": "Or one may list several things and wrap them all together;",
+    "candidates": {
+      "openai:gpt-5.1": "Or one may list several things and wrap them all together;",
+      "deepseek:deepseek-chat": "Or, to list several things and wrap them all,"
+    }
+  },
+  "c10-s276": {
+    "source": "輒加「諸」字於其術。",
+    "translation": "forthwith one adds the word “all” to its method.",
+    "candidates": {
+      "openai:gpt-5.1": "forthwith one adds the word “all” to its method.",
+      "deepseek:deepseek-chat": "one adds the character 'zhu' to the method."
+    }
+  },
+  "c10-s277": {
+    "source": "今取八駿之二。",
+    "translation": "Now take two of the Eight Steeds;",
+    "candidates": {
+      "openai:gpt-5.1": "Now take two of the Eight Steeds;",
+      "deepseek:deepseek-chat": "Now take two of the Eight Steeds."
+    }
+  },
+  "c10-s278": {
+    "source": "書如是。",
+    "translation": "write as follows.",
+    "candidates": {
+      "openai:gpt-5.1": "write as follows.",
+      "deepseek:deepseek-chat": "Write it as follows."
+    }
+  },
+  "c10-s279": {
+    "source": "吾嘗觀「渾沌經」之書。",
+    "translation": "I once gazed upon the book _Hun-tun Classic_,",
+    "candidates": {
+      "openai:gpt-5.1": "I once gazed upon the book _Hun-tun Classic_,",
+      "deepseek:deepseek-chat": "I once read the book of the \"Hun-tun Scripture\","
+    }
+  },
+  "c10-s280": {
+    "source": "方悟「包諸渾沌」之義。",
+    "translation": "and only then did I awaken to the meaning of “Wrap all into Hun-tun”.",
+    "candidates": {
+      "openai:gpt-5.1": "and only then did I awaken to the meaning of “Wrap all into Hun-tun”.",
+      "deepseek:deepseek-chat": "and only then understood the meaning of 'wrap zhu hun-tun'."
+    }
+  },
+  "c10-s281": {
+    "source": "\n\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c10-s282": {
+    "source": "名之曰「二駿」。",
+    "translation": "Name it ‘Two Steeds’."
+  },
+  "c10-s283": {
+    "source": "\n夫「八駿」之一。",
+    "translation": "As for the first of the Eight Steeds,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the first of the Eight Steeds,",
+      "deepseek:deepseek-chat": "As for the first of the 'Eight Steeds',"
+    }
+  },
+  "c10-s284": {
+    "source": "充「二駿」以其。",
+    "translation": "fill ‘Two Steeds’ with it."
+  },
+  "c10-s285": {
+    "source": "\n夫「八駿」之二。",
+    "translation": "As for the second of the Eight Steeds,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the second of the Eight Steeds,",
+      "deepseek:deepseek-chat": "As for the second of the 'Eight Steeds',"
+    }
+  },
+  "c10-s286": {
+    "source": "充「二駿」以其。",
+    "translation": "fill ‘Two Steeds’ with it."
+  },
+  "c10-s287": {
+    "source": "\n\n施「包諸渾沌」於「二駿」。",
+    "translation": "Apply “Wrap all into Hun-tun” to ‘Two Steeds’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply “Wrap all into Hun-tun” to 'Two Steeds'.",
+      "deepseek:deepseek-chat": "Apply 'wrap zhu hun-tun' to 'Two Steeds'."
+    }
+  },
+  "c10-s288": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c10-s289": {
+    "source": "得",
+    "translation": "One obtains:",
+    "candidates": {
+      "openai:gpt-5.1": "One obtains:",
+      "deepseek:deepseek-chat": "Obtain"
+    }
+  },
+  "c10-s290": {
+    "source": "列",
+    "translation": "A list,",
+    "candidates": {
+      "openai:gpt-5.1": "A list,",
+      "deepseek:deepseek-chat": "List"
+    }
+  },
+  "c10-s291": {
+    "source": "\n　物",
+    "translation": "a thing",
+    "candidates": {
+      "openai:gpt-5.1": "a thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s292": {
+    "source": "\n　　之「色」言「赤」",
+    "translation": "— its ‘color’ is the word “red”,",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'color' is the word \"red\",",
+      "deepseek:deepseek-chat": "its 'color' says \"red\""
+    }
+  },
+  "c10-s293": {
+    "source": "\n　　之「名」言「赤驥」",
+    "translation": "its ‘name’ is the word “Red Ji”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'name' is the word \"Red Ji\",",
+      "deepseek:deepseek-chat": "its 'name' says \"Chi Ji\""
+    }
+  },
+  "c10-s294": {
+    "source": "\n　　之「日行里數」數「一〇〇〇」",
+    "translation": "its ‘miles traveled by day’ is the number “1 0 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by day' is the number \"1 0 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by day' number \"1000\""
+    }
+  },
+  "c10-s295": {
+    "source": "\n　　之「夜行里數」數「八〇〇」",
+    "translation": "its ‘miles traveled by night’ is the number “8 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by night' is the number \"8 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by night' number \"800\""
+    }
+  },
+  "c10-s296": {
+    "source": "\n　　之「良耶」爻「陽」",
+    "translation": "its ‘Is it good?’ is the Ghaew “yang”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'Is it good?' is the Ghaew \"yang\",",
+      "deepseek:deepseek-chat": "its 'good or not' ghaew \"yang\""
+    }
+  },
+  "c10-s297": {
+    "source": "\n　　之「足數」數「四」",
+    "translation": "its ‘number of feet’ is the number “4”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'number of feet' is the number \"4\",",
+      "deepseek:deepseek-chat": "its 'number of legs' number \"four\""
+    }
+  },
+  "c10-s298": {
+    "source": "\n　也",
+    "translation": "so it is;",
+    "candidates": {
+      "openai:gpt-5.1": "so it is;",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s299": {
+    "source": "\n　物",
+    "translation": "a thing",
+    "candidates": {
+      "openai:gpt-5.1": "a thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s300": {
+    "source": "\n　　之「色」言「黑」",
+    "translation": "— its ‘color’ is the word “black”,",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'color' is the word \"black\",",
+      "deepseek:deepseek-chat": "its 'color' says \"black\""
+    }
+  },
+  "c10-s301": {
+    "source": "\n　　之「名」言「盜驪」",
+    "translation": "its ‘name’ is the word “Dao-li”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'name' is the word \"Dao-li\",",
+      "deepseek:deepseek-chat": "its 'name' says \"Dao Li\""
+    }
+  },
+  "c10-s302": {
+    "source": "\n　　之「日行里數」數「一〇〇〇」",
+    "translation": "its ‘miles traveled by day’ is the number “1 0 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by day' is the number \"1 0 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by day' number \"1000\""
+    }
+  },
+  "c10-s303": {
+    "source": "\n　　之「夜行里數」數「八〇〇」",
+    "translation": "its ‘miles traveled by night’ is the number “8 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'miles traveled by night' is the number \"8 0 0\",",
+      "deepseek:deepseek-chat": "its 'miles traveled by night' number \"800\""
+    }
+  },
+  "c10-s304": {
+    "source": "\n　　之「良耶」爻「陽」",
+    "translation": "its ‘Is it good?’ is the Ghaew “yang”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'Is it good?' is the Ghaew \"yang\",",
+      "deepseek:deepseek-chat": "its 'good or not' ghaew \"yang\""
+    }
+  },
+  "c10-s305": {
+    "source": "\n　　之「足數」數「四」",
+    "translation": "its ‘number of feet’ is the number “4”,",
+    "candidates": {
+      "openai:gpt-5.1": "its 'number of feet' is the number \"4\",",
+      "deepseek:deepseek-chat": "its 'number of legs' number \"four\""
+    }
+  },
+  "c10-s306": {
+    "source": "\n　也",
+    "translation": "so it is,",
+    "candidates": {
+      "openai:gpt-5.1": "so it is,",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s307": {
+    "source": "\n也",
+    "translation": "and so it is.",
+    "candidates": {
+      "openai:gpt-5.1": "and so it is.",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s308": {
+    "source": "或問曰。",
+    "translation": "Someone asks,",
+    "candidates": {
+      "openai:gpt-5.1": "Someone asks,",
+      "deepseek:deepseek-chat": "Someone may ask,"
+    }
+  },
+  "c10-s309": {
+    "source": "既得其渾沌語。",
+    "translation": "“Having already obtained its Hun-tun speech,",
+    "candidates": {
+      "openai:gpt-5.1": "“Having already obtained its Hun-tun speech,",
+      "deepseek:deepseek-chat": "\"Having obtained its Hun-tun language,"
+    }
+  },
+  "c10-s310": {
+    "source": "欲逆得其物。",
+    "translation": "how may one reverse and obtain the thing itself?”",
+    "candidates": {
+      "openai:gpt-5.1": "how may one reverse and obtain the thing itself?”",
+      "deepseek:deepseek-chat": "one wishes to inversely obtain the thing."
+    }
+  },
+  "c10-s311": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c10-s312": {
+    "source": "勞「食渾沌」「食諸渾沌」之術可矣。",
+    "translation": "“Exert the methods ‘Eat Hun-tun’ and ‘Eat all Hun-tun’ and it will suffice.”",
+    "candidates": {
+      "openai:gpt-5.1": "“Exert the methods 'Eat Hun-tun' and 'Eat all Hun-tun' and it will suffice.”",
+      "deepseek:deepseek-chat": "\"Employ the methods 'eat hun-tun' and 'eat zhu hun-tun' and it is permissible.\""
+    }
+  },
+  "c10-s313": {
+    "source": "吾嘗觀「渾沌經」之書。",
+    "translation": "I once gazed upon the book _Hun-tun Classic_,",
+    "candidates": {
+      "openai:gpt-5.1": "I once gazed upon the book _Hun-tun Classic_,",
+      "deepseek:deepseek-chat": "I once read the book of the \"Hun-tun Scripture\","
+    }
+  },
+  "c10-s314": {
+    "source": "方悟「包渾沌」「食渾沌」之義。",
+    "translation": "and only then did I awaken to the meanings of ‘Wrap into Hun-tun’ and ‘Eat Hun-tun’.",
+    "candidates": {
+      "openai:gpt-5.1": "and only then did I awaken to the meanings of 'Wrap into Hun-tun' and 'Eat Hun-tun'.",
+      "deepseek:deepseek-chat": "and only then understood the meaning of 'wrap hun-tun' and 'eat hun-tun'."
+    }
+  },
+  "c10-s315": {
+    "source": "\n\n施「包渾沌」於「白馬」。",
+    "translation": "Apply ‘Wrap into Hun-tun’ to ‘White Horse’;",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Wrap into Hun-tun' to 'White Horse';",
+      "deepseek:deepseek-chat": "Apply 'wrap hun-tun' to 'White Horse'."
+    }
+  },
+  "c10-s316": {
+    "source": "名之曰「渾沌」。",
+    "translation": "name it ‘Hun-tun’.",
+    "candidates": {
+      "openai:gpt-5.1": "name it 'Hun-tun'.",
+      "deepseek:deepseek-chat": "Name it 'Hun-tun'."
+    }
+  },
+  "c10-s317": {
+    "source": "\n施「食渾沌」於「渾沌」。",
+    "translation": "Apply ‘Eat Hun-tun’ to ‘Hun-tun’;",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Eat Hun-tun' to 'Hun-tun';",
+      "deepseek:deepseek-chat": "Apply 'eat hun-tun' to 'Hun-tun'."
+    }
+  },
+  "c10-s318": {
+    "source": "名之曰「非馬」。",
+    "translation": "name it ‘Not-Horse’.",
+    "candidates": {
+      "openai:gpt-5.1": "name it 'Not-Horse'.",
+      "deepseek:deepseek-chat": "Name it 'Not Horse'."
+    }
+  },
+  "c10-s319": {
+    "source": "注曰。",
+    "translation": "Note says,",
+    "candidates": {
+      "openai:gpt-5.1": "Note says,",
+      "deepseek:deepseek-chat": "A note says,"
+    }
+  },
+  "c10-s320": {
+    "source": "『公孫龍子曰。白馬非馬』",
+    "translation": "“Gongsun Longzi says, ‘White horse is not horse.’”",
+    "candidates": {
+      "openai:gpt-5.1": "'Gongsun Longzi says, \"White horse is not horse.\"'",
+      "deepseek:deepseek-chat": "\"Gongsun Longzi said, 'A white horse is not a horse'.\""
+    }
+  },
+  "c10-s321": {
+    "source": "\n\n夫「非馬」之『名』。",
+    "translation": "As for the ‘name’ of ‘Not-Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'name' of 'Not-Horse',",
+      "deepseek:deepseek-chat": "As for the 'name' of 'Not Horse',"
+    }
+  },
+  "c10-s322": {
+    "source": "書之。",
+    "translation": "write it down."
+  },
+  "c10-s323": {
+    "source": "\n夫「非馬」之『色』。",
+    "translation": "As for the ‘color’ of ‘Not-Horse’,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the 'color' of 'Not-Horse',",
+      "deepseek:deepseek-chat": "As for the 'color' of 'Not Horse',"
+    }
+  },
+  "c10-s324": {
+    "source": "書之。",
+    "translation": "write it down."
+  },
+  "c10-s325": {
+    "source": "\n注曰。",
+    "translation": "Note says,",
+    "candidates": {
+      "openai:gpt-5.1": "Note says,",
+      "deepseek:deepseek-chat": "A note says,"
+    }
+  },
+  "c10-s326": {
+    "source": "『所得皆如白馬』",
+    "translation": "“What is obtained is in every respect like White Horse.”",
+    "candidates": {
+      "openai:gpt-5.1": "'What is obtained is in every respect like White Horse.'",
+      "deepseek:deepseek-chat": "\"What is obtained is all as with White Horse'.\""
+    }
+  },
+  "c10-s327": {
+    "source": "今復以渾沌語書李翰林之生平如是。",
+    "translation": "Now again, in the speech of Hun-tun, we write the life of Li the Hanlin as follows,",
+    "candidates": {
+      "openai:gpt-5.1": "Now again, in the speech of Hun-tun, we write the life of Li the Hanlin as follows,",
+      "deepseek:deepseek-chat": "Now again, write the life of Academician Li in Hun-tun language as follows,"
+    }
+  },
+  "c10-s328": {
+    "source": "以示其物包物。",
+    "translation": "to show how a thing may encompass a thing,",
+    "candidates": {
+      "openai:gpt-5.1": "to show how a thing may encompass a thing,",
+      "deepseek:deepseek-chat": "to show that a thing can contain a thing,"
+    }
+  },
+  "c10-s329": {
+    "source": "物包列。",
+    "translation": "a thing may encompass a list,",
+    "candidates": {
+      "openai:gpt-5.1": "a thing may encompass a list,",
+      "deepseek:deepseek-chat": "a thing can contain a list,"
+    }
+  },
+  "c10-s330": {
+    "source": "列包物也。",
+    "translation": "and a list encompass a thing.",
+    "candidates": {
+      "openai:gpt-5.1": "and a list encompass a thing.",
+      "deepseek:deepseek-chat": "and a list can contain a thing."
+    }
+  },
+  "c10-s331": {
+    "source": "物",
+    "translation": "A thing",
+    "candidates": {
+      "openai:gpt-5.1": "A thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s332": {
+    "source": "\n  之「字」言「太白」",
+    "translation": "— his ‘given name’ is the word “Taibai”,",
+    "candidates": {
+      "openai:gpt-5.1": "— his 'given name' is the word \"Taibai\",",
+      "deepseek:deepseek-chat": "its 'style name' says \"Tai Bai\""
+    }
+  },
+  "c10-s333": {
+    "source": "\n  之「號」言「青蓮」",
+    "translation": "his ‘style’ is the word “Qinglian”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'style' is the word \"Qinglian\",",
+      "deepseek:deepseek-chat": "its 'sobriquet' says \"Qing Lian\""
+    }
+  },
+  "c10-s334": {
+    "source": "\n  之「壽考」數「六一」",
+    "translation": "his ‘span of years’ is the number “6 1”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'span of years' is the number \"6 1\",",
+      "deepseek:deepseek-chat": "its 'lifespan' number \"sixty-one\""
+    }
+  },
+  "c10-s335": {
+    "source": "\n  之「生年」言「長安元年」",
+    "translation": "his ‘year of birth’ is the word “First year of Chang’an”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'year of birth' is the word \"First year of Chang'an\",",
+      "deepseek:deepseek-chat": "its 'year of birth' says \"Chang'an First Year\""
+    }
+  },
+  "c10-s336": {
+    "source": "\n  之「卒年」言「上元三年」",
+    "translation": "his ‘year of death’ is the word “Third year of Shangyuan”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'year of death' is the word \"Third year of Shangyuan\",",
+      "deepseek:deepseek-chat": "its 'year of death' says \"Shangyuan Third Year\""
+    }
+  },
+  "c10-s337": {
+    "source": "\n  之「存詩」數「九〇〇」",
+    "translation": "his ‘extant poems’ are the number “9 0 0”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'extant poems' are the number \"9 0 0\",",
+      "deepseek:deepseek-chat": "its 'extant poems' number \"nine hundred\""
+    }
+  },
+  "c10-s338": {
+    "source": "\n  之「擅詩」爻「陽」",
+    "translation": "his ‘mastery of poetry’ is the Ghaew “yang”,",
+    "candidates": {
+      "openai:gpt-5.1": "his 'mastery of poetry' is the Ghaew \"yang\",",
+      "deepseek:deepseek-chat": "its 'skilled in poetry' ghaew \"yang\""
+    }
+  },
+  "c10-s339": {
+    "source": "\n  之「官」物",
+    "translation": "his ‘office’ is a thing",
+    "candidates": {
+      "openai:gpt-5.1": "his 'office' is a thing",
+      "deepseek:deepseek-chat": "its 'official post' thing"
+    }
+  },
+  "c10-s340": {
+    "source": "\n    之「銜」言「翰林」。",
+    "translation": "— its ‘title’ is the word “Hanlin”;",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'title' is the word \"Hanlin\";",
+      "deepseek:deepseek-chat": "its 'title' says \"Hanlin Academician\"."
+    }
+  },
+  "c10-s341": {
+    "source": "\n    之「年」言「天寶元年」。",
+    "translation": "its ‘year’ is the word “First year of Tianbao”.",
+    "candidates": {
+      "openai:gpt-5.1": "its 'year' is the word \"First year of Tianbao\".",
+      "deepseek:deepseek-chat": "its 'year' says \"Tianbao First Year\"."
+    }
+  },
+  "c10-s342": {
+    "source": "\n  也",
+    "translation": "So it is;",
+    "candidates": {
+      "openai:gpt-5.1": "So it is;",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s343": {
+    "source": "\n  之「名句」列",
+    "translation": "his ‘famous lines’ are a list —",
+    "candidates": {
+      "openai:gpt-5.1": "his 'famous lines' are a list —",
+      "deepseek:deepseek-chat": "its 'famous lines' list"
+    }
+  },
+  "c10-s344": {
+    "source": "\n    物",
+    "translation": "a thing",
+    "candidates": {
+      "openai:gpt-5.1": "a thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s345": {
+    "source": "\n      之「題」言「清平調」",
+    "translation": "— its ‘title’ is the word “Pure Peace Tune”,",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'title' is the word \"Pure Peace Tune\",",
+      "deepseek:deepseek-chat": "its 'title' says \"Qing Ping Melody\""
+    }
+  },
+  "c10-s346": {
+    "source": "\n      之「文」言「雲想衣裳花想容。",
+    "translation": "its ‘text’ is the word “Clouds conjure her raiment; blossoms dream her grace.",
+    "candidates": {
+      "openai:gpt-5.1": "its 'text' is the word \"Clouds conjure her raiment; blossoms dream her grace.",
+      "deepseek:deepseek-chat": "its 'text' says \"Clouds remind one of robes and raiment, flowers of countenance."
+    }
+  },
+  "c10-s347": {
+    "source": "春風拂檻露華濃。」",
+    "translation": "Spring breeze strokes the rail; dews bloom in heavy lace.”",
+    "candidates": {
+      "openai:gpt-5.1": "Spring breeze strokes the rail; dews bloom in heavy lace.\"",
+      "deepseek:deepseek-chat": "The spring breeze strokes the balustrade, the dew-laden blossoms are thick.\""
+    }
+  },
+  "c10-s348": {
+    "source": "\n    也",
+    "translation": "so it is;",
+    "candidates": {
+      "openai:gpt-5.1": "so it is;",
+      "deepseek:deepseek-chat": "So it is."
+    }
+  },
+  "c10-s349": {
+    "source": "\n    物",
+    "translation": "a thing",
+    "candidates": {
+      "openai:gpt-5.1": "a thing",
+      "deepseek:deepseek-chat": "Thing"
+    }
+  },
+  "c10-s350": {
+    "source": "\n      之「題」言「長相思」",
+    "translation": "— its ‘title’ is the word “Everlasting Longing”",
+    "candidates": {
+      "openai:gpt-5.1": "— its 'title' is the word \"Everlasting Longing\"",
+      "deepseek:deepseek-chat": "its 'title' says \"Enduring Longing\""
+    }
+  },
+  "c10-s351": {
+    "source": "\n      之「文」言「長相思。",
+    "translation": "its ‘text’ is the word “Everlasting Longing."
+  },
+  "c10-s352": {
+    "source": "在長安。",
+    "translation": "In Cháng’ān,",
+    "candidates": {
+      "openai:gpt-5.1": "In Chang’an,",
+      "deepseek:deepseek-chat": "In Chang'an."
+    }
+  },
+  "c10-s353": {
+    "source": "絡緯秋啼金井闌。",
+    "translation": "the katydids cry in autumn by the golden-welled balustrade;",
+    "candidates": {
+      "openai:gpt-5.1": "the katydids cry in autumn by the golden-welled balustrade;",
+      "deepseek:deepseek-chat": "Autumn crickets chirp by the golden well-rail."
+    }
+  },
+  "c10-s354": {
+    "source": "微霜淒淒簟色寒。」",
+    "translation": "thin frost, chill upon chill, makes the bamboo mat seem cold.”",
+    "candidates": {
+      "openai:gpt-5.1": "thin frost, chill upon chill, makes the bamboo mat seem cold.\"",
+      "deepseek:deepseek-chat": "Light frosts chill; the mat's hue turns cold.\""
+    }
+  },
+  "c10-s355": {
+    "source": "\n    也",
+    "translation": "So it is;",
+    "candidates": {
+      "openai:gpt-5.1": "So it is;",
+      "deepseek:deepseek-chat": "so it is;"
+    }
+  },
+  "c10-s356": {
+    "source": "\n    物",
+    "translation": "a thing —"
+  },
+  "c10-s357": {
+    "source": "\n      之「題」言「襄陽歌」",
+    "translation": "its ‘title’ is the word “Song of Xiāngyáng”;",
+    "candidates": {
+      "openai:gpt-5.1": "its 'title' is the word \"Song of Xiangyang\";",
+      "deepseek:deepseek-chat": "its 'title' is the word \"Song of Xiangyang\","
+    }
+  },
+  "c10-s358": {
+    "source": "\n      之「文」言「落日欲沒峴山西。",
+    "translation": "its ‘text’ is the word “The setting sun would sink beyond Mount Xiàn in the west;",
+    "candidates": {
+      "openai:gpt-5.1": "its 'text' is the word \"The setting sun would sink beyond Mount Xian in the west;",
+      "deepseek:deepseek-chat": "its 'text' is the word \"The setting sun seeks to sink west of Xian Hill."
+    }
+  },
+  "c10-s359": {
+    "source": "倒著接蘺花下迷。",
+    "translation": "reeling, I clutch at the flowered twigs of jiē-lí and lose my way beneath;",
+    "candidates": {
+      "openai:gpt-5.1": "reeling, I clutch at the flowered twigs of jie-li and lose my way beneath;",
+      "deepseek:deepseek-chat": "Upside-down, the straw hat, lost beneath the flowers."
+    }
+  },
+  "c10-s360": {
+    "source": "襄陽小兒齊拍手。",
+    "translation": "the little lads of Xiāngyáng clap their hands in unison;",
+    "candidates": {
+      "openai:gpt-5.1": "the little lads of Xiangyang clap their hands in unison;",
+      "deepseek:deepseek-chat": "The children of Xiangyang all clap their hands together."
+    }
+  },
+  "c10-s361": {
+    "source": "攔街爭唱「白銅鞮」。」",
+    "translation": "across the street they vie in singing ‘White Copper-Dī’.”",
+    "candidates": {
+      "openai:gpt-5.1": "across the street they vie in singing 'White Bronze-Di'.\"",
+      "deepseek:deepseek-chat": "Blocking the street, they vie to sing 'White Copper Di'.\""
+    }
+  },
+  "c10-s362": {
+    "source": "\n    也",
+    "translation": "So it is;",
+    "candidates": {
+      "openai:gpt-5.1": "So it is;",
+      "deepseek:deepseek-chat": "so it is;"
+    }
+  },
+  "c10-s363": {
+    "source": "\n    物",
+    "translation": "a thing —"
+  },
+  "c10-s364": {
+    "source": "\n      之「題」言「楊叛兒」",
+    "translation": "its ‘title’ is the word “Yáng Pàn-er”;",
+    "candidates": {
+      "openai:gpt-5.1": "its 'title' is the word \"Yang Pan-er\";",
+      "deepseek:deepseek-chat": "its 'title' is the word \"Yang Pan'er\","
+    }
+  },
+  "c10-s365": {
+    "source": "\n      之「文」言「烏啼隱楊花。",
+    "translation": "its ‘text’ is the word “Crows cry, half-hidden in the willow-cotton’s bloom;",
+    "candidates": {
+      "openai:gpt-5.1": "its 'text' is the word \"Crows cry, half-hidden in the willow-cotton’s bloom;",
+      "deepseek:deepseek-chat": "its 'text' is the word \"Crows cry, hidden in poplar flowers."
+    }
+  },
+  "c10-s366": {
+    "source": "君醉留妾家。",
+    "translation": "you, drunk, would have me stay within your house;",
+    "candidates": {
+      "openai:gpt-5.1": "you, drunk, would have me stay within your house;",
+      "deepseek:deepseek-chat": "You, drunk, linger in my home."
+    }
+  },
+  "c10-s367": {
+    "source": "博山爐中沉香火。",
+    "translation": "in the Bóshān brazier aloeswood embers glow;",
+    "candidates": {
+      "openai:gpt-5.1": "in the Boshan brazier aloeswood embers glow;",
+      "deepseek:deepseek-chat": "In the Boshan censer, aloeswood fire."
+    }
+  },
+  "c10-s368": {
+    "source": "雙煙一氣凌紫霞。」",
+    "translation": "twin plumes of smoke, one breath, mount to the purple clouds.”",
+    "candidates": {
+      "openai:gpt-5.1": "twin plumes of smoke, one breath, mount to the purple clouds.\"",
+      "deepseek:deepseek-chat": "Two streams of smoke, one breath, soar to purple clouds.\""
+    }
+  },
+  "c10-s369": {
+    "source": "\n    也",
+    "translation": "So it is;",
+    "candidates": {
+      "openai:gpt-5.1": "So it is;",
+      "deepseek:deepseek-chat": "so it is;"
+    }
+  },
+  "c10-s370": {
+    "source": "\n  也",
+    "translation": "so it is;"
+  },
+  "c10-s371": {
+    "source": "\n  之「子女」列",
+    "translation": "his ‘sons and daughters’ are a list —",
+    "candidates": {
+      "openai:gpt-5.1": "his 'sons and daughters' are a list —",
+      "deepseek:deepseek-chat": "his 'children' are a list —"
+    }
+  },
+  "c10-s372": {
+    "source": "\n    言「伯禽」言「平陽」言「頗黎」",
+    "translation": "the word “Bóqín”, the word “Píngyáng”, the word “Pōlí”;",
+    "candidates": {
+      "openai:gpt-5.1": "the word \"Boqin\", the word \"Pingyang\", the word \"Poli\";",
+      "deepseek:deepseek-chat": "the words \"Boqin\", \"Pingyang\", \"Poli\","
+    }
+  },
+  "c10-s373": {
+    "source": "\n  也",
+    "translation": "so it is;"
+  },
+  "c10-s374": {
+    "source": "\n也",
+    "translation": "so it is."
+  },
+  "c10-s375": {
+    "source": "格物之道。",
+    "translation": "The Way of Investigating Things —",
+    "candidates": {
+      "openai:gpt-5.1": "The Way of Investigating Things —",
+      "deepseek:deepseek-chat": "The way of investigating things —"
+    }
+  },
+  "c10-s376": {
+    "source": "至是亦略備矣。",
+    "translation": "thus far it is now briefly complete.",
+    "candidates": {
+      "openai:gpt-5.1": "thus far it is now briefly complete.",
+      "deepseek:deepseek-chat": "by this point is also now briefly complete."
+    }
+  },
+  "c10-s377": {
+    "source": "其雖誠非編程之所必須。",
+    "translation": "Though in truth it is by no means something programming must of necessity possess,",
+    "candidates": {
+      "openai:gpt-5.1": "Though in truth it is by no means something programming must of necessity possess,",
+      "deepseek:deepseek-chat": "Although it is indeed not strictly necessary for programming,"
+    }
+  },
+  "c10-s378": {
+    "source": "然條理以明。",
+    "translation": "yet it renders the order of things more lucid,",
+    "candidates": {
+      "openai:gpt-5.1": "yet it renders the order of things more lucid,",
+      "deepseek:deepseek-chat": "yet it clarifies the principles,"
+    }
+  },
+  "c10-s379": {
+    "source": "讀寫以便。",
+    "translation": "and makes reading and writing more convenient.",
+    "candidates": {
+      "openai:gpt-5.1": "and makes reading and writing more convenient.",
+      "deepseek:deepseek-chat": "and facilitates reading and writing."
+    }
+  },
+  "c10-s380": {
+    "source": "孰言無益耳。",
+    "translation": "Who will still say it is of no benefit?",
+    "candidates": {
+      "openai:gpt-5.1": "Who will still say it is of no benefit?",
+      "deepseek:deepseek-chat": "Who can say it is without benefit?"
+    }
+  }
+}
