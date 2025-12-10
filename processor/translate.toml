@@ -151,6 +151,7 @@ models = [
   # "openai:gpt-5-mini",
   # "gemini:models/gemini-3-pro-preview",
 ]
+
 [evaluation]
 # Model to use for evaluating/judging translations
 # model = "deepseek:deepseek-chat"
@@ -188,8 +189,9 @@ Style: Dignified, reflective, refined, old-style English, using typographical pu
 3. Select the "Best Translation" from the candidates that best matches the style, accuracy, and flow.
 4. If the "Best Translation" has minor flaws or can be improved to better fit the style/context, provide a `better_translation`.
    - CRITICAL: Ensure all quotation marks are typographical (curly) in the `better_translation`: ‘...’ or “...”, never straight '...' or "...".
-   - If the best candidate is already perfect but uses straight quotes, correct them to typographical quotes in `better_translation`
-   - Use single quote for single quote, double quote for double quote. Don't change between single quote and double quote.
+   - PRESERVE QUOTE LEVEL: Single straight quotes must become SINGLE curly quotes (‘...’). Double straight quotes must become DOUBLE curly quotes (“...”). DO NOT CHANGE single to double or vice-versa.
+   - Example matches: 'text' -> ‘text’ | "text" -> “text”
+   - For direct quotes with inserted quotation marks, default to “”. For proper noun or newly introduced concept, do not add, or only add ‘’.
    - CRITICAL: Use underscores for all book titles, e.g. The _Book of Changes_, _Nine Chapters on the Mathematical Art_. Do NOT use quotes or plain text for book titles.
 5. Provide a brief "Reasoning" for your choice.
 
