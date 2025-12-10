@@ -67,14 +67,8 @@ def load_config():
 MODEL_NAMES, SYSTEM_PROMPT, TRANSLATION_PROMPT, EVAL_MODEL, EVAL_PROMPT = load_config()
 
 API_DELAY_SECONDS = 1.0
-MAX_SENTENCES_PER_BATCH = 5 # Reduced for multi-model safety? Or keep 30?
-# translate-compare used limit=5 default.
-# translate.py used 30.
-# With multiple models and judge, 30 might be too slow/expensive per batch?
-# Let's stick closer to translate.py's batch logic but maybe lower text limit slightly?
-# Actually, for correctness, smaller batches (5-10) are better for the Judge context window too.
-MAX_SENTENCES_PER_BATCH = 5 
-MAX_CHARS_PER_BATCH = 2000
+# Batch settings will be dynamic based on limit
+MAX_CHARS_PER_BATCH = 4000 # Increased since we might have large batches
 MAX_CONTEXT_CHARS = 1800
 MAX_FUTURE_CONTEXT_CHARS = 500
 
@@ -118,26 +112,31 @@ def _prepare_translation_files(sentences_dir: Path, translations_dir: Path) -> L
     print(f"Prepared {len(chapter_pairs)} sentence translation files")
     return chapter_pairs
 
-def _build_batches_for_chapter(translations_data: Dict[str, Dict[str, str]]) -> List[List[str]]:
+def _build_batches_for_chapter(translations_data: Dict[str, Dict[str, str]], limit: int) -> List[List[str]]:
     missing_ids = [
         sid for sid in sorted(translations_data.keys(), key=_sentence_sort_key)
         if not translations_data.get(sid, {}).get("translation", "").strip()
     ]
-    batches = []
-    current = []
-    current_chars = 0
-    for sid in missing_ids:
-        source = translations_data[sid].get("source", "")
-        length = len(source)
-        if current and (len(current) >= MAX_SENTENCES_PER_BATCH or current_chars + length > MAX_CHARS_PER_BATCH):
-            batches.append(current)
-            current = []
-            current_chars = 0
-        current.append(sid)
-        current_chars += length
-    if current:
-        batches.append(current)
-    return batches
+    
+    # We treat the limit as the size of the single batch to process
+    # But we might still want to respect char limit to avoid context overflow?
+    # User said: "Treat the given limit number as a single batch"
+    
+    if not missing_ids:
+        return []
+
+    # Take up to 'limit' items
+    target_ids = missing_ids[:limit]
+    
+    # Check char limit roughly? 
+    # If explicit request is "single batch", we should try to honor it, but warn if too huge?
+    # For now, just return one batch containing strictly the limited items.
+    
+    current_chars = sum(len(translations_data[sid].get("source", "")) for sid in target_ids)
+    if current_chars > MAX_CHARS_PER_BATCH:
+        print(f"  ⚠️ Warning: Single batch size ({current_chars} chars) exceeds recommended max ({MAX_CHARS_PER_BATCH}). Model context might be exceeded.")
+        
+    return [target_ids]
 
 def _collect_previous_context(translations_data: Dict[str, Dict[str, str]], batch_ids: List[str], max_chars: int = MAX_CONTEXT_CHARS) -> Tuple[str, str]:
     if not batch_ids: return "", ""
@@ -464,24 +463,23 @@ def _translate_chapter(sentences_path: Path, translations_path: Path, limit_sent
     print("=" * 80)
 
     translations_data = json.loads(translations_path.read_text(encoding="utf-8"))
-    batches = _build_batches_for_chapter(translations_data)
+    
+    # Build a single batch of size 'limit_sentences'
+    batches = _build_batches_for_chapter(translations_data, limit_sentences)
 
     if not batches:
         print("  ✓ No missing translations.")
-        print("  ✓ No missing translations.")
         return 0
 
-    print(f"  Found {sum(len(b) for b in batches)} missing sentence(s) in {len(batches)} batch(es).")
+    print(f"  Found missing sentences. Processing {len(batches[0])} sentences in 1 batch.")
     
-    # Process batches until sentence limit reached
+    # Process the single batch
     processed_batches = 0
     sentences_processed = 0
     
     for i, batch in enumerate(batches):
-        if sentences_processed >= limit_sentences:
-            break
-            
-        print(f"  Processing Batch {i+1}/{len(batches)} (Sentences so far: {sentences_processed}/{limit_sentences}): {len(batch)} sentences")
+        # Should only be 1 batch
+        print(f"  Processing Batch {i+1}/{len(batches)}: {len(batch)} sentences")
         
         try:
             _translate_chapter_batch(translations_path, translations_data, batch)
