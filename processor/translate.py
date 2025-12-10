@@ -1,19 +1,26 @@
 import json
 import os
 import sys
+import argparse
 import tomllib
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Any
 
 from dotenv import load_dotenv
 from any_llm import completion
 
+# Import translate.py logic is effectively rewriting it, but we can reuse some helper structures if we want.
+# Actually, since we are REPLACING translate.py's main logic with the merged one, we will just rewrite translate.py.
+# But "translate-compare.py" has dependency on "translate.py" for helper functions? 
+# "import translate as base_translate" <-- Yes it does.
+# So we need to be careful. Ideally `translate.py` is self-contained.
+# I will copy the helper functions into the new translate.py if they are good, or keep them.
+# The `_build_batches_for_chapter` etc in translate.py are solid.
 
-def _load_translation_config() -> tuple[str, str, str]:
+def load_config():
     """
     Load translation configuration from translate.toml.
-    Returns (model_name, system_prompt, translation_prompt) tuple.
-    Raises ValueError if config file is missing, invalid, or required fields are missing.
+    Returns (models, system_prompt, translation_prompt, eval_model, eval_prompt) tuple.
     """
     config_path = Path(__file__).resolve().parent / "translate.toml"
 
@@ -26,67 +33,58 @@ def _load_translation_config() -> tuple[str, str, str]:
     try:
         with config_path.open("rb") as f:
             cfg = tomllib.load(f)
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:
         raise ValueError(
             f"Failed to parse translation config {config_path}: {exc}"
         ) from exc
 
-    table = cfg.get("translation")
-    if not isinstance(table, dict):
-        raise ValueError(
-            f"Config file {config_path} must contain a [translation] section"
-        )
+    trans_cfg = cfg.get("translation", {})
+    eval_cfg = cfg.get("evaluation", {})
 
-    model_name = table.get("model_name")
-    system_prompt = table.get("system_prompt")
-    translation_prompt = table.get("translation_prompt")
+    models = trans_cfg.get("models")
+    if not models or not isinstance(models, list):
+         # Fallback or Error? Plan said "no legacy support".
+         # But maybe user hasn't updated toml yet? We just updated it.
+         # If missing, error out.
+         raise ValueError(
+            f"Config file {config_path} must have 'models' list in [translation] section"
+         )
 
-    if not isinstance(model_name, str):
-        raise ValueError(
-            f"Config file {config_path} must have 'model_name' as a string in [translation] section"
-        )
-
+    system_prompt = trans_cfg.get("system_prompt")
+    translation_prompt = trans_cfg.get("translation_prompt")
+    
     if not isinstance(translation_prompt, str):
-        raise ValueError(
-            f"Config file {config_path} must have 'translation_prompt' as a string in [translation] section"
-        )
-
+        raise ValueError(f"Missing 'translation_prompt' string in [translation]")
     if not isinstance(system_prompt, str):
-        raise ValueError(
-            f"Config file {config_path} must have 'system_prompt' as a string in [translation] section"
-        )
+        raise ValueError(f"Missing 'system_prompt' string in [translation]")
+        
+    eval_model = eval_cfg.get("model", "deepseek:deepseek-chat")
+    eval_prompt = eval_cfg.get("prompt", "")
 
-    if "{text}" not in translation_prompt:
-        raise ValueError(
-            f"Config file {config_path} translation_prompt must contain {{text}} placeholder"
-        )
-
-    return model_name, system_prompt, translation_prompt
+    return models, system_prompt, translation_prompt, eval_model, eval_prompt
 
 
-# Load configuration from file (required)
-MODEL_NAME, SYSTEM_PROMPT, TRANSLATION_PROMPT = _load_translation_config()
+MODEL_NAMES, SYSTEM_PROMPT, TRANSLATION_PROMPT, EVAL_MODEL, EVAL_PROMPT = load_config()
 
-API_DELAY_SECONDS = 1.0  # Small delay between batches
-MAX_SENTENCES_PER_BATCH = 30
+API_DELAY_SECONDS = 1.0
+MAX_SENTENCES_PER_BATCH = 5 # Reduced for multi-model safety? Or keep 30?
+# translate-compare used limit=5 default.
+# translate.py used 30.
+# With multiple models and judge, 30 might be too slow/expensive per batch?
+# Let's stick closer to translate.py's batch logic but maybe lower text limit slightly?
+# Actually, for correctness, smaller batches (5-10) are better for the Judge context window too.
+MAX_SENTENCES_PER_BATCH = 5 
 MAX_CHARS_PER_BATCH = 2000
 MAX_CONTEXT_CHARS = 1800
 MAX_FUTURE_CONTEXT_CHARS = 500
 
 
 def _sort_chapter_sentences_file(path: Path) -> int:
-    """
-    Sort key for 'c1.sentences.json' -> 1, etc.
-    """
-    name = path.stem.split(".")[0]  # "c1"
+    name = path.stem.split(".")[0]
     num_str = name.lstrip("c")
     return int(num_str) if num_str.isdigit() else 0
 
-
 def _sentence_sort_key(sent_id: str) -> int:
-    """
-    Sort key for sentence ids like 'c1-s245' -> 245.
-    """
     if "-s" in sent_id:
         try:
             return int(sent_id.split("-s", 1)[1])
@@ -94,411 +92,399 @@ def _sentence_sort_key(sent_id: str) -> int:
             return 0
     return 0
 
-
 def _setup_any_llm() -> None:
     load_dotenv()
-    # any-llm will automatically pick up API keys from environment variables
-    # e.g. OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.
-    # api_key = os.getenv("OPENAI_API_KEY")
-    # if not api_key:
-    #     raise ValueError(
-    #         "OPENAI_API_KEY environment variable not set. "
-    #         "Please set it in your .env file or environment."
-    #     )
-    # return OpenAI(api_key=api_key)
-    pass
 
-
-def _prepare_translation_files(
-    sentences_dir: Path,
-    translations_dir: Path,
-) -> List[Tuple[Path, Path]]:
-    """
-    For each `cN.sentences.json`, ensure a corresponding
-    `cN.translations.json` exists, initialized with:
-
-      { "cN-sK": { "source": "...", "translation": "" }, ... }
-
-    Returns a list of (sentences_path, translations_path) pairs.
-    """
+def _prepare_translation_files(sentences_dir: Path, translations_dir: Path) -> List[Tuple[Path, Path]]:
     translations_dir.mkdir(exist_ok=True, parents=True)
-
     chapter_pairs: List[Tuple[Path, Path]] = []
-
-    for sentences_path in sorted(
-        sentences_dir.glob("c*.sentences.json"), key=_sort_chapter_sentences_file
-    ):
-        chapter_id = sentences_path.stem.split(".")[0]  # "c1"
+    
+    for sentences_path in sorted(sentences_dir.glob("c*.sentences.json"), key=_sort_chapter_sentences_file):
+        chapter_id = sentences_path.stem.split(".")[0]
         translations_path = translations_dir / f"{chapter_id}.translations.json"
-
+        
         if not translations_path.exists():
             canon = json.loads(sentences_path.read_text(encoding="utf-8"))
             init_data: Dict[str, Dict[str, str]] = {}
-
             for s in canon.get("sentences", []):
                 sid = s.get("id")
                 src = s.get("source", "")
-                if not isinstance(sid, str) or not isinstance(src, str):
-                    continue
-                init_data[sid] = {"source": src, "translation": ""}
-
-            translations_path.write_text(
-                json.dumps(init_data, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
+                if sid and src:
+                    init_data[sid] = {"source": src, "translation": ""}
+            translations_path.write_text(json.dumps(init_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print(f"Created {translations_path}")
-
+            
         chapter_pairs.append((sentences_path, translations_path))
-
     print(f"Prepared {len(chapter_pairs)} sentence translation files")
     return chapter_pairs
 
-
-def _build_batches_for_chapter(
-    translations_data: Dict[str, Dict[str, str]],
-) -> List[List[str]]:
-    """
-    Build batches of sentence ids that are missing translation.
-    Batches are constrained by MAX_SENTENCES_PER_BATCH and MAX_CHARS_PER_BATCH.
-    """
+def _build_batches_for_chapter(translations_data: Dict[str, Dict[str, str]]) -> List[List[str]]:
     missing_ids = [
-        sid
-        for sid in sorted(translations_data.keys(), key=_sentence_sort_key)
+        sid for sid in sorted(translations_data.keys(), key=_sentence_sort_key)
         if not translations_data.get(sid, {}).get("translation", "").strip()
     ]
-
-    batches: List[List[str]] = []
-    current: List[str] = []
+    batches = []
+    current = []
     current_chars = 0
-
     for sid in missing_ids:
         source = translations_data[sid].get("source", "")
         length = len(source)
-
-        if current and (
-            len(current) >= MAX_SENTENCES_PER_BATCH
-            or current_chars + length > MAX_CHARS_PER_BATCH
-        ):
+        if current and (len(current) >= MAX_SENTENCES_PER_BATCH or current_chars + length > MAX_CHARS_PER_BATCH):
             batches.append(current)
             current = []
             current_chars = 0
-
         current.append(sid)
         current_chars += length
-
     if current:
         batches.append(current)
-
     return batches
 
-
-def _collect_previous_context(
-    translations_data: Dict[str, Dict[str, str]],
-    batch_ids: List[str],
-    max_chars: int = MAX_CONTEXT_CHARS,
-) -> Tuple[str, str]:
-    """
-    Gather concatenated prior sentence sources and translations to seed the prompt.
-    Only sentences that occur before the current batch (and that have translations)
-    are included, up to `max_chars` combined characters.
-    """
-
-    if not batch_ids:
-        return "", ""
-
+def _collect_previous_context(translations_data: Dict[str, Dict[str, str]], batch_ids: List[str], max_chars: int = MAX_CONTEXT_CHARS) -> Tuple[str, str]:
+    if not batch_ids: return "", ""
     ordered_ids = sorted(translations_data.keys(), key=_sentence_sort_key)
     try:
-        first_batch_index = ordered_ids.index(batch_ids[0])
+        first_idx = ordered_ids.index(batch_ids[0])
     except ValueError:
         return "", ""
-
-    context_ids = ordered_ids[:first_batch_index]
-    collected: List[Tuple[str, str]] = []
+        
+    context_ids = ordered_ids[:first_idx]
+    collected = []
     running_chars = 0
-
     for sid in reversed(context_ids):
         entry = translations_data.get(sid) or {}
-        source = (entry.get("source") or "").strip()
-        translation = (entry.get("translation") or "").strip()
-
-        if not source and not translation:
-            continue
-
-        addition = len(source) + len(translation)
-        if addition == 0:
-            continue
-
-        if running_chars + addition > max_chars:
-            break
-
-        collected.append((source, translation))
-        running_chars += addition
-
-    if not collected:
-        return "", ""
-
+        src = (entry.get("source") or "").strip()
+        trans = (entry.get("translation") or "").strip()
+        if not src and not trans: continue
+        add = len(src) + len(trans)
+        if add == 0: continue
+        if running_chars + add > max_chars: break
+        collected.append((src, trans))
+        running_chars += add
+        
+    if not collected: return "", ""
     collected.reverse()
-    sentences_context = " ".join(src for src, _ in collected if src).strip()
-    translations_context = " ".join(tr for _, tr in collected if tr).strip()
+    return " ".join(s for s, _ in collected if s).strip(), " ".join(t for _, t in collected if t).strip()
 
-    return sentences_context, translations_context
-
-
-def _collect_future_context(
-    translations_data: Dict[str, Dict[str, str]],
-    batch_ids: List[str],
-    max_chars: int = MAX_FUTURE_CONTEXT_CHARS,
-) -> str:
-    """
-    Gather upcoming sentence sources for future context to guide translation.
-    Only returns source text, as translations don't exist yet.
-    """
-    if not batch_ids:
-        return ""
-
+def _collect_future_context(translations_data: Dict[str, Dict[str, str]], batch_ids: List[str], max_chars: int = MAX_FUTURE_CONTEXT_CHARS) -> str:
+    if not batch_ids: return ""
     ordered_ids = sorted(translations_data.keys(), key=_sentence_sort_key)
     try:
-        # Find index of the last item in the current batch
-        last_batch_index = ordered_ids.index(batch_ids[-1])
+        last_idx = ordered_ids.index(batch_ids[-1])
     except ValueError:
         return ""
-
-    # Check indices after the batch
-    context_ids = ordered_ids[last_batch_index + 1 :]
-    collected: List[str] = []
+    context_ids = ordered_ids[last_idx+1:]
+    collected = []
     running_chars = 0
-
     for sid in context_ids:
         entry = translations_data.get(sid) or {}
-        source = (entry.get("source") or "").strip()
-        if not source:
-            continue
-
-        length = len(source)
-        if running_chars + length > max_chars:
-            break
-
-        collected.append(source)
-        running_chars += length
-
-    if not collected:
-        return ""
-
+        src = (entry.get("source") or "").strip()
+        if not src: continue
+        if running_chars + len(src) > max_chars: break
+        collected.append(src)
+        running_chars += len(src)
     return " ".join(collected).strip()
 
-
-def _build_text_block_for_batch(
-    translations_data: Dict[str, Dict[str, str]],
-    batch_ids: List[str],
-) -> str:
-    """
-    Build the `{text}` payload inserted into TRANSLATION_PROMPT for one batch.
-    """
-    context_sentences, context_translations = _collect_previous_context(
-        translations_data, batch_ids
-    )
-
-    lines: List[str] = []
-
-    if context_sentences or context_translations:
+def _build_text_block_for_batch(translations_data: Dict[str, Dict[str, str]], batch_ids: List[str]) -> str:
+    # This builds the text block for the TRANSLATION PROMPT
+    ctx_src, ctx_trans = _collect_previous_context(translations_data, batch_ids)
+    lines = []
+    if ctx_src or ctx_trans:
         lines.append("PREVIOUS CONTEXT (already translated; reference only)")
-        if context_sentences:
-            lines.append("Chinese Sentences:")
-            lines.append(context_sentences)
-            lines.append("")
-        if context_translations:
-            lines.append("English Translations:")
-            lines.append(context_translations)
-            lines.append("")
-        lines.append("END OF CONTEXT")
-        lines.append("")
-
+        if ctx_src:
+            lines.append("Chinese Sentences:"); lines.append(ctx_src); lines.append("")
+        if ctx_trans:
+            lines.append("English Translations:"); lines.append(ctx_trans); lines.append("")
+        lines.append("END OF CONTEXT"); lines.append("")
+    
     lines.append("CURRENT SENTENCES TO TRANSLATE:")
-
     for idx, sid in enumerate(batch_ids, start=1):
         source = translations_data[sid].get("source", "")
+        # Use simple ID or real ID? Prompt says "id": "..."
+        # We'll include the real ID in the prompt so the model returns it back if it's JSON
         lines.append(f"SENTENCE {idx}: {sid}")
         lines.append(source.strip())
-        lines.append("")  # blank line between sentences
-
-    future_context_src = _collect_future_context(translations_data, batch_ids)
-    if future_context_src:
-        lines.append("FUTURE CONTEXT (upcoming sentences; do not translate, for reference only)")
-        lines.append(future_context_src)
         lines.append("")
-
+        
+    fut = _collect_future_context(translations_data, batch_ids)
+    if fut:
+        lines.append("FUTURE CONTEXT (upcoming sentences; do not translate, for reference only)")
+        lines.append(fut)
+        lines.append("")
     return "\n".join(lines).strip()
 
-
-def _call_translation_api(
-    batch_ids: List[str],
-    translations_data: Dict[str, Dict[str, str]],
-) -> Dict[str, str]:
-    """
-    Call the model for one batch of sentence ids.
-    Returns a mapping {sent_id: translated_line}.
-    """
-    text_block = _build_text_block_for_batch(translations_data, batch_ids)
+def _call_translation_api_single_model(model_name: str, text_block: str) -> Dict[str, str]:
     prompt = TRANSLATION_PROMPT.format(text=text_block)
-    system_content = SYSTEM_PROMPT
-
-    # Debug: print exact prompt with separators
-    print("\n" + "=" * 80)
-    print("DEBUG: System Message")
-    print("=" * 80)
-    print(system_content)
-    print("\n" + "=" * 80)
-    print("DEBUG: User Prompt (Exact)")
-    print("=" * 80)
-    print(prompt)
-    print("=" * 80 + "\n")
-
-    print(f"  🤖 Translating {len(batch_ids)} sentence(s)...")
-
-    # Parse provider and model from MODEL_NAME if possible
-    # e.g. "openai:gpt-4o" -> provider="openai", model="gpt-4o"
+    
     provider = None
-    model = MODEL_NAME
-    if ":" in MODEL_NAME:
-        parts = MODEL_NAME.split(":", 1)
+    model = model_name
+    if ":" in model_name:
+        parts = model_name.split(":", 1)
         if len(parts) == 2:
             provider, model = parts
-
+            
     kwargs = {
         "model": model,
         "messages": [
-            {"role": "system", "content": system_content},
+            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": prompt},
         ],
     }
-    if provider:
-        kwargs["provider"] = provider
-
-    response = completion(**kwargs)
-
-    raw = (response.choices[0].message.content or "").strip()
-    print("  📦 Raw response preview:")
-    print(f"     {raw[:200]}..." if len(raw) > 200 else f"     {raw}")
-
+    if provider: kwargs["provider"] = provider
+    
+    print(f"    Running {model_name}...")
     try:
+        response = completion(**kwargs)
+        raw = (response.choices[0].message.content or "").strip()
+        
+        if "```json" in raw:
+            raw = raw.split("```json")[1].split("```")[0].strip()
+        elif "```" in raw:
+            raw = raw.split("```")[1].split("```")[0].strip()
+            
         payload = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f"Failed to parse JSON from model response: {exc}") from exc
+        t_list = payload.get("translations", [])
+        if not isinstance(t_list, list): return {}
+        
+        result = {}
+        for entry in t_list:
+            if isinstance(entry, dict):
+                sid = entry.get("id")
+                val = entry.get("translation")
+                if sid and val:
+                    result[sid] = val.strip()
+        return result
+    except Exception as e:
+        print(f"    ❌ Error with {model_name}: {e}")
+        return {}
 
-    translations_list = payload.get("translations")
-    if not isinstance(translations_list, list):
-        raise RuntimeError(
-            "Model response JSON does not contain a 'translations' list."
-        )
+def run_evaluation(
+    source_lines: List[str],
+    prev_context: str,
+    future_context: str,
+    model_translations: Dict[str, List[str]]
+) -> Dict[str, Any]:
+    print(f"    Running Evaluation (Judge: {EVAL_MODEL})...")
+    
+    # 1. Prepare source lines [1] ...
+    source_text_list = []
+    for i, line in enumerate(source_lines, start=1):
+         trimmed = line.strip()
+         source_text_list.append(f"[{i}] {trimmed}")
+    source_text = "\n".join(source_text_list)
+    
+    # 2. Anonymize
+    alias_map = {}
+    candidates_str = ""
+    start_char_code = 65 
+    sorted_models = sorted(model_translations.keys())
+    
+    for i, m_name in enumerate(sorted_models):
+        alias = f"Candidate {chr(start_char_code + i)}"
+        alias_map[alias] = m_name
+        lines = model_translations[m_name]
+        m_text = "\n".join(lines)
+        candidates_str += f"### {alias}\n{m_text}\n\n"
+        
+    user_prompt = EVAL_PROMPT.format(
+        source_segment=source_text,
+        previous_context=prev_context,
+        future_context=future_context,
+        candidates=candidates_str.strip()
+    )
+    
+    sys_inst = "You are an expert impartial judge of translation quality."
+    
+    provider = None
+    model = EVAL_MODEL
+    if ":" in EVAL_MODEL:
+        parts = EVAL_MODEL.split(":", 1)
+        if len(parts) == 2:
+            provider, model = parts
+            
+    try:
+        kwargs = {"model": model, "messages": [{"role": "system", "content": sys_inst}, {"role": "user", "content": user_prompt}]}
+        if provider: kwargs["provider"] = provider
+        
+        # print("DEBUG: Eval Prompt:\n", user_prompt)
+        
+        response = completion(**kwargs)
+        content = response.choices[0].message.content or ""
+        
+        # 3. Parse Custom Output
+        result = {}
+        lines = content.splitlines()
+        current_section = None
+        refined_lines_map = {}
+        
+        import re
+        
+        for line in lines:
+            line = line.strip()
+            if not line: continue
+            
+            if line.lower().startswith("best model:"):
+                val = line.split(":", 1)[1].strip().replace("*", "")
+                # De-anonymize
+                for alias, real_name in alias_map.items():
+                    if alias in val:
+                        val = real_name
+                        break
+                result["best_model"] = val
+            elif line.lower().startswith("reasoning:"):
+                result["reasoning"] = line.split(":", 1)[1].strip()
+            elif "refined translation" in line.lower() or "better translation" in line.lower():
+                current_section = "refined"
+            elif current_section == "refined":
+                m = re.match(r"^\[(\d+)\](.*)", line)
+                if m:
+                    idx = int(m.group(1))
+                    text = m.group(2).strip()
+                    refined_lines_map[idx] = text
+                    
+        # Reconstruct list
+        if refined_lines_map:
+            final_list = []
+            for i in range(1, len(source_lines) + 1):
+                final_list.append(refined_lines_map.get(i, ""))
+            result["better_translation"] = final_list
+            
+        return result
+    except Exception as e:
+        return {"error": str(e)}
 
-    result: Dict[str, str] = {}
-    for entry in translations_list:
-        if not isinstance(entry, dict):
-            continue
-        sid = entry.get("id")
-        t = entry.get("translation")
-        if isinstance(sid, str) and isinstance(t, str):
-            result[sid] = t.strip()
-
-    missing = [sid for sid in batch_ids if sid not in result]
-    if missing:
-        raise RuntimeError(
-            f"Missing translations for sentence(s): {', '.join(missing)}"
-        )
-
-    return result
-
-
-def _translate_chapter(
-    sentences_path: Path,
-    translations_path: Path,
+def _translate_chapter_batch(
+    translations_path: Path, 
+    translations_data: Dict[str, Dict[str, str]], 
+    batch_ids: List[str]
 ) -> bool:
-    """
-    Translate all missing sentences in one chapter's translations file, but stop
-    after the first batch so users can review before continuing.
-    Returns True if a batch was processed.
-    """
-    chapter_id = sentences_path.stem.split(".")[0]  # "c1"
+    
+    # 1. Gather Context for this batch
+    prev_src, prev_trans = _collect_previous_context(translations_data, batch_ids)
+    fut_src = _collect_future_context(translations_data, batch_ids)
+    
+    source_lines = [translations_data[sid]["source"] for sid in batch_ids]
+    
+    text_block = _build_text_block_for_batch(translations_data, batch_ids)
+    
+    # 2. Run all models
+    model_results: Dict[str, Dict[str, str]] = {} # model -> {sid -> text}
+    
+    print(f"  🤖 Translating batch with {len(MODEL_NAMES)} models...")
+    for model in MODEL_NAMES:
+        res = _call_translation_api_single_model(model, text_block)
+        model_results[model] = res
+        
+    # 3. Prepare for Evaluation
+    # We need {model_name: [line1, line2...]} corresponding to batch_ids order
+    eval_candidates: Dict[str, List[str]] = {}
+    
+    for model in MODEL_NAMES:
+        res = model_results.get(model, {})
+        lines = []
+        for sid in batch_ids:
+            lines.append(res.get(sid, "<missing>"))
+        eval_candidates[model] = lines
+        
+    # 4. Run Evaluation
+    eval_res = run_evaluation(source_lines, prev_src, fut_src, eval_candidates)
+    
+    refined_list = eval_res.get("better_translation")
+    best_model = eval_res.get("best_model")
+    
+    # 5. Determine Final Translation and Candidates
+    # If refined exist and matches length, use it. Else fallback to best model, else first model.
+    
+    final_translations = []
+    
+    if refined_list and len(refined_list) == len(batch_ids):
+        final_translations = refined_list
+    else:
+        # Fallback
+        fallback_model = best_model if (best_model and best_model in model_results) else MODEL_NAMES[0]
+        print(f"    ⚠️ Refined translation missing or mismatch. Fallback to {fallback_model}")
+        res = model_results.get(fallback_model, {})
+        for sid in batch_ids:
+            final_translations.append(res.get(sid, ""))
+            
+    # 6. Save to Data
+    changed = False
+    
+    # Also prepare for printing table
+    print("\n" + "─"*80)
+    print(f"Batch Result (Judge: {best_model or 'N/A'})")
+    max_len = 20
+    print(f"{'Source':<30} | {'Refined':<30} | Candidates...")
+    print("─"*80)
+    
+    for i, sid in enumerate(batch_ids):
+        entry = translations_data.get(sid) or {}
+        
+        # Refined
+        refined_text = final_translations[i]
+        entry["translation"] = refined_text
+        
+        # Candidates
+        cands = {}
+        distinct_vals = set()
+        
+        for model in MODEL_NAMES:
+            t_list = eval_candidates.get(model, [])
+            if i < len(t_list):
+                val = t_list[i]
+                cands[model] = val
+                distinct_vals.add(val)
+        
+        if len(distinct_vals) > 1:
+            entry["candidates"] = cands
+        
+        translations_data[sid] = entry
+        changed = True
+        
+        # Print row
+        src_preview = source_lines[i][:28] + ".." if len(source_lines[i])>28 else source_lines[i]
+        ref_preview = refined_text[:28] + ".." if len(refined_text)>28 else refined_text
+        print(f"{src_preview:<30} | {ref_preview:<30} | {len(distinct_vals)} distinct cands")
+
+    # 7. Write File
+    if changed:
+        translations_path.write_text(json.dumps(translations_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"  💾 Saved batch to {translations_path.name}")
+        
+    return True
+
+
+def _translate_chapter(sentences_path: Path, translations_path: Path) -> bool:
     print("\n" + "=" * 80)
-    print(f"Translating sentence file: {chapter_id}")
+    print(f"Translating sentence file: {sentences_path.stem}")
     print("=" * 80)
 
-    translations_data: Dict[str, Dict[str, str]] = json.loads(
-        translations_path.read_text(encoding="utf-8")
-    )
-
+    translations_data = json.loads(translations_path.read_text(encoding="utf-8"))
     batches = _build_batches_for_chapter(translations_data)
+
     if not batches:
-        print("  ✓ No missing translations; nothing to do.")
+        print("  ✓ No missing translations.")
         return False
 
-    print(
-        f"  Found {sum(len(b) for b in batches)} missing sentence(s) "
-        f"in {len(batches)} batch(es)."
-    )
-
-    changed = False
-    processed_batch = False
-
+    print(f"  Found {sum(len(b) for b in batches)} missing sentence(s) in {len(batches)} batch(es).")
+    
+    # Process only ONE batch per run as per original design for safety/review
+    batch = batches[0]
+    print(f"  Processing Batch 1/{len(batches)}: {len(batch)} sentences")
+    
     try:
-        for batch_idx, batch_ids in enumerate(batches, start=1):
-            print(f"\n  Batch {batch_idx}/{len(batches)}: {len(batch_ids)} sentence(s)")
-            try:
-                batch_translations = _call_translation_api(
-                    batch_ids, translations_data
-                )
-            except Exception as exc:
-                print(f"  ❌ Error translating batch {batch_idx}: {exc}")
-                # Save partial progress before breaking
-                if changed:
-                    translations_path.write_text(
-                        json.dumps(translations_data, ensure_ascii=False, indent=2)
-                        + "\n",
-                        encoding="utf-8",
-                    )
-                    print(f"  ✓ Saved partial progress: {translations_path.name}")
-                break
-
-            for sid, eng in batch_translations.items():
-                entry = translations_data.get(sid) or {}
-                entry["translation"] = eng
-                translations_data[sid] = entry
-                preview = eng[:60] + ("..." if len(eng) > 60 else "")
-                print(f"    💾 {sid}: {preview}")
-                changed = True
-
-            # Save after each batch so progress isn't lost on interruption
-            if changed:
-                translations_path.write_text(
-                    json.dumps(translations_data, ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf-8",
-                )
-                print(f"  ✓ Saved progress after batch {batch_idx}")
-
-            processed_batch = True
-            print("  🚫 Single-batch mode active; rerun the script for the next batch.")
-            break
+        _translate_chapter_batch(translations_path, translations_data, batch)
     except KeyboardInterrupt:
-        # User interrupted (Ctrl+C); save what we have
-        if changed:
-            translations_path.write_text(
-                json.dumps(translations_data, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
-            print(f"\n  ✓ Saved partial progress before exit: {translations_path.name}")
-        print("\n  ↯ Interrupted by user; stopping translation.")
-        raise SystemExit(0)
+        print("\n  ↯ Interrupted.")
+        return False
+    except Exception as e:
+        print(f"  ❌ Error: {e}")
+        return False
+        
+    print("  🚫 Single-batch mode active; rerun for next.")
+    return True
 
-    if processed_batch:
-        print(f"\n  ✓ Completed one batch for {translations_path.name}")
-    else:
-        print("\n  ✓ No changes made for this chapter.")
-
-    return processed_batch
-
-
-def main() -> None:
-    root = Path(__file__).resolve().parents[1]  # processor/ -> project root
+def main():
+    root = Path(__file__).resolve().parents[1]
     sentences_dir = (root / "renderer" / "public" / "sentences").resolve()
     translations_dir = (root / "renderer" / "public" / "translations").resolve()
 
@@ -506,28 +492,32 @@ def main() -> None:
         raise SystemExit(f"Sentences directory not found: {sentences_dir}")
 
     _setup_any_llm()
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-c", "--chapter", help="Specific chapter ID (e.g. '9' or 'c9')")
+    parser.add_argument("--limit", type=int, default=1, help="Limit number of batches (default 1 implicit)") # Actually logic limits to 1 batch anyway
+    args = parser.parse_args()
+    
+    wanted_chapter = None
+    if args.chapter:
+        wanted_chapter = args.chapter if args.chapter.startswith("c") else f"c{args.chapter}"
+
     chapter_pairs = _prepare_translation_files(sentences_dir, translations_dir)
-
-    wanted: List[str] = []
-    if len(sys.argv) > 1:
-        wanted = list(sys.argv[1:])
-
     processed_any = False
 
     for sentences_path, translations_path in chapter_pairs:
-        chapter_id = sentences_path.stem.split(".")[0]  # "c1"
-        if wanted and chapter_id not in wanted:
+        cid = sentences_path.stem.split(".")[0]
+        if wanted_chapter and cid != wanted_chapter:
             continue
-        did_process = _translate_chapter(sentences_path, translations_path)
-        if did_process:
+            
+        if _translate_chapter(sentences_path, translations_path):
             processed_any = True
-            break
+            break # Stop after one chapter is processed (one batch of one chapter)
 
     if processed_any:
-        print("\nSingle batch completed. Run again for the next batch.")
+        print("\nDone.")
     else:
-        print("\nAll done (no batches needed).")
-
+        print("\nNothing processed.")
 
 if __name__ == "__main__":
     main()
