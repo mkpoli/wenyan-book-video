@@ -142,3 +142,52 @@ models = [
   # "openai:gpt-5-mini",
   # "gemini:models/gemini-3-pro-preview",
 ]
+[evaluation]
+# Model to use for evaluating/judging translations
+# model = "deepseek:deepseek-chat"
+model = "deepseek:deepseek-chat"
+
+# Evaluation prompt template
+# Available placeholders:
+# {source_segment}: The source text block being evaluated.
+# {previous_context}: Previous context (already translated).
+# {future_context}: Future context (source only).
+# {candidates}: The list of candidate translations to evaluate (labeled by model).
+prompt = """
+You are an expert editor and translator of Classical Chinese to English.
+Your task is to evaluate multiple candidate translations for a given source text segment and select the best one, or provide an improved version if none are perfect.
+
+## Context
+The text is from a modern technical handbook written in Classical Chinese (Wenyan) about programming.
+Style: Dignified, reflective, refined, old-style English, using typographical punctuation.
+
+## Previous Context (Reference)
+{previous_context}
+
+## Future Context (Reference)
+{future_context}
+
+## Source Text to Evaluate
+{source_segment}
+
+## Candidate Translations
+{candidates}
+
+## Instructions
+1. Analyze the Source Text and Context.
+2. Compare the Candidate Translations.
+3. Select the "Best Translation" from the candidates that best matches the style, accuracy, and flow.
+4. If the "Best Translation" has minor flaws or can be improved to better fit the style/context, provide a "Better Translation".
+   - CRITICAL: Ensure all quotation marks are typographical (curly) in the "Better Translation": ‘...’ or “...”, never straight '...' or "...".
+   - If the best candidate is already perfect but uses straight quotes, correct them to typographical quotes in "Better Translation", use single for single, double for double.
+5. Provide a brief "Reasoning" for your choice.
+
+## Output Format
+Return ONLY valid JSON:
+{{
+  "best_model": "<name of the model with best translation>",
+  "best_translation": "<the text of the best translation>",
+  "better_translation": "<your improved version, or the same if perfect>",
+  "reasoning": "<brief explanation>"
+}}
+"""

@@ -73,6 +73,7 @@ def load_config():
     
     trans_cfg = cfg.get("translation", {})
     comp_cfg = cfg.get("comparison", {})
+    eval_cfg = cfg.get("evaluation", {})
     
     system_prompt = trans_cfg.get("system_prompt")
     translation_prompt = trans_cfg.get("translation_prompt")
@@ -91,7 +92,10 @@ def load_config():
         print("Missing system_prompt or translation_prompt in config")
         sys.exit(1)
 
-    return models, system_prompt, translation_prompt
+    eval_model = eval_cfg.get("model", "deepseek:deepseek-chat")
+    eval_prompt = eval_cfg.get("prompt", "")
+
+    return models, system_prompt, translation_prompt, eval_model, eval_prompt
 
 def build_prompt_text(input_lines: List[str], previous_context: str = "", previous_translation: str = "", future_context: str = "") -> str:
     lines = []
@@ -181,6 +185,99 @@ def run_translation(model_name: str, system_prompt: str, user_prompt: str) -> Li
     except Exception as e:
         return [f"[Error] {e}"]
 
+def run_evaluation(
+    model_name: str,
+    eval_template: str,
+    source_lines: List[str],
+    prev_context: str,
+    future_context: str,
+    model_translations: Dict[str, List[str]]
+) -> Dict[str, Any]:
+    print(f"\n  Running Evaluation (Judge: {model_name})...")
+    
+    # Flatten source lines for the prompt
+    source_text = "\n".join(source_lines)
+    
+    # Anonymize candidates to avoid bias
+    alias_map = {}
+    candidates_str = ""
+    start_char_code = 65 # 'A'
+    
+    # Sort for deterministic order
+    sorted_models = sorted(model_translations.keys())
+    
+    for i, m_name in enumerate(sorted_models):
+        alias = f"Candidate {chr(start_char_code + i)}"
+        alias_map[alias] = m_name
+        
+        lines = model_translations[m_name]
+        m_text = "\n".join(lines)
+        candidates_str += f"### {alias}\n{m_text}\n\n"
+        
+    user_prompt = eval_template.format(
+        source_segment=source_text,
+        previous_context=prev_context,
+        future_context=future_context,
+        candidates=candidates_str.strip()
+    )
+    
+    # Use a generic system prompt for the judge if not specified in the template (which it isn't usually, 
+    # but the template itself acts as the main instruction. We'll pass a minimal system prompt or just rely on the user prompt if the template is full).
+    # The config template I added is designed to be the USER prompt or SYSTEM prompt? 
+    # In `run_translation`, we use a specific system prompt relative to translation.
+    # For evaluation, the prompt I added in toml is quite instructive. Let's use it as the User prompt, 
+    # and give a generic System prompt.
+    
+    system_inst = "You are an expert impartial judge of translation quality."
+    
+    provider = None
+    model = model_name
+    if ":" in model_name:
+        parts = model_name.split(":", 1)
+        if len(parts) == 2:
+            provider, model = parts
+
+    kwargs = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system_inst},
+            {"role": "user", "content": user_prompt},
+        ],
+    }
+    
+    if provider:
+        kwargs["provider"] = provider
+
+    try:
+        response = completion(**kwargs)
+        content = response.choices[0].message.content or ""
+        
+        # Parse JSON
+        if "```json" in content:
+            content = content.split("```json")[1].split("```")[0].strip()
+        elif "```" in content:
+            content = content.split("```")[1].split("```")[0].strip()
+            
+        try:
+            data = json.loads(content)
+            
+            # De-anonymize the best model
+            best_alias = data.get("best_model", "")
+            # Verify if it matches an alias
+            real_best = best_alias
+            for alias, real_name in alias_map.items():
+                if alias in best_alias:
+                    real_best = real_name
+                    break
+            
+            data["best_model"] = real_best
+            return data
+        except json.JSONDecodeError:
+            return {"error": "JSON Parse Error", "raw_output": content}
+            
+    except Exception as e:
+        return {"error": str(e)}
+
 def main():
     parser = argparse.ArgumentParser(description="Compare translations across models.")
     parser.add_argument("input_text", nargs="*", help="Lines of text to translate")
@@ -224,7 +321,7 @@ def main():
                 print(f"\n[{p}] - Error listing models: {ex}")
         return
     
-    models, system_prompt, translation_template = load_config()
+    models, system_prompt, translation_template, eval_model, eval_prompt = load_config()
     
     input_lines = []
     previous_context = ""
@@ -311,6 +408,82 @@ def main():
 
             print(f"  💾 Saved partial progress to {out_path}")
 
+    # Run Evaluation if we have results
+    eval_result = {}
+    if eval_prompt and eval_model:
+        # Collect translations for evaluation
+        # We need a dict of {model: [lines]} which is exactly what `results` is (minus _meta)
+        eval_candidates = {k: v for k, v in results.items() if k != "_meta"}
+        
+        eval_result = run_evaluation(
+            eval_model,
+            eval_prompt,
+            input_lines,
+            previous_context,
+            future_context,
+            eval_candidates
+        )
+        results["_evaluation"] = eval_result
+
+        # Save refined translation as a distinct model entry for comparison
+        refined = eval_result.get("better_translation")
+        if refined and isinstance(refined, str):
+            # Split into lines. The prompt asks for 1:1 mapping with newlines.
+            refined_lines = [line.strip() for line in refined.strip().split('\n')]
+            results["judge:refined"] = refined_lines
+            if "judge:refined" not in models:
+                models.append("judge:refined")
+
+        # Final Save with evaluation
+        if getattr(args, "save", None):
+            out_path = Path(args.save)
+            if out_path.suffix.lower() == ".json":
+                out_path.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+            else:
+                # Generate Markdown Report (Full)
+                lines = []
+                lines.append(f"# Translation Comparison Report")
+                lines.append("")
+                lines.append("## System Prompt")
+                lines.append("```")
+                lines.append(results["_meta"]["system_prompt"])
+                lines.append("```")
+                lines.append("")
+                lines.append("## User Prompt")
+                lines.append("```")
+                lines.append(results["_meta"]["user_prompt"])
+                lines.append("```")
+                lines.append("")
+                
+                lines.append("## Comparison")
+                for i, src in enumerate(input_lines):
+                    lines.append(f"### Sentence {i+1}")
+                    lines.append(f"**Source**: {src}")
+                    lines.append("")
+                    for m in models:
+                            t_list = results.get(m, [])
+                            val = t_list[i] if i < len(t_list) else "<missing>"
+                            lines.append(f"- **{m}**: {val}")
+                    lines.append("")
+                    lines.append("---")
+                    lines.append("")
+                
+                if "_evaluation" in results and results["_evaluation"]:
+                    ev = results["_evaluation"]
+                    lines.append("## Evaluation (Judge: " + eval_model + ")")
+                    if "error" in ev:
+                        lines.append(f"**Error**: {ev['error']}")
+                    else:
+                        lines.append(f"**Best Model**: {ev.get('best_model', 'N/A')}")
+                        lines.append("")
+                        lines.append(f"**Reasoning**: {ev.get('reasoning', 'N/A')}")
+                        lines.append("")
+                        lines.append(f"**Best/Improved Translation**:")
+                        lines.append(f"> {ev.get('better_translation', 'N/A')}")
+                    lines.append("")
+                
+                out_path.write_text("\n".join(lines), encoding="utf-8")
+                print(f"  💾 Saved complete report to {out_path}")
     print("\n" + "─"*80)
     print("📊 COMPARISON RESULTS")
     print("─"*80)
@@ -325,6 +498,18 @@ def main():
             # Try to match by index, but handle errors/mismatches
             val = t_list[i] if i < len(t_list) else "<missing/error>"
             print(f"  {model:<{max_len}} | {val}")
+            
+    if "_evaluation" in results and results["_evaluation"]:
+        ev = results["_evaluation"]
+        print("\n" + "─"*80)
+        print(f"🏆 EVALUATION (Judge: {eval_model})")
+        print("─"*80)
+        if "error" in ev:
+             print(f"Error: {ev['error']}")
+        else:
+            print(f"Best Model: {ev.get('best_model')}")
+            print(f"Reasoning:  {ev.get('reasoning')}")
+            print(f"Better Tx:  {ev.get('better_translation')}")
 
 if __name__ == "__main__":
     main()
