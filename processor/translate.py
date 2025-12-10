@@ -71,6 +71,7 @@ API_DELAY_SECONDS = 1.0  # Small delay between batches
 MAX_SENTENCES_PER_BATCH = 30
 MAX_CHARS_PER_BATCH = 2000
 MAX_CONTEXT_CHARS = 1800
+MAX_FUTURE_CONTEXT_CHARS = 500
 
 
 def _sort_chapter_sentences_file(path: Path) -> int:
@@ -243,6 +244,49 @@ def _collect_previous_context(
     return sentences_context, translations_context
 
 
+def _collect_future_context(
+    translations_data: Dict[str, Dict[str, str]],
+    batch_ids: List[str],
+    max_chars: int = MAX_FUTURE_CONTEXT_CHARS,
+) -> str:
+    """
+    Gather upcoming sentence sources for future context to guide translation.
+    Only returns source text, as translations don't exist yet.
+    """
+    if not batch_ids:
+        return ""
+
+    ordered_ids = sorted(translations_data.keys(), key=_sentence_sort_key)
+    try:
+        # Find index of the last item in the current batch
+        last_batch_index = ordered_ids.index(batch_ids[-1])
+    except ValueError:
+        return ""
+
+    # Check indices after the batch
+    context_ids = ordered_ids[last_batch_index + 1 :]
+    collected: List[str] = []
+    running_chars = 0
+
+    for sid in context_ids:
+        entry = translations_data.get(sid) or {}
+        source = (entry.get("source") or "").strip()
+        if not source:
+            continue
+
+        length = len(source)
+        if running_chars + length > max_chars:
+            break
+
+        collected.append(source)
+        running_chars += length
+
+    if not collected:
+        return ""
+
+    return " ".join(collected).strip()
+
+
 def _build_text_block_for_batch(
     translations_data: Dict[str, Dict[str, str]],
     batch_ids: List[str],
@@ -276,6 +320,13 @@ def _build_text_block_for_batch(
         lines.append(f"SENTENCE {idx}: {sid}")
         lines.append(source.strip())
         lines.append("")  # blank line between sentences
+
+    future_context_src = _collect_future_context(translations_data, batch_ids)
+    if future_context_src:
+        lines.append("FUTURE CONTEXT (upcoming sentences; do not translate, for reference only)")
+        lines.append(future_context_src)
+        lines.append("")
+
     return "\n".join(lines).strip()
 
 
