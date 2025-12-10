@@ -148,18 +148,20 @@ BUN_EXECUTABLE = resolve_bun_executable()
 LOOKUP_SCRIPT_EXISTS = LOOKUP_SCRIPT.exists()
 
 
-def load_special_cases_config() -> tuple[dict[str, int], dict[str, dict[str, int]]]:
+def load_special_cases_config() -> tuple[dict[str, int], dict[str, dict[str, int]], dict[str, str]]:
     config_path = Path(__file__).resolve().parent / "special_cases.toml"
     merged_char: dict[str, int] = {}
     merged_phrase: dict[str, dict[str, int]] = {}
+    merged_replace: dict[str, str] = {}
+
     if not config_path.exists():
-        return merged_char, merged_phrase
+        return merged_char, merged_phrase, merged_replace
     try:
         with config_path.open("rb") as f:
             cfg = tomllib.load(f)
     except Exception as exc:  # noqa: BLE001
         print(f"Warning: Failed to load special cases config {config_path}: {exc}")
-        return merged_char, merged_phrase
+        return merged_char, merged_phrase, merged_replace
 
     table = cfg.get("special_cases")
     if isinstance(table, dict):
@@ -178,7 +180,13 @@ def load_special_cases_config() -> tuple[dict[str, int], dict[str, dict[str, int
                 if valid_overrides:
                     merged_phrase[phrase] = valid_overrides
 
-    return merged_char, merged_phrase
+    replace_table = cfg.get("replace_cases")
+    if isinstance(replace_table, dict):
+        for key, value in replace_table.items():
+            if isinstance(key, str) and isinstance(value, str):
+                merged_replace[key] = value
+
+    return merged_char, merged_phrase, merged_replace
 
 
 @lru_cache(maxsize=None)
@@ -325,7 +333,11 @@ CHAR_REPLACEMENTS = {
 
 
 def replace_chars(text: str) -> str:
-    for old_char, new_char in CHAR_REPLACEMENTS.items():
+    _, _, replace_cases = load_special_cases_config()
+    replacements = CHAR_REPLACEMENTS.copy()
+    replacements.update(replace_cases)
+
+    for old_char, new_char in replacements.items():
         text = text.replace(old_char, new_char)
     return text
 
@@ -394,9 +406,8 @@ def transcribe_to_ipa(text: str, dictionary: dict[str, list[tuple[str, int]]]) -
 
         readings = dictionary.get(ch)
         if readings and len(readings) > 0:
-
             if len(readings) > 1:
-                special_cases, phrase_cases = load_special_cases_config()
+                special_cases, phrase_cases, _ = load_special_cases_config()
                 choice_idx = -1
 
                 # 1. Check phrase-level overrides
