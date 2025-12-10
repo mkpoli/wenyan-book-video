@@ -7,7 +7,11 @@
 3. Generate required artifacts and adjust them if necessary.
    - Use `segment-text.py` to segment the text from chapter JSON files into smaller chunks to `renderer/public/segments/{chapter}.segments.json`. Check segments if they are appropriate and correct, if not, update the code to regenerate.
    - **Edit segments interactively** using the segmenter web UI: run `bun run dev` in `segmenter/`, select a chapter, hover between sentences to split/merge, then save changes.
-   - Use `translate.py` to generate English translations using multiple LLMs (configured in `translate.toml`) and an automated Judge. Results are saved to `renderer/public/translations/{chapter}.translations.json`. You can translate specific chapters using `-c` flag (e.g. `translate.py -c 9`).
+   - Use `translate.py` to generate English translations using multiple LLMs and an automated Judge. 
+     - Usage: `uv run translate.py [-c CHAPTER] [-l LIMIT]`
+     - `-c` / `--chapter`: Specify a chapter (e.g., `9` or `c9`).
+     - `-l` / `--limit`: Number of sentences to process in a single batch (default: 10).
+     - Results are saved to `renderer/public/translations/{chapter}.translations.json`.
    - Use `transcribe.py` to interactively transcribe sentences to IPA/TUPA and save into `renderer/public/transcripts/c{chapter}.transcripts.json`
 4.  Use `build-segmented-transcripts.py` to (re)build segment-level IPA transcript files `renderer/public/transcripts/audio-{chapter}-{segment}.txt` from the sentence-level IPA data and the chapter `segments` JSON files. This prepares pronunciation text (with required leading/trailing spaces) for the TTS engine. You can optionally pass `-c <chapter_number>` to build only a specific chapter.
 5.  Use `synthesize.py` to generate the audio for each chunk and save into `renderer/public/audios/`. You can optionally pass `-c <chapter_number>` to synthesize only a specific chapter (e.g., `uv run python synthesize.py -c 1`).

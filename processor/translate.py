@@ -8,6 +8,7 @@ from typing import Dict, List, Tuple, Any
 
 from dotenv import load_dotenv
 from any_llm import completion
+from utils.progress import Spinner
 
 # Import translate.py logic is effectively rewriting it, but we can reuse some helper structures if we want.
 # Actually, since we are REPLACING translate.py's main logic with the merged one, we will just rewrite translate.py.
@@ -230,7 +231,7 @@ def _call_translation_api_single_model(model_name: str, text_block: str) -> Dict
     }
     if provider: kwargs["provider"] = provider
     
-    print(f"    Running {model_name}...")
+    # print(f"    Running {model_name}...")
     try:
         response = completion(**kwargs)
         raw = (response.choices[0].message.content or "").strip()
@@ -262,7 +263,7 @@ def run_evaluation(
     future_context: str,
     model_translations: Dict[str, List[str]]
 ) -> Dict[str, Any]:
-    print(f"    Running Evaluation (Judge: {EVAL_MODEL})...")
+    # print(f"    Running Evaluation (Judge: {EVAL_MODEL})...")
     
     # 1. Prepare source lines [1] ...
     source_text_list = []
@@ -377,9 +378,11 @@ def _translate_chapter_batch(
     model_results: Dict[str, Dict[str, str]] = {} # model -> {sid -> text}
     
     print(f"  🤖 Translating batch with {len(MODEL_NAMES)} models...")
-    for model in MODEL_NAMES:
-        res = _call_translation_api_single_model(model, text_block)
-        model_results[model] = res
+    with Spinner(f"Starting translation...") as spinner:
+        for i, model in enumerate(MODEL_NAMES):
+            spinner.update(f"Translating with {model} ({i+1}/{len(MODEL_NAMES)})...")
+            res = _call_translation_api_single_model(model, text_block)
+            model_results[model] = res
         
     # 3. Prepare for Evaluation
     # We need {model_name: [line1, line2...]} corresponding to batch_ids order
@@ -393,7 +396,8 @@ def _translate_chapter_batch(
         eval_candidates[model] = lines
         
     # 4. Run Evaluation
-    eval_res = run_evaluation(source_lines, prev_src, fut_src, eval_candidates)
+    with Spinner(f"Evaluating with Judge ({EVAL_MODEL})...") as spinner:
+        eval_res = run_evaluation(source_lines, prev_src, fut_src, eval_candidates)
     
     refined_list = eval_res.get("better_translation")
     best_model = eval_res.get("best_model")
