@@ -148,23 +148,37 @@ BUN_EXECUTABLE = resolve_bun_executable()
 LOOKUP_SCRIPT_EXISTS = LOOKUP_SCRIPT.exists()
 
 
-def load_special_cases_config() -> dict[str, int]:
+def load_special_cases_config() -> tuple[dict[str, int], dict[str, dict[str, int]]]:
     config_path = Path(__file__).resolve().parent / "special_cases.toml"
-    merged: dict[str, int] = {}
+    merged_char: dict[str, int] = {}
+    merged_phrase: dict[str, dict[str, int]] = {}
     if not config_path.exists():
-        return merged
+        return merged_char, merged_phrase
     try:
         with config_path.open("rb") as f:
             cfg = tomllib.load(f)
     except Exception as exc:  # noqa: BLE001
         print(f"Warning: Failed to load special cases config {config_path}: {exc}")
-        return merged
+        return merged_char, merged_phrase
+
     table = cfg.get("special_cases")
     if isinstance(table, dict):
         for key, value in table.items():
             if isinstance(key, str) and isinstance(value, int):
-                merged[key] = value
-    return merged
+                merged_char[key] = value
+
+    phrase_table = cfg.get("phrase_cases")
+    if isinstance(phrase_table, dict):
+        for phrase, overrides in phrase_table.items():
+            if isinstance(phrase, str) and isinstance(overrides, dict):
+                valid_overrides: dict[str, int] = {}
+                for char_key, idx in overrides.items():
+                    if isinstance(char_key, str) and isinstance(idx, int):
+                        valid_overrides[char_key] = idx
+                if valid_overrides:
+                    merged_phrase[phrase] = valid_overrides
+
+    return merged_char, merged_phrase
 
 
 @lru_cache(maxsize=None)
@@ -380,10 +394,32 @@ def transcribe_to_ipa(text: str, dictionary: dict[str, list[tuple[str, int]]]) -
 
         readings = dictionary.get(ch)
         if readings and len(readings) > 0:
+
             if len(readings) > 1:
-                special_cases = load_special_cases_config()
-                if ch in special_cases:
+                special_cases, phrase_cases = load_special_cases_config()
+                choice_idx = -1
+
+                # 1. Check phrase-level overrides
+                for phrase, overrides in phrase_cases.items():
+                    if ch in overrides:
+                        # Check if 'phrase' matches normalized text around 'pos'
+                        for k, p_char in enumerate(phrase):
+                            if p_char == ch:
+                                start = pos - k
+                                end = start + len(phrase)
+                                if start >= 0 and end <= len(normalized):
+                                    candidate = normalized[start:end]
+                                    if candidate == phrase:
+                                        choice_idx = overrides[ch]
+                                        break
+                        if choice_idx != -1:
+                            break
+
+                # 2. Check character-level overrides
+                if choice_idx == -1 and ch in special_cases:
                     choice_idx = special_cases[ch]
+
+                if choice_idx != -1:
                     if 0 <= choice_idx < len(readings):
                         print()
                         before_context, after_context = get_context(normalized, pos)
