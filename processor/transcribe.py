@@ -186,7 +186,15 @@ def _lookup_meaning_cached(
         )
         return []
 
-    payload = {"entries": [{"char": char, "readings": list(readings_key)}]}
+    readings_list: list[dict[str, str] | str] = []
+    for r in readings_key:
+        if isinstance(r, str):
+            tupa = convert_cinix_to_tupa(r)
+            readings_list.append({"original": r, "tupa": tupa})
+        else:
+            readings_list.append(str(r))
+
+    payload = {"entries": [{"char": char, "readings": readings_list}]}
 
     try:
         completed = subprocess.run(

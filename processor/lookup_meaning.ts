@@ -3,7 +3,7 @@ import { convertCinixToTUPA, convertCinixTo音韻地位, getDefinitionFromSinogr
 
 interface LookupEntry {
   char: string;
-  readings: string[];
+  readings: (string | { original: string; tupa: string })[];
 }
 
 interface LookupPayload {
@@ -18,9 +18,13 @@ interface MeaningResult {
 
 type MeaningMap = Record<string, MeaningResult[]>;
 
-function ensureArray(value: unknown): string[] {
+function ensureArray(value: unknown): (string | { original: string; tupa: string })[] {
   if (Array.isArray(value)) {
-    return value.filter((item): item is string => typeof item === 'string');
+    return value.filter((item): item is string | { original: string; tupa: string } => {
+      if (typeof item === 'string') return true;
+      if (item && typeof item === 'object' && 'original' in item && 'tupa' in item) return true;
+      return false;
+    });
   }
   return [];
 }
@@ -82,16 +86,32 @@ function formatDefinition(description: string, definitions: string[]): string {
     .join('；');
 }
 
-function mergeIntoResult(result: MeaningMap, char: string, readings: string[], definitionMap: Map<string, string[]>) {
+function mergeIntoResult(
+  result: MeaningMap,
+  char: string,
+  readings: (string | { original: string; tupa: string })[],
+  definitionMap: Map<string, string[]>
+) {
   const leftover = new Map(definitionMap);
   const charResults: Array<MeaningResult & { prefix: string }> = [];
 
   for (const reading of readings) {
-    const trimmed = reading.trim();
+    let trimmed = '';
+    let lookupKey = '';
+
+    if (typeof reading === 'string') {
+      trimmed = reading.trim();
+      lookupKey = trimmed;
+    } else {
+      trimmed = reading.original.trim();
+      lookupKey = reading.tupa.trim();
+    }
+
     let meaning = '';
     let prefix = '';
 
     if (trimmed.length > 0) {
+      // Generate display prefix: TUPA [IPA/Cinix]
       try {
         const tupa = convertCinixToTUPA(trimmed);
         prefix = `${tupa} [${trimmed}]`;
@@ -100,17 +120,20 @@ function mergeIntoResult(result: MeaningMap, char: string, readings: string[], d
         prefix = `[${trimmed}]`;
       }
 
-      try {
-        const 音韻地位 = convertCinixTo音韻地位(trimmed);
-        const description = 音韻地位.描述;
-        const matched = leftover.get(description);
+      // Lookup definition using lookupKey (which might be sanitized TUPA)
+      if (lookupKey.length > 0) {
+        try {
+          const 音韻地位 = convertCinixTo音韻地位(lookupKey);
+          const description = 音韻地位.描述;
+          const matched = leftover.get(description);
 
-        if (matched && matched.length > 0) {
-          meaning = formatDefinition(description, matched);
-          leftover.delete(description);
+          if (matched && matched.length > 0) {
+            meaning = formatDefinition(description, matched);
+            leftover.delete(description);
+          }
+        } catch (error) {
+          console.warn(`Failed to convert cinix to 音韻地位 for "${lookupKey}":`, error);
         }
-      } catch (error) {
-        console.warn(`Failed to convert cinix to 音韻地位 for "${trimmed}":`, error);
       }
     } else if (trimmed.length === 0) {
       prefix = '';
