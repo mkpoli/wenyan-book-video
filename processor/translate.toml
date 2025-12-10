@@ -194,11 +194,17 @@ Style: Dignified, reflective, refined, old-style English, using typographical pu
 5. Provide a brief "Reasoning" for your choice.
 
 ## Output Format
-Return ONLY valid JSON:
-{{
-  "best_model": "<name of the model with best translation>",
-  "best_translation": "<the text of the best translation>",
-  "better_translation": "<your improved version, or the same if perfect>",
-  "reasoning": "<brief explanation>"
-}}
+## Output Format
+Strictly follow this format:
+
+Best Model: <name of the model>
+Reasoning: <explanation>
+
+Refined Translation:
+[1] <Line 1>
+[2] <Line 2>
+...
+[N] <Line N>
+
+(Ensure strict 1:1 mapping with the Source Text lines.)
 """

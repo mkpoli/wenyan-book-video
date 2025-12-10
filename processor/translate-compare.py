@@ -195,8 +195,14 @@ def run_evaluation(
 ) -> Dict[str, Any]:
     print(f"\n  Running Evaluation (Judge: {model_name})...")
     
-    # Flatten source lines for the prompt
-    source_text = "\n".join(source_lines)
+    # Prepare source lines with indices
+    source_text_list = []
+    for i, line in enumerate(source_lines, start=1):
+         # We keep empty lines visually but maybe mark them? 
+         # User wanted to trim empty spaces.
+         trimmed = line.strip()
+         source_text_list.append(f"[{i}] {trimmed}")
+    source_text = "\n".join(source_text_list)
     
     # Anonymize candidates to avoid bias
     alias_map = {}
@@ -252,31 +258,61 @@ def run_evaluation(
         response = completion(**kwargs)
         content = response.choices[0].message.content or ""
         
-        # Parse JSON
-        if "```json" in content:
-            content = content.split("```json")[1].split("```")[0].strip()
-        elif "```" in content:
-            content = content.split("```")[1].split("```")[0].strip()
+        # Parse Custom Output Format
+        # Looking for:
+        # Best Model: <name>
+        # Reasoning: <text>
+        # Refined Translation:
+        # [1] ...
+        
+        result = {}
+        lines = content.splitlines()
+        current_section = None
+        refined_lines = {}
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+                
+            if line.lower().startswith("best model:"):
+                # Handle potential markdown bolding or just text
+                val = line.split(":", 1)[1].strip().replace("*", "")
+                # De-anonymize immediately
+                for alias, real_name in alias_map.items():
+                    if alias in val:
+                        val = real_name
+                        break
+                result["best_model"] = val
+            elif line.lower().startswith("reasoning:"):
+                result["reasoning"] = line.split(":", 1)[1].strip()
+            elif "refined translation" in line.lower() or "better translation" in line.lower():
+                current_section = "refined"
+            elif current_section == "refined":
+                # Expect lines like "[1] text..."
+                import re
+                m = re.match(r"^\[(\d+)\](.*)", line)
+                if m:
+                    idx = int(m.group(1))
+                    text = m.group(2).strip()
+                    refined_lines[idx] = text
+        
+        # Reconstruct list from refined_lines map
+        if refined_lines:
+            # Determine range. We assume 1-based index from prompt
+            max_idx = max(refined_lines.keys())
+            # Fill
+            final_list = []
+            for i in range(1, len(source_lines) + 1):
+                final_list.append(refined_lines.get(i, ""))
+            result["better_translation"] = final_list
             
-        try:
-            data = json.loads(content)
-            
-            # De-anonymize the best model
-            best_alias = data.get("best_model", "")
-            # Verify if it matches an alias
-            real_best = best_alias
-            for alias, real_name in alias_map.items():
-                if alias in best_alias:
-                    real_best = real_name
-                    break
-            
-            data["best_model"] = real_best
-            return data
-        except json.JSONDecodeError:
-            return {"error": "JSON Parse Error", "raw_output": content}
+        return result
             
     except Exception as e:
         return {"error": str(e)}
+            
+
 
 def main():
     parser = argparse.ArgumentParser(description="Compare translations across models.")
@@ -429,12 +465,18 @@ def main():
 
         # Save refined translation as a distinct model entry for comparison
         refined = eval_result.get("better_translation")
-        if refined and isinstance(refined, str):
-            # Split into lines. The prompt asks for 1:1 mapping with newlines.
-            refined_lines = [line.strip() for line in refined.strip().split('\n')]
-            results["judge:refined"] = refined_lines
-            if "judge:refined" not in models:
-                models.append("judge:refined")
+        refined_lines = []
+        if refined:
+            if isinstance(refined, list):
+                refined_lines = [str(line).strip() for line in refined]
+            elif isinstance(refined, str):
+                # Fallback if model returns string despite instructions
+                refined_lines = [line.strip() for line in refined.strip().split('\n')]
+            
+            if refined_lines:
+                results["judge:refined"] = refined_lines
+                if "judge:refined" not in models:
+                    models.append("judge:refined")
         
         # Save refined translation to actual translations file if available
         if translations_path and input_sids and refined:
