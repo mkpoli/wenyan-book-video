@@ -9,9 +9,9 @@ from any_llm import completion
 import translate as base_translate
 
 
-def load_missing_sentences(limit: int = 5) -> Tuple[List[str], str, str, str]:
+def load_missing_sentences(limit: int = 5) -> Tuple[List[str], List[str], Path, str, str, str]:
     """Collect source sentences that are missing translations.
-    Returns (input_lines, previous_context, previous_translation, future_context).
+    Returns (missing_sources, missing_sids, translations_path, previous_context, previous_translation, future_context).
     """
     # Determine project root and directories (same logic as translate.py)
     root = Path(__file__).resolve().parents[1]
@@ -57,9 +57,9 @@ def load_missing_sentences(limit: int = 5) -> Tuple[List[str], str, str, str]:
             # to collect context relevant to the batch (i.e. after the last ID).
             future_ctx = base_translate._collect_future_context(data, subset)
             
-            return missing_sources, prev_src, prev_trans, future_ctx
+            return missing_sources, subset, translations_path, prev_src, prev_trans, future_ctx
 
-    return [], "", "", ""
+    return [], [], Path("."), "", "", ""
 
 
 def load_config():
@@ -324,6 +324,8 @@ def main():
     models, system_prompt, translation_template, eval_model, eval_prompt = load_config()
     
     input_lines = []
+    input_sids = []
+    translations_path = None
     previous_context = ""
     previous_translation = ""
     future_context = ""
@@ -336,7 +338,7 @@ def main():
         input_lines = args.input_text
     else:
         # Automatically load sentences that need translation from the translate pipeline
-        input_lines, previous_context, previous_translation, future_context = load_missing_sentences(limit=args.limit)
+        input_lines, input_sids, translations_path, previous_context, previous_translation, future_context = load_missing_sentences(limit=args.limit)
         if not input_lines:
             print("No input provided and no missing sentences found. Exiting.")
             return
@@ -433,6 +435,46 @@ def main():
             results["judge:refined"] = refined_lines
             if "judge:refined" not in models:
                 models.append("judge:refined")
+        
+        # Save refined translation to actual translations file if available
+        if translations_path and input_sids and refined:
+            # We need to map refined lines back to IDs
+            # refined_lines has same length as input_sids ideally
+            if len(refined_lines) == len(input_sids):
+                # Load current data
+                import json
+                try:
+                    data = json.loads(translations_path.read_text(encoding="utf-8"))
+                    for i, sid in enumerate(input_sids):
+                        if sid in data:
+                            data[sid]["translation"] = refined_lines[i]
+                            
+                            # Add candidates map only if they differ
+                            # Collect candidates for this sentence index i
+                            cands = {}
+                            distinct_values = set()
+                            
+                            for m in results:
+                                if m.startswith("_") or m == "judge:refined":
+                                    continue
+                                t_list = results[m]
+                                if i < len(t_list):
+                                    val = t_list[i]
+                                    cands[m] = val
+                                    distinct_values.add(val)
+                            
+                            # Only save candidates if there is more than 1 distinct translation
+                            # (considering the refined one is the final one, let's just store the other models as history)
+                            if len(distinct_values) > 1:
+                                data[sid]["candidates"] = cands
+
+                    # Write back
+                    translations_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                    print(f"  💾 Saved refined translations to {translations_path}")
+                except Exception as e:
+                    print(f"  ⚠️ Could not save to translations file: {e}")
+            else:
+                print(f"  ⚠️ Refined line count ({len(refined_lines)}) mismatch with input sentences ({len(input_sids)}). Not saving to file.")
 
         # Final Save with evaluation
         if getattr(args, "save", None):
