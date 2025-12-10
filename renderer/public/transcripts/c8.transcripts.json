@@ -1,249 +1,413 @@
 {
   "c8-s1": {
-    "source": "抱朴。"
+    "source": "抱朴。",
+    "ipa": "bɑ́w pʰọk .",
+    "tupa": "bawq phoeuk"
   },
   "c8-s2": {
-    "source": "參同。"
+    "source": "參同。",
+    "ipa": "ʦʰə̀m dùŋ .",
+    "tupa": "tsheom doung"
   },
   "c8-s3": {
-    "source": "萬畢。"
+    "source": "萬畢。",
+    "ipa": "mʉǒn pit .",
+    "tupa": "muonh pit"
   },
   "c8-s4": {
-    "source": "古之方術書也。"
+    "source": "古之方術書也。",
+    "ipa": "kóː ʨɨ̀ː pʉɑ̀ŋ ʑʷit ɕɨə̀ː jiáː .",
+    "tupa": "koq tjy puang zjwit sjyo jiaeq"
   },
   "c8-s5": {
-    "source": "周髀。"
+    "source": "周髀。",
+    "ipa": "ʨʉùː béj .",
+    "tupa": "tju bejq"
   },
   "c8-s6": {
-    "source": "九章。"
+    "source": "九章。",
+    "ipa": "kʉúː ʨɨɑ̀ŋ .",
+    "tupa": "kuq tjyang"
   },
   "c8-s7": {
-    "source": "海島。"
+    "source": "海島。",
+    "ipa": "hə́j tɑ́w .",
+    "tupa": "heojq tawq"
   },
   "c8-s8": {
-    "source": "古之算術書也。"
+    "source": "古之算術書也。",
+    "ipa": "kóː ʨɨ̀ː sʷɑ̌n ʑʷit ɕɨə̀ː jiáː .",
+    "tupa": "koq tjy swanh zjwit sjyo jiaeq"
   },
   "c8-s9": {
-    "source": "孫吳。"
+    "source": "孫吳。",
+    "ipa": "sòn ŋòː .",
+    "tupa": "son ngo"
   },
   "c8-s10": {
-    "source": "三略。"
+    "source": "三略。",
+    "ipa": "sɑ̀m lɨɑk .",
+    "tupa": "sam lyak"
   },
   "c8-s11": {
-    "source": "六韜。"
+    "source": "六韜。",
+    "ipa": "lʉuk tʰɑ̀w .",
+    "tupa": "luk thaw"
   },
   "c8-s12": {
-    "source": "古之兵術書也。"
+    "source": "古之兵術書也。",
+    "ipa": "kóː ʨɨ̀ː pịàŋ ʑʷit ɕɨə̀ː jiáː .",
+    "tupa": "koq tjy pyaeng zjwit sjyo jiaeq"
   },
   "c8-s13": {
-    "source": "術者竟何。"
+    "source": "術者竟何。",
+    "ipa": "ʑʷit ʨiáː kịǎŋ ɦɑ̀ː .",
+    "tupa": "zjwit tjiaeq kyaengh gha"
   },
   "c8-s14": {
-    "source": "成法也。"
+    "source": "成法也。",
+    "ipa": "ʥiàŋ pʉop jiáː .",
+    "tupa": "djiaeng puop jiaeq"
   },
   "c8-s15": {
-    "source": "夫人之初任一事。"
+    "source": "夫人之初任一事。",
+    "ipa": "bʉòː ɲìn ʨɨ̀ː ꭧʰɨə̀ː ɲìm ʔit ꭦɨ̌ː .",
+    "tupa": "buo njin tjy tshryo njim qit dzryh"
   },
   "c8-s16": {
-    "source": "有成有敗。"
+    "source": "有成有敗。",
+    "ipa": "ɦʉúː ʥiàŋ ɦʉúː bạ̌j .",
+    "tupa": "uq djiaeng uq baejh"
   },
   "c8-s17": {
-    "source": "或得或失。"
+    "source": "或得或失。",
+    "ipa": "ɦʷək tək ɦʷək ɕit .",
+    "tupa": "ghweok teok ghweok sjit"
   },
   "c8-s18": {
-    "source": "卒不知孰為可法。"
+    "source": "卒不知孰為可法。",
+    "ipa": "ʦʷit pʉùː ʈièː ʥʉuk ɦỵèː kʰɑ́ː pʉop .",
+    "tupa": "tswit pu trie djuk ue khaq puop"
   },
   "c8-s19": {
-    "source": "君子仰觀前人之殷鑒。"
+    "source": "君子仰觀前人之殷鑒。",
+    "ipa": "kʉ̀n ʦɨ́ː ŋɨɑ́ŋ kʷɑ̀n ʣèn ɲìn ʨɨ̀ː ʔɨ̀n kạ̌m .",
+    "tupa": "kun tsyq ngyangq kwan dzen njin tjy qyn kaemh"
   },
   "c8-s20": {
-    "source": "俯羅不易之步驟。"
+    "source": "俯羅不易之步驟。",
+    "ipa": "pʉóː lɑ̀ː pʉùː jiak ʨɨ̀ː bǒː ꭦʉǔː .",
+    "tupa": "puoq la pu jiaek tjy boh dzruh"
   },
   "c8-s21": {
-    "source": "法象萬物。"
+    "source": "法象萬物。",
+    "ipa": "pʉop zɨɑ́ŋ mʉǒn mʉt .",
+    "tupa": "puop zyangq muonh mut"
   },
   "c8-s22": {
-    "source": "為法為道。"
+    "source": "為法為道。",
+    "ipa": "ɦỵèː pʉop ɦỵèː dɑ́w .",
+    "tupa": "ue puop ue dawq"
   },
   "c8-s23": {
-    "source": "名之曰術。"
+    "source": "名之曰術。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot ʑʷit .",
+    "tupa": "miaeng tjy uot zjwit"
   },
   "c8-s24": {
-    "source": "後人循之遵之。"
+    "source": "後人循之遵之。",
+    "ipa": "ɦúː ɲìn zʷìn ʨɨ̀ː ʦʷìn ʨɨ̀ː .",
+    "tupa": "ghouq njin zwin tjy tswin tjy"
   },
   "c8-s25": {
-    "source": "成事因之。"
+    "source": "成事因之。",
+    "ipa": "ʥiàŋ ꭦɨ̌ː ʔìn ʨɨ̀ː .",
+    "tupa": "djiaeng dzryh qin tjy"
   },
   "c8-s26": {
-    "source": "故韓非子曰。"
+    "source": "故韓非子曰。",
+    "ipa": "kǒː ɦɑ̀n pʉ̀j ʦɨ́ː ɦʉot .",
+    "tupa": "koh ghan puj tsyq uot"
   },
   "c8-s27": {
-    "source": "人主之所執也。"
+    "source": "人主之所執也。",
+    "ipa": "ɲìn ʨʉóː ʨɨ̀ː ʂɨə́ː ʨip jiáː .",
+    "tupa": "njin tjuoq tjy sryoq tjip jiaeq"
   },
   "c8-s28": {
-    "source": "今之編程者亦有術也。"
+    "source": "今之編程者亦有術也。",
+    "ipa": "kị̀m ʨɨ̀ː pèn ɖiàŋ ʨiáː jiak ɦʉúː ʑʷit jiáː .",
+    "tupa": "kyim tjy pen driaeng tjiaeq jiaek uq zjwit jiaeq"
   },
   "c8-s29": {
-    "source": "何耶。"
+    "source": "何耶。",
+    "ipa": "ɦɑ̀ː jiàː .",
+    "tupa": "gha jiae"
   },
   "c8-s30": {
-    "source": "唯取步驟而名之耳。"
+    "source": "唯取步驟而名之耳。",
+    "ipa": "jʷìː ʦʰʉóː bǒː ꭦʉǔː ɲɨ̀ː miàŋ ʨɨ̀ː ɲɨ́ː .",
+    "tupa": "jwi tshuoq boh dzruh njy miaeng tjy njyq"
   },
   "c8-s31": {
-    "source": "令機器聞其名而知其謂。"
+    "source": "令機器聞其名而知其謂。",
+    "ipa": "liàŋ kɨ̀j kʰị̌ː mʉ̀n gɨ̀ː miàŋ ɲɨ̀ː ʈièː gɨ̀ː ɦʉ̌j .",
+    "tupa": "liaeng kyj khyih mun gy miaeng njy trie gy ujh"
   },
   "c8-s32": {
-    "source": "不待每每絮絮道之而後明也。"
+    "source": "不待每每絮絮道之而後明也。",
+    "ipa": "pʉùː də́j mój mój sɨə̌ː sɨə̌ː dɑ́w ʨɨ̀ː ɲɨ̀ː ɦúː mịàŋ jiáː .",
+    "tupa": "pu deojq mojq mojq syoh syoh dawq tjy njy ghouq myaeng jiaeq"
   },
   "c8-s33": {
-    "source": "既定其步驟。"
+    "source": "既定其步驟。",
+    "ipa": "kɨ̌j děŋ gɨ̀ː bǒː ꭦʉǔː .",
+    "tupa": "kyjh dengh gy boh dzruh"
   },
   "c8-s34": {
-    "source": "雖欲施之百遍。"
+    "source": "雖欲施之百遍。",
+    "ipa": "sʷìː jʉok ɕièː ʨɨ̀ː pạk pěn .",
+    "tupa": "swi juok sjie tjy paek penh"
   },
   "c8-s35": {
-    "source": "但稱名可矣。"
+    "source": "但稱名可矣。",
+    "ipa": "dɑ́n ʨʰɨ̀ŋ miàŋ kʰɑ́ː ɦɨ́ː .",
+    "tupa": "danq tjhyng miaeng khaq yq"
   },
   "c8-s36": {
-    "source": "故云。"
+    "source": "故云。",
+    "ipa": "kǒː ɦʉ̀n .",
+    "tupa": "koh un"
   },
   "c8-s37": {
-    "source": "術亦變數之類也。"
+    "source": "術亦變數之類也。",
+    "ipa": "ʑʷit jiak pịěn ʂʉǒː ʨɨ̀ː lʷǐː jiáː .",
+    "tupa": "zjwit jiaek pyenh sruoh tjy lwih jiaeq"
   },
   "c8-s38": {
-    "source": "吾聞有尤矜於斯者。"
+    "source": "吾聞有尤矜於斯者。",
+    "ipa": "ŋòː mʉ̀n ɦʉúː ɦʉùː kị̀ŋ ʔɨə̀ː sièː ʨiáː .",
+    "tupa": "ngo mun uq u kying qyo sie tjiaeq"
   },
   "c8-s39": {
-    "source": "號曰。"
+    "source": "號曰。",
+    "ipa": "ɦɑ̌w ɦʉot .",
+    "tupa": "ghawh uot"
   },
   "c8-s40": {
-    "source": "術亦數。"
+    "source": "術亦數。",
+    "ipa": "ʑʷit jiak ʂʉǒː .",
+    "tupa": "zjwit jiaek sruoh"
   },
   "c8-s41": {
-    "source": "以銘座右。"
+    "source": "以銘座右。",
+    "ipa": "jɨ́ː mèŋ ʣʷɑ̌ː ɦʉúː .",
+    "tupa": "jyq meng dzwah uq"
   },
   "c8-s42": {
-    "source": "今重敘問天地好在之例如是。"
+    "source": "今重敘問天地好在之例如是。",
+    "ipa": "kị̀m ɖʉòŋ zɨə́ː mʉ̌n tʰèn dǐː hɑ́w ʣə́j ʨɨ̀ː liěj ɲɨə̀ː ʥiéː .",
+    "tupa": "kyim druong zyoq munh then dih hawq dzeojq tjy liejh njyo djieq"
   },
   "c8-s43": {
-    "source": "示術之用。"
+    "source": "示術之用。",
+    "ipa": "ʑǐː ʑʷit ʨɨ̀ː jʉǒŋ .",
+    "tupa": "zjih zjwit tjy juongh"
   },
   "c8-s44": {
-    "source": "吾有一術。"
+    "source": "吾有一術。",
+    "ipa": "ŋòː ɦʉúː ʔit ʑʷit .",
+    "tupa": "ngo uq qit zjwit"
   },
   "c8-s45": {
-    "source": "名之曰「問天」。"
+    "source": "名之曰「問天」。",
+    "ipa": "miàŋ ʨɨ̀ː ɦʉot mʉ̌n tʰèn .",
+    "tupa": "miaeng tjy uot munh then"
   },
   "c8-s46": {
-    "source": "是術曰。"
+    "source": "是術曰。",
+    "ipa": "ʥiéː ʑʷit ɦʉot .",
+    "tupa": "djieq zjwit uot"
   },
   "c8-s47": {
-    "source": "\n\t吾有一言。"
+    "source": "\n\t吾有一言。",
+    "ipa": "ŋòː ɦʉúː ʔit ŋɨə̀n .",
+    "tupa": "ngo uq qit ngyon"
   },
   "c8-s48": {
-    "source": "曰『天地。好在否』。"
+    "source": "曰『天地。好在否』。",
+    "ipa": "ɦʉot tʰèn dǐː . hɑ́w ʣə́j pʉúː .",
+    "tupa": "uot then dih hawq dzeojq puq"
   },
   "c8-s49": {
-    "source": "書之。"
+    "source": "書之。",
+    "ipa": "ɕɨə̀ː ʨɨ̀ː .",
+    "tupa": "sjyo tjy"
   },
   "c8-s50": {
-    "source": "\n是謂「問天」之術也。"
+    "source": "\n是謂「問天」之術也。",
+    "ipa": "ʥiéː ɦʉ̌j mʉ̌n tʰèn ʨɨ̀ː ʑʷit jiáː .",
+    "tupa": "djieq ujh munh then tjy zjwit jiaeq"
   },
   "c8-s51": {
-    "source": "施如是。"
+    "source": "施如是。",
+    "ipa": "ɕièː ɲɨə̀ː ʥiéː .",
+    "tupa": "sjie njyo djieq"
   },
   "c8-s52": {
-    "source": "施「問天」。"
+    "source": "施「問天」。",
+    "ipa": "ɕièː mʉ̌n tʰèn .",
+    "tupa": "sjie munh then"
   },
   "c8-s53": {
-    "source": "\n\n為是九遍。"
+    "source": "\n\n為是九遍。",
+    "ipa": "ɦỵèː ʥiéː kʉúː pěn .",
+    "tupa": "ue djieq kuq penh"
   },
   "c8-s54": {
-    "source": "施「問天」也。"
+    "source": "施「問天」也。",
+    "ipa": "ɕièː mʉ̌n tʰèn jiáː .",
+    "tupa": "sjie munh then jiaeq"
   },
   "c8-s55": {
-    "source": "又凡術多有參數。"
+    "source": "又凡術多有參數。",
+    "ipa": "ɦʉǔː bʉòm ʑʷit tɑ̀ː ɦʉúː ʦʰə̀m ʂʉǒː .",
+    "tupa": "uh buom zjwit ta uq tsheom sruoh"
   },
   "c8-s56": {
-    "source": "有得數。"
+    "source": "有得數。",
+    "ipa": "ɦʉúː tək ʂʉǒː .",
+    "tupa": "uq teok sruoh"
   },
   "c8-s57": {
-    "source": "參者入也。"
+    "source": "參者入也。",
+    "ipa": "ʦʰə̀m ʨiáː ɲip jiáː .",
+    "tupa": "tsheom tjiaeq njip jiaeq"
   },
   "c8-s58": {
-    "source": "得者出也。"
+    "source": "得者出也。",
+    "ipa": "tək ʨiáː ʨʰʷit jiáː .",
+    "tupa": "teok tjiaeq tjhwit jiaeq"
   },
   "c8-s59": {
-    "source": "點鐵成金者。"
+    "source": "點鐵成金者。",
+    "ipa": "tém tʰet ʥiàŋ kị̀m ʨiáː .",
+    "tupa": "temq thet djiaeng kyim tjiaeq"
   },
   "c8-s60": {
-    "source": "參者鐵也。"
+    "source": "參者鐵也。",
+    "ipa": "ʦʰə̀m ʨiáː tʰet jiáː .",
+    "tupa": "tsheom tjiaeq thet jiaeq"
   },
   "c8-s61": {
-    "source": "得者金也。"
+    "source": "得者金也。",
+    "ipa": "tək ʨiáː kị̀m jiáː .",
+    "tupa": "teok tjiaeq kyim jiaeq"
   },
   "c8-s62": {
-    "source": "老物化形者。"
+    "source": "老物化形者。",
+    "ipa": "lɑ́w mʉt hʷạ̌ː ɦèŋ ʨiáː .",
+    "tupa": "lawq mut hwaeh gheng tjiaeq"
   },
   "c8-s63": {
-    "source": "參者獸也。"
+    "source": "參者獸也。",
+    "ipa": "ʦʰə̀m ʨiáː ɕʉǔː jiáː .",
+    "tupa": "tsheom tjiaeq sjuh jiaeq"
   },
   "c8-s64": {
-    "source": "得者人也。"
+    "source": "得者人也。",
+    "ipa": "tək ʨiáː ɲìn jiáː .",
+    "tupa": "teok tjiaeq njin jiaeq"
   },
   "c8-s65": {
-    "source": "玄女錢米者。"
+    "source": "玄女錢米者。",
+    "ipa": "ɦʷèn ɳɨə́ː ʣièn méj ʨiáː .",
+    "tupa": "ghwen nryoq dzien mejq tjiaeq"
   },
   "c8-s66": {
-    "source": "參者一文十粒。"
+    "source": "參者一文十粒。",
+    "ipa": "ʦʰə̀m ʨiáː ʔit mʉ̀n ʥip lip .",
+    "tupa": "tsheom tjiaeq qit mun djip lip"
   },
   "c8-s67": {
-    "source": "得者一貫盈桶也。"
+    "source": "得者一貫盈桶也。",
+    "ipa": "tək ʨiáː ʔit kʷɑ̌n jiàŋ tʰúŋ jiáː .",
+    "tupa": "teok tjiaeq qit kwanh jiaeng thoungq jiaeq"
   },
   "c8-s68": {
-    "source": "金丹大道者。"
+    "source": "金丹大道者。",
+    "ipa": "kị̀m tɑ̀n dɑ̌j dɑ́w ʨiáː .",
+    "tupa": "kyim tan dajh dawq tjiaeq"
   },
   "c8-s69": {
-    "source": "参者鉛丹砂硫磺硝石云。"
+    "source": "參者鉛丹砂硫黃硝石云。",
+    "ipa": "ʦʰə̀m ʨiáː jyèn tɑ̀n ʂạ̀ː lʉùː ɦʷɑ̀ŋ sièw ʥiak ɦʉ̀n .",
+    "tupa": "tsheom tjiaeq jwien tan srae lu ghwang siew djiaek un"
   },
   "c8-s70": {
-    "source": "得者還丹也。"
+    "source": "得者還丹也。",
+    "ipa": "tək ʨiáː ɦʷạ̀n tɑ̀n jiáː .",
+    "tupa": "teok tjiaeq ghwaen tan jiaeq"
   },
   "c8-s71": {
-    "source": "或問曰。"
+    "source": "或問曰。",
+    "ipa": "ɦʷək mʉ̌n ɦʉot .",
+    "tupa": "ghweok munh uot"
   },
   "c8-s72": {
-    "source": "無參者有之乎。"
+    "source": "無參者有之乎。",
+    "ipa": "mʉòː ʦʰə̀m ʨiáː ɦʉúː ʨɨ̀ː ɦòː .",
+    "tupa": "muo tsheom tjiaeq uq tjy gho"
   },
   "c8-s73": {
-    "source": "無得者有之乎。"
+    "source": "無得者有之乎。",
+    "ipa": "mʉòː tək ʨiáː ɦʉúː ʨɨ̀ː ɦòː .",
+    "tupa": "muo teok tjiaeq uq tjy gho"
   },
   "c8-s74": {
-    "source": "曰。"
+    "source": "曰。",
+    "ipa": "ɦʉot .",
+    "tupa": "uot"
   },
   "c8-s75": {
-    "source": "有也。"
+    "source": "有也。",
+    "ipa": "ɦʉúː jiáː .",
+    "tupa": "uq jiaeq"
   },
   "c8-s76": {
-    "source": "左慈釣鱸。"
+    "source": "左慈釣鱸。",
+    "ipa": "ʦɑ́ː ʣɨ̀ː těw lòː .",
+    "tupa": "tsaq dzy tewh lo"
   },
   "c8-s77": {
-    "source": "無中生有。"
+    "source": "無中生有。",
+    "ipa": "mʉòː ʈʉùŋ ʂịàŋ ɦʉúː .",
+    "tupa": "muo trung sryaeng uq"
   },
   "c8-s78": {
-    "source": "魑魅遁形。"
+    "source": "魑魅遁形。",
+    "ipa": "ʈʰièː mị̌ː dón ɦèŋ .",
+    "tupa": "ʈʰie myih donq gheng"
   },
   "c8-s79": {
-    "source": "有化於無。"
+    "source": "有化於無。",
+    "ipa": "ɦʉúː hʷạ̌ː ʔɨə̀ː mʉòː .",
+    "tupa": "uq hwaeh qyo muo"
   },
   "c8-s80": {
-    "source": "養丹吐氣。"
+    "source": "養丹吐氣。",
+    "ipa": "jɨɑ́ŋ tɑ̀n tʰóː kʰɨ̌j .",
+    "tupa": "jyangq tan thoq khyjh"
   },
   "c8-s81": {
-    "source": "無終歸無。"
+    "source": "無終歸無。",
+    "ipa": "mʉòː ʨʉùŋ kʉ̀j mʉòː .",
+    "tupa": "muo tjung kuj muo"
   },
   "c8-s82": {
-    "source": "九章算術有更相減損術。"
+    "source": "九章算術有更相減損術。",
+    "ipa": "kʉúː ʨɨɑ̀ŋ sʷɑ̌n ʑʷit ɦʉúː kạ̌ŋ sɨɑ̀ŋ kẹ́m són ʑʷit .",
+    "tupa": "kuq tjyang swanh zjwit uq kaengh syang keemq sonq zjwit"
   },
   "c8-s83": {
     "source": "見於前循環之章。"
