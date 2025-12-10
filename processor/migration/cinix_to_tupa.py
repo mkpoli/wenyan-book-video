@@ -70,7 +70,7 @@ def _convert_cinix_word_to_tupa(word: str) -> str:
         "ɖ": "dr",
         "ɳ": "nr",
         "ꭧ": "tsr",
-        "ꭧʰ": "tshr",
+        "ꭧʰ": "tsrh",
         "ꭦ": "dzr",
         "l": "l",
         # Palatal
@@ -178,6 +178,10 @@ def _convert_cinix_word_to_tupa(word: str) -> str:
     }
     if coda:
         coda = CODA_TABLE.get(coda, coda)
+
+    # Fix: eo + m/p is invalid in strict TUPA -> use o
+    if nucleus == "eo" and coda in ("m", "p"):
+        nucleus = "o"
 
     # Avoid gh + u/y combinations
     if (onset == "gh" and nucleus in ("u", "y")) or (
