@@ -458,7 +458,7 @@ def _translate_chapter_batch(
     return True
 
 
-def _translate_chapter(sentences_path: Path, translations_path: Path) -> bool:
+def _translate_chapter(sentences_path: Path, translations_path: Path, limit_sentences: int) -> int:
     print("\n" + "=" * 80)
     print(f"Translating sentence file: {sentences_path.stem}")
     print("=" * 80)
@@ -468,25 +468,33 @@ def _translate_chapter(sentences_path: Path, translations_path: Path) -> bool:
 
     if not batches:
         print("  ✓ No missing translations.")
-        return False
+        print("  ✓ No missing translations.")
+        return 0
 
     print(f"  Found {sum(len(b) for b in batches)} missing sentence(s) in {len(batches)} batch(es).")
     
-    # Process only ONE batch per run as per original design for safety/review
-    batch = batches[0]
-    print(f"  Processing Batch 1/{len(batches)}: {len(batch)} sentences")
+    # Process batches until sentence limit reached
+    processed_batches = 0
+    sentences_processed = 0
     
-    try:
-        _translate_chapter_batch(translations_path, translations_data, batch)
-    except KeyboardInterrupt:
-        print("\n  ↯ Interrupted.")
-        return False
-    except Exception as e:
-        print(f"  ❌ Error: {e}")
-        return False
+    for i, batch in enumerate(batches):
+        if sentences_processed >= limit_sentences:
+            break
+            
+        print(f"  Processing Batch {i+1}/{len(batches)} (Sentences so far: {sentences_processed}/{limit_sentences}): {len(batch)} sentences")
         
-    print("  🚫 Single-batch mode active; rerun for next.")
-    return True
+        try:
+            _translate_chapter_batch(translations_path, translations_data, batch)
+            processed_batches += 1
+            sentences_processed += len(batch)
+        except KeyboardInterrupt:
+            print("\n  ↯ Interrupted.")
+            raise
+        except Exception as e:
+            print(f"  ❌ Error: {e}")
+            break
+            
+    return sentences_processed
 
 def main():
     root = Path(__file__).resolve().parents[1]
@@ -500,7 +508,7 @@ def main():
     
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--chapter", help="Specific chapter ID (e.g. '9' or 'c9')")
-    parser.add_argument("--limit", type=int, default=1, help="Limit number of batches (default 1 implicit)") # Actually logic limits to 1 batch anyway
+    parser.add_argument("-l", "--limit", type=int, default=10, help="Limit number of sentences to process (default 10)")
     args = parser.parse_args()
     
     wanted_chapter = None
@@ -515,9 +523,12 @@ def main():
         if wanted_chapter and cid != wanted_chapter:
             continue
             
-        if _translate_chapter(sentences_path, translations_path):
+        processed_sentences = _translate_chapter(sentences_path, translations_path, args.limit)
+        if processed_sentences > 0:
             processed_any = True
-            break # Stop after one chapter is processed (one batch of one chapter)
+            args.limit -= processed_sentences
+            if args.limit <= 0:
+                break
 
     if processed_any:
         print("\nDone.")
