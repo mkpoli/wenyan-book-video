@@ -1,0 +1,2726 @@
+{
+  "c8-s1": {
+    "source": "抱朴。",
+    "translation": "The _Baopuzi_,"
+  },
+  "c8-s2": {
+    "source": "參同。",
+    "translation": "The _Cantong qi_,"
+  },
+  "c8-s3": {
+    "source": "萬畢。",
+    "translation": "and the _Wan Bi_ —"
+  },
+  "c8-s4": {
+    "source": "古之方術書也。",
+    "translation": "ancient books of the art of methods."
+  },
+  "c8-s5": {
+    "source": "周髀。",
+    "translation": "The _Zhoubi Suanjing_,"
+  },
+  "c8-s6": {
+    "source": "九章。",
+    "translation": "The _Nine Chapters on the Mathematical Art_,"
+  },
+  "c8-s7": {
+    "source": "海島。",
+    "translation": "The _Haidao Suanjing_,"
+  },
+  "c8-s8": {
+    "source": "古之算術書也。",
+    "translation": "ancient books of the art of calculation."
+  },
+  "c8-s9": {
+    "source": "孫吳。",
+    "translation": "The _Art of War_ and the _Wuzi_,"
+  },
+  "c8-s10": {
+    "source": "三略。",
+    "translation": "the _Three Strategies of Huang Shigong_,"
+  },
+  "c8-s11": {
+    "source": "六韜。",
+    "translation": "the _Six Secret Teachings_ —"
+  },
+  "c8-s12": {
+    "source": "古之兵術書也。",
+    "translation": "ancient books of the art of warfare."
+  },
+  "c8-s13": {
+    "source": "術者竟何。",
+    "translation": "What, after all, is a method?"
+  },
+  "c8-s14": {
+    "source": "成法也。",
+    "translation": ""
+  },
+  "c8-s15": {
+    "source": "夫人之初任一事。",
+    "translation": ""
+  },
+  "c8-s16": {
+    "source": "有成有敗。",
+    "translation": ""
+  },
+  "c8-s17": {
+    "source": "或得或失。",
+    "translation": ""
+  },
+  "c8-s18": {
+    "source": "卒不知孰為可法。",
+    "translation": ""
+  },
+  "c8-s19": {
+    "source": "君子仰觀前人之殷鑒。",
+    "translation": ""
+  },
+  "c8-s20": {
+    "source": "俯羅不易之步驟。",
+    "translation": ""
+  },
+  "c8-s21": {
+    "source": "法象萬物。",
+    "translation": ""
+  },
+  "c8-s22": {
+    "source": "為法為道。",
+    "translation": ""
+  },
+  "c8-s23": {
+    "source": "名之曰術。",
+    "translation": ""
+  },
+  "c8-s24": {
+    "source": "後人循之遵之。",
+    "translation": ""
+  },
+  "c8-s25": {
+    "source": "成事因之。",
+    "translation": ""
+  },
+  "c8-s26": {
+    "source": "故韓非子曰。",
+    "translation": ""
+  },
+  "c8-s27": {
+    "source": "人主之所執也。",
+    "translation": ""
+  },
+  "c8-s28": {
+    "source": "今之編程者亦有術也。",
+    "translation": ""
+  },
+  "c8-s29": {
+    "source": "何耶。",
+    "translation": ""
+  },
+  "c8-s30": {
+    "source": "唯取步驟而名之耳。",
+    "translation": ""
+  },
+  "c8-s31": {
+    "source": "令機器聞其名而知其謂。",
+    "translation": ""
+  },
+  "c8-s32": {
+    "source": "不待每每絮絮道之而後明也。",
+    "translation": ""
+  },
+  "c8-s33": {
+    "source": "既定其步驟。",
+    "translation": ""
+  },
+  "c8-s34": {
+    "source": "雖欲施之百遍。",
+    "translation": ""
+  },
+  "c8-s35": {
+    "source": "但稱名可矣。",
+    "translation": ""
+  },
+  "c8-s36": {
+    "source": "故云。",
+    "translation": ""
+  },
+  "c8-s37": {
+    "source": "術亦變數之類也。",
+    "translation": ""
+  },
+  "c8-s38": {
+    "source": "吾聞有尤矜於斯者。",
+    "translation": ""
+  },
+  "c8-s39": {
+    "source": "號曰。",
+    "translation": ""
+  },
+  "c8-s40": {
+    "source": "術亦數。",
+    "translation": ""
+  },
+  "c8-s41": {
+    "source": "以銘座右。",
+    "translation": ""
+  },
+  "c8-s42": {
+    "source": "今重敘問天地好在之例如是。",
+    "translation": ""
+  },
+  "c8-s43": {
+    "source": "示術之用。",
+    "translation": ""
+  },
+  "c8-s44": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s45": {
+    "source": "名之曰「問天」。",
+    "translation": ""
+  },
+  "c8-s46": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s47": {
+    "source": "\n\t吾有一言。",
+    "translation": ""
+  },
+  "c8-s48": {
+    "source": "曰『天地。好在否』。",
+    "translation": ""
+  },
+  "c8-s49": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s50": {
+    "source": "\n是謂「問天」之術也。",
+    "translation": ""
+  },
+  "c8-s51": {
+    "source": "施如是。",
+    "translation": ""
+  },
+  "c8-s52": {
+    "source": "施「問天」。",
+    "translation": ""
+  },
+  "c8-s53": {
+    "source": "\n\n為是九遍。",
+    "translation": ""
+  },
+  "c8-s54": {
+    "source": "施「問天」也。",
+    "translation": ""
+  },
+  "c8-s55": {
+    "source": "又凡術多有參數。",
+    "translation": ""
+  },
+  "c8-s56": {
+    "source": "有得數。",
+    "translation": ""
+  },
+  "c8-s57": {
+    "source": "參者入也。",
+    "translation": ""
+  },
+  "c8-s58": {
+    "source": "得者出也。",
+    "translation": ""
+  },
+  "c8-s59": {
+    "source": "點鐵成金者。",
+    "translation": ""
+  },
+  "c8-s60": {
+    "source": "參者鐵也。",
+    "translation": ""
+  },
+  "c8-s61": {
+    "source": "得者金也。",
+    "translation": ""
+  },
+  "c8-s62": {
+    "source": "老物化形者。",
+    "translation": ""
+  },
+  "c8-s63": {
+    "source": "參者獸也。",
+    "translation": ""
+  },
+  "c8-s64": {
+    "source": "得者人也。",
+    "translation": ""
+  },
+  "c8-s65": {
+    "source": "玄女錢米者。",
+    "translation": ""
+  },
+  "c8-s66": {
+    "source": "參者一文十粒。",
+    "translation": ""
+  },
+  "c8-s67": {
+    "source": "得者一貫盈桶也。",
+    "translation": ""
+  },
+  "c8-s68": {
+    "source": "金丹大道者。",
+    "translation": ""
+  },
+  "c8-s69": {
+    "source": "参者鉛丹砂硫磺硝石云。",
+    "translation": ""
+  },
+  "c8-s70": {
+    "source": "得者還丹也。",
+    "translation": ""
+  },
+  "c8-s71": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c8-s72": {
+    "source": "無參者有之乎。",
+    "translation": ""
+  },
+  "c8-s73": {
+    "source": "無得者有之乎。",
+    "translation": ""
+  },
+  "c8-s74": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c8-s75": {
+    "source": "有也。",
+    "translation": ""
+  },
+  "c8-s76": {
+    "source": "左慈釣鱸。",
+    "translation": ""
+  },
+  "c8-s77": {
+    "source": "無中生有。",
+    "translation": ""
+  },
+  "c8-s78": {
+    "source": "魑魅遁形。",
+    "translation": ""
+  },
+  "c8-s79": {
+    "source": "有化於無。",
+    "translation": ""
+  },
+  "c8-s80": {
+    "source": "養丹吐氣。",
+    "translation": ""
+  },
+  "c8-s81": {
+    "source": "無終歸無。",
+    "translation": ""
+  },
+  "c8-s82": {
+    "source": "九章算術有更相減損術。",
+    "translation": ""
+  },
+  "c8-s83": {
+    "source": "見於前循環之章。",
+    "translation": ""
+  },
+  "c8-s84": {
+    "source": "今術之。",
+    "translation": ""
+  },
+  "c8-s85": {
+    "source": "以示參得之用如是。",
+    "translation": ""
+  },
+  "c8-s86": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s87": {
+    "source": "名之曰「更相減損」。",
+    "translation": ""
+  },
+  "c8-s88": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s89": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s90": {
+    "source": "曰「甲」",
+    "translation": ""
+  },
+  "c8-s91": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c8-s92": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s93": {
+    "source": "\n\t恆為是。",
+    "translation": ""
+  },
+  "c8-s94": {
+    "source": "\n\t\t若「甲」等於「乙」者。",
+    "translation": ""
+  },
+  "c8-s95": {
+    "source": "\n\t\t\t乃止。",
+    "translation": ""
+  },
+  "c8-s96": {
+    "source": "\n\t\t或若「甲」大於「乙」者。",
+    "translation": ""
+  },
+  "c8-s97": {
+    "source": "\n\t\t\t減「甲」以「乙」。",
+    "translation": ""
+  },
+  "c8-s98": {
+    "source": "昔之「甲」者。",
+    "translation": ""
+  },
+  "c8-s99": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s100": {
+    "source": "\n\t\t若非。",
+    "translation": ""
+  },
+  "c8-s101": {
+    "source": "\n\t\t\t減「乙」以「甲」。",
+    "translation": ""
+  },
+  "c8-s102": {
+    "source": "昔之「乙」者。",
+    "translation": ""
+  },
+  "c8-s103": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s104": {
+    "source": "\n\t\t也。",
+    "translation": ""
+  },
+  "c8-s105": {
+    "source": "\n\t云云。",
+    "translation": ""
+  },
+  "c8-s106": {
+    "source": "\n\t乃得「甲」。",
+    "translation": ""
+  },
+  "c8-s107": {
+    "source": "\n是謂「更相減損」之術也。",
+    "translation": ""
+  },
+  "c8-s108": {
+    "source": "「必先得」云云者。",
+    "translation": ""
+  },
+  "c8-s109": {
+    "source": "所以名參數也。",
+    "translation": ""
+  },
+  "c8-s110": {
+    "source": "「乃得」云云者。",
+    "translation": ""
+  },
+  "c8-s111": {
+    "source": "所以名得數也。",
+    "translation": ""
+  },
+  "c8-s112": {
+    "source": "施之如是。",
+    "translation": ""
+  },
+  "c8-s113": {
+    "source": "施「更相減損」於九十一。",
+    "translation": ""
+  },
+  "c8-s114": {
+    "source": "於四十九。",
+    "translation": ""
+  },
+  "c8-s115": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s116": {
+    "source": "\n\n施「更相減損」於八十八。",
+    "translation": ""
+  },
+  "c8-s117": {
+    "source": "於五十六。",
+    "translation": ""
+  },
+  "c8-s118": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s119": {
+    "source": "\n\n施「更相減損」於九百七十。",
+    "translation": ""
+  },
+  "c8-s120": {
+    "source": "於四。",
+    "translation": ""
+  },
+  "c8-s121": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s122": {
+    "source": "乃得七。",
+    "translation": ""
+  },
+  "c8-s123": {
+    "source": "八。",
+    "translation": ""
+  },
+  "c8-s124": {
+    "source": "二諸數。",
+    "translation": ""
+  },
+  "c8-s125": {
+    "source": "參不同。",
+    "translation": ""
+  },
+  "c8-s126": {
+    "source": "而一術蔽之。",
+    "translation": ""
+  },
+  "c8-s127": {
+    "source": "不亦易乎。",
+    "translation": ""
+  },
+  "c8-s128": {
+    "source": "故曰。",
+    "translation": ""
+  },
+  "c8-s129": {
+    "source": "凡用非一。",
+    "translation": ""
+  },
+  "c8-s130": {
+    "source": "皆當術之。",
+    "translation": ""
+  },
+  "c8-s131": {
+    "source": "斯亦所以令程式明練可讀。",
+    "translation": ""
+  },
+  "c8-s132": {
+    "source": "如文章之命篇者也。",
+    "translation": ""
+  },
+  "c8-s133": {
+    "source": "又或改易一處。",
+    "translation": ""
+  },
+  "c8-s134": {
+    "source": "則施者皆不易而易矣。",
+    "translation": ""
+  },
+  "c8-s135": {
+    "source": "故曰術者雖非必有。",
+    "translation": ""
+  },
+  "c8-s136": {
+    "source": "然欲以程式立大事者。",
+    "translation": ""
+  },
+  "c8-s137": {
+    "source": "用術乃不可不精也。",
+    "translation": ""
+  },
+  "c8-s138": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c8-s139": {
+    "source": "參數非數。",
+    "translation": ""
+  },
+  "c8-s140": {
+    "source": "可乎。",
+    "translation": ""
+  },
+  "c8-s141": {
+    "source": "參一。",
+    "translation": ""
+  },
+  "c8-s142": {
+    "source": "參三。",
+    "translation": ""
+  },
+  "c8-s143": {
+    "source": "參四。",
+    "translation": ""
+  },
+  "c8-s144": {
+    "source": "參若干。",
+    "translation": ""
+  },
+  "c8-s145": {
+    "source": "當作何書。",
+    "translation": ""
+  },
+  "c8-s146": {
+    "source": "曰當如是。",
+    "translation": ""
+  },
+  "c8-s147": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s148": {
+    "source": "名之曰「雜燴」。",
+    "translation": ""
+  },
+  "c8-s149": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s150": {
+    "source": "\n\t必先得三言。",
+    "translation": ""
+  },
+  "c8-s151": {
+    "source": "曰「甲」。",
+    "translation": ""
+  },
+  "c8-s152": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c8-s153": {
+    "source": "曰「丙」。",
+    "translation": ""
+  },
+  "c8-s154": {
+    "source": "\n\t一爻。",
+    "translation": ""
+  },
+  "c8-s155": {
+    "source": "曰「丁」。",
+    "translation": ""
+  },
+  "c8-s156": {
+    "source": "\n\t二列。",
+    "translation": ""
+  },
+  "c8-s157": {
+    "source": "曰「戊」。",
+    "translation": ""
+  },
+  "c8-s158": {
+    "source": "曰「己」。",
+    "translation": ""
+  },
+  "c8-s159": {
+    "source": "\n\t一數。",
+    "translation": ""
+  },
+  "c8-s160": {
+    "source": "曰「庚」。",
+    "translation": ""
+  },
+  "c8-s161": {
+    "source": "\n\t乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s162": {
+    "source": "\n\t\t夫「甲」。",
+    "translation": ""
+  },
+  "c8-s163": {
+    "source": "夫「乙」。",
+    "translation": ""
+  },
+  "c8-s164": {
+    "source": "夫「丙」。",
+    "translation": ""
+  },
+  "c8-s165": {
+    "source": "夫「丁」。",
+    "translation": ""
+  },
+  "c8-s166": {
+    "source": "夫「戊」。",
+    "translation": ""
+  },
+  "c8-s167": {
+    "source": "夫「己」。",
+    "translation": ""
+  },
+  "c8-s168": {
+    "source": "夫「庚」。",
+    "translation": ""
+  },
+  "c8-s169": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s170": {
+    "source": "\n\t\t吾有一言。",
+    "translation": ""
+  },
+  "c8-s171": {
+    "source": "曰『以上諸公。雖非同類。然今竟共一鑊中。真造化弄人者也』書之。",
+    "translation": ""
+  },
+  "c8-s172": {
+    "source": "\n是謂「雜燴」之術也。",
+    "translation": ""
+  },
+  "c8-s173": {
+    "source": "又凡至「乃得」句。",
+    "translation": ""
+  },
+  "c8-s174": {
+    "source": "輒立止其術。",
+    "translation": ""
+  },
+  "c8-s175": {
+    "source": "餘句雖多。",
+    "translation": ""
+  },
+  "c8-s176": {
+    "source": "亦不復行也。",
+    "translation": ""
+  },
+  "c8-s177": {
+    "source": "蓋於理亦應然。",
+    "translation": ""
+  },
+  "c8-s178": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c8-s179": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s180": {
+    "source": "名之曰「論戰」。",
+    "translation": ""
+  },
+  "c8-s181": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s182": {
+    "source": "必先得一言曰「恃」。",
+    "translation": ""
+  },
+  "c8-s183": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s184": {
+    "source": "\n\t若「恃」等於『衣食所安。弗敢專也。必以分人。』",
+    "translation": ""
+  },
+  "c8-s185": {
+    "source": "者。",
+    "translation": ""
+  },
+  "c8-s186": {
+    "source": "乃得陰也。",
+    "translation": ""
+  },
+  "c8-s187": {
+    "source": "\n\t若「恃」等於『犧牲玉帛。弗敢加也。必以信。』",
+    "translation": ""
+  },
+  "c8-s188": {
+    "source": "者。",
+    "translation": ""
+  },
+  "c8-s189": {
+    "source": "乃得陰也。",
+    "translation": ""
+  },
+  "c8-s190": {
+    "source": "\n\t若「恃」等於『小大之獄。雖不能察。必以情。』",
+    "translation": ""
+  },
+  "c8-s191": {
+    "source": "者。",
+    "translation": ""
+  },
+  "c8-s192": {
+    "source": "乃得陽也。",
+    "translation": ""
+  },
+  "c8-s193": {
+    "source": "\n\t乃得陰。",
+    "translation": ""
+  },
+  "c8-s194": {
+    "source": "\n是謂「論戰」之術也。",
+    "translation": ""
+  },
+  "c8-s195": {
+    "source": "又凡前句所算。",
+    "translation": ""
+  },
+  "c8-s196": {
+    "source": "即其術所得者。",
+    "translation": ""
+  },
+  "c8-s197": {
+    "source": "不必付諸變數。",
+    "translation": ""
+  },
+  "c8-s198": {
+    "source": "但書「乃得矣」可也。",
+    "translation": ""
+  },
+  "c8-s199": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c8-s200": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s201": {
+    "source": "名之曰「倍」。",
+    "translation": ""
+  },
+  "c8-s202": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s203": {
+    "source": "必先得一數曰「甲」。",
+    "translation": ""
+  },
+  "c8-s204": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s205": {
+    "source": "\n\t乘「甲」以二。",
+    "translation": ""
+  },
+  "c8-s206": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s207": {
+    "source": "\n是謂「倍」之術也。",
+    "translation": ""
+  },
+  "c8-s208": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c8-s209": {
+    "source": "欲以「乃得」立止其術。",
+    "translation": ""
+  },
+  "c8-s210": {
+    "source": "然其術實當無所得。",
+    "translation": ""
+  },
+  "c8-s211": {
+    "source": "安書。",
+    "translation": ""
+  },
+  "c8-s212": {
+    "source": "曰以「乃歸空無」。",
+    "translation": ""
+  },
+  "c8-s213": {
+    "source": "向者曰。",
+    "translation": ""
+  },
+  "c8-s214": {
+    "source": "術亦數。",
+    "translation": ""
+  },
+  "c8-s215": {
+    "source": "欲以術為參數。",
+    "translation": ""
+  },
+  "c8-s216": {
+    "source": "以術為得數。",
+    "translation": ""
+  },
+  "c8-s217": {
+    "source": "可乎。",
+    "translation": ""
+  },
+  "c8-s218": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c8-s219": {
+    "source": "可也。",
+    "translation": ""
+  },
+  "c8-s220": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c8-s221": {
+    "source": "今有一列。",
+    "translation": ""
+  },
+  "c8-s222": {
+    "source": "儲物若干。",
+    "translation": ""
+  },
+  "c8-s223": {
+    "source": "欲以一法。",
+    "translation": ""
+  },
+  "c8-s224": {
+    "source": "去其糟粕。",
+    "translation": ""
+  },
+  "c8-s225": {
+    "source": "取其精華。",
+    "translation": ""
+  },
+  "c8-s226": {
+    "source": "然有諸公。",
+    "translation": ""
+  },
+  "c8-s227": {
+    "source": "秉法各異。",
+    "translation": ""
+  },
+  "c8-s228": {
+    "source": "同逢一馬。",
+    "translation": ""
+  },
+  "c8-s229": {
+    "source": "或稱騏驥。",
+    "translation": ""
+  },
+  "c8-s230": {
+    "source": "或以駑駘。",
+    "translation": ""
+  },
+  "c8-s231": {
+    "source": "共飲一壺。",
+    "translation": ""
+  },
+  "c8-s232": {
+    "source": "或稱瓊漿。",
+    "translation": ""
+  },
+  "c8-s233": {
+    "source": "或以馬溺。",
+    "translation": ""
+  },
+  "c8-s234": {
+    "source": "故今是術。",
+    "translation": ""
+  },
+  "c8-s235": {
+    "source": "一術為參。",
+    "translation": ""
+  },
+  "c8-s236": {
+    "source": "甲術參之。",
+    "translation": ""
+  },
+  "c8-s237": {
+    "source": "適甲所欲。",
+    "translation": ""
+  },
+  "c8-s238": {
+    "source": "乙術參之。",
+    "translation": ""
+  },
+  "c8-s239": {
+    "source": "適乙所想。",
+    "translation": ""
+  },
+  "c8-s240": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s241": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s242": {
+    "source": "名之曰「篩剔」。",
+    "translation": ""
+  },
+  "c8-s243": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s244": {
+    "source": "必先得一列曰「甲」。",
+    "translation": ""
+  },
+  "c8-s245": {
+    "source": "一術曰「法」。",
+    "translation": ""
+  },
+  "c8-s246": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s247": {
+    "source": "\n\t吾有一列。",
+    "translation": ""
+  },
+  "c8-s248": {
+    "source": "名之曰「乙」。",
+    "translation": ""
+  },
+  "c8-s249": {
+    "source": "\n\t凡「甲」中之「元」。",
+    "translation": ""
+  },
+  "c8-s250": {
+    "source": "\n\t\t施「法」於「元」。",
+    "translation": ""
+  },
+  "c8-s251": {
+    "source": "若其然者。",
+    "translation": ""
+  },
+  "c8-s252": {
+    "source": "充「乙」以「元」也。",
+    "translation": ""
+  },
+  "c8-s253": {
+    "source": "\n\t云云。",
+    "translation": ""
+  },
+  "c8-s254": {
+    "source": "\n\t乃得「乙」。",
+    "translation": ""
+  },
+  "c8-s255": {
+    "source": "\n是謂「篩剔」之術也。",
+    "translation": ""
+  },
+  "c8-s256": {
+    "source": "定一列二術以試之。",
+    "translation": ""
+  },
+  "c8-s257": {
+    "source": "吾有一列。",
+    "translation": ""
+  },
+  "c8-s258": {
+    "source": "名之曰「丙」。",
+    "translation": ""
+  },
+  "c8-s259": {
+    "source": "充「丙」以一以二以三以四以五以六以七。",
+    "translation": ""
+  },
+  "c8-s260": {
+    "source": "\n\n吾有一術。",
+    "translation": ""
+  },
+  "c8-s261": {
+    "source": "名之曰「甲法」。",
+    "translation": ""
+  },
+  "c8-s262": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s263": {
+    "source": "必先得一數曰「丁」。",
+    "translation": ""
+  },
+  "c8-s264": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s265": {
+    "source": "\n\t若「丁」小於四者。",
+    "translation": ""
+  },
+  "c8-s266": {
+    "source": "乃得陽。",
+    "translation": ""
+  },
+  "c8-s267": {
+    "source": "若非。",
+    "translation": ""
+  },
+  "c8-s268": {
+    "source": "乃得陰也。",
+    "translation": ""
+  },
+  "c8-s269": {
+    "source": "\n是謂「甲法」之術也。",
+    "translation": ""
+  },
+  "c8-s270": {
+    "source": "\n\n吾有一術。",
+    "translation": ""
+  },
+  "c8-s271": {
+    "source": "名之曰「乙法」。",
+    "translation": ""
+  },
+  "c8-s272": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s273": {
+    "source": "必先得一數曰「丁」。",
+    "translation": ""
+  },
+  "c8-s274": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s275": {
+    "source": "\n\t除「丁」以二。",
+    "translation": ""
+  },
+  "c8-s276": {
+    "source": "所餘幾何。",
+    "translation": ""
+  },
+  "c8-s277": {
+    "source": "若其等於零者。",
+    "translation": ""
+  },
+  "c8-s278": {
+    "source": "乃得陽。",
+    "translation": ""
+  },
+  "c8-s279": {
+    "source": "若非。",
+    "translation": ""
+  },
+  "c8-s280": {
+    "source": "乃得陰也。",
+    "translation": ""
+  },
+  "c8-s281": {
+    "source": "\n是謂「乙法」之術也。",
+    "translation": ""
+  },
+  "c8-s282": {
+    "source": "\n\n施「篩剔」於「丙」於「甲法」。",
+    "translation": ""
+  },
+  "c8-s283": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s284": {
+    "source": "\n施「篩剔」於「丙」於「乙法」。",
+    "translation": ""
+  },
+  "c8-s285": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s286": {
+    "source": "乃得",
+    "translation": ""
+  },
+  "c8-s287": {
+    "source": "一。",
+    "translation": ""
+  },
+  "c8-s288": {
+    "source": "二。",
+    "translation": ""
+  },
+  "c8-s289": {
+    "source": "三。",
+    "translation": ""
+  },
+  "c8-s290": {
+    "source": "\n二。",
+    "translation": ""
+  },
+  "c8-s291": {
+    "source": "四。",
+    "translation": ""
+  },
+  "c8-s292": {
+    "source": "六。",
+    "translation": ""
+  },
+  "c8-s293": {
+    "source": "又術有自施者。",
+    "translation": ""
+  },
+  "c8-s294": {
+    "source": "其術之中復施其術。",
+    "translation": ""
+  },
+  "c8-s295": {
+    "source": "號之曰「遞歸」。",
+    "translation": ""
+  },
+  "c8-s296": {
+    "source": "遞歸者何。",
+    "translation": ""
+  },
+  "c8-s297": {
+    "source": "吾有三比。",
+    "translation": ""
+  },
+  "c8-s298": {
+    "source": "譬取二銅鏡而對置。",
+    "translation": ""
+  },
+  "c8-s299": {
+    "source": "人立其間。",
+    "translation": ""
+  },
+  "c8-s300": {
+    "source": "鏡鏡相照。",
+    "translation": ""
+  },
+  "c8-s301": {
+    "source": "乃見無窮之象。",
+    "translation": ""
+  },
+  "c8-s302": {
+    "source": "譬曩有山廟。",
+    "translation": ""
+  },
+  "c8-s303": {
+    "source": "廟有二僧。",
+    "translation": ""
+  },
+  "c8-s304": {
+    "source": "其老者語少者曰。",
+    "translation": ""
+  },
+  "c8-s305": {
+    "source": "曩有山廟。",
+    "translation": ""
+  },
+  "c8-s306": {
+    "source": "廟有二僧。",
+    "translation": ""
+  },
+  "c8-s307": {
+    "source": "其老者語少者曰。",
+    "translation": ""
+  },
+  "c8-s308": {
+    "source": "曩有山廟。",
+    "translation": ""
+  },
+  "c8-s309": {
+    "source": "廟有二僧云云。",
+    "translation": ""
+  },
+  "c8-s310": {
+    "source": "譬莊周之夢蝶。",
+    "translation": ""
+  },
+  "c8-s311": {
+    "source": "其夢蝶復夢莊周。",
+    "translation": ""
+  },
+  "c8-s312": {
+    "source": "蝶夢之莊周復夢一蝶。",
+    "translation": ""
+  },
+  "c8-s313": {
+    "source": "周夢之蝶夢之周夢之蝶復夢一周云云。",
+    "translation": ""
+  },
+  "c8-s314": {
+    "source": "又凡循環皆可作遞歸解。",
+    "translation": ""
+  },
+  "c8-s315": {
+    "source": "遞歸皆可作循環解。",
+    "translation": ""
+  },
+  "c8-s316": {
+    "source": "但擇其易敘者而為之也。",
+    "translation": ""
+  },
+  "c8-s317": {
+    "source": "譬客有問行百步之法者。",
+    "translation": ""
+  },
+  "c8-s318": {
+    "source": "一曰。",
+    "translation": ""
+  },
+  "c8-s319": {
+    "source": "百遍為之而行一步。",
+    "translation": ""
+  },
+  "c8-s320": {
+    "source": "是行百步也。",
+    "translation": ""
+  },
+  "c8-s321": {
+    "source": "此循環也。",
+    "translation": ""
+  },
+  "c8-s322": {
+    "source": "一曰。",
+    "translation": ""
+  },
+  "c8-s323": {
+    "source": "先行一步。",
+    "translation": ""
+  },
+  "c8-s324": {
+    "source": "復行其餘九十九也。",
+    "translation": ""
+  },
+  "c8-s325": {
+    "source": "若問何以行其九十九耶。",
+    "translation": ""
+  },
+  "c8-s326": {
+    "source": "則先行一步。",
+    "translation": ""
+  },
+  "c8-s327": {
+    "source": "復行其九十八步也。",
+    "translation": ""
+  },
+  "c8-s328": {
+    "source": "此遞歸也。",
+    "translation": ""
+  },
+  "c8-s329": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c8-s330": {
+    "source": "莊子云。",
+    "translation": ""
+  },
+  "c8-s331": {
+    "source": "一尺之棰。",
+    "translation": ""
+  },
+  "c8-s332": {
+    "source": "日取其半。",
+    "translation": ""
+  },
+  "c8-s333": {
+    "source": "萬世不竭。",
+    "translation": ""
+  },
+  "c8-s334": {
+    "source": "今既十日。",
+    "translation": ""
+  },
+  "c8-s335": {
+    "source": "問其棰長。",
+    "translation": ""
+  },
+  "c8-s336": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s337": {
+    "source": "名之曰「量棰」。",
+    "translation": ""
+  },
+  "c8-s338": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s339": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s340": {
+    "source": "曰「今長」。",
+    "translation": ""
+  },
+  "c8-s341": {
+    "source": "曰「餘日」。",
+    "translation": ""
+  },
+  "c8-s342": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s343": {
+    "source": "\n\t若「餘日」等於零者。",
+    "translation": ""
+  },
+  "c8-s344": {
+    "source": "乃得「今長」也。",
+    "translation": ""
+  },
+  "c8-s345": {
+    "source": "\n\t除「今長」以二。",
+    "translation": ""
+  },
+  "c8-s346": {
+    "source": "昔之「今長」者。",
+    "translation": ""
+  },
+  "c8-s347": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s348": {
+    "source": "\n\t減「餘日」以一。",
+    "translation": ""
+  },
+  "c8-s349": {
+    "source": "昔之「餘日」者。",
+    "translation": ""
+  },
+  "c8-s350": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s351": {
+    "source": "\n\t施「量棰」於「今長」於「餘日」。",
+    "translation": ""
+  },
+  "c8-s352": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s353": {
+    "source": "\n是謂「量棰」之術也。",
+    "translation": ""
+  },
+  "c8-s354": {
+    "source": "\n\n施「量棰」於一。",
+    "translation": ""
+  },
+  "c8-s355": {
+    "source": "於十。",
+    "translation": ""
+  },
+  "c8-s356": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s357": {
+    "source": "乃得",
+    "translation": ""
+  },
+  "c8-s358": {
+    "source": "九絲七忽六微五纖六沙二塵五埃 ",
+    "translation": ""
+  },
+  "c8-s359": {
+    "source": "算數亦多有用遞歸者。",
+    "translation": ""
+  },
+  "c8-s360": {
+    "source": "譬宋賈憲有釋鎖求廉本源。",
+    "translation": ""
+  },
+  "c8-s361": {
+    "source": "或謂賈憲三角。",
+    "translation": ""
+  },
+  "c8-s362": {
+    "source": "其術曰列所開方數以隅算一自下增入前位至首位而止復以隅算如前升增遞低一位求之云。",
+    "translation": ""
+  },
+  "c8-s363": {
+    "source": "以其術中數皆求自上層。",
+    "translation": ""
+  },
+  "c8-s364": {
+    "source": "上層之數又求自其上。",
+    "translation": ""
+  },
+  "c8-s365": {
+    "source": "是遞歸也。",
+    "translation": ""
+  },
+  "c8-s366": {
+    "source": "故例曰。",
+    "translation": ""
+  },
+  "c8-s367": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s368": {
+    "source": "名之曰「求賈憲三角數」。",
+    "translation": ""
+  },
+  "c8-s369": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s370": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s371": {
+    "source": "曰「層」",
+    "translation": ""
+  },
+  "c8-s372": {
+    "source": "曰「位」。",
+    "translation": ""
+  },
+  "c8-s373": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s374": {
+    "source": "\n\t若「層」等於一者。",
+    "translation": ""
+  },
+  "c8-s375": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s376": {
+    "source": "\n\t若「位」等於一者。",
+    "translation": ""
+  },
+  "c8-s377": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s378": {
+    "source": "\n\t若「位」等於「層」者。",
+    "translation": ""
+  },
+  "c8-s379": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s380": {
+    "source": "\n\t減「層」以一。",
+    "translation": ""
+  },
+  "c8-s381": {
+    "source": "名之曰「上層」。",
+    "translation": ""
+  },
+  "c8-s382": {
+    "source": "\n\t減「位」以一。",
+    "translation": ""
+  },
+  "c8-s383": {
+    "source": "名之曰「左位」。",
+    "translation": ""
+  },
+  "c8-s384": {
+    "source": "\n\t施「求賈憲三角數」於「上層」。",
+    "translation": ""
+  },
+  "c8-s385": {
+    "source": "於「位」。",
+    "translation": ""
+  },
+  "c8-s386": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s387": {
+    "source": "\n\t施「求賈憲三角數」於「上層」。",
+    "translation": ""
+  },
+  "c8-s388": {
+    "source": "於「左位」。",
+    "translation": ""
+  },
+  "c8-s389": {
+    "source": "名之曰「乙」。",
+    "translation": ""
+  },
+  "c8-s390": {
+    "source": "\n\t加「甲」以「乙」。",
+    "translation": ""
+  },
+  "c8-s391": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s392": {
+    "source": "\n是謂「求賈憲三角數」之術也。",
+    "translation": ""
+  },
+  "c8-s393": {
+    "source": "此所以求一層一位之數也。",
+    "translation": ""
+  },
+  "c8-s394": {
+    "source": "今欲盡畫若干層之數。",
+    "translation": ""
+  },
+  "c8-s395": {
+    "source": "亦以術為之。",
+    "translation": ""
+  },
+  "c8-s396": {
+    "source": "示術之相用也。",
+    "translation": ""
+  },
+  "c8-s397": {
+    "source": "注曰。",
+    "translation": ""
+  },
+  "c8-s398": {
+    "source": "是術行甚緩。",
+    "translation": ""
+  },
+  "c8-s399": {
+    "source": "非良也。",
+    "translation": ""
+  },
+  "c8-s400": {
+    "source": "良者稍繁。",
+    "translation": ""
+  },
+  "c8-s401": {
+    "source": "見於章末。",
+    "translation": ""
+  },
+  "c8-s402": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s403": {
+    "source": "名之曰「畫賈憲三角」。",
+    "translation": ""
+  },
+  "c8-s404": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s405": {
+    "source": "必先得一數。",
+    "translation": ""
+  },
+  "c8-s406": {
+    "source": "曰「層數」。",
+    "translation": ""
+  },
+  "c8-s407": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s408": {
+    "source": "\n\t有數一。",
+    "translation": ""
+  },
+  "c8-s409": {
+    "source": "名之曰「層」。",
+    "translation": ""
+  },
+  "c8-s410": {
+    "source": "為是「層數」遍。",
+    "translation": ""
+  },
+  "c8-s411": {
+    "source": "\n\t\t吾有一言。",
+    "translation": ""
+  },
+  "c8-s412": {
+    "source": "名之曰「圖」。",
+    "translation": ""
+  },
+  "c8-s413": {
+    "source": "\n\t\t有數一。",
+    "translation": ""
+  },
+  "c8-s414": {
+    "source": "名之曰「位」。",
+    "translation": ""
+  },
+  "c8-s415": {
+    "source": "為是「層」遍。",
+    "translation": ""
+  },
+  "c8-s416": {
+    "source": "\n\t\t\t施「求賈憲三角數」於「層」。",
+    "translation": ""
+  },
+  "c8-s417": {
+    "source": "於「位」。",
+    "translation": ""
+  },
+  "c8-s418": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s419": {
+    "source": "\n\t\t\t加『　』於「圖」。",
+    "translation": ""
+  },
+  "c8-s420": {
+    "source": "加「甲」於其。",
+    "translation": ""
+  },
+  "c8-s421": {
+    "source": "加『　』於其。",
+    "translation": ""
+  },
+  "c8-s422": {
+    "source": "昔之「圖」者。",
+    "translation": ""
+  },
+  "c8-s423": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s424": {
+    "source": "\n\t\t加「位」以一。",
+    "translation": ""
+  },
+  "c8-s425": {
+    "source": "昔之「位」者。",
+    "translation": ""
+  },
+  "c8-s426": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s427": {
+    "source": "云云。",
+    "translation": ""
+  },
+  "c8-s428": {
+    "source": "\n\t\t夫「圖」。",
+    "translation": ""
+  },
+  "c8-s429": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s430": {
+    "source": "\n\t加「層」以一。",
+    "translation": ""
+  },
+  "c8-s431": {
+    "source": "昔之「層」者。",
+    "translation": ""
+  },
+  "c8-s432": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s433": {
+    "source": "云云。",
+    "translation": ""
+  },
+  "c8-s434": {
+    "source": "\n是謂「畫賈憲三角」之術也。",
+    "translation": ""
+  },
+  "c8-s435": {
+    "source": "\n\n施「畫賈憲三角」於七。",
+    "translation": ""
+  },
+  "c8-s436": {
+    "source": "乃得",
+    "translation": ""
+  },
+  "c8-s437": {
+    "source": "　一　",
+    "translation": ""
+  },
+  "c8-s438": {
+    "source": "\n　一　　一　",
+    "translation": ""
+  },
+  "c8-s439": {
+    "source": "\n　一　　二　　一　",
+    "translation": ""
+  },
+  "c8-s440": {
+    "source": "\n　一　　三　　三　　一　",
+    "translation": ""
+  },
+  "c8-s441": {
+    "source": "\n　一　　四　　六　　四　　一　",
+    "translation": ""
+  },
+  "c8-s442": {
+    "source": "\n　一　　五　　十　　十　　五　　一　",
+    "translation": ""
+  },
+  "c8-s443": {
+    "source": "\n　一　　六　　十五　　二十　　十五　　六　　一　",
+    "translation": ""
+  },
+  "c8-s444": {
+    "source": "或問曰。",
+    "translation": ""
+  },
+  "c8-s445": {
+    "source": "於術之體。",
+    "translation": ""
+  },
+  "c8-s446": {
+    "source": "復敘一術。",
+    "translation": ""
+  },
+  "c8-s447": {
+    "source": "可乎。",
+    "translation": ""
+  },
+  "c8-s448": {
+    "source": "曰。",
+    "translation": ""
+  },
+  "c8-s449": {
+    "source": "可也。",
+    "translation": ""
+  },
+  "c8-s450": {
+    "source": "是以明內術之所以隸於外術。",
+    "translation": ""
+  },
+  "c8-s451": {
+    "source": "易前賈憲三角術如是。",
+    "translation": ""
+  },
+  "c8-s452": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s453": {
+    "source": "名之曰「畫賈憲三角」。",
+    "translation": ""
+  },
+  "c8-s454": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s455": {
+    "source": "必先得一數。",
+    "translation": ""
+  },
+  "c8-s456": {
+    "source": "曰「層數」。",
+    "translation": ""
+  },
+  "c8-s457": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s458": {
+    "source": "\n\t吾有一術。",
+    "translation": ""
+  },
+  "c8-s459": {
+    "source": "名之曰「求」。",
+    "translation": ""
+  },
+  "c8-s460": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s461": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s462": {
+    "source": "曰「層」",
+    "translation": ""
+  },
+  "c8-s463": {
+    "source": "曰「位」。",
+    "translation": ""
+  },
+  "c8-s464": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s465": {
+    "source": "\n\t\t若「層」等於一者。",
+    "translation": ""
+  },
+  "c8-s466": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s467": {
+    "source": "\n\t\t若「位」等於一者。",
+    "translation": ""
+  },
+  "c8-s468": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s469": {
+    "source": "\n\t\t若「位」等於「層」者。",
+    "translation": ""
+  },
+  "c8-s470": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s471": {
+    "source": "\n\t\t減「層」以一。",
+    "translation": ""
+  },
+  "c8-s472": {
+    "source": "名之曰「上層」。",
+    "translation": ""
+  },
+  "c8-s473": {
+    "source": "\n\t\t減「位」以一。",
+    "translation": ""
+  },
+  "c8-s474": {
+    "source": "名之曰「左位」。",
+    "translation": ""
+  },
+  "c8-s475": {
+    "source": "\n\t\t施「求」於「上層」。",
+    "translation": ""
+  },
+  "c8-s476": {
+    "source": "於「位」。",
+    "translation": ""
+  },
+  "c8-s477": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s478": {
+    "source": "\n\t\t施「求」於「上層」。",
+    "translation": ""
+  },
+  "c8-s479": {
+    "source": "於「左位」。",
+    "translation": ""
+  },
+  "c8-s480": {
+    "source": "名之曰「乙」。",
+    "translation": ""
+  },
+  "c8-s481": {
+    "source": "\n\t\t加「甲」以「乙」。",
+    "translation": ""
+  },
+  "c8-s482": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s483": {
+    "source": "\n\t是謂「求」之術也。",
+    "translation": ""
+  },
+  "c8-s484": {
+    "source": "\n\t有數一。",
+    "translation": ""
+  },
+  "c8-s485": {
+    "source": "名之曰「層」。",
+    "translation": ""
+  },
+  "c8-s486": {
+    "source": "為是「層數」遍。",
+    "translation": ""
+  },
+  "c8-s487": {
+    "source": " ",
+    "translation": ""
+  },
+  "c8-s488": {
+    "source": "\n\t\t吾有一言。",
+    "translation": ""
+  },
+  "c8-s489": {
+    "source": "名之曰「圖」。",
+    "translation": ""
+  },
+  "c8-s490": {
+    "source": "\n\t\t有數一。",
+    "translation": ""
+  },
+  "c8-s491": {
+    "source": "名之曰「位」。",
+    "translation": ""
+  },
+  "c8-s492": {
+    "source": "為是「層」遍。",
+    "translation": ""
+  },
+  "c8-s493": {
+    "source": "\n\t\t\t施「求」於「層」。",
+    "translation": ""
+  },
+  "c8-s494": {
+    "source": "於「位」。",
+    "translation": ""
+  },
+  "c8-s495": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s496": {
+    "source": "\n\t\t\t加『　』於「圖」。",
+    "translation": ""
+  },
+  "c8-s497": {
+    "source": "加「甲」於其。",
+    "translation": ""
+  },
+  "c8-s498": {
+    "source": "加『　』於其。",
+    "translation": ""
+  },
+  "c8-s499": {
+    "source": "昔之「圖」者。",
+    "translation": ""
+  },
+  "c8-s500": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s501": {
+    "source": "\n\t\t加「位」以一。",
+    "translation": ""
+  },
+  "c8-s502": {
+    "source": "昔之「位」者。",
+    "translation": ""
+  },
+  "c8-s503": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s504": {
+    "source": "云云。",
+    "translation": ""
+  },
+  "c8-s505": {
+    "source": "\n\t\t夫「圖」。",
+    "translation": ""
+  },
+  "c8-s506": {
+    "source": "書之。",
+    "translation": ""
+  },
+  "c8-s507": {
+    "source": "\n\t加「層」以一。",
+    "translation": ""
+  },
+  "c8-s508": {
+    "source": "昔之「層」者。",
+    "translation": ""
+  },
+  "c8-s509": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s510": {
+    "source": "云云。",
+    "translation": ""
+  },
+  "c8-s511": {
+    "source": "\n是謂「畫賈憲三角」之術也。",
+    "translation": ""
+  },
+  "c8-s512": {
+    "source": "「求」者。",
+    "translation": ""
+  },
+  "c8-s513": {
+    "source": "內術也。",
+    "translation": ""
+  },
+  "c8-s514": {
+    "source": "「畫」者。",
+    "translation": ""
+  },
+  "c8-s515": {
+    "source": "外術也。",
+    "translation": ""
+  },
+  "c8-s516": {
+    "source": "為是。",
+    "translation": ""
+  },
+  "c8-s517": {
+    "source": "則內術不得用於外術之外。",
+    "translation": ""
+  },
+  "c8-s518": {
+    "source": "此「域」也。",
+    "translation": ""
+  },
+  "c8-s519": {
+    "source": "「域」者。",
+    "translation": ""
+  },
+  "c8-s520": {
+    "source": "所以限變數之語境也。",
+    "translation": ""
+  },
+  "c8-s521": {
+    "source": "譬唐人語李密。",
+    "translation": ""
+  },
+  "c8-s522": {
+    "source": "謂牛角掛書之李密也。",
+    "translation": ""
+  },
+  "c8-s523": {
+    "source": "晉人語李密。",
+    "translation": ""
+  },
+  "c8-s524": {
+    "source": "謂舅奪母志之李密也。",
+    "translation": ""
+  },
+  "c8-s525": {
+    "source": "有域。",
+    "translation": ""
+  },
+  "c8-s526": {
+    "source": "則名不致混淆也。",
+    "translation": ""
+  },
+  "c8-s527": {
+    "source": "術之體一域也。",
+    "translation": ""
+  },
+  "c8-s528": {
+    "source": "決策循環之體。",
+    "translation": ""
+  },
+  "c8-s529": {
+    "source": "亦一域也。",
+    "translation": ""
+  },
+  "c8-s530": {
+    "source": "術之參者。",
+    "translation": ""
+  },
+  "c8-s531": {
+    "source": "域與術體同。",
+    "translation": ""
+  },
+  "c8-s532": {
+    "source": "又凡云一名。",
+    "translation": ""
+  },
+  "c8-s533": {
+    "source": "其域有之者則得其謂。",
+    "translation": ""
+  },
+  "c8-s534": {
+    "source": "無之則外一域而得之。",
+    "translation": ""
+  },
+  "c8-s535": {
+    "source": "更無乃次第而外。",
+    "translation": ""
+  },
+  "c8-s536": {
+    "source": "竟無。",
+    "translation": ""
+  },
+  "c8-s537": {
+    "source": "法不行。",
+    "translation": ""
+  },
+  "c8-s538": {
+    "source": "譬有李氏生子而命之曰白者。",
+    "translation": ""
+  },
+  "c8-s539": {
+    "source": "於家中呼其名。",
+    "translation": ""
+  },
+  "c8-s540": {
+    "source": "謂子也。",
+    "translation": ""
+  },
+  "c8-s541": {
+    "source": "出其門。",
+    "translation": ""
+  },
+  "c8-s542": {
+    "source": "乃謂詩人也。",
+    "translation": ""
+  },
+  "c8-s543": {
+    "source": "例曰。",
+    "translation": ""
+  },
+  "c8-s544": {
+    "source": "有數四。",
+    "translation": ""
+  },
+  "c8-s545": {
+    "source": "名之曰「丙」。",
+    "translation": ""
+  },
+  "c8-s546": {
+    "source": "\n有數三。",
+    "translation": ""
+  },
+  "c8-s547": {
+    "source": "名之曰「丁」。",
+    "translation": ""
+  },
+  "c8-s548": {
+    "source": "\n有數五。",
+    "translation": ""
+  },
+  "c8-s549": {
+    "source": "名之曰「戊」。",
+    "translation": ""
+  },
+  "c8-s550": {
+    "source": "\n\n吾有一術。",
+    "translation": ""
+  },
+  "c8-s551": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s552": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s553": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s554": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c8-s555": {
+    "source": "曰「丙」。",
+    "translation": ""
+  },
+  "c8-s556": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s557": {
+    "source": "\n\t注曰。",
+    "translation": ""
+  },
+  "c8-s558": {
+    "source": "『此之丙丁。非外之丙丁也。而內無戊。遂得之於外』",
+    "translation": ""
+  },
+  "c8-s559": {
+    "source": "\n\t有數七。",
+    "translation": ""
+  },
+  "c8-s560": {
+    "source": "名之曰「丁」。",
+    "translation": ""
+  },
+  "c8-s561": {
+    "source": "\n\t加「乙」以「丁」。",
+    "translation": ""
+  },
+  "c8-s562": {
+    "source": "加其於「戊」。",
+    "translation": ""
+  },
+  "c8-s563": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s564": {
+    "source": "\n是謂「甲」之術也。",
+    "translation": ""
+  },
+  "c8-s565": {
+    "source": "\n\n施「甲」於「丙」「丁」。",
+    "translation": ""
+  },
+  "c8-s566": {
+    "source": "\n注曰『此之丙。內之乙。此之丁。內之丙。似此逆行倒施者。自非佳法。唯示域之用耳』",
+    "translation": ""
+  },
+  "c8-s567": {
+    "source": "一術既定。",
+    "translation": ""
+  },
+  "c8-s568": {
+    "source": "其域乃與其術恆共存。",
+    "translation": ""
+  },
+  "c8-s569": {
+    "source": "於他處施是術。",
+    "translation": ""
+  },
+  "c8-s570": {
+    "source": "是術亦得其域之變數而用之。",
+    "translation": ""
+  },
+  "c8-s571": {
+    "source": "是謂「閉包」也。",
+    "translation": ""
+  },
+  "c8-s572": {
+    "source": "夫前者賈憲三角術。",
+    "translation": ""
+  },
+  "c8-s573": {
+    "source": "行甚緩。",
+    "translation": ""
+  },
+  "c8-s574": {
+    "source": "蓋其循環之中。",
+    "translation": ""
+  },
+  "c8-s575": {
+    "source": "每每復求既得之數。",
+    "translation": ""
+  },
+  "c8-s576": {
+    "source": "實屬揮霍。",
+    "translation": ""
+  },
+  "c8-s577": {
+    "source": "今以閉包。",
+    "translation": ""
+  },
+  "c8-s578": {
+    "source": "存既得之數於域中一列。",
+    "translation": ""
+  },
+  "c8-s579": {
+    "source": "以資後算。",
+    "translation": ""
+  },
+  "c8-s580": {
+    "source": "不令作無用之功也。",
+    "translation": ""
+  },
+  "c8-s581": {
+    "source": "是術也。",
+    "translation": ""
+  },
+  "c8-s582": {
+    "source": "以術得術。",
+    "translation": ""
+  },
+  "c8-s583": {
+    "source": "所得「求」術。",
+    "translation": ""
+  },
+  "c8-s584": {
+    "source": "「藏」列存焉。",
+    "translation": ""
+  },
+  "c8-s585": {
+    "source": "以此「求」替前之「求」。",
+    "translation": ""
+  },
+  "c8-s586": {
+    "source": "用「畫」中。",
+    "translation": ""
+  },
+  "c8-s587": {
+    "source": "大速之焉。",
+    "translation": ""
+  },
+  "c8-s588": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s589": {
+    "source": "名之曰「賈憲三角術」。",
+    "translation": ""
+  },
+  "c8-s590": {
+    "source": "是術曰。",
+    "translation": ""
+  },
+  "c8-s591": {
+    "source": "\n\t吾有一列。",
+    "translation": ""
+  },
+  "c8-s592": {
+    "source": "名之曰「藏」。",
+    "translation": ""
+  },
+  "c8-s593": {
+    "source": "\n\n\t吾有一術。",
+    "translation": ""
+  },
+  "c8-s594": {
+    "source": "名之曰「求」。",
+    "translation": ""
+  },
+  "c8-s595": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s596": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s597": {
+    "source": "曰「層」",
+    "translation": ""
+  },
+  "c8-s598": {
+    "source": "曰「位」。",
+    "translation": ""
+  },
+  "c8-s599": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s600": {
+    "source": "\n\t\t若「層」等於一者。",
+    "translation": ""
+  },
+  "c8-s601": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s602": {
+    "source": "\n\t\t若「位」等於一者。",
+    "translation": ""
+  },
+  "c8-s603": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s604": {
+    "source": "\n\t\t若「位」等於「層」者。",
+    "translation": ""
+  },
+  "c8-s605": {
+    "source": "乃得一也。",
+    "translation": ""
+  },
+  "c8-s606": {
+    "source": "\n\t\t減「層」以一。",
+    "translation": ""
+  },
+  "c8-s607": {
+    "source": "名之曰「上層」。",
+    "translation": ""
+  },
+  "c8-s608": {
+    "source": "\n\t\t減「位」以一。",
+    "translation": ""
+  },
+  "c8-s609": {
+    "source": "名之曰「左位」。",
+    "translation": ""
+  },
+  "c8-s610": {
+    "source": "\n\n\t\t恆為是。",
+    "translation": ""
+  },
+  "c8-s611": {
+    "source": "若「藏」之長大於「層」者。",
+    "translation": ""
+  },
+  "c8-s612": {
+    "source": "乃止也。",
+    "translation": ""
+  },
+  "c8-s613": {
+    "source": "\n\t\t\t吾有一列。",
+    "translation": ""
+  },
+  "c8-s614": {
+    "source": "充「藏」以其也。",
+    "translation": ""
+  },
+  "c8-s615": {
+    "source": "\n\n\t\t吾有二數。",
+    "translation": ""
+  },
+  "c8-s616": {
+    "source": "名之曰「甲」。",
+    "translation": ""
+  },
+  "c8-s617": {
+    "source": "曰「乙」。",
+    "translation": ""
+  },
+  "c8-s618": {
+    "source": "\n\n\t\t夫「藏」之「上層」。",
+    "translation": ""
+  },
+  "c8-s619": {
+    "source": "夫其之「位」。",
+    "translation": ""
+  },
+  "c8-s620": {
+    "source": "名之曰「知甲」。",
+    "translation": ""
+  },
+  "c8-s621": {
+    "source": "\n\t\t若「知甲」者。",
+    "translation": ""
+  },
+  "c8-s622": {
+    "source": "\n\t\t\t昔之「甲」者。",
+    "translation": ""
+  },
+  "c8-s623": {
+    "source": "今「知甲」是矣。",
+    "translation": ""
+  },
+  "c8-s624": {
+    "source": "\n\t\t若非。",
+    "translation": ""
+  },
+  "c8-s625": {
+    "source": "\n\t\t\t施「求」於「上層」。",
+    "translation": ""
+  },
+  "c8-s626": {
+    "source": "於「位」。",
+    "translation": ""
+  },
+  "c8-s627": {
+    "source": "昔之「甲」者。",
+    "translation": ""
+  },
+  "c8-s628": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s629": {
+    "source": "\n\t\t云云。",
+    "translation": ""
+  },
+  "c8-s630": {
+    "source": "\n\n\t\t夫「藏」之「上層」。",
+    "translation": ""
+  },
+  "c8-s631": {
+    "source": "夫其之「左位」。",
+    "translation": ""
+  },
+  "c8-s632": {
+    "source": "名之曰「知乙」。",
+    "translation": ""
+  },
+  "c8-s633": {
+    "source": "\n\t\t若「知乙」者。",
+    "translation": ""
+  },
+  "c8-s634": {
+    "source": "\n\t\t\t昔之「乙」者。",
+    "translation": ""
+  },
+  "c8-s635": {
+    "source": "今「知乙」是矣。",
+    "translation": ""
+  },
+  "c8-s636": {
+    "source": "\n\t\t若非。",
+    "translation": ""
+  },
+  "c8-s637": {
+    "source": "\n\t\t\t施「求」於「上層」。",
+    "translation": ""
+  },
+  "c8-s638": {
+    "source": "於「左位」。",
+    "translation": ""
+  },
+  "c8-s639": {
+    "source": "昔之「乙」者。",
+    "translation": ""
+  },
+  "c8-s640": {
+    "source": "今其是矣。",
+    "translation": ""
+  },
+  "c8-s641": {
+    "source": "\n\t\t云云。",
+    "translation": ""
+  },
+  "c8-s642": {
+    "source": "\n\n\t\t加「甲」以「乙」。",
+    "translation": ""
+  },
+  "c8-s643": {
+    "source": "名之曰「丙」。",
+    "translation": ""
+  },
+  "c8-s644": {
+    "source": "\n\t\t夫「藏」之「層」。",
+    "translation": ""
+  },
+  "c8-s645": {
+    "source": "昔之其之「位」者。",
+    "translation": ""
+  },
+  "c8-s646": {
+    "source": "今「丙」是矣。",
+    "translation": ""
+  },
+  "c8-s647": {
+    "source": "\n\t\t乃得「丙」。",
+    "translation": ""
+  },
+  "c8-s648": {
+    "source": "\n\t是謂「求」之術也。",
+    "translation": ""
+  },
+  "c8-s649": {
+    "source": "\n\t乃得「求」。",
+    "translation": ""
+  },
+  "c8-s650": {
+    "source": "\n是謂「賈憲三角術」之術也。",
+    "translation": ""
+  },
+  "c8-s651": {
+    "source": "\n\n施「賈憲三角術」。",
+    "translation": ""
+  },
+  "c8-s652": {
+    "source": "名之曰「求賈憲三角數」。",
+    "translation": ""
+  },
+  "c8-s653": {
+    "source": "又術之施也。",
+    "translation": ""
+  },
+  "c8-s654": {
+    "source": "除前法之外。",
+    "translation": ""
+  },
+  "c8-s655": {
+    "source": "亦可取即算而未名之變數作參也。",
+    "translation": ""
+  },
+  "c8-s656": {
+    "source": "其法曰「取若干以施某術」。",
+    "translation": ""
+  },
+  "c8-s657": {
+    "source": "若干者。",
+    "translation": ""
+  },
+  "c8-s658": {
+    "source": "參之多少也。",
+    "translation": ""
+  },
+  "c8-s659": {
+    "source": "其理蓋於「書之」略同。",
+    "translation": ""
+  },
+  "c8-s660": {
+    "source": "易前莊子棰術為例。",
+    "translation": ""
+  },
+  "c8-s661": {
+    "source": "吾有一術。",
+    "translation": ""
+  },
+  "c8-s662": {
+    "source": "名之曰「量棰」。",
+    "translation": ""
+  },
+  "c8-s663": {
+    "source": "欲行是術。",
+    "translation": ""
+  },
+  "c8-s664": {
+    "source": "必先得二數。",
+    "translation": ""
+  },
+  "c8-s665": {
+    "source": "曰「今長」。",
+    "translation": ""
+  },
+  "c8-s666": {
+    "source": "曰「餘日」。",
+    "translation": ""
+  },
+  "c8-s667": {
+    "source": "乃行是術曰。",
+    "translation": ""
+  },
+  "c8-s668": {
+    "source": "\n\t若「餘日」等於零者。",
+    "translation": ""
+  },
+  "c8-s669": {
+    "source": "乃得「今長」也。",
+    "translation": ""
+  },
+  "c8-s670": {
+    "source": "\n\t除「今長」以二。",
+    "translation": ""
+  },
+  "c8-s671": {
+    "source": "減「餘日」以一。",
+    "translation": ""
+  },
+  "c8-s672": {
+    "source": "取二以施「量棰」。",
+    "translation": ""
+  },
+  "c8-s673": {
+    "source": "乃得矣。",
+    "translation": ""
+  },
+  "c8-s674": {
+    "source": "\n是謂「量棰」之術也。",
+    "translation": ""
+  },
+  "c8-s675": {
+    "source": "術之道。",
+    "translation": ""
+  },
+  "c8-s676": {
+    "source": "至是略備矣。",
+    "translation": ""
+  },
+  "c8-s677": {
+    "source": "比其前章諸法。",
+    "translation": ""
+  },
+  "c8-s678": {
+    "source": "愈增玄妙。",
+    "translation": ""
+  },
+  "c8-s679": {
+    "source": "請吾子細審其例。",
+    "translation": ""
+  },
+  "c8-s680": {
+    "source": "更以自試。",
+    "translation": ""
+  },
+  "c8-s681": {
+    "source": "方達自如云耳。",
+    "translation": ""
+  }
+}
