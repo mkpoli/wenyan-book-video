@@ -364,6 +364,14 @@ def _translate_chapter_batch(
     
     source_lines = [translations_data[sid]["source"] for sid in batch_ids]
     
+    # Preview source paragraph
+    paragraph_preview = "".join(source_lines)
+    print("\n" + "="*80)
+    print("SOURCE PARAGRAPH PREVIEW")
+    print("="*80)
+    print(paragraph_preview)
+    print("="*80 + "\n")
+    
     text_block = _build_text_block_for_batch(translations_data, batch_ids)
     
     # 2. Run all models
@@ -412,8 +420,6 @@ def _translate_chapter_batch(
     # Also prepare for printing table
     print("\n" + "─"*80)
     print(f"Batch Result (Judge: {best_model or 'N/A'})")
-    max_len = 20
-    print(f"{'Source':<30} | {'Refined':<30} | Candidates...")
     print("─"*80)
     
     for i, sid in enumerate(batch_ids):
@@ -423,6 +429,9 @@ def _translate_chapter_batch(
         refined_text = final_translations[i]
         entry["translation"] = refined_text
         
+        print(f"\n[Source] {source_lines[i]}")
+        print(f"  {'Refined (Judge)':<25} | {refined_text}")
+
         # Candidates
         cands = {}
         distinct_vals = set()
@@ -433,17 +442,13 @@ def _translate_chapter_batch(
                 val = t_list[i]
                 cands[model] = val
                 distinct_vals.add(val)
+                print(f"  {model:<25} | {val}")
         
         if len(distinct_vals) > 1:
             entry["candidates"] = cands
         
         translations_data[sid] = entry
         changed = True
-        
-        # Print row
-        src_preview = source_lines[i][:28] + ".." if len(source_lines[i])>28 else source_lines[i]
-        ref_preview = refined_text[:28] + ".." if len(refined_text)>28 else refined_text
-        print(f"{src_preview:<30} | {ref_preview:<30} | {len(distinct_vals)} distinct cands")
 
     # 7. Write File
     if changed:
