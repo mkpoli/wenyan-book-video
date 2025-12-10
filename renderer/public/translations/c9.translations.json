@@ -1,0 +1,2034 @@
+{
+  "c9-s1": {
+    "source": "夫人之欲蓄一物。",
+    "translation": "When a man desires to store a thing,",
+    "candidates": {
+      "openai:gpt-5.1": "Now, when a man desires to store away a thing,",
+      "deepseek:deepseek-chat": "Now, when a man desires to store a thing,"
+    }
+  },
+  "c9-s2": {
+    "source": "或諸袖中。",
+    "translation": "he may keep it within his sleeve,",
+    "candidates": {
+      "openai:gpt-5.1": "he may place it within his sleeve,",
+      "deepseek:deepseek-chat": "he may keep it within his sleeve,"
+    }
+  },
+  "c9-s3": {
+    "source": "或諸案左。",
+    "translation": "or place it upon the left side of his desk.",
+    "candidates": {
+      "openai:gpt-5.1": "or set it by the left of his desk.",
+      "deepseek:deepseek-chat": "or place it upon the left side of his desk."
+    }
+  },
+  "c9-s4": {
+    "source": "物其多也。",
+    "translation": "When the things become many,",
+    "candidates": {
+      "openai:gpt-5.1": "When the things grow many,",
+      "deepseek:deepseek-chat": "When the things become many,"
+    }
+  },
+  "c9-s5": {
+    "source": "乃藏諸箱篋。",
+    "translation": "he then stores them within chests and boxes.",
+    "candidates": {
+      "openai:gpt-5.1": "then he hides them in chests and coffers.",
+      "deepseek:deepseek-chat": "he then stores them within chests and boxes."
+    }
+  },
+  "c9-s6": {
+    "source": "儲諸籠笥。",
+    "translation": "He stores them in baskets and hampers.",
+    "candidates": {
+      "openai:gpt-5.1": "He stores them in baskets and hampers.",
+      "deepseek:deepseek-chat": "Store them in baskets and hampers."
+    }
+  },
+  "c9-s7": {
+    "source": "篋笥不能盡容。",
+    "translation": "When chests and hampers can no longer contain them all,",
+    "candidates": {
+      "openai:gpt-5.1": "When chests and hampers can no longer contain them all,",
+      "deepseek:deepseek-chat": "Boxes and hampers cannot contain them all."
+    }
+  },
+  "c9-s8": {
+    "source": "復載以牛車。",
+    "translation": "he loads them again upon ox-carts,",
+    "candidates": {
+      "openai:gpt-5.1": "he loads them again upon ox-carts,",
+      "deepseek:deepseek-chat": "Again, load them onto ox-carts."
+    }
+  },
+  "c9-s9": {
+    "source": "束以高閣。",
+    "translation": "and bundles them away into lofty storerooms;",
+    "candidates": {
+      "openai:gpt-5.1": "and bundles them away into lofty storerooms;",
+      "deepseek:deepseek-chat": "Bind them and place them upon high shelves."
+    }
+  },
+  "c9-s10": {
+    "source": "彼亦不能足者。",
+    "translation": "yet even these prove insufficient.",
+    "candidates": {
+      "openai:gpt-5.1": "yet even these prove insufficient.",
+      "deepseek:deepseek-chat": "Even that cannot suffice."
+    }
+  },
+  "c9-s11": {
+    "source": "乃入山斷木。",
+    "translation": "He then enters the mountains to fell timber —",
+    "candidates": {
+      "openai:gpt-5.1": "Then he goes into the mountains and fells timber.",
+      "deepseek:deepseek-chat": "He then enters the mountains to fell timber —"
+    }
+  },
+  "c9-s12": {
+    "source": "文梓楩柟。",
+    "translation": "patterned catalpa, fine nanmu, and fragrant camphorwood.",
+    "candidates": {
+      "openai:gpt-5.1": "He selects fine catalpa, zelkova, and nanmu wood.",
+      "deepseek:deepseek-chat": "patterned catalpa, fine nanmu, and fragrant camphorwood."
+    }
+  },
+  "c9-s13": {
+    "source": "巧工施校。",
+    "translation": "Skilled craftsmen apply their measures,",
+    "candidates": {
+      "openai:gpt-5.1": "A master craftsman plies his measuring-line and square upon them.",
+      "deepseek:deepseek-chat": "Skilled craftsmen apply their measures,"
+    }
+  },
+  "c9-s14": {
+    "source": "為雕梁畫棟。",
+    "translation": "carving beams and painting rafters.",
+    "candidates": {
+      "openai:gpt-5.1": "He fashions carved beams and painted rafters.",
+      "deepseek:deepseek-chat": "carving beams and painting rafters."
+    }
+  },
+  "c9-s15": {
+    "source": "樓閣起焉。",
+    "translation": "Thus towers and pavilions arise.",
+    "candidates": {
+      "openai:gpt-5.1": "Thus pavilions and lofty chambers arise.",
+      "deepseek:deepseek-chat": "Thus towers and pavilions arise."
+    }
+  },
+  "c9-s16": {
+    "source": "蓄一國之物。",
+    "translation": "To store the goods of an entire realm,",
+    "candidates": {
+      "openai:gpt-5.1": "To store the goods of an entire realm.",
+      "deepseek:deepseek-chat": "To store the goods of a whole kingdom,"
+    }
+  },
+  "c9-s17": {
+    "source": "乃興冊府。",
+    "translation": "one then raises a Hall of Records,",
+    "candidates": {
+      "openai:gpt-5.1": "One then raises a Hall of Records,",
+      "deepseek:deepseek-chat": "one then establishes archives and libraries,"
+    }
+  },
+  "c9-s18": {
+    "source": "武庫。",
+    "translation": "an Arsenal,",
+    "candidates": {
+      "openai:gpt-5.1": "an Arsenal of war,",
+      "deepseek:deepseek-chat": "arsenals,"
+    }
+  },
+  "c9-s19": {
+    "source": "倉廩。",
+    "translation": "and granaries and storehouses,",
+    "candidates": {
+      "openai:gpt-5.1": "and granaries and storehouses,",
+      "deepseek:deepseek-chat": "granaries and storehouses —"
+    }
+  },
+  "c9-s20": {
+    "source": "以羅天下之可寶。",
+    "translation": "to gather all under heaven that is worthy of treasure.",
+    "candidates": {
+      "openai:gpt-5.1": "that one may net and gather all under heaven that is worthy of treasure.",
+      "deepseek:deepseek-chat": "to gather all that is precious under heaven."
+    }
+  },
+  "c9-s21": {
+    "source": "今以編程之繁複。",
+    "translation": "Now, in view of the manifold intricacy of programming,",
+    "candidates": {
+      "openai:gpt-5.1": "Now, in view of the manifold intricacy of programming,",
+      "deepseek:deepseek-chat": "Now, with the complexity of programming,"
+    }
+  },
+  "c9-s22": {
+    "source": "亦設府庫以輯有用之法。",
+    "translation": "we likewise establish repositories and storehouses, to gather together methods of practical use.",
+    "candidates": {
+      "openai:gpt-5.1": "we likewise establish repositories and storehouses, to gather together methods of practical use.",
+      "deepseek:deepseek-chat": "one also establishes treasuries and storehouses to compile useful methods."
+    }
+  },
+  "c9-s23": {
+    "source": "既驗之策。",
+    "translation": "These are strategies already tested and proved,",
+    "candidates": {
+      "openai:gpt-5.1": "These are strategies already tested and proved,",
+      "deepseek:deepseek-chat": "Strategies already proven,"
+    }
+  },
+  "c9-s24": {
+    "source": "如書齋然。",
+    "translation": "like a scholar’s study,",
+    "candidates": {
+      "openai:gpt-5.1": "like a scholar’s study,",
+      "deepseek:deepseek-chat": "like a scholar's study,"
+    }
+  },
+  "c9-s25": {
+    "source": "如箱篋然。",
+    "translation": "like chests and caskets,",
+    "candidates": {
+      "openai:gpt-5.1": "like chests and caskets,",
+      "deepseek:deepseek-chat": "like chests and boxes,"
+    }
+  },
+  "c9-s26": {
+    "source": "唯時取之。",
+    "translation": "from which one draws forth at need,",
+    "candidates": {
+      "openai:gpt-5.1": "from which one draws forth at need,",
+      "deepseek:deepseek-chat": "are there solely to be taken up in time,"
+    }
+  },
+  "c9-s27": {
+    "source": "以為作者助也。",
+    "translation": "to serve as an aid to the writer of code.",
+    "candidates": {
+      "openai:gpt-5.1": "to serve as an aid to the writer of code.",
+      "deepseek:deepseek-chat": "to serve as an aid to the creator."
+    }
+  },
+  "c9-s28": {
+    "source": "所藏者。",
+    "translation": "What is stored therein,",
+    "candidates": {
+      "openai:gpt-5.1": "What is stored therein,",
+      "deepseek:deepseek-chat": "What is stored therein —"
+    }
+  },
+  "c9-s29": {
+    "source": "術之集也。",
+    "translation": "is a collection of methods."
+  },
+  "c9-s30": {
+    "source": "法古而名之曰書。",
+    "translation": "Following antiquity in naming, we call each such collection a ‘Book’.",
+    "candidates": {
+      "openai:gpt-5.1": "Following antiquity in naming, we call each such collection a 'Book'.",
+      "deepseek:deepseek-chat": "Following antiquity, they are named 'books'."
+    }
+  },
+  "c9-s31": {
+    "source": "今擷數書為例。",
+    "translation": "Now we shall pluck a few ‘Books’ as examples,",
+    "candidates": {
+      "openai:gpt-5.1": "Now we shall pluck a few 'Books' as examples,",
+      "deepseek:deepseek-chat": "Now, let us select a few books as examples."
+    }
+  },
+  "c9-s32": {
+    "source": "計開。",
+    "translation": "and let us unfold our explanation.",
+    "candidates": {
+      "openai:gpt-5.1": "and let us unfold our explanation.",
+      "deepseek:deepseek-chat": "Let us unfold our explanation."
+    }
+  },
+  "c9-s33": {
+    "source": "算經者。",
+    "translation": "_Canon of Calculation_ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Numbers Canon' —",
+      "deepseek:deepseek-chat": "The _Canon of Calculation_ —"
+    }
+  },
+  "c9-s34": {
+    "source": "所以資算術也。",
+    "translation": "is what is used to furnish the arts of calculation.",
+    "candidates": {
+      "openai:gpt-5.1": "is what is used to furnish the arts of calculation.",
+      "deepseek:deepseek-chat": "is what is used to support arithmetic."
+    }
+  },
+  "c9-s35": {
+    "source": "開方。",
+    "translation": "Square roots,",
+    "candidates": {
+      "openai:gpt-5.1": "Square roots,",
+      "deepseek:deepseek-chat": "Extracting square roots,"
+    }
+  },
+  "c9-s36": {
+    "source": "勾股。",
+    "translation": "the Pythagorean relation,",
+    "candidates": {
+      "openai:gpt-5.1": "the Pythagorean (gou-gu) relation,",
+      "deepseek:deepseek-chat": "the right-angled triangle,"
+    }
+  },
+  "c9-s37": {
+    "source": "密率。",
+    "translation": "refined approximations,",
+    "candidates": {
+      "openai:gpt-5.1": "refined approximations,",
+      "deepseek:deepseek-chat": "precise ratios,"
+    }
+  },
+  "c9-s38": {
+    "source": "此之類也。",
+    "translation": "and the like belong here.",
+    "candidates": {
+      "openai:gpt-5.1": "and the like belong here.",
+      "deepseek:deepseek-chat": "these are its kind."
+    }
+  },
+  "c9-s39": {
+    "source": "列經者。",
+    "translation": "_Canon of Lists_ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Lists Canon' —",
+      "deepseek:deepseek-chat": "The _Canon of Lists_ —"
+    }
+  },
+  "c9-s40": {
+    "source": "所以析列也。",
+    "translation": "is what is used to analyze and manipulate lists.",
+    "candidates": {
+      "openai:gpt-5.1": "is what is used to analyze and manipulate lists.",
+      "deepseek:deepseek-chat": "is what is used to analyze arrays."
+    }
+  },
+  "c9-s41": {
+    "source": "篩剔。",
+    "translation": "Filtering and sieving,",
+    "candidates": {
+      "openai:gpt-5.1": "Filtering and sieving,",
+      "deepseek:deepseek-chat": "Sifting and filtering,"
+    }
+  },
+  "c9-s42": {
+    "source": "合併。",
+    "translation": "merging,"
+  },
+  "c9-s43": {
+    "source": "排序。",
+    "translation": "sorting,"
+  },
+  "c9-s44": {
+    "source": "此之類也。",
+    "translation": "and the like belong here.",
+    "candidates": {
+      "openai:gpt-5.1": "and the like belong here.",
+      "deepseek:deepseek-chat": "these are its kind."
+    }
+  },
+  "c9-s45": {
+    "source": "曆法者。",
+    "translation": "_Canon of Calendrics_ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Calendar Methods' —",
+      "deepseek:deepseek-chat": "The _Canon of Calendrics_ —"
+    }
+  },
+  "c9-s46": {
+    "source": "演算天時也。",
+    "translation": "is used to compute the seasons of Heaven,",
+    "candidates": {
+      "openai:gpt-5.1": "are used to compute the seasons of Heaven,",
+      "deepseek:deepseek-chat": "performs calculations of celestial timings."
+    }
+  },
+  "c9-s47": {
+    "source": "求年月日時刻。",
+    "translation": "to seek out year, month, day, hour, and moment —",
+    "candidates": {
+      "openai:gpt-5.1": "to seek out year, month, day, hour, and moment —",
+      "deepseek:deepseek-chat": "Seeking year, month, day, hour, and moment,"
+    }
+  },
+  "c9-s48": {
+    "source": "此之類也。",
+    "translation": "and the like belong here.",
+    "candidates": {
+      "openai:gpt-5.1": "and the like belong here.",
+      "deepseek:deepseek-chat": "these are its kind."
+    }
+  },
+  "c9-s49": {
+    "source": "畫譜者。",
+    "translation": "_Manual of Painting_ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Drawing Manual' —",
+      "deepseek:deepseek-chat": "The _Manual of Painting_ —"
+    }
+  },
+  "c9-s50": {
+    "source": "所以為圖畫也。",
+    "translation": "is what is used to fashion images and diagrams.",
+    "candidates": {
+      "openai:gpt-5.1": "is what is used to fashion images and diagrams.",
+      "deepseek:deepseek-chat": "is what is used for drawing pictures."
+    }
+  },
+  "c9-s51": {
+    "source": "勾描。",
+    "translation": "Outline drawing,",
+    "candidates": {
+      "openai:gpt-5.1": "Outline drawing,",
+      "deepseek:deepseek-chat": "Outline and delineation."
+    }
+  },
+  "c9-s52": {
+    "source": "皴法。",
+    "translation": "texturing by brush-strokes,",
+    "candidates": {
+      "openai:gpt-5.1": "texturing by brush-strokes,",
+      "deepseek:deepseek-chat": "Texture-stroke methods."
+    }
+  },
+  "c9-s53": {
+    "source": "設色。",
+    "translation": "and the laying on of colors —",
+    "candidates": {
+      "openai:gpt-5.1": "and the laying on of colors —",
+      "deepseek:deepseek-chat": "Application of color."
+    }
+  },
+  "c9-s54": {
+    "source": "此之類也。",
+    "translation": "and the like belong here.",
+    "candidates": {
+      "openai:gpt-5.1": "and the like belong here.",
+      "deepseek:deepseek-chat": "And the like belong here."
+    }
+  },
+  "c9-s55": {
+    "source": "欲得一書一術。",
+    "translation": "If one would obtain a single Book and a single method,",
+    "candidates": {
+      "openai:gpt-5.1": "If one would obtain a single Book and a single method,",
+      "deepseek:deepseek-chat": "When one wishes to obtain a Book or a method,"
+    }
+  },
+  "c9-s56": {
+    "source": "乃引之如是。",
+    "translation": "one then invokes it in this fashion.",
+    "candidates": {
+      "openai:gpt-5.1": "one then invokes it in this fashion.",
+      "deepseek:deepseek-chat": "one invokes it thus."
+    }
+  },
+  "c9-s57": {
+    "source": "吾嘗觀『算經』之書。",
+    "translation": "I once surveyed the Book _Canon of Calculation_.",
+    "candidates": {
+      "openai:gpt-5.1": "I once surveyed the Book '_Canon of Calculation_'.",
+      "deepseek:deepseek-chat": "I once perused the Book of _Canon of Calculation_."
+    }
+  },
+  "c9-s58": {
+    "source": "方悟「平方根」之義。",
+    "translation": "Only then did I apprehend the meaning of ‘square root’.",
+    "candidates": {
+      "openai:gpt-5.1": "Only then did I apprehend the meaning of 'square root'.",
+      "deepseek:deepseek-chat": "Only then did I comprehend the meaning of 'square root'."
+    }
+  },
+  "c9-s59": {
+    "source": "既得「平方根」之術。",
+    "translation": "Having thus acquired the method of ‘square root’,",
+    "candidates": {
+      "openai:gpt-5.1": "Having thus acquired the method of 'square roots',",
+      "deepseek:deepseek-chat": "Having obtained the method of 'square root',"
+    }
+  },
+  "c9-s60": {
+    "source": "遂得而用之如是。",
+    "translation": "I thereupon was able to use it in this way:",
+    "candidates": {
+      "openai:gpt-5.1": "I thereupon was able to use it in this way:",
+      "deepseek:deepseek-chat": "I could then use it as follows."
+    }
+  },
+  "c9-s61": {
+    "source": "施「平方根」於八十一。",
+    "translation": "Apply ‘square root’ to eighty-one;",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'square root' to eighty-one;",
+      "deepseek:deepseek-chat": "Apply 'square root' to eighty-one."
+    }
+  },
+  "c9-s62": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s63": {
+    "source": "乃得「九」耳。",
+    "translation": "and one obtains but ‘nine’.",
+    "candidates": {
+      "openai:gpt-5.1": "and one obtains but 'nine'.",
+      "deepseek:deepseek-chat": "One obtains 'nine', that is all."
+    }
+  },
+  "c9-s64": {
+    "source": "欲取非一者。",
+    "translation": "If one wishes to draw upon more than one,",
+    "candidates": {
+      "openai:gpt-5.1": "If one wishes to draw upon more than one,",
+      "deepseek:deepseek-chat": "If one wishes to fetch more than one,"
+    }
+  },
+  "c9-s65": {
+    "source": "但魚貫之可也。",
+    "translation": "then let them merely follow one another in single file, and it will suffice.",
+    "candidates": {
+      "openai:gpt-5.1": "then let them merely follow one another in single file, and it will suffice.",
+      "deepseek:deepseek-chat": "simply string them in succession — that will suffice."
+    }
+  },
+  "c9-s66": {
+    "source": "例曰。",
+    "translation": "For example:",
+    "candidates": {
+      "openai:gpt-5.1": "For example:",
+      "deepseek:deepseek-chat": "An example says:"
+    }
+  },
+  "c9-s67": {
+    "source": "吾嘗觀『算經』之書。",
+    "translation": "I once surveyed the Book _Canon of Calculation_.",
+    "candidates": {
+      "openai:gpt-5.1": "I once surveyed the Book '_Canon of Calculation_'.",
+      "deepseek:deepseek-chat": "I once perused the Book of _Canon of Calculation_."
+    }
+  },
+  "c9-s68": {
+    "source": "方悟「圓周率」「勾股求弦」「冪」之義。",
+    "translation": "Only then did I apprehend the meanings of ‘circle constant’, ‘Pythagorean hypotenuse’, and ‘power’.",
+    "candidates": {
+      "openai:gpt-5.1": "Only then did I apprehend the meanings of 'circle constant', 'Pythagorean hypotenuse', and 'power'.",
+      "deepseek:deepseek-chat": "Only then did I comprehend the meaning of 'circumference ratio', 'hypotenuse from legs', and 'power'."
+    }
+  },
+  "c9-s69": {
+    "source": "\n吾嘗觀『曆法』之書。",
+    "translation": "I once surveyed the Book _Canon of Calendrics_.",
+    "candidates": {
+      "openai:gpt-5.1": "I once surveyed the Book '_Canon of Calendrics_'.",
+      "deepseek:deepseek-chat": "I once perused the Book of _Canon of Calendrics_."
+    }
+  },
+  "c9-s70": {
+    "source": "方悟「今日何日」之義。",
+    "translation": "Only then did I apprehend the meaning of ‘What day is today?’.",
+    "candidates": {
+      "openai:gpt-5.1": "Only then did I apprehend the meaning of 'What day is today?'.",
+      "deepseek:deepseek-chat": "Only then did I comprehend the meaning of 'what day is today'."
+    }
+  },
+  "c9-s71": {
+    "source": "\n\n乘「圓周率」以四。",
+    "translation": "Multiply ‘circle constant’ by four;",
+    "candidates": {
+      "openai:gpt-5.1": "Multiply 'circle constant' by four;",
+      "deepseek:deepseek-chat": "Multiply 'circumference ratio' by four."
+    }
+  },
+  "c9-s72": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s73": {
+    "source": "\n\n施「勾股求弦」於三。",
+    "translation": "Apply ‘Pythagorean hypotenuse’ to three,",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Pythagorean hypotenuse' to three,",
+      "deepseek:deepseek-chat": "Apply 'hypotenuse from legs' to three."
+    }
+  },
+  "c9-s74": {
+    "source": "於四。",
+    "translation": "and to four;",
+    "candidates": {
+      "openai:gpt-5.1": "and to four;",
+      "deepseek:deepseek-chat": "To four."
+    }
+  },
+  "c9-s75": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s76": {
+    "source": "\n\n施「冪」於二。",
+    "translation": "Apply ‘power’ to two,",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'power' to two,",
+      "deepseek:deepseek-chat": "Apply 'power' to two."
+    }
+  },
+  "c9-s77": {
+    "source": "於十。",
+    "translation": "and to ten;",
+    "candidates": {
+      "openai:gpt-5.1": "and to ten;",
+      "deepseek:deepseek-chat": "To ten."
+    }
+  },
+  "c9-s78": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s79": {
+    "source": "\n\n施「今日何日」。",
+    "translation": "Apply ‘What day is today?’;",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'What day is today?';",
+      "deepseek:deepseek-chat": "Apply 'what day is today'."
+    }
+  },
+  "c9-s80": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s81": {
+    "source": "又聊取列經之諸術。",
+    "translation": "Let us also casually take the various methods from the _Canon of Lists_.",
+    "candidates": {
+      "openai:gpt-5.1": "Let us again, for a while, take up several of the arts from the _Canon of Lists_.",
+      "deepseek:deepseek-chat": "Let us also casually take the various methods from the Canon of Lists."
+    }
+  },
+  "c9-s82": {
+    "source": "略述其用也。",
+    "translation": "And briefly describe their uses.",
+    "candidates": {
+      "openai:gpt-5.1": "We shall briefly describe their uses.",
+      "deepseek:deepseek-chat": "And briefly describe their uses."
+    }
+  },
+  "c9-s83": {
+    "source": "吾嘗觀『列經』之書。",
+    "translation": "I once surveyed the book _Canon of Lists_.",
+    "candidates": {
+      "openai:gpt-5.1": "I once surveyed the Book _Canon of Lists_.",
+      "deepseek:deepseek-chat": "I once surveyed the Book Canon of Lists."
+    }
+  },
+  "c9-s84": {
+    "source": "方悟「遍施」「篩剔」「左併」「右併」「排序」「倒序」「索一」之義。",
+    "translation": "Only then did I apprehend the meanings of ‘apply to all’, ‘filter’, ‘fold left’, ‘fold right’, ‘sort’, ‘reverse’, and ‘find one’.",
+    "candidates": {
+      "openai:gpt-5.1": "Only then did I apprehend the meanings of 'apply to each', 'filter and sieving', 'left-fold', 'right-fold', 'sorting', 'reversing', and 'seek one'.",
+      "deepseek:deepseek-chat": "Only then did I apprehend the meanings of 'apply to all', 'filter', 'fold left', 'fold right', 'sort', 'reverse', and 'find one'."
+    }
+  },
+  "c9-s85": {
+    "source": "\n\n吾有一列。",
+    "translation": "I have a list."
+  },
+  "c9-s86": {
+    "source": "名之曰「甲」。",
+    "translation": "Name it ‘A’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'A'.",
+      "deepseek:deepseek-chat": "Name it 'A'."
+    }
+  },
+  "c9-s87": {
+    "source": "充「甲」以三。",
+    "translation": "Fill ‘A’ with three.",
+    "candidates": {
+      "openai:gpt-5.1": "Fill 'A' with three,",
+      "deepseek:deepseek-chat": "Fill 'A' with three."
+    }
+  },
+  "c9-s88": {
+    "source": "以二。",
+    "translation": "With two.",
+    "candidates": {
+      "openai:gpt-5.1": "with two,",
+      "deepseek:deepseek-chat": "With two."
+    }
+  },
+  "c9-s89": {
+    "source": "以九。",
+    "translation": "With nine.",
+    "candidates": {
+      "openai:gpt-5.1": "with nine,",
+      "deepseek:deepseek-chat": "With nine."
+    }
+  },
+  "c9-s90": {
+    "source": "以一。",
+    "translation": "With one.",
+    "candidates": {
+      "openai:gpt-5.1": "with one,",
+      "deepseek:deepseek-chat": "With one."
+    }
+  },
+  "c9-s91": {
+    "source": "以六。",
+    "translation": "With six.",
+    "candidates": {
+      "openai:gpt-5.1": "with six,",
+      "deepseek:deepseek-chat": "With six."
+    }
+  },
+  "c9-s92": {
+    "source": "以十七。",
+    "translation": "With seventeen.",
+    "candidates": {
+      "openai:gpt-5.1": "with seventeen,",
+      "deepseek:deepseek-chat": "With seventeen."
+    }
+  },
+  "c9-s93": {
+    "source": "以四十二。",
+    "translation": "With forty-two.",
+    "candidates": {
+      "openai:gpt-5.1": "with forty-two.",
+      "deepseek:deepseek-chat": "With forty-two."
+    }
+  },
+  "c9-s94": {
+    "source": "遍施者。",
+    "translation": "‘Apply to all’ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Apply to each' —",
+      "deepseek:deepseek-chat": "'Apply to all' —"
+    }
+  },
+  "c9-s95": {
+    "source": "參者一術一列。",
+    "translation": "takes as parameters one method and one list.",
+    "candidates": {
+      "openai:gpt-5.1": "its parameters are one method and one list.",
+      "deepseek:deepseek-chat": "takes as parameters one method and one list."
+    }
+  },
+  "c9-s96": {
+    "source": "凡列中之物。",
+    "translation": "For every thing in the list,",
+    "candidates": {
+      "openai:gpt-5.1": "All the items within the list,",
+      "deepseek:deepseek-chat": "For every thing in the list,"
+    }
+  },
+  "c9-s97": {
+    "source": "一一施其術。",
+    "translation": "apply that method to it, one by one.",
+    "candidates": {
+      "openai:gpt-5.1": "one by one have that method applied to them,",
+      "deepseek:deepseek-chat": "apply that method to it, one by one."
+    }
+  },
+  "c9-s98": {
+    "source": "另充於一列而得之也。",
+    "translation": "And fill another list with the results, thereby obtaining it.",
+    "candidates": {
+      "openai:gpt-5.1": "and are newly filled into another list, which is thereby obtained.",
+      "deepseek:deepseek-chat": "And fill another list with the results, thereby obtaining it."
+    }
+  },
+  "c9-s99": {
+    "source": "吾有一術。",
+    "translation": "I have a method."
+  },
+  "c9-s100": {
+    "source": "名之曰「倍」。",
+    "translation": "Name it ‘double’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Double'.",
+      "deepseek:deepseek-chat": "Name it 'double'."
+    }
+  },
+  "c9-s101": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c9-s102": {
+    "source": "必先得一數。",
+    "translation": "one must first obtain a number."
+  },
+  "c9-s103": {
+    "source": "名之曰「甲」。",
+    "translation": "Call it ‘A’."
+  },
+  "c9-s104": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c9-s105": {
+    "source": "\n\t乘「甲」以二。",
+    "translation": "Multiply ‘A’ by two."
+  },
+  "c9-s106": {
+    "source": "乃得矣。",
+    "translation": "Then it is obtained.",
+    "candidates": {
+      "openai:gpt-5.1": "Thereby it is obtained.",
+      "deepseek:deepseek-chat": "Then it is obtained."
+    }
+  },
+  "c9-s107": {
+    "source": "\n是謂「倍」之術也。",
+    "translation": "This is what is called the method of ‘double’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is called the method of 'Double'.",
+      "deepseek:deepseek-chat": "This is what is called the method of 'double'."
+    }
+  },
+  "c9-s108": {
+    "source": "\n\n施「遍施」於「倍」於「甲」。",
+    "translation": "Apply ‘apply to all’ to ‘double’ and to ‘A’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'apply to each' to 'Double', and to 'A'.",
+      "deepseek:deepseek-chat": "Apply 'apply to all' to 'double' and to 'A'."
+    }
+  },
+  "c9-s109": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s110": {
+    "source": "篩剔者。",
+    "translation": "‘Filter’ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Filter and sieving' —",
+      "deepseek:deepseek-chat": "'Filter' —"
+    }
+  },
+  "c9-s111": {
+    "source": "參者一術一列。",
+    "translation": "takes as parameters one method and one list.",
+    "candidates": {
+      "openai:gpt-5.1": "its parameters are one method and one list.",
+      "deepseek:deepseek-chat": "takes as parameters one method and one list."
+    }
+  },
+  "c9-s112": {
+    "source": "凡列中之物。",
+    "translation": "For every thing in the list,",
+    "candidates": {
+      "openai:gpt-5.1": "All the items within the list,",
+      "deepseek:deepseek-chat": "For every thing in the list,"
+    }
+  },
+  "c9-s113": {
+    "source": "先施其術。",
+    "translation": "first apply that method to it.",
+    "candidates": {
+      "openai:gpt-5.1": "first have that method applied to them;",
+      "deepseek:deepseek-chat": "first apply that method to it."
+    }
+  },
+  "c9-s114": {
+    "source": "得陽而留之。",
+    "translation": "If one obtains yang, retain it.",
+    "candidates": {
+      "openai:gpt-5.1": "if the result is yang, they are kept;",
+      "deepseek:deepseek-chat": "If one obtains yang, retain it."
+    }
+  },
+  "c9-s115": {
+    "source": "得陰而棄之。",
+    "translation": "If one obtains yin, discard it.",
+    "candidates": {
+      "openai:gpt-5.1": "if the result is yin, they are cast away;",
+      "deepseek:deepseek-chat": "If one obtains yin, discard it."
+    }
+  },
+  "c9-s116": {
+    "source": "以為取捨。",
+    "translation": "Using this to decide what to take and what to leave,",
+    "candidates": {
+      "openai:gpt-5.1": "thus are they chosen and rejected.",
+      "deepseek:deepseek-chat": "Using this to decide what to take and what to leave,"
+    }
+  },
+  "c9-s117": {
+    "source": "乃聚得陽者為一列也。",
+    "translation": "one then gathers those that yielded yang into a single list.",
+    "candidates": {
+      "openai:gpt-5.1": "Then those that yielded yang are gathered together as a single list.",
+      "deepseek:deepseek-chat": "one then gathers those that yielded yang into a single list."
+    }
+  },
+  "c9-s118": {
+    "source": "前章有「篩剔」之例。",
+    "translation": "A previous chapter contained an example of ‘filter’.",
+    "candidates": {
+      "openai:gpt-5.1": "In the former chapter there was an example of 'filter and sieving'.",
+      "deepseek:deepseek-chat": "A previous chapter contained an example of 'filter'."
+    }
+  },
+  "c9-s119": {
+    "source": "此其是也。",
+    "translation": "This is it.",
+    "candidates": {
+      "openai:gpt-5.1": "That is precisely it.",
+      "deepseek:deepseek-chat": "This is it."
+    }
+  },
+  "c9-s120": {
+    "source": "故不贅以例也。",
+    "translation": "Therefore, I shall not burden it with another example.",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore we shall not burden the text with another example.",
+      "deepseek:deepseek-chat": "Therefore, I shall not burden it with another example."
+    }
+  },
+  "c9-s121": {
+    "source": "左右併者。",
+    "translation": "‘Fold left’ and ‘fold right’ —",
+    "candidates": {
+      "openai:gpt-5.1": "'Fold left and right' —",
+      "deepseek:deepseek-chat": "'Fold left' and 'fold right' —"
+    }
+  },
+  "c9-s122": {
+    "source": "參者一術一元一列。",
+    "translation": "take as parameters one method, one element, and one list.",
+    "candidates": {
+      "openai:gpt-5.1": "takes as parameters one method, one element, and one list.",
+      "deepseek:deepseek-chat": "take as parameters one method, one initial element, and one list."
+    }
+  },
+  "c9-s123": {
+    "source": "元者。",
+    "translation": "An element —",
+    "candidates": {
+      "openai:gpt-5.1": "An element —",
+      "deepseek:deepseek-chat": "The initial element —"
+    }
+  },
+  "c9-s124": {
+    "source": "變數之類不預知者也。",
+    "translation": "is a variable whose class is not known beforehand.",
+    "candidates": {
+      "openai:gpt-5.1": "is a variable whose class is not known beforehand.",
+      "deepseek:deepseek-chat": "is of a class of variable whose nature is not predetermined."
+    }
+  },
+  "c9-s125": {
+    "source": "蓋得其實而後定也。",
+    "translation": "Indeed, only after one has obtained its actual value is it determined.",
+    "candidates": {
+      "openai:gpt-5.1": "Indeed, only after one has obtained its actual value is it determined.",
+      "deepseek:deepseek-chat": "For its actual value is determined only after it is obtained."
+    }
+  },
+  "c9-s126": {
+    "source": "其參術參二。",
+    "translation": "The parameter method itself takes two parameters:",
+    "candidates": {
+      "openai:gpt-5.1": "The parameter method itself takes two parameters:",
+      "deepseek:deepseek-chat": "The method parameter takes two."
+    }
+  },
+  "c9-s127": {
+    "source": "取列中一物及元。",
+    "translation": "it takes one thing from the list and the element.",
+    "candidates": {
+      "openai:gpt-5.1": "it takes one thing from the list and the element.",
+      "deepseek:deepseek-chat": "It takes one thing from the list and the initial element."
+    }
+  },
+  "c9-s128": {
+    "source": "施參術得新元。",
+    "translation": "Apply the parameter method, and thereby obtain a new element.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply the parameter method, and thereby obtain a new element.",
+      "deepseek:deepseek-chat": "Applies the method parameter to obtain a new initial element."
+    }
+  },
+  "c9-s129": {
+    "source": "次第為之。",
+    "translation": "Do this in order, one after another.",
+    "candidates": {
+      "openai:gpt-5.1": "Do this in order, one after another.",
+      "deepseek:deepseek-chat": "Proceeds in order to do this."
+    }
+  },
+  "c9-s130": {
+    "source": "縮列為元也。",
+    "translation": "Thus the list is contracted into a single element.",
+    "candidates": {
+      "openai:gpt-5.1": "Thus the list is contracted into a single element.",
+      "deepseek:deepseek-chat": "Thus reducing the list to a single element."
+    }
+  },
+  "c9-s131": {
+    "source": "左併者自列首順縮之。",
+    "translation": "‘Fold left’ contracts it from the head of the list, moving forward.",
+    "candidates": {
+      "openai:gpt-5.1": "'Fold left' contracts it from the head of the list, moving forward.",
+      "deepseek:deepseek-chat": "'Fold left' reduces from the head of the list, proceeding forward."
+    }
+  },
+  "c9-s132": {
+    "source": "參術之施先元後列。",
+    "translation": "In applying the parameter method, the element comes first and the list-item after.",
+    "candidates": {
+      "openai:gpt-5.1": "In applying the parameter method, the element comes first and the list-item after.",
+      "deepseek:deepseek-chat": "The application of the method parameter places the element first, then the list."
+    }
+  },
+  "c9-s133": {
+    "source": "右併者自列末逆縮之。",
+    "translation": "‘Fold right’ contracts it from the tail of the list, moving backward.",
+    "candidates": {
+      "openai:gpt-5.1": "'Fold right' contracts it from the tail of the list, moving backward.",
+      "deepseek:deepseek-chat": "'Fold right' reduces from the tail of the list, proceeding backward."
+    }
+  },
+  "c9-s134": {
+    "source": "參術之施先列後元。",
+    "translation": "In applying the parameter method, the list-item comes first and the element after.",
+    "candidates": {
+      "openai:gpt-5.1": "In applying the parameter method, the list-item comes first and the element after.",
+      "deepseek:deepseek-chat": "The application of the method parameter places the list first, then the element."
+    }
+  },
+  "c9-s135": {
+    "source": "吾有一術。",
+    "translation": "I have a method."
+  },
+  "c9-s136": {
+    "source": "名之曰「合」。",
+    "translation": "Name it ‘combine’.",
+    "candidates": {
+      "openai:gpt-5.1": "Name it 'sum'.",
+      "deepseek:deepseek-chat": "Name it 'combine'."
+    }
+  },
+  "c9-s137": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c9-s138": {
+    "source": "必先得二數。",
+    "translation": "one must first obtain two numbers."
+  },
+  "c9-s139": {
+    "source": "名之曰「甲」。",
+    "translation": "Call one ‘A’.",
+    "candidates": {
+      "openai:gpt-5.1": "Call one 'A'.",
+      "deepseek:deepseek-chat": "Name one 'A'."
+    }
+  },
+  "c9-s140": {
+    "source": "曰「乙」。",
+    "translation": "Call one ‘B’.",
+    "candidates": {
+      "openai:gpt-5.1": "Call one 'B'.",
+      "deepseek:deepseek-chat": "Name one 'B'."
+    }
+  },
+  "c9-s141": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c9-s142": {
+    "source": "\n\t加「甲」以「乙」。",
+    "translation": "Add ‘A’ to ‘B’."
+  },
+  "c9-s143": {
+    "source": "乃得矣。",
+    "translation": "Then it is obtained."
+  },
+  "c9-s144": {
+    "source": "\n是謂「合」之術也。",
+    "translation": "This is what is called the method of ‘combine’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the method of 'sum'.",
+      "deepseek:deepseek-chat": "This is what is called the method of 'combine'."
+    }
+  },
+  "c9-s145": {
+    "source": "\n\n施「左併」於「合」於零於「甲」。",
+    "translation": "Apply ‘fold left’ to ‘combine’, to zero, and to ‘A’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'fold left' to 'sum', to zero, and to 'A'.",
+      "deepseek:deepseek-chat": "Apply 'fold left' to 'combine', to zero, and to 'A'."
+    }
+  },
+  "c9-s146": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s147": {
+    "source": "\n注曰。",
+    "translation": "An annotation says,",
+    "candidates": {
+      "openai:gpt-5.1": "An annotation says,",
+      "deepseek:deepseek-chat": "A note says:"
+    }
+  },
+  "c9-s148": {
+    "source": "『所以得「甲」中數之總和也』",
+    "translation": "“This is what is used to obtain the total sum of the numbers in ‘A’.”",
+    "candidates": {
+      "openai:gpt-5.1": "'This is what is used to obtain the total sum of the numbers in 'A'.'",
+      "deepseek:deepseek-chat": "\"This is what is used to obtain the sum total of the numbers within 'A'.\""
+    }
+  },
+  "c9-s149": {
+    "source": "排序者。",
+    "translation": "‘Sort’ —"
+  },
+  "c9-s150": {
+    "source": "參者一術一列。",
+    "translation": "takes as parameters one method and one list."
+  },
+  "c9-s151": {
+    "source": "易列之序。",
+    "translation": "It alters the order of the list,",
+    "candidates": {
+      "openai:gpt-5.1": "It alters the order of the list,",
+      "deepseek:deepseek-chat": "It changes the order of the list."
+    }
+  },
+  "c9-s152": {
+    "source": "令彼物自小而大者也。",
+    "translation": "so that those things therein range from small to great.",
+    "candidates": {
+      "openai:gpt-5.1": "so that those things therein range from small to great.",
+      "deepseek:deepseek-chat": "Causing its things to be arranged from small to large."
+    }
+  },
+  "c9-s153": {
+    "source": "其參術者。",
+    "translation": "As for its parameter method —",
+    "candidates": {
+      "openai:gpt-5.1": "As for its parameter method —",
+      "deepseek:deepseek-chat": "The method parameter —"
+    }
+  },
+  "c9-s154": {
+    "source": "所以定小大也。",
+    "translation": "it is what is used to determine smallness and greatness.",
+    "candidates": {
+      "openai:gpt-5.1": "it is what is used to determine smallness and greatness.",
+      "deepseek:deepseek-chat": "is what is used to determine smallness and largeness."
+    }
+  },
+  "c9-s155": {
+    "source": "蓋因數之小大易明。",
+    "translation": "Since the lesser and greater among numbers are easily discerned,",
+    "candidates": {
+      "openai:gpt-5.1": "Since the lesser and greater among numbers are easily discerned,",
+      "deepseek:deepseek-chat": "For the smallness and largeness of numbers is easily understood."
+    }
+  },
+  "c9-s156": {
+    "source": "然可排序者不唯數而已矣。",
+    "translation": "yet what may be sorted is by no means numbers alone.",
+    "candidates": {
+      "openai:gpt-5.1": "yet what may be sorted is by no means numbers alone.",
+      "deepseek:deepseek-chat": "Yet what can be sorted is not limited to numbers alone."
+    }
+  },
+  "c9-s157": {
+    "source": "故小大之繩。",
+    "translation": "Therefore, the cord by which small and great are measured,",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore, the cord by which small and great are measured,",
+      "deepseek:deepseek-chat": "Therefore, the measure of small and large —"
+    }
+  },
+  "c9-s158": {
+    "source": "施者視其類而自定也。",
+    "translation": "is to be fixed according to the class of the things to which it is applied.",
+    "candidates": {
+      "openai:gpt-5.1": "is to be fixed according to the class of the things to which it is applied.",
+      "deepseek:deepseek-chat": "is determined by the applier according to its class."
+    }
+  },
+  "c9-s159": {
+    "source": "其比二物也。",
+    "translation": "When it compares two things,",
+    "candidates": {
+      "openai:gpt-5.1": "When it compares two things,",
+      "deepseek:deepseek-chat": "In comparing two things,"
+    }
+  },
+  "c9-s160": {
+    "source": "小之當得負。",
+    "translation": "the lesser ought to yield a negative value,",
+    "candidates": {
+      "openai:gpt-5.1": "the lesser ought to yield a negative value,",
+      "deepseek:deepseek-chat": "if the first is smaller, it should yield a negative value."
+    }
+  },
+  "c9-s161": {
+    "source": "大之當得正。",
+    "translation": "the greater ought to yield a positive value,",
+    "candidates": {
+      "openai:gpt-5.1": "the greater ought to yield a positive value,",
+      "deepseek:deepseek-chat": "If it is larger, it should yield a positive value."
+    }
+  },
+  "c9-s162": {
+    "source": "等之當得零。",
+    "translation": "and those that are equal ought to yield zero.",
+    "candidates": {
+      "openai:gpt-5.1": "and those that are equal ought to yield zero.",
+      "deepseek:deepseek-chat": "If they are equal, it should yield zero."
+    }
+  },
+  "c9-s163": {
+    "source": "吾有一術。",
+    "translation": "I have a method."
+  },
+  "c9-s164": {
+    "source": "名之曰「比」。",
+    "translation": "Name it ‘compare’."
+  },
+  "c9-s165": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c9-s166": {
+    "source": "必先得二數。",
+    "translation": "one must first obtain two numbers."
+  },
+  "c9-s167": {
+    "source": "名之曰「甲」。",
+    "translation": "Call one ‘A’.",
+    "candidates": {
+      "openai:gpt-5.1": "Call one 'A'.",
+      "deepseek:deepseek-chat": "Name one 'A'."
+    }
+  },
+  "c9-s168": {
+    "source": "曰「乙」。",
+    "translation": "Call one ‘B’.",
+    "candidates": {
+      "openai:gpt-5.1": "Call one 'B'.",
+      "deepseek:deepseek-chat": "Name one 'B'."
+    }
+  },
+  "c9-s169": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c9-s170": {
+    "source": "\n\t若「甲」小於「乙」者。",
+    "translation": "If ‘A’ is less than ‘B’, then —",
+    "candidates": {
+      "openai:gpt-5.1": "If 'A' is less than 'B', then —",
+      "deepseek:deepseek-chat": "If 'A' is less than 'B',"
+    }
+  },
+  "c9-s171": {
+    "source": "乃得負一也。",
+    "translation": "then one obtains negative one.",
+    "candidates": {
+      "openai:gpt-5.1": "then obtain negative one.",
+      "deepseek:deepseek-chat": "then one obtains negative one."
+    }
+  },
+  "c9-s172": {
+    "source": "\n\t若「甲」大於「乙」者。",
+    "translation": "If ‘A’ is greater than ‘B’, then —"
+  },
+  "c9-s173": {
+    "source": "乃得一也。",
+    "translation": "then one obtains one.",
+    "candidates": {
+      "openai:gpt-5.1": "then obtain one.",
+      "deepseek:deepseek-chat": "then one obtains one."
+    }
+  },
+  "c9-s174": {
+    "source": "\n\t乃得零。",
+    "translation": "then one obtains zero.",
+    "candidates": {
+      "openai:gpt-5.1": "then obtain zero.",
+      "deepseek:deepseek-chat": "then one obtains zero."
+    }
+  },
+  "c9-s175": {
+    "source": "\n\t注曰『或云「減甲以乙乃得矣」亦可』",
+    "translation": "An annotation says, “Some say, ‘Subtract “A” from “B” and it is obtained’ is also permissible.”",
+    "candidates": {
+      "openai:gpt-5.1": "An annotation says, 'Some say, \"Subtract A by B and you will obtain it,\" and this too is acceptable.'",
+      "deepseek:deepseek-chat": "An annotation says, ‘Some say, “Subtract ‘A’ from ‘B’ and it is obtained” is also permissible.’"
+    }
+  },
+  "c9-s176": {
+    "source": "\n是謂「比」之術也。",
+    "translation": "This is what is called the method of ‘compare’."
+  },
+  "c9-s177": {
+    "source": "\n\n施「排序」於「比」於「甲」。",
+    "translation": "Apply ‘sort’ to ‘compare’ and to ‘A’."
+  },
+  "c9-s178": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s179": {
+    "source": "倒序者。",
+    "translation": "‘Reverse’ —"
+  },
+  "c9-s180": {
+    "source": "參者一列。",
+    "translation": "takes as parameter one list."
+  },
+  "c9-s181": {
+    "source": "唯逆其序耳。",
+    "translation": "It merely inverts its order."
+  },
+  "c9-s182": {
+    "source": "入者甲乙丙丁。",
+    "translation": "If the input be A, B, C, D,",
+    "candidates": {
+      "openai:gpt-5.1": "If what enters be A, B, C, D,",
+      "deepseek:deepseek-chat": "If the input is A, B, C, D,"
+    }
+  },
+  "c9-s183": {
+    "source": "出者丁丙乙甲也。",
+    "translation": "the output is D, C, B, A.",
+    "candidates": {
+      "openai:gpt-5.1": "what issues forth will be D, C, B, A.",
+      "deepseek:deepseek-chat": "the output is D, C, B, A."
+    }
+  },
+  "c9-s184": {
+    "source": "施「倒序」於「甲」。",
+    "translation": "Apply ‘reverse’ to ‘A’."
+  },
+  "c9-s185": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s186": {
+    "source": "索一者。",
+    "translation": "‘Find one’ —",
+    "candidates": {
+      "openai:gpt-5.1": "‘Find-one’ —",
+      "deepseek:deepseek-chat": "‘Find one’ —"
+    }
+  },
+  "c9-s187": {
+    "source": "參者一列一元。",
+    "translation": "takes as parameters one list and one element."
+  },
+  "c9-s188": {
+    "source": "於列中尋其元也。",
+    "translation": "It searches for that element within the list.",
+    "candidates": {
+      "openai:gpt-5.1": "It seeks that element within the list.",
+      "deepseek:deepseek-chat": "It searches for that element within the list."
+    }
+  },
+  "c9-s189": {
+    "source": "尋而得之者。",
+    "translation": "If the search finds it,",
+    "candidates": {
+      "openai:gpt-5.1": "If, having sought, it is obtained,",
+      "deepseek:deepseek-chat": "If the search finds it,"
+    }
+  },
+  "c9-s190": {
+    "source": "乃得其序數也。",
+    "translation": "then one obtains its ordinal number.",
+    "candidates": {
+      "openai:gpt-5.1": "then obtain its index number.",
+      "deepseek:deepseek-chat": "then one obtains its ordinal number."
+    }
+  },
+  "c9-s191": {
+    "source": "首物等元者。",
+    "translation": "If the first thing equals the element,",
+    "candidates": {
+      "openai:gpt-5.1": "If the first item equals the element,",
+      "deepseek:deepseek-chat": "If the first thing equals the element,"
+    }
+  },
+  "c9-s192": {
+    "source": "得一。",
+    "translation": "obtain one.",
+    "candidates": {
+      "openai:gpt-5.1": "obtain one.",
+      "deepseek:deepseek-chat": "one obtains one."
+    }
+  },
+  "c9-s193": {
+    "source": "次物等元者。",
+    "translation": "If the next thing equals the element,",
+    "candidates": {
+      "openai:gpt-5.1": "If the next item equals the element,",
+      "deepseek:deepseek-chat": "If the next thing equals the element,"
+    }
+  },
+  "c9-s194": {
+    "source": "得二。",
+    "translation": "obtain two.",
+    "candidates": {
+      "openai:gpt-5.1": "obtain two.",
+      "deepseek:deepseek-chat": "one obtains two."
+    }
+  },
+  "c9-s195": {
+    "source": "不得者。",
+    "translation": "If it is not found,",
+    "candidates": {
+      "openai:gpt-5.1": "If it is not obtained,",
+      "deepseek:deepseek-chat": "If it is not found,"
+    }
+  },
+  "c9-s196": {
+    "source": "乃得零也。",
+    "translation": "then one obtains zero.",
+    "candidates": {
+      "openai:gpt-5.1": "then obtain zero.",
+      "deepseek:deepseek-chat": "then one obtains zero."
+    }
+  },
+  "c9-s197": {
+    "source": "施「索一」於「甲」於九。",
+    "translation": "Apply ‘find one’ to ‘A’ and to nine.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply ‘find-one’ to ‘A’ and to nine.",
+      "deepseek:deepseek-chat": "Apply ‘find one’ to ‘A’ and to nine."
+    }
+  },
+  "c9-s198": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s199": {
+    "source": "\n施「索一」於「甲」於十五。",
+    "translation": "Apply ‘find one’ to ‘A’ and to fifteen.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply ‘find-one’ to ‘A’ and to fifteen.",
+      "deepseek:deepseek-chat": "Apply ‘find one’ to ‘A’ and to fifteen."
+    }
+  },
+  "c9-s200": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s201": {
+    "source": "其餘諸書所羅者。",
+    "translation": "As for the other methods enumerated in various books,",
+    "candidates": {
+      "openai:gpt-5.1": "As for the remaining things gathered in the various books,",
+      "deepseek:deepseek-chat": "As for the other methods enumerated in various books,"
+    }
+  },
+  "c9-s202": {
+    "source": "亦多也。",
+    "translation": "they are also numerous.",
+    "candidates": {
+      "openai:gpt-5.1": "they too are many.",
+      "deepseek:deepseek-chat": "they are also numerous."
+    }
+  },
+  "c9-s203": {
+    "source": "一一敘之者。",
+    "translation": "To narrate them one by one —",
+    "candidates": {
+      "openai:gpt-5.1": "Were we to recount them one by one,",
+      "deepseek:deepseek-chat": "To narrate them one by one —"
+    }
+  },
+  "c9-s204": {
+    "source": "則非此篇之本意也。",
+    "translation": "would not be the original intent of this chapter.",
+    "candidates": {
+      "openai:gpt-5.1": "it would no longer be the true intent of this chapter.",
+      "deepseek:deepseek-chat": "would not be the original intent of this chapter."
+    }
+  },
+  "c9-s205": {
+    "source": "唯「渾沌」「格物」「畫譜」三經。",
+    "translation": "Only the three classics, _Chaos_, _Investigation of Things_, and _Painting Manual_,",
+    "candidates": {
+      "openai:gpt-5.1": "Only the three canons, ‘Chaos’, ‘Investigation of Things’, and ‘Picture Manual’,",
+      "deepseek:deepseek-chat": "Only the three classics, ‘Chaos’, ‘Investigation of Things’, and ‘Painting Manual’,"
+    }
+  },
+  "c9-s206": {
+    "source": "更見於後章。",
+    "translation": "will be further encountered in later chapters.",
+    "candidates": {
+      "openai:gpt-5.1": "are further to be seen in later sections.",
+      "deepseek:deepseek-chat": "will be further encountered in later chapters."
+    }
+  },
+  "c9-s207": {
+    "source": "或問曰。",
+    "translation": "Someone may ask,",
+    "candidates": {
+      "openai:gpt-5.1": "Someone asks, saying,",
+      "deepseek:deepseek-chat": "Someone may ask,"
+    }
+  },
+  "c9-s208": {
+    "source": "此引他書之法吾明矣。",
+    "translation": "“This method of referencing other books I understand.",
+    "candidates": {
+      "openai:gpt-5.1": "“The method of citing other books I now understand.",
+      "deepseek:deepseek-chat": "“This method of referencing other books I understand."
+    }
+  },
+  "c9-s209": {
+    "source": "欲自為一書而引之。",
+    "translation": "If I wish to create my own book and reference it,",
+    "candidates": {
+      "openai:gpt-5.1": "If I wish myself to compose a book and have it cited,",
+      "deepseek:deepseek-chat": "If I wish to create my own book and reference it,"
+    }
+  },
+  "c9-s210": {
+    "source": "可乎。",
+    "translation": "is it possible?”",
+    "candidates": {
+      "openai:gpt-5.1": "is it permissible?”",
+      "deepseek:deepseek-chat": "is it possible?”"
+    }
+  },
+  "c9-s211": {
+    "source": "曰。",
+    "translation": "It is answered,"
+  },
+  "c9-s212": {
+    "source": "可也。",
+    "translation": "“It is possible.",
+    "candidates": {
+      "openai:gpt-5.1": "“It is permissible.”",
+      "deepseek:deepseek-chat": "“It is possible."
+    }
+  },
+  "c9-s213": {
+    "source": "另立一程式。",
+    "translation": "Establish another program.",
+    "candidates": {
+      "openai:gpt-5.1": "Establish another program separately.",
+      "deepseek:deepseek-chat": "Establish another program."
+    }
+  },
+  "c9-s214": {
+    "source": "命之以書名。",
+    "translation": "Name it with a book title.",
+    "candidates": {
+      "openai:gpt-5.1": "Give it a name according to the title of the book.",
+      "deepseek:deepseek-chat": "Name it with a book title."
+    }
+  },
+  "c9-s215": {
+    "source": "於其書中。",
+    "translation": "Within that book,"
+  },
+  "c9-s216": {
+    "source": "凡欲為他書所引之變數。",
+    "translation": "for all variables you wish to be referenced by other books,",
+    "candidates": {
+      "openai:gpt-5.1": "for all variables that you would have other books cite,",
+      "deepseek:deepseek-chat": "for all variables you wish to be referenced by other books,"
+    }
+  },
+  "c9-s217": {
+    "source": "皆易「吾有」為「今有」。",
+    "translation": "change ‘I have’ to ‘Now there is’.",
+    "candidates": {
+      "openai:gpt-5.1": "change every ‘I have’ to ‘Now there is’.",
+      "deepseek:deepseek-chat": "change ‘I have’ to ‘Now there is’."
+    }
+  },
+  "c9-s218": {
+    "source": "如是。",
+    "translation": "Thus.",
+    "candidates": {
+      "openai:gpt-5.1": "Doing thus,",
+      "deepseek:deepseek-chat": "Thus."
+    }
+  },
+  "c9-s219": {
+    "source": "注曰『當名是程式曰「勾股算經』」。",
+    "translation": "An annotation says, ‘You should name this program _The Classic of the Gougu Theorem_.’",
+    "candidates": {
+      "openai:gpt-5.1": "an annotation says, 'You should name this program \"Gougu Arithmetic Canon\".'",
+      "deepseek:deepseek-chat": "An annotation says, ‘You should name this program “The Classic of the Gougu Theorem”.’"
+    }
+  },
+  "c9-s220": {
+    "source": "\n\n吾嘗觀「算經」之書。",
+    "translation": "I once perused the book _The Classic of Calculation_,",
+    "candidates": {
+      "openai:gpt-5.1": "I once examined the book ‘Arithmetic Canon’.",
+      "deepseek:deepseek-chat": "I once perused the book of ‘The Classic of Calculation’,"
+    }
+  },
+  "c9-s221": {
+    "source": "方悟「平方根」之義。",
+    "translation": "Only then did I comprehend the meaning of ‘square root’.",
+    "candidates": {
+      "openai:gpt-5.1": "and only then did I comprehend the meaning of 'square root'.",
+      "deepseek:deepseek-chat": "Only then did I grasp the meaning of 'square root'."
+    }
+  },
+  "c9-s222": {
+    "source": "\n注曰『書書相引也』",
+    "translation": "An annotation says, “Books may mutually reference one another.”",
+    "candidates": {
+      "openai:gpt-5.1": "An annotation says, 'Books may mutually reference one another.'",
+      "deepseek:deepseek-chat": "An annotation says, 'Books reference each other.'"
+    }
+  },
+  "c9-s223": {
+    "source": "\n\n今有一術。",
+    "translation": "Now there is a method."
+  },
+  "c9-s224": {
+    "source": "名之曰「勾股求弦」。",
+    "translation": "It is named ‘Seek the Hypotenuse from Gou and Gu’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Seek the Hypotenuse from Leg and Adjacent'.",
+      "deepseek:deepseek-chat": "Name it 'find-hypotenuse-from-legs'."
+    }
+  },
+  "c9-s225": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c9-s226": {
+    "source": "必先得二數。",
+    "translation": "one must first obtain two numbers.",
+    "candidates": {
+      "openai:gpt-5.1": "one must first obtain two numbers.",
+      "deepseek:deepseek-chat": "One must first obtain two numbers."
+    }
+  },
+  "c9-s227": {
+    "source": "曰「勾」。",
+    "translation": "One is called ‘Gou’ (the horizontal leg).",
+    "candidates": {
+      "openai:gpt-5.1": "One is called 'Gou' (the horizontal leg).",
+      "deepseek:deepseek-chat": "Called 'leg-a'."
+    }
+  },
+  "c9-s228": {
+    "source": "曰「股」。",
+    "translation": "One is called ‘Gu’ (the vertical leg).",
+    "candidates": {
+      "openai:gpt-5.1": "One is called 'Gu' (the vertical leg).",
+      "deepseek:deepseek-chat": "Called 'leg-b'."
+    }
+  },
+  "c9-s229": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c9-s230": {
+    "source": "\n\t乘「勾」以「勾」。",
+    "translation": "Multiply ‘Gou’ by ‘Gou’.",
+    "candidates": {
+      "openai:gpt-5.1": "Multiply 'Gou' by 'Gou'.",
+      "deepseek:deepseek-chat": "Multiply 'leg-a' by 'leg-a'."
+    }
+  },
+  "c9-s231": {
+    "source": "名之曰「勾方」。",
+    "translation": "Name it ‘Gou-squared’.",
+    "candidates": {
+      "openai:gpt-5.1": "Name it 'Gou-squared'.",
+      "deepseek:deepseek-chat": "Name it 'leg-a-squared'."
+    }
+  },
+  "c9-s232": {
+    "source": "\n\t乘「股」以「股」。",
+    "translation": "Multiply ‘Gu’ by ‘Gu’.",
+    "candidates": {
+      "openai:gpt-5.1": "Multiply 'Gu' by 'Gu'.",
+      "deepseek:deepseek-chat": "Multiply 'leg-b' by 'leg-b'."
+    }
+  },
+  "c9-s233": {
+    "source": "加其於「勾方」。",
+    "translation": "Add it to ‘Gou-squared’.",
+    "candidates": {
+      "openai:gpt-5.1": "Add it to 'Gou-squared'.",
+      "deepseek:deepseek-chat": "Add it to 'leg-a-squared'."
+    }
+  },
+  "c9-s234": {
+    "source": "取一以施「平方根」。",
+    "translation": "Take this result and apply ‘square root’.",
+    "candidates": {
+      "openai:gpt-5.1": "Take this result and apply 'square root'.",
+      "deepseek:deepseek-chat": "Take one to apply 'square root'."
+    }
+  },
+  "c9-s235": {
+    "source": "乃得矣。",
+    "translation": "and then you obtain it.",
+    "candidates": {
+      "openai:gpt-5.1": "and then you obtain it.",
+      "deepseek:deepseek-chat": "Then it is obtained."
+    }
+  },
+  "c9-s236": {
+    "source": "\n是謂「勾股求弦」之術也。",
+    "translation": "This is what is called the method of ‘Seek the Hypotenuse from Gou and Gu’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the method of 'Seek the Hypotenuse from Leg and Adjacent'.",
+      "deepseek:deepseek-chat": "This is what is called the method of 'find-hypotenuse-from-legs'."
+    }
+  },
+  "c9-s237": {
+    "source": "\n\n今有一術。",
+    "translation": "Now there is a method."
+  },
+  "c9-s238": {
+    "source": "名之曰「勾弦求股」。",
+    "translation": "It is named ‘Seek Gu from Gou and Xian’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Seek the Vertical Leg from Horizontal Leg and Hypotenuse'.",
+      "deepseek:deepseek-chat": "Name it 'find-leg-from-hypotenuse'."
+    }
+  },
+  "c9-s239": {
+    "source": "欲行是術。",
+    "translation": "To execute this method,"
+  },
+  "c9-s240": {
+    "source": "必先得二數。",
+    "translation": "one must first obtain two numbers.",
+    "candidates": {
+      "openai:gpt-5.1": "one must first obtain two numbers.",
+      "deepseek:deepseek-chat": "One must first obtain two numbers."
+    }
+  },
+  "c9-s241": {
+    "source": "曰「勾」。",
+    "translation": "One is called ‘Gou’ (the horizontal leg).",
+    "candidates": {
+      "openai:gpt-5.1": "One is called 'Gou' (the horizontal leg).",
+      "deepseek:deepseek-chat": "Called 'leg-a'."
+    }
+  },
+  "c9-s242": {
+    "source": "曰「弦」。",
+    "translation": "One is called ‘Xian’ (the hypotenuse).",
+    "candidates": {
+      "openai:gpt-5.1": "One is called 'Xian' (the hypotenuse).",
+      "deepseek:deepseek-chat": "Called 'hypotenuse'."
+    }
+  },
+  "c9-s243": {
+    "source": "乃行是術曰。",
+    "translation": "Then execute this method, saying:"
+  },
+  "c9-s244": {
+    "source": "\n\t乘「勾」以「勾」。",
+    "translation": "Multiply ‘Gou’ by ‘Gou’.",
+    "candidates": {
+      "openai:gpt-5.1": "Multiply 'Gou' by 'Gou'.",
+      "deepseek:deepseek-chat": "Multiply 'leg-a' by 'leg-a'."
+    }
+  },
+  "c9-s245": {
+    "source": "名之曰「勾方」。",
+    "translation": "Name it ‘Gou-squared’.",
+    "candidates": {
+      "openai:gpt-5.1": "Name it 'Gou-squared'.",
+      "deepseek:deepseek-chat": "Name it 'leg-a-squared'."
+    }
+  },
+  "c9-s246": {
+    "source": "\n\t乘「弦」以「弦」。",
+    "translation": "Multiply ‘Xian’ by ‘Xian’.",
+    "candidates": {
+      "openai:gpt-5.1": "Multiply 'Xian' by 'Xian'.",
+      "deepseek:deepseek-chat": "Multiply 'hypotenuse' by 'hypotenuse'."
+    }
+  },
+  "c9-s247": {
+    "source": "減其以「勾方」。",
+    "translation": "Subtract from it ‘Gou-squared’.",
+    "candidates": {
+      "openai:gpt-5.1": "Subtract from it 'Gou-squared'.",
+      "deepseek:deepseek-chat": "Subtract from it 'leg-a-squared'."
+    }
+  },
+  "c9-s248": {
+    "source": "取一以施「平方根」。",
+    "translation": "Take this result and apply ‘square root’.",
+    "candidates": {
+      "openai:gpt-5.1": "Take this result and apply 'square root'.",
+      "deepseek:deepseek-chat": "Take one to apply 'square root'."
+    }
+  },
+  "c9-s249": {
+    "source": "乃得矣。",
+    "translation": "and then you obtain it.",
+    "candidates": {
+      "openai:gpt-5.1": "and then you obtain it.",
+      "deepseek:deepseek-chat": "Then it is obtained."
+    }
+  },
+  "c9-s250": {
+    "source": "\n是謂「勾弦求股」之術也。",
+    "translation": "This is what is called the method of ‘Seek Gu from Gou and Xian’.",
+    "candidates": {
+      "openai:gpt-5.1": "This is what is called the method of 'Seek the Vertical Leg from Horizontal Leg and Hypotenuse'.",
+      "deepseek:deepseek-chat": "This is what is called the method of 'find-leg-from-hypotenuse'."
+    }
+  },
+  "c9-s251": {
+    "source": "\n\n今有三數。",
+    "translation": "Now there are three numbers."
+  },
+  "c9-s252": {
+    "source": "曰三。",
+    "translation": "One is three.",
+    "candidates": {
+      "openai:gpt-5.1": "One is three.",
+      "deepseek:deepseek-chat": "Called three."
+    }
+  },
+  "c9-s253": {
+    "source": "曰四。",
+    "translation": "One is four.",
+    "candidates": {
+      "openai:gpt-5.1": "One is four.",
+      "deepseek:deepseek-chat": "Called four."
+    }
+  },
+  "c9-s254": {
+    "source": "曰五。",
+    "translation": "One is five.",
+    "candidates": {
+      "openai:gpt-5.1": "One is five.",
+      "deepseek:deepseek-chat": "Called five."
+    }
+  },
+  "c9-s255": {
+    "source": "名之曰「勾例」",
+    "translation": "Name one ‘Example Gou’,",
+    "candidates": {
+      "openai:gpt-5.1": "Name one 'Example Gou' (example horizontal leg),",
+      "deepseek:deepseek-chat": "Name one 'leg-example'."
+    }
+  },
+  "c9-s256": {
+    "source": "曰「股例」",
+    "translation": "one ‘Example Gu’,",
+    "candidates": {
+      "openai:gpt-5.1": "one 'Example Gu' (example vertical leg),",
+      "deepseek:deepseek-chat": "Name one 'leg-b-example'."
+    }
+  },
+  "c9-s257": {
+    "source": "曰「弦例」。",
+    "translation": "and one ‘Example Xian’.",
+    "candidates": {
+      "openai:gpt-5.1": "and one 'Example Xian' (example hypotenuse).",
+      "deepseek:deepseek-chat": "Name one 'hypotenuse-example'."
+    }
+  },
+  "c9-s258": {
+    "source": "\n\n吾有一數。",
+    "translation": "I have a number."
+  },
+  "c9-s259": {
+    "source": "曰六。",
+    "translation": "It is six.",
+    "candidates": {
+      "openai:gpt-5.1": "It is six.",
+      "deepseek:deepseek-chat": "Called six."
+    }
+  },
+  "c9-s260": {
+    "source": "名之曰「唯吾知之」。",
+    "translation": "It is named ‘Known to Me Alone’.",
+    "candidates": {
+      "openai:gpt-5.1": "It is named 'Known to Me Alone'.",
+      "deepseek:deepseek-chat": "Name it 'only-I-know-it'."
+    }
+  },
+  "c9-s261": {
+    "source": "注曰『凡以「吾有」言變數者。他書不得引之』",
+    "translation": "An annotation says, “For any variable spoken of with ‘I have’, other books may not reference it.”",
+    "candidates": {
+      "openai:gpt-5.1": "An annotation says, 'For any variable spoken of with \"I have\", other books may not reference it.'",
+      "deepseek:deepseek-chat": "An annotation says, 'Any variable declared with 'I have' cannot be referenced by other books.'"
+    }
+  },
+  "c9-s262": {
+    "source": "是書既成。",
+    "translation": "Once this book is completed,",
+    "candidates": {
+      "openai:gpt-5.1": "Once this book is completed,",
+      "deepseek:deepseek-chat": "This book being now complete,"
+    }
+  },
+  "c9-s263": {
+    "source": "乃另作一程式。",
+    "translation": "then compose another program.",
+    "candidates": {
+      "openai:gpt-5.1": "then compose another program.",
+      "deepseek:deepseek-chat": "I then created another program."
+    }
+  },
+  "c9-s264": {
+    "source": "引而驗之。",
+    "translation": "Reference it and verify it.",
+    "candidates": {
+      "openai:gpt-5.1": "Reference it and verify it.",
+      "deepseek:deepseek-chat": "I referenced and tested it."
+    }
+  },
+  "c9-s265": {
+    "source": "吾嘗觀『勾股算經』之書。",
+    "translation": "I once perused the book _The Classic of the Gougu Theorem_.",
+    "candidates": {
+      "openai:gpt-5.1": "I once perused the book 'The Classic of the Gougu Theorem'.",
+      "deepseek:deepseek-chat": "I once perused the book _The Classic of the Gougu Theorem_."
+    }
+  },
+  "c9-s266": {
+    "source": "方悟「勾股求弦」「勾弦求股」「勾例」「股例」之義。",
+    "translation": "Only then did I comprehend the meanings of ‘Seek the Hypotenuse from Gou and Gu’, ‘Seek Gu from Gou and Xian’, ‘Example Gou’, and ‘Example Gu’.",
+    "candidates": {
+      "openai:gpt-5.1": "and only then did I comprehend the meanings of 'Seek the Hypotenuse from Leg and Adjacent', 'Seek the Vertical Leg from Horizontal Leg and Hypotenuse', 'Example Gou', and 'Example Gu'.",
+      "deepseek:deepseek-chat": "Only then did I grasp the meaning of 'find-hypotenuse-from-legs', 'find-leg-from-hypotenuse', 'leg-example', and 'leg-b-example'."
+    }
+  },
+  "c9-s267": {
+    "source": "\n\n施「勾股求弦」於「勾例」「股例」。",
+    "translation": "Apply ‘Seek the Hypotenuse from Gou and Gu’ to ‘Example Gou’ and ‘Example Gu’.",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Seek the Hypotenuse from Leg and Adjacent' to 'Example Gou' and 'Example Gu'.",
+      "deepseek:deepseek-chat": "Apply 'find-hypotenuse-from-legs' to 'leg-example' and 'leg-b-example'."
+    }
+  },
+  "c9-s268": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s269": {
+    "source": "\n施「勾弦求股」於五。",
+    "translation": "Apply ‘Seek Gu from Gou and Xian’ to five,",
+    "candidates": {
+      "openai:gpt-5.1": "Apply 'Seek the Vertical Leg from Horizontal Leg and Hypotenuse' to five,",
+      "deepseek:deepseek-chat": "Apply 'find-leg-from-hypotenuse' to five,"
+    }
+  },
+  "c9-s270": {
+    "source": "於十三。",
+    "translation": "and to thirteen."
+  },
+  "c9-s271": {
+    "source": "書之。",
+    "translation": "Write it down."
+  },
+  "c9-s272": {
+    "source": "著引二道。",
+    "translation": "The Two Ways of establishing and importing,",
+    "candidates": {
+      "openai:gpt-5.1": "Establish and import the two modules.",
+      "deepseek:deepseek-chat": "Two paths of reference are established."
+    }
+  },
+  "c9-s273": {
+    "source": "至是略備矣。",
+    "translation": "Thus it is now briefly complete."
+  },
+  "c9-s274": {
+    "source": "程式既長。",
+    "translation": "When a program grows long,",
+    "candidates": {
+      "openai:gpt-5.1": "When a program grows long,",
+      "deepseek:deepseek-chat": "Once a program grows long,"
+    }
+  },
+  "c9-s275": {
+    "source": "使盡入一文。",
+    "translation": "if one forces all of it into a single text,",
+    "candidates": {
+      "openai:gpt-5.1": "if one forces all of it into a single text,",
+      "deepseek:deepseek-chat": "if one forces it all into a single document,"
+    }
+  },
+  "c9-s276": {
+    "source": "輒如亂粥也。",
+    "translation": "it at once becomes like chaotic porridge.",
+    "candidates": {
+      "openai:gpt-5.1": "it at once becomes like a porridge in chaos.",
+      "deepseek:deepseek-chat": "it becomes like a chaotic porridge."
+    }
+  },
+  "c9-s277": {
+    "source": "故立大事者。",
+    "translation": "Therefore, those who undertake great works",
+    "candidates": {
+      "openai:gpt-5.1": "Therefore, those who undertake great works,",
+      "deepseek:deepseek-chat": "Therefore, those who undertake great tasks"
+    }
+  },
+  "c9-s278": {
+    "source": "多擘其文。",
+    "translation": "most often split their writings apart,",
+    "candidates": {
+      "openai:gpt-5.1": "most often split their writings apart,",
+      "deepseek:deepseek-chat": "often cleave their text asunder,"
+    }
+  },
+  "c9-s279": {
+    "source": "分作數書。",
+    "translation": "dividing them into several books,",
+    "candidates": {
+      "openai:gpt-5.1": "dividing them into several books,",
+      "deepseek:deepseek-chat": "dividing it into several books,"
+    }
+  },
+  "c9-s280": {
+    "source": "而更相引用。",
+    "translation": "which in turn mutually reference one another.",
+    "candidates": {
+      "openai:gpt-5.1": "which in turn mutually reference one another.",
+      "deepseek:deepseek-chat": "and then have them reference one another."
+    }
+  },
+  "c9-s281": {
+    "source": "脈絡既明。",
+    "translation": "Once the lines of connection are made clear,",
+    "candidates": {
+      "openai:gpt-5.1": "Once the lines of connection are made clear,",
+      "deepseek:deepseek-chat": "Once the veins and arteries are clear,"
+    }
+  },
+  "c9-s282": {
+    "source": "亦大裨益於檢索也。",
+    "translation": "this also greatly assists in searching and review.",
+    "candidates": {
+      "openai:gpt-5.1": "this also greatly assists in searching and review.",
+      "deepseek:deepseek-chat": "it also greatly aids in searching and retrieval."
+    }
+  }
+}
