@@ -41,17 +41,22 @@ def get_authenticated_service(secrets_file: Path):
         
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            if not secrets_file.exists():
-                print(f"Error: Client secrets file not found at {secrets_file}")
-                print("Please download it from Google Cloud Console and save it as 'client_secrets.json' in the uploader directory.")
-                sys.exit(1)
-                
-            flow = InstalledAppFlow.from_client_secrets_file(
-                str(secrets_file), SCOPES
-            )
-            creds = flow.run_local_server(port=0)
+            try:
+                creds.refresh(Request())
+            except Exception:
+                print("Token refresh failed or expired. Re-authenticating...")
+                creds = None
+
+    if not creds or not creds.valid:
+        if not secrets_file.exists():
+            print(f"Error: Client secrets file not found at {secrets_file}")
+            print("Please download it from Google Cloud Console and save it as 'client_secrets.json' in the uploader directory.")
+            sys.exit(1)
+            
+        flow = InstalledAppFlow.from_client_secrets_file(
+            str(secrets_file), SCOPES
+        )
+        creds = flow.run_local_server(port=0)
             
         # Save the credentials for the next run
         with open(token_path, "w") as token:
