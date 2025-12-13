@@ -158,7 +158,7 @@ function renderUnderscoreItalics(text: string): React.ReactNode {
       segments.push(text.slice(lastIndex, match.index));
     }
     segments.push(
-      <em key={`italic-${match.index}`} className="ml-4">
+      <em key={`italic-${match.index}`} className="ml-2">
         {match[1]}
       </em>,
     );
@@ -725,13 +725,15 @@ export const SegmentText: React.FC<SegmentTextProps> = ({
             ) : null}
             {englishLineWithItalics ? (
               <p
-                className={`font-serif font-bold leading-[1.2] m-0 min-h-27 flex items-center justify-center ${
-                  formattedEnglishLine && formattedEnglishLine.length > 70
-                    ? `whitespace-pre-line text-balance ${
-                        formattedEnglishLine.length > 100
-                          ? "text-4xl"
-                          : "text-5xl"
-                      }`
+                className={`font-serif font-bold leading-[1.2] m-0 min-h-27 items-center justify-center ${
+                  formattedEnglishLine && formattedEnglishLine.length > 60
+                  ? `whitespace-pre-line text-balance ${
+                    formattedEnglishLine.length > 100
+                      ? formattedEnglishLine.length > 150
+                        ? "text-3xl"
+                        : "text-4xl"
+                      : "text-5xl"
+                    }`
                     : "whitespace-nowrap text-6xl"
                 }`}
               >
