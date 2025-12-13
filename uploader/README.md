@@ -19,7 +19,8 @@ You need to have a Google Cloud Project with YouTube Data API v3 enabled with OA
 5. Save the JSON file as `client_secrets.json` in this directory (`uploader/`).
 6. Add YouTube scope to OAuth 2.0 Client.
     - “Google Auth Platform” -> “Data access” -> “Add or remove scopes”
-6. Add your YouTube account to Test users/
+    - Ensure you add `https://www.googleapis.com/auth/youtube` (Manage your YouTube account) scope. The upload-only scope is insufficient for playlist management.
+7. Add your YouTube account to Test users/
     - “Google Auth Platform” -> “Audience” -> “Test users”
 
 ### Prepare the Video
@@ -55,3 +56,4 @@ After the upload has finished, you can find the video at your YouTube channel as
 -   **Client Secrets Not Found**: Ensure `client_secrets.json` is in the `uploader` directory.
 -   **Video Not Found**: Ensure the video file exists in `renderer/out/`.
 -   **Authentication Error**: If `token.json` is invalid or expired, delete it and run the script again to re-authenticate.
+-   **Insufficient Permissions**: If you get an error about "insufficient authentication scopes" when adding to a playlist, it means your `token.json` was created with the old upload-only scope. The script should automatically detect this and re-authenticate, but if not, delete `uploader/token.json` and try again. Ensure your Google Cloud Project allows the `https://www.googleapis.com/auth/youtube` scope.

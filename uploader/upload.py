@@ -21,7 +21,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = ["https://www.googleapis.com/auth/youtube"]
 
 
 def load_config(config_path: Path) -> dict:
@@ -38,6 +38,9 @@ def get_authenticated_service(secrets_file: Path):
     
     if token_path.exists():
         creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
+        if creds and not creds.has_scopes(SCOPES):
+            print("Scopes have changed or are insufficient. Re-authenticating...")
+            creds = None
         
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
